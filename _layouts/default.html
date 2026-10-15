@@ -22,6 +22,7 @@
         {% assign p = page.url %}
         <a href="{{ '/' | relative_url }}" {% if p == '/' %}aria-current="page"{% endif %}>Home</a>
         <a href="{{ '/services/' | relative_url }}" {% if p contains '/services' %}aria-current="page"{% endif %}>Services</a>
+        <a href="{{ '/public-sector/' | relative_url }}" {% if p contains '/public-sector' %}aria-current="page"{% endif %}>Public sector</a>
         <a href="{{ '/about/' | relative_url }}" {% if p contains '/about' %}aria-current="page"{% endif %}>About</a>
         <a href="{{ '/blog/' | relative_url }}" {% if p contains '/blog' %}aria-current="page"{% endif %}>Blog</a>
         <a href="{{ '/contact/' | relative_url }}" {% if p contains '/contact' %}aria-current="page"{% endif %}>Contact</a>

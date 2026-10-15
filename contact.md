@@ -13,4 +13,6 @@ lead: The best way to start is a short conversation about what you need.
 
 Based in Larne, working with businesses across Northern Ireland.
 
+**Councils, public bodies and trade bodies:** I'm happy to provide quotations, capability statements and CVs, and to respond to tenders and framework opportunities.
+
 It helps if you can tell me a little about your business — what you make or do, whether you sell into the EU, and what's prompted you to get in touch (a customer request, a tender, a regulation, or something else).

@@ -37,6 +37,10 @@ As a member of the Chartered Institute of Public Relations, I support organisati
 - briefing MLAs, councillors and officials
 - communicating environmental commitments credibly — without greenwash
 
+## Councils, public bodies and trade bodies
+
+I also work with district councils, public bodies and trade associations: carbon baselines for council operations, climate planning, contaminated land readiness, member briefings and consultation responses. I'm open to quotations, supplier frameworks and tenders. [See public sector services]({{ '/public-sector/' | relative_url }}).
+
 ## How I work
 
 Every engagement starts with a conversation about what you actually need. I'd rather help you do the right amount of work well than sell you a bigger project.
