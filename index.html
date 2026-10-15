@@ -1,0 +1,85 @@
+---
+layout: default
+title: Environment · Carbon · Public Affairs
+---
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+    <p class="eyebrow">Independent consultancy · Northern Ireland</p>
+    <h1>Carbon and environmental compliance for manufacturers working <em>across two regimes</em>.</h1>
+    <p class="lead">Northern Ireland businesses sit between UK and EU rules. I help small and mid-sized firms make sense of CBAM, CSRD and carbon reporting — and turn the work into something the board can actually use.</p>
+    <div class="actions">
+      <a class="btn" href="{{ '/contact/' | relative_url }}">Start a conversation</a>
+      <a class="btn btn-ghost" href="{{ '/services/' | relative_url }}">See services</a>
+    </div>
+    </div>
+    <figure class="hero-portrait">
+      <img src="{{ '/assets/robert-park.jpg' | relative_url }}" alt="Robert J. Park" width="640" height="640">
+      <figcaption><strong>Robert J. Park</strong><br>Environmental, carbon &amp; public affairs consultant · Larne</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>What I do</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>CBAM &amp; CSRD</h3>
+        <p>Practical support for manufacturers caught by the EU's carbon border rules and sustainability reporting — what applies to you, what data you need, and who in your supply chain holds it.</p>
+      </div>
+      <div class="card">
+        <h3>Carbon inventories</h3>
+        <p>A clear, defensible account of your emissions. The real value is the process: it opens new conversations across your value chain and gives your board management information it doesn't currently have.</p>
+      </div>
+      <div class="card">
+        <h3>ESOS</h3>
+        <p>ESOS delivered with experienced Lead Assessors, and done properly — alongside a carbon inventory and a review of your energy contracts, so it's more than a box-ticking exercise.</p>
+      </div>
+      <div class="card">
+        <h3>Contaminated land</h3>
+        <p>Advice on land contamination risk and remediation in Northern Ireland, with site testing and clean-up delivered through specialist partner firms.</p>
+      </div>
+      <div class="card">
+        <h3>Public affairs &amp; communications</h3>
+        <p>Lobbying, stakeholder engagement and communications on environmental policy — from consultation responses to briefing elected representatives.</p>
+      </div>
+      <div class="card">
+        <h3>Board-level insight</h3>
+        <p>Turning environmental data into non-financial management information that helps directors make better decisions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap split">
+    <div>
+      <h2>A different take on ESG</h2>
+      <p>Much of what's sold as ESG is reporting for its own sake. I'm more interested in the process behind it. Working out your carbon footprint forces conversations with suppliers, customers and your own teams that rarely happen otherwise — and those conversations are where the commercial value is.</p>
+      <p>I bring a background in chemistry and materials research, sustainability consulting since 2018, and two decades of communications and public affairs work.</p>
+      <p><a href="{{ '/about/' | relative_url }}">More about me →</a></p>
+    </div>
+    <blockquote class="quote">The report is the by-product. The understanding you build along the way is the point.</blockquote>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Latest from the blog</h2>
+    {% if site.posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in site.posts limit:3 %}
+      <li>
+        <p class="meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time></p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 32 }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    <p><a href="{{ '/blog/' | relative_url }}">All posts →</a></p>
+    {% else %}
+    <p>Posts coming soon.</p>
+    {% endif %}
+  </div>
+</section>

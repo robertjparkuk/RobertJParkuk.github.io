@@ -1,0 +1,25 @@
+title: Robert J. Park
+tagline: Environment · Carbon · Public Affairs
+description: Independent environmental, carbon and public affairs consultancy for Northern Ireland businesses — CBAM, CSRD, carbon inventories, ESOS and contaminated land.
+location: Northern Ireland
+image: /assets/og-image.jpg   # picture shown when the site is shared on LinkedIn, WhatsApp etc.
+author: Robert J. Park
+email: r.j.park@outlook.com
+linkedin: "https://uk.linkedin.com/in/robertparkuk"
+whatsapp: "@robertjpark"   # WhatsApp username (keeps your number private)
+
+# Set this to your new domain once you have it, e.g. https://www.yourdomain.co.uk
+url: ""
+
+permalink: /blog/:year/:month/:title/
+timezone: Europe/London
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - HOW-TO-POST.md

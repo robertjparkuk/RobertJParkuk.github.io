@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  {% feed_meta %}
+  <link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} — home">
+        <img src="{{ '/assets/logo-header.png' | relative_url }}" alt="{{ site.title }} — {{ site.tagline }}" width="551" height="119">
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        {% assign p = page.url %}
+        <a href="{{ '/' | relative_url }}" {% if p == '/' %}aria-current="page"{% endif %}>Home</a>
+        <a href="{{ '/services/' | relative_url }}" {% if p contains '/services' %}aria-current="page"{% endif %}>Services</a>
+        <a href="{{ '/about/' | relative_url }}" {% if p contains '/about' %}aria-current="page"{% endif %}>About</a>
+        <a href="{{ '/blog/' | relative_url }}" {% if p contains '/blog' %}aria-current="page"{% endif %}>Blog</a>
+        <a href="{{ '/contact/' | relative_url }}" {% if p contains '/contact' %}aria-current="page"{% endif %}>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <img class="footer-mark" src="{{ '/assets/mark.png' | relative_url }}" alt="" width="40" height="47">
+      <div>
+        <p><strong>{{ site.title }}</strong> · {{ site.tagline }} · {{ site.location }}</p>
+        <p>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          {% if site.linkedin != "" %} · <a href="{{ site.linkedin }}" rel="me">LinkedIn</a>{% endif %}
+          {% if site.whatsapp != "" %} · WhatsApp {{ site.whatsapp }}{% endif %}
+          · <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+        </p>
+        <p class="small">© {{ 'now' | date: '%Y' }} Robert J. Park</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

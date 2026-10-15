@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="wrap page post">
+  <p class="meta"><a href="{{ '/blog/' | relative_url }}">← All posts</a></p>
+  <h1 class="page-title">{{ page.title }}</h1>
+  <p class="meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B %Y' }}</time>
+    {% if page.tags.size > 0 %} · {{ page.tags | join: ' · ' }}{% endif %}
+  </p>
+  <div class="prose">
+    {{ content }}
+  </div>
+  <aside class="post-cta">
+    <p><strong>Want to talk this through for your business?</strong>
+    <a href="{{ '/contact/' | relative_url }}">Get in touch</a>.</p>
+  </aside>
+</article>
