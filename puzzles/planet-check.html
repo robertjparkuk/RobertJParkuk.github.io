@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Planet Check: a free GCSE quiz on the atmosphere, water, resources and ecosystems, linked to AQA and CCEA topics, with Northern Ireland questions. By Robert J. Park.">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<title>Planet Check GCSE Quiz</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+[hidden]{display:none!important}
+
+/* Layout: a single question card in the middle, topic chips above, score strip below; a teacher panel at the end. */
+
+/* Layout: the GHG Protocol value chain drawn left to right (upstream → you → downstream), then the grey zones where scopes blur, then the gases that count. */
+:root{
+  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2;
+  --red:#B3121B; --s1:#B3121B; --s1-bg:#FBEDED; --s2:#B5650F; --s2-bg:#FCF1E3; --s3:#2D6CA3; --s3-bg:#E9F1F9; --out:#4F7F2A; --out-bg:#EEF5E6;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.brand b{color:var(--red)}
+h1{font-family:var(--display);font-size:clamp(34px,5vw,56px);line-height:1.03;margin:8px 0 0;text-wrap:balance}
+h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);line-height:1.1;margin:0;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:68ch;font-size:18px}
+.sec{display:flex;flex-direction:column;gap:16px;border-top:3px solid var(--ink);padding-top:18px}
+.sec>p{margin:0;max-width:72ch}
+
+:root{--ok:#1F6B45;--ok-bg:#E6F2EB;--no:#B3121B;--no-bg:#FBEDED;--t1:#2D6CA3;--t2:#1F7A8C;--t3:#8A6A3B;--t4:#4F7F2A;--t5:#B3121B}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ok:#4CC38A;--ok-bg:#16301F;--no:#F0787C;--no-bg:#3A1C1E;--t1:#7DB3E3;--t2:#6CC3D1;--t3:#D3B07A;--t4:#9CCB6E;--t5:#F0787C}}
+:root[data-theme="dark"]{--ok:#4CC38A;--ok-bg:#16301F;--no:#F0787C;--no-bg:#3A1C1E;--t1:#7DB3E3;--t2:#6CC3D1;--t3:#D3B07A;--t4:#9CCB6E;--t5:#F0787C}
+.topics{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1.5px solid var(--rule);background:var(--paper);color:var(--ink);font:600 14px var(--body);padding:6px 12px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.card{max-width:760px;width:100%;margin:0 auto;border:2px solid var(--ink);border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:14px;background:var(--paper)}
+.meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.tag{font-size:12px;font-weight:700;letter-spacing:.06em;padding:3px 9px;border-radius:999px;color:#fff}
+.qtext{font-family:var(--display);font-size:clamp(22px,3vw,28px);line-height:1.2;margin:0;text-wrap:balance}
+.answers{display:flex;flex-direction:column;gap:8px}
+.ans{text-align:left;border:1.5px solid var(--rule);background:var(--tint);color:var(--ink);font:16px var(--body);padding:12px 14px;border-radius:8px;cursor:pointer;display:grid;grid-template-columns:1.8em minmax(0,1fr);gap:8px}
+.ans:hover:not(:disabled){border-color:var(--ink)}
+.ans b{font-family:var(--display)}
+.ans.right{background:var(--ok-bg);border-color:var(--ok)}
+.ans.wrong{background:var(--no-bg);border-color:var(--no)}
+.ans:disabled{cursor:default}
+.explain{border-left:4px solid var(--ok);background:var(--tint);padding:10px 14px;border-radius:0 8px 8px 0;font-size:15px}
+.explain.bad{border-left-color:var(--no)}
+.explain b{display:block;margin-bottom:2px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.btn{border:1px solid var(--rule);background:var(--tint);color:var(--ink);font:600 15px var(--body);padding:9px 16px;border-radius:8px;cursor:pointer}
+.btn.primary{background:var(--red);border-color:var(--red);color:#fff}
+.dots{display:flex;flex-wrap:wrap;gap:4px}
+.dot{width:12px;height:12px;border-radius:50%;background:var(--rule)}
+.dot.r{background:var(--ok)}.dot.w{background:var(--no)}.dot.c{outline:2px solid var(--ink);outline-offset:1px}
+.end{text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
+.big{font-family:var(--display);font-size:64px;font-weight:700;line-height:1}
+.teacher{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.tcard{border:1px solid var(--rule);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:6px}
+.tcard h3{margin:0;font-size:17px}.tcard p,.tcard li{margin:0;font-size:14.5px}
+.tcard ul{margin:0;padding-left:18px}
+button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+@media (max-width:820px){.teacher{grid-template-columns:minmax(0,1fr)}}
+@media print{.topics,.card .answers,.row,.btn{display:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+    <h1>Planet Check</h1>
+    <p class="lede">A GCSE quiz on the atmosphere, water, resources and ecosystems. Most questions follow the GCSE science and geography specifications. The "Real world NI" questions go a step further, into Northern Ireland's own climate and nature issues.</p>
+  </header>
+
+  <div class="topics" id="topics" role="group" aria-label="Choose topics"></div>
+  <section class="card" id="card" aria-live="polite"></section>
+
+  <section class="sec" aria-labelledby="h-t">
+    <h2 id="h-t">For teachers</h2>
+    <div class="teacher">
+      <div class="tcard"><h3>Specification links</h3><ul><li>AQA GCSE Chemistry 4.9 Chemistry of the atmosphere; 4.10 Using resources</li><li>AQA GCSE Biology 4.7 Ecology (cycles, biodiversity, land use, global warming)</li><li>CCEA GCSE Chemistry and Geography: matching content on the atmosphere, water treatment, resource management and ecosystems</li></ul><p>Each question shows the topic it comes from. Check against your board's current specification.</p></div>
+      <div class="tcard"><h3>How to use it</h3><ul><li>Starter or plenary: pick one topic, 5 to 8 questions</li><li>On the board: one question at a time, with a class vote</li><li>Homework: pupils run the full set and note their score</li><li>The "Real world NI" set opens up discussion of Lough Neagh, peatlands and NI's climate targets</li></ul></div>
+      <div class="tcard"><h3>Privacy for pupils</h3><p>No names, logins or scores are collected. Nothing is stored, even in the browser, and nothing is sent anywhere. Closing the page clears everything. See the <a href="/privacy/">privacy page</a>.</p></div>
+    </div>
+  </section>
+
+  <div class="foot">
+    <div>Questions written by Robert J. Park (BSc Chemistry), aligned to the published GCSE specifications as at October 2026. Spotted an error? Email r.j.park@outlook.com.</div>
+  </div>
+</div>
+
+<script>
+(function(){
+const T={atm:{n:"Atmosphere and climate",c:"--t1"},water:{n:"Water",c:"--t2"},res:{n:"Using resources",c:"--t3"},eco:{n:"Ecosystems",c:"--t4"},ni:{n:"Real world NI",c:"--t5"}};
+const Q=[
+ ["atm","AQA Chem 4.9.1","Which gas makes up most of Earth's atmosphere today?",["Oxygen","Nitrogen","Carbon dioxide","Argon"],1,"About four-fifths (roughly 78%) of dry air is nitrogen and about one-fifth is oxygen. Carbon dioxide is a tiny fraction, around 0.04%."],
+ ["atm","AQA Chem 4.9.2","Which of these is NOT a greenhouse gas?",["Water vapour","Methane","Nitrogen","Carbon dioxide"],2,"Water vapour, carbon dioxide and methane absorb infrared radiation and keep the Earth warm. Nitrogen doesn't."],
+ ["atm","AQA Chem 4.9.2","How do greenhouse gases keep the Earth warm?",["They reflect sunlight back into space","They absorb long-wavelength infrared radiation given off by the Earth","They make the Sun's radiation stronger","They block all ultraviolet light"],1,"Short-wavelength radiation from the Sun passes through the atmosphere and warms the Earth. The Earth gives off longer-wavelength infrared radiation, and greenhouse gases absorb some of it, which warms the atmosphere."],
+ ["atm","AQA Chem 4.9.2","Which human activity adds the most methane to the atmosphere?",["Burning wood in stoves","Cattle farming and landfill sites","Wind turbines","Planting trees"],1,"Cattle release methane as they digest food, and rotting waste in landfill releases methane too. In Northern Ireland, agriculture is the biggest source of methane."],
+ ["atm","AQA Chem 4.9.2","What is a carbon footprint?",["The amount of coal a country burns in a year","The total carbon dioxide and other greenhouse gases emitted over the full life cycle of a product, service or event","The area of forest needed to absorb a city's pollution","The carbon dioxide breathed out by one person in a day"],1,"A carbon footprint counts the greenhouse gases from every stage: making it, moving it, using it and throwing it away."],
+ ["atm","AQA Chem 4.9.2","Which is a reason it can be hard to cut carbon footprints?",["Carbon dioxide can't be measured","Some people and countries don't want to pay the cost, or don't agree to act together","There are no low-carbon alternatives at all","Greenhouse gases only come from volcanoes"],1,"The specification names economic reasons, lack of public information, and the difficulty of getting countries to agree as barriers to cutting emissions."],
+ ["atm","AQA Chem 4.9.3","Incomplete combustion of a fuel produces a toxic, colourless, odourless gas. What is it?",["Carbon dioxide","Carbon monoxide","Sulfur dioxide","Nitrogen"],1,"Carbon monoxide forms when there isn't enough oxygen for complete combustion. It stops blood carrying oxygen. That's why boilers need servicing and CO alarms."],
+ ["atm","AQA Chem 4.9.3","Sulfur dioxide and oxides of nitrogen from burning fuels cause…",["Acid rain and breathing problems","Global dimming only","The ozone hole","Hard water"],0,"Sulfur dioxide and oxides of nitrogen dissolve in rain to make it acidic, and they irritate the lungs."],
+ ["atm","AQA Biology 4.7.3.5","Which is a likely effect of global warming?",["Sea levels falling","More frequent extreme weather and rising sea levels","Fewer species changing where they live","Colder winters everywhere"],1,"Warming melts ice and expands seawater, so sea levels rise. It also brings more extreme weather and changes where species can live."],
+ ["water","AQA Chem 4.10.1.1","Potable (drinking) water is…",["Pure water with nothing dissolved in it","Water that is safe to drink, with low levels of dissolved salts and microbes","Rainwater straight from the sky","Seawater with the salt removed"],1,"Potable water isn't chemically pure. It contains small, safe amounts of dissolved substances. 'Pure' in chemistry means a single substance."],
+ ["water","AQA Chem 4.10.1.1","In the UK, fresh water is made safe to drink by…",["Boiling it at the reservoir","Filtering it, then sterilising it with chlorine, ozone or ultraviolet light","Adding salt","Freezing it"],1,"Filter beds remove solids, and sterilising kills microbes. NI Water treats water this way before it reaches your tap."],
+ ["water","AQA Chem 4.10.1.1","Why is desalination only used where fresh water is scarce?",["It makes the water taste of salt","Distillation and reverse osmosis need large amounts of energy","It can only be done in winter","It removes oxygen from the water"],1,"Removing salt from seawater by distillation or reverse osmosis uses a lot of energy, so it's expensive and has a high carbon footprint."],
+ ["water","AQA Chem 4.10.1.2","At a sewage works, what happens to the sludge?",["It's poured into rivers","It's broken down by anaerobic digestion, which can produce biogas","It's sent back to homes","It's frozen and stored"],1,"Screening removes grit and large objects, and sedimentation separates sludge from effluent. Sludge is digested anaerobically, which makes biogas; the effluent is treated with aerobic bacteria."],
+ ["res","AQA Chem 4.10.1.3","In phytomining, how is a metal such as copper obtained?",["Bacteria dissolve it out of the rock","Plants absorb metal compounds, they're burned, and the metal is extracted from the ash","It's dug up as pure metal","It's collected from rainwater"],1,"Phytomining uses plants to collect metal from low-grade ores or contaminated land. Burning the plants gives ash rich in metal compounds."],
+ ["res","AQA Chem 4.10.1.3","What does bioleaching use?",["Bacteria that produce leachate solutions containing metal compounds","Heat from a blast furnace","Magnets","Wind power"],0,"Bioleaching uses bacteria to dissolve metals out of low-grade ores. Like phytomining, it reduces the need to dig up and process large amounts of rock."],
+ ["res","AQA Chem 4.10.2.1","Which list gives the stages of a life cycle assessment (LCA)?",["Design, advertise, sell, profit","Extracting raw materials, manufacturing and packaging, use, and disposal at the end of its life","Mining, burning, burying","Planting, growing, harvesting"],1,"An LCA looks at the environmental impact at every stage, including transport and the energy and water used."],
+ ["res","AQA Chem 4.10.2.1","Why can an LCA be misleading?",["LCAs never use numbers","Some impacts are hard to measure, so a selective LCA can be used to back up a claim","They are only done by governments","They ignore manufacturing"],1,"Giving values to pollution effects involves judgement. Leaving stages out can make a product look greener than it is. This is a form of 'greenwashing'."],
+ ["res","AQA Chem 4.10.2.2","Why is recycling metals such as aluminium worthwhile?",["It uses much less energy than extracting the metal from its ore","Recycled metal is always stronger","It makes mining unnecessary everywhere","It turns the metal into a different element"],0,"Recycling saves energy, saves limited raw materials, and reduces mining and waste in landfill."],
+ ["eco","AQA Biology 4.7.2.2","Which process removes carbon dioxide from the atmosphere?",["Respiration","Combustion","Photosynthesis","Decay"],2,"Plants and algae take in carbon dioxide during photosynthesis. Respiration, combustion and decay all release it back."],
+ ["eco","AQA Biology 4.7.3.4","Cutting down large areas of forest leads to…",["More carbon dioxide absorbed","Less carbon dioxide absorbed, more released if the wood is burned, and less biodiversity","More rainfall everywhere","No change at all"],1,"Fewer trees means less photosynthesis. Burning or rotting wood releases carbon dioxide, and habitats are lost."],
+ ["eco","AQA Biology 4.7.3.3","Why does destroying peat bogs add to climate change?",["Peat absorbs oxygen","Peat stores carbon, which is released as carbon dioxide when it's drained, dug or burned","Peat bogs make methane only when frozen","Peat reflects sunlight"],1,"Peat builds up over thousands of years and locks away carbon. Using peat-free compost helps protect it. NI has large areas of bog."],
+ ["eco","Biology / Geography","Fertiliser washes into a lake. Algae grow fast and cover the surface. What happens next?",["Fish thrive on the extra food","Plants below die without light, bacteria decomposing them use up the oxygen, and fish die","The water becomes cleaner","The lake freezes"],1,"This chain is called eutrophication. Too many nutrients (nitrates and phosphates) lead to algal blooms and low oxygen."],
+ ["eco","AQA Biology 4.7.3.6","Which of these helps protect biodiversity?",["Removing all hedgerows","Planting hedgerows and field margins on farms","Building over every brownfield site","Using more pesticides"],1,"Hedgerows and field margins give food and shelter to insects, birds and mammals and link habitats together."],
+ ["ni","Real world NI","Lough Neagh has suffered huge blooms of blue-green algae (cyanobacteria). What is a main cause?",["Too little rain","Excess nutrients, especially phosphorus, from farms, septic tanks and waste water, plus warmer water","Too many fish","Wind turbines"],1,"Lough Neagh is the largest freshwater lake in the UK and Ireland. Nutrients from its catchment, plus warmer summers, feed the blooms, which can be toxic to animals and people."],
+ ["ni","Real world NI","Under the Climate Change Act (Northern Ireland) 2022, when must NI reach net zero?",["2030","2040","2050","2100"],2,"NI must cut its net emissions by 48% by 2030 and 77% by 2040, and reach net zero by 2050."],
+ ["ni","Real world NI","NI's climate law sets a target of 80% of electricity from renewables by 2030. Which source supplies most of NI's renewable electricity?",["Nuclear","Wind","Coal","Tidal"],1,"Onshore wind is NI's largest renewable source. In the year to September 2025, about 44% of NI's electricity came from renewables."],
+ ["ni","Real world NI","Which precious metal is found on the circuit boards of old phones and laptops?",["Gold","Lead","Sodium","Calcium"],0,"Circuit boards contain gold, silver and palladium. That's why old electricals should go to proper recycling, never in the bin."],
+ ["ni","Real world NI","In NI, hedges must not be cut between 1 March and 31 August (except for road safety). Why?",["Hedges grow too slowly in summer","It's the main bird nesting season","Cutting is too noisy in summer","Leaves are too wet"],1,"Most birds nest in hedgerows in spring and summer, so cutting is restricted to protect them."]
+];
+const order=Object.keys(T);let active=new Set(order),list=[],i=0,res=[];
+const $=id=>document.getElementById(id);
+function shuffle(a){for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]];}return a;}
+function topics(){
+  $("topics").innerHTML=`<button class="chip" type="button" data-t="all" aria-pressed="${active.size===order.length}">All topics</button>`+order.map(k=>`<button class="chip" type="button" data-t="${k}" aria-pressed="${active.size!==order.length&&active.has(k)}">${T[k].n} · ${Q.filter(q=>q[0]===k).length}</button>`).join("");
+  $("topics").querySelectorAll(".chip").forEach(b=>b.onclick=()=>{const t=b.dataset.t;if(t==="all")active=new Set(order);else{if(active.size===order.length)active=new Set([t]);else if(active.has(t)&&active.size>1)active.delete(t);else active.add(t);}topics();start();});
+}
+function start(){list=shuffle(Q.filter(q=>active.has(q[0])));i=0;res=[];show();}
+function dots(){return `<div class="dots" aria-label="Progress">${list.map((_,k)=>`<span class="dot ${res[k]===true?"r":res[k]===false?"w":""} ${k===i?"c":""}"></span>`).join("")}</div>`;}
+function show(){
+  if(i>=list.length)return end();
+  const [t,spec,q,opts,ans,ex]=list[i];
+  $("card").innerHTML=`<div class="meta"><span class="tag" style="background:var(${T[t].c})">${T[t].n}</span><span>${spec} · Question ${i+1} of ${list.length}</span></div>
+   <p class="qtext">${q}</p><div class="answers">${opts.map((o,k)=>`<button class="ans" type="button" data-k="${k}"><b>${"ABCD"[k]}</b><span>${o}</span></button>`).join("")}</div>
+   <div id="fb"></div><div class="row">${dots()}<button class="btn primary" type="button" id="next" hidden>Next question →</button></div>`;
+  $("card").querySelectorAll(".ans").forEach(b=>b.onclick=()=>{
+    const k=+b.dataset.k,ok=k===ans;res[i]=ok;
+    $("card").querySelectorAll(".ans").forEach(x=>{x.disabled=true;if(+x.dataset.k===ans)x.classList.add("right");});
+    if(!ok)b.classList.add("wrong");
+    $("fb").innerHTML=`<div class="explain ${ok?"":"bad"}"><b>${ok?"Correct.":"Not quite. The answer is "+"ABCD"[ans]+"."}</b>${ex}</div>`;
+    const n=$("next");n.hidden=false;n.textContent=i===list.length-1?"See your score →":"Next question →";n.focus();
+    $("card").querySelector(".row").firstElementChild.outerHTML=dots();
+  });
+  const n=$("next");n.onclick=()=>{i++;show();};
+}
+function end(){
+  const s=res.filter(Boolean).length,n=list.length,p=Math.round(s/n*100);
+  const msg=p>=90?"Outstanding. You could teach this.":p>=70?"Strong work. Have a look at the ones you missed.":p>=50?"Good start. Go over the explanations and try again.":"Keep going. Every explanation is something new learned.";
+  $("card").innerHTML=`<div class="end"><div class="big">${s}/${n}</div><p style="margin:0;font-size:18px">${msg}</p>${dots()}<div class="row" style="justify-content:center"><button class="btn primary" type="button" id="again">Try again (new order)</button><button class="btn" type="button" id="wrongs" ${s===n?"hidden":""}>Retry the ones I missed</button></div></div>`;
+  $("again").onclick=start;
+  const w=$("wrongs");if(w)w.onclick=()=>{list=shuffle(list.filter((_,k)=>res[k]===false));i=0;res=[];show();};
+}
+topics();start();
+})();
+</script>
+</body>
+</html>

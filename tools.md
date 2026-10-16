@@ -19,6 +19,18 @@ Scope 1, 2 and 3 on one diagram, with all fifteen Scope 3 categories and their t
 
 [Open the Scopes Map →]({{ '/tools/scopes-map.html' | relative_url }})
 
+## The Land Repair Helix
+
+A design tool for healthier land. Each base pair links a problem (compacted soil, fertiliser overuse, flooding, blue-green algae, contamination, forever chemicals, oil spills, mown-out verges, flailed hedges) to the low-cost or nature-based fix that answers it. Choose your type of site and it builds a starter plan.
+
+[Open the Land Repair Helix →]({{ '/tools/land-repair-helix.html' | relative_url }})
+
+## Incoterms Chooser
+
+Four questions to find the Incoterms® 2020 rule that matches how you split transport, risk, insurance and customs with your buyer or seller. Includes a who-does-what matrix for all 11 rules, plus notes on GB–NI movements, EU trade and CBAM.
+
+[Open the Incoterms Chooser →]({{ '/tools/incoterms.html' | relative_url }})
+
 ## The Joined-Up Wheel
 
 Eight environmental issues that most firms handle separately: carbon, energy costs, land, waste and packaging, forever chemicals (PFAS), water, environmental health, and policy and public affairs. All of them feed the same business goals. Pick an issue to see what triggers it, the rules today and the routes in. Pick a goal to see which issues it depends on.
@@ -37,6 +49,12 @@ Twenty-four terms from greenhouse gas reporting, carbon pricing and Northern Ire
 
 [Play the Carbon Crossword →]({{ '/puzzles/carbon-crossword.html' | relative_url }})
 
+
+## Planet Check: GCSE quiz
+
+Twenty-eight questions on the atmosphere, water, resources and ecosystems, linked to GCSE science and geography topics, plus a Real world NI set on Lough Neagh, peatlands and NI's climate targets. Nothing is collected or stored, so it's safe for classroom use.
+
+[Take the Planet Check quiz →]({{ '/puzzles/planet-check.html' | relative_url }})
 
 ## Guides
 
