@@ -25,6 +25,18 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.3.0 — 16 October 2026: Carbon Jigsaw
+
+**Added**
+- `tools/carbon-jigsaw.html`: The Carbon Jigsaw, a rough carbon checker with 12 pieces: boundary, electricity, gas, oil and LPG, vehicles, refrigerants, solar and wind, water, waste, business travel, commuting, and goods and freight (locked: needs a full inventory). It gives Scope 1, location-based Scope 2 and partial Scope 3, intensity per employee and per £1m turnover, and flags for ESOS, UK CBAM and customer requests. Everything runs in the browser and nothing is sent or stored on a server. It opens on a worked example that matches the sample bills.
+- `tools/sample-bills/`: six SAMPLE bills (electricity, gas, heating oil, water and sewerage, waste, rates) from invented NI-style suppliers, with the figures the checker needs highlighted.
+- `assets/tools-mark.svg`: Tools logo, a jigsaw piece split ink/red to match the brand mark.
+
+**Changed**
+- `tools.md`: added the logo and the Carbon Jigsaw as the first tool.
+
+**Factors:** UK Government GHG Conversion Factors for Company Reporting 2026 (DESNZ, published 11 June 2026). Location-based UK grid electricity 0.13096 kg CO2e/kWh and T&D 0.01299; natural gas 0.18231/kWh (gross CV); burning oil 2.54016/L. Full list in the script header. **Update every June** when DESNZ publishes the new set.
+
 ### v0.2.0 — 16 October 2026: interactive tools
 
 **Added**
@@ -53,6 +65,8 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - [ ] Point the custom domain at GitHub Pages, set `url:` in `_config.yml`, and tick Enforce HTTPS
 - [ ] Add a "Free tools" band to the home page linking to `/tools/`
 - [ ] Wheel: decide which routes in are your own services and which go to partners, then add a "How I help" line to each issue
+- [ ] Carbon Jigsaw: replace the 2026 factors when DESNZ publishes the 2027 set (June 2027)
+- [ ] Carbon Jigsaw phase 2: bill upload with automatic reading (needs a back end; not possible on GitHub Pages alone)
 - [ ] Puzzles: Scope Sort, Pillar Clash, acronym match-up
 - [ ] Blog post introducing the wheel, embedding it with the snippet in `_snippets/embed.html`
 - [ ] Watch: EU Parliament vote on car CO2 standards, 23 November 2026; update the tracker
