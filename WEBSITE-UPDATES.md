@@ -25,6 +25,29 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.7.0 — 17 October 2026: self-hosted fonts, three puzzles, tool logos, rotating headlines, two posts
+
+**Added**
+- `assets/fonts/`: self-hosted Fraunces, Source Sans 3, Source Serif 4 and IBM Plex Mono (WOFF, Latin subset, SIL Open Font Licence files included), loaded from `assets/fonts/fonts.css`. Google Fonts links removed from the layout and every standalone page, so no page contacts a third party.
+- `puzzles/scope-sort.html`: Scope Sort. 22 activities to sort into Scope 1, 2, 3 or "not counted", each with the reason.
+- `puzzles/pillar-clash.html`: Pillar Clash. Ten ESG dilemmas with environmental, social and governance gauges.
+- `puzzles/acronym-match.html`: Acronym Match. 33 acronyms, Core and Everything levels, six pairs per round.
+- `assets/icons/`: 13 small logos, one per tool, puzzle and guide, in the same split ink-and-red style as the jigsaw mark.
+- `assets/photos/`: 14 more licensed stock photos (bins collection, wind turbines, plant room, EV charging, shipping containers, net zero, forest, reuse jars, boardroom, CO2 compass, energy costs, farm panorama, packaging line, Giant's Causeway).
+- `puzzles/planet-check-worksheet.pdf`: printable Planet Check worksheet, answers on separate pages; a Print button in the quiz.
+- `tools/site-plans/`: six printable Land Repair Helix site plans (farm, verge, brownfield, factory, park, river); a Print site plan button in the tool.
+- `_posts/2026-10-17-improving-the-public-realm.md` and `_posts/2026-10-17-offsets-are-a-scam.md`.
+
+**Changed**
+- `index.html`: four hero headlines (manufacturers; public realm guardianship; suppliers to manufacturers; public sector and trade bodies), one picked at random on each visit. Without JavaScript the manufacturers headline shows. The tools band is now a grid of logo tiles.
+- `tools.md`: logo beside every entry; three new puzzles; links to the printables.
+- `tools/land-repair-helix.html`: five new pairs (now 22): invasive plants, litter and fly-tipping, misconnected drains, light pollution, low soil carbon.
+- Logos added to the headers of the other tools and guides.
+- Photos added to `services.md`, `public-sector.md` and `about.md`.
+- `privacy.md`: fonts are now self-hosted, so the only outside party is GitHub's hosting.
+
+**Not used:** the school bus photo. A blurred copy is in Robert's Assets/web folder, but the image looks like a broadcast screen grab, so it stays off the site.
+
 ### v0.6.0 — 16 October 2026: privacy policy and three new tools
 
 **Added**
@@ -101,22 +124,20 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 ## Backlog
 
 ### Waiting on Robert
-- [ ] Merge pull request #4 (v0.6.0: privacy policy and three new tools)
+- [ ] Merge pull request #5 (v0.7.0)
 - [ ] Register the domain (e.g. robertjpark.co.uk), add it under Settings → Pages, set `url:` in `_config.yml`, tick Enforce HTTPS
 - [ ] Wheel: decide which routes in are your own services and which go to partners; then add a "How I help" line to each issue
-- [ ] Carbon Jigsaw: confirm the flight and commuting assumptions (1,040 / 2,000 / 11,000 km return; 46 working weeks)
 - [ ] Ask NIEA to confirm its position on POPs in WEEE plastics
 - [ ] Planet Check: ask a GCSE science or geography teacher to sense-check the questions against CCEA specifications
-- [ ] Mark the remaining 62 stock images "Keep Downloaded" in iCloud so they can be reviewed
-- [ ] Blur or crop the school bus number plate, or drop that photo
+- [ ] Read the two new posts and the NED one-pager for voice and accuracy, especially the Public Realm Bill figures
+- [x] Carbon Jigsaw assumptions confirmed (17 Oct 2026)
+- [x] Stock images kept downloaded and reviewed (17 Oct 2026)
 
 ### Ready to build next
-- [ ] Self-host the fonts, so no request goes to Google; then update the privacy page
-- [ ] Puzzles: Scope Sort, Pillar Clash, acronym match-up
-- [ ] Blog posts launching the Carbon Jigsaw, Scopes Map, Incoterms Chooser, Land Repair Helix and the guides
-- [ ] Photos on the services and public sector pages
-- [ ] Planet Check: printable worksheet version with answers on a separate page
-- [ ] Land Repair Helix: printable site plan, and more pairs (invasive species, soil carbon and biochar, SuDS detail)
+- [ ] Blog posts launching the Carbon Jigsaw, Scopes Map, Incoterms Chooser, Land Repair Helix, puzzles and guides
+- [ ] Printable versions of Scope Sort and Acronym Match for workshops
+- [ ] Social share images (Open Graph) for posts and tools
+- [ ] WOFF2 fonts (smaller files) when a converter is available
 
 ### Later
 - [ ] Carbon Jigsaw phase 2: bill upload with automatic reading (needs a back end; not possible on GitHub Pages alone)

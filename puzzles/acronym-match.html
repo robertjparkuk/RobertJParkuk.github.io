@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Acronym Match: match carbon, waste and environmental acronyms to their meanings, with a UK and Northern Ireland lean. By Robert J. Park.">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<title>Acronym Match</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+[hidden]{display:none!important}
+
+/* Layout: two columns of tiles, acronyms left and meanings right; tap one of each to make a pair; six pairs per round. */
+
+/* Layout: the GHG Protocol value chain drawn left to right (upstream → you → downstream), then the grey zones where scopes blur, then the gases that count. */
+:root{
+  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2;
+  --red:#B3121B; --s1:#B3121B; --s1-bg:#FBEDED; --s2:#B5650F; --s2-bg:#FCF1E3; --s3:#2D6CA3; --s3-bg:#E9F1F9; --out:#4F7F2A; --out-bg:#EEF5E6;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.brand b{color:var(--red)}
+h1{font-family:var(--display);font-size:clamp(34px,5vw,56px);line-height:1.03;margin:8px 0 0;text-wrap:balance}
+h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);line-height:1.1;margin:0;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:68ch;font-size:18px}
+.sec{display:flex;flex-direction:column;gap:16px;border-top:3px solid var(--ink);padding-top:18px}
+.sec>p{margin:0;max-width:72ch}
+
+:root{--ok:#1F6B45;--ok-bg:#E6F2EB;--no:#B3121B;--no-bg:#FBEDED;--sel:#2D6CA3;--sel-bg:#E9F1F9}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ok:#4CC38A;--ok-bg:#16301F;--no:#F0787C;--no-bg:#3A1C1E;--sel:#7DB3E3;--sel-bg:#1B2A38}}
+:root[data-theme="dark"]{--ok:#4CC38A;--ok-bg:#16301F;--no:#F0787C;--no-bg:#3A1C1E;--sel:#7DB3E3;--sel-bg:#1B2A38}
+.head{display:flex;gap:16px;align-items:center}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;border-top:3px solid var(--ink);border-bottom:1px solid var(--rule);padding-block:10px}
+.seg{display:inline-flex;border:1px solid var(--ink);border-radius:999px;overflow:hidden}
+.seg button{border:0;background:transparent;color:var(--ink);font:600 14px var(--body);padding:6px 14px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.stat{font-variant-numeric:tabular-nums;color:var(--muted)}
+.stat b{color:var(--ink)}
+.board{display:grid;grid-template-columns:minmax(0,.6fr) minmax(0,1.4fr);gap:14px}
+.colm{display:flex;flex-direction:column;gap:8px}
+.tile{border:2px solid var(--rule);background:var(--tint);color:var(--ink);border-radius:10px;padding:12px 14px;text-align:left;font:16px var(--body);cursor:pointer;min-height:54px}
+.tile.ac{font-family:var(--display);font-weight:700;font-size:22px;text-align:center}
+.tile:hover:not(:disabled){border-color:var(--ink)}
+.tile.sel{border-color:var(--sel);background:var(--sel-bg)}
+.tile.ok{border-color:var(--ok);background:var(--ok-bg);cursor:default}
+.tile.no{border-color:var(--no);background:var(--no-bg)}
+.tile.ok small{display:block;font-size:13px;color:var(--muted);margin-top:4px;font-family:var(--body);font-weight:400}
+.end{border:2px solid var(--ink);border-radius:12px;padding:22px;text-align:center;display:flex;flex-direction:column;gap:10px;align-items:center}
+.big{font-family:var(--display);font-size:56px;font-weight:700;line-height:1}
+.btn{border:1px solid var(--rule);background:var(--tint);color:var(--ink);font:600 15px var(--body);padding:9px 16px;border-radius:8px;cursor:pointer}
+.btn.primary{background:var(--red);border-color:var(--red);color:#fff}
+button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+@media (prefers-reduced-motion:no-preference){.tile.no{animation:sh .3s}}@keyframes sh{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+    <div class="head"><svg width="60" height="60" style="flex:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Acronym Match logo"><defs><mask id="m-acronym-match" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120"><rect width="120" height="120" fill="#000"/><path fill="#fff" d="M10 20 Q10 10 20 10 H64 Q74 10 74 20 V50 Q74 60 64 60 H32 L18 74 V60 Q10 60 10 50 Z"/><path fill="#fff" d="M110 58 Q110 48 100 48 H56 Q46 48 46 58 V88 Q46 98 56 98 H88 L102 112 V98 Q110 98 110 88 Z"/><path stroke="#000" stroke-width="6" fill="none" stroke-linecap="round" d="M24 30 H60 M24 42 H48 M60 68 H96 M60 80 H84"/></mask></defs><g mask="url(#m-acronym-match)"><rect width="60" height="120" fill="#1B1817"/><rect x="60" width="60" height="120" fill="#B3121B"/></g></svg><h1>Acronym Match</h1></div>
+    <p class="lede">Carbon, waste and environmental rules come wrapped in acronyms. Match each one to its meaning: six per round, with a UK and Northern Ireland lean. Each correct match shows why it matters.</p>
+  </header>
+  <div class="bar"><div class="seg" role="group" aria-label="Level"><button type="button" data-l="core" aria-pressed="true">Core</button><button type="button" data-l="all" aria-pressed="false">Everything</button></div><span class="stat" id="stat"></span><button class="btn" type="button" id="new">New round</button></div>
+  <section id="game" aria-live="polite"></section>
+  <div class="foot"><div>Definitions as at October 2026. Nothing is stored or sent anywhere.</div></div>
+</div>
+<script>
+(function(){
+// [acronym, meaning, why it matters, core?]
+const A=[
+ ["GHG","Greenhouse gas","The seven gases an inventory counts: CO₂, methane, nitrous oxide and four groups of fluorinated gases.",1],
+ ["CO₂e","Carbon dioxide equivalent","Lets different gases be added up, using each one's global warming potential.",1],
+ ["CBAM","Carbon Border Adjustment Mechanism","A carbon charge on imported steel, aluminium, cement, fertiliser and hydrogen. EU now, UK from 1 January 2027.",1],
+ ["CSRD","Corporate Sustainability Reporting Directive","The EU's sustainability reporting law, now cut back to the largest companies.",1],
+ ["SECR","Streamlined Energy and Carbon Reporting","Large UK companies report energy use and emissions in their annual report.",1],
+ ["ESOS","Energy Savings Opportunity Scheme","Four-yearly energy audits for large UK undertakings. Phase 4 qualification date: 31 December 2026.",1],
+ ["ETS","Emissions Trading Scheme","A cap-and-trade carbon market. The UK and EU each run one, and talks on linking them are under way.",1],
+ ["SBTi","Science Based Targets initiative","Checks that company climate targets line up with the science. Offsets don't count towards near-term targets.",1],
+ ["LCA","Life cycle assessment","Measures impact from raw materials to disposal. A GCSE topic as well as a business tool.",1],
+ ["EPR","Extended producer responsibility","Producers pay for the end-of-life of their packaging or products.",1],
+ ["WEEE","Waste electrical and electronic equipment","Discarded electricals, which must go to permitted treatment, never in the skip.",1],
+ ["PFAS","Per- and polyfluoroalkyl substances","'Forever chemicals' that don't break down: in foams, coatings and textiles.",1],
+ ["DAERA","Department of Agriculture, Environment and Rural Affairs","The NI department leading on climate, waste and the environment.",1],
+ ["NIEA","Northern Ireland Environment Agency","NI's environmental regulator. Pollution hotline: 0800 80 70 60.",1],
+ ["ESG","Environmental, social and governance","A way of judging a business beyond profit. The three pillars often pull against each other.",1],
+ ["DRS","Deposit return scheme","A deposit on drinks containers, refunded on return. In NI from October 2027.",1],
+ ["ESRS","European Sustainability Reporting Standards","The detailed standards behind CSRD reporting.",0],
+ ["VSME","Voluntary SME standard","The EU's light reporting standard for smaller firms, and the cap on what big customers can ask.",0],
+ ["ISSB","International Sustainability Standards Board","Sets IFRS S1 and S2, the basis for UK SRS.",0],
+ ["TCFD","Task Force on Climate-related Financial Disclosures","The climate risk disclosure framework that the ISSB standards grew out of.",0],
+ ["RoHS","Restriction of Hazardous Substances","Limits lead, mercury, cadmium and other substances in new electricals.",0],
+ ["REACH","Registration, Evaluation, Authorisation and Restriction of Chemicals","The chemicals law. EU REACH applies to goods in NI; UK REACH in GB.",0],
+ ["POPs","Persistent organic pollutants","Long-lasting toxic chemicals. Plastics containing them must be destroyed, not recycled.",0],
+ ["GWP","Global warming potential","How much a gas warms the climate compared with CO₂ over 100 years.",0],
+ ["DESNZ","Department for Energy Security and Net Zero","Publishes the UK's annual GHG conversion factors.",0],
+ ["CCL","Climate Change Levy","A tax on business energy use, shown on your bills.",0],
+ ["PPN","Procurement Policy Note","In NI, PPN 01/21 sets at least 10% social value weighting in larger tenders.",0],
+ ["LCRM","Land Contamination: Risk Management","The technical framework for assessing contaminated land, used in NI through planning.",0],
+ ["AATF","Approved Authorised Treatment Facility","A WEEE treatment site that can issue evidence to compliance schemes.",0],
+ ["SuDS","Sustainable drainage systems","Swales, ponds and permeable surfaces that slow and clean runoff.",0],
+ ["NAP","Nutrients Action Programme","NI's rules on when and where slurry and fertiliser can be spread.",0],
+ ["DDP","Delivered Duty Paid","The Incoterms rule where the seller clears import and pays duties, and can pick up CBAM duties.",0]
+];
+let lvl="core",round=[],sel=null,matched=0,tries=0,total=0,correct=0;
+const $=id=>document.getElementById(id);
+function sh(a){for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]];}return a;}
+function stat(){$("stat").innerHTML=`Round score <b>${matched}/6</b> · Attempts <b>${tries}</b> · Overall <b>${correct}/${total}</b>`;}
+function deal(){
+  const pool=A.filter(a=>lvl==="all"||a[3]);round=sh(pool.slice()).slice(0,6);sel=null;matched=0;tries=0;
+  const L=sh(round.map((r,k)=>k)),R=sh(round.map((r,k)=>k));
+  $("game").innerHTML=`<div class="board"><div class="colm">${L.map(k=>`<button class="tile ac" type="button" data-s="a" data-k="${k}">${round[k][0]}</button>`).join("")}</div><div class="colm">${R.map(k=>`<button class="tile" type="button" data-s="m" data-k="${k}">${round[k][1]}</button>`).join("")}</div></div>`;
+  $("game").querySelectorAll(".tile").forEach(t=>t.onclick=()=>tap(t));stat();
+}
+function tap(t){
+  if(t.classList.contains("ok"))return;
+  if(!sel||sel.dataset.s===t.dataset.s){if(sel)sel.classList.remove("sel");sel=t;t.classList.add("sel");return;}
+  tries++;total++;const a=sel,b=t;a.classList.remove("sel");sel=null;
+  if(a.dataset.k===b.dataset.k){correct++;matched++;[a,b].forEach(x=>{x.classList.add("ok");x.disabled=true;});const m=a.dataset.s==="m"?a:b;m.insertAdjacentHTML("beforeend",`<small>${round[+m.dataset.k][2]}</small>`);
+    if(matched===6)setTimeout(()=>{$("game").insertAdjacentHTML("beforeend",`<div class="end" style="margin-top:16px"><div class="big">6/6</div><p style="margin:0">${tries===6?"Perfect round: no wrong guesses.":"Round complete in "+tries+" attempts."}</p><button class="btn primary" type="button" id="again">Next round</button></div>`);$("again").onclick=deal;},300);}
+  else{[a,b].forEach(x=>{x.classList.add("no");setTimeout(()=>x.classList.remove("no"),600);});}
+  stat();
+}
+document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{lvl=b.dataset.l;document.querySelectorAll(".seg button").forEach(x=>x.setAttribute("aria-pressed",x===b));deal();});
+$("new").onclick=deal;deal();
+})();
+</script>
+</body>
+</html>

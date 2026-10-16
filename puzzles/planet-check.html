@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Planet Check: a free GCSE quiz on the atmosphere, water, resources and ecosystems, linked to AQA and CCEA topics, with Northern Ireland questions. By Robert J. Park.">
+<meta name="description" content="Planet Check: a free GCSE quiz on the atmosphere, water, resources and ecosystems, linked to AQA and CCEA topics, with a printable worksheet. By Robert J. Park.">
 <link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
 <title>Planet Check GCSE Quiz</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -74,25 +74,29 @@ h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);line-height:1.1;m
 .tcard ul{margin:0;padding-left:18px}
 button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
 @media (max-width:820px){.teacher{grid-template-columns:minmax(0,1fr)}}
-@media print{.topics,.card .answers,.row,.btn{display:none!important}}
+.ws{display:none}
+@media print{body{background:#fff;color:#000;padding:0}.topics,.card,.btn,.sec,.lede,.foot{display:none!important}.ws{display:block}.ws h2{font-family:var(--display);font-size:20pt;margin:0 0 4pt}.ws .meta2{font-size:10pt;margin:0 0 10pt}.ws ol{padding-left:16pt;margin:0}.ws li{break-inside:avoid;margin:0 0 9pt;font-size:11pt}.ws li .spec{font-size:8pt;color:#555}.ws .ch{display:grid;grid-template-columns:1fr 1fr;gap:2pt 14pt;margin-top:3pt;font-size:10pt}.ws .key{break-before:page}.ws .key li{font-size:9.5pt;margin:0 0 5pt}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header style="display:flex;flex-direction:column;gap:10px">
     <a class="brand" href="/" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
-    <h1>Planet Check</h1>
+    <div style="display:flex;gap:16px;align-items:center"><svg width="60" height="60" style="flex:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Planet Check logo"><defs><mask id="m-planet-check" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120"><rect width="120" height="120" fill="#000"/><circle cx="56" cy="60" r="44" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="56" cy="60" rx="18" ry="44" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M14 60 H98"/><circle cx="92" cy="92" r="22" fill="#fff"/><path stroke="#000" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round" d="M81 92 l8 8 l14 -16"/></mask></defs><g mask="url(#m-planet-check)"><rect width="60" height="120" fill="#1B1817"/><rect x="60" width="60" height="120" fill="#B3121B"/></g></svg><h1 style="margin:0">Planet Check</h1></div>
     <p class="lede">A GCSE quiz on the atmosphere, water, resources and ecosystems. Most questions follow the GCSE science and geography specifications. The "Real world NI" questions go a step further, into Northern Ireland's own climate and nature issues.</p>
   </header>
 
   <div class="topics" id="topics" role="group" aria-label="Choose topics"></div>
+  <div><button class="btn" type="button" id="printWs" hidden>Print worksheet (answers on the last page)</button></div>
   <section class="card" id="card" aria-live="polite"></section>
+
+  <section id="ws" class="ws" aria-hidden="true"></section>
 
   <section class="sec" aria-labelledby="h-t">
     <h2 id="h-t">For teachers</h2>
     <div class="teacher">
       <div class="tcard"><h3>Specification links</h3><ul><li>AQA GCSE Chemistry 4.9 Chemistry of the atmosphere; 4.10 Using resources</li><li>AQA GCSE Biology 4.7 Ecology (cycles, biodiversity, land use, global warming)</li><li>CCEA GCSE Chemistry and Geography: matching content on the atmosphere, water treatment, resource management and ecosystems</li></ul><p>Each question shows the topic it comes from. Check against your board's current specification.</p></div>
-      <div class="tcard"><h3>How to use it</h3><ul><li>Starter or plenary: pick one topic, 5 to 8 questions</li><li>On the board: one question at a time, with a class vote</li><li>Homework: pupils run the full set and note their score</li><li>The "Real world NI" set opens up discussion of Lough Neagh, peatlands and NI's climate targets</li></ul></div>
+      <div class="tcard"><h3>How to use it</h3><ul><li>Starter or plenary: pick one topic, 5 to 8 questions</li><li>On the board: one question at a time, with a class vote</li><li>Homework: pupils run the full set and note their score</li><li>The "Real world NI" set opens up discussion of Lough Neagh, peatlands and NI's climate targets</li><li><a href="planet-check-worksheet.pdf">Download the full printable worksheet (PDF)</a>, with answers on the last pages</li></ul></div>
       <div class="tcard"><h3>Privacy for pupils</h3><p>No names, logins or scores are collected. Nothing is stored, even in the browser, and nothing is sent anywhere. Closing the page clears everything. See the <a href="/privacy/">privacy page</a>.</p></div>
     </div>
   </section>
@@ -167,7 +171,12 @@ function end(){
   $("again").onclick=start;
   const w=$("wrongs");if(w)w.onclick=()=>{list=shuffle(list.filter((_,k)=>res[k]===false));i=0;res=[];show();};
 }
-topics();start();
+function worksheet(){const qs=Q.filter(q=>active.has(q[0]));
+  $("ws").innerHTML=`<h2>Planet Check: GCSE worksheet</h2><p class="meta2">Name: ______________________ &nbsp; Class: ________ &nbsp; Date: __________ &nbsp; Score: ____ / ${qs.length}</p><p class="meta2">Circle the best answer for each question.</p><ol>${qs.map(q=>`<li>${q[2]} <span class="spec">[${q[1]}]</span><div class="ch">${q[3].map((o,k)=>`<span>${"ABCD"[k]}. ${o}</span>`).join("")}</div></li>`).join("")}</ol>
+   <div class="key"><h2>Answers</h2><p class="meta2">Robert J. Park · robertjparkuk.github.io · Free to copy for classroom use.</p><ol>${qs.map(q=>`<li><b>${"ABCD"[q[4]]}</b>: ${q[5]}</li>`).join("")}</ol></div>`;}
+const pw=$("printWs");try{if(window.self===window.top){pw.hidden=false;pw.onclick=()=>{worksheet();window.print();};}}catch(e){}
+window.addEventListener("beforeprint",worksheet);
+topics();start();worksheet();
 })();
 </script>
 </body>
