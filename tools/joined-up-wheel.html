@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="The Joined-Up Wheel: how carbon, energy, land, waste, forever chemicals, water, environmental health and public policy connect for Northern Ireland businesses. By Robert J. Park.">
+<title>The Joined-Up Wheel</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+[hidden]{display:none!important}
+
+/* Layout: the wheel is the page. Wheel left, a reading panel right that changes with what you pick; stacks on phones. */
+:root{
+  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2;
+  --red:#B3121B; --hub:#1B1817; --hub-ink:#FFFFFF; --hub-dim:#8A8380; --chord:#BDB4AF;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --hub:#F1ECE9; --hub-ink:#171413; --hub-dim:#8A8380; --chord:#5A514F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --hub:#F1ECE9; --hub-ink:#171413; --hub-dim:#8A8380; --chord:#5A514F; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.brand b{color:var(--red)}
+h1{font-family:var(--display);font-size:clamp(32px,5vw,54px);line-height:1.04;margin:6px 0 0;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:64ch;font-size:18px}
+main{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:32px;align-items:start;border-top:3px solid var(--ink);padding-top:20px}
+.wheel{min-width:0}
+#svg{width:100%;height:auto;max-width:640px;display:block;margin:0 auto}
+.seg path{cursor:pointer;transition:opacity .15s}
+.seg text{fill:#fff;font:700 17px var(--body);pointer-events:none;text-anchor:middle}
+.chord{fill:none;stroke:var(--chord);stroke-width:2.2;transition:opacity .15s,stroke-width .15s}
+.goal{cursor:pointer}
+.goal text{font:600 16px var(--body);fill:var(--hub-ink);text-anchor:middle;dominant-baseline:middle}
+.goal rect{fill:transparent}
+.goal.on rect{fill:var(--red)}
+.goal.on text{fill:#fff}
+.goal.dim text{fill:var(--hub-dim)}
+.hubhead{font:700 11px var(--body);letter-spacing:.16em;fill:var(--hub-dim);text-anchor:middle}
+.sel .seg path{opacity:.28}.sel .seg.on path,.sel .seg.rel path{opacity:1}
+.sel .seg.rel path{opacity:.75}
+.sel .chord{opacity:.12}.sel .chord.on{opacity:1;stroke-width:4}
+.seg path:focus-visible,.goal:focus-visible{outline:none;stroke:var(--ink);stroke-width:4}
+.hint{font-size:14px;color:var(--muted);text-align:center;margin:8px 0 0}
+.panel{min-width:0;display:flex;flex-direction:column;gap:16px}
+.panel .eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.panel h2{font-family:var(--display);font-size:clamp(26px,3vw,34px);line-height:1.1;margin:0;text-wrap:balance}
+.panel p.why{margin:0;font-size:17px;max-width:60ch}
+.blk h3{font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 6px;color:var(--muted)}
+.blk ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+.blk li{max-width:62ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--rule);background:var(--tint);color:var(--ink);font:600 14px var(--body);padding:6px 10px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;text-align:left}
+.chip:hover{border-color:var(--ink)}
+.chip i{width:10px;height:10px;border-radius:50%;flex:none}
+.links{display:flex;flex-direction:column;gap:6px}
+.link{display:flex;flex-direction:column;gap:2px;border:0;background:none;color:var(--ink);font:15px var(--body);text-align:left;padding:6px 0;border-bottom:1px solid var(--rule);cursor:pointer}
+.link b{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.link b i{width:10px;height:10px;border-radius:50%}
+.link:hover span{text-decoration:underline}
+.trig{display:flex;flex-direction:column}
+.trig button{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:baseline;border:0;border-bottom:1px solid var(--rule);background:none;color:var(--ink);font:16px var(--body);text-align:left;padding:10px 0;cursor:pointer}
+.trig button:hover span:first-child{text-decoration:underline}
+.trig .to{font-size:13px;font-weight:700;white-space:nowrap}
+button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.back{align-self:flex-start;border:1px solid var(--rule);background:none;color:var(--muted);font:600 14px var(--body);padding:5px 10px;border-radius:6px;cursor:pointer}
+footer{border-top:1px solid var(--rule);padding-top:14px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:14px;color:var(--muted)}
+footer .contact{color:var(--ink);font-weight:700}
+footer .src{max-width:70ch;font-size:13px}
+footer a{color:var(--muted)}
+@media (max-width:900px){main{grid-template-columns:minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){.seg path,.chord{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="/" style="text-decoration:none" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+    <h1>The Joined-Up Wheel</h1>
+    <p class="lede">Eight environmental issues that most firms handle separately, and the business goals they all feed. Pick an issue to see what triggers it, the rules today and the routes in. Pick a goal to see which issues it depends on.</p>
+  </header>
+  <main>
+    <div class="wheel">
+      <svg id="svg" viewBox="-400 -400 800 800" role="img" aria-label="Wheel of eight environmental issues around six business goals"></svg>
+      <p class="hint">The lines across the wheel show where two issues meet.</p>
+    </div>
+    <section class="panel" id="panel" aria-live="polite"></section>
+  </main>
+  <footer>
+    <div><div class="contact">linkedin.com/in/robertparkuk · WhatsApp @robertjpark</div><div>Northern Ireland. Position at 16 October 2026. Not legal advice.</div></div>
+    <div class="src">Sources: DAERA; NI Assembly Research and Information Service; NI Water; nibusinessinfo.co.uk; NIEA packaging EPR position statement (Sept 2026); Defra PFAS Plan (Feb 2026); ECHA; HMRC; Department of Finance PPN 01/21.</div>
+  </footer>
+</div>
+
+<script>
+(function(){
+const S=[{"id": "policy", "name": "Policy & public affairs", "lines": ["Policy &", "public affairs"], "col": "#B3121B", "why": "The rules on every other part of the wheel are still being written. Firms that take part in writing them get fewer surprises.", "trig": ["A consultation lands that affects your sector", "A tender asks for social value or carbon commitments", "An election or new minister changes the priorities"], "rules": ["Climate Change Act (NI) 2022: 48% cut by 2030, 77% by 2040, net zero by 2050", "Draft Climate Action Plan consulted June\u2013October 2025; sectoral plans not yet produced", "PPN 01/21: at least 10% social value weighting in larger public tenders", "40 NI public bodies, including all 11 councils, now report on climate", "Assembly and council elections on 7 May 2027"], "routes": ["Respond to consultations with evidence from your own site", "Brief MLAs, councillors and officials before decisions are made", "Build a social value and carbon story you can reuse in tenders"], "goals": ["tenders", "finance", "licence"]}, {"id": "carbon", "name": "Carbon", "lines": ["Carbon"], "col": "#5B4B8A", "why": "Customers, lenders and tenders now ask for emissions data. Border taxes put a price on it.", "trig": ["An EU or UK customer asks for product emissions data", "You import steel, aluminium, cement, fertiliser or hydrogen", "A tender or lender asks for a carbon reduction plan"], "rules": ["UK CBAM starts 1 January 2027", "EU CBAM definitive period began 1 January 2026", "SECR reporting for large companies", "NI carbon budgets set in law"], "routes": ["Carbon inventory across Scopes 1, 2 and 3", "Product-level emissions data for CBAM and customers", "A reduction plan with a baseline year and dates"], "goals": ["customers", "tenders", "finance"]}, {"id": "energy", "name": "Energy costs", "lines": ["Energy", "costs"], "col": "#C7781A", "why": "Energy is usually the biggest cost you can control, and most of your Scope 1 and 2 emissions.", "trig": ["A supply contract is up for renewal", "Bills jump with no change in output", "You qualify for ESOS as a large undertaking"], "rules": ["ESOS energy audits for large undertakings, UK-wide", "NI target of 80% renewable electricity by 2030; 44.2% in the year to September 2025", "NI electricity is traded in the all-island Single Electricity Market, separate from Great Britain's"], "routes": ["Energy audit and sub-metering", "Contracts review before renewal", "On-site generation and heat options"], "goals": ["costs", "customers"]}, {"id": "health", "name": "Environmental health", "lines": ["Environmental", "health"], "col": "#4F7F2A", "why": "Council environmental health officers decide whether noise, odour, dust or smoke is a nuisance. A complaint can restrict how a site runs.", "trig": ["A neighbour complains about noise, odour or dust", "You install a heat pump, chiller, boiler or extraction fan", "You extend shifts or add night deliveries"], "rules": ["Statutory nuisance enforced by NI's 11 councils", "Council environmental health teams also advise planning on contaminated land and noise"], "routes": ["Nuisance check before new plant goes in", "A good-neighbour plan with a complaints log", "Early contact with council officers"], "goals": ["licence", "people"]}, {"id": "water", "name": "Water", "lines": ["Water"], "col": "#2D6CA3", "why": "What leaves your site in water is regulated, charged for and increasingly tested.", "trig": ["You discharge anything other than domestic sewage", "Charges for trade effluent rise", "Your site drains to a river or lough catchment"], "rules": ["Trade effluent consent needed from NI Water for discharges to the foul sewer", "Separate consent or authorisation needed for discharges to rivers or groundwater", "Lough Neagh's algal blooms have increased scrutiny of nutrient discharges"], "routes": ["Effluent review and sampling", "Water efficiency and reuse", "Check consents match what you actually discharge"], "goals": ["costs", "licence"]}, {"id": "pfas", "name": "Forever chemicals", "lines": ["Forever", "chemicals"], "col": "#A23468", "why": "PFAS are in coatings, textiles, seals and firefighting foam. They don't break down, so they turn up in water, soil and customer questionnaires.", "trig": ["An EU customer asks about REACH or PFAS content", "You hold firefighting foam on site", "You use coated, water-repellent or non-stick materials"], "rules": ["EU REACH continues to apply to goods in NI under the Windsor Framework", "EU ban on PFAS in firefighting foams adopted October 2025; applies from 23 October 2030", "EU universal PFAS restriction: final committee opinion expected end of 2026", "UK PFAS Plan published 3 February 2026; UK REACH foam decision expected 2027"], "routes": ["Chemicals inventory and supplier declarations", "Plan to replace PFAS firefighting foam", "Effluent testing where PFAS may be present"], "goals": ["customers", "people", "licence"]}, {"id": "land", "name": "Land", "lines": ["Land"], "col": "#8A6A3B", "why": "NI never brought its contaminated land regime into force, so the risk surfaces when you sell, borrow or build.", "trig": ["You buy, sell or extend a site", "A lender or buyer asks for environmental due diligence", "You apply for planning on previously used land"], "rules": ["Part III of the Waste and Contaminated Land (NI) Order 1997 is enacted but not in force", "Contamination is handled through planning using the LCRM framework", "Councils would be the main regulators if Part III were commenced"], "routes": ["Desk study and site history", "Remediation strategy agreed through planning", "Contaminated land briefing for owners and boards"], "goals": ["licence", "finance"]}, {"id": "waste", "name": "Waste & packaging", "lines": ["Waste &", "packaging"], "col": "#2F7D6D", "why": "Packaging and waste have moved from a skip bill to a producer responsibility with its own fees and data duties.", "trig": ["You place packaged goods on the UK market", "Waste costs rise faster than output", "Customers ask for recycled content or take-back"], "rules": ["Packaging EPR fees for large producers (broadly over \u00a32m turnover and 50 tonnes), regulated in NI by NIEA", "Deposit return for PET, steel and aluminium drinks containers from October 2027", "Waste duty of care applies to every business"], "routes": ["Packaging data by material and nation", "Waste audit and segregation", "Design changes that cut fees and Scope 3"], "goals": ["costs", "customers"]}], G=[{"id": "costs", "name": "Cut costs"}, {"id": "customers", "name": "Keep customers"}, {"id": "tenders", "name": "Win public contracts"}, {"id": "licence", "name": "Permits & planning"}, {"id": "finance", "name": "Finance & insurance"}, {"id": "people", "name": "Protect people"}], GEO={"segs": [{"id": "policy", "d": "M-130.8,-335.4 A360,360 0 0 1 130.8,-335.4 L92.6,-237.6 A255,255 0 0 0 -92.6,-237.6 Z", "tx": 0.0, "ty": -307.5}, {"id": "carbon", "d": "M144.7,-329.6 A360,360 0 0 1 329.6,-144.7 L233.5,-102.5 A255,255 0 0 0 102.5,-233.5 Z", "tx": 217.4, "ty": -217.4}, {"id": "energy", "d": "M335.4,-130.8 A360,360 0 0 1 335.4,130.8 L237.6,92.6 A255,255 0 0 0 237.6,-92.6 Z", "tx": 307.5, "ty": 0.0}, {"id": "health", "d": "M329.6,144.7 A360,360 0 0 1 144.7,329.6 L102.5,233.5 A255,255 0 0 0 233.5,102.5 Z", "tx": 217.4, "ty": 217.4}, {"id": "water", "d": "M130.8,335.4 A360,360 0 0 1 -130.8,335.4 L-92.6,237.6 A255,255 0 0 0 92.6,237.6 Z", "tx": 0.0, "ty": 307.5}, {"id": "pfas", "d": "M-144.7,329.6 A360,360 0 0 1 -329.6,144.7 L-233.5,102.5 A255,255 0 0 0 -102.5,233.5 Z", "tx": -217.4, "ty": 217.4}, {"id": "land", "d": "M-335.4,130.8 A360,360 0 0 1 -335.4,-130.8 L-237.6,-92.6 A255,255 0 0 0 -237.6,92.6 Z", "tx": -307.5, "ty": 0.0}, {"id": "waste", "d": "M-329.6,-144.7 A360,360 0 0 1 -144.7,-329.6 L-102.5,-233.5 A255,255 0 0 0 -233.5,-102.5 Z", "tx": -217.4, "ty": -217.4}], "chords": [{"a": "carbon", "b": "energy", "label": "Energy use makes up most Scope 1 and 2 emissions", "d": "M203.1,-147.5 C161.8,-117.6 197.5,-31.3 247.9,-39.3"}, {"a": "carbon", "b": "waste", "label": "Waste and packaging sit in Scope 3", "d": "M177.5,-177.5 C106.1,-106.1 -106.1,-106.1 -177.5,-177.5"}, {"a": "carbon", "b": "policy", "label": "Carbon budgets, tenders and CBAM are set by policy", "d": "M147.5,-203.1 C117.6,-161.8 39.0,-196.2 49.0,-246.2"}, {"a": "energy", "b": "health", "label": "New heat pumps, chillers and boilers can trigger noise complaints", "d": "M247.9,39.3 C197.5,31.3 157.1,123.8 197.1,155.4"}, {"a": "energy", "b": "policy", "label": "Renewables targets and market rules shape your energy bill", "d": "M251.0,0.0 C150.0,0.0 17.6,-149.0 29.5,-249.3"}, {"a": "pfas", "b": "land", "label": "Foam use and old processes leave PFAS in soil", "d": "M-203.1,147.5 C-161.8,117.6 -196.5,37.5 -246.6,47.0"}, {"a": "pfas", "b": "water", "label": "PFAS travel in effluent and groundwater", "d": "M-147.5,203.1 C-117.6,161.8 -31.3,197.5 -39.3,247.9"}, {"a": "pfas", "b": "policy", "label": "The Windsor Framework puts NI goods under EU REACH", "d": "M-177.5,177.5 C-63.6,63.6 -3.5,-89.9 -9.9,-250.8"}, {"a": "land", "b": "water", "label": "Contamination reaches groundwater and rivers", "d": "M-249.9,23.6 C-149.3,14.1 0.0,150.0 0.0,251.0"}, {"a": "land", "b": "policy", "label": "With no Part III regime, planning carries the risk", "d": "M-249.9,-23.6 C-149.3,-14.1 -17.6,-149.0 -29.5,-249.3"}, {"a": "land", "b": "health", "label": "Council officers advise planning on land contamination", "d": "M-251.0,0.0 C-90.0,0.0 55.7,70.7 155.4,197.1"}, {"a": "waste", "b": "land", "label": "Historic or illegal dumping becomes a land problem", "d": "M-203.1,-147.5 C-161.8,-117.6 -196.5,-37.5 -246.6,-47.0"}, {"a": "waste", "b": "policy", "label": "EPR fees and deposit return are costs set by policy", "d": "M-147.5,-203.1 C-117.6,-161.8 -39.0,-196.2 -49.0,-246.2"}, {"a": "water", "b": "policy", "label": "Lough Neagh has put nutrient discharges on the political agenda", "d": "M39.3,247.9 C6.3,39.5 1.6,-40.0 9.9,-250.8"}], "hub": 138};
+const by=Object.fromEntries(S.map(s=>[s.id,s]));
+const gby=Object.fromEntries(G.map(g=>[g.id,g]));
+const NS="http://www.w3.org/2000/svg";
+const svg=document.getElementById("svg"), panel=document.getElementById("panel");
+function mk(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e;}
+const chordG=mk("g",{});
+const chordEls=GEO.chords.map(c=>{const p=mk("path",{d:c.d,class:"chord"},chordG);const t=document.createElementNS(NS,"title");t.textContent=`${by[c.a].name} + ${by[c.b].name}: ${c.label}`;p.appendChild(t);return Object.assign({el:p},c);});
+const segEls={};
+GEO.segs.forEach(g=>{const s=by[g.id];const grp=mk("g",{class:"seg"});
+  const p=mk("path",{d:g.d,fill:s.col,tabindex:"0",role:"button","aria-label":s.name},grp);
+  const n=s.lines.length;s.lines.forEach((ln,i)=>{const t=mk("text",{x:g.tx,y:g.ty+(i-(n-1)/2)*20+6},grp);t.textContent=ln;});
+  p.addEventListener("click",()=>pickS(g.id));
+  p.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pickS(g.id);}});
+  segEls[g.id]=grp;});
+mk("circle",{r:GEO.hub,fill:"var(--hub)"});
+const hh=mk("text",{y:-98,class:"hubhead"});hh.textContent="BUSINESS GOALS";
+const goalEls={};
+G.forEach((g,i)=>{const y=-70+i*30;const grp=mk("g",{class:"goal",tabindex:"0",role:"button","aria-label":g.name});
+  mk("rect",{x:-104,y:y-13,width:208,height:26,rx:13},grp);
+  const t=mk("text",{x:0,y:y},grp);t.textContent=g.name;
+  grp.addEventListener("click",()=>pickG(g.id));
+  grp.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pickG(g.id);}});
+  goalEls[g.id]=grp;});
+function clear(){svg.classList.remove("sel");Object.values(segEls).forEach(e=>e.classList.remove("on","rel"));chordEls.forEach(c=>c.el.classList.remove("on"));Object.values(goalEls).forEach(e=>e.classList.remove("on","dim"));}
+function esc(s){return s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));}
+function list(a){return "<ul>"+a.map(x=>`<li>${esc(x)}</li>`).join("")+"</ul>";}
+function dot(id){return `<i style="background:${by[id].col}"></i>`;}
+function pickS(id){
+  clear();svg.classList.add("sel");segEls[id].classList.add("on");
+  const s=by[id];const rel=chordEls.filter(c=>c.a===id||c.b===id);
+  rel.forEach(c=>{c.el.classList.add("on");c.el.style.stroke=s.col;segEls[c.a===id?c.b:c.a].classList.add("rel");});
+  chordEls.filter(c=>!rel.includes(c)).forEach(c=>c.el.style.stroke="");
+  G.forEach(g=>goalEls[g.id].classList.add(s.goals.includes(g.id)?"on":"dim"));
+  panel.innerHTML=`<button class="back" id="back" type="button">← All triggers</button>
+   <div class="eyebrow" style="color:${s.col}">Issue</div><h2>${esc(s.name)}</h2><p class="why">${esc(s.why)}</p>
+   <div class="blk"><h3>You meet it when</h3>${list(s.trig)}</div>
+   <div class="blk"><h3>The rules now</h3>${list(s.rules)}</div>
+   <div class="blk"><h3>Routes in</h3>${list(s.routes)}</div>
+   <div class="blk"><h3>Where it meets other issues</h3><div class="links">${rel.map(c=>{const o=c.a===id?c.b:c.a;return `<button class="link" type="button" data-s="${o}"><b>${dot(o)}${esc(by[o].name)}</b><span>${esc(c.label)}</span></button>`;}).join("")}</div></div>
+   <div class="blk"><h3>Goals it serves</h3><div class="chips">${s.goals.map(g=>`<button class="chip" type="button" data-g="${g}">${esc(gby[g].name)}</button>`).join("")}</div></div>`;
+  wire();
+}
+function pickG(id){
+  clear();svg.classList.add("sel");goalEls[id].classList.add("on");
+  G.forEach(g=>{if(g.id!==id)goalEls[g.id].classList.add("dim");});
+  const ss=S.filter(s=>s.goals.includes(id));
+  ss.forEach(s=>segEls[s.id].classList.add("on"));
+  chordEls.forEach(c=>{const on=ss.some(s=>s.id===c.a)&&ss.some(s=>s.id===c.b);c.el.classList.toggle("on",on);c.el.style.stroke=on?"var(--red)":"";});
+  panel.innerHTML=`<button class="back" id="back" type="button">← All triggers</button>
+   <div class="eyebrow" style="color:var(--red)">Business goal</div><h2>${esc(gby[id].name)}</h2>
+   <p class="why">${ss.length} of the eight issues feed this goal. Working on them together avoids paying twice for the same data, survey or site visit.</p>
+   <div class="blk"><h3>Issues that feed it</h3><div class="links">${ss.map(s=>`<button class="link" type="button" data-s="${s.id}"><b>${dot(s.id)}${esc(s.name)}</b><span>${esc(s.routes[0])}</span></button>`).join("")}</div></div>`;
+  wire();
+}
+function home(){
+  clear();
+  const T=[["An EU or UK customer asks for emissions or chemical data","carbon"],["A supply contract or energy bill is up for renewal","energy"],["You plan to buy, sell, extend or borrow against a site","land"],["A neighbour complains, or new plant is going in","health"],["You place packaged goods on the UK market","waste"],["You hold firefighting foam or use coated materials","pfas"],["You discharge anything other than domestic sewage","water"],["A tender, consultation or election is coming","policy"]];
+  panel.innerHTML=`<div class="eyebrow" style="color:var(--red)">Start here</div><h2>What just happened?</h2>
+   <p class="why">Most firms come to these issues one at a time, when something forces it. Pick the trigger that fits and follow the lines to the issues it connects to.</p>
+   <div class="trig">${T.map(([t,s])=>`<button type="button" data-s="${s}"><span>${esc(t)}</span><span class="to" style="color:${by[s].col}">${esc(by[s].name)} →</span></button>`).join("")}</div>`;
+  wire();
+}
+function wire(){
+  panel.querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>pickS(b.dataset.s));
+  panel.querySelectorAll("[data-g]").forEach(b=>b.onclick=()=>pickG(b.dataset.g));
+  const bk=document.getElementById("back");if(bk)bk.onclick=home;
+}
+const h=(location.hash||"").slice(1);
+if(by[h])pickS(h);else if(gby[h])pickG(h);else home();
+})();
+</script>
+</body>
+</html>

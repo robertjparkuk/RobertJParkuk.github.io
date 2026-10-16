@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="The Carbon Crossword: 24 greenhouse gas and climate policy terms with a UK and Northern Ireland lean, by Robert J. Park.">
+<title>Carbon Crossword</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+[hidden]{display:none!important}
+
+/* Layout: a printed puzzle page. Grid left, clues right; on phones the grid sits under a sticky clue bar. */
+:root{
+  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2;
+  --red:#B3121B; --red-soft:#FBEDED; --word:#F3E3E1; --block:#1B1817;
+  --cell:#FFFFFF; --ok:#1F6B45; --bad:#B3121B; --chip:#F6F4F2;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332;
+  --red:#E5484D; --red-soft:#3A1C1E; --word:#3B2626; --block:#0C0A0A;
+  --cell:#221E1D; --ok:#4CC38A; --bad:#FF6B6B; --chip:#262120; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332;
+  --red:#E5484D; --red-soft:#3A1C1E; --word:#3B2626; --block:#0C0A0A;
+  --cell:#221E1D; --ok:#4CC38A; --bad:#FF6B6B; --chip:#262120; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+header{display:flex;flex-direction:column;gap:10px}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.brand b{color:var(--red)}
+h1{font-family:var(--display);font-size:clamp(32px,5vw,52px);line-height:1.05;margin:0;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:62ch}
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;border-top:3px solid var(--ink);border-bottom:1px solid var(--rule);padding-block:12px}
+.seg{display:inline-flex;border:1px solid var(--ink);border-radius:999px;overflow:hidden}
+.seg button{border:0;background:transparent;color:var(--ink);font:600 15px var(--body);padding:7px 16px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.tools{display:flex;flex-wrap:wrap;gap:8px}
+.btn{border:1px solid var(--rule);background:var(--chip);color:var(--ink);font:600 14px var(--body);padding:7px 12px;border-radius:6px;cursor:pointer}
+.btn:hover{border-color:var(--ink)}
+.btn.primary{background:var(--red);border-color:var(--red);color:#fff}
+button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.score{font-variant-numeric:tabular-nums;color:var(--muted);font-size:15px}
+.score b{color:var(--ink)}
+main{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:start}
+.board{display:flex;flex-direction:column;gap:12px;min-width:0}
+.cluebar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--red-soft);border-left:4px solid var(--red);padding:10px 14px;border-radius:0 6px 6px 0;min-height:52px;display:flex;gap:10px;align-items:baseline}
+.cluebar .num{font-weight:700;color:var(--red);white-space:nowrap}
+.gridbox{position:relative;width:100%;max-width:640px}
+.grid{display:grid;width:100%;aspect-ratio:1/1;max-width:100%;gap:0;background:transparent;user-select:none;-webkit-user-select:none;touch-action:manipulation}
+.c{position:relative;background:transparent}
+.c.l{background:var(--cell);outline:1px solid var(--ink);outline-offset:-0.5px;cursor:pointer}
+.c.l.w{background:var(--word)}
+.c.l.a{background:var(--red);}
+.c.l.a .ch{color:#fff}
+.c .n{position:absolute;top:1px;left:2px;font-size:clamp(6px,1.1vw,10px);line-height:1;color:var(--muted);font-weight:600}
+.c.a .n{color:#fff}
+.c .ch{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:700 clamp(10px,2.3vw,22px) var(--body);text-transform:uppercase;padding-top:8%}
+.c.bad .ch{color:var(--bad)}
+.c.bad::after{content:"";position:absolute;right:2px;top:2px;width:5px;height:5px;border-radius:50%;background:var(--bad)}
+.c.rev .ch{color:var(--muted)}
+.c.done .ch{color:var(--ok)}
+#kb{position:absolute;opacity:0;left:0;top:0;width:1px;height:1px;font-size:16px;border:0;padding:0;pointer-events:none}
+.clues{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;min-width:0}
+.clues h2{font-family:var(--display);font-size:22px;margin:0 0 8px;border-bottom:1px solid var(--ink);padding-bottom:4px}
+.clues ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.clues li{display:grid;grid-template-columns:2.2em minmax(0,1fr);gap:4px;padding:5px 6px;border-radius:4px;cursor:pointer;font-size:15px}
+.clues li .k{font-weight:700;font-variant-numeric:tabular-nums}
+.clues li:hover{background:var(--chip)}
+.clues li.on{background:var(--red-soft)}
+.clues li.solved .t{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--rule)}
+.note{font-size:13px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;display:flex;flex-direction:column;gap:6px}
+.done-msg{background:var(--chip);border:1px solid var(--ok);border-radius:6px;padding:12px 14px}
+.done-msg b{color:var(--ok)}
+.key{display:none}
+@media (max-width:860px){main{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.clues{grid-template-columns:minmax(0,1fr)}.c .n{font-size:6px}}
+@media print{
+  body{background:#fff;color:#000;padding:0}
+  .tools,.seg,.cluebar,.score,#kb,.done-msg{display:none!important}
+  main{grid-template-columns:1fr 1fr;gap:16px}
+  .c.l,.c.l.w,.c.l.a{background:#fff!important;outline-color:#000}
+  .c .ch{color:transparent!important}
+  .c .n{color:#000!important;font-size:7px}
+  .clues{grid-template-columns:1fr;gap:10px}.clues li{padding:1px 0;font-size:11px}.clues li.on{background:none}
+  .clues li.solved .t{text-decoration:none;color:#000}
+  .key{display:block;break-before:page}
+  .key h2{font-family:var(--display)}
+  .key ol{columns:2;font-size:12px}
+}
+@media (prefers-reduced-motion:no-preference){.c.l{transition:background-color .12s}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="/" style="text-decoration:none" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+    <h1>The Carbon Crossword</h1>
+    <p class="lede">Twenty-four terms from greenhouse gas reporting, carbon pricing and Northern Ireland's climate rules. Easy clues define the term. Hard clues assume you've read the guidance.</p>
+  </header>
+
+  <div class="bar">
+    <div class="seg" role="group" aria-label="Difficulty">
+      <button id="lvl-easy" type="button" aria-pressed="true" data-l="easy">Easy</button>
+      <button id="lvl-hard" type="button" aria-pressed="false" data-l="hard">Hard</button>
+    </div>
+    <div class="score" id="score"></div>
+    <div class="tools">
+      <button class="btn" id="chkW" type="button">Check word</button>
+      <button class="btn" id="chkA" type="button">Check all</button>
+      <button class="btn" id="revL" type="button">Reveal letter</button>
+      <button class="btn" id="revW" type="button">Reveal word</button>
+      <button class="btn" id="clr" type="button">Clear</button>
+      <button class="btn primary" id="prn" type="button" hidden>Print</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="board" aria-label="Puzzle grid">
+      <div class="cluebar" id="cluebar" aria-live="polite"></div>
+      <div class="gridbox">
+        <div class="grid" id="grid"></div>
+        <input id="kb" type="text" autocomplete="off" autocapitalize="characters" autocorrect="off" spellcheck="false" aria-label="Type a letter" value=" ">
+      </div>
+      <div id="doneMsg" class="done-msg" hidden><b>Solved.</b> <span id="doneTxt"></span></div>
+    </section>
+    <section class="clues" aria-label="Clues">
+      <div><h2>Across</h2><ol id="across"></ol></div>
+      <div><h2>Down</h2><ol id="down"></ol></div>
+    </section>
+  </main>
+
+  <div class="note">
+    <div>Tap a square to start; tap it again to switch between across and down. Arrow keys move, Backspace deletes.</div>
+    <div>Facts as at 16 October 2026: UK CBAM from 1 January 2027; NI Climate Change Act targets of 48% by 2030 and net zero by 2050; 40 NI public bodies with climate reporting duties. Sources: DAERA, HMRC, GHG Protocol, SBTi, IFRS Foundation, EFRAG.</div>
+  </div>
+
+  <section class="key" aria-hidden="true">
+    <h2>Answers</h2>
+    <ol id="key"></ol>
+  </section>
+</div>
+
+<script>
+(function(){
+const H=17,W=17;
+// [answer,row,col,dir,enumeration,easy,hard]
+const WORDS=[
+["ADAPTATION",8,3,"A","10","Preparing for climate impacts that can no longer be avoided","NI's reporting bodies filed their first reports on this in March 2026, after mitigation"],
+["ALLOWANCE",8,8,"D","9","A permit to emit one tonne of CO2e in an emissions trading scheme","Unit of the UK ETS; some are handed out free"],
+["GREENWASH",12,3,"A","9","Overstate your environmental credentials","Misleading green claims; the CMA can now fine for this directly"],
+["INTENSITY",2,10,"D","9","Emissions per tonne of product or per pound of turnover","SECR asks for at least one ratio of this kind"],
+["REMOVALS",3,3,"D","8","Taking CO2 out of the air, rather than avoiding it","The other side of the net-zero ledger"],
+["EMBODIED",16,2,"A","8","Carbon locked into materials before a building is used","Like the carbon in a steel beam, rather than in its heating bill"],
+["HEATPUMP",5,9,"A","4,4","Low-carbon heating that moves warmth from air or ground","Air-source or ground-source replacement for an oil boiler"],
+["RETROFIT",1,7,"D","8","Upgrade an existing building to cut its energy use","Insulation fitted after the fact, as across a council's estate"],
+["BASELINE",14,2,"A","8","The starting year you measure your cuts against","For the NI Climate Change Act, 1990 for carbon dioxide"],
+["NETZERO",4,2,"A","3,4","Emissions released balanced by emissions removed","Northern Ireland's 2050 target under its 2022 Act"],
+["WINDSOR",2,9,"A","7","The 2023 framework that keeps NI under some EU goods rules","Framework behind NI's access to both UK and EU markets"],
+["LEAKAGE",6,5,"D","7","Carbon ___: production moving abroad to avoid carbon costs","What a border adjustment is designed to stop"],
+["METHANE",5,15,"D","7","Potent greenhouse gas from cattle and slurry","CH4, behind much of NI agriculture's large share of emissions"],
+["BUDGET",0,12,"D","6","Carbon ___: a five-year cap on total emissions","NI's first one averages 33% below the starting year"],
+["DAERA",1,4,"A","5","The Stormont department that leads on climate change (abbr)","Made the 2024 regulations behind public body climate reports (abbr)"],
+["ISSB",0,9,"A","4","Board behind the IFRS S1 and S2 standards (abbr)","UK SRS was built on its work (abbr)"],
+["CBAM",9,13,"A","4","Border charge on embedded carbon, live in the UK from January 2027 (abbr)","NI exporters may face two of these, one UK and one EU (abbr)"],
+["ESOS",0,14,"D","4","UK energy audit scheme for large firms, run in phases (abbr)","Four-yearly audit regime, distinct from SECR (abbr)"],
+["VSME",11,12,"A","4","EU voluntary reporting standard for small firms (abbr)","Standard that caps what large customers can ask of their SME suppliers (abbr)"],
+["SECR",11,13,"D","4","UK rule making large companies report energy and carbon (abbr)","Streamlined reporting that sits in the directors' report (abbr)"],
+["SBTI",7,13,"A","4","Body that validates company climate targets (abbr)","It won't let offsets count towards a near-term target (abbr)"],
+["FGAS",10,0,"A","1-3","Refrigerant gases with a high warming potential","HFCs in a fridge, chiller or heat pump"],
+["OFFSET",8,0,"D","6","Pay for a cut elsewhere to balance your own emissions","Credit you can buy but can't count towards an SBTi near-term target"],
+["SCOPE",13,12,"A","5","___ 3: emissions from what you buy, not what you burn","One of three GHG Protocol categories"]
+];
+const sol=Array.from({length:H},()=>Array(W).fill(null));
+WORDS.forEach(w=>{for(let i=0;i<w[0].length;i++){const r=w[3]==="A"?w[1]:w[1]+i,c=w[3]==="A"?w[2]+i:w[2];sol[r][c]=w[0][i];}});
+// numbering
+const num={};let n=0;const starts=WORDS.map(w=>w[1]*W+w[2]);
+for(let r=0;r<H;r++)for(let c=0;c<W;c++){if(starts.includes(r*W+c)){num[r*W+c]=++n;}}
+const words=WORDS.map((w,i)=>{const cells=[];for(let k=0;k<w[0].length;k++)cells.push(w[3]==="A"?[w[1],w[2]+k]:[w[1]+k,w[2]]);return{i,ans:w[0],dir:w[3],en:w[4],easy:w[5],hard:w[6],cells,no:num[w[1]*W+w[2]]};});
+const KEY="carbonxw-v1";
+let st={lvl:"easy",fill:{},rev:{}};
+try{const s=JSON.parse(localStorage.getItem(KEY)||"null");if(s&&s.fill)st=Object.assign(st,s);}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}}
+let cur={r:null,c:null,dir:"A"};
+const grid=document.getElementById("grid"),kb=document.getElementById("kb");
+grid.style.gridTemplateColumns=`repeat(${W},1fr)`;
+const el={};
+for(let r=0;r<H;r++)for(let c=0;c<W;c++){const d=document.createElement("div");d.className="c"+(sol[r][c]?" l":"");
+  if(sol[r][c]){if(num[r*W+c]){const s=document.createElement("span");s.className="n";s.textContent=num[r*W+c];d.appendChild(s);}
+    const ch=document.createElement("span");ch.className="ch";d.appendChild(ch);
+    d.addEventListener("click",()=>tap(r,c));}
+  grid.appendChild(d);el[r*W+c]=d;}
+function wordAt(r,c,dir){return words.find(w=>w.dir===dir&&w.cells.some(x=>x[0]===r&&x[1]===c));}
+function curWord(){return cur.r==null?null:(wordAt(cur.r,cur.c,cur.dir)||wordAt(cur.r,cur.c,cur.dir==="A"?"D":"A"));}
+function tap(r,c){if(cur.r===r&&cur.c===c&&wordAt(r,c,cur.dir==="A"?"D":"A"))cur.dir=cur.dir==="A"?"D":"A";
+  else{cur.r=r;cur.c=c;if(!wordAt(r,c,cur.dir))cur.dir=cur.dir==="A"?"D":"A";}
+  focusKb();render();}
+function focusKb(){try{kb.focus({preventScroll:true});}catch(e){kb.focus();}}
+function selectWord(w){cur={r:w.cells[0][0],c:w.cells[0][1],dir:w.dir};const f=w.cells.find(x=>!st.fill[x[0]*W+x[1]]);if(f){cur.r=f[0];cur.c=f[1];}focusKb();render();}
+function move(dr,dc){let r=cur.r+dr,c=cur.c+dc;while(r>=0&&r<H&&c>=0&&c<W){if(sol[r][c]){cur.r=r;cur.c=c;return true;}r+=dr;c+=dc;}return false;}
+function step(back){const w=curWord();if(!w)return;cur.dir=w.dir;const idx=w.cells.findIndex(x=>x[0]===cur.r&&x[1]===cur.c);const j=idx+(back?-1:1);if(j>=0&&j<w.cells.length){cur.r=w.cells[j][0];cur.c=w.cells[j][1];}}
+function putLetter(L){if(cur.r==null)return;const k=cur.r*W+cur.c;st.fill[k]=L;delete st.bad?.[k];marks.delete(k);step(false);save();render();}
+function backspace(){if(cur.r==null)return;const k=cur.r*W+cur.c;if(st.fill[k]){delete st.fill[k];}else{step(true);delete st.fill[cur.r*W+cur.c];}marks.clear();save();render();}
+const marks=new Set();
+kb.addEventListener("keydown",e=>{
+  if(cur.r==null)return;
+  const k=e.key;
+  if(k==="ArrowLeft"){e.preventDefault();cur.dir="A";move(0,-1);render();}
+  else if(k==="ArrowRight"){e.preventDefault();cur.dir="A";move(0,1);render();}
+  else if(k==="ArrowUp"){e.preventDefault();cur.dir="D";move(-1,0);render();}
+  else if(k==="ArrowDown"){e.preventDefault();cur.dir="D";move(1,0);render();}
+  else if(k==="Backspace"||k==="Delete"){e.preventDefault();backspace();}
+  else if(k==="Tab"||k==="Enter"){e.preventDefault();const w=curWord();const list=words.slice().sort((a,b)=>(a.dir+String(a.no).padStart(2,"0")).localeCompare(b.dir+String(b.no).padStart(2,"0")));let j=list.indexOf(w)+(e.shiftKey?-1:1);j=(j+list.length)%list.length;selectWord(list[j]);}
+  else if(/^[a-zA-Z]$/.test(k)&&!e.metaKey&&!e.ctrlKey){e.preventDefault();putLetter(k.toUpperCase());}
+});
+kb.addEventListener("input",()=>{const v=kb.value;if(v===""){backspace();}else{const m=v.replace(/[^a-zA-Z]/g,"");if(m)putLetter(m.slice(-1).toUpperCase());}kb.value=" ";});
+function solvedWord(w){return w.cells.every(x=>st.fill[x[0]*W+x[1]]===sol[x[0]][x[1]]);}
+const lists={A:document.getElementById("across"),D:document.getElementById("down")};
+function buildClues(){["A","D"].forEach(d=>{lists[d].innerHTML="";words.filter(w=>w.dir===d).sort((a,b)=>a.no-b.no).forEach(w=>{const li=document.createElement("li");li.dataset.i=w.i;li.innerHTML=`<span class="k">${w.no}</span><span class="t"></span>`;li.querySelector(".t").textContent=`${w[st.lvl]} (${w.en})`;li.addEventListener("click",()=>selectWord(w));lists[d].appendChild(li);w.li=li;});});
+  const key=document.getElementById("key");key.innerHTML="";words.slice().sort((a,b)=>(a.dir+String(a.no).padStart(2,"0")).localeCompare(b.dir+String(b.no).padStart(2,"0"))).forEach(w=>{const li=document.createElement("li");li.textContent=`${w.no} ${w.dir==="A"?"across":"down"}: ${w.ans}`;key.appendChild(li);});}
+function render(){
+  const w=curWord();const inW=new Set(w?w.cells.map(x=>x[0]*W+x[1]):[]);
+  for(let r=0;r<H;r++)for(let c=0;c<W;c++){if(!sol[r][c])continue;const k=r*W+c,d=el[k];d.querySelector(".ch").textContent=st.fill[k]||"";
+    d.classList.toggle("w",inW.has(k));d.classList.toggle("a",cur.r===r&&cur.c===c);d.classList.toggle("bad",marks.has(k));d.classList.toggle("rev",!!st.rev[k]&&st.fill[k]===sol[r][c]);}
+  words.forEach(x=>{x.li.classList.toggle("on",x===w);x.li.classList.toggle("solved",solvedWord(x));});
+  const cb=document.getElementById("cluebar");
+  cb.innerHTML=w?`<span class="num">${w.no} ${w.dir==="A"?"Across":"Down"}</span><span></span>`:`<span class="num">Start</span><span></span>`;
+  cb.lastChild.textContent=w?`${w[st.lvl]} (${w.en})`:"Tap any white square, or pick a clue.";
+  const s=words.filter(solvedWord).length;document.getElementById("score").innerHTML=`<b>${s}</b> of ${words.length} solved`;
+  const done=s===words.length;const dm=document.getElementById("doneMsg");dm.hidden=!done;
+  if(done){const rv=Object.keys(st.rev).length;document.getElementById("doneTxt").textContent=rv?`All ${words.length} terms, with ${rv} letter${rv===1?"":"s"} revealed.`:`All ${words.length} terms, no help needed${st.lvl==="hard"?", on hard":""}.`;}
+}
+function setLvl(l){st.lvl=l;document.querySelectorAll(".seg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===l));buildClues();save();render();}
+document.querySelectorAll(".seg button").forEach(b=>b.addEventListener("click",()=>setLvl(b.dataset.l)));
+function check(cells){marks.clear();cells.forEach(([r,c])=>{const k=r*W+c;if(st.fill[k]&&st.fill[k]!==sol[r][c])marks.add(k);});render();}
+document.getElementById("chkW").onclick=()=>{const w=curWord();if(w)check(w.cells);};
+document.getElementById("chkA").onclick=()=>check(words.flatMap(w=>w.cells));
+document.getElementById("revL").onclick=()=>{if(cur.r==null)return;const k=cur.r*W+cur.c;if(st.fill[k]!==sol[cur.r][cur.c]){st.fill[k]=sol[cur.r][cur.c];st.rev[k]=1;}marks.delete(k);save();render();};
+document.getElementById("revW").onclick=()=>{const w=curWord();if(!w)return;w.cells.forEach(([r,c])=>{const k=r*W+c;if(st.fill[k]!==sol[r][c]){st.fill[k]=sol[r][c];st.rev[k]=1;}marks.delete(k);});save();render();};
+const clr=document.getElementById("clr");let armed=false,t;
+clr.onclick=()=>{if(!armed){armed=true;clr.textContent="Tap again to clear";t=setTimeout(()=>{armed=false;clr.textContent="Clear";},2500);return;}
+  clearTimeout(t);armed=false;clr.textContent="Clear";st.fill={};st.rev={};marks.clear();save();render();};
+// Print works on a normal web page (e.g. GitHub Pages); hidden when framed
+try{if(window.self===window.top){const p=document.getElementById("prn");p.hidden=false;p.onclick=()=>window.print();}}catch(e){}
+setLvl(st.lvl);
+})();
+</script>
+</body>
+</html>

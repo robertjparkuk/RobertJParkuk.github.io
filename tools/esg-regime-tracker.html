@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="ESG Regime Tracker: carbon and sustainability rules across the UK, Northern Ireland, the EU and beyond, then (2023) and now (2026). By Robert J. Park.">
+<title>ESG Regime Tracker</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+[hidden]{display:none!important}
+
+/* Layout: masthead, filter rail, then a ledger of regime cards (Then 2023 / Now 2026 / Tension), then E-vs-S case files */
+:root{
+  --bg:#f6f4f2; --surface:#ffffff; --ink:#1b1817; --muted:#5f5856; --line:#ddd6d2;
+  --red:#b3121b; --red-soft:#f6e3e3;
+  --ok:#1f6b45; --ok-bg:#e2f1e8; --warn:#8a5a00; --warn-bg:#fbefd6; --stop:#8f1d2c; --stop-bg:#f8e1e5; --info:#24507a; --info-bg:#e1ebf5; --grey-bg:#ecebea;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141212; --surface:#1d1a1a; --ink:#efeae8; --muted:#aaa19e; --line:#383231;
+  --red:#ef5b60; --red-soft:#3a1c1e;
+  --ok:#7fd1a4; --ok-bg:#16301f; --warn:#f0c46a; --warn-bg:#33280f; --stop:#f39aa8; --stop-bg:#3a1a20; --info:#94bfe8; --info-bg:#172838; --grey-bg:#2a2626; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141212; --surface:#1d1a1a; --ink:#efeae8; --muted:#aaa19e; --line:#383231;
+  --red:#ef5b60; --red-soft:#3a1c1e;
+  --ok:#7fd1a4; --ok-bg:#16301f; --warn:#f0c46a; --warn-bg:#33280f; --stop:#f39aa8; --stop-bg:#3a1a20; --info:#94bfe8; --info-bg:#172838; --grey-bg:#2a2626; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.mast{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;border-bottom:2px solid var(--ink);padding-bottom:18px}
+.mark{width:54px;height:54px}
+.brand{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.brand b{color:var(--red);font-weight:500}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(28px,4.4vw,44px);line-height:1.08;margin:4px 0 0;text-wrap:balance}
+.lede{max-width:68ch;color:var(--muted);margin:16px 0 0}
+.asat{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-top:10px}
+.lens{margin-top:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.lens div{background:var(--surface);border:1px solid var(--line);padding:14px 16px}
+.lens h3{margin:0 0 4px;font-family:var(--display);font-size:18px}
+.lens p{margin:0;font-size:14.5px;color:var(--muted)}
+.lens .big{font-family:var(--display);font-size:30px;color:var(--red);line-height:1}
+nav.filters{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:14px;margin-top:26px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.row .lab{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);width:92px;flex:none}
+button.chip{font:600 13.5px var(--body);border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:5px 11px;border-radius:999px;cursor:pointer}
+button.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+button.chip:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+#q{flex:1 1 220px;min-width:0;font:15px var(--body);padding:8px 12px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.toggle{display:flex;gap:6px;align-items:center;font-size:14px}
+#count{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+section.group{margin-top:30px}
+section.group>h2{font-family:var(--display);font-size:24px;margin:0 0 12px;display:flex;align-items:baseline;gap:10px}
+section.group>h2 small{font:500 12px var(--mono);color:var(--muted)}
+.cards{display:grid;gap:14px}
+article.card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--line);padding:16px 18px;min-width:0}
+article.card[data-st="force"]{border-left-color:var(--ok)}
+article.card[data-st="phase"]{border-left-color:var(--info)}
+article.card[data-st="proposed"]{border-left-color:var(--warn)}
+article.card[data-st="paused"],article.card[data-st="rolled"]{border-left-color:var(--stop)}
+.head{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:baseline;justify-content:space-between}
+.head h3{margin:0;font-size:18px;font-weight:700}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.pill{font:600 12px var(--body);padding:2px 9px;border-radius:999px;white-space:nowrap}
+.st-force{background:var(--ok-bg);color:var(--ok)} .st-phase{background:var(--info-bg);color:var(--info)}
+.st-proposed{background:var(--warn-bg);color:var(--warn)} .st-paused,.st-rolled{background:var(--stop-bg);color:var(--stop)}
+.pl{background:var(--grey-bg);color:var(--ink);font-family:var(--mono);font-weight:500}
+.ni{background:var(--red-soft);color:var(--red)}
+.pub{background:var(--info-bg);color:var(--info)}
+.tn{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+.tn>div{min-width:0}
+.tn h4,.tension h4{margin:0 0 3px;font:500 11.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.tn p,.tension p{margin:0;font-size:15px}
+.tension{margin-top:12px;padding:10px 12px;background:var(--red-soft)}
+.tension h4{color:var(--red)}
+.key{margin-top:10px;font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.src{margin-top:8px;font-size:13px}
+.src a{color:var(--info)}
+.empty{padding:24px;border:1px dashed var(--line);color:var(--muted);text-align:center}
+#cases .cards{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.case h3{font-family:var(--display);font-size:20px;margin:0}
+.case .mineral{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+.ledger{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin-top:10px;font-size:14.5px}
+.ledger dt{font:600 12px var(--mono);padding-top:2px}
+.ledger dt.e{color:var(--ok)} .ledger dt.s{color:var(--stop)} .ledger dt.g{color:var(--info)}
+.ledger dd{margin:0}
+footer{margin-top:40px;border-top:1px solid var(--line);padding-top:14px;font-size:13.5px;color:var(--muted);max-width:80ch}
+@media (max-width:640px){.tn{grid-template-columns:1fr}.row .lab{width:100%}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="mast">
+  <svg class="mark" viewBox="0 0 54 54" aria-hidden="true"><path d="M27 2a25 25 0 0 0 0 50z" fill="var(--ink)"/><path d="M27 2a25 25 0 0 1 0 50z" fill="var(--red)"/></svg>
+  <div>
+    <a class="brand" href="/" style="text-decoration:none" title="Back to the Robert J. Park website">Robert J. <b>Park</b> · Environment · Carbon · Public Affairs · Northern Ireland</a>
+    <h1>ESG Regime Tracker</h1>
+  </div>
+</header>
+<p class="lede">Current and proposed sustainability regimes across the UK, Northern Ireland, the EU, North America, Australasia and other markets, with UN goals, for manufacturers, councils and public bodies. Each entry sets where things stood in 2023 against where they stand now, and flags where one ESG pillar works against another.</p>
+<div class="asat">Position as at 16 October 2026. Statuses move fast: check the linked source before relying on any entry.</div>
+
+<div class="lens">
+  <div><div class="big">2026</div><h3>The year of retreat and delay</h3><p>The EU Omnibus narrowed CSRD and CSDDD, the SEC moved to rescind its climate rule, and supply-chain due diligence dates slid to 2027.</p></div>
+  <div><div class="big">1 Jan 2027</div><h3>UK CBAM goes live</h3><p>NI importers of steel, aluminium, cement, fertiliser and hydrogen come into scope above £50,000 of imports.</p></div>
+  <div><div class="big">36%</div><h3>SDG targets on track</h3><p>Of 139 assessable targets, per the UN SDG Report 2026; 15% have gone backwards since 2015.</p></div>
+</div>
+
+<nav class="filters" aria-label="Filter regimes">
+  <div class="row" id="f-jur"><span class="lab">Market</span></div>
+  <div class="row" id="f-st"><span class="lab">Status</span></div>
+  <div class="row" id="f-pl"><span class="lab">Pillar</span></div>
+  <div class="tools">
+    <input id="q" type="search" placeholder="Search, e.g. cobalt, Scope 3, Windsor" aria-label="Search regimes">
+    <label class="toggle"><input type="checkbox" id="niOnly"> NI manufacturers</label>
+    <label class="toggle"><input type="checkbox" id="pubOnly"> Councils and public bodies</label>
+    <label class="toggle"><input type="checkbox" id="tenOnly"> E-vs-S tension only</label>
+    <span id="count"></span>
+  </div>
+</nav>
+
+<div id="ledger"></div>
+
+<section class="group" id="cases">
+  <h2>E versus S: case files <small>clean-energy minerals</small></h2>
+  <div class="cards" id="caseCards"></div>
+</section>
+
+<footer>Prepared by Robert J. Park for learning, client briefing and discussion. Not legal advice. Sources are a mix of official publications and law-firm and NGO analysis; energy-broker material is excluded by design. "Then" reflects the public position in 2023, when the author completed the CISL High Impact Leadership course; "Now" reflects public information to 16 October 2026. Companion to the guide High Impact Leadership: Then and Now.</footer>
+</div>
+
+<script>
+const JUR=["UK","Northern Ireland","EU","North America","Australasia","Other markets","UN & global"];
+const ST={force:"In force",phase:"Phasing in",proposed:"Proposed / consulting",paused:"Paused / litigated",rolled:"Rolled back"};
+const R=[
+// UK
+{j:"UK",n:"UK Sustainability Reporting Standards (UK SRS S1 & S2)",st:"phase",p:["E","G"],ni:true,
+ then:"No UK standard. ISSB published IFRS S1 and S2 in June 2023; the UK set up an endorsement process. Listed companies reported on TCFD.",
+ now:"Final UK SRS published 25 Feb 2026 for voluntary use. FCA rules (PS26/19) bring listed companies onto UK SRS on a comply-or-explain basis for periods from 1 Jan 2027. Private companies not yet proposed; the corporate reporting consultation runs to 30 Nov 2026.",
+ key:"Listed: FY2027 · Private: no date",src:[["PwC: UK SRS endorsed","https://www.pwc.co.uk/industries/financial-services/understanding-regulatory-developments/uk-government-endorses-uk-sustainability-reporting-standards.html"],["UK SRS status table","https://uksrs.org.uk/"]]},
+{j:"UK",n:"Climate transition plans",st:"proposed",p:["E","G"],ni:false,
+ then:"Transition Plan Taskforce consulting on its disclosure framework (final Oct 2023). No legal duty.",
+ now:"DESNZ consultation on transition plan requirements closed 17 Sep 2025 with no duty yet set. The FCA says it is not requiring listed companies to produce plans; UK SRS S2 asks only for disclosure of any plan a company has.",
+ key:"No mandatory date",src:[["UK SRS status table","https://uksrs.org.uk/"]]},
+{j:"UK",n:"UK Carbon Border Adjustment Mechanism",st:"phase",p:["E"],ni:true,
+ then:"Announced in December 2023 for introduction in 2027. No design detail.",
+ now:"Starts 1 Jan 2027 on aluminium, cement, fertiliser, hydrogen, iron and steel. Registration above £50,000 of in-scope imports. Importers need supplier emissions data; first return and payment due 31 May 2028 for 2027 imports.",
+ tension:"The charge lands on SMEs least able to collect verified supplier data, while large overseas producers with good data may pay least.",
+ key:"Live 1 Jan 2027 · First payment 31 May 2028",src:[["Burges Salmon: UK CBAM","https://www.burges-salmon.com/articles/102mo9q/uk-cbam-from-framework-to-fine-print-ready-for-2027-launch"],["NI Business Info: CBAM","https://www.nibusinessinfo.co.uk/content/cbam-guidance-toolkit-and-resources-businesses"]]},
+{j:"UK",n:"UK ETS and EU ETS linking",st:"proposed",p:["E","G"],ni:true,
+ then:"Separate systems since 2021. The Trade and Cooperation Agreement only asked both sides to give linking serious consideration.",
+ now:"Common Understanding agreed May 2025; formal negotiations began in early 2026. A link would bring mutual CBAM exemptions, but only once in force. The one precedent, Switzerland, took more than two years.",
+ key:"Target: next UK-EU summit",src:[["CBAM Guide: ETS linkage","https://cbamguide.com/learn/uk-cbam/ets-linkage/"],["NI Assembly research paper","https://www.niassembly.gov.uk/assembly-business/committees/2022-2027/windsor-framework-democratic-scrutiny-committee/research-papers/2025/the-eu-uk-reset-implications-of-an-emissions-trading-system-ets-linkage-agreement-for-the-windsor-framework"]]},
+{j:"UK",n:"Modern Slavery Act 2015, section 54",pub:true,st:"force",p:["S","G"],ni:true,
+ then:"Annual slavery and human trafficking statements for organisations with £36m+ turnover. Weak enforcement, no penalties for poor statements.",
+ now:"Unchanged in substance. Stronger tools now sit in the EU (Forced Labour Regulation) and US (UFLPA), so UK exporters feel those rules through customers first.",
+ tension:"Statements cover the S pillar, but no UK rule ties them to the transition minerals driving E-pillar targets.",
+ key:"Annual statement",src:[["legislation.gov.uk","https://www.legislation.gov.uk/ukpga/2015/30/section/54"]]},
+// NI
+{j:"Northern Ireland",n:"Climate Change Act (NI) 2022: targets and carbon budgets",st:"phase",p:["E","G"],ni:false,pub:true,
+ then:"Act passed in 2022 with net zero by 2050; first Climate Action Plan due by end of 2023.",
+ now:"Interim targets set: net emissions at least 48% below baseline by 2030 and 77% by 2040. First three carbon budgets (average cuts of 33%, 48%, 62%) set December 2024. The first Climate Action Plan missed its statutory deadlines and went to consultation June to October 2025; check whether the final plan has been laid.",
+ tension:"Public decarbonisation (fleets, solar, heat pumps) buys the same transition minerals as industry.",
+ key:"2030: -48% · 2040: -77% · 2050: net zero",src:[["DAERA ministerial statement, June 2025","https://www.niassembly.gov.uk/globalassets/documents/official-reports/written-ministerial-statements/2022---2027/bv178_daera_18062025.pdf"],["DAERA: draft plan consultation","https://www.daera-ni.gov.uk/node/421472"]]},
+{j:"Northern Ireland",n:"Public body climate reporting (Reporting Bodies Regulations 2024)",st:"force",p:["E","G"],ni:false,pub:true,
+ then:"No reporting duty on NI public bodies.",
+ now:"40 large public bodies must report. Emissions reports: first due 31 October 2025 on a 2024/25 baseline, then every 3 years; Scope 1 and 2 required, Scope 3 voluntary but encouraged. Adaptation reports: first due 31 March 2026, then every 5 years. The 40 include all 11 district councils, the Education Authority, FE colleges, both universities, health trusts, NI Water, NIHE and the PSNI. DAERA said in June 2026 that all 40 met their first duties; a findings summary is to follow.",
+ tension:"With Scope 3 voluntary, purchasing, usually the largest share, can stay off the books.",
+ key:"Next emissions report: 2028",src:[["DAERA: public body reporting","https://www.daera-ni.gov.uk/articles/public-body-reporting-climate-change"],["Regulations and schedule","https://legislation.gov.uk/nisr/2024/93/data.html"],["DAERA: all 40 reported, June 2026","https://www.daera-ni.gov.uk/news/public-bodies-celebrated-milestone-achievement-climate-change-reporting"]]},
+{j:"Northern Ireland",n:"Social value in public procurement (PPN 01/21, revised)",st:"force",p:["S","E","G"],ni:true,pub:true,
+ then:"PPN 01/21 issued July 2021: a minimum 10% social value weighting.",
+ now:"Revised PPN effective 24 February 2025: at least 10% of award criteria for social value on works contracts above the UK threshold and services contracts above £500,000 (VAT inclusive). Applies alongside the Procurement Act 2023, live from the same date.",
+ tension:"Social value scoring rewards local jobs and carbon cuts but rarely reaches labour conditions at mine sites.",
+ key:"In force since 24 Feb 2025",src:[["Department of Finance: PPN 01/21","https://www.finance-ni.gov.uk/publications/ppn-0121-scoring-social-value"],["Irish Legal News: Procurement Act in NI","https://www.irishlegal.com/articles/william-curry-northern-ireland-all-change-in-public-procurement"]]},
+{j:"Northern Ireland",n:"Contaminated land: Part III of the 1997 Order",st:"proposed",p:["E","S","G"],ni:true,pub:true,
+ then:"Part III of the Waste and Contaminated Land (NI) Order 1997 never commenced.",
+ now:"Still not commenced. NI has no statutory contaminated land identification and remediation regime of the kind in force in Great Britain. Assembly and council elections on 7 May 2027 are the next chance to press for commencement.",
+ key:"Elections: 7 May 2027",src:[["Londonderry Chamber: 2027 elections","https://londonderrychamber.co.uk/2027-assembly-elections-what-businesses-should-watch-one-year-out/"]]},
+{j:"Northern Ireland",n:"NI electricity in the EU ETS (Windsor Framework)",st:"force",p:["E"],ni:true,
+ then:"NI electricity generation stayed in the EU ETS after Brexit; the rest of NI industry moved to the UK ETS.",
+ now:"Unchanged. A UK-EU ETS link would resolve the split; until then NI runs two carbon prices side by side.",
+ key:"Ongoing",src:[["CBAM Guide: ETS linkage","https://cbamguide.com/learn/uk-cbam/ets-linkage/"]]},
+{j:"Northern Ireland",n:"EU CBAM and the Windsor Framework",st:"paused",p:["E","G"],ni:true,
+ then:"EU CBAM transitional reporting began 1 Oct 2023. Commentators flagged a risk that it could be applied at the Irish Sea border.",
+ now:"EU CBAM has not been formally extended to NI under Article 13(4). GB-to-NI goods currently carry no EU CBAM formalities, but 'at risk' rules could change that. NI suppliers already face EU customers asking for emissions data.",
+ key:"Watch: Joint Committee decisions",src:[["NI Business Info: CBAM FAQ","https://www.nibusinessinfo.co.uk/content/carbon-border-adjustment-mechanism-cbam-frequently-asked-questions"]]},
+{j:"Northern Ireland",n:"UK CBAM: NI outward-processing carve-out",st:"phase",p:["E"],ni:true,
+ then:"Did not exist.",
+ now:"Goods that leave NI for processing in the EU and return within three years in the same state are exempt from UK CBAM. No equivalent applies elsewhere in the UK.",
+ key:"From 1 Jan 2027",src:[["Buzz Accounting: UK CBAM and NI","https://buzzaccounting.co.uk/blog/uk-cbam-carbon-border-tax-2027-northern-ireland"]]},
+// EU
+{j:"EU",n:"Corporate Sustainability Reporting Directive (CSRD)",st:"phase",p:["E","S","G"],ni:true,
+ then:"In force from Jan 2023; first ESRS set adopted July 2023. Roughly 50,000 companies in scope, with reasonable assurance planned and sector standards to follow.",
+ now:"Omnibus I (Directive 2026/470) in force 18 Mar 2026: far narrower scope, sector standards dropped, limited assurance only. Companies of up to 1,000 staff can refuse supply-chain data requests beyond the voluntary standard. Transposition by 19 Mar 2027.",
+ tension:"Double materiality made firms weigh E and S together. Cutting scope removes most of the companies where the trade-offs actually occur.",
+ key:"Transpose by 19 Mar 2027 · Revised ESRS from FY2027",src:[["Gibson Dunn: Omnibus enacted","https://www.gibsondunn.com/omnibus-simplification-of-eu-sustainability-rules-csrd-and-csddd-enacted/"],["Latham: Omnibus published","https://www.lw.com/en/insights/eu-sustainability-omnibus-published-in-the-official-journal"]]},
+{j:"EU",n:"Corporate Sustainability Due Diligence Directive (CSDDD)",st:"phase",p:["S","E","G"],ni:false,
+ then:"In trilogue. Commission proposal covered companies with 500+ staff and €150m turnover, with climate transition plans and civil liability.",
+ now:"Applies only to companies with 5,000+ staff and €1.5bn turnover, from 2029. Transition plan duty deleted, EU-wide civil liability removed, Member States barred from going further. Transposition by 26 Jul 2028.",
+ tension:"The S-pillar tool most able to reach mine sites now reaches the fewest companies, and the climate plan link was cut.",
+ key:"Applies 2029",src:[["Latham: Omnibus published","https://www.lw.com/en/insights/eu-sustainability-omnibus-published-in-the-official-journal"],["Covington: CSDDD/CSRD","https://www.cov.com/en/news-and-insights/insights/2026/02/eu-csddd-csrd-omnibus-published-in-official-journal-transposition-delegated-acts-and-guidelines-are-next"]]},
+{j:"EU",n:"EU Carbon Border Adjustment Mechanism",st:"force",p:["E"],ni:true,
+ then:"Transitional period began 1 Oct 2023: quarterly reports on embedded emissions, no payment.",
+ now:"Definitive regime since 1 Jan 2026. Importers under 50 tonnes a year of steel, aluminium, cement and fertiliser are exempt. Certificates on sale from 1 Feb 2027; first declaration for 2026 imports due 30 Sep 2027.",
+ key:"First declaration 30 Sep 2027",src:[["HSF Kramer: EU CBAM","https://www.hsfkramer.com/notes/energy/2026-posts/operationalisation-and-simplification-of-the-eu-cbam"]]},
+{j:"EU",n:"Car CO2 standards: the 2035 target",st:"proposed",p:["E","G"],ni:true,
+ then:"Regulation 2023/851 adopted in 2023: new cars and vans must cut CO2 by 100% from 2035, in effect ending new petrol and diesel sales.",
+ now:"Not scrapped in law. The 100% target still stands. The Commission proposed on 16 December 2025 to cut it to 90%, with plug-in hybrids, range extenders and combustion engines allowed after 2035 and the last 10% offset with EU low-carbon steel or e-fuels and biofuels. Parliament votes in plenary on 23 November 2026; governments have no agreed position yet. On 16 October 2026 France and Germany backed a 90% target with no offset, tied to 'Made in Europe' rules: 70% of components (excluding batteries) and 10% of battery content from Europe, with the UK able to qualify through an agreement.",
+ tension:"A softer 2035 target slows tailpipe cuts (E) but eases the pull on battery minerals and protects car-industry jobs (S); 'Made in Europe' battery rules shift where mining and refining harms fall.",
+ key:"Parliament vote 23 Nov 2026",src:[["Euronews: Commission proposal, Dec 2025","https://www.euronews.com/2025/12/16/eu-carmakers-to-comply-with-90-emissions-reduction-by-2035-as-full-combustion-engine-ban-s"],["Euronews: France-Germany deal, 16 Oct 2026","https://www.euronews.com/2026/10/16/france-and-germany-strike-car-industry-deal-linking-2035-engine-rules-to-made-in-europe-pu"],["EU Insider: Parliament draft report","https://www.euinsider.eu/news/eu-2035-engine-ban-parliament-vote-2026"]]},
+{j:"EU",n:"Batteries Regulation: raw-material due diligence",st:"proposed",p:["S","E"],ni:false,
+ then:"Regulation 2023/1542 adopted July 2023, with due diligence on cobalt, lithium, nickel and graphite due from Aug 2025.",
+ now:"Postponed to 18 Aug 2027 (Omnibus IV). Commission guidelines were due by 26 Jul 2026. Requirements themselves unchanged.",
+ tension:"The one EU rule written specifically for EV battery minerals has been pushed back while EV sales targets stayed.",
+ key:"Applies 18 Aug 2027",src:[["ERP: Council confirms delay","https://erp-recycling.org/news-and-events/2025/09/battery-due-diligence-council-confirms-delay/"]]},
+{j:"EU",n:"Forced Labour Regulation (EU) 2024/3015",st:"phase",p:["S"],ni:true,
+ then:"Proposed by the Commission in Sept 2022.",
+ now:"In force Dec 2024; the ban on placing, selling or exporting forced-labour products applies from 14 Dec 2027, to firms of any size. The Commission missed its 14 Jun 2026 guidance deadline.",
+ tension:"Directly relevant to solar polysilicon and battery supply chains that underpin E-pillar targets.",
+ key:"Applies 14 Dec 2027",src:[["Mayer Brown: 10 questions","https://www.mayerbrown.com/en/insights/publications/2026/06/the-eu-forced-labour-regulation-10-questions-every-general-counsel-should-be-asking"]]},
+{j:"EU",n:"Deforestation Regulation (EUDR)",st:"proposed",p:["E","S"],ni:true,
+ then:"Entered into force June 2023, due to apply Dec 2024.",
+ now:"Delayed twice; now due to apply 30 Dec 2026 under Regulation 2025/2650, with further simplification possible.",
+ key:"Applies 30 Dec 2026",src:[["Mayer Brown: Eye on ESG","https://www.eyeonesg.com/author/pvanderschueren/"]]},
+// North America
+{j:"North America",n:"US SEC climate disclosure rule",st:"rolled",p:["E","G"],ni:false,
+ then:"Proposed March 2022, including Scope 3. Final rule (adopted March 2024) still ahead.",
+ now:"SEC stopped defending the rule in 2025 and voted on 29 May 2026 to propose rescinding it entirely. Eighteen states and DC intervened to defend it.",
+ key:"Rescission proposed",src:[["Duane Morris: SEC rescission","https://blogs.duanemorris.com/capitalmarkets/author/drugarte/"],["SBA Office of Advocacy","https://advocacy.sba.gov/2026/06/04/secs-recission-of-climate-related-disclosure-rules/"]]},
+{j:"North America",n:"California SB 253 (emissions reporting)",st:"phase",p:["E"],ni:false,
+ then:"Signed October 2023. Companies with $1bn+ revenue doing business in California to report Scope 1, 2 and 3.",
+ now:"CARB's Initial Regulation took effect 12 Oct 2026. First Scope 1 and 2 reports due 10 Nov 2026; Scope 3 from 2027. Not covered by the Ninth Circuit injunction.",
+ key:"Due 10 Nov 2026",src:[["Sullivan & Cromwell: CARB regulation","https://www.sullcrom.com/insights/memo/2026/October/CARB-Initial-Regulation-Confirms-November-10-Reporting-Deadline"]]},
+{j:"North America",n:"California SB 261 (climate risk reports)",st:"paused",p:["E","G"],ni:false,
+ then:"Signed October 2023. Biennial climate-risk reports for $500m+ revenue companies from 2026.",
+ now:"Enforcement enjoined by the Ninth Circuit on 18 Nov 2025; argued 9 Jan 2026; ruling awaited. Reporting voluntary meanwhile.",
+ key:"Awaiting ruling",src:[["Thompson Hine: final rule","https://www.thompsonhine.com/insights/carbs-final-climate-disclosure-rule-sets-sb-253-deadline-leaves-sb-261-paused/"]]},
+{j:"North America",n:"US Uyghur Forced Labor Prevention Act",st:"force",p:["S"],ni:false,
+ then:"In force since June 2022 with a presumption that Xinjiang-linked goods use forced labour. Solar modules detained at the border.",
+ now:"Still in force. Detentions have spread to goods from third countries, including India-made electronics and solar products.",
+ tension:"Cheaper Xinjiang polysilicon lowers the cost of solar (E) while the forced-labour risk sits in S.",
+ key:"Ongoing",src:[["Outlook Business: Indian solar detentions","https://www.outlookbusiness.com/planet/industry/indian-solar-panels-under-us-scrutiny-over-alleged-forced-labour-links"]]},
+{j:"North America",n:"Canada CSDS 1 and 2",st:"proposed",p:["E","G"],ni:false,
+ then:"Canadian Sustainability Standards Board formed June 2023; CSA climate rule (NI 51-107) stalled since 2021.",
+ now:"Final ISSB-based standards issued Dec 2024, voluntary from 1 Jan 2025. No CSA mandatory rule or date.",
+ key:"Voluntary",src:[["Torys: final CSSB standards","https://www.torys.com/en/our-latest-thinking/publications/2025/01/final-cssb-standards-and-sec-rules"]]},
+// Australasia
+{j:"Australasia",n:"Australia mandatory climate reporting (AASB S2)",st:"phase",p:["E","G"],ni:false,
+ then:"Treasury consulting on a mandatory regime in 2023.",
+ now:"In law. Group 1 reporting from 1 Jan 2025, Group 2 from 1 Jul 2026, Group 3 from 1 Jul 2027. Scope 3 not required in a first reporting year.",
+ key:"Group 2 live · Group 3 Jul 2027",src:[["MinterEllison: Australian regime","https://minterellison.co.nz/insights/australia-s-new-mandatory-climate-disclosures-regi"],["BDO: AASB standards","https://www.bdo.com.au/en-au/insights/esg-sustainability/aasb-approves-final-sustainability-reporting-standards"]]},
+{j:"Australasia",n:"New Zealand climate-related disclosures",st:"force",p:["E","G"],ni:false,
+ then:"First mandatory reports under the NZ regime for periods from 1 Jan 2023.",
+ now:"Still in force and an early model for Australia. NZ subsidiaries of Australian groups may also be caught by AASB S2.",
+ key:"Ongoing",src:[["MinterEllison","https://minterellison.co.nz/insights/australia-s-new-mandatory-climate-disclosures-regi"]]},
+// Other
+{j:"Other markets",n:"ISSB adoption (Japan, Korea and others)",st:"phase",p:["E","G"],ni:false,
+ then:"IFRS S1 and S2 issued June 2023. No jurisdiction had adopted them.",
+ now:"28 jurisdictions had adopted by April 2026. Japan's FSA mandated SSBJ standards for listed companies in Feb 2026; Korea issued KSDS 1 and 2 in Feb 2026.",
+ key:"Varies by market",src:[["S&P Global: ISSB Q2 2026","https://www.spglobal.com/sustainable1/en/insights/research-reports/issb-q2-2026"]]},
+{j:"Other markets",n:"China rare-earth export controls",st:"paused",p:["G","E"],ni:true,
+ then:"China restricted gallium and germanium exports (Aug 2023) and graphite (Dec 2023).",
+ now:"April 2025 licensing on seven medium and heavy rare earths still applies. The wider October 2025 controls were suspended for a year, to about 10 Nov 2026. China mines about 69% and processes up to 90% of rare earths.",
+ tension:"Magnets for EVs and wind turbines depend on one supplier's trade policy, so decarbonisation is exposed to geopolitics.",
+ key:"Suspension ends ~10 Nov 2026",src:[["Mining Technology","https://www.mining-technology.com/news/china-rare-earth-export-pause-nears-expiry-amid-persistent-supply-concentration/"]]},
+{j:"Other markets",n:"DRC cobalt export quotas",st:"force",p:["G","S"],ni:false,
+ then:"No export controls. Artisanal mining and child labour concerns well documented.",
+ now:"Export ban Feb to Oct 2025, then annual quotas of 96,600 tonnes for 2026 and 2027, with 10% held for state strategic use.",
+ tension:"Quotas lift prices and state control, but give no direct fix for conditions in artisanal mines.",
+ key:"Quota 2026-27",src:[["IEA policy database","https://www.iea.org/policies/29138"]]},
+// UN
+{j:"UN & global",n:"Paris Agreement and COP process",pub:true,st:"phase",p:["E","S","G"],ni:false,
+ then:"COP28 Dubai (Dec 2023): first global stocktake; parties agreed to transition away from fossil fuels in energy systems.",
+ now:"US withdrew in 2025. COP30 Belém (Nov 2025) produced the Global Mutirão decision and an adaptation roadmap but no fossil-fuel roadmap in the final text. COP31 runs in Antalya, 9-20 Nov 2026, with Australia presiding over negotiations.",
+ key:"COP31: 9-20 Nov 2026",src:[["Mediterranean Conservation Society: COP31","https://akdenizkoruma.org.tr/en/blog/cop31-antalya-what-kind-of-climate-test-awaits-turkiye"],["UNFCCC COP31","https://unfccc.int/cop31"]]},
+{j:"UN & global",n:"Sustainable Development Goals",pub:true,st:"force",p:["E","S","G"],ni:false,
+ then:"UN SDG Report 2023: only about 15% of targets on track at the halfway point.",
+ now:"UN SDG Report 2026 (7 Jul 2026): 36% of 139 assessable targets on track or making moderate progress, 49% too slow, 15% regressed. No gender equality target is on track.",
+ tension:"SDG 7 (clean energy) and SDG 13 (climate) pull on the same minerals that strain SDG 6 (water), SDG 8 (decent work) and SDG 15 (life on land).",
+ key:"Deadline 2030",src:[["UN SDG Report 2026 press release","https://unstats.un.org/sdgs/files/report/2026/SDG_Report_2026_Press_Release_EN.pdf"]]}
+];
+const CASES=[
+{m:"Cobalt",t:"Democratic Republic of Congo",
+ e:"Cobalt is used in nickel-cobalt-manganese battery cathodes for EVs.",
+ s:"The DRC supplies about 70% of world cobalt; an estimated 15-30% is artisanal, with child labour and unsafe pits long documented. Mining revenue is linked to conflict in the east.",
+ g:"2025 export ban then 2026-27 quotas; state buyer EGC and formalised artisanal zones.",
+ now:"Then: NGO exposés (Amnesty 2016, 2023). Now: state control of supply, with quotas changing price faster than conditions.",
+ src:["https://www.iea.org/policies/29138"]},
+{m:"Lithium",t:"Salar de Atacama, Chile",
+ e:"Brine lithium has a lower carbon footprint than hard-rock lithium and feeds EV and storage batteries.",
+ s:"Evaporation ponds draw on scarce desert water; the Lickanantay people have protested for decades over water and sacred land. The area is subsiding.",
+ g:"Codelco-SQM joint venture pledges to halve brine extraction and stop using continental water; the 2026 benefit-sharing deal divided Indigenous communities.",
+ now:"Then: SQM under court order over over-pumping. Now: state-led model with promises still to be proven.",
+ src:["https://www.climatechangenews.com/2026/03/18/landmark-deal-to-share-chiles-lithium-windfall-fractures-indigenous-communities/"]},
+{m:"Heavy rare earths",t:"Kachin State, Myanmar",
+ e:"Dysprosium and terbium go into permanent magnets for EV motors and wind turbines.",
+ s:"Leaching pools have left streams acidic and high in arsenic; workers report illness and deaths. Revenue funds militias in a civil war.",
+ g:"Unlicensed, illegal under Myanmar law; ore flows to Chinese refiners and on into Western brands.",
+ now:"Then: China imports rising fast (19.5kt in 2021). Now: 41.7kt by 2023, and Myanmar the largest single source.",
+ src:["https://www.globalwitness.org/en/press-releases/new-investigation-reveals-alarming-expansion-heavy-rare-earth-mining-myanmar-and-devastating-cost-communities-and-environment/"]},
+{m:"Nickel",t:"Weda Bay, Halmahera, Indonesia",
+ e:"Nickel is needed for high-energy EV batteries. The smelting park runs on eleven captive coal plants, with three more being built.",
+ s:"At least 5,331 ha of forest cleared; rivers and the bay polluted; Indigenous land rights and fishing livelihoods affected.",
+ g:"Joint venture of Tsingshan, Eramet and PT Antam; companies deny responsibility for the pollution.",
+ now:"Then: CRI 'Nickel Unearthed' report (Jan 2024). Now: follow-up (2025) finds harms continuing as the park expands.",
+ src:["https://cri.org/reports/ongoing-harms-limited-accountability/"]},
+{m:"Polysilicon",t:"Xinjiang, China",
+ e:"Polysilicon is the base material of most solar panels; Xinjiang has supplied close to half of world output.",
+ s:"State labour-transfer programmes put Uyghur workers at risk of forced labour.",
+ g:"US UFLPA presumption since 2022; EU Forced Labour Regulation applies from Dec 2027.",
+ now:"Then: solar shipments held at US ports. Now: enforcement reaches goods routed through third countries.",
+ src:["https://www.outlookbusiness.com/planet/industry/indian-solar-panels-under-us-scrutiny-over-alleged-forced-labour-links"]}
+];
+
+const state={j:new Set(),st:new Set(),pl:new Set(),q:"",ni:false,pub:false,ten:false};
+function chips(id,items,set,label){
+  const row=document.getElementById(id);
+  items.forEach(([k,txt])=>{const b=document.createElement("button");b.className="chip";b.type="button";b.textContent=txt;b.setAttribute("aria-pressed","false");
+    b.onclick=()=>{set.has(k)?set.delete(k):set.add(k);b.setAttribute("aria-pressed",set.has(k));render()};row.appendChild(b)});
+}
+chips("f-jur",JUR.map(x=>[x,x]),state.j);
+chips("f-st",Object.entries(ST),state.st);
+chips("f-pl",[["E","E · Environmental"],["S","S · Social"],["G","G · Governance"]],state.pl);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function card(r){
+  return `<article class="card" data-st="${r.st}"><div class="head"><h3>${esc(r.n)}</h3><div class="tags">
+  <span class="pill st-${r.st}">${ST[r.st]}</span>${r.p.map(p=>`<span class="pill pl">${p}</span>`).join("")}${r.ni?'<span class="pill ni">NI SME</span>':""}${r.pub?'<span class="pill pub">Public sector</span>':""}</div></div>
+  <div class="tn"><div><h4>Then · 2023</h4><p>${esc(r.then)}</p></div><div><h4>Now · Oct 2026</h4><p>${esc(r.now)}</p></div></div>
+  ${r.tension?`<div class="tension"><h4>Pillar tension</h4><p>${esc(r.tension)}</p></div>`:""}
+  <div class="key">${esc(r.key)}</div>
+  <div class="src">Sources: ${r.src.map(([t,u])=>`<a href="${u}" target="_blank" rel="noopener">${esc(t)}</a>`).join(" · ")}</div></article>`;
+}
+function render(){
+  const q=state.q.toLowerCase();
+  const list=R.filter(r=>(!state.j.size||state.j.has(r.j))&&(!state.st.size||state.st.has(r.st))&&(!state.pl.size||r.p.some(p=>state.pl.has(p)))
+    &&(!state.ni||r.ni)&&(!state.pub||r.pub)&&(!state.ten||r.tension)&&(!q||[r.n,r.then,r.now,r.tension||"",r.j].join(" ").toLowerCase().includes(q)));
+  document.getElementById("count").textContent=`${list.length} of ${R.length} regimes`;
+  const out=JUR.map(j=>{const g=list.filter(r=>r.j===j);return g.length?`<section class="group"><h2>${esc(j)} <small>${g.length}</small></h2><div class="cards">${g.map(card).join("")}</div></section>`:""}).join("");
+  document.getElementById("ledger").innerHTML=out||'<div class="empty" style="margin-top:24px">No regimes match these filters. Clear a filter or the search box to see more.</div>';
+}
+document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value;render()});
+document.getElementById("niOnly").addEventListener("change",e=>{state.ni=e.target.checked;render()});
+document.getElementById("pubOnly").addEventListener("change",e=>{state.pub=e.target.checked;render()});
+document.getElementById("tenOnly").addEventListener("change",e=>{state.ten=e.target.checked;render()});
+document.getElementById("caseCards").innerHTML=CASES.map(c=>`<article class="card case"><div class="mineral">${c.m}</div><h3>${c.t}</h3>
+<dl class="ledger"><dt class="e">E gain</dt><dd>${esc(c.e)}</dd><dt class="s">S cost</dt><dd>${esc(c.s)}</dd><dt class="g">G</dt><dd>${esc(c.g)}</dd></dl>
+<div class="tension"><h4>Then → Now</h4><p>${esc(c.now)}</p></div><div class="src"><a href="${c.src[0]}" target="_blank" rel="noopener">Source</a></div></article>`).join("");
+render();
+</script>
+</body>
+</html>
