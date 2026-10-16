@@ -25,6 +25,17 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.5.0 — 16 October 2026: home page tools band and photos
+
+**Added**
+- `assets/photos/`: 11 web-sized photos (max 1600 px). Five are licensed Adobe Stock images held by Robert J. Park: solar roof factory, food manufacturing, logistics and freight, warehouse, customs declaration. Six are Robert's own: LPG cylinders, NI Railways train, paint reuse container, young tree, weather station, artichoke with bee.
+- Home page (`index.html`): a "Free tools and guides" band after the public sector band, linking the Carbon Jigsaw, Scopes Map, Joined-Up Wheel and both guides, illustrated with the solar roof photo.
+- `assets/style.css`: styles for the tools band.
+- `guides/circular-economy.html`: two photos illustrating the technical loop (paint reuse) and the biological loop (bee on artichoke).
+
+**Changed**
+- `tools/carbon-jigsaw.html`: UK CBAM flag now states the registration test correctly: £50,000 of CBAM goods over the past 12 months, or expected within the next 30 days. Iron and steel is named explicitly.
+
 ### v0.4.0 — 16 October 2026: e-waste and circular economy guides
 
 **Added**
@@ -75,16 +86,33 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Backlog
 
-- [ ] Point the custom domain at GitHub Pages, set `url:` in `_config.yml`, and tick Enforce HTTPS
-- [ ] Add a "Free tools" band to the home page linking to `/tools/`
-- [ ] Wheel: decide which routes in are your own services and which go to partners, then add a "How I help" line to each issue
-- [ ] Carbon Jigsaw: replace the 2026 factors when DESNZ publishes the 2027 set (June 2027)
-- [ ] Carbon Jigsaw phase 2: bill upload with automatic reading (needs a back end; not possible on GitHub Pages alone)
+### Waiting on Robert
+- [ ] Merge pull requests #1 (v0.3.0), #2 (v0.4.0) and #3 (v0.5.0), in that order. Each merge goes live within a couple of minutes.
+- [ ] Register the domain (e.g. robertjpark.co.uk), add it under Settings → Pages, set `url:` in `_config.yml`, tick Enforce HTTPS
+- [ ] Wheel: decide which routes in are your own services and which go to partners; then add a "How I help" line to each issue
+- [ ] Carbon Jigsaw: confirm the flight distance and commuting assumptions (1,040 / 2,000 / 11,000 km return; 46 working weeks)
+- [ ] Ask NIEA to confirm its position on POPs in WEEE plastics (the e-waste guide currently cites regulator guidance generally)
+- [ ] Mark the remaining 62 stock images "Keep Downloaded" in iCloud so they can be reviewed
+- [ ] Blur or crop the school bus number plate, or drop that photo
+
+### Ready to build next
 - [ ] Puzzles: Scope Sort, Pillar Clash, acronym match-up
-- [ ] Blog post introducing the wheel, embedding it with the snippet in `_snippets/embed.html`
-- [ ] Watch: EU Parliament vote on car CO2 standards, 23 November 2026; update the tracker
-- [ ] Watch: SEAC final opinion on the EU universal PFAS restriction (expected end of 2026); update the wheel
-- [ ] Watch: NI final Climate Action Plan; update the tracker and wheel
+- [ ] Blog posts introducing the Carbon Jigsaw, Scopes Map and e-waste guide, embedding them with `_snippets/embed.html`
+- [ ] Add photos to the services and public sector pages
+- [ ] A Tools index card image for each tool
+
+### Later
+- [ ] Carbon Jigsaw phase 2: bill upload with automatic reading (needs a back end; not possible on GitHub Pages alone)
+- [ ] Replace the Carbon Jigsaw's 2026 factors when DESNZ publishes the 2027 set (June 2027)
+
+### Watch list (update pages when these land)
+- [ ] EU Circular Economy Act proposal, expected 11 November 2026: e-waste and circular economy guides
+- [ ] EU Parliament plenary vote on car CO2 standards, 23 November 2026: ESG Regime Tracker
+- [ ] SEAC final opinion on the EU universal PFAS restriction, expected end of 2026: Joined-Up Wheel
+- [ ] England's Circular Economy Growth Plan and NI's final Circular Economy Strategy: circular economy guide
+- [ ] NI final Climate Action Plan: tracker and wheel
+- [ ] GHG Protocol Scope 2 revision (consultation closed 31 January 2026): Scopes Map
+- [ ] UK CBAM go-live, 1 January 2027: tracker, jigsaw, NI manufacturers card
 
 ## Fact-check rule
 

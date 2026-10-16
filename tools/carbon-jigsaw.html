@@ -399,7 +399,7 @@ function renderResults(){
   const flags=[];
   if(state("boundary")==="empty")flags.push(["warn","Set your boundary first","Without sites, staff and sector the totals can't be compared or checked."]);
   if(fte>=250||turn>44e6)flags.push(["warn","You may be in scope of ESOS",`ESOS applies to UK businesses with 250 or more employees, or turnover above £44m <i>and</i> a balance sheet above £38m. The Phase 4 qualification date is 31 December 2026.`]);
-  if(b.cbam==="yes"||b.cbam==="unsure")flags.push(["warn","Check UK CBAM","UK CBAM starts on 1 January 2027 for imports of steel, aluminium, cement, fertiliser and hydrogen above £50,000 a year. NI firms selling into the EU may also be asked for CBAM data under EU rules."]);
+  if(b.cbam==="yes"||b.cbam==="unsure")flags.push(["warn","Check UK CBAM","UK CBAM starts on 1 January 2027 for imports of iron and steel, aluminium, cement, fertiliser and hydrogen. You must register once your CBAM goods reach £50,000 over the past 12 months, or you expect to import that much within 30 days. NI firms selling into the EU may also be asked for CBAM data under EU rules."]);
   if(b.asked==="yes")flags.push(["info","A customer has asked for your data","Buyers usually want Scopes 1 and 2 with a stated method and year. This rough check is a starting point, not something to send."]);
   if(T.all>0&&state("goods")==="locked")flags.push(["info","The biggest piece is probably missing","For most manufacturers, purchased goods and services outweigh everything measured here."]);
   document.getElementById("results").innerHTML=`
