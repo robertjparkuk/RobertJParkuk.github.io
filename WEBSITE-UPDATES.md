@@ -44,7 +44,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - `tools/land-repair-helix.html`: five new pairs (now 22): invasive plants, litter and fly-tipping, misconnected drains, light pollution, low soil carbon.
 - Logos added to the headers of the other tools and guides.
 - Photos added to `services.md`, `public-sector.md` and `about.md`.
-- `tools/joined-up-wheel.html`: a "How I help" block on each issue, saying what Robert leads and where partners come in (accountants and UKAS-accredited verification for carbon; ESOS assessors and Lead Assessor sign-off for energy; multidisciplinary teams for environmental health and land; collaboration for water and waste).
+- `tools/joined-up-wheel.html`: a "How I help" block on each issue, saying what Robert leads and where partners come in ("Led by me" means Robert is client manager and project lead; policy is delivered by Robert alone; outsourced carbon accountants and UKAS-accredited verification for carbon; ESOS assessors and Lead Assessor sign-off for energy; multidisciplinary teams for environmental health and land; collaboration for water and waste).
 - `privacy.md`: fonts are now self-hosted, so the only outside party is GitHub's hosting.
 
 **Not used:** the school bus photo. A blurred copy is in Robert's Assets/web folder, but the image looks like a broadcast screen grab, so it stays off the site.
