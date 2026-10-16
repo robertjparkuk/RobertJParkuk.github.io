@@ -44,6 +44,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - `tools/land-repair-helix.html`: five new pairs (now 22): invasive plants, litter and fly-tipping, misconnected drains, light pollution, low soil carbon.
 - Logos added to the headers of the other tools and guides.
 - Photos added to `services.md`, `public-sector.md` and `about.md`.
+- `tools/joined-up-wheel.html`: a "How I help" block on each issue, saying what Robert leads and where partners come in (accountants and UKAS-accredited verification for carbon; ESOS assessors and Lead Assessor sign-off for energy; multidisciplinary teams for environmental health and land; collaboration for water and waste).
 - `privacy.md`: fonts are now self-hosted, so the only outside party is GitHub's hosting.
 
 **Not used:** the school bus photo. A blurred copy is in Robert's Assets/web folder, but the image looks like a broadcast screen grab, so it stays off the site.
@@ -126,7 +127,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 ### Waiting on Robert
 - [ ] Merge pull request #5 (v0.7.0)
 - [ ] Register the domain (e.g. robertjpark.co.uk), add it under Settings → Pages, set `url:` in `_config.yml`, tick Enforce HTTPS
-- [ ] Wheel: decide which routes in are your own services and which go to partners; then add a "How I help" line to each issue
+- [x] Wheel "How I help" lines agreed and added (17 Oct 2026)
 - [ ] Ask NIEA to confirm its position on POPs in WEEE plastics
 - [ ] Planet Check: ask a GCSE science or geography teacher to sense-check the questions against CCEA specifications
 - [ ] Read the two new posts and the NED one-pager for voice and accuracy, especially the Public Realm Bill figures
