@@ -5,6 +5,20 @@ permalink: /tools/
 lead: Free, interactive tools for Northern Ireland businesses, councils and anyone working on carbon and environmental compliance. Facts are as at 16 October 2026.
 ---
 
+<img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="72" height="72" style="display:block;margin:0 0 1rem">
+
+## The Carbon Jigsaw
+
+A rough carbon checker for Northern Ireland businesses. Fill in each piece of the jigsaw from your bills and records: electricity, gas, oil, vehicles, refrigerants, water, waste, travel and commuting. You'll get a rough Scope 1, 2 and partial Scope 3 footprint, and the pieces you can't fill show what a full inventory would add. Your figures stay in your browser. Practise first with the sample bills.
+
+[Open the Carbon Jigsaw →]({{ '/tools/carbon-jigsaw.html' | relative_url }})
+
+## The Scopes Map
+
+Scope 1, 2 and 3 on one diagram, with all fifteen Scope 3 categories and their technical definitions. It also covers the grey zones clients ask about: gas that leaks before or after the meter, LPG that isn't a counted gas, water from a borehole, grey-fleet mileage, landlord-supplied energy, and which gases count at all.
+
+[Open the Scopes Map →]({{ '/tools/scopes-map.html' | relative_url }})
+
 ## The Joined-Up Wheel
 
 Eight environmental issues that most firms handle separately: carbon, energy costs, land, waste and packaging, forever chemicals (PFAS), water, environmental health, and policy and public affairs. All of them feed the same business goals. Pick an issue to see what triggers it, the rules today and the routes in. Pick a goal to see which issues it depends on.
@@ -22,6 +36,21 @@ Carbon and sustainability rules across the UK, Northern Ireland, the EU, North A
 Twenty-four terms from greenhouse gas reporting, carbon pricing and Northern Ireland's climate rules. Easy clues define the term; hard clues assume you've read the guidance. Use it as a team quiz, a workshop warm-up, or a printable handout with the answers on a separate page.
 
 [Play the Carbon Crossword →]({{ '/puzzles/carbon-crossword.html' | relative_url }})
+
+
+## Guides
+
+### E-waste Unpacked
+
+What's inside discarded electricals: precious, critical and rare metals, the poisons that must come out first, how a WEEE treatment line is audited, and why reuse and design beat shredding.
+
+[Read E-waste Unpacked →]({{ '/guides/e-waste.html' | relative_url }})
+
+### Circular Economy Reality Check
+
+The theory behind the circular economy, an honest scorecard of what works today, and the dated road ahead for NI, the UK and the EU.
+
+[Read the Circular Economy Reality Check →]({{ '/guides/circular-economy.html' | relative_url }})
 
 ---
 

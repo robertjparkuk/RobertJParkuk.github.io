@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="The Carbon Jigsaw: a free, rough carbon checker for Northern Ireland businesses. Fill in each piece from your bills to estimate Scope 1, 2 and partial Scope 3 emissions. By Robert J. Park.">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<title>Carbon Jigsaw</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+[hidden]{display:none!important}
+
+/* Layout: the jigsaw is the hero. Board left with the result strip under it, the piece you're filling in on the right; stacks on phones. */
+:root{
+  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2; --field:#FFFFFF;
+  --red:#B3121B; --s1:#B3121B; --s2:#C7781A; --s3:#2D6CA3; --gen:#4F7F2A; --bnd:#1B1817; --lock:#6E6866;
+  --empty:#F1EDEA; --empty-line:#B9AFAA; --ok:#1F6B45; --warn:#A86A00;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D; --field:#1E1A19;
+  --red:#E5484D; --bnd:#E9E3E0; --lock:#8A8380; --empty:#262120; --empty-line:#5A514F; --ok:#4CC38A; --warn:#E0A84B; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D; --field:#1E1A19;
+  --red:#E5484D; --bnd:#E9E3E0; --lock:#8A8380; --empty:#262120; --empty-line:#5A514F; --ok:#4CC38A; --warn:#E0A84B; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1220px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.brand b{color:var(--red)}
+.head{display:flex;gap:18px;align-items:center}
+.head svg{flex:none;width:64px;height:64px}
+h1{font-family:var(--display);font-size:clamp(32px,5vw,52px);line-height:1.04;margin:0;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:66ch;font-size:18px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;border-top:3px solid var(--ink);border-bottom:1px solid var(--rule);padding-block:12px}
+.btn{border:1px solid var(--rule);background:var(--tint);color:var(--ink);font:600 14px var(--body);padding:7px 12px;border-radius:6px;cursor:pointer}
+.btn:hover{border-color:var(--ink)}
+.btn.primary{background:var(--red);border-color:var(--red);color:#fff}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.privacy{margin-left:auto;font-size:13px;color:var(--muted)}
+main{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:start}
+.boardcol{display:flex;flex-direction:column;gap:14px;min-width:0}
+#board{width:100%;height:auto;display:block}
+.pc{cursor:pointer}
+.pc path{stroke-width:3;transition:fill .2s,opacity .2s}
+.pc text{pointer-events:none;font-family:var(--body);text-anchor:middle}
+.lab{font-size:20px;font-weight:700;pointer-events:none;font-family:var(--body);text-anchor:middle}
+.st{font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;pointer-events:none;font-family:var(--body);text-anchor:middle}
+.pc.sel path{stroke-width:6;stroke:var(--ink)!important;stroke-dasharray:none!important}
+.pc:focus{outline:none}.pc:focus-visible path{stroke-width:6}
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:13px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:14px;height:14px;border-radius:3px;display:inline-block}
+.meter{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.m{background:var(--tint);border-radius:6px;padding:10px 12px}
+.m .k{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.m .v{font-family:var(--display);font-size:28px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.m .s{font-size:13px;color:var(--muted)}
+.panel{min-width:0;display:flex;flex-direction:column;gap:14px;background:var(--tint);border-radius:8px;padding:20px}
+.panel .eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.panel h2{font-family:var(--display);font-size:clamp(24px,3vw,32px);margin:0;line-height:1.1}
+.panel p{margin:0;max-width:62ch}
+.find{font-size:14px;color:var(--muted);border-left:3px solid var(--rule);padding-left:10px}
+.find a{color:var(--ink)}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.f{display:flex;flex-direction:column;gap:4px;min-width:0}
+.f.full{grid-column:1/-1}
+.f label{font-size:14px;font-weight:600}
+.f small{font-size:12px;color:var(--muted)}
+input,select{font:16px var(--body);color:var(--ink);background:var(--field);border:1px solid var(--rule);border-radius:6px;padding:8px 10px;width:100%;min-width:0}
+input[type=checkbox],input[type=radio]{width:auto}
+.opts{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:15px}
+.opts label{display:inline-flex;gap:6px;align-items:center;font-weight:400}
+.piece-actions{display:flex;flex-wrap:wrap;gap:8px}
+.calc{font-size:15px;background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;font-variant-numeric:tabular-nums}
+.calc b{font-family:var(--display);font-size:20px}
+.lockbox{background:var(--paper);border:1px dashed var(--empty-line);border-radius:6px;padding:12px}
+section.results{display:flex;flex-direction:column;gap:16px;border-top:3px solid var(--ink);padding-top:18px}
+section.results h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);margin:0}
+.rgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.bars{display:flex;flex-direction:column;gap:8px}
+.brow{display:grid;grid-template-columns:minmax(0,10em) minmax(0,1fr) 6.5em;gap:10px;align-items:center;font-size:15px}
+.brow .track{height:14px;background:var(--empty);border-radius:3px;overflow:hidden}
+.brow .fill{height:100%;border-radius:3px}
+.brow .n{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.flags{display:flex;flex-direction:column;gap:10px}
+.flag{border-left:4px solid var(--warn);background:var(--tint);padding:10px 12px;border-radius:0 6px 6px 0}
+.flag.info{border-left-color:var(--s3)}
+.flag b{display:block}
+.missing{display:flex;flex-direction:column;gap:6px;margin:0;padding-left:18px}
+.cta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center;background:var(--tint);border-radius:8px;padding:16px 18px}
+.cta .t{font-family:var(--display);font-size:22px;font-weight:600}
+.note{font-size:13px;color:var(--muted);display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--rule);padding-top:12px}
+.note a{color:var(--muted)}
+.samples{display:flex;flex-wrap:wrap;gap:8px}
+.samples a{font-size:14px;color:var(--ink);border:1px solid var(--rule);border-radius:999px;padding:5px 11px;text-decoration:none;background:var(--paper)}
+.samples a:hover{border-color:var(--ink)}
+@media (max-width:920px){main,.rgrid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.fields{grid-template-columns:minmax(0,1fr)}.meter{grid-template-columns:minmax(0,1fr)}.brow{grid-template-columns:minmax(0,7em) minmax(0,1fr) 5.5em}}
+@media print{.bar,.panel,.cta .btn,#printBtn{display:none!important}main{grid-template-columns:1fr}body{padding:0}}
+@media (prefers-reduced-motion:reduce){.pc path{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:12px">
+    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+    <div class="head">
+      <svg viewBox="0 0 120 120" aria-hidden="true"><defs><clipPath id="lgp"><path d="M22 30 H46 C46 30 44 24 44 20 C44 12 52 8 60 8 C68 8 76 12 76 20 C76 24 74 30 74 30 H98 V54 C98 54 104 52 108 52 C116 52 118 58 118 64 C118 70 116 76 108 76 C104 76 98 74 98 74 V98 H74 C74 98 76 92 76 88 C76 81 68 78 60 78 C52 78 44 81 44 88 C44 92 46 98 46 98 H22 V74 C22 74 16 76 12 76 C4 76 2 70 2 64 C2 58 4 52 12 52 C16 52 22 54 22 54 Z"/></clipPath></defs><g clip-path="url(#lgp)"><rect width="60" height="120" fill="#1B1817"/><rect x="60" width="60" height="120" fill="#B3121B"/></g></svg>
+      <h1>The Carbon Jigsaw</h1>
+    </div>
+    <p class="lede">A rough carbon checker for Northern Ireland businesses. Fill in each piece from your bills and records. Pieces you can't fill stay missing, and those gaps tell you as much as the total does.</p>
+  </header>
+
+  <div class="bar">
+    <button class="btn" id="exBtn" type="button">Load the worked example</button>
+    <button class="btn" id="clrBtn" type="button">Start again</button>
+    <button class="btn primary" id="printBtn" type="button" hidden>Print or save results</button>
+    <span class="privacy">Your figures stay in this browser. Nothing is sent or stored on a server.</span>
+  </div>
+
+  <main>
+    <div class="boardcol">
+      <svg id="board" viewBox="0 0 720 500" role="group" aria-label="Carbon jigsaw: twelve pieces, one per emission source"></svg>
+      <div class="legend">
+        <span><i style="background:var(--s1)"></i>Scope 1: fuel you burn</span>
+        <span><i style="background:var(--s2)"></i>Scope 2: electricity you buy</span>
+        <span><i style="background:var(--s3)"></i>Scope 3: your value chain</span>
+        <span><i style="background:var(--gen)"></i>On-site generation</span>
+        <span><i style="background:var(--empty);outline:1.5px dashed var(--empty-line)"></i>Missing piece</span>
+      </div>
+      <div class="meter" id="meter"></div>
+    </div>
+    <section class="panel" id="panel" aria-live="polite"></section>
+  </main>
+
+  <section class="results" id="results"></section>
+
+  <div class="note">
+    <div><b>Practise with sample bills.</b> These are invented NI-style bills with the figures you need highlighted. They are not from real suppliers.</div>
+    <div class="samples">
+      <a href="sample-bills/sample-01-electricity.pdf">Electricity</a>
+      <a href="sample-bills/sample-02-natural-gas.pdf">Natural gas</a>
+      <a href="sample-bills/sample-03-heating-oil.pdf">Heating oil</a>
+      <a href="sample-bills/sample-04-water-sewerage.pdf">Water and sewerage</a>
+      <a href="sample-bills/sample-05-waste-collection.pdf">Waste collection</a>
+      <a href="sample-bills/sample-06-business-rates.pdf">Business rates</a>
+    </div>
+    <div>Emission factors come from the UK Government GHG Conversion Factors for Company Reporting 2026 (DESNZ, June 2026), using location-based UK grid electricity. This is a rough estimate for information only. It is not a verified carbon inventory or legal advice, and it does not include well-to-tank emissions or most Scope 3 categories.</div>
+  </div>
+</div>
+
+<script>
+(function(){
+// ---- Official factors: UK GHG Conversion Factors 2026 (DESNZ), kg CO2e per unit ----
+const F={
+  elec:0.13096, td:0.01299,                     // UK electricity generated; T&D losses (kWh)
+  gas:0.18231,                                   // natural gas, kWh (gross CV)
+  kero:2.54016, gasoil:2.75541, lpg:1.55713,     // burning oil, gas oil, LPG (litres)
+  diesel:2.58354, petrol:2.075,                  // average biofuel blend (litres)
+  water:0.1913, sewer:0.17088,                   // water supply, water treatment (m3)
+  wLandfill:520.58023, wEfw:4.65358, wRecyc:4.65358, wFood:9.00687, // C&I landfill, combustion, closed-loop; food AD (tonnes)
+  carMile:0.26699, rail:0.03092, bus:0.10151,    // average car unknown fuel (mile); national rail, local bus (passenger.km)
+  fDom:0.22928, fShort:0.12786, fLong:0.15282,   // flights with RF, average passenger (passenger.km)
+  hotel:10.4, home:0.32393                       // UK hotel room night; homeworking per FTE hour
+};
+const GWP={R404A:3943,R410A:1924,R407C:1624,R134a:1300,R32:677,R290:0.06};
+const KM={dom:1040,short:2000,long:11000}; // assumed return-trip distances from Belfast
+const WEEKS=46, DAYH=7.5, MI=1.609344;
+
+// ---- Pieces: 4 x 3 board ----
+const P=[
+ {id:"boundary",name:"Boundary",sc:"bnd",scope:"Set first"},
+ {id:"elec",name:"Electricity",sc:"s2",scope:"Scope 2"},
+ {id:"gas",name:"Natural gas",sc:"s1",scope:"Scope 1"},
+ {id:"oil",name:"Oil and LPG",sc:"s1",scope:"Scope 1"},
+ {id:"veh",name:"Vehicles",sc:"s1",scope:"Scope 1"},
+ {id:"ref",name:"Refrigerants",sc:"s1",scope:"Scope 1"},
+ {id:"gen",name:"Solar and wind",sc:"gen",scope:"Generation"},
+ {id:"water",name:"Water",sc:"s3",scope:"Scope 3"},
+ {id:"waste",name:"Waste",sc:"s3",scope:"Scope 3"},
+ {id:"travel",name:"Business travel",sc:"s3",scope:"Scope 3"},
+ {id:"commute",name:"Commuting",sc:"s3",scope:"Scope 3"},
+ {id:"goods",name:"Goods and freight",sc:"s3",scope:"Scope 3",locked:true}
+];
+const COLS=4,ROWS=3,W=160,H=140,OX=40,OY=40;
+
+// ---- State ----
+const KEY="rjp-carbon-jigsaw-v1";
+let S={};
+try{S=JSON.parse(localStorage.getItem(KEY)||"{}")||{};}catch(e){S={};}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+let sel="boundary";
+
+// ---- Jigsaw geometry ----
+function rng(seed){return function(){seed=(seed*16807)%2147483647;return seed/2147483647;};}
+const R=rng(20261016);
+const Hs=[],Vs=[];
+for(let r=0;r<=ROWS;r++){Hs[r]=[];for(let c=0;c<COLS;c++)Hs[r][c]=(r===0||r===ROWS)?0:(R()<.5?1:-1);}
+for(let r=0;r<ROWS;r++){Vs[r]=[];for(let c=0;c<=COLS;c++)Vs[r][c]=(c===0||c===COLS)?0:(R()<.5?1:-1);}
+const TAB=[[.36,0],[[.40,0],[.42,.06],[.38,.12]],[[.33,.18],[.40,.24],[.50,.24]],[[.60,.24],[.67,.18],[.62,.12]],[[.58,.06],[.60,0],[.64,0]]];
+function edge(x0,y0,x1,y1,b){
+  const L=Math.hypot(x1-x0,y1-y0),dx=(x1-x0)/L,dy=(y1-y0)/L,nx=dy,ny=-dx,s=Math.min(W,H);
+  const p=(t,u)=>[(x0+dx*t*L+nx*u*s*b).toFixed(1),(y0+dy*t*L+ny*u*s*b).toFixed(1)].join(",");
+  if(!b)return ` L${x1},${y1}`;
+  let d=` L${p(TAB[0][0],0)}`;
+  for(let i=1;i<TAB.length;i++){const q=TAB[i];d+=` C${p(q[0][0],q[0][1])} ${p(q[1][0],q[1][1])} ${p(q[2][0],q[2][1])}`;}
+  return d+` L${x1},${y1}`;
+}
+function piecePath(r,c){
+  const x=OX+c*W,y=OY+r*H;
+  return `M${x},${y}`+edge(x,y,x+W,y,-Hs[r][c])+edge(x+W,y,x+W,y+H,Vs[r][c+1])+edge(x+W,y+H,x,y+H,Hs[r+1][c])+edge(x,y+H,x,y,-Vs[r][c])+"Z";
+}
+
+// ---- Calculations ----
+const num=v=>{const n=parseFloat(String(v??"").replace(/,/g,""));return isFinite(n)&&n>=0?n:0;};
+const ann=(v,m)=>{const mm=num(m)||12;return num(v)*12/Math.min(12,Math.max(1,mm));};
+function calc(id){
+  const d=S[id]||{};
+  switch(id){
+    case "elec":{const k=ann(d.kwh,d.months);return{s2:k*F.elec,s3:k*F.td,detail:`${fmt(k)} kWh a year`};}
+    case "gas":{const k=ann(d.kwh,d.months);return{s1:k*F.gas,detail:`${fmt(k)} kWh a year`};}
+    case "oil":return{s1:num(d.kero)*F.kero+num(d.gasoil)*F.gasoil+num(d.lpg)*F.lpg};
+    case "veh":return{s1:num(d.diesel)*F.diesel+num(d.petrol)*F.petrol};
+    case "ref":return{s1:num(d.kg)*(GWP[d.gas]||0)};
+    case "water":{const mains=(d.src||"mains")==="mains",sew=(d.ww||"sewer")==="sewer";return{s3:(mains?ann(d.supply,d.months)*F.water:0)+(sew?ann(d.sewer,d.months)*F.sewer:0)};}
+    case "waste":{const a=x=>ann(x,d.months);return{s3:a(d.landfill)*F.wLandfill+a(d.efw)*F.wEfw+a(d.recyc)*F.wRecyc+a(d.food)*F.wFood};}
+    case "travel":return{s3:num(d.miles)*F.carMile+num(d.railkm)*F.rail+num(d.dom)*KM.dom*F.fDom+num(d.short)*KM.short*F.fShort+num(d.long)*KM.long*F.fLong+num(d.nights)*F.hotel};
+    case "commute":{const w=WEEKS;
+      const car=num(d.drivers)*num(d.carMiles)*2*num(d.carDays)*w*F.carMile;
+      const pt=num(d.ptStaff)*num(d.ptKm)*2*num(d.ptDays)*w*(d.ptMode==="rail"?F.rail:F.bus);
+      const home=num(d.homeFte)*num(d.homeDays)*DAYH*w*F.home;
+      return{s3:car+pt+home};}
+    case "gen":return{};
+    default:return{};
+  }
+}
+function state(id){
+  const d=S[id]; const p=P.find(x=>x.id===id);
+  if(p.locked)return"locked";
+  if(!d)return"empty";
+  if(d.na)return"na";
+  if(id==="boundary")return(d.sector&&num(d.fte)>0&&num(d.sites)>0)?(d.q==="est"?"est":"done"):"empty";
+  if(id==="gen")return d.has==="no"||num(d.genKwh)>0?(d.q==="est"?"est":"done"):"empty";
+  if(id==="water"&&(((d.src||"mains")!=="mains")||d.ww==="onsite")&&num(d.supply)+num(d.sewer)>0)return d.q==="est"?"est":"done";
+  const c=calc(id);const t=(c.s1||0)+(c.s2||0)+(c.s3||0);
+  if(t<=0)return"empty";
+  return d.q==="est"?"est":"done";
+}
+const fmt=(n,dp=0)=>Number(n).toLocaleString("en-GB",{maximumFractionDigits:dp,minimumFractionDigits:dp});
+const t=kg=>kg/1000;
+
+// ---- Draw board ----
+const NS="http://www.w3.org/2000/svg",board=document.getElementById("board");
+const defs=document.createElementNS(NS,"defs");
+defs.innerHTML=["s1","s2","s3","gen","bnd"].map(k=>`<pattern id="hatch-${k}" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="10" fill="var(--${k})" opacity=".55"/><line x1="0" y1="0" x2="0" y2="10" stroke="var(--${k})" stroke-width="6"/></pattern>`).join("");
+board.appendChild(defs);
+const els={};const pieceLayer=document.createElementNS(NS,"g"),labelLayer=document.createElementNS(NS,"g");board.appendChild(pieceLayer);board.appendChild(labelLayer);
+P.forEach((p,i)=>{
+  const r=Math.floor(i/COLS),c=i%COLS;
+  const g=document.createElementNS(NS,"g");g.setAttribute("class","pc");g.setAttribute("tabindex","0");g.setAttribute("role","button");
+  const path=document.createElementNS(NS,"path");path.setAttribute("d",piecePath(r,c));g.appendChild(path);
+  const cx=OX+c*W+W/2,cy=OY+r*H+H/2;
+  const words=p.name.split(" ");const lines=p.name.length>12&&words.length>1?[words.slice(0,Math.ceil(words.length/2)).join(" "),words.slice(Math.ceil(words.length/2)).join(" ")]:[p.name];
+  const lab=document.createElementNS(NS,"text");lab.setAttribute("class","lab");lab.setAttribute("x",cx);lab.setAttribute("y",cy-(lines.length-1)*10-4);
+  lines.forEach((ln,j)=>{const ts=document.createElementNS(NS,"tspan");ts.setAttribute("x",cx);ts.setAttribute("dy",j?20:0);ts.textContent=ln;lab.appendChild(ts);});
+  labelLayer.appendChild(lab);
+  const st=document.createElementNS(NS,"text");st.setAttribute("class","st");st.setAttribute("x",cx);st.setAttribute("y",cy+(lines.length-1)*10+24);labelLayer.appendChild(st);
+  g.addEventListener("click",()=>pick(p.id));
+  g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pick(p.id);}});
+  pieceLayer.appendChild(g);els[p.id]={g,path,lab,st};
+});
+function drawBoard(){
+  P.forEach(p=>{
+    const e=els[p.id],s=state(p.id),col=`var(--${p.sc})`;
+    let fill,stroke="var(--paper)",ink="#fff",dash="",label;
+    if(s==="done"){fill=col;label=p.scope;}
+    else if(s==="est"){fill=`url(#hatch-${p.sc})`;label="Estimated";}
+    else if(s==="na"){fill="var(--tint)";ink="var(--muted)";stroke="var(--empty-line)";label="Not applicable";}
+    else if(s==="locked"){fill="var(--lock)";label="Full inventory";}
+    else{fill="var(--empty)";ink="var(--muted)";stroke="var(--empty-line)";dash="7 6";label="Missing";}
+    if(p.sc==="bnd"&&(s==="done"||s==="est"))ink="var(--paper)";
+    e.path.setAttribute("fill",fill);e.path.setAttribute("stroke",stroke);e.path.setAttribute("stroke-dasharray",dash);
+    e.lab.setAttribute("fill",ink);e.st.setAttribute("fill",ink);e.st.textContent=label;
+    e.g.setAttribute("aria-label",`${p.name}: ${label}`);
+    e.g.classList.toggle("sel",p.id===sel);
+    if(p.id===sel)pieceLayer.appendChild(e.g);
+  });
+}
+
+// ---- Forms ----
+const SECTORS=["Manufacturing: engineering and metals","Manufacturing: food and drink","Manufacturing: other","Construction","Agriculture","Wholesale and distribution","Retail","Hospitality","Transport and logistics","Professional services and offices","Public sector or council","Charity or community","Other"];
+function fld(id,key,label,opts={}){
+  const v=(S[id]||{})[key]??"";const fid=`f-${id}-${key}`;
+  if(opts.select)return `<div class="f${opts.full?" full":""}"><label for="${fid}">${label}</label><select id="${fid}" data-k="${key}"><option value="">Choose…</option>${opts.select.map(o=>`<option${o===v?" selected":""}>${o}</option>`).join("")}</select>${opts.help?`<small>${opts.help}</small>`:""}</div>`;
+  return `<div class="f${opts.full?" full":""}"><label for="${fid}">${label}</label><input id="${fid}" data-k="${key}" inputmode="decimal" ${opts.text?'type="text"':'type="text" pattern="[0-9.,]*"'} value="${String(v).replace(/"/g,"&quot;")}" placeholder="${opts.ph||""}">${opts.help?`<small>${opts.help}</small>`:""}</div>`;
+}
+function radios(id,key,label,choices){
+  const v=(S[id]||{})[key]||choices[0][0];
+  return `<div class="f full"><span style="font-size:14px;font-weight:600">${label}</span><div class="opts">${choices.map(([val,txt])=>`<label><input type="radio" name="${id}-${key}" data-k="${key}" value="${val}"${v===val?" checked":""}> ${txt}</label>`).join("")}</div></div>`;
+}
+const Q=id=>radios(id,"q","How good is this figure?",[["act","Actual, from bills or records"],["est","Estimated"]]);
+const months=id=>fld(id,"months","Months covered",{ph:"12",help:"If you only have some bills, say how many months they cover. The checker scales the figure up to a year."});
+const FORMS={
+ boundary:()=>`<p>Your boundary says what's in and what's out. Include every site and vehicle your business runs (the "operational control" approach). Without a boundary, Scope 1 is only a guess.</p>
+  <div class="fields">${fld("boundary","name","Business name (optional)",{text:true,full:true})}
+  ${fld("boundary","sector","Sector",{select:SECTORS,full:true})}
+  ${fld("boundary","sites","Number of sites",{ph:"1",help:"Check your rates bills: one per property"})}
+  ${fld("boundary","fte","Staff (full-time equivalent)",{ph:"25"})}
+  ${fld("boundary","turnover","Annual turnover, £ (optional)",{ph:"4,500,000",help:"Gives a carbon-per-£ figure. You don't need to upload accounts."})}
+  ${fld("boundary","hours","Operating hours per week",{ph:"50"})}
+  ${fld("boundary","year","Year you're measuring",{text:true,ph:"e.g. Oct 2025 – Sep 2026"})}
+  ${radios("boundary","cbam","Do you import steel, aluminium, cement, fertiliser or hydrogen?",[["no","No"],["yes","Yes"],["unsure","Not sure"]])}
+  ${radios("boundary","asked","Has a customer, lender or tender asked for your carbon data?",[["no","No"],["yes","Yes"]])}</div>`,
+ elec:()=>`<p class="find">On your electricity bill: the <b>total kWh</b> used. Many NI bills also show the last 12 months' total. <a href="sample-bills/sample-01-electricity.pdf">See the sample bill</a>.</p>
+  <div class="fields">${fld("elec","kwh","Electricity used (kWh)",{ph:"221,640"})}${months("elec")}${Q("elec")}
+  ${radios("elec","green","Is your tariff backed by renewable certificates?",[["no","No or don't know"],["yes","Yes"]])}</div>`,
+ gas:()=>`<p class="find">On your gas bill: the <b>kWh</b> figure, not the cubic metres. <a href="sample-bills/sample-02-natural-gas.pdf">See the sample bill</a>.</p>
+  <div class="fields">${fld("gas","kwh","Gas used (kWh)",{ph:"42,333"})}${months("gas")}${Q("gas")}</div>`,
+ oil:()=>`<p class="find">Add up the <b>litres</b> on every delivery docket for the year. <a href="sample-bills/sample-03-heating-oil.pdf">See the sample docket</a>.</p>
+  <div class="fields">${fld("oil","kero","Kerosene / heating oil (litres a year)",{ph:"6,750"})}${fld("oil","gasoil","Gas oil / red diesel (litres a year)",{ph:"0"})}${fld("oil","lpg","LPG (litres a year)",{ph:"0"})}${Q("oil")}</div>`,
+ veh:()=>`<p class="find">Company-owned or leased vans, cars and plant. Fuel card statements give litres. Staff driving their own cars go under Business travel.</p>
+  <div class="fields">${fld("veh","diesel","Diesel (litres a year)",{ph:"9,800"})}${fld("veh","petrol","Petrol (litres a year)",{ph:"0"})}${Q("veh")}</div>`,
+ ref:()=>`<p class="find">Your air conditioning or refrigeration engineer's service sheets show any gas <b>topped up</b> (in kg). Leaks count; gas sealed in the system doesn't.</p>
+  <div class="fields">${fld("ref","gas","Refrigerant type",{select:Object.keys(GWP)})}${fld("ref","kg","Topped up this year (kg)",{ph:"2.5"})}${Q("ref")}</div>`,
+ gen:()=>`<p>Solar panels and wind turbines don't add emissions. Electricity you generate and use yourself is already missing from your bills. This piece records it so you can see your full energy picture.</p>
+  <div class="fields">${radios("gen","has","Do you generate electricity on site?",[["no","No"],["yes","Yes"]])}
+  ${fld("gen","kwp","Installed size (kWp or kW)",{ph:"50"})}${fld("gen","genKwh","Generated this year (kWh)",{ph:"42,000"})}${fld("gen","exportKwh","Exported to the grid (kWh)",{ph:"6,000"})}${Q("gen")}</div>`,
+ water:()=>`<p class="find">On your water bill: <b>supply</b> and <b>sewerage</b> volumes in cubic metres. <a href="sample-bills/sample-04-water-sewerage.pdf">See the sample bill</a>.</p>
+  <p style="font-size:14px"><b>Why Scope 3?</b> Water itself isn't an emission. Mains water carries the emissions of the water company's pumping and treatment, and sewage carries the emissions of the treatment works. Both happen at sites you don't control. Evaporation and steam from your site don't count, because the accounting rules don't treat water vapour as a reportable greenhouse gas.</p>
+  <div class="fields">${radios("water","src","Where does most of your water come from?",[["mains","Mains supply (NI Water)"],["borehole","Borehole or well"],["rain","Rainwater harvesting"],["river","River, lough or stream"]])}
+  ${radios("water","ww","Where does your wastewater go?",[["sewer","Public sewer"],["onsite","Treated on site, then discharged"]])}
+  ${fld("water","supply","Water used (m³)",{ph:"312"})}${fld("water","sewer","Wastewater to sewer (m³)",{ph:"296"})}${months("water")}${Q("water")}</div>`,
+ waste:()=>`<p class="find">You need <b>tonnes</b> by where the waste goes. Ask your waste carrier for a weight report if invoices only show lifts. <a href="sample-bills/sample-05-waste-collection.pdf">See the sample invoice</a>.</p>
+  <div class="fields">${fld("waste","landfill","General waste to landfill (t)",{ph:"0"})}${fld("waste","efw","General waste to energy recovery (t)",{ph:"0.94"})}${fld("waste","recyc","Recycling, incl. metals (t)",{ph:"2.03"})}${fld("waste","food","Food waste to AD or compost (t)",{ph:"0.18"})}${months("waste")}${Q("waste")}</div>`,
+ travel:()=>`<p class="find">Expense claims and travel bookings. Flights use typical return distances from Belfast: domestic ${fmt(KM.dom)} km, Europe ${fmt(KM.short)} km, long-haul ${fmt(KM.long)} km.</p>
+  <div class="fields">${fld("travel","miles","Staff mileage in own cars (miles)",{ph:"8,000"})}${fld("travel","railkm","Rail (passenger km)",{ph:"0"})}
+  ${fld("travel","dom","UK return flights",{ph:"6"})}${fld("travel","short","Europe return flights",{ph:"2"})}${fld("travel","long","Long-haul return flights",{ph:"0"})}${fld("travel","nights","Hotel nights (UK)",{ph:"10"})}${Q("travel")}</div>`,
+ commute:()=>`<p class="find">A quick staff survey is best. Averages are fine for a rough check. Assumes ${WEEKS} working weeks a year.</p>
+  <div class="fields">${fld("commute","drivers","Staff who drive to work",{ph:"18"})}${fld("commute","carMiles","Average one-way miles",{ph:"9"})}${fld("commute","carDays","Days a week on site",{ph:"5"})}
+  ${fld("commute","ptStaff","Staff on bus or train",{ph:"3"})}${fld("commute","ptMode","Mostly",{select:["bus","rail"]})}${fld("commute","ptKm","Average one-way km",{ph:"12"})}${fld("commute","ptDays","Days a week",{ph:"5"})}
+  ${fld("commute","homeFte","Staff working from home (FTE)",{ph:"2"})}${fld("commute","homeDays","Home days per week each",{ph:"2"})}${Q("commute")}</div>`,
+ goods:()=>`<div class="lockbox"><p><b>This piece can't be filled from bills.</b> For most firms, purchased goods and services are the largest part of the footprint, often more than everything else put together. Measuring them takes your purchase ledger, supplier data and spend-based factors. The same goes for freight, capital goods and what happens to your products after sale.</p></div>
+  <p>A full carbon inventory screens all 15 Scope 3 categories and puts numbers on the ones that matter. This checker covers five of them, partly.</p>`
+};
+function pick(id){sel=id;renderPanel();drawBoard();}
+function renderPanel(){
+  const p=P.find(x=>x.id===sel);const panel=document.getElementById("panel");
+  const c=calc(sel);const tot=(c.s1||0)+(c.s2||0)+(c.s3||0);
+  panel.innerHTML=`<div class="eyebrow" style="color:var(--${p.sc==="bnd"?"ink":p.sc})">${p.scope}</div><h2>${p.name}</h2>${FORMS[sel]()}
+   ${!p.locked&&!["boundary","gen"].includes(sel)?`<div class="calc" id="calcOut"></div>`:""}
+   <div class="piece-actions">${!p.locked&&sel!=="boundary"?`<button class="btn" type="button" id="naBtn">${(S[sel]||{}).na?"We do have this":"We don't have this source"}</button>`:""}
+   <button class="btn primary" type="button" id="nextBtn">Next piece →</button></div>`;
+  panel.querySelectorAll("[data-k]").forEach(el=>{
+    const ev=el.tagName==="SELECT"||el.type==="radio"?"change":"input";
+    el.addEventListener(ev,()=>{S[sel]=S[sel]||{};S[sel][el.dataset.k]=el.value;delete S[sel].na;save();update();});
+  });
+  const na=document.getElementById("naBtn");if(na)na.onclick=()=>{S[sel]=S[sel]||{};S[sel].na=!S[sel].na;save();renderPanel();update();};
+  document.getElementById("nextBtn").onclick=()=>{const i=P.findIndex(x=>x.id===sel);pick(P[(i+1)%P.length].id);document.getElementById("board").scrollIntoView({behavior:"smooth",block:"nearest"});};
+  updateCalc();
+}
+function updateCalc(){
+  const o=document.getElementById("calcOut");if(!o)return;
+  const c=calc(sel);const tot=(c.s1||0)+(c.s2||0)+(c.s3||0);
+  if((S[sel]||{}).na){o.innerHTML="Marked as not applicable to your business.";return;}
+  let extra="";
+  if(sel==="elec"&&(S.elec||{}).green==="yes")extra=`<br><small>A certificate-backed tariff can lower your market-based Scope 2 figure. This checker reports the location-based figure, which is the standard starting point.</small>`;
+  if(sel==="water"){const w=S.water||{};
+    if((w.src||"mains")!=="mains")extra+=`<br><small>Water you draw yourself has no water-company emissions. The energy to pump and treat it is already in your electricity or fuel. In NI, abstracting more than a small daily volume may need an NIEA abstraction licence.</small>`;
+    if(w.ww==="onsite")extra+=`<br><small>An on-site treatment plant can release methane and nitrous oxide. Those are your Scope 1, and they need a specialist estimate, so this checker doesn't calculate them.</small>`;}
+  if(sel==="elec"&&c.s3)extra+=`<br><small>Includes ${fmt(t(c.s3),2)} t of grid losses, reported in Scope 3.</small>`;
+  o.innerHTML=`This piece: <b>${fmt(t(tot),2)} t CO₂e</b> a year${c.detail?` · ${c.detail}`:""}${extra}`;
+}
+
+// ---- Totals, meter, results ----
+function totals(){
+  let s1=0,s2=0,s3=0;const by=[];
+  P.forEach(p=>{if(state(p.id)==="na"||p.locked)return;const c=calc(p.id);s1+=c.s1||0;s2+=c.s2||0;s3+=c.s3||0;const tot=(c.s1||0)+(c.s2||0)+(c.s3||0);if(tot>0)by.push({p,kg:tot});});
+  return{s1,s2,s3,all:s1+s2+s3,by:by.sort((a,b)=>b.kg-a.kg)};
+}
+function update(){drawBoard();updateCalc();renderMeter();renderResults();}
+function renderMeter(){
+  const T=totals();const filled=P.filter(p=>["done","est","na"].includes(state(p.id))).length;
+  const est=P.filter(p=>state(p.id)==="est").length;
+  document.getElementById("meter").innerHTML=`
+   <div class="m"><div class="k">Pieces in place</div><div class="v">${filled} of 12</div><div class="s">${est?`${est} estimated`:"Missing pieces show as gaps"}</div></div>
+   <div class="m"><div class="k">Rough footprint</div><div class="v">${fmt(t(T.all),1)} t</div><div class="s">CO₂e a year, so far</div></div>
+   <div class="m"><div class="k">Scope 3 covered</div><div class="v">${["water","waste","travel","commute"].filter(id=>["done","est"].includes(state(id))).length+(["done","est"].includes(state("elec"))?1:0)} of 15</div><div class="s">categories, partly</div></div>`;
+}
+function renderResults(){
+  const T=totals();const b=S.boundary||{};const fte=num(b.fte),turn=num(b.turnover);
+  const max=T.by.length?T.by[0].kg:1;
+  const miss=P.filter(p=>state(p.id)==="empty"||p.locked);
+  const flags=[];
+  if(state("boundary")==="empty")flags.push(["warn","Set your boundary first","Without sites, staff and sector the totals can't be compared or checked."]);
+  if(fte>=250||turn>44e6)flags.push(["warn","You may be in scope of ESOS",`ESOS applies to UK businesses with 250 or more employees, or turnover above £44m <i>and</i> a balance sheet above £38m. The Phase 4 qualification date is 31 December 2026.`]);
+  if(b.cbam==="yes"||b.cbam==="unsure")flags.push(["warn","Check UK CBAM","UK CBAM starts on 1 January 2027 for imports of iron and steel, aluminium, cement, fertiliser and hydrogen. You must register once your CBAM goods reach £50,000 over the past 12 months, or you expect to import that much within 30 days. NI firms selling into the EU may also be asked for CBAM data under EU rules."]);
+  if(b.asked==="yes")flags.push(["info","A customer has asked for your data","Buyers usually want Scopes 1 and 2 with a stated method and year. This rough check is a starting point, not something to send."]);
+  if(T.all>0&&state("goods")==="locked")flags.push(["info","The biggest piece is probably missing","For most manufacturers, purchased goods and services outweigh everything measured here."]);
+  document.getElementById("results").innerHTML=`
+   <h2>Your rough footprint</h2>
+   <div class="meter">
+     <div class="m"><div class="k" style="color:var(--s1)">Scope 1</div><div class="v">${fmt(t(T.s1),1)} t</div><div class="s">fuel, vehicles, refrigerants</div></div>
+     <div class="m"><div class="k" style="color:var(--s2)">Scope 2</div><div class="v">${fmt(t(T.s2),1)} t</div><div class="s">electricity, location-based</div></div>
+     <div class="m"><div class="k" style="color:var(--s3)">Scope 3 (partial)</div><div class="v">${fmt(t(T.s3),1)} t</div><div class="s">only the pieces you filled</div></div>
+   </div>
+   <div class="rgrid">
+     <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
+       <h3 style="margin:0;font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">Largest sources</h3>
+       <div class="bars">${T.by.length?T.by.map(x=>`<div class="brow"><span>${x.p.name}</span><div class="track"><div class="fill" style="width:${Math.max(2,x.kg/max*100)}%;background:var(--${x.p.sc})"></div></div><span class="n">${fmt(t(x.kg),1)} t</span></div>`).join(""):`<p style="margin:0;color:var(--muted)">Fill in a piece to see your sources here, or load the worked example.</p>`}</div>
+       ${T.all>0?`<p style="margin:0">${fte>0?`<b>${fmt(t(T.s1+T.s2)/fte,2)} t</b> Scope 1 and 2 per employee`:""}${fte>0&&turn>0?" · ":""}${turn>0?`<b>${fmt(t(T.s1+T.s2)/(turn/1e6),1)} t</b> per £1m turnover`:""}</p>`:""}
+     </div>
+     <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
+       <h3 style="margin:0;font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">What this means</h3>
+       <div class="flags">${flags.map(([k,h,x])=>`<div class="flag ${k==="info"?"info":""}"><b>${h}</b>${x}</div>`).join("")||`<p style="margin:0;color:var(--muted)">Points to watch will appear here as you fill in the jigsaw.</p>`}</div>
+       ${miss.length?`<div><b>Missing pieces</b><ul class="missing">${miss.map(p=>`<li>${p.name}${p.locked?": needs a full inventory":""}</li>`).join("")}</ul></div>`:""}
+     </div>
+   </div>
+   <div class="cta"><div><div class="t">Want the full picture?</div><div>A carbon inventory fills the missing pieces, fixes your boundary and gives you figures you can send to customers.</div></div>
+   <a class="btn primary" href="/contact/" style="text-decoration:none">Talk to Robert</a></div>`;
+}
+
+// ---- Worked example (matches the sample bills) ----
+const EX={boundary:{name:"Carnlough Precision Engineering Ltd (example)",sector:"Manufacturing: engineering and metals",sites:"1",fte:"25",turnover:"4500000",hours:"50",year:"Oct 2025 – Sep 2026",cbam:"yes",asked:"yes",q:"act"},
+ elec:{kwh:"221640",months:"12",q:"act",green:"no"},gas:{kwh:"42333",months:"3",q:"act"},oil:{kero:"6750",gasoil:"0",lpg:"0",q:"est"},
+ veh:{diesel:"9800",petrol:"0",q:"act"},ref:{gas:"R410A",kg:"2.5",q:"act"},gen:{has:"no",q:"act"},water:{supply:"312",sewer:"296",months:"6",q:"act"},
+ waste:{landfill:"0",efw:"0.94",recyc:"2.03",food:"0.18",months:"1",q:"act"},travel:{miles:"8000",railkm:"0",dom:"6",short:"2",long:"0",nights:"10",q:"est"}};
+document.getElementById("exBtn").onclick=()=>{S=JSON.parse(JSON.stringify(EX));save();pick("boundary");update();};
+const clr=document.getElementById("clrBtn");let armed=false,tm;
+clr.onclick=()=>{if(!armed){armed=true;clr.textContent="Tap again to clear everything";tm=setTimeout(()=>{armed=false;clr.textContent="Start again";},2500);return;}
+  clearTimeout(tm);armed=false;clr.textContent="Start again";S={};save();pick("boundary");update();};
+try{if(window.self===window.top){const pb=document.getElementById("printBtn");pb.hidden=false;pb.onclick=()=>window.print();}}catch(e){}
+
+// First visit opens on the worked example so the board shows what it does
+if(!Object.keys(S).length){S=JSON.parse(JSON.stringify(EX));}
+renderPanel();update();
+})();
+</script>
+</body>
+</html>

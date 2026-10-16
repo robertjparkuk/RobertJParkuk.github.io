@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="E-waste Unpacked: precious, critical and hazardous materials in discarded electricals, how WEEE treatment is audited, and the economics of reuse. For Northern Ireland businesses. By Robert J. Park.">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<title>E-waste Unpacked</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+[hidden]{display:none!important}
+
+/* Layout: open the device (what's inside), follow it through the treatment line (with the audit points marked), then the economics ladder and what an NI business should do. */
+
+/* Layout: the GHG Protocol value chain drawn left to right (upstream → you → downstream), then the grey zones where scopes blur, then the gases that count. */
+:root{
+  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2;
+  --red:#B3121B; --s1:#B3121B; --s1-bg:#FBEDED; --s2:#B5650F; --s2-bg:#FCF1E3; --s3:#2D6CA3; --s3-bg:#E9F1F9; --out:#4F7F2A; --out-bg:#EEF5E6;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.brand b{color:var(--red)}
+h1{font-family:var(--display);font-size:clamp(34px,5vw,56px);line-height:1.03;margin:8px 0 0;text-wrap:balance}
+h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);line-height:1.1;margin:0;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:68ch;font-size:18px}
+.sec{display:flex;flex-direction:column;gap:16px;border-top:3px solid var(--ink);padding-top:18px}
+.sec>p{margin:0;max-width:72ch}
+
+:root{--pm:#9A7B12;--pm-bg:#FBF4DC;--cr:#2D6CA3;--cr-bg:#E9F1F9;--hz:#B3121B;--hz-bg:#FBEDED;--ok:#1F6B45;--ok-bg:#E6F2EB}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--pm:#E3C15A;--pm-bg:#30290F;--cr:#7DB3E3;--cr-bg:#1B2A38;--hz:#F0787C;--hz-bg:#3A1C1E;--ok:#4CC38A;--ok-bg:#16301F}}
+:root[data-theme="dark"]{--pm:#E3C15A;--pm-bg:#30290F;--cr:#7DB3E3;--cr-bg:#1B2A38;--hz:#F0787C;--hz-bg:#3A1C1E;--ok:#4CC38A;--ok-bg:#16301F}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.stat{background:var(--tint);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:4px}
+.stat .v{font-family:var(--display);font-size:clamp(26px,3vw,36px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.stat .l{font-size:14px}
+.stat .s{font-size:12px;color:var(--muted)}
+.inside{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.grp{border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.grp h3{margin:0;font-family:var(--display);font-size:22px}
+.grp p.k{margin:0;font-size:14px}
+.pm{background:var(--pm-bg);border-top:4px solid var(--pm)}.pm h3{color:var(--pm)}
+.cr{background:var(--cr-bg);border-top:4px solid var(--cr)}.cr h3{color:var(--cr)}
+.hz{background:var(--hz-bg);border-top:4px solid var(--hz)}.hz h3{color:var(--hz)}
+.el{display:grid;grid-template-columns:2.6em minmax(0,1fr);gap:8px;align-items:start;font-size:14px}
+.sym{font-family:var(--display);font-weight:700;font-size:17px;border:1.5px solid currentColor;border-radius:4px;text-align:center;line-height:1.6;align-self:start}
+.el b{display:block}
+.line{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;counter-reset:st}
+.stp{position:relative;padding:14px 12px 14px;border-top:4px solid var(--ink);display:flex;flex-direction:column;gap:6px;min-width:0}
+.stp:not(:last-child){border-right:1px dashed var(--rule)}
+.stp .n{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.stp h3{margin:0;font-size:17px}
+.stp p{margin:0;font-size:14px}
+.audit{margin-top:auto;font-size:13px;background:var(--ok-bg);color:var(--ink);border-left:3px solid var(--ok);padding:6px 8px;border-radius:0 4px 4px 0}
+.audit b{color:var(--ok)}
+.why{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{border:1px solid var(--rule);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.card h3{margin:0;font-size:18px}
+.card p,.card li{font-size:14.5px;margin:0}
+.card ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+.ladder{display:flex;flex-direction:column;gap:6px}
+.rung{display:grid;grid-template-columns:minmax(0,13em) minmax(0,1fr) minmax(0,16em);gap:14px;align-items:center;padding:10px 12px;border-radius:6px;color:#fff}
+.rung b{font-size:16px}
+.rung span{font-size:14px}
+.rung em{font-style:normal;font-size:13px;opacity:.92}
+.table{overflow-x:auto}
+.table table{border-collapse:collapse;width:100%;min-width:640px;font-size:14.5px}
+.table th{text-align:left;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--ink);padding:8px}
+.table td{border-bottom:1px solid var(--rule);padding:8px;vertical-align:top}
+.lens{border-left:4px solid var(--red);background:var(--tint);padding:14px 16px;border-radius:0 8px 8px 0;display:flex;flex-direction:column;gap:8px}
+.lens p{margin:0;max-width:78ch}
+.do{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0;padding:0;list-style:none;counter-reset:d}
+.do li{counter-increment:d;display:grid;grid-template-columns:2em minmax(0,1fr);gap:8px;font-size:15px;background:var(--tint);border-radius:6px;padding:10px 12px}
+.do li::before{content:counter(d);font-family:var(--display);font-weight:700;font-size:20px;color:var(--red)}
+@media (max-width:1000px){.line{grid-template-columns:repeat(3,minmax(0,1fr))}.stp:nth-child(3){border-right:none}.inside{grid-template-columns:minmax(0,1fr)}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:700px){.line{grid-template-columns:minmax(0,1fr)}.stp{border-right:none!important}.why,.do{grid-template-columns:minmax(0,1fr)}.rung{grid-template-columns:minmax(0,1fr);gap:4px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+    <h1>E-waste Unpacked</h1>
+    <p class="lede">What's inside discarded electricals: the metals worth recovering, the poisons that must be removed first, why a shredder has to know exactly what it's shredding, how that's audited, and why keeping a device or part in use usually beats recycling it.</p>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><span class="v">62 Mt</span><span class="l">e-waste generated worldwide in 2022</span><span class="s">Global E-waste Monitor 2024</span></div>
+    <div class="stat"><span class="v">22.3%</span><span class="l">documented as properly collected and recycled</span><span class="s">expected to fall to about 20% by 2030</span></div>
+    <div class="stat"><span class="v">$91bn</span><span class="l">value of metals in that e-waste; about $62bn unrecovered</span><span class="s">Global E-waste Monitor 2024</span></div>
+    <div class="stat"><span class="v">≤1%</span><span class="l">of rare earth demand met from e-waste recycling</span><span class="s">Global E-waste Monitor 2024</span></div>
+  </div>
+
+  <section class="sec" aria-labelledby="h-in">
+    <h2 id="h-in">What's inside</h2>
+    <p>A phone, laptop or control panel can contain up to 60 elements, in tiny amounts, bonded together. That mix is why e-waste is valuable and hard to recycle, and why some of it is dangerous.</p>
+    <div class="inside">
+      <div class="grp pm"><h3>Precious metals</h3><p class="k">Small mass, most of the value. Mostly on circuit boards and connectors.</p>
+        <div class="el"><span class="sym">Au</span><span><b>Gold</b>Plated contacts, connector pins, chip bonding wire</span></div>
+        <div class="el"><span class="sym">Ag</span><span><b>Silver</b>Solder, switches, conductive pastes</span></div>
+        <div class="el"><span class="sym">Pd</span><span><b>Palladium</b>Multilayer ceramic capacitors, plating</span></div>
+        <div class="el"><span class="sym">Pt</span><span><b>Platinum</b>Hard-disk platters, sensors</span></div>
+        <div class="el"><span class="sym">Cu</span><span><b>Copper</b>Not precious, but often the largest single value by weight: cables, motors, boards</span></div></div>
+      <div class="grp cr"><h3>Critical and rare</h3><p class="k">Hard to source and concentrated in a few supplier countries. Few are recovered today.</p>
+        <div class="el"><span class="sym">Nd</span><span><b>Neodymium, dysprosium</b>Rare-earth magnets in hard drives, speakers, motors</span></div>
+        <div class="el"><span class="sym">Co</span><span><b>Cobalt, lithium, nickel, graphite</b>Lithium-ion batteries</span></div>
+        <div class="el"><span class="sym">Ta</span><span><b>Tantalum</b>Capacitors. A conflict mineral as well as a critical one</span></div>
+        <div class="el"><span class="sym">In</span><span><b>Indium</b>Transparent conductor in LCD and touch screens</span></div>
+        <div class="el"><span class="sym">Ga</span><span><b>Gallium, germanium</b>LEDs, chips, fibre optics; subject to Chinese export controls</span></div></div>
+      <div class="grp hz"><h3>Poisons</h3><p class="k">These must be removed or contained before shredding, or they spread into every output.</p>
+        <div class="el"><span class="sym">Pb</span><span><b>Lead</b>Older solder, CRT glass</span></div>
+        <div class="el"><span class="sym">Hg</span><span><b>Mercury</b>Older LCD backlights, fluorescent lamps, switches</span></div>
+        <div class="el"><span class="sym">Cd</span><span><b>Cadmium</b>Nickel-cadmium batteries, older pigments</span></div>
+        <div class="el"><span class="sym">Br</span><span><b>Brominated flame retardants</b>Casings and boards. Some (PBDEs) are persistent organic pollutants (POPs)</span></div>
+        <div class="el"><span class="sym">Cl</span><span><b>PCBs, CFCs and HCFCs</b>Old capacitors; refrigerants and foam in older fridges</span></div>
+        <div class="el"><span class="sym">Be</span><span><b>Beryllium, arsenic, hexavalent chromium</b>Connectors, gallium-arsenide chips, coatings</span></div></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-line">
+    <h2 id="h-line">The treatment line, and where it's checked</h2>
+    <p>In the UK, discarded electricals have to go to a permitted treatment facility. Approved Authorised Treatment Facilities (AATFs) issue the evidence that producers' compliance schemes pay for, under the WEEE Regulations 2013, enforced in NI by NIEA. The green notes mark the audit points.</p>
+    <div class="line">
+      <div class="stp"><span class="n">1 · Arrival</span><h3>Weighed and identified</h3><p>Loads arrive with a transfer or consignment note, a waste code (e.g. 20 01 35* for electricals with hazardous components) and a stream such as large appliances, cooling, displays, small mixed, lamps, or the new vapes stream.</p><div class="audit"><b>Audit:</b> weighbridge tickets, notes and permitted waste codes</div></div>
+      <div class="stp"><span class="n">2 · Sorting</span><h3>Reuse check first</h3><p>Working or repairable items and valuable parts are pulled out for reuse before anything is broken. Laptops, servers and phones need certified data wiping.</p><div class="audit"><b>Audit:</b> reuse tonnages; data-destruction certificates</div></div>
+      <div class="stp"><span class="n">3 · De-pollution</span><h3>Hazards out by hand</h3><p>The rules list parts that must come out before shredding: batteries, capacitors with PCBs, mercury parts, CRTs, refrigerant gases and foams, toner, backlit LCD panels, circuit boards, external cables and plastics containing brominated flame retardants.</p><div class="audit"><b>Audit:</b> batch tests: removed batteries and capacitors per tonne against expected rates (EN 50625)</div></div>
+      <div class="stp"><span class="n">4 · Shredding</span><h3>Size reduction</h3><p>A missed lithium battery can start a fire in the shredder. Shredded circuit boards spread their gold and palladium across many fractions, so boards are usually removed first and sent whole to a precious-metals smelter.</p><div class="audit"><b>Audit:</b> input logs per batch; fire and incident records</div></div>
+      <div class="stp"><span class="n">5 · Separation</span><h3>Into fractions</h3><p>Magnets take out steel, eddy currents take out aluminium and copper, and density, optical and X-ray sorters split plastics. Plastics with POPs-bearing flame retardants must be separated out and destroyed, not recycled.</p><div class="audit"><b>Audit:</b> mass balance: tonnes in should equal the sum of tonnes out</div></div>
+      <div class="stp"><span class="n">6 · Outlets</span><h3>Smelters, refiners, destruction</h3><p>Fractions go to steel and aluminium works, copper and precious-metal smelters, plastics recyclers, or high-temperature incineration for hazardous fractions. Every outlet must be permitted, and exports reported.</p><div class="audit"><b>Audit:</b> downstream destination records; evidence notes; quarterly returns to the regulator</div></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-know">
+    <h2 id="h-know">Why the shredder has to know what it shredded</h2>
+    <div class="why">
+      <div class="card"><h3>Its permit says what it may accept</h3><p>Each site is permitted for specific waste codes and quantities. A hazardous load treated as non-hazardous is an offence for both the producer and the operator, and the consignment-note trail shows who knew what.</p></div>
+      <div class="card"><h3>Contamination travels downstream</h3><p>One shredded mercury backlight or PCB capacitor contaminates whole batches of metal and plastic, and can make them unsaleable or hazardous. De-pollution has to be proved, not assumed.</p></div>
+      <div class="card"><h3>POPs plastics must be destroyed</h3><p>Regulator guidance treats plastics from most small electricals, displays and office equipment as likely to contain POPs flame retardants. They must be separated and destroyed. Large white goods and street lighting are the main exceptions. Putting these electricals in a general skip or the scrap-metal stream is unlawful.</p></div>
+      <div class="card"><h3>Evidence and money depend on it</h3><p>The tonnes an AATF reports become evidence that producer compliance schemes buy to meet producers' collection obligations. The figures must reconcile: weighbridge in, fractions out, outlets confirmed. That's why regulators and schemes audit them.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-econ">
+    <h2 id="h-econ">The economics: keep value high, keep parts whole</h2>
+    <p>Recycling recovers the materials. Reuse recovers the materials, plus the energy, labour and carbon that went into making the product. The higher up this ladder an item stays, the more value it keeps.</p>
+    <div class="ladder">
+      <div class="rung" style="background:#1F6B45"><b>Reuse as is</b><span>Resell or redeploy the whole item</span><em>Keeps most value; needs testing, data wiping, a market</em></div>
+      <div class="rung" style="background:#2E7D57"><b>Repair and refurbish</b><span>Replace a battery, screen or fan; regrade and warranty</span><em>Labour cost against resale price; spare parts and repair manuals decide it</em></div>
+      <div class="rung" style="background:#3F7F8F"><b>Remanufacture</b><span>Strip to components, rebuild to as-new spec</span><em>Common for motors, pumps, toner, industrial controls</em></div>
+      <div class="rung" style="background:#2D6CA3"><b>Harvest parts and upcycle</b><span>Pull working modules, drives, magnets, displays; turn items into new products</span><em>Needs fast, non-destructive disassembly</em></div>
+      <div class="rung" style="background:#6B5A8A"><b>Recycle materials</b><span>Shred, separate, smelt</span><em>Recovers the metals; loses the product's embodied value</em></div>
+      <div class="rung" style="background:#8A5A5A"><b>Recover energy or destroy</b><span>Incinerate hazardous or mixed residues</span><em>Required for POPs plastics; the last resort for everything else</em></div>
+    </div>
+    <div class="table">
+      <table>
+        <thead><tr><th>Design choice</th><th>What it does to cost and value</th><th>Better option</th></tr></thead>
+        <tbody>
+          <tr><td>Glued batteries and screens</td><td>Repair takes longer and risks breakage; batteries are often missed at de-pollution and cause fires</td><td>Screws or clips, pull-tabs, a removable battery (required for portable batteries in the EU from 2027)</td></tr>
+          <tr><td>Composites and multi-material laminates</td><td>Can't be separated, so they're downcycled or burned; recyclers pay less or charge more</td><td>Mono-materials, labelled plastics, mechanical joints</td></tr>
+          <tr><td>Many unique components</td><td>More part numbers to stock and more disassembly steps</td><td>Fewer, standard parts; modules shared across product lines</td></tr>
+          <tr><td>Hidden or embedded electronics</td><td>Electronics in furniture, textiles and toys get missed and end up in the wrong waste stream</td><td>Detachable electronics and clear marking</td></tr>
+          <tr><td>Software locks and parts pairing</td><td>Working parts can't be reused in another unit</td><td>Open diagnostics and the right to repair</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-rules">
+    <h2 id="h-rules">Rules to know, NI first</h2>
+    <div class="table">
+      <table>
+        <thead><tr><th>Rule</th><th>What it means</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>WEEE Regulations 2013 (UK-wide)</td><td>Producers finance collection and treatment through compliance schemes; treatment only at permitted sites; evidence system. NIEA regulates in NI.</td><td>In force; amended 2025</td></tr>
+          <tr><td>WEEE amendments 2025</td><td>Online marketplaces pay for household WEEE sold by overseas sellers. A separate collection stream for vapes.</td><td>In force 12 Aug 2025; costs phased in over 2026–27</td></tr>
+          <tr><td>POPs rules</td><td>Waste with POPs above set limits must have the POPs destroyed. Covers most WEEE plastics except large white goods.</td><td>In force</td></tr>
+          <tr><td>RoHS</td><td>Restricts lead, mercury, cadmium, hexavalent chromium, PBB, PBDE and four phthalates in new electricals. NI follows EU product rules under the Windsor Framework.</td><td>In force</td></tr>
+          <tr><td>EU Battery Regulation (applies in NI)</td><td>Due diligence on cobalt, lithium, nickel and graphite; battery passport; recycled-content and lithium-recovery targets.</td><td>Due diligence 18 Aug 2027; passport Feb 2027</td></tr>
+          <tr><td>UK Critical Minerals Strategy</td><td>Aims for 20% of UK critical-mineral demand to come from recycling by 2035.</td><td>Published Nov 2025</td></tr>
+          <tr><td>EU Circular Economy Act</td><td>Expected to revise the WEEE Directive, including collection targets and recovery of critical raw materials.</td><td>Proposal expected 11 Nov 2026</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-do">
+    <h2 id="h-do">What an NI business should do with its own e-waste</h2>
+    <ol class="do">
+      <li>Keep electricals out of general waste and skips. Store them dry and separate, with batteries taped or removed where safe.</li>
+      <li>Ask the supplier first. Producers of business (non-household) electricals often have take-back duties, especially when you buy a like-for-like replacement.</li>
+      <li>Use a registered waste carrier going to a permitted treatment facility, and keep the transfer or hazardous-waste consignment notes.</li>
+      <li>For IT, insist on certified data destruction with serial numbers. A data breach costs far more than the kit is worth.</li>
+      <li>Ask for the reuse share and the downstream destinations, not just "100% recycled".</li>
+      <li>Count it: tonnes by route feed the Waste piece of the Carbon Jigsaw (Scope 3, category 5).</li>
+    </ol>
+  </section>
+
+  <section class="sec" aria-labelledby="h-lens">
+    <h2 id="h-lens">The critical lens: environment versus social</h2>
+    <div class="lens">
+      <p>The cheapest "recycling" often happens far from the UK. Electricals exported as second-hand goods can end up stripped by hand and burned for copper at informal dumps in West Africa and South Asia, exposing workers, including children, to lead, mercury and dioxins. That moves the poison rather than recycling it.</p>
+      <p>A low gate fee and a high "recycling rate" can hide that. A buyer should ask where each fraction ends up, and treat an unusually cheap quote as a reason to check.</p>
+    </div>
+  </section>
+
+  <div class="foot">
+    <div><b>Sources.</b> UNITAR/ITU Global E-waste Monitor 2024. WEEE Regulations 2013 (SI 2013/3113) and the WEEE (Amendment, etc.) Regulations 2025. NetRegs (NI) WEEE legislation. Material Focus / ICER research on POPs in WEEE (2020) and recycling-industry guidance on POPs plastics. CENELEC EN 50625 series on WEEE collection, logistics and treatment. EU Batteries Regulation (EU) 2023/1542. UK Critical Minerals Strategy (DBT, November 2025). EUWID on the Circular Economy Act timetable (October 2026).</div>
+    <div>Position at 16 October 2026. For information, not legal advice. Robert J. Park · linkedin.com/in/robertparkuk · WhatsApp @robertjpark</div>
+  </div>
+</div>
+</body>
+</html>
