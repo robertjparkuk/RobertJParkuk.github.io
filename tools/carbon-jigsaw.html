@@ -228,7 +228,7 @@ function calc(id){
     case "oil":return{s1:num(d.kero)*F.kero+num(d.gasoil)*F.gasoil+num(d.lpg)*F.lpg};
     case "veh":return{s1:num(d.diesel)*F.diesel+num(d.petrol)*F.petrol};
     case "ref":return{s1:num(d.kg)*(GWP[d.gas]||0)};
-    case "water":return{s3:ann(d.supply,d.months)*F.water+ann(d.sewer,d.months)*F.sewer};
+    case "water":{const mains=(d.src||"mains")==="mains",sew=(d.ww||"sewer")==="sewer";return{s3:(mains?ann(d.supply,d.months)*F.water:0)+(sew?ann(d.sewer,d.months)*F.sewer:0)};}
     case "waste":{const a=x=>ann(x,d.months);return{s3:a(d.landfill)*F.wLandfill+a(d.efw)*F.wEfw+a(d.recyc)*F.wRecyc+a(d.food)*F.wFood};}
     case "travel":return{s3:num(d.miles)*F.carMile+num(d.railkm)*F.rail+num(d.dom)*KM.dom*F.fDom+num(d.short)*KM.short*F.fShort+num(d.long)*KM.long*F.fLong+num(d.nights)*F.hotel};
     case "commute":{const w=WEEKS;
@@ -247,6 +247,7 @@ function state(id){
   if(d.na)return"na";
   if(id==="boundary")return(d.sector&&num(d.fte)>0&&num(d.sites)>0)?(d.q==="est"?"est":"done"):"empty";
   if(id==="gen")return d.has==="no"||num(d.genKwh)>0?(d.q==="est"?"est":"done"):"empty";
+  if(id==="water"&&(((d.src||"mains")!=="mains")||d.ww==="onsite")&&num(d.supply)+num(d.sewer)>0)return d.q==="est"?"est":"done";
   const c=calc(id);const t=(c.s1||0)+(c.s2||0)+(c.s3||0);
   if(t<=0)return"empty";
   return d.q==="est"?"est":"done";
@@ -331,7 +332,10 @@ const FORMS={
   <div class="fields">${radios("gen","has","Do you generate electricity on site?",[["no","No"],["yes","Yes"]])}
   ${fld("gen","kwp","Installed size (kWp or kW)",{ph:"50"})}${fld("gen","genKwh","Generated this year (kWh)",{ph:"42,000"})}${fld("gen","exportKwh","Exported to the grid (kWh)",{ph:"6,000"})}${Q("gen")}</div>`,
  water:()=>`<p class="find">On your water bill: <b>supply</b> and <b>sewerage</b> volumes in cubic metres. <a href="sample-bills/sample-04-water-sewerage.pdf">See the sample bill</a>.</p>
-  <div class="fields">${fld("water","supply","Water supplied (m³)",{ph:"312"})}${fld("water","sewer","Sewerage (m³)",{ph:"296"})}${months("water")}${Q("water")}</div>`,
+  <p style="font-size:14px"><b>Why Scope 3?</b> Water itself isn't an emission. Mains water carries the emissions of the water company's pumping and treatment, and sewage carries the emissions of the treatment works. Both happen at sites you don't control. Evaporation and steam from your site don't count, because the accounting rules don't treat water vapour as a reportable greenhouse gas.</p>
+  <div class="fields">${radios("water","src","Where does most of your water come from?",[["mains","Mains supply (NI Water)"],["borehole","Borehole or well"],["rain","Rainwater harvesting"],["river","River, lough or stream"]])}
+  ${radios("water","ww","Where does your wastewater go?",[["sewer","Public sewer"],["onsite","Treated on site, then discharged"]])}
+  ${fld("water","supply","Water used (m³)",{ph:"312"})}${fld("water","sewer","Wastewater to sewer (m³)",{ph:"296"})}${months("water")}${Q("water")}</div>`,
  waste:()=>`<p class="find">You need <b>tonnes</b> by where the waste goes. Ask your waste carrier for a weight report if invoices only show lifts. <a href="sample-bills/sample-05-waste-collection.pdf">See the sample invoice</a>.</p>
   <div class="fields">${fld("waste","landfill","General waste to landfill (t)",{ph:"0"})}${fld("waste","efw","General waste to energy recovery (t)",{ph:"0.94"})}${fld("waste","recyc","Recycling, incl. metals (t)",{ph:"2.03"})}${fld("waste","food","Food waste to AD or compost (t)",{ph:"0.18"})}${months("waste")}${Q("waste")}</div>`,
  travel:()=>`<p class="find">Expense claims and travel bookings. Flights use typical return distances from Belfast: domestic ${fmt(KM.dom)} km, Europe ${fmt(KM.short)} km, long-haul ${fmt(KM.long)} km.</p>
@@ -366,6 +370,9 @@ function updateCalc(){
   if((S[sel]||{}).na){o.innerHTML="Marked as not applicable to your business.";return;}
   let extra="";
   if(sel==="elec"&&(S.elec||{}).green==="yes")extra=`<br><small>A certificate-backed tariff can lower your market-based Scope 2 figure. This checker reports the location-based figure, which is the standard starting point.</small>`;
+  if(sel==="water"){const w=S.water||{};
+    if((w.src||"mains")!=="mains")extra+=`<br><small>Water you draw yourself has no water-company emissions. The energy to pump and treat it is already in your electricity or fuel. In NI, abstracting more than a small daily volume may need an NIEA abstraction licence.</small>`;
+    if(w.ww==="onsite")extra+=`<br><small>An on-site treatment plant can release methane and nitrous oxide. Those are your Scope 1, and they need a specialist estimate, so this checker doesn't calculate them.</small>`;}
   if(sel==="elec"&&c.s3)extra+=`<br><small>Includes ${fmt(t(c.s3),2)} t of grid losses, reported in Scope 3.</small>`;
   o.innerHTML=`This piece: <b>${fmt(t(tot),2)} t CO₂e</b> a year${c.detail?` · ${c.detail}`:""}${extra}`;
 }

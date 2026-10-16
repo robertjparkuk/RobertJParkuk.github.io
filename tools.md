@@ -13,6 +13,12 @@ A rough carbon checker for Northern Ireland businesses. Fill in each piece of th
 
 [Open the Carbon Jigsaw →]({{ '/tools/carbon-jigsaw.html' | relative_url }})
 
+## The Scopes Map
+
+Scope 1, 2 and 3 on one diagram, with all fifteen Scope 3 categories and their technical definitions. It also covers the grey zones clients ask about: gas that leaks before or after the meter, LPG that isn't a counted gas, water from a borehole, grey-fleet mileage, landlord-supplied energy, and which gases count at all.
+
+[Open the Scopes Map →]({{ '/tools/scopes-map.html' | relative_url }})
+
 ## The Joined-Up Wheel
 
 Eight environmental issues that most firms handle separately: carbon, energy costs, land, waste and packaging, forever chemicals (PFAS), water, environmental health, and policy and public affairs. All of them feed the same business goals. Pick an issue to see what triggers it, the rules today and the routes in. Pick a goal to see which issues it depends on.
