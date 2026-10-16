@@ -5,7 +5,7 @@ permalink: /privacy/
 lead: This website does not collect your data. Nothing you type into any tool, quiz or puzzle on this site is sent to me or stored on a server.
 ---
 
-*Last updated: 16 October 2026*
+*Last updated: 17 October 2026*
 
 ## The short version
 
@@ -33,10 +33,10 @@ The other tools and guides don't save anything.
 
 ## Things outside my control that you should know about
 
-Even a site that collects nothing relies on other services to reach you. Two of them see basic technical information:
+Even a site that collects nothing has to be hosted somewhere:
 
 - **Hosting (GitHub Pages).** The site is hosted by GitHub. When any GitHub Pages site is visited, GitHub logs the visitor's IP address for security purposes. I don't receive or have access to these logs. See [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
-- **Fonts (Google Fonts).** The site's typefaces are loaded from Google's servers. Your browser connects to Google to download them, so Google receives your IP address and browser details as part of that request. See [Google's privacy policy](https://policies.google.com/privacy).
+- **No other third parties.** Fonts, images and scripts are all served from this site itself. Your browser doesn't contact Google, social networks, advertisers or any other outside service when you read a page or use a tool.
 
 Links to LinkedIn, WhatsApp and other websites take you to services with their own privacy policies.
 
