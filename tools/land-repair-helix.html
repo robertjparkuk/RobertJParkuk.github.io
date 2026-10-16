@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="The Land Repair Helix: pairs land problems with low-cost, nature-based fixes for soil, water, contamination, PFAS, spills and rewilding in Northern Ireland. By Robert J. Park.">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<title>Land Repair Helix</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+[hidden]{display:none!important}
+
+/* Layout: a turning double helix (problem strand, fix strand, base pairs between) on the left; the selected pair's detail and your site plan on the right. */
+
+/* Layout: the GHG Protocol value chain drawn left to right (upstream → you → downstream), then the grey zones where scopes blur, then the gases that count. */
+:root{
+  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2;
+  --red:#B3121B; --s1:#B3121B; --s1-bg:#FBEDED; --s2:#B5650F; --s2-bg:#FCF1E3; --s3:#2D6CA3; --s3-bg:#E9F1F9; --out:#4F7F2A; --out-bg:#EEF5E6;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.brand b{color:var(--red)}
+h1{font-family:var(--display);font-size:clamp(34px,5vw,56px);line-height:1.03;margin:8px 0 0;text-wrap:balance}
+h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);line-height:1.1;margin:0;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:68ch;font-size:18px}
+.sec{display:flex;flex-direction:column;gap:16px;border-top:3px solid var(--ink);padding-top:18px}
+.sec>p{margin:0;max-width:72ch}
+
+:root{--soil:#8A6A3B;--water:#2D6CA3;--contam:#6B5A8A;--spill:#B5650F;--wild:#4F7F2A;--air:#5F5856;--prob:#1B1817;--fix:#2E7D57}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--soil:#D3B07A;--water:#7DB3E3;--contam:#B9A6DE;--spill:#E9A55A;--wild:#9CCB6E;--air:#B3AAA6;--prob:#E9E3E0;--fix:#4CC38A}}
+:root[data-theme="dark"]{--soil:#D3B07A;--water:#7DB3E3;--contam:#B9A6DE;--spill:#E9A55A;--wild:#9CCB6E;--air:#B3AAA6;--prob:#E9E3E0;--fix:#4CC38A}
+.sites{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.sites span{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.chip{border:1.5px solid var(--rule);background:var(--paper);color:var(--ink);font:600 14px var(--body);padding:6px 12px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.app{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px;align-items:start}
+.helixcol{display:flex;flex-direction:column;gap:10px;min-width:0}
+#helix{width:100%;height:auto;display:block;max-width:520px;margin:0 auto}
+.rung{cursor:pointer}
+.rung line{stroke-width:7;stroke-linecap:round}
+.rung text{font:600 12.5px var(--body);fill:var(--ink)}
+.rung:focus{outline:none}.rung:focus-visible line{stroke-width:11}
+.rung.dim{opacity:.18}
+.rung.sel line{stroke-width:11}
+.strand{fill:none;stroke-width:5}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--muted);justify-content:center}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.ctrl{display:flex;gap:8px;justify-content:center}
+.btn{border:1px solid var(--rule);background:var(--tint);color:var(--ink);font:600 14px var(--body);padding:7px 12px;border-radius:6px;cursor:pointer}
+.btn:hover{border-color:var(--ink)}
+.detail{display:flex;flex-direction:column;gap:12px;background:var(--tint);border-radius:10px;padding:18px}
+.detail .gene{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:10px;align-items:center}
+.pair .p,.pair .f{border-radius:8px;padding:10px 12px;font-weight:700;font-size:16px}
+.pair .p{background:var(--paper);border:2px solid var(--prob)}
+.pair .f{background:var(--paper);border:2px solid var(--fix);color:var(--fix)}
+.pair .x{font-family:var(--display);font-size:22px;color:var(--muted)}
+.detail h3{margin:0;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.detail p{margin:0;max-width:64ch}
+.fixes{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px}
+.fixes li{display:grid;grid-template-columns:3.2em minmax(0,1fr);gap:8px;background:var(--paper);border-radius:6px;padding:8px 10px;font-size:15px}
+.cost{font-weight:700;color:var(--fix);font-variant-numeric:tabular-nums}
+.ni{border-left:4px solid var(--red);background:var(--paper);padding:8px 12px;border-radius:0 6px 6px 0;font-size:14.5px}
+.care{border-left:4px solid var(--spill);background:var(--paper);padding:8px 12px;border-radius:0 6px 6px 0;font-size:14.5px}
+.plan{border-top:3px solid var(--ink);padding-top:14px;display:flex;flex-direction:column;gap:10px}
+.plan ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.plan li{font-size:15px}
+.plan li span{color:var(--muted)}
+button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+@media (max-width:900px){.app{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.pair{grid-template-columns:minmax(0,1fr)}.pair .x{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+    <h1>The Land Repair Helix</h1>
+    <p class="lede">A design tool for healthier land. One strand holds the problems, the other holds the fixes, and each base pair links a problem to the nature-based or low-cost repair that answers it. Pick your type of site to see the pairs that matter and build a plan.</p>
+  </header>
+
+  <div class="sites" id="sites" role="group" aria-label="Type of site"><span>Your site</span></div>
+
+  <section class="app">
+    <div class="helixcol">
+      <svg id="helix" viewBox="0 0 520 980" role="group" aria-label="Double helix of land problems and fixes"></svg>
+      <div class="legend" id="legend"></div>
+      <div class="ctrl"><button class="btn" type="button" id="spin" aria-pressed="false">Turn the helix</button></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:18px;min-width:0">
+      <div class="detail" id="detail" aria-live="polite"></div>
+      <div class="plan" id="plan"></div>
+    </div>
+  </section>
+
+  <div class="foot">
+    <div><b>Important.</b> For contaminated land, forever chemicals (PFAS) or any spill reaching a drain, watercourse or groundwater, get specialist advice and involve the regulator. In NI, report pollution to the NIEA Incident Hotline on <b>0800 80 70 60</b> (24 hours). Contaminated-land remediation normally goes through planning, using the Land Contamination: Risk Management (LCRM) framework.</div>
+    <div><b>Sources.</b> DAERA and CAFRE guidance on the Nutrients Action Programme and the hedge-cutting closed period (1 March to 31 August); NIEA incident reporting (nidirect); LCRM (Environment Agency, used by NIEA); UK and EU work on PFAS (Defra PFAS Plan 2026, ECHA); the All-Ireland Pollinator Plan; the "Don't Mow, Let It Grow" initiative run by NI councils and partners.</div>
+    <div>Position at 16 October 2026. For information, not legal or engineering advice. Robert J. Park · linkedin.com/in/robertparkuk · WhatsApp @robertjpark</div>
+  </div>
+</div>
+
+<script>
+(function(){
+const G={soil:"Soil",water:"Water",contam:"Contamination",spill:"Spills",wild:"Rewilding",air:"Air and carbon"};
+const SITES={farm:"Farm",verge:"Roadside verge",brown:"Brownfield",factory:"Factory or yard",park:"Council park or estate",river:"Riverside land"};
+// [gene, problem, fix, why, [[cost,fix]...], NI note, caution, sites]
+const P=[
+ ["soil","Compacted, tired soil","Feed the soil life","Compacted soil with little organic matter holds less water, drains badly, and needs more fertiliser to grow anything.",[["£","Stop heavy machinery and livestock on wet ground"],["£","Add compost, farmyard manure or digestate to build organic matter"],["££","Sow deep-rooting cover crops or herbal leys (chicory, plantain) to break up compaction"],["££","Cut down on ploughing; direct drilling where it suits the soil"]],"Soil sampling is often supported through DAERA schemes. Check what's open before paying for testing.","",["farm","park","brown"]],
+ ["soil","Heavy artificial fertiliser use","Let plants make the nitrogen","Bagged nitrogen is costly and energy-intensive to make, gives off nitrous oxide, and runs off into water.",[["£","Test soil first: correct the pH with lime before adding nutrients"],["£","Plan nutrients from the analysis: put slurry and digestate where the crop needs them"],["££","Sow clover into grassland; legumes fix nitrogen from the air"],["££","Use low-emission slurry spreading to keep more nitrogen in the soil"]],"Under the Nutrients Action Programme, apply nutrients only where the crop needs them, and respect the closed periods and buffer distances from waterways.","",["farm","park"]],
+ ["soil","Bare soil over winter","Keep it green","Bare soil erodes in heavy rain and carries sediment and phosphorus into rivers and loughs.",[["£","Leave stubbles, or sow a winter cover crop"],["£","Keep grass margins at field edges and gateways"],["££","Plant hedges or grass strips across slopes to slow runoff"]],"","",["farm","brown","river"]],
+ ["water","Flooding and fast runoff","Slow the flow","Hard surfaces and drained land send water downstream fast, causing floods and washing pollution off the land.",[["£","Break up hard surfaces with gravel, grass-crete or permeable paving"],["££","Dig swales, rain gardens and small ponds to hold water back"],["££","Install leaky dams of logs or brash in ditches and small streams"],["£££","Add sustainable drainage (SuDS) when sites are redeveloped"]],"Work in or near a watercourse may need consent from DfI Rivers. Check before building dams or culverts.","",["farm","factory","park","river","brown"]],
+ ["water","Dries out in summer","Hold water in","Dry soil cracks and stalls growth; plants and wildlife suffer in heatwaves.",[["£","Build soil organic matter; healthier soil holds far more water"],["£","Mulch beds and leave cut vegetation to protect the soil surface"],["££","Harvest rainwater from roofs into tanks for washing or irrigation"],["££","Restore ponds and wet hollows"]],"Taking more than a small amount of water from a river, lough or borehole may need an NIEA abstraction licence.","",["farm","factory","park"]],
+ ["water","Blue-green algae (cyanobacteria) blooms","Starve the bloom of phosphorus","Too much phosphorus and nitrogen, plus warm still water, feeds toxic cyanobacteria. Lough Neagh is the clearest NI example.",[["£","Test soil phosphorus and stop applying where the index is already high"],["£","Fence livestock out of streams and provide drinking troughs"],["£","Get septic tanks emptied and checked"],["££","Leave wide, ungrazed buffer strips of grass and trees along watercourses"],["£££","Build constructed wetlands or reedbeds to catch nutrients from yards and drains"]],"Keep slurry and fertiliser off land next to waterways, and inside the buffer distances, especially in winter and before forecast rain.","Don't touch bloom scums, and keep dogs out of the water. Cyanobacteria can be toxic.",["farm","river","park"]],
+ ["contam","Metals in the soil (lead, zinc, copper)","Lock them in, or let plants lift them","Old industry, made ground, and lead from paint or fuel can leave metals that harm people, especially children, and wildlife.",[["£","Test before growing food or creating play areas"],["£","Keep a clean cover: a capping layer of clean soil or a membrane"],["££","Phytostabilisation: willows and grasses hold metals in place and stop dust"],["££","Phytoextraction: plants such as Indian mustard take up some metals. It's slow and the harvested plants need proper disposal"],["£££","Remove the hotspots by excavation, under a remediation strategy"]],"NI's contaminated land regime (Part III) isn't in force, so land contamination is dealt with through planning, using LCRM.","Phytoremediation is slow and only partial. Use it as part of a plan agreed with the planning authority and environmental health, not on its own.",["brown","factory","park"]],
+ ["contam","Old fuel and oil in the ground","Let microbes digest it","Leaking tanks and old spills leave hydrocarbons that smell, kill plants and can reach groundwater.",[["£","Find and stop the source: old tanks, pipework, drums"],["££","Biopiles or windrows: dig out, aerate and add nutrients so bacteria break down the oil"],["££","Plant deep-rooting vegetation to boost microbes around the roots"],["£££","Excavate and dispose, or treat on site, for heavy contamination"]],"Treating contaminated soil on site normally needs a permit or waste exemption from NIEA.","",["brown","factory"]],
+ ["contam","Forever chemicals (PFAS)","Stop the source, then contain","PFAS don't break down naturally. They come from firefighting foam, coatings and some industrial processes, and spread in water.",[["£","Stop using PFAS firefighting foam; switch to fluorine-free foam and dispose of old stock properly"],["££","Contain hotspots: immobilise PFAS in soil with activated carbon or specialist sorbents mixed in"],["£££","Treat water with granular activated carbon, ion exchange or reverse osmosis"],["£££","Excavate and destroy by high-temperature treatment"]],"EU REACH applies to goods in NI. The EU ban on PFAS in firefighting foam applies from 23 October 2030.","No plant or cheap fix removes PFAS. Anything sold as 'natural PFAS removal' should be treated with caution. Testing and treatment need specialists.",["factory","brown"]],
+ ["spill","Diesel, oil or paraffin spilled on land","Contain, soak up, dispose properly","A few litres of oil can pollute a large area of soil, a drain or a stream.",[["£","Stop the leak and block nearby drains with covers or sandbags"],["£","Soak it up with sawdust, wood shavings, straw, coir, cork granules or wool"],["£","Clay granules (cat litter) work well on hard surfaces"],["£","Keep a ready-made spill kit beside every fuel store and generator"],["££","Dig out badly soaked soil, then let microbes treat it in a biopile"]],"If oil reaches a drain, watercourse or groundwater, ring the NIEA Incident Hotline on 0800 80 70 60. Used sorbents are hazardous waste and must go via a registered carrier.","Don't use peat, which destroys bogs, or washing-up liquid and detergents, which spread the oil into the water.",["farm","factory","verge","brown","river"]],
+ ["wild","Mown-to-the-ground verges","Cut less, collect the cuttings","Frequent mowing and leaving cuttings on the ground feeds coarse grass and kills wildflowers.",[["£","Cut once or twice a year, in late summer, and remove the cuttings"],["£","Leave strips or patches uncut over winter for insects"],["£","Sow yellow rattle to weaken vigorous grasses"],["££","Use local-provenance wildflower seed, or let the seed bank recover by itself"]],"Many NI councils take part in 'Don't Mow, Let It Grow'. Keep visibility strips mown at junctions for road safety.","",["verge","park"]],
+ ["wild","Gappy, flailed hedgerows","Lay, gap up and let them grow","Hedges cut hard every year flower little, give poor shelter and slowly die out at the base.",[["£","Cut in rotation every 2 to 3 years, in winter, never during the closed period"],["£","Let some hedgerow trees grow up"],["££","Plant gaps with native hawthorn, blackthorn, hazel and holly"],["££","Lay overgrown hedges to thicken them at the base"]],"In NI, hedge cutting is not allowed from 1 March to 31 August, except for clear road-safety reasons.","",["farm","verge","park"]],
+ ["wild","Brownfield seen as wasteland","Keep the mosaic","Bare ground, rubble and patchy plants on brownfield sites can support more insects than tidy grassland.",[["£","Survey before 'greening': rare insects and plants may already be there"],["£","Keep bare patches, rubble piles and shallow pools"],["££","Only spread topsoil and seed where it's needed"],["££","Control invasive species such as Japanese knotweed with a specialist"]],"Japanese knotweed waste is controlled waste. It's an offence to cause it to grow in the wild.","Check for contamination before disturbing made ground.",["brown","factory"]],
+ ["wild","Few pollinators","Flowers from spring to autumn","Bees and hoverflies need food from March to October, and nesting spots.",[["£","Leave dandelions and clover in amenity grass"],["£","Plant spring-flowering willow, hawthorn and blackthorn, and late-flowering ivy"],["£","Leave bare south-facing banks for mining bees"],["£","Cut pesticide use"]],"The All-Ireland Pollinator Plan has free guides for farms, councils, businesses and schools.","",["farm","verge","park","factory","brown"]],
+ ["air","Ammonia from slurry and livestock","Cover, inject, and time it","Ammonia harms nearby woodlands, bogs and rivers, and forms fine particles that damage health. NI's ammonia emissions are mostly from agriculture.",[["£","Spread in cool, damp, still weather, never in hot sun"],["££","Use low-emission spreading equipment such as trailing shoe or dribble bar"],["££","Cover slurry stores"],["££","Plant tree shelterbelts around sheds to catch ammonia"]],"DAERA's ammonia measures and the Nutrients Action Programme set rules on spreading equipment and timing.","",["farm"]],
+ ["air","Drained or damaged peat","Rewet and protect","Drained peat releases carbon dioxide year after year. Intact wet bog stores carbon and water.",[["£","Never use peat-based compost or peat as a sorbent"],["££","Block drains on peat to raise the water table"],["££","Avoid planting trees on deep peat"]],"NI's peatland strategy aims to protect and restore bogs.","",["farm","park"]],
+ ["air","Trees in the wrong place","Right tree, right place","Trees planted on species-rich grassland, peat or nesting habitat can do more harm than good.",[["£","Plant native broadleaves along watercourses for shade; cooler water helps reduce algal blooms"],["£","Plant hedgerow trees and shelterbelts rather than blocks on good habitat"],["££","Let woodland regenerate naturally where there are seed sources"]],"Check for priority habitat and protected sites before planting.","",["farm","park","river","brown"]]
+];
+const NS="http://www.w3.org/2000/svg",svg=document.getElementById("helix");
+let phase=0,site=null,sel=0,spin=false,raf=0;
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const N=P.length,top=40,step=50,cx=260,amp=100;
+function el(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e;}
+const strandA=el("path",{class:"strand",stroke:"var(--prob)"}),strandB=el("path",{class:"strand",stroke:"var(--fix)"});
+const rungs=P.map((p,i)=>{const g=el("g",{class:"rung",tabindex:"0",role:"button","aria-label":`${p[1]}: ${p[2]}`});
+  const ln=el("line",{stroke:`var(--${p[0]})`},g);const tA=el("text",{"text-anchor":"end"},g);const tB=el("text",{"text-anchor":"start"},g);
+  tA.textContent=p[1].length>22?p[1].slice(0,21)+"…":p[1];tB.textContent=p[2].length>22?p[2].slice(0,21)+"…":p[2];
+  g.addEventListener("click",()=>{sel=i;detail();draw();});
+  g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();sel=i;detail();draw();}});
+  return {g,ln,tA,tB};});
+function xy(i,s){const y=top+i*step+10,a=i*0.62+phase+(s?Math.PI:0);return [cx+Math.sin(a)*amp,y,Math.cos(a)];}
+function draw(){
+  let dA="",dB="";for(let k=0;k<=N*6;k++){const t=k/6,ya=top+t*step+10;const aA=t*0.62+phase,aB=aA+Math.PI;dA+=(k?"L":"M")+(cx+Math.sin(aA)*amp).toFixed(1)+","+ya.toFixed(1);dB+=(k?"L":"M")+(cx+Math.sin(aB)*amp).toFixed(1)+","+ya.toFixed(1);}
+  strandA.setAttribute("d",dA);strandB.setAttribute("d",dB);
+  rungs.forEach((r,i)=>{const [x1,y,z1]=xy(i,0),[x2]=xy(i,1);
+    r.ln.setAttribute("x1",x1.toFixed(1));r.ln.setAttribute("y1",y);r.ln.setAttribute("x2",x2.toFixed(1));r.ln.setAttribute("y2",y);
+    const L=Math.min(x1,x2),Rr=Math.max(x1,x2),leftIsA=x1<x2;
+    r.tA.setAttribute("x",(leftIsA?L-10:Rr+10).toFixed(1));r.tA.setAttribute("text-anchor",leftIsA?"end":"start");r.tA.setAttribute("y",y+4);
+    r.tB.setAttribute("x",(leftIsA?Rr+10:L-10).toFixed(1));r.tB.setAttribute("text-anchor",leftIsA?"start":"end");r.tB.setAttribute("y",y+4);
+    const wide=Rr-L>90;r.tA.style.display=wide?"":"none";r.tB.style.display=wide?"":"none";
+    r.g.classList.toggle("dim",!!site&&!P[i][7].includes(site));r.g.classList.toggle("sel",i===sel);r.ln.setAttribute("opacity",z1>0?1:.55);});
+}
+function tick(){phase+=0.01;draw();raf=requestAnimationFrame(tick);}
+document.getElementById("spin").onclick=e=>{spin=!spin;e.target.setAttribute("aria-pressed",spin);e.target.textContent=spin?"Pause the helix":"Turn the helix";if(spin)tick();else cancelAnimationFrame(raf);};
+if(reduce)document.getElementById("spin").hidden=true;
+document.getElementById("legend").innerHTML=`<span><i style="background:var(--prob)"></i>Problem strand</span><span><i style="background:var(--fix)"></i>Fix strand</span>`+Object.keys(G).map(k=>`<span><i style="background:var(--${k})"></i>${G[k]}</span>`).join("");
+const sitesEl=document.getElementById("sites");
+sitesEl.insertAdjacentHTML("beforeend",`<button class="chip" type="button" data-s="" aria-pressed="true">All land</button>`+Object.keys(SITES).map(k=>`<button class="chip" type="button" data-s="${k}" aria-pressed="false">${SITES[k]}</button>`).join(""));
+sitesEl.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{site=b.dataset.s||null;sitesEl.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b));if(site&&!P[sel][7].includes(site))sel=P.findIndex(p=>p[7].includes(site));detail();plan();draw();});
+function detail(){const p=P[sel];
+  document.getElementById("detail").innerHTML=`<div class="gene" style="color:var(--${p[0]})">${G[p[0]]} · pair ${sel+1} of ${N}</div>
+   <div class="pair"><div class="p">${p[1]}</div><div class="x">⟷</div><div class="f">${p[2]}</div></div>
+   <p>${p[3]}</p><h3>Fixes, cheapest first</h3><ul class="fixes">${p[4].map(([c,t])=>`<li><span class="cost">${c}</span><span>${t}</span></li>`).join("")}</ul>
+   ${p[5]?`<div class="ni"><b>NI rules and help:</b> ${p[5]}</div>`:""}${p[6]?`<div class="care"><b>Take care:</b> ${p[6]}</div>`:""}`;}
+function plan(){const el=document.getElementById("plan");
+  if(!site){el.innerHTML=`<h2 style="font-size:24px">Build a site plan</h2><p style="margin:0;color:var(--muted)">Choose your type of site above. The helix will highlight the pairs that apply, and a starter plan will appear here.</p>`;return;}
+  const ps=P.filter(p=>p[7].includes(site));
+  const lines=ps.map(p=>`${p[2]}: ${p[4][0][1]}`);
+  el.innerHTML=`<h2 style="font-size:24px">Starter plan: ${SITES[site]}</h2><p style="margin:0">${ps.length} pairs apply. Start with the cheapest fix for each:</p>
+   <ol>${ps.map(p=>`<li><b>${p[2]}</b> <span>(${p[1].toLowerCase()})</span>: ${p[4][0][1]}</li>`).join("")}</ol>
+   <button class="btn" type="button" id="copyPlan" style="align-self:flex-start">Copy plan</button>`;
+  document.getElementById("copyPlan").onclick=async e=>{const t=`Land Repair Helix: starter plan for ${SITES[site]}\n`+lines.map((l,i)=>`${i+1}. ${l}`).join("\n");try{await navigator.clipboard.writeText(t);e.target.textContent="Copied";}catch(_){e.target.textContent="Copy not available here";}setTimeout(()=>e.target.textContent="Copy plan",2000);};}
+detail();plan();draw();
+})();
+</script>
+</body>
+</html>

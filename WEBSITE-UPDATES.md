@@ -25,6 +25,20 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.6.0 — 16 October 2026: privacy policy and three new tools
+
+**Added**
+- `privacy.md` at `/privacy/`, linked from every page footer. It states that the site collects no data: no analytics, no tracking, no cookies, no forms, and tool inputs stay on the visitor's device. It discloses the two third-party contacts: GitHub Pages logs IP addresses for security, and fonts load from Google. It also lists the two tools that use browser local storage (Carbon Jigsaw, Carbon Crossword) and how to clear it.
+- `tools/incoterms.html`: Incoterms Chooser. Four questions lead to one of the 11 Incoterms® 2020 rules, with seller and buyer duties, warnings, copyable contract wording, a who-does-what matrix, and notes on GB–NI, NI–EU, DDP and CBAM, and Scope 3 freight.
+- `puzzles/planet-check.html`: Planet Check, a 28-question GCSE quiz tagged to AQA Chemistry 4.9 and 4.10 and Biology 4.7, plus a Real world NI set. It has topic filters, explanations and a retry-missed option, and stores nothing.
+- `tools/land-repair-helix.html`: The Land Repair Helix. Seventeen problem–fix base pairs across soil, water, contamination, PFAS, spills, rewilding and air, with a site-type filter, a starter plan builder and NI rules on each pair.
+
+**Changed**
+- `_layouts/default.html`: Privacy link in the footer.
+- `tools.md`: added the three new tools.
+
+**Audit (16 Oct 2026):** no analytics, tracking scripts, cookies, forms or data-sending code anywhere in the repo. External requests go only to Google Fonts. Browser storage is used only by the Carbon Jigsaw and the Carbon Crossword.
+
 ### v0.5.0 — 16 October 2026: home page tools band and photos
 
 **Added**
@@ -87,19 +101,22 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 ## Backlog
 
 ### Waiting on Robert
-- [ ] Merge pull requests #1 (v0.3.0), #2 (v0.4.0) and #3 (v0.5.0), in that order. Each merge goes live within a couple of minutes.
+- [ ] Merge pull request #4 (v0.6.0: privacy policy and three new tools)
 - [ ] Register the domain (e.g. robertjpark.co.uk), add it under Settings → Pages, set `url:` in `_config.yml`, tick Enforce HTTPS
 - [ ] Wheel: decide which routes in are your own services and which go to partners; then add a "How I help" line to each issue
-- [ ] Carbon Jigsaw: confirm the flight distance and commuting assumptions (1,040 / 2,000 / 11,000 km return; 46 working weeks)
-- [ ] Ask NIEA to confirm its position on POPs in WEEE plastics (the e-waste guide currently cites regulator guidance generally)
+- [ ] Carbon Jigsaw: confirm the flight and commuting assumptions (1,040 / 2,000 / 11,000 km return; 46 working weeks)
+- [ ] Ask NIEA to confirm its position on POPs in WEEE plastics
+- [ ] Planet Check: ask a GCSE science or geography teacher to sense-check the questions against CCEA specifications
 - [ ] Mark the remaining 62 stock images "Keep Downloaded" in iCloud so they can be reviewed
 - [ ] Blur or crop the school bus number plate, or drop that photo
 
 ### Ready to build next
+- [ ] Self-host the fonts, so no request goes to Google; then update the privacy page
 - [ ] Puzzles: Scope Sort, Pillar Clash, acronym match-up
-- [ ] Blog posts introducing the Carbon Jigsaw, Scopes Map and e-waste guide, embedding them with `_snippets/embed.html`
-- [ ] Add photos to the services and public sector pages
-- [ ] A Tools index card image for each tool
+- [ ] Blog posts launching the Carbon Jigsaw, Scopes Map, Incoterms Chooser, Land Repair Helix and the guides
+- [ ] Photos on the services and public sector pages
+- [ ] Planet Check: printable worksheet version with answers on a separate page
+- [ ] Land Repair Helix: printable site plan, and more pairs (invasive species, soil carbon and biochar, SuDS detail)
 
 ### Later
 - [ ] Carbon Jigsaw phase 2: bill upload with automatic reading (needs a back end; not possible on GitHub Pages alone)
@@ -108,11 +125,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 ### Watch list (update pages when these land)
 - [ ] EU Circular Economy Act proposal, expected 11 November 2026: e-waste and circular economy guides
 - [ ] EU Parliament plenary vote on car CO2 standards, 23 November 2026: ESG Regime Tracker
-- [ ] SEAC final opinion on the EU universal PFAS restriction, expected end of 2026: Joined-Up Wheel
+- [ ] SEAC final opinion on the EU universal PFAS restriction, expected end of 2026: Joined-Up Wheel, Land Repair Helix
 - [ ] England's Circular Economy Growth Plan and NI's final Circular Economy Strategy: circular economy guide
 - [ ] NI final Climate Action Plan: tracker and wheel
 - [ ] GHG Protocol Scope 2 revision (consultation closed 31 January 2026): Scopes Map
-- [ ] UK CBAM go-live, 1 January 2027: tracker, jigsaw, NI manufacturers card
+- [ ] UK CBAM go-live, 1 January 2027: tracker, jigsaw, Incoterms Chooser, NI manufacturers card
+- [ ] New Nutrients Action Programme rules: Land Repair Helix
+- [ ] Any new edition of the Incoterms rules from the ICC: Incoterms Chooser
 
 ## Fact-check rule
 
