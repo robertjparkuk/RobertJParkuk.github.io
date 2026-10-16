@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Circular Economy Reality Check: the theory, what works in practice today, and the road ahead for Northern Ireland, the UK and the EU. By Robert J. Park.">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<title>Circular Economy Reality Check</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+[hidden]{display:none!important}
+
+/* Layout: the theory (roots, two loops, the R-ladder), then an honest scorecard of what works today, then the dated road ahead. */
+
+/* Layout: the GHG Protocol value chain drawn left to right (upstream → you → downstream), then the grey zones where scopes blur, then the gases that count. */
+:root{
+  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2;
+  --red:#B3121B; --s1:#B3121B; --s1-bg:#FBEDED; --s2:#B5650F; --s2-bg:#FCF1E3; --s3:#2D6CA3; --s3-bg:#E9F1F9; --out:#4F7F2A; --out-bg:#EEF5E6;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.brand b{color:var(--red)}
+h1{font-family:var(--display);font-size:clamp(34px,5vw,56px);line-height:1.03;margin:8px 0 0;text-wrap:balance}
+h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);line-height:1.1;margin:0;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:68ch;font-size:18px}
+.sec{display:flex;flex-direction:column;gap:16px;border-top:3px solid var(--ink);padding-top:18px}
+.sec>p{margin:0;max-width:72ch}
+
+:root{--tech:#2D6CA3;--tech-bg:#E9F1F9;--bio:#4F7F2A;--bio-bg:#EEF5E6;--ok:#1F6B45;--mid:#A86A00;--bad:#B3121B}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--tech:#7DB3E3;--tech-bg:#1B2A38;--bio:#9CCB6E;--bio-bg:#22301A;--ok:#4CC38A;--mid:#E0A84B;--bad:#F0787C}}
+:root[data-theme="dark"]{--tech:#7DB3E3;--tech-bg:#1B2A38;--bio:#9CCB6E;--bio-bg:#22301A;--ok:#4CC38A;--mid:#E0A84B;--bad:#F0787C}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.stat{background:var(--tint);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:4px}
+.stat .v{font-family:var(--display);font-size:clamp(26px,3vw,36px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.stat .l{font-size:14px}.stat .s{font-size:12px;color:var(--muted)}
+.roots{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:0;border-top:3px solid var(--ink)}
+.root{padding:12px 10px;border-right:1px dashed var(--rule);display:flex;flex-direction:column;gap:4px;min-width:0}
+.root:last-child{border-right:none}
+.root .y{font-family:var(--display);font-weight:700;font-size:22px;color:var(--red)}
+.root b{font-size:15px}.root span{font-size:13.5px;color:var(--muted)}
+.loops{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.loop{border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.loop h3{margin:0;font-family:var(--display);font-size:24px}
+.loop p{margin:0;font-size:14.5px}
+.tech{background:var(--tech-bg);border:2px solid var(--tech)}.tech h3{color:var(--tech)}
+.bio{background:var(--bio-bg);border:2px solid var(--bio)}.bio h3{color:var(--bio)}
+.ring{display:flex;flex-wrap:wrap;gap:6px}
+.ring span{font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--paper);border:1px solid currentColor}
+.tech .ring span{color:var(--tech)}.bio .ring span{color:var(--bio)}
+.rladder{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:4px}
+.r{border-radius:6px;padding:10px 8px;color:#fff;display:flex;flex-direction:column;gap:4px;min-width:0}
+.r .c{font-size:12px;font-weight:700;opacity:.85}
+.r b{font-size:15px}
+.r span{font-size:12.5px;line-height:1.3}
+.rlabels{display:flex;justify-content:space-between;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.score{overflow-x:auto}
+.score table{border-collapse:collapse;width:100%;min-width:680px;font-size:14.5px}
+.score th{text-align:left;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:2px solid var(--ink);padding:8px}
+.score td{border-bottom:1px solid var(--rule);padding:8px;vertical-align:top}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;color:#fff;white-space:nowrap}
+.p-ok{background:var(--ok)}.p-mid{background:var(--mid)}.p-bad{background:var(--bad)}
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{border:1px solid var(--rule);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.card h3{margin:0;font-size:18px}.card p{margin:0;font-size:14.5px}
+.road{display:flex;flex-direction:column;gap:0;border-left:3px solid var(--ink);margin-left:6px}
+.ev{display:grid;grid-template-columns:9em minmax(0,1fr);gap:14px;padding:10px 0 10px 16px;position:relative;border-bottom:1px solid var(--rule)}
+.ev::before{content:"";position:absolute;left:-8px;top:15px;width:13px;height:13px;border-radius:50%;background:var(--paper);border:3px solid var(--ink)}
+.ev.now::before{background:var(--red);border-color:var(--red)}
+.ev .d{font-weight:700;font-variant-numeric:tabular-nums}
+.ev p{margin:0;font-size:15px}
+.ev small{color:var(--muted);font-size:13px}
+.lens{border-left:4px solid var(--red);background:var(--tint);padding:14px 16px;border-radius:0 8px 8px 0;display:flex;flex-direction:column;gap:10px}
+.lens p{margin:0;max-width:78ch}
+.lede a{color:var(--ink)}
+.do{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0;padding:0;list-style:none;counter-reset:d}
+.do li{counter-increment:d;display:grid;grid-template-columns:2em minmax(0,1fr);gap:8px;font-size:15px;background:var(--tint);border-radius:6px;padding:10px 12px}
+.do li::before{content:counter(d);font-family:var(--display);font-weight:700;font-size:20px;color:var(--red)}
+@media (max-width:1000px){.roots{grid-template-columns:repeat(4,minmax(0,1fr))}.root:nth-child(4){border-right:none}.rladder{grid-template-columns:repeat(5,minmax(0,1fr))}.why{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:700px){.roots,.loops,.why,.do{grid-template-columns:minmax(0,1fr)}.root{border-right:none;border-bottom:1px dashed var(--rule)}.rladder{grid-template-columns:repeat(2,minmax(0,1fr))}.ev{grid-template-columns:minmax(0,1fr);gap:2px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+    <h1>Circular Economy Reality Check</h1>
+    <p class="lede">The theory, how far it works in practice today, and what's coming. Written for Northern Ireland businesses and public bodies. The companion page <a href="e-waste.html">E-waste Unpacked</a> covers electricals in detail.</p>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><span class="v">6.9%</span><span class="l">of the materials the world uses come back from recycling</span><span class="s">Circularity Gap Report 2025, down from about 9% in 2018</span></div>
+    <div class="stat"><span class="v">100bn t+</span><span class="l">of materials extracted every year, more than triple 50 years ago</span><span class="s">Circularity Gap Report 2025</span></div>
+    <div class="stat"><span class="v">Halve</span><span class="l">NI's material footprint by 2050, the target in the draft NI strategy</span><span class="s">Consulted on in 2023; final strategy not yet published</span></div>
+    <div class="stat"><span class="v">11 Nov</span><span class="l">2026: expected date for the EU Circular Economy Act proposal</span><span class="s">Delayed from Q3 2026</span></div>
+  </div>
+
+  <section class="sec" aria-labelledby="h-theory">
+    <h2 id="h-theory">The theory</h2>
+    <p>A linear economy takes, makes, uses and throws away. A circular economy keeps products and materials in use at their highest value for as long as possible, and designs waste out from the start. The ideas are older than the label.</p>
+    <div class="roots">
+      <div class="root"><span class="y">1966</span><b>Spaceship Earth</b><span>Kenneth Boulding: a closed system with finite stocks, as opposed to a "cowboy economy"</span></div>
+      <div class="root"><span class="y">1970s</span><b>Industrial symbiosis</b><span>Kalundborg, Denmark: one firm's waste heat, steam and gypsum become another's input</span></div>
+      <div class="root"><span class="y">1976</span><b>The loop economy</b><span>Walter Stahel and Geneviève Reday, for the European Commission: extend product life to save energy and create jobs</span></div>
+      <div class="root"><span class="y">1990</span><b>"Circular economy"</b><span>David Pearce and Kerry Turner name it in environmental economics</span></div>
+      <div class="root"><span class="y">2002</span><b>Cradle to Cradle</b><span>McDonough and Braungart: separate technical and biological nutrients</span></div>
+      <div class="root"><span class="y">2010s</span><b>The butterfly diagram</b><span>The Ellen MacArthur Foundation brings it to business and policy</span></div>
+      <div class="root"><span class="y">2017</span><b>The 9R ladder</b><span>Potting et al.: a ranking from refuse down to recover</span></div>
+    </div>
+    <div class="loops">
+      <div class="loop tech"><h3>Technical loop</h3><p>Metals, plastics, electronics and machines. They can't safely go back to nature, so they're kept in circulation. The tighter the loop, the more value is kept.</p><div class="ring"><span>Share</span><span>Maintain</span><span>Reuse</span><span>Refurbish</span><span>Remanufacture</span><span>Recycle</span></div></div>
+      <div class="loop bio"><h3>Biological loop</h3><p>Food, wood, fibres, manure. They can return safely to the soil once their value has been cascaded through uses. This is NI's big circular loop.</p><div class="ring"><span>Cascade</span><span>Extract biochemicals</span><span>Anaerobic digestion</span><span>Compost</span><span>Return nutrients</span></div></div>
+    </div>
+    <div class="rlabels"><span>Most circular</span><span>Least circular</span></div>
+    <div class="rladder">
+      <div class="r" style="background:#14532D"><span class="c">R0</span><b>Refuse</b><span>Don't need it</span></div>
+      <div class="r" style="background:#1F6B45"><span class="c">R1</span><b>Rethink</b><span>Share or offer it as a service</span></div>
+      <div class="r" style="background:#2E7D57"><span class="c">R2</span><b>Reduce</b><span>Use fewer materials</span></div>
+      <div class="r" style="background:#3F7F8F"><span class="c">R3</span><b>Reuse</b><span>A second user</span></div>
+      <div class="r" style="background:#2D6CA3"><span class="c">R4</span><b>Repair</b><span>Fix to keep using</span></div>
+      <div class="r" style="background:#3D5F9E"><span class="c">R5</span><b>Refurbish</b><span>Restore and update</span></div>
+      <div class="r" style="background:#56579A"><span class="c">R6</span><b>Remanufacture</b><span>Rebuild from parts</span></div>
+      <div class="r" style="background:#6B5A8A"><span class="c">R7</span><b>Repurpose</b><span>A new use for the item</span></div>
+      <div class="r" style="background:#8A5A6E"><span class="c">R8</span><b>Recycle</b><span>Back to materials</span></div>
+      <div class="r" style="background:#8A4A4A"><span class="c">R9</span><b>Recover</b><span>Burn for energy</span></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-now">
+    <h2 id="h-now">How practical is it today?</h2>
+    <p>The global circularity rate is falling while recycling grows, because extraction is growing faster. Recycling isn't the same as circularity: a system can recycle more every year and still become less circular. Here's how it works out in practice, material by material.</p>
+    <div class="score">
+      <table>
+        <thead><tr><th>Loop</th><th>Today</th><th>Why</th><th>NI angle</th></tr></thead>
+        <tbody>
+          <tr><td><b>Steel and aluminium scrap</b></td><td><span class="pill p-ok">Works</span></td><td>Mature markets; recycled metal is cheaper and much lower-carbon than primary</td><td>Engineering offcuts and swarf already have value; ask for a rebate</td></tr>
+          <tr><td><b>Remanufacturing industrial kit</b></td><td><span class="pill p-ok">Works</span></td><td>High-value parts such as motors, pumps, gearboxes and controls are worth rebuilding</td><td>A strength of NI's engineering base</td></tr>
+          <tr><td><b>Refurbished IT and phones</b></td><td><span class="pill p-ok">Works</span></td><td>Strong resale market, provided data wiping is certified</td><td>A quick win for councils and offices</td></tr>
+          <tr><td><b>Paper, card and pallets</b></td><td><span class="pill p-ok">Works</span></td><td>Established collection; pallets reused many times</td><td>Packaging EPR fees reward lighter, recyclable packaging</td></tr>
+          <tr><td><b>Anaerobic digestion and nutrients</b></td><td><span class="pill p-mid">Partly</span></td><td>Turns slurry and food waste into energy and digestate, but nutrients pile up where there's too much manure</td><td>Lough Neagh's phosphorus problem is a loop that hasn't closed</td></tr>
+          <tr><td><b>Plastics</b></td><td><span class="pill p-mid">Partly</span></td><td>PET and HDPE bottles recycle well; films, mixed plastics and additives often don't. Virgin plastic is cheap</td><td>Deposit return from October 2027 should raise the quality of PET and cans</td></tr>
+          <tr><td><b>Construction materials</b></td><td><span class="pill p-mid">Partly</span></td><td>Mostly downcycled into aggregate; reusing whole components is rare and needs pre-demolition audits</td><td>Contaminated land and soil reuse depend on planning, because Part III isn't in force</td></tr>
+          <tr><td><b>Electronics and critical metals</b></td><td><span class="pill p-bad">Hard</span></td><td>Tiny amounts mixed together; rare earths barely recovered; POPs plastics must be destroyed</td><td>No local smelting, so fractions are exported</td></tr>
+          <tr><td><b>Composites and textiles</b></td><td><span class="pill p-bad">Hard</span></td><td>Blends and laminates can't be separated at scale; fibre-to-fibre recycling is still early</td><td>UK textiles EPR delayed and uncertain</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="why">
+      <div class="card"><h3>Virgin materials are underpriced</h3><p>The environmental damage from extraction isn't in the price, so recycled material competes with the cheaper option on cost. Carbon pricing, CBAM and EPR start to close that gap.</p></div>
+      <div class="card"><h3>Quality falls each loop</h3><p>Most recycling is downcycling: mixed plastics become benches, glass becomes aggregate. Contamination and additives limit how often a material can go round.</p></div>
+      <div class="card"><h3>Scale and logistics</h3><p>In a small market such as NI, collecting enough of one material to justify reprocessing is hard. Material crosses to GB, the Republic or further afield, under shipment rules and with transport emissions.</p></div>
+      <div class="card"><h3>Design is decided upstream</h3><p>Most of a product's circularity is fixed at the design stage. A recycler can't undo glue, laminates or a sealed battery.</p></div>
+      <div class="card"><h3>Rebound</h3><p>Cheaper second-hand goods or more efficient use can raise total consumption, and cancel out the savings.</p></div>
+      <div class="card"><h3>Keeping old kit isn't always better</h3><p>Extending the life of an inefficient boiler, compressor or fridge can cost more carbon in energy use than replacing it. Life extension has to be compared with the energy cost of keeping it running.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-ahead">
+    <h2 id="h-ahead">The road ahead</h2>
+    <div class="road">
+      <div class="ev"><span class="d">19 Jul 2026</span><p>EU ban on large companies destroying unsold clothing and footwear (Ecodesign for Sustainable Products Regulation). <small>The first ESPR rules on product design, including digital product passports, follow product by product.</small></p></div>
+      <div class="ev"><span class="d">31 Jul 2026</span><p>EU member states apply the Right to Repair Directive: manufacturers must offer repair for certain products, and consumers get repair information. <small>GB has had more limited right-to-repair rules for some appliances since 2021.</small></p></div>
+      <div class="ev now"><span class="d">16 Oct 2026</span><p>Today. England's Circular Economy Growth Plan is still delayed; it had not been published as of June 2026. NI's final circular economy strategy is still to come. <small>Scotland has its Circular Economy (Scotland) Act 2024.</small></p></div>
+      <div class="ev"><span class="d">11 Nov 2026</span><p>Expected EU Circular Economy Act proposal: a single market for secondary materials, harmonised EPR, end-of-waste rules, and a WEEE Directive revision covering critical raw materials. <small>Expected date; the proposal has already slipped once.</small></p></div>
+      <div class="ev"><span class="d">Feb 2027</span><p>EU battery passport for industrial and EV batteries, and removable, replaceable portable batteries. Both apply in NI under the Windsor Framework.</p></div>
+      <div class="ev"><span class="d">Oct 2027</span><p>UK deposit return scheme for PET bottles and steel and aluminium cans, including NI.</p></div>
+      <div class="ev"><span class="d">2030</span><p>EU Critical Raw Materials Act benchmarks: 25% of strategic raw materials from recycling, and no more than 65% from any single non-EU country.</p></div>
+      <div class="ev"><span class="d">2035</span><p>UK Critical Minerals Strategy aims for 20% of demand met from recycling, from wind turbines, EV batteries and electronics.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-lens">
+    <h2 id="h-lens">The critical lens</h2>
+    <div class="lens">
+      <p><b>Circular isn't automatically sustainable.</b> Recycling batteries and electronics needs energy and chemicals and has its own pollution risks. Exporting "secondary materials" to places with weaker controls moves the harm rather than removing it. That's the same environmental-versus-social trade-off seen in mining.</p>
+      <p><b>Watch the claims.</b> "100% recyclable" says nothing about whether anything is actually recycled. Under the UK's green claims rules, enforced by the CMA, vague circularity claims are a real risk.</p>
+      <p><b>The bigger wins are higher up the ladder.</b> Refusing, reducing and reusing save more than recycling, but they challenge sales volumes. That's why business models such as leasing, take-back and remanufacturing matter more than the recycling rate.</p>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-do">
+    <h2 id="h-do">Practical steps for NI businesses and public bodies</h2>
+    <ol class="do">
+      <li>Map your top five waste streams by tonnes and cost, and look for any you could sell or reuse rather than pay to get rid of.</li>
+      <li>Buy for durability and repair: ask suppliers about spare parts, repair manuals, take-back and remanufactured options.</li>
+      <li>In public tenders, use the 10% social value weighting (PPN 01/21) to reward reuse, repair and local reprocessing.</li>
+      <li>Redesign packaging to cut EPR fees: less material, mono-materials, recyclable formats.</li>
+      <li>Look for symbiosis: your waste heat, offcuts or by-products may be a neighbour's raw material.</li>
+      <li>Measure it: material flows and Scope 3 categories 1, 5 and 12 show where circular changes cut carbon.</li>
+    </ol>
+  </section>
+
+  <div class="foot">
+    <div><b>Sources.</b> Circle Economy, Circularity Gap Report 2025, and Circularity Gap Report 2026 (with Deloitte). Department for the Economy (NI), draft Circular Economy Strategy and consultation response (2023) and evidence-base updates to 2026. Let's Recycle on England's Circular Economy Growth Plan (June 2026). EUWID on the Circular Economy Act timetable (October 2026). Landbell Group 2026 policy outlook. UK Critical Minerals Strategy (DBT, November 2025). EU Critical Raw Materials Act (EU) 2024/1252; ESPR (EU) 2024/1781; Right to Repair Directive (EU) 2024/1799; Batteries Regulation (EU) 2023/1542. Potting, Hekkert, Worrell and Hanemaaijer (2017), <i>Circular Economy: Measuring Innovation in the Product Chain</i>.</div>
+    <div>Position at 16 October 2026. For information, not legal advice. Robert J. Park · linkedin.com/in/robertparkuk · WhatsApp @robertjpark</div>
+  </div>
+</div>
+</body>
+</html>

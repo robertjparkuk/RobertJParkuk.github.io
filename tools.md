@@ -37,6 +37,21 @@ Twenty-four terms from greenhouse gas reporting, carbon pricing and Northern Ire
 
 [Play the Carbon Crossword →]({{ '/puzzles/carbon-crossword.html' | relative_url }})
 
+
+## Guides
+
+### E-waste Unpacked
+
+What's inside discarded electricals: precious, critical and rare metals, the poisons that must come out first, how a WEEE treatment line is audited, and why reuse and design beat shredding.
+
+[Read E-waste Unpacked →]({{ '/guides/e-waste.html' | relative_url }})
+
+### Circular Economy Reality Check
+
+The theory behind the circular economy, an honest scorecard of what works today, and the dated road ahead for NI, the UK and the EU.
+
+[Read the Circular Economy Reality Check →]({{ '/guides/circular-economy.html' | relative_url }})
+
 ---
 
 These tools are for general information and are not legal advice. If you'd like to talk through what any of this means for your business or organisation, [get in touch]({{ '/contact/' | relative_url }}).

@@ -25,6 +25,17 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.4.0 — 16 October 2026: e-waste and circular economy guides
+
+**Added**
+- `guides/e-waste.html`: E-waste Unpacked. Covers precious, critical/rare and hazardous materials; the six-stage treatment line with audit points (weighbridge, batch de-pollution tests to EN 50625, mass balance, downstream records, evidence notes); why shredders must know their input (permits, contamination, POPs plastics, evidence); the economics of reuse versus recycling and of design choices; the rules table (WEEE 2013 and 2025 amendments, POPs, RoHS, EU Battery Regulation in NI, UK Critical Minerals Strategy, EU Circular Economy Act); actions for NI businesses; and the environment-versus-social lens on exported e-waste.
+- `guides/circular-economy.html`: Circular Economy Reality Check. Covers the roots of the theory (Boulding to the 9R ladder), technical and biological loops, an NI-focused scorecard by material, the barriers, a dated road ahead to 2035, the critical lens and practical steps.
+
+**Changed**
+- `tools.md`: new Guides section linking both.
+
+**Watch:** the EU Circular Economy Act proposal (expected 11 November 2026), England's Circular Economy Growth Plan, and NI's final Circular Economy Strategy. Update both guides when these land.
+
 ### v0.3.0 — 16 October 2026: Carbon Jigsaw and Scopes Map
 
 **Added**
