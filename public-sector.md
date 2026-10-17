@@ -9,6 +9,8 @@ Public sector and membership organisations face the same carbon and environmenta
 
 ## For district councils
 
+<figure class="page-photo"><img src="{{ '/assets/photos/bins-collection.jpg' | relative_url }}" alt="A refuse collection crew emptying wheelie bins on a street" loading="lazy"><figcaption>Waste, land and public space: the everyday business of local government.</figcaption></figure>
+
 Northern Ireland's eleven councils sit at the sharp end of environmental policy. I can help with:
 
 - **Carbon inventories and baselines** for council operations, estates and fleets, built on recognised methods and easy to update year on year.
@@ -27,6 +29,8 @@ Trade associations are often the first place members turn when new rules appear.
 - **Policy positioning and stakeholder engagement** with officials, MLAs, councillors and Westminster.
 
 ## For other public bodies
+
+<figure class="page-photo"><img src="{{ '/assets/photos/ni-railways-train-platform.jpg' | relative_url }}" alt="A Northern Ireland Railways train at a station platform" loading="lazy"><figcaption>Public bodies now report on climate, from transport to health.</figcaption></figure>
 
 Arm's-length bodies, agencies and publicly funded organisations can draw on the same mix: carbon measurement, environmental risk, governance reporting and stakeholder communication.
 

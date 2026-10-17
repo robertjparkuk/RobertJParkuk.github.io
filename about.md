@@ -26,6 +26,8 @@ Much of that experience has been in and around the public sector: a national reg
 
 ## My approach
 
+<figure class="page-photo"><img src="{{ '/assets/photos/giants-causeway.jpg' | relative_url }}" alt="Sunrise over the basalt columns of the Giant's Causeway" loading="lazy"><figcaption>The north Antrim coast, not far from home.</figcaption></figure>
+
 I'm sceptical of ESG as it's often sold. The value isn't in a glossy report — it's in the process. Building a carbon inventory forces conversations across your value chain that rarely happen otherwise, and produces management information your board can use to make better decisions.
 
 [Get in touch]({{ '/contact/' | relative_url }}) if that sounds like the kind of help you need.

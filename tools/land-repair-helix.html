@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="The Land Repair Helix: pairs land problems with low-cost, nature-based fixes for soil, water, contamination, PFAS, spills and rewilding in Northern Ireland. By Robert J. Park.">
+<meta name="description" content="The Land Repair Helix: pairs land problems with low-cost, nature-based fixes for soil, water, contamination, PFAS, spills and rewilding in Northern Ireland, with printable site plans. By Robert J. Park.">
 <link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
 <title>Land Repair Helix</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
 <style>
 :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 body{margin:0}
@@ -82,6 +82,8 @@ h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);line-height:1.1;m
 .plan li span{color:var(--muted)}
 button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
 @media (max-width:900px){.app{grid-template-columns:minmax(0,1fr)}}
+.printout{display:none}
+@media print{body{background:#fff;color:#000;padding:0}.sites,.app,.lede,.ctrl{display:none!important}.printout{display:block}.printout h2{font-family:var(--display);font-size:22pt;margin:0 0 4pt}.printout .pp{break-inside:avoid;border-top:1pt solid #999;padding:6pt 0}.printout .pp h3{font-size:12pt;margin:0 0 3pt}.printout .pp p,.printout .pp li{font-size:10pt;margin:0}.printout ul{margin:2pt 0;padding-left:14pt}.printout .tick{display:inline-block;width:9pt;height:9pt;border:1pt solid #000;margin-right:5pt;vertical-align:-1pt}.printout .notes{border:1pt solid #999;height:60pt;margin-top:4pt}.foot{font-size:8pt}}
 @media (max-width:520px){.pair{grid-template-columns:minmax(0,1fr)}.pair .x{display:none}}
 </style>
 </head>
@@ -89,7 +91,7 @@ button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
 <div class="wrap">
   <header style="display:flex;flex-direction:column;gap:10px">
     <a class="brand" href="/" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
-    <h1>The Land Repair Helix</h1>
+    <div style="display:flex;gap:16px;align-items:center"><svg width="60" height="60" style="flex:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Land Repair Helix logo"><defs><mask id="m-land-repair-helix" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120"><rect width="120" height="120" fill="#000"/><polyline points="60.0,8.0 66.5,10.6 72.9,13.2 78.8,15.8 84.2,18.4 88.9,21.0 92.7,23.6 95.5,26.2 97.3,28.8 98.0,31.4 97.5,34.0 96.0,36.6 93.3,39.2 89.7,41.8 85.1,44.4 79.9,47.0 74.0,49.6 67.7,52.2 61.2,54.8 54.6,57.4 48.3,60.0 42.2,62.6 36.7,65.2 31.9,67.8 27.9,70.4 24.9,73.0 22.9,75.6 22.0,78.2 22.3,80.8 23.7,83.4 26.1,86.0 29.6,88.6 34.0,91.2 39.1,93.8 44.9,96.4 51.1,99.0 57.6,101.6 64.2,104.2 70.6,106.8 76.7,109.4 82.3,112.0" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><polyline points="60.0,8.0 53.5,10.6 47.1,13.2 41.2,15.8 35.8,18.4 31.1,21.0 27.3,23.6 24.5,26.2 22.7,28.8 22.0,31.4 22.5,34.0 24.0,36.6 26.7,39.2 30.3,41.8 34.9,44.4 40.1,47.0 46.0,49.6 52.3,52.2 58.8,54.8 65.4,57.4 71.7,60.0 77.8,62.6 83.3,65.2 88.1,67.8 92.1,70.4 95.1,73.0 97.1,75.6 98.0,78.2 97.7,80.8 96.3,83.4 93.9,86.0 90.4,88.6 86.0,91.2 80.9,93.8 75.1,96.4 68.9,99.0 62.4,101.6 55.8,104.2 49.4,106.8 43.3,109.4 37.7,112.0" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M88.9 21.0 H31.1 M93.3 39.2 H26.7 M54.6 57.4 H65.4 M22.9 75.6 H97.1 M39.1 93.8 H80.9"/></mask></defs><g mask="url(#m-land-repair-helix)"><rect width="60" height="120" fill="#1B1817"/><rect x="60" width="60" height="120" fill="#B3121B"/></g></svg><h1 style="margin:0">The Land Repair Helix</h1></div>
     <p class="lede">A design tool for healthier land. One strand holds the problems, the other holds the fixes, and each base pair links a problem to the nature-based or low-cost repair that answers it. Pick your type of site to see the pairs that matter and build a plan.</p>
   </header>
 
@@ -97,15 +99,17 @@ button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
 
   <section class="app">
     <div class="helixcol">
-      <svg id="helix" viewBox="0 0 520 980" role="group" aria-label="Double helix of land problems and fixes"></svg>
+      <svg id="helix" viewBox="0 0 520 1080" role="group" aria-label="Double helix of land problems and fixes"></svg>
       <div class="legend" id="legend"></div>
-      <div class="ctrl"><button class="btn" type="button" id="spin" aria-pressed="false">Turn the helix</button></div>
+      <div class="ctrl"><button class="btn" type="button" id="spin" aria-pressed="false">Turn the helix</button><button class="btn" type="button" id="printPlan" hidden>Print site plan</button></div>
     </div>
     <div style="display:flex;flex-direction:column;gap:18px;min-width:0">
       <div class="detail" id="detail" aria-live="polite"></div>
       <div class="plan" id="plan"></div>
     </div>
   </section>
+
+  <section id="printout" class="printout" aria-hidden="true"></section>
 
   <div class="foot">
     <div><b>Important.</b> For contaminated land, forever chemicals (PFAS) or any spill reaching a drain, watercourse or groundwater, get specialist advice and involve the regulator. In NI, report pollution to the NIEA Incident Hotline on <b>0800 80 70 60</b> (24 hours). Contaminated-land remediation normally goes through planning, using the Land Contamination: Risk Management (LCRM) framework.</div>
@@ -136,12 +140,17 @@ const P=[
  ["wild","Few pollinators","Flowers from spring to autumn","Bees and hoverflies need food from March to October, and nesting spots.",[["£","Leave dandelions and clover in amenity grass"],["£","Plant spring-flowering willow, hawthorn and blackthorn, and late-flowering ivy"],["£","Leave bare south-facing banks for mining bees"],["£","Cut pesticide use"]],"The All-Ireland Pollinator Plan has free guides for farms, councils, businesses and schools.","",["farm","verge","park","factory","brown"]],
  ["air","Ammonia from slurry and livestock","Cover, inject, and time it","Ammonia harms nearby woodlands, bogs and rivers, and forms fine particles that damage health. NI's ammonia emissions are mostly from agriculture.",[["£","Spread in cool, damp, still weather, never in hot sun"],["££","Use low-emission spreading equipment such as trailing shoe or dribble bar"],["££","Cover slurry stores"],["££","Plant tree shelterbelts around sheds to catch ammonia"]],"DAERA's ammonia measures and the Nutrients Action Programme set rules on spreading equipment and timing.","",["farm"]],
  ["air","Drained or damaged peat","Rewet and protect","Drained peat releases carbon dioxide year after year. Intact wet bog stores carbon and water.",[["£","Never use peat-based compost or peat as a sorbent"],["££","Block drains on peat to raise the water table"],["££","Avoid planting trees on deep peat"]],"NI's peatland strategy aims to protect and restore bogs.","",["farm","park"]],
- ["air","Trees in the wrong place","Right tree, right place","Trees planted on species-rich grassland, peat or nesting habitat can do more harm than good.",[["£","Plant native broadleaves along watercourses for shade; cooler water helps reduce algal blooms"],["£","Plant hedgerow trees and shelterbelts rather than blocks on good habitat"],["££","Let woodland regenerate naturally where there are seed sources"]],"Check for priority habitat and protected sites before planting.","",["farm","park","river","brown"]]
+ ["air","Trees in the wrong place","Right tree, right place","Trees planted on species-rich grassland, peat or nesting habitat can do more harm than good.",[["£","Plant native broadleaves along watercourses for shade; cooler water helps reduce algal blooms"],["£","Plant hedgerow trees and shelterbelts rather than blocks on good habitat"],["££","Let woodland regenerate naturally where there are seed sources"]],"Check for priority habitat and protected sites before planting.","",["farm","park","river","brown"]],
+ ["wild","Invasive plants spreading","Catch them early, treat properly","Japanese knotweed, Himalayan balsam and rhododendron crowd out native plants, damage structures and spread along rivers and roads.",[["£","Learn to recognise them and map where they are"],["£","Pull Himalayan balsam before it sets seed (June to July), and repeat each year"],["££","Treat knotweed with a specialist herbicide programme over several seasons"],["£££","Excavate knotweed where development needs it, under a management plan"]],"It's an offence in NI to plant certain invasive species, or cause them to grow, in the wild. Knotweed waste is controlled waste and must go to an authorised site.","Never strim or flail knotweed: tiny fragments regrow.",["verge","brown","river","park","factory"]],
+ ["wild","Litter and fly-tipping","Design it out, report it fast","Litter and dumped waste blight places, harm wildlife and signal neglect, which draws more dumping.",[["£","Report fly-tipping to the council quickly; most NI councils take reports online"],["£","Organise or support community clean-ups, such as Live Here Love Here"],["££","Fix lighting, fencing and sightlines at dumping hotspots"],["££","Use a registered waste carrier and keep transfer notes: your duty of care doesn't end at the gate"]],"Councils enforce litter and fly-tipping law, and NIEA deals with larger illegal waste sites.","Don't move dumped waste that may be hazardous, such as asbestos or drums. Report it instead.",["verge","park","brown","factory","river"]],
+ ["water","Misconnected drains","Right pipe, right place","Washing machines, sinks or yard drains plumbed into surface water drains send dirty water straight to rivers.",[["£","Check where every drain on your site goes: surface water or foul sewer"],["£","Dye-test suspect connections"],["££","Reconnect misconnected appliances to the foul sewer"],["££","Fit oil interceptors on yard drains where vehicles park or refuel"]],"Discharging trade effluent to the foul sewer needs NI Water consent. Polluting a waterway is an offence.","",["factory","park","farm","brown"]],
+ ["wild","Light pollution","Light only what you need","Unnecessary night lighting disrupts bats, insects and birds, and wastes energy.",[["£","Switch off or dim lights when they aren't needed; use timers and motion sensors"],["£","Point lights down and shield them; avoid lighting hedges, trees and water"],["££","Use warm-white LEDs (3000 K or lower)"]],"New lighting can need planning permission, and excessive artificial light can be a statutory nuisance.","Keep safety lighting where people need it.",["factory","park","verge","brown"]],
+ ["soil","Low soil carbon","Build carbon back in","Soils low in carbon hold less water and fewer nutrients, and lose their structure.",[["£","Keep the soil covered and growing for as much of the year as possible"],["££","Add compost and well-made digestate"],["££","Trial biochar from clean wood waste, mixed with compost"],["££","Turn some arable ground into grassland or herbal leys"]],"Spreading biochar on land may need a waste exemption or permit, depending on what it's made from.","Biochar quality varies. Buy certified material and don't expect results in one season.",["farm","park","brown"]]
 ];
 const NS="http://www.w3.org/2000/svg",svg=document.getElementById("helix");
 let phase=0,site=null,sel=0,spin=false,raf=0;
 const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
-const N=P.length,top=40,step=50,cx=260,amp=100;
+const N=P.length,top=40,step=46,cx=260,amp=100;
 function el(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e;}
 const strandA=el("path",{class:"strand",stroke:"var(--prob)"}),strandB=el("path",{class:"strand",stroke:"var(--fix)"});
 const rungs=P.map((p,i)=>{const g=el("g",{class:"rung",tabindex:"0",role:"button","aria-label":`${p[1]}: ${p[2]}`});
@@ -175,14 +184,19 @@ function detail(){const p=P[sel];
    <p>${p[3]}</p><h3>Fixes, cheapest first</h3><ul class="fixes">${p[4].map(([c,t])=>`<li><span class="cost">${c}</span><span>${t}</span></li>`).join("")}</ul>
    ${p[5]?`<div class="ni"><b>NI rules and help:</b> ${p[5]}</div>`:""}${p[6]?`<div class="care"><b>Take care:</b> ${p[6]}</div>`:""}`;}
 function plan(){const el=document.getElementById("plan");
-  if(!site){el.innerHTML=`<h2 style="font-size:24px">Build a site plan</h2><p style="margin:0;color:var(--muted)">Choose your type of site above. The helix will highlight the pairs that apply, and a starter plan will appear here.</p>`;return;}
+  if(!site){el.innerHTML=`<h2 style="font-size:24px">Build a site plan</h2><p style="margin:0;color:var(--muted)">Choose your type of site above. The helix will highlight the pairs that apply, and a starter plan will appear here.</p><p style="margin:0">Printable site plans (PDF): <a href="site-plans/site-plan-farm.pdf">farm</a> · <a href="site-plans/site-plan-verge.pdf">roadside verge</a> · <a href="site-plans/site-plan-brown.pdf">brownfield</a> · <a href="site-plans/site-plan-factory.pdf">factory or yard</a> · <a href="site-plans/site-plan-park.pdf">council park</a> · <a href="site-plans/site-plan-river.pdf">riverside</a></p>`;return;}
   const ps=P.filter(p=>p[7].includes(site));
   const lines=ps.map(p=>`${p[2]}: ${p[4][0][1]}`);
   el.innerHTML=`<h2 style="font-size:24px">Starter plan: ${SITES[site]}</h2><p style="margin:0">${ps.length} pairs apply. Start with the cheapest fix for each:</p>
    <ol>${ps.map(p=>`<li><b>${p[2]}</b> <span>(${p[1].toLowerCase()})</span>: ${p[4][0][1]}</li>`).join("")}</ol>
    <button class="btn" type="button" id="copyPlan" style="align-self:flex-start">Copy plan</button>`;
   document.getElementById("copyPlan").onclick=async e=>{const t=`Land Repair Helix: starter plan for ${SITES[site]}\n`+lines.map((l,i)=>`${i+1}. ${l}`).join("\n");try{await navigator.clipboard.writeText(t);e.target.textContent="Copied";}catch(_){e.target.textContent="Copy not available here";}setTimeout(()=>e.target.textContent="Copy plan",2000);};}
-detail();plan();draw();
+function printout(){const s=site,ps=P.filter(p=>!s||p[7].includes(s));
+  document.getElementById("printout").innerHTML=`<h2>Site plan: ${s?SITES[s]:"All land"}</h2><p style="margin:0 0 8pt">Site name: ____________________ &nbsp; Date: __________ &nbsp; Prepared by: __________________</p>`+ps.map(p=>`<div class="pp"><h3>${p[1]} → ${p[2]} <span style="font-weight:400;color:#555">(${G[p[0]]})</span></h3><p>${p[3]}</p><ul style="list-style:none;padding-left:0">${p[4].map(([c,f])=>`<li><span class="tick"></span>${c} ${f}</li>`).join("")}</ul>${p[5]?`<p><b>NI:</b> ${p[5]}</p>`:""}${p[6]?`<p><b>Take care:</b> ${p[6]}</p>`:""}<div class="notes"></div></div>`).join("");}
+const pb=document.getElementById("printPlan");try{if(window.self===window.top){pb.hidden=false;pb.onclick=()=>{printout();window.print();};}}catch(e){}
+window.addEventListener("beforeprint",printout);
+const qs=new URLSearchParams(location.search).get("site");if(qs&&SITES[qs]){site=qs;sitesEl.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x.dataset.s===qs));}
+detail();plan();draw();printout();
 })();
 </script>
 </body>

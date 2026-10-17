@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Scope Sort: sort 22 everyday business activities into Scope 1, 2, 3 or not counted, with the reason for each. By Robert J. Park.">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<title>Scope Sort</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+[hidden]{display:none!important}
+
+/* Layout: one activity card at a time above four sorting bins; the bins fill up as you go. */
+
+/* Layout: the GHG Protocol value chain drawn left to right (upstream → you → downstream), then the grey zones where scopes blur, then the gases that count. */
+:root{
+  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2;
+  --red:#B3121B; --s1:#B3121B; --s1-bg:#FBEDED; --s2:#B5650F; --s2-bg:#FCF1E3; --s3:#2D6CA3; --s3-bg:#E9F1F9; --out:#4F7F2A; --out-bg:#EEF5E6;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.brand b{color:var(--red)}
+h1{font-family:var(--display);font-size:clamp(34px,5vw,56px);line-height:1.03;margin:8px 0 0;text-wrap:balance}
+h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);line-height:1.1;margin:0;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:68ch;font-size:18px}
+.sec{display:flex;flex-direction:column;gap:16px;border-top:3px solid var(--ink);padding-top:18px}
+.sec>p{margin:0;max-width:72ch}
+
+:root{--s1:#B3121B;--s2:#B5650F;--s3:#2D6CA3;--nc:#5F5856;--ok:#1F6B45;--ok-bg:#E6F2EB;--no-bg:#FBEDED}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--s1:#F0787C;--s2:#E9A55A;--s3:#7DB3E3;--nc:#B3AAA6;--ok:#4CC38A;--ok-bg:#16301F;--no-bg:#3A1C1E}}
+:root[data-theme="dark"]{--s1:#F0787C;--s2:#E9A55A;--s3:#7DB3E3;--nc:#B3AAA6;--ok:#4CC38A;--ok-bg:#16301F;--no-bg:#3A1C1E}
+.head{display:flex;gap:16px;align-items:center}.head img{width:60px;height:60px}
+.card{max-width:720px;width:100%;margin:0 auto;border:2px solid var(--ink);border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:14px;background:var(--paper);min-height:220px}
+.count{font-size:13px;color:var(--muted);display:flex;justify-content:space-between}
+.item{font-family:var(--display);font-size:clamp(24px,3.4vw,32px);line-height:1.2;margin:0;text-wrap:balance}
+.bins{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;max-width:900px;width:100%;margin:0 auto}
+.bin{border:2px solid currentColor;background:var(--paper);border-radius:10px;padding:14px 10px;cursor:pointer;display:flex;flex-direction:column;gap:4px;align-items:center;text-align:center;font:inherit;color:inherit}
+.bin b{font-family:var(--display);font-size:22px}
+.bin small{font-size:13px;color:var(--muted)}
+.bin .n{font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.bin:disabled{cursor:default;opacity:.65}
+.bin:hover:not(:disabled){box-shadow:0 0 0 3px currentColor inset}
+.b1{color:var(--s1)}.b2{color:var(--s2)}.b3{color:var(--s3)}.b4{color:var(--nc)}
+.fb{border-radius:8px;padding:12px 14px;font-size:15px}
+.fb.ok{background:var(--ok-bg)}.fb.no{background:var(--no-bg)}
+.fb b{display:block;margin-bottom:2px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.btn{border:1px solid var(--rule);background:var(--tint);color:var(--ink);font:600 15px var(--body);padding:9px 16px;border-radius:8px;cursor:pointer}
+.btn.primary{background:var(--red);border-color:var(--red);color:#fff}
+.end{text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
+.big{font-family:var(--display);font-size:64px;font-weight:700;line-height:1}
+button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+@media (max-width:640px){.bins{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+    <div class="head"><svg width="60" height="60" style="flex:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Scope Sort logo"><defs><mask id="m-scope-sort" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120"><rect width="120" height="120" fill="#000"/><rect x="8" y="44" width="28" height="62" rx="4" fill="#fff"/><rect x="4" y="32" width="36" height="9" rx="3" fill="#fff"/><rect x="46" y="44" width="28" height="62" rx="4" fill="#fff"/><rect x="42" y="28" width="36" height="9" rx="3" fill="#fff"/><rect x="84" y="44" width="28" height="62" rx="4" fill="#fff"/><rect x="80" y="24" width="36" height="9" rx="3" fill="#fff"/></mask></defs><g mask="url(#m-scope-sort)"><rect width="60" height="120" fill="#1B1817"/><rect x="60" width="60" height="120" fill="#B3121B"/></g></svg><h1>Scope Sort</h1></div>
+    <p class="lede">Twenty-two everyday business activities. Sort each one into Scope 1, Scope 2, Scope 3, or "not counted". Some are easy. Some trip up professionals. Every answer comes with the reason.</p>
+  </header>
+  <section class="card" id="card" aria-live="polite"></section>
+  <div class="bins" id="bins">
+    <button class="bin b1" type="button" data-b="1"><b>Scope 1</b><small>Fuel and gases you release</small><span class="n" id="n1">0</span></button>
+    <button class="bin b2" type="button" data-b="2"><b>Scope 2</b><small>Energy you buy</small><span class="n" id="n2">0</span></button>
+    <button class="bin b3" type="button" data-b="3"><b>Scope 3</b><small>Your value chain</small><span class="n" id="n3">0</span></button>
+    <button class="bin b4" type="button" data-b="0"><b>Not counted</b><small>Outside the scope totals</small><span class="n" id="n0">0</span></button>
+  </div>
+  <div class="foot"><div>Based on the GHG Protocol Corporate and Scope 3 Standards and UK Government (DESNZ) conversion factor guidance. See the <a href="/tools/scopes-map.html">Scopes Map</a> for the full explanation. Nothing you do here is stored or sent anywhere.</div></div>
+</div>
+<script>
+(function(){
+const I=[
+ ["Gas burned in your factory boiler",1,"Fuel combustion in equipment you own or control is direct: Scope 1."],
+ ["Diesel in your company-owned vans",1,"Mobile combustion in vehicles you own or control: Scope 1."],
+ ["Electricity bought from the grid for your workshop",2,"Purchased electricity is the classic Scope 2. The emissions happen at the power station, but you consumed the energy."],
+ ["Refrigerant leaking from your own air conditioning",1,"Fugitive emissions from equipment you control are Scope 1. HFCs have high warming potentials."],
+ ["A sales manager driving their own car to a client",3,"Business travel in a vehicle you don't own ('grey fleet') is Scope 3, category 6."],
+ ["Staff driving from home to work each day",3,"Employee commuting is Scope 3, category 7."],
+ ["The steel bar you buy to machine into parts",3,"Emissions from making purchased goods are Scope 3, category 1. For most manufacturers this is the biggest category."],
+ ["The haulier you pay to deliver to your customers",3,"Transport you pay for, even outbound, is Scope 3, category 4. It only moves to category 9 if the customer pays."],
+ ["Your general waste rotting in landfill",3,"Waste treated at facilities you don't control is Scope 3, category 5."],
+ ["Mains water supplied by NI Water",3,"The water company's pumping and treatment emissions reach you as Scope 3, category 1."],
+ ["Heat bought from a district heating scheme",2,"Purchased heat, steam and cooling are Scope 2, as well as electricity."],
+ ["Electricity lost on the grid before it reaches you",3,"Transmission and distribution losses are Scope 3, category 3, not Scope 2."],
+ ["Flights to a trade show in Birmingham",3,"Business travel is Scope 3, category 6. Good practice uses the 'with radiative forcing' factors."],
+ ["CO₂ from burning wood pellets in your biomass boiler",0,"Biogenic CO₂ is reported 'outside of scopes', separately from the totals. The methane and nitrous oxide from burning them do count in Scope 1."],
+ ["Butane leaking from a gas cylinder",0,"Butane isn't one of the seven greenhouse gases the GHG Protocol counts, so a leak isn't reported. Burning it would be Scope 1."],
+ ["Gas burned by boilers your customers buy from you",3,"Use of sold products is Scope 3, category 11. Direct use-phase emissions must be included."],
+ ["Fuel for your own diesel forklift",1,"Mobile plant you own or control: Scope 1."],
+ ["Water vapour from your cooling tower",0,"Water vapour isn't counted in a greenhouse gas inventory."],
+ ["SF₆ leaking from your own high-voltage switchgear",1,"A fugitive emission of a very potent gas from equipment you control: Scope 1."],
+ ["A new CNC machine you bought this year",3,"Capital goods are Scope 3, category 2, counted in full in the year you buy them."],
+ ["Your customer collecting goods in their own lorry",3,"Transport after the sale that you don't pay for is Scope 3, category 9."],
+ ["Electricity in a leased unit you run, billed via the landlord",2,"Under operational control, a unit you run is inside your boundary. Who pays the bill doesn't decide the scope."]
+];
+let list=[],i=0,score=0,counts={0:0,1:0,2:0,3:0},done=false;
+const $=id=>document.getElementById(id),L={0:"Not counted",1:"Scope 1",2:"Scope 2",3:"Scope 3"};
+function sh(a){for(let k=a.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]];}return a;}
+function start(){list=sh(I.slice());i=0;score=0;counts={0:0,1:0,2:0,3:0};done=false;upd();show();}
+function upd(){[0,1,2,3].forEach(k=>$("n"+k).textContent=counts[k]);}
+function show(){
+  if(i>=list.length)return end();
+  done=false;document.querySelectorAll(".bin").forEach(b=>b.disabled=false);
+  $("card").innerHTML=`<div class="count"><span>Card ${i+1} of ${list.length}</span><span>Score ${score}</span></div><p class="item">${list[i][0]}</p><div id="fb"></div>`;
+}
+document.querySelectorAll(".bin").forEach(b=>b.onclick=()=>{
+  if(done||i>=list.length)return;done=true;
+  const pick=+b.dataset.b,[t,ans,why]=list[i],ok=pick===ans;if(ok)score++;counts[ans]++;upd();
+  document.querySelectorAll(".bin").forEach(x=>x.disabled=true);
+  $("fb").innerHTML=`<div class="fb ${ok?"ok":"no"}"><b>${ok?"Right: "+L[ans]+".":"It's "+L[ans]+"."}</b>${why}</div><div class="row" style="margin-top:10px"><span></span><button class="btn primary" type="button" id="next">${i===list.length-1?"See your score →":"Next card →"}</button></div>`;
+  $("next").onclick=()=>{i++;show();};$("next").focus();
+});
+function end(){
+  const p=Math.round(score/list.length*100);
+  const msg=p>=90?"Expert sorter. You could run the inventory.":p>=70?"Strong. The grey areas are where most people slip.":p>=50?"Good start. Read the reasons on the ones you missed.":"Scopes are counter-intuitive. That's why they trip people up.";
+  $("card").innerHTML=`<div class="end"><div class="big">${score}/${list.length}</div><p style="margin:0;font-size:18px">${msg}</p><button class="btn primary" type="button" id="again">Play again</button></div>`;
+  document.querySelectorAll(".bin").forEach(b=>b.disabled=true);$("again").onclick=start;
+}
+start();
+})();
+</script>
+</body>
+</html>

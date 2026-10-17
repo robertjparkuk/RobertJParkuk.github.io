@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Pillar Clash: ten real ESG dilemmas where environmental, social and governance goals pull against each other. By Robert J. Park.">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<title>Pillar Clash</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+[hidden]{display:none!important}
+
+/* Layout: one dilemma card with two choices; three pillar gauges (E, S, G) rise and fall with each decision; a debrief at the end. */
+
+/* Layout: the GHG Protocol value chain drawn left to right (upstream → you → downstream), then the grey zones where scopes blur, then the gases that count. */
+:root{
+  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2;
+  --red:#B3121B; --s1:#B3121B; --s1-bg:#FBEDED; --s2:#B5650F; --s2-bg:#FCF1E3; --s3:#2D6CA3; --s3-bg:#E9F1F9; --out:#4F7F2A; --out-bg:#EEF5E6;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
+  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.brand b{color:var(--red)}
+h1{font-family:var(--display);font-size:clamp(34px,5vw,56px);line-height:1.03;margin:8px 0 0;text-wrap:balance}
+h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);line-height:1.1;margin:0;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:68ch;font-size:18px}
+.sec{display:flex;flex-direction:column;gap:16px;border-top:3px solid var(--ink);padding-top:18px}
+.sec>p{margin:0;max-width:72ch}
+
+:root{--e:#2E7D57;--s:#2D6CA3;--g:#6B5A8A;--pos:#1F6B45;--neg:#B3121B}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--e:#4CC38A;--s:#7DB3E3;--g:#B9A6DE;--pos:#4CC38A;--neg:#F0787C}}
+:root[data-theme="dark"]{--e:#4CC38A;--s:#7DB3E3;--g:#B9A6DE;--pos:#4CC38A;--neg:#F0787C}
+.head{display:flex;gap:16px;align-items:center}
+.game{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:24px;align-items:start}
+.card{border:2px solid var(--ink);border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:14px;background:var(--paper)}
+.k{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.q{font-family:var(--display);font-size:clamp(22px,3vw,28px);line-height:1.2;margin:0;text-wrap:balance}
+.ctx{margin:0;color:var(--muted)}
+.opts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.opt{border:2px solid var(--rule);background:var(--tint);color:var(--ink);border-radius:10px;padding:14px;text-align:left;font:16px var(--body);cursor:pointer;display:flex;flex-direction:column;gap:6px}
+.opt b{font-size:17px}
+.opt:hover:not(:disabled){border-color:var(--ink)}
+.opt.chosen{border-color:var(--red)}
+.opt:disabled{cursor:default}
+.eff{display:flex;gap:6px;flex-wrap:wrap}
+.eff span{font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid currentColor}
+.up{color:var(--pos)}.down{color:var(--neg)}.flat{color:var(--muted)}
+.note{border-left:4px solid var(--red);background:var(--tint);padding:10px 14px;border-radius:0 8px 8px 0;font-size:15px}
+.gauges{display:flex;gap:16px;justify-content:center;position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px)}
+.gauge{display:flex;flex-direction:column;align-items:center;gap:6px}
+.col{width:46px;height:220px;border-radius:8px;background:var(--tint);border:1px solid var(--rule);position:relative;overflow:hidden}
+.fill{position:absolute;left:0;right:0;bottom:0;transition:height .4s}
+.gauge b{font-family:var(--display);font-size:22px}
+.gauge span{font-size:12px;color:var(--muted);text-align:center;max-width:7em}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.btn{border:1px solid var(--rule);background:var(--tint);color:var(--ink);font:600 15px var(--body);padding:9px 16px;border-radius:8px;cursor:pointer}
+.btn.primary{background:var(--red);border-color:var(--red);color:#fff}
+.deb{display:flex;flex-direction:column;gap:10px}
+.deb ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+@media (max-width:820px){.game{grid-template-columns:minmax(0,1fr)}.gauges{position:static}.col{height:120px}}
+@media (max-width:560px){.opts{grid-template-columns:minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){.fill{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:10px">
+    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+    <div class="head"><svg width="60" height="60" style="flex:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Pillar Clash logo"><defs><mask id="m-pillar-clash" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120"><rect width="120" height="120" fill="#000"/><path fill="#fff" d="M10 22 L60 6 L110 22 V30 H10 Z"/><rect x="18" y="38" width="16" height="58" rx="2" fill="#fff"/><rect x="52" y="38" width="16" height="58" rx="2" fill="#fff"/><rect x="86" y="38" width="16" height="58" rx="2" fill="#fff"/><rect x="8" y="100" width="104" height="12" rx="3" fill="#fff"/></mask></defs><g mask="url(#m-pillar-clash)"><rect width="60" height="120" fill="#1B1817"/><rect x="60" width="60" height="120" fill="#B3121B"/></g></svg><h1>Pillar Clash</h1></div>
+    <p class="lede">ESG is sold as three pillars that rise together. In practice, environmental, social and governance goals often pull against each other. Ten real dilemmas, two choices each, and no free wins. Watch the pillars move.</p>
+  </header>
+  <section class="game">
+    <div class="card" id="card" aria-live="polite"></div>
+    <div class="gauges" aria-label="Pillar scores">
+      <div class="gauge"><div class="col"><div class="fill" id="gE" style="background:var(--e)"></div></div><b style="color:var(--e)">E</b><span>Environment</span></div>
+      <div class="gauge"><div class="col"><div class="fill" id="gS" style="background:var(--s)"></div></div><b style="color:var(--s)">S</b><span>Social</span></div>
+      <div class="gauge"><div class="col"><div class="fill" id="gG" style="background:var(--g)"></div></div><b style="color:var(--g)">G</b><span>Governance</span></div>
+    </div>
+  </section>
+  <div class="foot"><div>A discussion game for boards, teams and classrooms. The scores are illustrative judgements, not measurements. They're there to start an argument. Built on the "competing pillars" lens from Robert J. Park's CISL then-and-now guide. Nothing is stored or sent.</div></div>
+</div>
+<script>
+(function(){
+// [title, context, [label, detail, E,S,G], [label, detail, E,S,G], note]
+const D=[
+ ["Battery cells for your new product","Two suppliers. One is 20% cheaper with no audit of its cobalt and lithium mines; one has independent audits and traceable supply.",["Buy the cheaper cells","Lower price means more customers switch to electric sooner.",1,-2,-1],["Pay for audited supply","Higher cost and slower uptake, but you can show where the minerals came from.",0,2,1],"Transition minerals are where E and S clash most. The EU Battery Regulation brings due diligence duties from August 2027."],
+ ["Where to put 5 MW of solar","Your best option is a field of good farmland next to the factory. Rooftops would give half the output and take longer.",["Build on the field","More clean power, sooner.",2,-1,0],["Roofs and car parks only","Less power, but the land keeps producing food and the neighbours stay on side.",1,1,0],"Land for energy versus land for food or nature is a growing planning fight across NI."],
+ ["The old boiler house","Closing your oldest, dirtiest plant cuts your emissions by 30%. It also ends 40 local jobs in a small town.",["Close it now","A big, fast carbon cut that looks great in the report.",2,-2,0],["Phase it out over three years","Slower cut, with retraining and redeployment.",1,1,1],"A 'just transition' isn't a slogan. NI's own Climate Change Act requires one, but the commission to oversee it hasn't been set up."],
+ ["Offset or invest?","The board wants to say 'carbon neutral' this year. You can buy cheap forestry credits or spend the money on efficiency that pays back in four years.",["Buy offsets and make the claim","An instant headline, but credit quality is widely questioned.",-1,0,-2],["Invest in efficiency, no claim yet","Real cuts, lower bills, no slogan.",2,0,1],"Under the UK's green claims rules, enforced by the CMA, a 'carbon neutral' claim based on offsets is a real risk. The EU has banned such product claims since September 2026."],
+ ["Heat pump on the boundary","A new air-source heat pump cuts gas use, but the best location is next to a row of houses.",["Install it there","Biggest carbon saving, but a noise complaint is likely.",2,-1,0],["Pay for an acoustic enclosure and a better site","Higher cost, slightly lower efficiency, good neighbours.",1,1,1],"Council environmental health officers judge statutory nuisance. A complaint can restrict when the kit runs."],
+ ["Your smallest local supplier","A new supplier code demands carbon data that a 10-person firm in Larne can't produce yet.",["Drop them for a bigger supplier","Clean data, tidy audit trail.",0,-2,1],["Help them start measuring","More work for you, and the local supply chain survives.",1,2,0],"Large customers pushing data demands onto SMEs is why the EU's VSME standard sets a ceiling on what can be asked."],
+ ["What to report","You can publish solid Scope 1 and 2 figures, or add a rough Scope 3 estimate that's 80% of your footprint but uncertain.",["Publish Scopes 1 and 2 only","Accurate, defensible, but misses most of the picture.",-1,0,1],["Include rough Scope 3, clearly caveated","More honest about the real footprint, with error bars.",1,0,1],"Transparency about uncertainty is better governance than false precision."],
+ ["The old fridges","Your cold store fridges are 15 years old. Replacing them saves energy and leaks, but scraps working kit with embodied carbon.",["Replace them all now","Lower energy use and modern refrigerants straight away.",1,0,0],["Repair now, replace at end of life","Uses the kit you've paid for, but leaks and higher energy use continue.",0,1,0],"Life extension isn't always greener. Compare the embodied carbon with the energy and refrigerant you'd save."],
+ ["Biofuel for the fleet","You can switch your vans to crop-based biodiesel tomorrow, or wait two years for electric vans.",["Switch to crop biodiesel now","Lower tailpipe CO₂ straight away.",1,-1,0],["Wait for electric, cut miles meanwhile","Slower start, no pressure on food crops.",1,0,0],"Crop-based fuels compete with food and can drive land-use change elsewhere. Waste-based fuels are a better bet if you need a bridge."],
+ ["Tell the community about the spill","A small diesel spill reached a ditch. You cleaned it up and reported it to NIEA. Do you tell the neighbours too?",["Keep it between you and the regulator","Avoids alarm and a local news story.",0,-1,-1],["Write to the neighbours and explain","Some awkward questions, but trust is built.",0,2,2],"Reporting to NIEA (0800 80 70 60) is a duty. Telling the community is a choice, and usually the one that protects your reputation."]
+];
+let i=0,sc={E:5,S:5,G:5},picks=[];
+const $=id=>document.getElementById(id);
+function gauge(){["E","S","G"].forEach(k=>{const v=Math.max(0,Math.min(10,sc[k]));$("g"+k).style.height=(v*10)+"%";});}
+function eff(e,s,g){return `<div class="eff">${[["E",e],["S",s],["G",g]].map(([k,v])=>`<span class="${v>0?"up":v<0?"down":"flat"}">${k} ${v>0?"+"+v:v<0?v:"±0"}</span>`).join("")}</div>`;}
+function show(){
+  if(i>=D.length)return end();
+  const [t,ctx,a,b]=D[i];
+  $("card").innerHTML=`<span class="k">Dilemma ${i+1} of ${D.length}</span><p class="q">${t}</p><p class="ctx">${ctx}</p>
+   <div class="opts"><button class="opt" type="button" data-o="0"><b>${a[0]}</b><span>${a[1]}</span></button><button class="opt" type="button" data-o="1"><b>${b[0]}</b><span>${b[1]}</span></button></div><div id="after"></div>`;
+  $("card").querySelectorAll(".opt").forEach(o=>o.onclick=()=>{
+    const k=+o.dataset.o,c=D[i][2+k];sc.E+=c[2];sc.S+=c[3];sc.G+=c[4];picks.push([D[i][0],c[0],c[2],c[3],c[4]]);gauge();
+    $("card").querySelectorAll(".opt").forEach((x,j)=>{x.disabled=true;const cc=D[i][2+j];x.insertAdjacentHTML("beforeend",eff(cc[2],cc[3],cc[4]));if(j===k)x.classList.add("chosen");});
+    $("after").innerHTML=`<div class="note">${D[i][4]}</div><div class="row" style="margin-top:10px"><span></span><button class="btn primary" type="button" id="next">${i===D.length-1?"See your pillars →":"Next dilemma →"}</button></div>`;
+    $("next").onclick=()=>{i++;show();};$("next").focus();
+  });
+}
+function end(){
+  const top=Object.entries(sc).sort((a,b)=>b[1]-a[1]),low=top[2][0],hi=top[0][0],N={E:"environment",S:"social",G:"governance"};
+  const spread=top[0][1]-top[2][1];
+  $("card").innerHTML=`<div class="deb"><span class="k">Your pillars</span><p class="q">${spread<=2?"Balanced. You traded carefully.":"You leaned towards "+N[hi]+", at the expense of "+N[low]+"."}</p>
+   <p class="ctx">E ${sc.E} · S ${sc.S} · G ${sc.G} (each started at 5). There are no right answers here, only trade-offs you can explain. The point is that the pillars rarely rise together, and a good board can say why it chose what it did.</p>
+   <ul>${picks.map(p=>`<li><b>${p[0]}:</b> ${p[1]}</li>`).join("")}</ul>
+   <div class="row"><span></span><button class="btn primary" type="button" id="again">Play again</button></div></div>`;
+  $("again").onclick=()=>{i=0;sc={E:5,S:5,G:5};picks=[];gauge();show();};
+}
+gauge();show();
+})();
+</script>
+</body>
+</html>
