@@ -13,7 +13,7 @@ I've worked as a sustainability and carbon consultant since 2018 and in communic
 
 My training is in science. I studied Chemistry at Imperial College London and Queen Mary University of London, then carried out doctoral research in materials chemistry at Queen Mary, working on biominerals. That work led to published research papers, and it still shapes how I approach environmental questions — from contaminated land to greenhouse gases.
 
-Alongside the science, my career has covered communications and parliamentary work at the General Social Care Council, sales management at Vodafone, and leadership roles including Chief Executive of Birkbeck Students' Union.
+Alongside the science, my career has covered communications and parliamentary work at the General Social Care Council, sales management at Dot Mobile, a Vodafone subsidiary, and leadership roles including Chief Executive of Birkbeck Students' Union.
 
 Much of that experience has been in and around the public sector: a national regulator, a students' union with its own governance and accountability, and parliamentary work. Today I work with district councils, public bodies and trade associations as well as businesses. [More on public sector work]({{ '/public-sector/' | relative_url }}).
 

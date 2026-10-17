@@ -24,14 +24,19 @@ Take any one away and the others start to slip. Pride fades when nobody seems re
 
 ## The law is part of the problem
 
-Responsibility for the public realm is spread across dozens of pieces of legislation, written at different times for different purposes. Litter sits in one Act, highways in another, drainage, parks, burial grounds, street trading and dog control in others again. Each has its own duty-holder, its own standard and its own enforcement route. Some duties are absolute, some are "so far as practicable", and some are only powers that a body may choose to use.
+Responsibility for the public realm is spread across more than thirty pieces of legislation, several of them Victorian. Litter sits in one Act, highways in another, and parks, public toilets, street trading and dog control in others again. Each has its own duty-holder, its own standard and its own enforcement route. Spending on shared spaces is usually discretionary, so it is the first thing cut when budgets tighten. No area is entitled to any minimum standard, and there's no consistent way of telling whether places are getting better or worse.
 
-I've spent a good deal of time working through this as part of drafting a UK-wide Public Realm Bill. The draft runs to 215 clauses and 26 Schedules. It brings 37 existing enactments into one framework, so that the person on the street can see who is responsible and what they can expect. Two ideas sit at its heart:
+I've been drafting a private Public Realm Bill to tackle this. The first version, circulated in August, was too big. After a hard scrutiny exercise I've reworked it into a much shorter framework Bill, with the older amenity laws left to a separate consolidation through the Law Commission. The ideas at its heart haven't changed:
 
-- **A continuous improvement duty.** Public bodies responsible for shared spaces should have to show that those spaces are getting better over time, not just that they've been kept at a minimum standard.
-- **Minimum public realm entitlements.** Every community should be able to expect certain basics: clean streets, safe footways, accessible green space, working drainage, and somewhere to report problems and get an answer.
+- **A clear definition.** The public realm covers the streets, parks, squares, seafronts, libraries, public toilets, memorials and other places people use in common, whoever owns them.
+- **Stewardship and continuous improvement.** Public bodies that own, manage or affect those places should have to keep improving them at the lowest whole-life cost, cooperate where their responsibilities overlap, and be candid about condition, safety and funding.
+- **A minimum public realm entitlement.** Every area should be able to expect the basics: safe, lit walking and wheeling routes, green space, public toilets and drinking water, cleanliness, seating and shade, and access to a library and somewhere to be active.
+- **More for the places furthest behind.** An enhanced entitlement for left-behind, coastal, rural and island communities, with public realm funding per head at least 25% higher there than elsewhere.
+- **Counting what matters.** Spending decisions should be appraised in a way that gives weight to benefits that can't easily be priced, in line with the Treasury's 2026 Green Book, which no longer treats the highest benefit-cost ratio as the only test.
 
-You don't need new legislation to start acting on either. Councils can adopt them as local standards tomorrow.
+Most of this is devolved, so the framework is offered to each devolved government to adopt and adapt rather than imposed. Northern Ireland is different again: no mayors, a separate rating system, councils with a general power of competence, and the Department for Communities and Department for Infrastructure leading on regeneration and roads. Any version for here has to be built around that.
+
+You don't need new legislation to start acting on these ideas, though. Councils can adopt them as local standards tomorrow.
 
 ## What good guardianship looks like
 

@@ -45,6 +45,8 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - Logos added to the headers of the other tools and guides.
 - Photos added to `services.md`, `public-sector.md` and `about.md`.
 - `tools/joined-up-wheel.html`: a "How I help" block on each issue, saying what Robert leads and where partners come in ("Led by me" means Robert is client manager and project lead; policy is delivered by Robert alone; outsourced carbon accountants, with the Qualifying Explanatory Statement (QES) verified by a UKAS-accredited verifier, for carbon; ESOS assessors and Lead Assessor sign-off for energy; multidisciplinary teams for environmental health and land; collaboration for water and waste).
+- `about.md`: career line corrected to "sales management at Dot Mobile, a Vodafone subsidiary".
+- Public realm post: Bill section rewritten for the revised Public Realm (Framework and Entitlement) Bill of 17 October 2026; no clause or Schedule counts quoted.
 - `privacy.md`: fonts are now self-hosted, so the only outside party is GitHub's hosting.
 
 **Not used:** the school bus photo. A blurred copy is in Robert's Assets/web folder, but the image looks like a broadcast screen grab, so it stays off the site.
