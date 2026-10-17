@@ -1,6 +1,6 @@
 ---
 title: "Improving the public realm: guardianship, not just maintenance"
-date: 2026-10-17 09:00:00 +0100
+date: 2026-10-17 00:10:00 +0100
 tags: [Public realm, Land, Waste, Councils, Policy]
 image: /assets/photos/bins-collection.jpg
 ---

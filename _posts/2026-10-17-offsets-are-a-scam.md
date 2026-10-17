@@ -1,6 +1,6 @@
 ---
 title: "Offsets are a scam. Here's what to do instead."
-date: 2026-10-17 10:00:00 +0100
+date: 2026-10-17 00:20:00 +0100
 tags: [Carbon, Offsets, Greenwashing, ESG]
 image: /assets/photos/recycle-forest.jpg
 ---
