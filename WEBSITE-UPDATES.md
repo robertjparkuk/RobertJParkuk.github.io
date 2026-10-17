@@ -25,6 +25,11 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.7.1 — 17 October 2026: post dates fix
+
+**Fixed**
+- The two 17 October posts were timed 09:00 and 10:00, so Jekyll treated them as future posts and left them off the site. Times moved to 00:10 and 00:20 so they publish on the next build. Note for future posts: never give a post a time later than when it's merged.
+
 ### v0.7.0 — 17 October 2026: self-hosted fonts, three puzzles, tool logos, rotating headlines, two posts
 
 **Added**
