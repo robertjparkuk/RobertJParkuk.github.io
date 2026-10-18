@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="A free checklist for Northern Ireland farms: which records a Scope 1, 2 and 3 carbon report needs, where to find each one, and the gaps to fill first.">
+<meta name="author" content="Robert J. Park">
+<link rel="canonical" href="https://robertjparkuk.github.io/tools/farm-data-checker/">
+<link rel="icon" href="../../assets/brand/mark.svg" type="image/svg+xml">
+<script>window.RJP_ALLOW_DOWNLOAD = true;</script>
+<title>Farm Carbon Data Checker</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: a field-book checklist. Profile strip on top, readiness summary beside a long list of record cards grouped by scope. */
+:root {
+  --bg: #FAFAF8; --panel: #FFFFFF; --ink: #1D1B1A; --muted: #67615D; --line: #E4E0DC;
+  --brand: #A61C1C; --brand-ink: #FFFFFF; --have: #14806C; --get: #B87300; --miss: #A61C1C;
+  --logo-ink: #1A1A1A; --logo-red: #A61C1C; --logo-grey: #555555; --logo-rule: #D9A0A0; --na: #8C8580;
+  --chip: #F2EFEC;
+  --display: "Poppins", "Helvetica Neue", Arial, sans-serif;
+  --body: "Poppins", "Helvetica Neue", Arial, sans-serif;
+  --note: "Source Serif 4", Georgia, serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #161413; --panel: #201D1C; --ink: #F1EDEA; --muted: #A9A29D; --line: #34302E;
+  --brand: #E0484A; --brand-ink: #FFFFFF; --logo-ink: #FFFFFF; --logo-red: #E0484A; --logo-grey: #CFCFCF; --logo-rule: #7A3A3A; --have: #3FBFA4; --get: #E3A23A; --miss: #F0596A; --na: #8E8782; --chip: #2A2625; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #161413; --panel: #201D1C; --ink: #F1EDEA; --muted: #A9A29D; --line: #34302E;
+  --brand: #E0484A; --brand-ink: #FFFFFF; --logo-ink: #FFFFFF; --logo-red: #E0484A; --logo-grey: #CFCFCF; --logo-rule: #7A3A3A; --have: #3FBFA4; --get: #E3A23A; --miss: #F0596A; --na: #8E8782; --chip: #2A2625; color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.55; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-block: 28px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.brand { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.brand .logo { height: 46px; width: auto; display: block; }
+.brand span.tag { color: var(--muted); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; border-left: 1px solid var(--line); padding-left: 14px; }
+@media (max-width: 560px) { .brand span.tag { display: none; } }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 4.5vw, 42px); line-height: 1.1; margin: 22px 0 8px; text-wrap: balance; }
+.lede { max-width: 64ch; color: var(--muted); margin: 0 0 22px; font-size: 16px; }
+.profile { display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: flex-end; padding: 16px 18px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
+.profile fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.profile legend, .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; margin-bottom: 6px; padding: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips label { display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: 999px; background: var(--chip); border: 1px solid var(--line); font-size: 13px; cursor: pointer; user-select: none; }
+.chips input { accent-color: var(--brand); margin: 0; }
+.chips label:has(input:checked) { border-color: var(--brand); }
+select, input[type=text] { font: inherit; font-size: 14px; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; }
+.example { font-size: 12px; color: var(--muted); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+button { font: inherit; font-size: 13px; font-weight: 500; border-radius: 6px; padding: 7px 12px; cursor: pointer; border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
+button.primary { background: var(--brand); color: var(--brand-ink); border-color: var(--brand); }
+button:focus-visible, select:focus-visible, input:focus-visible, label:focus-within { outline: 2px solid var(--brand); outline-offset: 2px; }
+.grid { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 22px; margin-top: 22px; align-items: start; }
+@media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+.summary { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; gap: 14px; }
+@media (max-width: 860px) { .summary { position: static; } }
+.score { display: flex; align-items: baseline; gap: 8px; }
+.score .n { font-family: var(--display); font-weight: 700; font-size: 46px; line-height: 1; font-variant-numeric: tabular-nums; }
+.score .of { color: var(--muted); font-size: 13px; }
+.bars { display: flex; flex-direction: column; gap: 10px; }
+.bar .top { display: flex; justify-content: space-between; font-size: 13px; }
+.bar .top span:last-child { font-variant-numeric: tabular-nums; color: var(--muted); }
+.track { height: 8px; border-radius: 4px; background: var(--chip); overflow: hidden; display: flex; }
+.track i { display: block; height: 100%; }
+.track .h { background: var(--have); } .track .g { background: var(--get); }
+.legend { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; color: var(--muted); }
+.legend span::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; background: var(--c); }
+.gaps h3, .section h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; margin: 0; }
+.gaps ol { margin: 8px 0 0; padding-left: 18px; font-size: 13px; display: flex; flex-direction: column; gap: 6px; }
+.gaps ol li span { color: var(--muted); display: block; font-size: 12px; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.status-msg { font-size: 12px; color: var(--have); min-height: 1em; }
+.section { display: flex; flex-direction: column; gap: 10px; margin-bottom: 26px; }
+.section header { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; padding-bottom: 6px; border-bottom: 2px solid var(--ink); }
+.section header p { margin: 0; color: var(--muted); font-size: 13px; }
+.scope-tag { font-size: 11px; font-weight: 700; color: var(--brand-ink); background: var(--ink); padding: 2px 8px; border-radius: 3px; letter-spacing: .06em; }
+.item { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 16px; }
+.item[data-state="have"] { box-shadow: inset 4px 0 0 var(--have); }
+.item[data-state="get"] { box-shadow: inset 4px 0 0 var(--get); }
+.item[data-state="miss"] { box-shadow: inset 4px 0 0 var(--miss); }
+.item[data-state="na"] { opacity: .62; }
+.item h4 { margin: 0; font-size: 15px; font-weight: 600; }
+.item .why { margin: 2px 0 0; font-size: 13px; color: var(--muted); max-width: 70ch; }
+.item .where { grid-column: 1 / -1; font-size: 13px; display: flex; gap: 6px; flex-wrap: wrap; }
+.item .where b { font-weight: 600; }
+.item .where em { font-family: var(--note); font-style: normal; color: var(--ink); }
+.item .unit { font-size: 12px; color: var(--muted); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 7px; overflow: hidden; align-self: start; flex-wrap: wrap; }
+.seg label { font-size: 12px; padding: 6px 9px; cursor: pointer; border-right: 1px solid var(--line); white-space: nowrap; }
+.seg label:last-child { border-right: 0; }
+.seg input { position: absolute; opacity: 0; pointer-events: none; }
+.seg label:has(input:checked)[data-v="have"] { background: var(--have); color: #fff; }
+.seg label:has(input:checked)[data-v="get"] { background: var(--get); color: #fff; }
+.seg label:has(input:checked)[data-v="miss"] { background: var(--miss); color: #fff; }
+.seg label:has(input:checked)[data-v="na"] { background: var(--na); color: #fff; }
+.qty { grid-column: 1 / -1; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 13px; }
+.qty input { flex: 1 1 220px; min-width: 0; }
+@media (max-width: 560px) { .item { grid-template-columns: 1fr; } }
+.foot { margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); display: flex; flex-direction: column; gap: 6px; max-width: 80ch; }
+.foot a, .lede a { color: var(--brand); }
+@media (prefers-reduced-motion: no-preference) { .track i { transition: width .4s ease; } }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="brand"><svg class="logo" role="img" aria-label="Robert J. Park: Environment, Carbon, Public Affairs, Northern Ireland" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 120">
+<defs>
+<g>
+<g id="lc-glyph-0-0">
+<path d="M 10.765625 -13.515625 C 11.941406 -13.515625 12.785156 -13.757812 13.296875 -14.25 C 13.816406 -14.738281 14.078125 -15.546875 14.078125 -16.671875 C 14.078125 -17.773438 13.816406 -18.5625 13.296875 -19.03125 C 12.785156 -19.507812 11.941406 -19.75 10.765625 -19.75 L 8.390625 -19.75 L 8.390625 -13.515625 Z M 8.390625 -9.1875 L 8.390625 0 L 2.75 0 L 2.75 -24.296875 L 11.359375 -24.296875 C 14.242188 -24.296875 16.351562 -23.757812 17.6875 -22.6875 C 19.03125 -21.613281 19.703125 -19.914062 19.703125 -17.59375 C 19.703125 -15.988281 19.351562 -14.671875 18.65625 -13.640625 C 17.96875 -12.609375 16.921875 -11.847656 15.515625 -11.359375 C 16.285156 -11.160156 16.972656 -10.71875 17.578125 -10.03125 C 18.191406 -9.34375 18.8125 -8.300781 19.4375 -6.90625 L 22.484375 0 L 16.484375 0 L 13.828125 -6.03125 C 13.285156 -7.25 12.738281 -8.078125 12.1875 -8.515625 C 11.632812 -8.960938 10.898438 -9.1875 9.984375 -9.1875 Z M 8.390625 -9.1875 "/>
+</g>
+<g id="lc-glyph-0-1">
+<path d="M 12.734375 -20.203125 C 11.023438 -20.203125 9.695312 -19.492188 8.75 -18.078125 C 7.800781 -16.671875 7.328125 -14.6875 7.328125 -12.125 C 7.328125 -9.570312 7.800781 -7.585938 8.75 -6.171875 C 9.695312 -4.765625 11.023438 -4.0625 12.734375 -4.0625 C 14.460938 -4.0625 15.800781 -4.765625 16.75 -6.171875 C 17.695312 -7.585938 18.171875 -9.570312 18.171875 -12.125 C 18.171875 -14.6875 17.695312 -16.671875 16.75 -18.078125 C 15.800781 -19.492188 14.460938 -20.203125 12.734375 -20.203125 Z M 12.734375 -24.734375 C 16.253906 -24.734375 19.007812 -23.613281 21 -21.375 C 22.988281 -19.144531 23.984375 -16.0625 23.984375 -12.125 C 23.984375 -8.195312 22.988281 -5.113281 21 -2.875 C 19.007812 -0.644531 16.253906 0.46875 12.734375 0.46875 C 9.234375 0.46875 6.484375 -0.644531 4.484375 -2.875 C 2.492188 -5.113281 1.5 -8.195312 1.5 -12.125 C 1.5 -16.0625 2.492188 -19.144531 4.484375 -21.375 C 6.484375 -23.613281 9.234375 -24.734375 12.734375 -24.734375 Z M 12.734375 -24.734375 "/>
+</g>
+<g id="lc-glyph-0-2">
+<path d="M 11.5 -14.890625 C 12.394531 -14.890625 13.070312 -15.101562 13.53125 -15.53125 C 13.988281 -15.96875 14.21875 -16.613281 14.21875 -17.46875 C 14.21875 -18.300781 13.988281 -18.9375 13.53125 -19.375 C 13.070312 -19.8125 12.394531 -20.03125 11.5 -20.03125 L 8.390625 -20.03125 L 8.390625 -14.890625 Z M 11.703125 -4.265625 C 12.835938 -4.265625 13.691406 -4.53125 14.265625 -5.0625 C 14.835938 -5.59375 15.125 -6.394531 15.125 -7.46875 C 15.125 -8.519531 14.835938 -9.304688 14.265625 -9.828125 C 13.691406 -10.359375 12.835938 -10.625 11.703125 -10.625 L 8.390625 -10.625 L 8.390625 -4.265625 Z M 16.9375 -13 C 18.15625 -12.613281 19.09375 -11.894531 19.75 -10.84375 C 20.414062 -9.789062 20.75 -8.5 20.75 -6.96875 C 20.75 -4.625 20.035156 -2.875 18.609375 -1.71875 C 17.179688 -0.570312 15.015625 0 12.109375 0 L 2.75 0 L 2.75 -24.296875 L 11.21875 -24.296875 C 14.25 -24.296875 16.445312 -23.785156 17.8125 -22.765625 C 19.175781 -21.742188 19.859375 -20.113281 19.859375 -17.875 C 19.859375 -16.6875 19.609375 -15.675781 19.109375 -14.84375 C 18.617188 -14.019531 17.894531 -13.40625 16.9375 -13 Z M 16.9375 -13 "/>
+</g>
+<g id="lc-glyph-0-3">
+<path d="M 2.75 -24.296875 L 17.96875 -24.296875 L 17.96875 -19.5625 L 8.390625 -19.5625 L 8.390625 -15.03125 L 17.390625 -15.03125 L 17.390625 -10.296875 L 8.390625 -10.296875 L 8.390625 -4.734375 L 18.296875 -4.734375 L 18.296875 0 L 2.75 0 Z M 2.75 -24.296875 "/>
+</g>
+<g id="lc-glyph-0-4">
+<path d="M 0.140625 -24.296875 L 20.296875 -24.296875 L 20.296875 -19.5625 L 13.046875 -19.5625 L 13.046875 0 L 7.40625 0 L 7.40625 -19.5625 L 0.140625 -19.5625 Z M 0.140625 -24.296875 "/>
+</g>
+<g id="lc-glyph-0-5">
+</g>
+<g id="lc-glyph-0-6">
+<path d="M 2.765625 -24.296875 L 8.40625 -24.296875 L 8.40625 -2.359375 C 8.40625 0.671875 7.664062 2.929688 6.1875 4.421875 C 4.707031 5.921875 2.472656 6.671875 -0.515625 6.671875 L -1.671875 6.671875 L -1.671875 1.9375 L -0.796875 1.9375 C 0.367188 1.9375 1.253906 1.570312 1.859375 0.84375 C 2.460938 0.113281 2.765625 -0.953125 2.765625 -2.359375 Z M 2.765625 -24.296875 "/>
+</g>
+<g id="lc-glyph-0-7">
+<path d="M 3.0625 -6.296875 L 8.328125 -6.296875 L 8.328125 0 L 3.0625 0 Z M 3.0625 -6.296875 "/>
+</g>
+<g id="lc-glyph-0-8">
+<path d="M 2.75 -24.296875 L 12.109375 -24.296875 C 14.898438 -24.296875 17.035156 -23.609375 18.515625 -22.234375 C 20.003906 -20.859375 20.75 -18.90625 20.75 -16.375 C 20.75 -13.820312 20.003906 -11.859375 18.515625 -10.484375 C 17.035156 -9.109375 14.898438 -8.421875 12.109375 -8.421875 L 8.390625 -8.421875 L 8.390625 0 L 2.75 0 Z M 8.390625 -19.75 L 8.390625 -12.96875 L 11.5 -12.96875 C 12.601562 -12.96875 13.453125 -13.265625 14.046875 -13.859375 C 14.640625 -14.453125 14.9375 -15.289062 14.9375 -16.375 C 14.9375 -17.457031 14.640625 -18.289062 14.046875 -18.875 C 13.453125 -19.457031 12.601562 -19.75 11.5 -19.75 Z M 8.390625 -19.75 "/>
+</g>
+<g id="lc-glyph-0-9">
+<path d="M 16.03125 -4.421875 L 7.203125 -4.421875 L 5.8125 0 L 0.140625 0 L 8.25 -24.296875 L 14.96875 -24.296875 L 23.078125 0 L 17.390625 0 Z M 8.609375 -8.9375 L 14.59375 -8.9375 L 11.625 -18.59375 Z M 8.609375 -8.9375 "/>
+</g>
+<g id="lc-glyph-0-10">
+<path d="M 2.75 -24.296875 L 8.390625 -24.296875 L 8.390625 -15.421875 L 16.515625 -24.296875 L 23.078125 -24.296875 L 12.53125 -12.796875 L 24.15625 0 L 17.09375 0 L 8.390625 -9.5625 L 8.390625 0 L 2.75 0 Z M 2.75 -24.296875 "/>
+</g>
+</g>
+</defs>
+<path fill-rule="evenodd" style="fill:var(--logo-red)" fill-opacity="1" d="M 53.667969 10 C 26.050781 10 3.667969 32.386719 3.667969 60 C 3.667969 87.613281 26.050781 110 53.667969 110 L 53.667969 101.332031 C 30.839844 101.332031 12.332031 82.828125 12.332031 60 C 12.332031 37.171875 30.839844 18.667969 53.667969 18.667969 Z M 53.667969 10 "/>
+<path fill-rule="evenodd" style="fill:var(--logo-ink)" fill-opacity="1" d="M 60 97 C 80.433594 97 97 80.433594 97 60 C 97 39.566406 80.433594 23 60 23 L 60 31.667969 C 75.648438 31.667969 88.332031 44.351562 88.332031 60 C 88.332031 75.648438 75.648438 88.332031 60 88.332031 Z M 60 97 "/>
+<path fill-rule="evenodd" style="fill:var(--logo-red)" fill-opacity="1" d="M 56 115 L 58 115 L 58 5.332031 L 56 5.332031 Z M 56 115 "/>
+<g style="fill:var(--logo-ink)" fill-opacity="1">
+<use xlink:href="#lc-glyph-0-0" x="125.999864" y="57.000083"/>
+<use xlink:href="#lc-glyph-0-1" x="149.095544" y="57.000083"/>
+<use xlink:href="#lc-glyph-0-2" x="174.583799" y="57.000083"/>
+<use xlink:href="#lc-glyph-0-3" x="197.435339" y="57.000083"/>
+<use xlink:href="#lc-glyph-0-0" x="217.926855" y="57.000083"/>
+<use xlink:href="#lc-glyph-0-4" x="241.022536" y="57.000083"/>
+<use xlink:href="#lc-glyph-0-5" x="261.481499" y="57.000083"/>
+<use xlink:href="#lc-glyph-0-6" x="271.914431" y="57.000083"/>
+<use xlink:href="#lc-glyph-0-7" x="283.06351" y="57.000083"/>
+<use xlink:href="#lc-glyph-0-5" x="294.456729" y="57.000083"/>
+</g>
+<g style="fill:var(--logo-red)" fill-opacity="1">
+<use xlink:href="#lc-glyph-0-8" x="304.889652" y="57.000083"/>
+<use xlink:href="#lc-glyph-0-9" x="326.862286" y="57.000083"/>
+<use xlink:href="#lc-glyph-0-0" x="350.0719" y="57.000083"/>
+<use xlink:href="#lc-glyph-0-10" x="373.16758" y="57.000083"/>
+</g>
+</svg><span class="tag">Environment · Carbon · Public Affairs · Northern Ireland</span></div>
+  <h1>Farm Carbon Data Checker</h1>
+  <p class="lede">Before anyone can report your farm’s carbon footprint, someone has to gather the records. Pick your enterprises, then mark each record as something you have, can get, or are missing. You’ll see how ready you are for a Scope 1, 2 and 3 report, and exactly where to find what’s missing in Northern Ireland. This checks your records only; it doesn’t calculate emissions.</p>
+
+  <form class="profile" id="profile" aria-label="Your farm">
+    <fieldset>
+      <legend>Enterprises on the farm</legend>
+      <div class="chips" id="ent"></div>
+    </fieldset>
+    <div>
+      <div class="lbl"><label for="year">Reporting year</label></div>
+      <select id="year"><option>2025</option><option>2026</option><option>2025/26</option></select>
+    </div>
+    <div>
+      <div class="lbl"><label for="asker">Who is asking for the data?</label></div>
+      <select id="asker">
+        <option>My milk or meat processor</option><option>A supermarket supply chain</option><option>My bank or lender</option><option>A grant or scheme</option><option>My own baseline</option>
+      </select>
+    </div>
+    <div class="example"><span id="exampleNote">Showing an example: a 120-cow dairy farm.</span><button type="button" id="reset">Start my own farm</button></div>
+  </form>
+
+  <div class="grid">
+    <aside class="summary" aria-label="Readiness summary">
+      <div>
+        <div class="lbl">Data readiness</div>
+        <div class="score"><span class="n" id="score">0%</span><span class="of" id="scoreOf"></span></div>
+      </div>
+      <div class="bars" id="bars"></div>
+      <div class="legend"><span style="--c: var(--have)">Have it</span><span style="--c: var(--get)">Can get it</span><span style="--c: var(--chip)">Missing or not set</span></div>
+      <div class="gaps"><h3>Find these first</h3><ol id="gaps"></ol></div>
+      <div class="actions"><button type="button" class="primary" id="copy">Copy my checklist</button><button type="button" id="dl" hidden>Download as CSV</button></div>
+      <div class="status-msg" id="msg" role="status"></div>
+    </aside>
+    <main id="list"></main>
+  </div>
+
+  <div class="foot">
+    <p>Why this matters: in Northern Ireland, livestock methane is about three-quarters of farm emissions, and processors, lenders and supermarkets increasingly ask farms for Scope 1, 2 and 3 data. Most of it already sits in records you keep for other reasons.</p>
+    <p>Want help turning these records into a verified carbon inventory? Robert J. Park, Larne, Northern Ireland · LinkedIn: linkedin.com/in/robertparkuk · WhatsApp: @robertjpark. Read the monthly <a href="../../blog/focus-on-agriculture-october-2026/">Focus on Agriculture briefing</a>.</p>
+    <p>Your answers are saved only in this browser on this device. Nothing is sent anywhere.</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  var ENT = [["dairy","Dairy"],["beef","Beef"],["sheep","Sheep"],["pigs","Pigs"],["poultry","Poultry"],["crops","Crops"]];
+  var LIVE = ["dairy","beef","sheep","pigs","poultry"];
+  var SCOPES = [
+    {id:"s1", tag:"SCOPE 1", name:"On the farm", note:"Direct emissions from animals, soils, manure and fuel you burn."},
+    {id:"s2", tag:"SCOPE 2", name:"Energy you buy", note:"Electricity and heat bought in, less what you generate."},
+    {id:"s3", tag:"SCOPE 3", name:"What you buy in and send on", note:"Feed, fertiliser, animals and services from suppliers, and what happens after the farm gate."},
+    {id:"land", tag:"LAND", name:"Land, soils and trees", note:"Stores and sinks that can offset part of your emissions."}
+  ];
+  var ITEMS = [
+    {id:"stock", s:"s1", t:"Livestock numbers by class, through the year", why:"Methane from digestion and manure is the largest farm source; it depends on how many animals of each type you keep.", where:"APHIS herd register (cattle), annual sheep inventory, flock and pig records, your June Census return", unit:"Average head by class (e.g. dairy cows, heifers, calves, ewes, sows)", ent:LIVE},
+    {id:"milk", s:"s1", t:"Milk sold, with fat and protein", why:"Turns emissions into a footprint per litre, the figure processors compare.", where:"Monthly milk statements from your processor", unit:"Litres a year, average % fat and % protein", ent:["dairy"]},
+    {id:"sales", s:"s1", t:"Animals sold: weights and ages", why:"Liveweight output and finishing age drive the footprint per kg of beef or lamb.", where:"Factory kill sheets, mart dockets, Beef Carbon Reduction Scheme records", unit:"Head sold, kg liveweight or deadweight, age at slaughter", ent:["beef","sheep","pigs","poultry"]},
+    {id:"manure", s:"s1", t:"Manure and slurry management", why:"Storage type, housing period and spreading method change methane and nitrous oxide losses.", where:"Nutrient Management Plan, NAP records, slurry export and import records", unit:"Months housed, storage type, spreading method (e.g. trailing shoe)", ent:LIVE},
+    {id:"fert", s:"s1", t:"Manufactured fertiliser applied", why:"Nitrogen on soils produces nitrous oxide, and urea releases carbon dioxide.", where:"Merchant invoices and your fertiliser records in the Nutrient Management Plan", unit:"Tonnes of each product and its N, P and K %", ent:["dairy","beef","sheep","crops"]},
+    {id:"lime", s:"s1", t:"Lime applied", why:"Lime releases carbon dioxide as it reacts in the soil.", where:"Merchant or contractor invoices", unit:"Tonnes a year", ent:["dairy","beef","sheep","crops"]},
+    {id:"diesel", s:"s1", t:"Farm diesel and other road and machine fuel", why:"Burning fuel is a direct emission you control.", where:"Fuel supplier invoices and delivery notes", unit:"Litres of gas oil, diesel and petrol", ent:null},
+    {id:"heat", s:"s1", t:"Heating fuels", why:"LPG, kerosene and oil for heating sheds, water and drying are direct emissions.", where:"LPG and oil supplier invoices", unit:"Litres or kg by fuel", ent:["dairy","pigs","poultry","crops"]},
+    {id:"fgas", s:"s1", t:"Refrigerant top-ups (milk tank, cold store)", why:"Refrigerant leaks are high-warming gases and are reportable.", where:"F-gas service log kept by your refrigeration engineer", unit:"Refrigerant type and kg added in the year", ent:["dairy","pigs","poultry","crops"]},
+    {id:"contract", s:"s1", t:"Contractor work", why:"Silage, slurry and harvest contractors burn fuel on your land; reports often count it.", where:"Contractor invoices (hours, hectares or litres)", unit:"Hours, hectares or litres by job", ent:null},
+    {id:"elec", s:"s2", t:"Electricity used, 12 months of bills", why:"Purchased electricity is Scope 2; milking, cooling, lighting and ventilation add up.", where:"Supplier bills or online account; NIE Networks meter data", unit:"kWh for each meter for the year", ent:null},
+    {id:"tariff", s:"s2", t:"Proof of a renewable electricity tariff", why:"A certified renewable tariff can lower your reported Scope 2 figure.", where:"Supplier fuel-mix statement or REGO evidence", unit:"Tariff name and certificate", ent:null},
+    {id:"gen", s:"s2", t:"Electricity you generate and export", why:"Solar, wind or anaerobic digestion output offsets what you buy.", where:"Inverter or generation meter readings; export statements", unit:"kWh generated and kWh exported", ent:null},
+    {id:"feed", s:"s3", t:"Bought-in feed: tonnes, type and protein", why:"Imported feed carries emissions from growing and transport, especially soya.", where:"Feed merchant invoices and annual statements", unit:"Tonnes by product and % crude protein", ent:LIVE},
+    {id:"feedfp", s:"s3", t:"Feed supplier carbon footprint data", why:"A supplier figure is more accurate than a default value.", where:"Ask your feed merchant for product carbon footprints", unit:"kg CO2e per tonne of each feed", ent:LIVE},
+    {id:"fertfp", s:"s3", t:"Fertiliser supplier carbon footprint data", why:"How fertiliser was made changes its footprint a lot, and carbon border taxes now apply to it.", where:"Ask your fertiliser merchant for the product footprint or production route", unit:"kg CO2e per tonne of product", ent:["dairy","beef","sheep","crops"]},
+    {id:"bought", s:"s3", t:"Animals bought in", why:"Bought-in stock carries the emissions of the farm that reared them.", where:"Purchase records and APHIS movements", unit:"Head and age by class", ent:LIVE},
+    {id:"bedding", s:"s3", t:"Bedding, plastics and farm waste", why:"Silage wrap, bags and waste have a disposal footprint.", where:"Waste carrier collection notes; merchant invoices for straw, sawdust and plastics", unit:"Tonnes or bales by type", ent:null},
+    {id:"spend", s:"s3", t:"Other purchased goods and services", why:"Vet medicines, machinery repairs and services are often estimated from spend.", where:"Your farm accounts or accountant", unit:"£ spend by category for the year", ent:null},
+    {id:"map", s:"land", t:"Farm map with field areas and land use", why:"Every land carbon figure starts from areas of grass, crops, woodland and other land.", where:"DAERA Online Services field map (single application)", unit:"Hectares by land use", ent:null},
+    {id:"snhs", s:"land", t:"Soil Nutrient Health Scheme results", why:"Gives pH, nutrients, organic matter and a carbon estimate for your soils.", where:"Your AFBI Soil Nutrient Health Scheme report", unit:"Field results and the farm carbon estimate", ent:null},
+    {id:"hedge", s:"land", t:"Hedgerows and trees", why:"Hedges and trees store carbon that can be counted alongside emissions.", where:"SNHS above-ground carbon estimate, or your own measure", unit:"Metres of hedge, hectares and age of woodland", ent:null},
+    {id:"peat", s:"land", t:"Peat or wet soils on the farm", why:"Drained peat is a large source; rewetting can cut it.", where:"SNHS maps and your own knowledge of the land", unit:"Hectares and drainage state", ent:null},
+    {id:"schemes", s:"land", t:"Environment and planting schemes", why:"Shows the actions you already take, such as new woodland or Farming with Nature options.", where:"Scheme agreements and claim records", unit:"Scheme, option and area", ent:null}
+  ];
+  var EXAMPLE = {ent:["dairy"], state:{stock:"have", milk:"have", sales:"get", manure:"have", fert:"have", lime:"get", diesel:"have", heat:"get", fgas:"miss", contract:"get", elec:"have", tariff:"miss", gen:"na", feed:"have", feedfp:"miss", fertfp:"miss", bought:"have", bedding:"get", spend:"get", map:"have", snhs:"have", hedge:"get", peat:"na", schemes:"get"}, qty:{stock:"120 cows, 30 heifers, 45 calves (example)", milk:"960,000 litres, 4.2% fat, 3.4% protein (example)", fert:"38 t CAN 27% N (example)", diesel:"14,500 litres gas oil (example)", elec:"92,000 kWh (example)", feed:"260 t dairy nut, 18% protein (example)"}};
+  var KEY = "rjp-farm-data-checker-v1";
+  var model = load();
+  function load() { try { var s = localStorage.getItem(KEY); if (s) return Object.assign({example:false}, JSON.parse(s)); } catch (e) {} return {ent: EXAMPLE.ent.slice(), state: Object.assign({}, EXAMPLE.state), qty: Object.assign({}, EXAMPLE.qty), example: true}; }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(model)); } catch (e) {} }
+  function applies(it) { return !it.ent || it.ent.some(function (e) { return model.ent.indexOf(e) > -1; }); }
+  var entBox = document.getElementById("ent");
+  ENT.forEach(function (e) {
+    var l = document.createElement("label"); var i = document.createElement("input"); i.type = "checkbox"; i.id = "ent-" + e[0]; i.value = e[0];
+    i.checked = model.ent.indexOf(e[0]) > -1;
+    i.addEventListener("change", function () { model.ent = ENT.map(function (x) { return x[0]; }).filter(function (k) { return document.getElementById("ent-" + k).checked; }); markOwn(); render(); });
+    l.appendChild(i); l.appendChild(document.createTextNode(e[1])); entBox.appendChild(l);
+  });
+  function markOwn() { if (model.example) { model.example = false; document.getElementById("exampleNote").textContent = "Your own farm. Answers are kept in this browser."; } save(); }
+  document.getElementById("reset").addEventListener("click", function () {
+    model = {ent: [], state: {}, qty: {}, example: false};
+    ENT.forEach(function (e) { document.getElementById("ent-" + e[0]).checked = false; });
+    document.getElementById("exampleNote").textContent = "Your own farm. Pick your enterprises to start.";
+    save(); render();
+  });
+  if (!model.example) document.getElementById("exampleNote").textContent = "Your own farm. Answers are kept in this browser.";
+  var list = document.getElementById("list");
+  function build() {
+    list.textContent = "";
+    SCOPES.forEach(function (sc) {
+      var sec = document.createElement("section"); sec.className = "section"; sec.id = sc.id;
+      var hd = document.createElement("header"); var tg = document.createElement("span"); tg.className = "scope-tag"; tg.textContent = sc.tag;
+      var h2 = document.createElement("h2"); h2.textContent = sc.name; var p = document.createElement("p"); p.textContent = sc.note;
+      hd.append(tg, h2, p); sec.appendChild(hd);
+      ITEMS.filter(function (it) { return it.s === sc.id; }).forEach(function (it) {
+        var d = document.createElement("article"); d.className = "item"; d.id = "item-" + it.id;
+        var left = document.createElement("div"); var h4 = document.createElement("h4"); h4.textContent = it.t; var w = document.createElement("p"); w.className = "why"; w.textContent = it.why; left.append(h4, w);
+        var seg = document.createElement("div"); seg.className = "seg"; seg.setAttribute("role", "radiogroup"); seg.setAttribute("aria-label", "Status of " + it.t);
+        [["have","Have it"],["get","Can get it"],["miss","Missing"],["na","Not relevant"]].forEach(function (o) {
+          var l = document.createElement("label"); l.dataset.v = o[0]; var r = document.createElement("input"); r.type = "radio"; r.name = "st-" + it.id; r.id = "st-" + it.id + "-" + o[0]; r.value = o[0];
+          r.addEventListener("change", function () { model.state[it.id] = o[0]; markOwn(); render(); });
+          l.append(r, document.createTextNode(o[1])); seg.appendChild(l);
+        });
+        var wh = document.createElement("div"); wh.className = "where"; var b = document.createElement("b"); b.textContent = "Where to find it:"; var em = document.createElement("em"); em.textContent = it.where; wh.append(b, em);
+        var q = document.createElement("div"); q.className = "qty"; var ql = document.createElement("label"); ql.htmlFor = "q-" + it.id; ql.className = "unit"; ql.textContent = it.unit;
+        var qi = document.createElement("input"); qi.type = "text"; qi.id = "q-" + it.id; qi.placeholder = "Your figure or note (optional)";
+        qi.addEventListener("input", function () { model.qty[it.id] = qi.value; markOwn(); });
+        q.append(qi, ql);
+        d.append(left, seg, wh, q); sec.appendChild(d);
+      });
+      list.appendChild(sec);
+    });
+  }
+  function render() {
+    var tot = 0, pts = 0; var per = {};
+    SCOPES.forEach(function (s) { per[s.id] = {n: 0, h: 0, g: 0}; });
+    var gaps = [];
+    ITEMS.forEach(function (it) {
+      var el = document.getElementById("item-" + it.id); var ok = applies(it); el.hidden = !ok;
+      var st = model.state[it.id] || ""; el.dataset.state = st;
+      ["have","get","miss","na"].forEach(function (v) { document.getElementById("st-" + it.id + "-" + v).checked = st === v; });
+      var qi = document.getElementById("q-" + it.id); if (document.activeElement !== qi) qi.value = model.qty[it.id] || "";
+      if (!ok || st === "na") return;
+      tot++; per[it.s].n++;
+      if (st === "have") { pts += 1; per[it.s].h++; } else if (st === "get") { pts += 0.5; per[it.s].g++; } else gaps.push(it);
+    });
+    var pct = tot ? Math.round(pts / tot * 100) : 0;
+    document.getElementById("score").textContent = pct + "%";
+    document.getElementById("scoreOf").textContent = tot ? tot + " records apply to your farm" : "Pick your enterprises to start";
+    var bars = document.getElementById("bars"); bars.textContent = "";
+    SCOPES.forEach(function (s) {
+      var p = per[s.id]; if (!p.n) return;
+      var bx = document.createElement("div"); bx.className = "bar";
+      var top = document.createElement("div"); top.className = "top"; var a = document.createElement("span"); a.textContent = s.tag + " · " + s.name; var c = document.createElement("span"); c.textContent = p.h + " have, " + p.g + " can get, of " + p.n; top.append(a, c);
+      var tr = document.createElement("div"); tr.className = "track"; var ih = document.createElement("i"); ih.className = "h"; ih.style.width = (p.h / p.n * 100) + "%"; var ig = document.createElement("i"); ig.className = "g"; ig.style.width = (p.g / p.n * 100) + "%"; tr.append(ih, ig);
+      bx.append(top, tr); bars.appendChild(bx);
+    });
+    var ol = document.getElementById("gaps"); ol.textContent = "";
+    gaps.sort(function (a, b) { return "s1s2s3land".indexOf(a.s) - "s1s2s3land".indexOf(b.s); }).slice(0, 5).forEach(function (it) {
+      var li = document.createElement("li"); li.textContent = it.t; var sp = document.createElement("span"); sp.textContent = it.where; li.appendChild(sp); ol.appendChild(li);
+    });
+    if (!gaps.length) { var li = document.createElement("li"); li.textContent = tot ? "No gaps. You are ready to report." : "Nothing yet."; ol.appendChild(li); }
+  }
+  function rows() {
+    var lab = {have:"Have it", get:"Can get it", miss:"Missing", na:"Not relevant", "":"Not set"};
+    var out = [["Scope","Record","Status","Your figure or note","Where to find it"]];
+    ITEMS.filter(applies).forEach(function (it) { var sc = SCOPES.filter(function (s) { return s.id === it.s; })[0]; out.push([sc.tag, it.t, lab[model.state[it.id] || ""], model.qty[it.id] || "", it.where]); });
+    return out;
+  }
+  document.getElementById("copy").addEventListener("click", function () {
+    var r = rows(); var head = "Farm Carbon Data Checker · " + document.getElementById("year").value + " · for: " + document.getElementById("asker").value + " · readiness " + document.getElementById("score").textContent + "\n";
+    var txt = head + r.map(function (x) { return x.join("\t"); }).join("\n");
+    var msg = document.getElementById("msg");
+    function fallback() { var ta = document.createElement("textarea"); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); msg.textContent = "Copied. Paste it into a spreadsheet or email."; } catch (e) { msg.textContent = "Select and copy the text that appeared below."; return; } ta.remove(); }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(function () { msg.textContent = "Copied. Paste it into a spreadsheet or email."; }, fallback); else fallback();
+  });
+  var dl = document.getElementById("dl");
+  if (window.RJP_ALLOW_DOWNLOAD) {
+    dl.hidden = false;
+    dl.addEventListener("click", function () {
+      var csv = rows().map(function (r) { return r.map(function (c) { return '"' + String(c).replace(/"/g, '""') + '"'; }).join(","); }).join("\r\n");
+      var a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([csv], {type: "text/csv"})); a.download = "farm-carbon-data-checklist.csv"; document.body.appendChild(a); a.click(); a.remove();
+    });
+  }
+  build(); render();
+})();
+</script>
+
+</body>
+</html>
