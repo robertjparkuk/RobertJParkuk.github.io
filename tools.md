@@ -2,7 +2,7 @@
 layout: page
 title: Tools
 permalink: /tools/
-lead: Free, interactive tools for Northern Ireland businesses, councils and anyone working on carbon and environmental compliance. Facts are as at 17 October 2026. Everything runs in your browser and nothing you type is stored on a server.
+lead: Free, interactive tools for Northern Ireland businesses, councils and anyone working on carbon and environmental compliance. Facts are as at 18 October 2026. Everything runs in your browser and nothing you type is stored on a server.
 ---
 
 <img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="72" height="72" style="display:block;margin:0 0 1rem">
@@ -18,6 +18,12 @@ A rough carbon checker for Northern Ireland businesses. Fill in each piece of th
 Scope 1, 2 and 3 on one diagram, with all fifteen Scope 3 categories and their technical definitions. It also covers the grey zones clients ask about: gas that leaks before or after the meter, LPG that isn't a counted gas, water from a borehole, grey-fleet mileage, landlord-supplied energy, and which gases count at all.
 
 [Open the Scopes Map →]({{ '/tools/scopes-map.html' | relative_url }})
+
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Farm Carbon Data Checker</h2>
+
+For Northern Ireland farms asked for carbon data by a processor, supermarket, lender or scheme. Pick your enterprises, then mark each record as something you have, can get or are missing. It shows how ready you are for a Scope 1, 2 and 3 report and exactly where to find each missing record, from APHIS and milk statements to your Soil Nutrient Health Scheme results. It checks records only and doesn't calculate emissions. Your answers stay in your browser, and you can copy or download the checklist.
+
+[Open the Farm Carbon Data Checker →]({{ '/tools/farm-data-checker/' | relative_url }}) · Background: [Focus on Agriculture, October 2026]({{ '/blog/focus-on-agriculture-october-2026/' | relative_url }})
 
 <h2 class="tool-h"><img src="{{ '/assets/icons/land-repair-helix.svg' | relative_url }}" alt="" width="48" height="48">The Land Repair Helix</h2>
 

@@ -5,7 +5,7 @@ permalink: /privacy/
 lead: This website does not collect your data. Nothing you type into any tool, quiz or puzzle on this site is sent to me or stored on a server.
 ---
 
-*Last updated: 17 October 2026*
+*Last updated: 19 October 2026*
 
 ## The short version
 
@@ -20,14 +20,15 @@ This website is run by Robert J. Park, an independent environmental, carbon and 
 
 ## What the tools save, and where
 
-Two tools remember your progress so you don't lose it if you close the page:
+Three tools remember your progress so you don't lose it if you close the page:
 
 | Tool | What it remembers | Where it's kept |
 |---|---|---|
 | The Carbon Jigsaw | The figures you enter for each piece | Your browser's local storage, on your device only |
 | The Carbon Crossword | Your filled-in letters and difficulty setting | Your browser's local storage, on your device only |
+| The Farm Carbon Data Checker | Your enterprises, record statuses and notes | Your browser's local storage, on your device only |
 
-This is not a cookie, and it is never sent to me or anyone else. I cannot see it. To delete it, use **Start again** (Carbon Jigsaw) or **Clear** (Crossword), or clear this site's data in your browser settings. A private or incognito window keeps nothing after you close it.
+This is not a cookie, and it is never sent to me or anyone else. I cannot see it. To delete it, use **Start again** (Carbon Jigsaw), **Clear** (Crossword) or **Start my own farm** (Farm Carbon Data Checker), or clear this site's data in your browser settings. A private or incognito window keeps nothing after you close it.
 
 The other tools and guides don't save anything.
 

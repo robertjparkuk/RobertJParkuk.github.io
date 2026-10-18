@@ -25,6 +25,29 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.8.1 — 19 October 2026: agriculture briefing review fixes
+
+**Fixed**
+- Removed `foa-website/`, a duplicate of the uploaded files that would have published a second copy of the briefing, tool and PDF under `/foa-website/`.
+- Both new pages loaded Google Fonts (Poppins), breaking the privacy promise that no page contacts an outside service. They now use the self-hosted Fraunces, Source Sans 3 and Source Serif 4.
+- Briefing page: main navigation (Home, Services, Tools, Blog, Contact) and a Privacy link in the footer.
+- Farm Carbon Data Checker: logo links home like the other tools; Privacy link and "Facts as at" line; leftover `claude:viewport-fit-sides` meta tag removed.
+- Farm Carbon Data Checker wording, to match the GHG Protocol and the Scopes Map: contractor fuel moved to Scope 3; a renewable tariff lowers only market-based Scope 2; exported power cannot be subtracted from Scope 2; land carbon is reported alongside emissions, not netted off.
+
+**Added**
+- `_posts/2026-10-18-focus-on-agriculture-october-2026.md`: a short summary post so the briefing appears in the Blog list, on the home page and in the RSS feed. Its `link:` sends listings straight to the full briefing; `blog/index.html` and `index.html` now honour `post.link`.
+- `tools.md`: Farm Carbon Data Checker entry. `privacy.md`: the checker added to the local storage table.
+
+### v0.8.0 — 18 October 2026: Focus on Agriculture and the Farm Carbon Data Checker
+
+**Added**
+- `blog/focus-on-agriculture-october-2026/index.html`: the October briefing (standalone page, embeds the PDF).
+- `assets/focus-on-agriculture/2026-10/`: five infographics and the 7-page PDF.
+- `tools/farm-data-checker/index.html`: checklist of 24 records for a farm Scope 1, 2 and 3 report, with NI sources, copy and CSV download; saves to local storage.
+- `assets/brand/`: logo and mark as SVG and PNG, colour and reverse.
+
+**Watch:** monthly series. When the custom domain goes live, update the hard-coded canonical and `og:` URLs in both standalone pages.
+
 ### v0.7.1 — 17 October 2026: post dates fix
 
 **Fixed**

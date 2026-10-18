@@ -9,10 +9,7 @@
 <link rel="icon" href="../../assets/brand/mark.svg" type="image/svg+xml">
 <script>window.RJP_ALLOW_DOWNLOAD = true;</script>
 <title>Farm Carbon Data Checker</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
 <style>
 /* Layout: a field-book checklist. Profile strip on top, readiness summary beside a long list of record cards grouped by scope. */
 :root {
@@ -20,8 +17,8 @@
   --brand: #A61C1C; --brand-ink: #FFFFFF; --have: #14806C; --get: #B87300; --miss: #A61C1C;
   --logo-ink: #1A1A1A; --logo-red: #A61C1C; --logo-grey: #555555; --logo-rule: #D9A0A0; --na: #8C8580;
   --chip: #F2EFEC;
-  --display: "Poppins", "Helvetica Neue", Arial, sans-serif;
-  --body: "Poppins", "Helvetica Neue", Arial, sans-serif;
+  --display: "Fraunces", Georgia, serif;
+  --body: "Source Sans 3", system-ui, sans-serif;
   --note: "Source Serif 4", Georgia, serif;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
@@ -86,7 +83,7 @@ button:focus-visible, select:focus-visible, input:focus-visible, label:focus-wit
 .item .where em { font-family: var(--note); font-style: normal; color: var(--ink); }
 .item .unit { font-size: 12px; color: var(--muted); }
 .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 7px; overflow: hidden; align-self: start; flex-wrap: wrap; }
-.seg label { font-size: 12px; padding: 6px 9px; cursor: pointer; border-right: 1px solid var(--line); white-space: nowrap; }
+.seg label { position: relative; font-size: 12px; padding: 6px 9px; cursor: pointer; border-right: 1px solid var(--line); white-space: nowrap; }
 .seg label:last-child { border-right: 0; }
 .seg input { position: absolute; opacity: 0; pointer-events: none; }
 .seg label:has(input:checked)[data-v="have"] { background: var(--have); color: #fff; }
@@ -104,7 +101,7 @@ button:focus-visible, select:focus-visible, input:focus-visible, label:focus-wit
 <body>
 
 <div class="wrap">
-  <div class="brand"><svg class="logo" role="img" aria-label="Robert J. Park: Environment, Carbon, Public Affairs, Northern Ireland" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 120">
+  <div class="brand"><a href="../../" aria-label="Robert J. Park home"><svg class="logo" role="img" aria-label="Robert J. Park: Environment, Carbon, Public Affairs, Northern Ireland" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 120">
 <defs>
 <g>
 <g id="lc-glyph-0-0">
@@ -162,7 +159,7 @@ button:focus-visible, select:focus-visible, input:focus-visible, label:focus-wit
 <use xlink:href="#lc-glyph-0-0" x="350.0719" y="57.000083"/>
 <use xlink:href="#lc-glyph-0-10" x="373.16758" y="57.000083"/>
 </g>
-</svg><span class="tag">Environment · Carbon · Public Affairs · Northern Ireland</span></div>
+</svg></a><span class="tag">Environment · Carbon · Public Affairs · Northern Ireland</span></div>
   <h1>Farm Carbon Data Checker</h1>
   <p class="lede">Before anyone can report your farm’s carbon footprint, someone has to gather the records. Pick your enterprises, then mark each record as something you have, can get, or are missing. You’ll see how ready you are for a Scope 1, 2 and 3 report, and exactly where to find what’s missing in Northern Ireland. This checks your records only; it doesn’t calculate emissions.</p>
 
@@ -202,7 +199,7 @@ button:focus-visible, select:focus-visible, input:focus-visible, label:focus-wit
   <div class="foot">
     <p>Why this matters: in Northern Ireland, livestock methane is about three-quarters of farm emissions, and processors, lenders and supermarkets increasingly ask farms for Scope 1, 2 and 3 data. Most of it already sits in records you keep for other reasons.</p>
     <p>Want help turning these records into a verified carbon inventory? Robert J. Park, Larne, Northern Ireland · LinkedIn: linkedin.com/in/robertparkuk · WhatsApp: @robertjpark. Read the monthly <a href="../../blog/focus-on-agriculture-october-2026/">Focus on Agriculture briefing</a>.</p>
-    <p>Your answers are saved only in this browser on this device. Nothing is sent anywhere.</p>
+    <p>Your answers are saved only in this browser on this device. Nothing is sent anywhere. To clear them, press <strong>Start my own farm</strong>. <a href="../../privacy/">Privacy</a> · Facts as at 18 October 2026.</p>
   </div>
 </div>
 
@@ -212,9 +209,9 @@ button:focus-visible, select:focus-visible, input:focus-visible, label:focus-wit
   var LIVE = ["dairy","beef","sheep","pigs","poultry"];
   var SCOPES = [
     {id:"s1", tag:"SCOPE 1", name:"On the farm", note:"Direct emissions from animals, soils, manure and fuel you burn."},
-    {id:"s2", tag:"SCOPE 2", name:"Energy you buy", note:"Electricity and heat bought in, less what you generate."},
+    {id:"s2", tag:"SCOPE 2", name:"Energy you buy", note:"Electricity and heat bought in. Power you generate and use yourself is never bought, so it never appears here."},
     {id:"s3", tag:"SCOPE 3", name:"What you buy in and send on", note:"Feed, fertiliser, animals and services from suppliers, and what happens after the farm gate."},
-    {id:"land", tag:"LAND", name:"Land, soils and trees", note:"Stores and sinks that can offset part of your emissions."}
+    {id:"land", tag:"LAND", name:"Land, soils and trees", note:"Carbon stored in soils, hedges and trees, reported alongside your emissions rather than subtracted from them."}
   ];
   var ITEMS = [
     {id:"stock", s:"s1", t:"Livestock numbers by class, through the year", why:"Methane from digestion and manure is the largest farm source; it depends on how many animals of each type you keep.", where:"APHIS herd register (cattle), annual sheep inventory, flock and pig records, your June Census return", unit:"Average head by class (e.g. dairy cows, heifers, calves, ewes, sows)", ent:LIVE},
@@ -226,10 +223,10 @@ button:focus-visible, select:focus-visible, input:focus-visible, label:focus-wit
     {id:"diesel", s:"s1", t:"Farm diesel and other road and machine fuel", why:"Burning fuel is a direct emission you control.", where:"Fuel supplier invoices and delivery notes", unit:"Litres of gas oil, diesel and petrol", ent:null},
     {id:"heat", s:"s1", t:"Heating fuels", why:"LPG, kerosene and oil for heating sheds, water and drying are direct emissions.", where:"LPG and oil supplier invoices", unit:"Litres or kg by fuel", ent:["dairy","pigs","poultry","crops"]},
     {id:"fgas", s:"s1", t:"Refrigerant top-ups (milk tank, cold store)", why:"Refrigerant leaks are high-warming gases and are reportable.", where:"F-gas service log kept by your refrigeration engineer", unit:"Refrigerant type and kg added in the year", ent:["dairy","pigs","poultry","crops"]},
-    {id:"contract", s:"s1", t:"Contractor work", why:"Silage, slurry and harvest contractors burn fuel on your land; reports often count it.", where:"Contractor invoices (hours, hectares or litres)", unit:"Hours, hectares or litres by job", ent:null},
+    {id:"contract", s:"s3", t:"Contractor work", why:"Silage, slurry and harvest contractors burn their own fuel on your land. Under the GHG Protocol that is Scope 3, though some farm calculators add it to Scope 1, so say which you used.", where:"Contractor invoices (hours, hectares or litres)", unit:"Hours, hectares or litres by job", ent:null},
     {id:"elec", s:"s2", t:"Electricity used, 12 months of bills", why:"Purchased electricity is Scope 2; milking, cooling, lighting and ventilation add up.", where:"Supplier bills or online account; NIE Networks meter data", unit:"kWh for each meter for the year", ent:null},
-    {id:"tariff", s:"s2", t:"Proof of a renewable electricity tariff", why:"A certified renewable tariff can lower your reported Scope 2 figure.", where:"Supplier fuel-mix statement or REGO evidence", unit:"Tariff name and certificate", ent:null},
-    {id:"gen", s:"s2", t:"Electricity you generate and export", why:"Solar, wind or anaerobic digestion output offsets what you buy.", where:"Inverter or generation meter readings; export statements", unit:"kWh generated and kWh exported", ent:null},
+    {id:"tariff", s:"s2", t:"Proof of a renewable electricity tariff", why:"A certified renewable tariff can lower the market-based Scope 2 figure. The location-based figure, which uses the grid average, stays the same, so reports usually show both.", where:"Supplier fuel-mix statement or REGO evidence", unit:"Tariff name and certificate", ent:null},
+    {id:"gen", s:"s2", t:"Electricity you generate and export", why:"Solar, wind or anaerobic digestion you use on the farm cuts what you buy. Exported power is reported separately and cannot be subtracted from your Scope 2.", where:"Inverter or generation meter readings; export statements", unit:"kWh generated and kWh exported", ent:null},
     {id:"feed", s:"s3", t:"Bought-in feed: tonnes, type and protein", why:"Imported feed carries emissions from growing and transport, especially soya.", where:"Feed merchant invoices and annual statements", unit:"Tonnes by product and % crude protein", ent:LIVE},
     {id:"feedfp", s:"s3", t:"Feed supplier carbon footprint data", why:"A supplier figure is more accurate than a default value.", where:"Ask your feed merchant for product carbon footprints", unit:"kg CO2e per tonne of each feed", ent:LIVE},
     {id:"fertfp", s:"s3", t:"Fertiliser supplier carbon footprint data", why:"How fertiliser was made changes its footprint a lot, and carbon border taxes now apply to it.", where:"Ask your fertiliser merchant for the product footprint or production route", unit:"kg CO2e per tonne of product", ent:["dairy","beef","sheep","crops"]},
