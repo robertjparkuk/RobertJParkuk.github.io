@@ -25,6 +25,21 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.9.0 — 20 October 2026: Dashboards
+
+**Added**
+- `tools/dashboards/ni-agriculture-land-carbon.html`: the NI Agriculture and Land Carbon dashboard, copied from Robert's working dashboard as a fixed snapshot (figures as at 18 October 2026). Self-contained: the ten data tables are inside the page, with no d3 or other outside script, and it uses the self-hosted fonts, so it contacts no third party and stores nothing. A Data and sources section lists every table's source and offers a CSV download for each.
+- `dashboards.md` at `/dashboards/`: index of public dashboards.
+- `_snippets/embed.html`: dashboard links.
+
+**Changed**
+- `tools.md`: Dashboards entry.
+- `blog/focus-on-agriculture-october-2026/index.html`: a second call-out linking the briefing to its dashboard.
+
+**How to add the next dashboard:** export its data and page from the working copy, rebuild it as a single file in `tools/dashboards/`, add it to `dashboards.md`, and keep private research (for example the NI Business Succession Screen) off the site. Refreshing figures means replacing the file; nothing updates by itself on GitHub Pages.
+
+**Watch:** when the custom domain goes live, update the canonical and `og:` URLs in the dashboard as well as the two Focus on Agriculture pages.
+
 ### v0.8.1 — 19 October 2026: agriculture briefing review fixes
 
 **Fixed**
