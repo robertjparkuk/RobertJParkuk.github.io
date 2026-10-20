@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NI Agriculture and Land Carbon dashboard</title>
+<meta name="description" content="Dashboard of Northern Ireland farm and land emissions: agriculture greenhouse gases 1990–2024, livestock methane, soil nutrients, land use, F-gases, mitigation measures and research. By Robert J. Park.">
+<link rel="canonical" href="https://robertjparkuk.github.io/tools/dashboards/ni-agriculture-land-carbon.html">
+<meta property="og:title" content="NI Agriculture and Land Carbon dashboard">
+<meta property="og:description" content="Northern Ireland farm and land emissions, 1990–2024, from official statistics.">
+<meta property="og:url" content="https://robertjparkuk.github.io/tools/dashboards/ni-agriculture-land-carbon.html">
+<meta property="og:image" content="https://robertjparkuk.github.io/assets/og-image.jpg">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+/* Site wrapper and tokens. The dashboard body below keeps its original classes; these tokens map them to the Robert J. Park brand. */
+:root{
+  --color-bg:#FFFFFF; --color-fg:#1B1817; --color-fg-muted:#5F5856; --color-panel:#F6F4F2; --color-border-line:#DDD6D2;
+  --color-ok:#2F7A3B; --color-warn:#B5650F; --color-bad:#B3121B;
+  --cds-chart-grid:#ECE7E4; --cds-chart-muted:#5E6E80; --cds-chart-reference:#8A817D; --cds-chart-status-critical:#B3121B;
+  --font-anthropic-serif:'Fraunces',Georgia,'Times New Roman',serif; --font-anthropic-sans:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+  --cds-font-size-caption:14px; --cds-font-size-body:17px; --cds-font-size-heading:20px; --cds-font-size-title:clamp(28px,4vw,40px); --cds-font-weight-medium:600;
+  --cds-gap-xs:4px; --cds-gap-sm:8px; --cds-gap-md:14px; --cds-gap-lg:20px; --cds-gap-xl:36px;
+  --cds-pad-xs:5px; --cds-pad-sm:8px; --cds-pad-md:12px; --cds-pad-lg:16px; --cds-radius:8px; --cds-dur-slow:.3s;
+  --red:#B3121B; color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --color-bg:#171413; --color-fg:#F1ECE9; --color-fg-muted:#B3AAA6; --color-panel:#221E1D; --color-border-line:#3A3332;
+  --color-ok:#7FC48A; --color-warn:#E9A55A; --color-bad:#F0787C;
+  --cds-chart-grid:#2E2827; --cds-chart-muted:#93A6BA; --cds-chart-reference:#8A817D; --cds-chart-status-critical:#F0787C; --red:#E5484D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --color-bg:#171413; --color-fg:#F1ECE9; --color-fg-muted:#B3AAA6; --color-panel:#221E1D; --color-border-line:#3A3332;
+  --color-ok:#7FC48A; --color-warn:#E9A55A; --color-bad:#F0787C;
+  --cds-chart-grid:#2E2827; --cds-chart-muted:#93A6BA; --cds-chart-reference:#8A817D; --cds-chart-status-critical:#F0787C; --red:#E5484D; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-anthropic-sans);font-size:16px;line-height:1.45;
+  padding:24px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+.site-top{max-width:72rem;margin:0 auto 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-fg-muted);text-decoration:none}
+.brand b{color:var(--red)}
+.site-top nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+.site-top nav a{color:var(--color-fg-muted);text-decoration:none}.site-top nav a:hover{color:var(--red)}
+a{color:var(--red)}
+.k-h2{font-family:var(--font-anthropic-serif);font-weight:600}
+.dash-skeleton{color:var(--color-fg-muted)}
+.src-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:var(--cds-gap-md)}
+.src-list .k-card p{margin:var(--cds-gap-xs) 0;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.src-list ul{margin:var(--cds-gap-xs) 0 var(--cds-gap-sm);padding-left:1.1em;font-size:var(--cds-font-size-caption)}
+.src-list button{font:inherit;font-size:13px;padding:5px 10px;border-radius:6px;border:1px solid var(--color-border-line);background:var(--color-bg);color:var(--color-fg);cursor:pointer}
+.src-list button:hover{border-color:var(--red)}
+.site-foot{max-width:72rem;margin:var(--cds-gap-xl) auto 0;border-top:1px solid var(--color-border-line);padding-top:14px;font-size:14px;color:var(--color-fg-muted)}
+@media print{.site-top nav,.src-list button{display:none}}
+</style>
+</head>
+<body>
+<header class="site-top">
+  <a class="brand" href="/" aria-label="Robert J. Park home"><img src="/assets/tools-mark.svg" alt="" width="30" height="30">Robert J. <b>Park</b> · Dashboards</a>
+  <nav aria-label="Main"><a href="/">Home</a><a href="/services/">Services</a><a href="/tools/">Tools</a><a href="/dashboards/">Dashboards</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></nav>
+</header>
+<main id="dash-root">
+<script>
+/* Data snapshot, copied from Robert J. Park's working dashboard on 20 October 2026. Fixed figures: nothing is fetched. */
+window.DASH_DATA = {"ag_compare":[{"key":"livestock_ch4","source_name":"Livestock methane (enteric fermentation and manure)","gas":"CH4","y1990_kt":3693.4,"y2024_kt":4263.8,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"key":"manure_n2o","source_name":"Manure management nitrous oxide","gas":"N2O","y1990_kt":209.0,"y2024_kt":251.4,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"key":"soils_n2o","source_name":"Agricultural soils nitrous oxide (fertiliser, manure spreading, grazing returns, crop residues)","gas":"N2O","y1990_kt":1056.7,"y2024_kt":941.0,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"key":"liming_urea","source_name":"Liming and urea carbon dioxide","gas":"CO2","y1990_kt":78.8,"y2024_kt":82.4,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"key":"farm_fuel","source_name":"Farm fuel, machinery and heating (all gases)","gas":"CO2/CH4/N2O","y1990_kt":199.4,"y2024_kt":223.4,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"key":"other_ag","source_name":"Other agriculture","gas":"CO2","y1990_kt":1.1,"y2024_kt":0.2,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"}],"ag_series":[{"year":1990,"ag_total_kt":5238.4,"livestock_ch4_kt":3693.4,"manure_n2o_kt":209,"soils_n2o_kt":1056.7,"liming_urea_co2_kt":78.8,"farm_fuel_kt":199.4,"ni_ch4_kt":5897,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":1995,"ag_total_kt":5700.3,"livestock_ch4_kt":3921.2,"manure_n2o_kt":233.4,"soils_n2o_kt":1258.3,"liming_urea_co2_kt":82.1,"farm_fuel_kt":204.1,"ni_ch4_kt":6301.6,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":1998,"ag_total_kt":5857.1,"livestock_ch4_kt":4167.2,"manure_n2o_kt":238.2,"soils_n2o_kt":1175.4,"liming_urea_co2_kt":68.3,"farm_fuel_kt":207.2,"ni_ch4_kt":6676.5,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":1999,"ag_total_kt":5790,"livestock_ch4_kt":4046.6,"manure_n2o_kt":226.6,"soils_n2o_kt":1212.1,"liming_urea_co2_kt":80.2,"farm_fuel_kt":223.6,"ni_ch4_kt":6584.3,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2000,"ag_total_kt":5623.3,"livestock_ch4_kt":3964.1,"manure_n2o_kt":217.7,"soils_n2o_kt":1156.9,"liming_urea_co2_kt":64.1,"farm_fuel_kt":219.8,"ni_ch4_kt":6513.6,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2001,"ag_total_kt":5622.9,"livestock_ch4_kt":4017.1,"manure_n2o_kt":221.5,"soils_n2o_kt":1114.9,"liming_urea_co2_kt":51.1,"farm_fuel_kt":217.8,"ni_ch4_kt":6567.6,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2002,"ag_total_kt":5606.6,"livestock_ch4_kt":4001.3,"manure_n2o_kt":227.9,"soils_n2o_kt":1104.1,"liming_urea_co2_kt":35.3,"farm_fuel_kt":237.4,"ni_ch4_kt":6569.9,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2003,"ag_total_kt":5649.8,"livestock_ch4_kt":3999.5,"manure_n2o_kt":233.8,"soils_n2o_kt":1121,"liming_urea_co2_kt":50.1,"farm_fuel_kt":244.3,"ni_ch4_kt":6563.4,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2004,"ag_total_kt":5636.8,"livestock_ch4_kt":3993.1,"manure_n2o_kt":235.3,"soils_n2o_kt":1066.7,"liming_urea_co2_kt":74,"farm_fuel_kt":266.8,"ni_ch4_kt":6541.3,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2005,"ag_total_kt":5709.4,"livestock_ch4_kt":4085.8,"manure_n2o_kt":238.1,"soils_n2o_kt":1014.8,"liming_urea_co2_kt":90.6,"farm_fuel_kt":279.9,"ni_ch4_kt":6616.4,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2006,"ag_total_kt":5598.5,"livestock_ch4_kt":4029.2,"manure_n2o_kt":232.5,"soils_n2o_kt":983.6,"liming_urea_co2_kt":75.2,"farm_fuel_kt":277.7,"ni_ch4_kt":6538,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2007,"ag_total_kt":5527.8,"livestock_ch4_kt":4012,"manure_n2o_kt":231.1,"soils_n2o_kt":938.6,"liming_urea_co2_kt":68.2,"farm_fuel_kt":277.6,"ni_ch4_kt":6493.5,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2008,"ag_total_kt":5403.4,"livestock_ch4_kt":3906.4,"manure_n2o_kt":226.5,"soils_n2o_kt":875.9,"liming_urea_co2_kt":71.2,"farm_fuel_kt":323.2,"ni_ch4_kt":6337.3,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2009,"ag_total_kt":5364.7,"livestock_ch4_kt":3851.4,"manure_n2o_kt":227,"soils_n2o_kt":892.8,"liming_urea_co2_kt":74.5,"farm_fuel_kt":318.8,"ni_ch4_kt":6051.9,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2010,"ag_total_kt":5460.8,"livestock_ch4_kt":3896.3,"manure_n2o_kt":228.7,"soils_n2o_kt":933.7,"liming_urea_co2_kt":72,"farm_fuel_kt":329.8,"ni_ch4_kt":5767.9,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2011,"ag_total_kt":5432.6,"livestock_ch4_kt":3919.3,"manure_n2o_kt":228.8,"soils_n2o_kt":916.7,"liming_urea_co2_kt":75.3,"farm_fuel_kt":292.2,"ni_ch4_kt":5724.9,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2012,"ag_total_kt":5567.5,"livestock_ch4_kt":4005.7,"manure_n2o_kt":235.2,"soils_n2o_kt":919.9,"liming_urea_co2_kt":65.1,"farm_fuel_kt":341.3,"ni_ch4_kt":5740.7,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2013,"ag_total_kt":5533,"livestock_ch4_kt":3917.4,"manure_n2o_kt":231.4,"soils_n2o_kt":988.9,"liming_urea_co2_kt":58.4,"farm_fuel_kt":336.6,"ni_ch4_kt":5525.5,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2014,"ag_total_kt":5521.7,"livestock_ch4_kt":4012.8,"manure_n2o_kt":231.7,"soils_n2o_kt":950.2,"liming_urea_co2_kt":53.4,"farm_fuel_kt":273.4,"ni_ch4_kt":5236.9,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2015,"ag_total_kt":5693.8,"livestock_ch4_kt":4112.5,"manure_n2o_kt":238.9,"soils_n2o_kt":938,"liming_urea_co2_kt":60.5,"farm_fuel_kt":343.6,"ni_ch4_kt":5451.9,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2016,"ag_total_kt":5761.1,"livestock_ch4_kt":4186,"manure_n2o_kt":246.9,"soils_n2o_kt":938.9,"liming_urea_co2_kt":59.3,"farm_fuel_kt":329.8,"ni_ch4_kt":5480.2,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2017,"ag_total_kt":5832.7,"livestock_ch4_kt":4223.2,"manure_n2o_kt":247.5,"soils_n2o_kt":983,"liming_urea_co2_kt":58,"farm_fuel_kt":320.8,"ni_ch4_kt":5438.2,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2018,"ag_total_kt":5685,"livestock_ch4_kt":4127.9,"manure_n2o_kt":243.2,"soils_n2o_kt":1004.2,"liming_urea_co2_kt":64,"farm_fuel_kt":245.5,"ni_ch4_kt":5437.3,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2019,"ag_total_kt":5684.1,"livestock_ch4_kt":4155.2,"manure_n2o_kt":243.8,"soils_n2o_kt":947.1,"liming_urea_co2_kt":75,"farm_fuel_kt":262.8,"ni_ch4_kt":5452.1,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2020,"ag_total_kt":5724.3,"livestock_ch4_kt":4181.5,"manure_n2o_kt":247.2,"soils_n2o_kt":980.5,"liming_urea_co2_kt":74.5,"farm_fuel_kt":240.5,"ni_ch4_kt":5464.9,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2021,"ag_total_kt":5892.8,"livestock_ch4_kt":4346.7,"manure_n2o_kt":255.4,"soils_n2o_kt":978.6,"liming_urea_co2_kt":80.1,"farm_fuel_kt":231.6,"ni_ch4_kt":5608.5,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2022,"ag_total_kt":5722.7,"livestock_ch4_kt":4349,"manure_n2o_kt":252.8,"soils_n2o_kt":857.4,"liming_urea_co2_kt":81.7,"farm_fuel_kt":181.5,"ni_ch4_kt":5556,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2023,"ag_total_kt":5711.4,"livestock_ch4_kt":4283,"manure_n2o_kt":252.4,"soils_n2o_kt":885.8,"liming_urea_co2_kt":89.7,"farm_fuel_kt":200.3,"ni_ch4_kt":5450.8,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"year":2024,"ag_total_kt":5762.2,"livestock_ch4_kt":4263.8,"manure_n2o_kt":251.4,"soils_n2o_kt":941,"liming_urea_co2_kt":82.4,"farm_fuel_kt":223.4,"ni_ch4_kt":5413.7,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"}],"fgas":[{"key":"hfcs","group":"gas","label":"HFCs","y1995_kt":18.6,"y2024_kt":166.3,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk; F-gas base year is 1995"},{"key":"pfcs","group":"gas","label":"PFCs","y1995_kt":0.8,"y2024_kt":0.0,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk; F-gas base year is 1995"},{"key":"sf6","group":"gas","label":"SF6","y1995_kt":3.4,"y2024_kt":6.4,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk; F-gas base year is 1995"},{"key":"nf3","group":"gas","label":"NF3","y1995_kt":0.0,"y2024_kt":0.0,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk; F-gas base year is 1995"},{"key":"buildings","group":"sector","label":"Buildings and product uses (incl. refrigeration, air conditioning)","y1995_kt":16.9,"y2024_kt":113.1,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk; F-gas base year is 1995"},{"key":"transport","group":"sector","label":"Transport (vehicle air conditioning, refrigerated transport)","y1995_kt":1.2,"y2024_kt":40.4,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk; F-gas base year is 1995"},{"key":"industry","group":"sector","label":"Industry (incl. switchgear SF6)","y1995_kt":4.6,"y2024_kt":19.2,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk; F-gas base year is 1995"}],"indicators":[{"key":"milk_1990","label":"Milk emissions intensity 1990 (g CO2e per kg ECM)","value":1927,"source":"DAERA NI Carbon Intensity Indicators 2024"},{"key":"milk_2021","label":"Milk emissions intensity 2021 (g CO2e per kg ECM)","value":1214,"source":"DAERA NI Carbon Intensity Indicators 2024"},{"key":"enduser_total","label":"NI end-user emissions 2024 (MtCO2e)","value":18.5,"source":"DAERA/NISRA NI GHG statistical bulletin 1990-2024 (published 9 Jun 2026)"},{"key":"enduser_ag_share","label":"Agriculture share of end-user emissions 2024 (%)","value":31.4,"source":"DAERA/NISRA NI GHG statistical bulletin 1990-2024 (published 9 Jun 2026)"},{"key":"mfg_fert_change","label":"Change in manufactured-fertiliser emissions 2023-24 (%)","value":16.9,"source":"DAERA/NISRA NI GHG statistical bulletin 1990-2024 (published 9 Jun 2026)"},{"key":"fert_lime_spend","label":"Fertiliser and lime spend 2025 (£m)","value":133,"source":"DAERA Agricultural incomes 2025"},{"key":"fert_volume_change","label":"Fertiliser volume purchased, change 2024-25 (%)","value":20,"source":"DAERA Agricultural incomes 2025"},{"key":"fert_cost_change","label":"Fertiliser cost, change 2024-25 (%)","value":33,"source":"DAERA Agricultural incomes 2025"},{"key":"snhs_fields","label":"Fields soil-tested under SNHS by June 2026","value":540000,"source":"AFBI Soil Nutrient Health Scheme"},{"key":"snhs_funding","label":"SNHS funding (£m)","value":45,"source":"AFBI Soil Nutrient Health Scheme"},{"key":"forest_target","label":"New woodland target by 2030 (ha)","value":9000,"source":"Agriland, 10 Apr 2026 (Forests for Our Future)"},{"key":"forest_done","label":"New woodland created by end 2025 (ha)","value":2016,"source":"Agriland, 10 Apr 2026 (Forests for Our Future)"},{"key":"peat_target","label":"Degraded peatland to restore by 2050 (ha)","value":150000,"source":"DAERA Peatland Strategy Delivery Plan, Apr 2026"},{"key":"peat_recovery","label":"Peatland on road to recovery under current funding (ha)","value":4500,"source":"DAERA Peatland Strategy Delivery Plan, Apr 2026"},{"key":"farmed_area","label":"Farmed area 2025 (ha)","value":1032296,"source":"DAERA June Agricultural Census 2025"}],"land":[{"key":"Peatland","item":"Peatland (drained and degraded)","y1990_kt":2475.0,"y2024_kt":2305.9,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"key":"Cropland","item":"Cropland mineral soils change","y1990_kt":918.5,"y2024_kt":845.0,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"key":"Grassland","item":"Grassland mineral soils change","y1990_kt":-1103.6,"y2024_kt":-1128.9,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"key":"Forestry","item":"Forestry","y1990_kt":-502.1,"y2024_kt":-585.1,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"key":"Settlement","item":"Settlement","y1990_kt":806.5,"y2024_kt":679.6,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"key":"Other","item":"Other LULUCF incl. bioenergy crops","y1990_kt":27.6,"y2024_kt":27.8,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"key":"Total","item":"LULUCF total (net source)","y1990_kt":2621.9,"y2024_kt":2144.4,"source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"}],"livestock":[{"type":"Total cattle","y1995_head":1699100,"y2025_head":1647256,"source":"Irish Almanac and Yearbook of Statistics 2000 via CAIN (Ulster University); nearest year to 1990 available; DAERA June Agricultural Census 2025"},{"type":"Sheep","y1995_head":2753600,"y2025_head":1819386,"source":"Irish Almanac and Yearbook of Statistics 2000 via CAIN (Ulster University); nearest year to 1990 available; DAERA June Agricultural Census 2025"},{"type":"Pigs","y1995_head":564200,"y2025_head":744858,"source":"Irish Almanac and Yearbook of Statistics 2000 via CAIN (Ulster University); nearest year to 1990 available; DAERA June Agricultural Census 2025"},{"type":"Poultry","y1995_head":16003300,"y2025_head":25800000,"source":"Irish Almanac and Yearbook of Statistics 2000 via CAIN (Ulster University); nearest year to 1990 available; DAERA June Agricultural Census 2025; 2025 poultry figure is approximate"},{"type":"Dairy cows","y1995_head":null,"y2025_head":330673,"source":"DAERA June Agricultural Census 2025"},{"type":"Beef cows","y1995_head":null,"y2025_head":213744,"source":"DAERA June Agricultural Census 2025"}],"measures":[{"measure":"Feed additives that block methane (e.g. 3-NOP)","area":"Livestock methane","how":"Inhibit methane-forming microbes in the rumen","evidence":"Teagasc trials on dairy-cross beef cattle: 25-30% less methane; needs daily feeding, so hard in grazing systems; social licence questioned in 2024-25","ni_vehicle":"Trials to run at AFBI Ruminant Emissions Research Facility from 2028","source":"See research and programme sources"},{"measure":"Earlier finishing of beef cattle","area":"Livestock methane","how":"Fewer days on farm per animal means less lifetime methane","evidence":"Policy logic accepted; scheme target slaughter age 26 months","ni_vehicle":"Beef Carbon Reduction Scheme (opened 2024)","source":"See research and programme sources"},{"measure":"Suckler herd efficiency","area":"Livestock methane","how":"Younger first calving and tighter calving interval reduce unproductive animal-days","evidence":"Lower footprint per kg of beef","ni_vehicle":"Suckler Cow Scheme (opened April 2025)","source":"See research and programme sources"},{"measure":"Breeding for lower emissions","area":"Livestock methane","how":"Select animals that emit less per unit of output","evidence":"Under research; inventory needs measured factors","ni_vehicle":"AFBI Ruminant Emissions Research Facility (genetic approaches)","source":"See research and programme sources"},{"measure":"Precision nutrient management","area":"Fertiliser N2O","how":"Apply only the lime, N and P each field needs","evidence":"Field-level recommendations for over 90% of actively managed fields","ni_vehicle":"Soil Nutrient Health Scheme and CAFRE nutrient plans","source":"See research and programme sources"},{"measure":"Clover and multispecies swards","area":"Fertiliser N2O","how":"Legumes fix nitrogen, cutting manufactured fertiliser","evidence":"Lower fertiliser N demand on grassland","ni_vehicle":"Farming with Nature Scheme (mixed swards cited)","source":"See research and programme sources"},{"measure":"Protected urea and low-emission slurry spreading","area":"Fertiliser N2O and ammonia","how":"Cut nitrogen lost as ammonia and nitrous oxide","evidence":"Reduces ammonia; supports Ammonia Strategy","ni_vehicle":"Nutrients Action Programme; Ammonia Strategy","source":"See research and programme sources"},{"measure":"Peatland rewetting and restoration","area":"Land carbon","how":"Stop oxidation of drained peat, the largest LULUCF source","evidence":"Peatland is 2.3 MtCO2e a year in 2024","ni_vehicle":"NI Peatland Strategy 2040; PEAT+ (€19.2m)","source":"See research and programme sources"},{"measure":"Woodland, hedgerows and agroforestry","area":"Land carbon","how":"Sequester carbon in trees and soils","evidence":"Forestry sink 0.59 MtCO2e in 2024","ni_vehicle":"Forests for Our Future (9,000 ha by 2030)","source":"See research and programme sources"},{"measure":"Low-GWP refrigerants for milk cooling and cold stores","area":"F-gases","how":"Replace high-GWP HFCs at end of life","evidence":"HFCs are the dominant NI F-gas","ni_vehicle":"EU F-gas Regulation 2024/573 (applies in NI under the Windsor Framework)","source":"See research and programme sources"},{"measure":"On-farm renewables and anaerobic digestion","area":"Energy and manure","how":"Replace fossil energy; capture methane from slurry","evidence":"Reduces farm fuel and manure emissions","ni_vehicle":"Renewable electricity target 80% by 2030","source":"See research and programme sources"}],"nutrients":[{"year":1991,"n_input":166.8,"n_output":27.59,"n_surplus":139.22,"p_input":22.37,"p_output":6.05,"p_surplus":16.32,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":1992,"n_input":169.26,"n_output":27.6,"n_surplus":141.65,"p_input":22.19,"p_output":6.07,"p_surplus":16.12,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":1993,"n_input":178.34,"n_output":27.86,"n_surplus":150.47,"p_input":22.92,"p_output":6.14,"p_surplus":16.78,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":1994,"n_input":189.44,"n_output":29.07,"n_surplus":160.37,"p_input":24.28,"p_output":6.37,"p_surplus":17.91,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":1995,"n_input":196.01,"n_output":31.15,"n_surplus":164.87,"p_input":25.25,"p_output":6.8,"p_surplus":18.45,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":1996,"n_input":190.99,"n_output":32.31,"n_surplus":158.68,"p_input":24.82,"p_output":7.01,"p_surplus":17.81,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":1997,"n_input":182.75,"n_output":32.52,"n_surplus":150.23,"p_input":23.35,"p_output":7.06,"p_surplus":16.29,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":1998,"n_input":180.34,"n_output":31.91,"n_surplus":148.43,"p_input":22.52,"p_output":6.92,"p_surplus":15.6,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":1999,"n_input":180.91,"n_output":31.78,"n_surplus":149.13,"p_input":22.36,"p_output":6.9,"p_surplus":15.46,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2000,"n_input":178.81,"n_output":31.44,"n_surplus":147.37,"p_input":22.38,"p_output":6.81,"p_surplus":15.57,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2001,"n_input":175.42,"n_output":31.61,"n_surplus":143.81,"p_input":22.43,"p_output":6.85,"p_surplus":15.58,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2002,"n_input":176.52,"n_output":31.65,"n_surplus":144.87,"p_input":23.24,"p_output":6.88,"p_surplus":16.36,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2003,"n_input":178.7,"n_output":32.41,"n_surplus":146.28,"p_input":23.44,"p_output":7.09,"p_surplus":16.35,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2004,"n_input":176.61,"n_output":33.39,"n_surplus":143.21,"p_input":23.08,"p_output":7.33,"p_surplus":15.74,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2005,"n_input":170.32,"n_output":34.35,"n_surplus":135.97,"p_input":22.05,"p_output":7.55,"p_surplus":14.5,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2006,"n_input":165.62,"n_output":35.18,"n_surplus":130.44,"p_input":20.84,"p_output":7.74,"p_surplus":13.1,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2007,"n_input":161.83,"n_output":35.45,"n_surplus":126.37,"p_input":18.99,"p_output":7.78,"p_surplus":11.22,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2008,"n_input":153.98,"n_output":35.59,"n_surplus":118.39,"p_input":17.08,"p_output":7.79,"p_surplus":9.29,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2009,"n_input":158.72,"n_output":35.85,"n_surplus":122.87,"p_input":16.78,"p_output":7.81,"p_surplus":8.97,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2010,"n_input":157.05,"n_output":36.74,"n_surplus":120.31,"p_input":16.85,"p_output":7.97,"p_surplus":8.88,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2011,"n_input":165.28,"n_output":37.74,"n_surplus":127.55,"p_input":17.53,"p_output":8.17,"p_surplus":9.36,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2012,"n_input":167.36,"n_output":38.09,"n_surplus":129.27,"p_input":18.12,"p_output":8.25,"p_surplus":9.88,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2013,"n_input":171.24,"n_output":38.59,"n_surplus":132.65,"p_input":18.91,"p_output":8.34,"p_surplus":10.57,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2014,"n_input":169.89,"n_output":39.53,"n_surplus":130.37,"p_input":19.01,"p_output":8.5,"p_surplus":10.52,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2015,"n_input":166.03,"n_output":40.6,"n_surplus":125.43,"p_input":18.4,"p_output":8.71,"p_surplus":9.69,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2016,"n_input":174.36,"n_output":41.4,"n_surplus":132.96,"p_input":18.76,"p_output":8.89,"p_surplus":9.87,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2017,"n_input":182.59,"n_output":42.07,"n_surplus":140.52,"p_input":19.64,"p_output":9.07,"p_surplus":10.57,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2018,"n_input":185.2,"n_output":42.74,"n_surplus":142.46,"p_input":20.23,"p_output":9.19,"p_surplus":11.04,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2019,"n_input":184.6,"n_output":43.12,"n_surplus":141.47,"p_input":20.12,"p_output":9.25,"p_surplus":10.88,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2020,"n_input":182.7,"n_output":43.7,"n_surplus":139.0,"p_input":19.57,"p_output":9.34,"p_surplus":10.23,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2021,"n_input":179.64,"n_output":44.37,"n_surplus":135.27,"p_input":18.94,"p_output":9.48,"p_surplus":9.46,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2022,"n_input":170.73,"n_output":44.91,"n_surplus":125.83,"p_input":18.25,"p_output":9.6,"p_surplus":8.65,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2023,"n_input":170.84,"n_output":45.52,"n_surplus":125.32,"p_input":18.52,"p_output":9.75,"p_surplus":8.77,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"},{"year":2024,"n_input":183.22,"n_output":46.41,"n_surplus":136.81,"p_input":19.67,"p_output":9.89,"p_surplus":9.78,"source":"DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"}],"research":[{"programme":"Ruminant Emissions Research Facility","lead":"AFBI, Hillsborough (DAERA funded)","area":"Agriculture","what":"Measures methane and ammonia from cattle; tests diets, slurry additives, flooring, genetics and combined measures","status":"Construction 2026, completion early summer 2027, trials from 2028","source":"AFBI news, 6 Feb 2026"},{"programme":"Soil Nutrient Health Scheme","lead":"AFBI with DAERA (£45m)","area":"Agriculture and soils","what":"Baseline soil sampling with farm carbon estimates for soils and hedgerows","status":"Over 540,000 fields tested by June 2026; final registration Aug-Sep 2026","source":"AFBI SNHS pages"},{"programme":"ARCZero","lead":"Queen's University Belfast with AgriSearch, Devenish and partners","area":"Agriculture","what":"Whole-farm carbon audits on seven NI farms, counting hedges, trees and soils","status":"Two of seven farms net negative in 2021 audit; re-audit 2023","source":"Farmers Weekly, 25 Oct 2023"},{"programme":"NI Peatland Strategy 2040 and Delivery Plan","lead":"DAERA","area":"Peatlands","what":"Asset register, peat sale restrictions, restoration sites","status":"Strategy Sept 2025; first Delivery Plan 22 Apr 2026 to Dec 2027; 150,000 ha by 2050","source":"DAERA / NIEL, Apr 2026"},{"programme":"PEAT+","lead":"Ulster Wildlife with councils, ATU Donegal, Crichton Carbon Centre (PEACEPLUS, €19.2m)","area":"Peatlands","what":"Cross-border restoration of 19 priority peatland sites","status":"Launched 2 Feb 2026; three years","source":"ABC Council, 3 Feb 2026"},{"programme":"Forests for Our Future","lead":"DAERA","area":"Forestry","what":"18 million trees and 9,000 ha of new woodland by 2030","status":"2,016 ha created by end 2025 (under 25% of target)","source":"Agriland, 10 Apr 2026"},{"programme":"Methane-inhibiting feed additives","lead":"Teagasc (cross-border evidence base)","area":"Agriculture","what":"3-NOP, oils, seaweed, slow-release formulations for grazing systems","status":"3-NOP cut methane 25-30% in beef trials","source":"AFBI Science Outlook 2022, via Irish Farmers Journal"},{"programme":"Sustainable Agriculture Programme","lead":"DAERA","area":"Agriculture","what":"Beef Carbon Reduction, Suckler Cow, Farming with Nature and Knowledge Transfer schemes","status":"Rolling out 2024-2026; Farm Sustainability Payment due 2026","source":"Farmers Weekly, Apr 2025"}],"scopes":[{"key":"s1_livestock","scope":"Scope 1","item":"Livestock methane and manure N2O","y1990_kt":3902.4,"y2024_kt":4515.2,"basis":"Inventory","source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"key":"s1_soils","scope":"Scope 1","item":"Soils N2O plus liming and urea CO2","y1990_kt":1135.5,"y2024_kt":1023.4,"basis":"Inventory","source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"key":"s1_fuel","scope":"Scope 1","item":"Farm fuel, machinery, heating","y1990_kt":199.4,"y2024_kt":223.4,"basis":"Inventory","source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"},{"key":"s1_other","scope":"Scope 1","item":"Other agriculture","y1990_kt":1.1,"y2024_kt":0.2,"basis":"Inventory","source":"DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"}]};
+window.DASH_META = {"ag_compare":{"title":"Farm sources 1990 and 2024","description":"Agriculture emission sources by gas, 1990 and 2024, from the NI GHG inventory.","updated":"2026-10-18","sources":["DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"]},"ag_series":{"title":"NI agriculture emissions by year","description":"Agriculture total, livestock methane, manure N2O, soils N2O, liming/urea CO2 and farm fuel emissions, plus NI methane, 1990-2024 (NI GHG inventory, data updated 11 Aug 2026).","updated":"2026-10-18","sources":["DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"]},"fgas":{"title":"NI F-gases 1995 and 2024","description":"NI fluorinated gas emissions by gas and by sector, 1995 (F-gas base year) and 2024, from the NI GHG inventory.","updated":"2026-10-18","sources":["DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk; F-gas base year is 1995"]},"indicators":{"title":"Agriculture context indicators","description":"Milk carbon intensity, end-user emissions, fertiliser spend and volume, soil scheme, woodland and peatland figures, each with its source.","updated":"2026-10-18","sources":["DAERA NI Carbon Intensity Indicators 2024","DAERA/NISRA NI GHG statistical bulletin 1990-2024 (published 9 Jun 2026)","DAERA Agricultural incomes 2025","AFBI Soil Nutrient Health Scheme","Agriland, 10 Apr 2026 (Forests for Our Future)","DAERA Peatland Strategy Delivery Plan, Apr 2026","DAERA June Agricultural Census 2025"]},"land":{"title":"NI land use emissions","description":"LULUCF subsectors for NI, 1990 and 2024, from the NI GHG inventory.","updated":"2026-10-18","sources":["DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"]},"livestock":{"title":"NI livestock numbers","description":"Livestock head in 1995 (Irish Almanac via CAIN) and June 2025 (DAERA Agricultural Census).","updated":"2026-10-18","sources":["Irish Almanac and Yearbook of Statistics 2000 via CAIN (Ulster University); nearest year to 1990 available; DAERA June Agricultural Census 2025","Irish Almanac and Yearbook of Statistics 2000 via CAIN (Ulster University); nearest year to 1990 available; DAERA June Agricultural Census 2025; 2025 poultry figure is approximate","DAERA June Agricultural Census 2025"]},"measures":{"title":"Mitigation measures","description":"Measures to cut farm emissions and store land carbon, with evidence and NI delivery route.","updated":"2026-10-18","sources":["See research and programme sources"]},"nutrients":{"title":"NI soil nutrient balance","description":"Nitrogen and phosphorus inputs and outputs per hectare, 3-year averages 1991-2024 (DAERA, published 28 Sep 2026). Inputs are not split by type.","updated":"2026-10-18","sources":["DAERA, Soil Nutrient Balances for NI Agriculture 1991-2024 (3-year averages; published 28 Sep 2026)"]},"research":{"title":"Research and programmes","description":"Active NI research and programmes on agriculture, soils, forestry and peatland, with leads, status and sources.","updated":"2026-10-18","sources":["AFBI news, 6 Feb 2026","AFBI SNHS pages","Farmers Weekly, 25 Oct 2023","DAERA / NIEL, Apr 2026","ABC Council, 3 Feb 2026","Agriland, 10 Apr 2026","AFBI Science Outlook 2022, via Irish Farmers Journal","Farmers Weekly, Apr 2025"]},"scopes":{"title":"Agriculture Scope 1 split","description":"Scope 1 farm emissions grouped for the scope diagram, 1990 and 2024, from the NI GHG inventory.","updated":"2026-10-18","sources":["DAERA/NISRA NI GHG inventory 1990-2024 (data updated 11 Aug 2026), via explore.nisra.gov.uk"]}};
+/* Minimal stand-ins for the two d3 helpers and the dashboard API the page uses. */
+(function(){
+  function fmtNum(spec){
+    var m = /^(,)?(?:\.(\d+))?f?$/.exec(spec); var comma = m && m[1], dp = m && m[2] != null ? +m[2] : null;
+    return function(v){ v = +v; if (!isFinite(v)) return String(v); if (dp == null) v = +v.toPrecision(12);
+      var o = dp == null ? {maximumFractionDigits: 20} : {minimumFractionDigits: dp, maximumFractionDigits: dp};
+      o.useGrouping = !!comma; return v.toLocaleString('en-GB', o).replace('-', '\u2212'); };
+  }
+  window.d3 = { format: fmtNum, max: function(a, f){ var m; a.forEach(function(r){ var v = f ? f(r) : r; if (v != null && !isNaN(v) && (m === undefined || v > m)) m = +v; }); return m; } };
+  var calcs = {}, cache = {}, subs = [];
+  function get(id){
+    if (cache[id]) return cache[id];
+    if (DASH_DATA[id]) return cache[id] = DASH_DATA[id];
+    var c = calcs[id]; if (!c) return null;
+    var args = c.inputs.map(get); if (args.some(function(a){ return !a; })) return null;
+    try { return cache[id] = c.fn.apply(null, args); } catch (e) { console.error('Calc ' + id, e); return null; }
+  }
+  window.dash = {
+    colors: ['var(--cds-chart-muted)', 'var(--cds-chart-status-critical)', 'var(--color-warn)', 'var(--color-ok)', '#7A5BA6', '#2D6CA3', '#8A817D', '#C28A2C'],
+    calc: function(id, spec){ calcs[id] = spec; },
+    loader: function(){},
+    data: function(id){ var d = get(id); return d ? {status: 'ok', data: d, columns: d[0] ? Object.keys(d[0]) : [], refreshing: false, meta: []} : {status: 'missing', data: [], refreshing: false, meta: []}; },
+    onData: function(fn){ subs.push(fn); var run = function(){ try { fn(); } catch (e) { console.error(e); } };
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run); else run();
+      var t; window.addEventListener('resize', function(){ clearTimeout(t); t = setTimeout(run, 150); }); },
+    params: function(){ return {}; }, setParams: function(){}, resetParams: function(){}, refresh: function(){}, setLink: function(){}
+  };
+})();
+</script>
+<style>.k-wrap { max-width: 72rem; margin-inline: auto; font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+.k-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0 0 var(--cds-gap-xs); }
+.k-head p { color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-lg); font-size: var(--cds-font-size-body); max-width: 60rem; }
+.k-h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: var(--cds-gap-xl) 0 var(--cds-gap-sm); }
+.k-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: var(--cds-gap-md); }
+.k-tile, .k-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); }
+.k-tile .k-lab { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.k-tile .k-big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin: var(--cds-gap-xs) 0; min-height: 1.3em; }
+.k-tile .k-sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.k-good { color: var(--color-ok); } .k-bad { color: var(--color-bad); }
+.k-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.k-card h3 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.k-card .k-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); }
+.k-bars { display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-height: 4rem; }
+.k-bar-row { display: grid; grid-template-columns: minmax(6rem, 38%) 1fr auto; align-items: center; gap: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); }
+.k-bar-label { color: var(--color-fg); overflow-wrap: anywhere; }
+.k-bar-track { height: 14px; background: var(--cds-chart-grid); border-radius: 7px; overflow: hidden; }
+.k-bar { display: block; height: 100%; background: var(--cds-chart-muted); border-radius: 7px; }
+.k-bar.k-accent { background: var(--cds-chart-status-critical); }
+.k-bars.k-blue .k-bar { background: var(--cds-chart-muted); }
+.k-bar-val { font-variant-numeric: tabular-nums; min-width: 4.5rem; text-align: right; color: var(--color-fg); }
+.k-tablebox { max-height: 34rem; overflow: auto; }
+.k-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); }
+.k-table th { position: sticky; top: 0; background: var(--color-panel); text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.k-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.k-table td.k-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.k-fail { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); min-height: 4rem; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.k-dot { width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+.k-callout { border-left: 3px solid var(--cds-chart-reference); padding: var(--cds-pad-sm) var(--cds-pad-md); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin-top: var(--cds-gap-md); }
+.k-foot { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin-top: var(--cds-gap-xl); }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+
+.sc-flow { display: grid; grid-template-columns: 1fr auto 1.3fr auto 1fr; gap: var(--cds-gap-sm); align-items: stretch; }
+@media (max-width: 900px) { .sc-flow { grid-template-columns: 1fr; } .sc-arrow { transform: rotate(90deg); justify-self: center; } }
+.sc-mid { display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+.sc-box { border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); background: var(--color-bg); }
+.sc-box h4 { margin: 2px 0 var(--cds-gap-sm); font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); }
+.sc-tag { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-transform: uppercase; letter-spacing: .04em; }
+.sc-1 { border-left: 4px solid var(--cds-chart-status-critical); }
+.sc-2 { border-left: 4px solid var(--color-warn); }
+.sc-3 { border-left: 4px solid var(--cds-chart-muted); }
+.sc-land { border-left: 4px solid var(--color-ok); }
+.sc-row { display: flex; justify-content: space-between; gap: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); padding: 3px 0; border-bottom: 1px dashed var(--color-border-line); }
+.sc-row:last-child { border-bottom: 0; }
+.sc-total { font-weight: var(--cds-font-weight-medium); }
+.sc-v { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sc-na { color: var(--color-fg-muted); font-style: italic; text-align: right; }
+.sc-arrow { align-self: center; font-size: 1.6rem; color: var(--color-fg-muted); }
+</style>
+<div class="k-wrap">
+<header class="k-head"><h1>NI agriculture and land carbon</h1>
+<p>Farming emitted <b class="dash-skeleton " data-source="ag_kpis" data-field="total_2024_mt" data-fmt="mt">—</b> CO2e in 2024, <b class="dash-skeleton " data-source="ag_kpis" data-field="change_pct" data-fmt="spct1">—</b> on 1990, while NI as a whole has cut emissions by almost a third. Livestock methane alone is <b class="dash-skeleton " data-source="ag_kpis" data-field="methane_share_pct" data-fmt="pct0">—</b> of all NI methane. Output per animal has become much cleaner (milk carbon intensity is down <b class="dash-skeleton " data-source="milk_c" data-field="cut_pct" data-fmt="pct0">—</b>), but herd size and fertiliser use decide the total.</p></header>
+<div class="k-tiles">
+<div class="k-tile"><div class="k-lab">Agriculture emissions, 2024</div><div class="k-big dash-skeleton" data-source="ag_kpis" data-field="total_2024_mt" data-fmt="mt" >—</div><div class="k-sub">MtCO2e, by source</div></div>
+<div class="k-tile"><div class="k-lab">Change since 1990</div><div class="k-big dash-skeleton" data-source="ag_kpis" data-field="change_pct" data-fmt="spct1" data-tone="down">—</div><div class="k-sub">NI total fell about 29% over the same period</div></div>
+<div class="k-tile"><div class="k-lab">Livestock methane, 2024</div><div class="k-big dash-skeleton" data-source="ag_kpis" data-field="livestock_ch4_mt" data-fmt="mt" >—</div><div class="k-sub">Enteric fermentation and manure, MtCO2e</div></div>
+<div class="k-tile"><div class="k-lab">Share of NI methane</div><div class="k-big dash-skeleton" data-source="ag_kpis" data-field="methane_share_pct" data-fmt="pct1" >—</div><div class="k-sub">Livestock methane over all NI methane, 2024</div></div>
+<div class="k-tile"><div class="k-lab">Soils nitrous oxide change</div><div class="k-big dash-skeleton" data-source="ag_kpis" data-field="soils_change_pct" data-fmt="spct1" data-tone="down">—</div><div class="k-sub">1990 to 2024; fertiliser and manure on land</div></div>
+<div class="k-tile"><div class="k-lab">Milk carbon intensity change</div><div class="k-big dash-skeleton" data-source="milk_c" data-field="change_pct" data-fmt="spct1" data-tone="down">—</div><div class="k-sub">g CO2e per kg milk, 1990 to 2021</div></div>
+</div>
+
+<h2 class="k-h2" id="sources">Where farm emissions come from: then and now</h2>
+<div class="k-grid">
+<div class="k-card"><h3>Sources, 1990 against 2024</h3><p class="k-note">ktCO2e, latest inventory edition. Change is 2024 against 1990.</p>
+<div class="k-tablebox"><table class="k-table" data-source="agc" data-row-key="key"><thead><tr><th data-field="source_name">Source</th><th data-field="gas">Gas</th><th data-field="y1990_kt" data-fmt="int">1990</th><th data-field="y2024_kt" data-fmt="int">2024</th><th data-field="change_pct" data-fmt="spct1">Change</th><th data-field="share_2024_pct" data-fmt="pct1">Share 2024</th></tr></thead><tbody></tbody></table></div></div>
+<div class="k-card"><h3>Agriculture emissions by reporting period</h3><p class="k-note">Latest year, three prior years, then three-year averages back to 1990 (MtCO2e). Latest highlighted.</p><div class="k-bars" data-source="ag_periods" data-label="period" data-value="ag_total_mt" data-fmt="mt" data-sort="none" data-hl-field="kind" data-hl-value="Latest year" data-hl-color="1" data-color="0"></div></div>
+</div>
+
+<h2 class="k-h2" id="fertiliser">Fertiliser and soils</h2>
+<div class="k-grid">
+<div class="k-card"><h3>Soils nitrous oxide by reporting period</h3><p class="k-note">From manufactured fertiliser, manure and slurry spreading, grazing returns and crop residues (MtCO2e).</p><div class="k-bars" data-source="ag_periods" data-label="period" data-value="soils_n2o_mt" data-fmt="mt" data-sort="none" data-hl-field="kind" data-hl-value="Latest year" data-hl-color="1" data-color="2"></div></div>
+<div class="k-card"><h3>Fertiliser signals now</h3><p class="k-note">Latest official indicators.</p>
+<div class="k-tablebox"><table class="k-table" data-source="fert_rows" data-row-key="key"><thead><tr><th data-field="label">Indicator</th><th data-field="value" data-fmt="dec1">Value</th></tr></thead><tbody></tbody></table></div>
+<div class="k-callout">Emissions from manufactured fertiliser rose in 2024, and farmers bought a fifth more fertiliser in 2025 as prices eased.</div></div>
+</div>
+<h3 class="k-h2" id="nutrients" style="font-size: var(--cds-font-size-heading)">Nutrient balance: how much nitrogen and phosphorus stays on the land</h3>
+<div class="k-tiles">
+<div class="k-tile"><div class="k-lab">Nitrogen surplus, 2024</div><div class="k-big dash-skeleton" data-source="nutr_kpis" data-field="n_surplus_now" data-fmt="dec1" >—</div><div class="k-sub">kg N per hectare left in soils (3-year average)</div></div>
+<div class="k-tile"><div class="k-lab">Nitrogen surplus change since 1991</div><div class="k-big dash-skeleton" data-source="nutr_kpis" data-field="n_surplus_change" data-fmt="spct1" data-tone="down">—</div><div class="k-sub">Almost unchanged</div></div>
+<div class="k-tile"><div class="k-lab">Nitrogen use efficiency</div><div class="k-big dash-skeleton" data-source="nutr_kpis" data-field="n_eff_now" data-fmt="pct1" >—</div><div class="k-sub">Share of N inputs leaving in produce, 2024</div></div>
+<div class="k-tile"><div class="k-lab">Phosphorus surplus change since 1991</div><div class="k-big dash-skeleton" data-source="nutr_kpis" data-field="p_surplus_change" data-fmt="spct1" data-tone="down">—</div><div class="k-sub">kg P per hectare surplus</div></div>
+</div>
+<div class="k-grid" style="margin-top: var(--cds-gap-md)">
+<div class="k-card"><h3>Nitrogen surplus, every third year</h3><p class="k-note">kg N per hectare, inputs (fertiliser, feed, manure, fixation, deposition) minus outputs in crops and livestock products. Latest highlighted.</p><div class="k-bars" data-source="nutr_steps" data-label="label" data-value="n_surplus" data-fmt="dec1" data-sort="none" data-hl-field="latest" data-hl-value="yes" data-hl-color="1" data-color="2"></div></div>
+<div class="k-card"><h3>Then and now, per hectare</h3><p class="k-note">kg per hectare, 3-year averages ending 1991 and 2024.</p>
+<div class="k-tablebox"><table class="k-table" data-source="nutr_table" data-row-key="measure"><thead><tr><th data-field="measure">Measure</th><th data-field="then" data-fmt="dec1">1991</th><th data-field="now" data-fmt="dec1">2024</th><th data-field="change_pct" data-fmt="spct1">Change</th></tr></thead><tbody></tbody></table></div>
+<div class="k-callout">DAERA's balance counts all nitrogen and phosphorus inputs together and does not split out manufactured fertiliser, so it cannot by itself size Scope 3 fertiliser manufacture. Output per hectare is up two-thirds while the surplus is flat: farms are using nitrogen better, but the pressure on soils and water has not fallen. The jump in inputs in 2024 is worth watching.</div></div>
+</div>
+
+<h2 class="k-h2" id="methane">Methane from livestock</h2>
+<div class="k-grid">
+<div class="k-card"><h3>Livestock methane by reporting period</h3><p class="k-note">Enteric fermentation plus manure management (MtCO2e).</p><div class="k-bars" data-source="ag_periods" data-label="period" data-value="livestock_ch4_mt" data-fmt="mt" data-sort="none" data-hl-field="kind" data-hl-value="Latest year" data-hl-color="1" data-color="3"></div></div>
+<div class="k-card"><h3>Animals then and now</h3><p class="k-note">Head of livestock, 1995 (nearest available to 1990) and June 2025.</p>
+<div class="k-tablebox"><table class="k-table" data-source="livestock_c" data-row-key="type"><thead><tr><th data-field="type">Livestock</th><th data-field="y1995_head" data-fmt="int">1995</th><th data-field="y2025_head" data-fmt="int">2025</th><th data-field="change_pct" data-fmt="spct1">Change</th></tr></thead><tbody></tbody></table></div>
+<div class="k-callout">Cattle numbers are roughly flat since the mid-1990s, but the herd has shifted towards dairy, and dairy cows emit more methane per head. Sheep are down by a third, while pigs and poultry are up. The rise in pigs and poultry matters more for ammonia and manure than for methane.</div></div>
+</div>
+
+<h2 class="k-h2" id="fgas">F-gases and other high-GWP gases</h2>
+<div class="k-grid">
+<div class="k-card"><h3>NI F-gases by gas, 1995 and 2024</h3><p class="k-note">ktCO2e. 1995 is the F-gas base year. HFCs dominate.</p>
+<div class="k-tablebox"><table class="k-table" data-source="fgas_c" data-row-key="key" data-filter="group=gas"><thead><tr><th data-field="label">Gas</th><th data-field="y1995_kt" data-fmt="dec1">1995</th><th data-field="y2024_kt" data-fmt="dec1">2024</th><th data-field="change_kt" data-fmt="dec1">Change</th></tr></thead><tbody></tbody></table></div></div>
+<div class="k-card"><h3>Where F-gases are used</h3><p class="k-note">ktCO2e by inventory sector. Farm refrigeration (milk cooling, cold stores) sits inside these lines; it is not reported separately.</p>
+<div class="k-tablebox"><table class="k-table" data-source="fgas_c" data-row-key="key" data-filter="group=sector"><thead><tr><th data-field="label">Sector</th><th data-field="y1995_kt" data-fmt="dec1">1995</th><th data-field="y2024_kt" data-fmt="dec1">2024</th><th data-field="change_kt" data-fmt="dec1">Change</th></tr></thead><tbody></tbody></table></div>
+<div class="k-callout">The two direct high-GWP gases from farming are methane and nitrous oxide, shown above. Fluorinated gases are a small share of NI emissions and are now falling. The EU F-gas Regulation (EU) 2024/573 applies in NI under the Windsor Framework, so farm refrigeration and heat-pump choices should move to low-GWP refrigerants now.</div></div>
+</div>
+
+<h2 class="k-h2" id="scopes">Agriculture Scopes 1, 2 and 3: then and now</h2>
+<div class="k-card" id="scope-diagram"><p class="k-note">ktCO2e for all NI farming, 1990 → 2024. Scope 1 uses the inventory; Scope 2 is indicative for 2024; Scope 3 is not yet quantified.</p>
+<div class="sc-flow">
+<div class="sc-box sc-3"><div class="sc-tag">Scope 3 · upstream</div><h4>What farms buy in</h4>
+<div class="sc-row"><span>Manufactured fertiliser (imported)</span><span class="sc-na">not yet quantified</span></div>
+<div class="sc-row"><span>Imported feed (soya, maize, grain)</span><span class="sc-na">not yet quantified</span></div>
+<div class="sc-row"><span>Machinery, plastics, medicines</span><span class="sc-na">not yet quantified</span></div></div>
+<div class="sc-arrow" aria-hidden="true">→</div>
+<div class="sc-mid">
+<div class="sc-box sc-1"><div class="sc-tag">Scope 1 · on the farm</div><h4>Direct emissions</h4>
+<div class="sc-row"><span>Livestock methane and manure N2O</span><span class="sc-v"><b class="dash-skeleton " data-source="scopes" data-field="y1990_kt" data-where="key=s1_livestock" data-fmt="int">—</b> → <b class="dash-skeleton " data-source="scopes" data-field="y2024_kt" data-where="key=s1_livestock" data-fmt="int">—</b></span></div>
+<div class="sc-row"><span>Soils N2O, liming and urea</span><span class="sc-v"><b class="dash-skeleton " data-source="scopes" data-field="y1990_kt" data-where="key=s1_soils" data-fmt="int">—</b> → <b class="dash-skeleton " data-source="scopes" data-field="y2024_kt" data-where="key=s1_soils" data-fmt="int">—</b></span></div>
+<div class="sc-row"><span>Fuel, machinery, heating</span><span class="sc-v"><b class="dash-skeleton " data-source="scopes" data-field="y1990_kt" data-where="key=s1_fuel" data-fmt="int">—</b> → <b class="dash-skeleton " data-source="scopes" data-field="y2024_kt" data-where="key=s1_fuel" data-fmt="int">—</b></span></div>
+<div class="sc-row sc-total"><span>Scope 1 total</span><span class="sc-v"><b class="dash-skeleton " data-source="scope_tot" data-field="y1990_kt" data-fmt="int">—</b> → <b class="dash-skeleton " data-source="scope_tot" data-field="y2024_kt" data-fmt="int">—</b></span></div></div>
+<div class="sc-box sc-2"><div class="sc-tag">Scope 2 · purchased energy</div><h4>Electricity and heat bought in</h4>
+<div class="sc-row"><span>2024, indicative</span><span class="sc-v">about <b class="dash-skeleton " data-source="scope2" data-field="scope2_kt" data-fmt="int">—</b></span></div>
+<div class="sc-row"><span>1990</span><span class="sc-na">not published</span></div></div>
+<div class="sc-box sc-land"><div class="sc-tag">Land · reported separately (LULUCF)</div><h4>Farmed and wider land</h4>
+<div class="sc-row"><span>Peatland (source)</span><span class="sc-v"><b class="dash-skeleton " data-source="land" data-field="y1990_kt" data-where="key=Peatland" data-fmt="int">—</b> → <b class="dash-skeleton " data-source="land" data-field="y2024_kt" data-where="key=Peatland" data-fmt="int">—</b></span></div>
+<div class="sc-row"><span>Grassland soils (sink)</span><span class="sc-v"><b class="dash-skeleton " data-source="land" data-field="y1990_kt" data-where="key=Grassland" data-fmt="int">—</b> → <b class="dash-skeleton " data-source="land" data-field="y2024_kt" data-where="key=Grassland" data-fmt="int">—</b></span></div>
+<div class="sc-row"><span>Cropland soils (source)</span><span class="sc-v"><b class="dash-skeleton " data-source="land" data-field="y1990_kt" data-where="key=Cropland" data-fmt="int">—</b> → <b class="dash-skeleton " data-source="land" data-field="y2024_kt" data-where="key=Cropland" data-fmt="int">—</b></span></div>
+<div class="sc-row"><span>Forestry (sink)</span><span class="sc-v"><b class="dash-skeleton " data-source="land" data-field="y1990_kt" data-where="key=Forestry" data-fmt="int">—</b> → <b class="dash-skeleton " data-source="land" data-field="y2024_kt" data-where="key=Forestry" data-fmt="int">—</b></span></div></div>
+</div>
+<div class="sc-arrow" aria-hidden="true">→</div>
+<div class="sc-box sc-3"><div class="sc-tag">Scope 3 · downstream</div><h4>After the farm gate</h4>
+<div class="sc-row"><span>Processing (dairies, meat plants)</span><span class="sc-na">processors' Scope 1 and 2</span></div>
+<div class="sc-row"><span>Cold chain and transport</span><span class="sc-na">not yet quantified</span></div>
+<div class="sc-row"><span>Retail, consumption, food waste</span><span class="sc-na">not yet quantified</span></div></div>
+</div>
+<div class="k-callout">Scope 2 is end-user agriculture (31.4% of 18.5 Mt) minus by-source agriculture. Because both inputs are published rounded, treat it as about 0.05 Mt, give or take the same again. For a single farm the same diagram is filled from its bills, fertiliser and feed invoices and herd records, which is exactly the carbon inventory you sell.</div></div>
+
+<h2 class="k-h2" id="land">Land: peatland, grassland and forestry</h2>
+<div class="k-card"><p class="k-note">ktCO2e; negative values are removals. Peatland is the largest single land source.</p>
+<div class="k-tablebox"><table class="k-table" data-source="land_c" data-row-key="key"><thead><tr><th data-field="item">Land use</th><th data-field="y1990_kt" data-fmt="int">1990</th><th data-field="y2024_kt" data-fmt="int">2024</th><th data-field="change_kt" data-fmt="sint">Change</th></tr></thead><tbody></tbody></table></div></div>
+
+<h2 class="k-h2" id="measures">Measures to cut emissions and store carbon</h2>
+<div class="k-card"><div class="k-tablebox"><table class="k-table" data-source="measures" data-row-key="measure"><thead><tr><th data-field="measure">Measure</th><th data-field="area">Targets</th><th data-field="how">How it works</th><th data-field="evidence">Evidence and scale</th><th data-field="ni_vehicle">NI delivery route</th></tr></thead><tbody></tbody></table></div></div>
+
+<h2 class="k-h2" id="research">Active research and programmes</h2>
+<div class="k-tiles">
+<div class="k-tile"><div class="k-lab">Fields soil-tested</div><div class="k-big dash-skeleton" data-source="indicators" data-field="value" data-where="key=snhs_fields" data-fmt="int" >—</div><div class="k-sub">Soil Nutrient Health Scheme, by June 2026</div></div>
+<div class="k-tile"><div class="k-lab">New woodland vs target</div><div class="k-big dash-skeleton" data-source="forest_c" data-field="pct_done" data-fmt="pct0" >—</div><div class="k-sub">Hectares created by end 2025 against 9,000 ha by 2030</div></div>
+<div class="k-tile"><div class="k-lab">Peatland to restore by 2050</div><div class="k-big dash-skeleton" data-source="indicators" data-field="value" data-where="key=peat_target" data-fmt="int" >—</div><div class="k-sub">Hectares; 4,500 ha now on the road to recovery</div></div>
+</div>
+<div class="k-card" style="margin-top: var(--cds-gap-md)"><div class="k-tablebox"><table class="k-table" data-source="research" data-row-key="programme"><thead><tr><th data-field="programme">Programme</th><th data-field="lead">Lead</th><th data-field="area">Area</th><th data-field="what">What it does</th><th data-field="status">Status</th></tr></thead><tbody></tbody></table></div></div>
+<p class="k-foot">Sources: NI GHG inventory 1990–2024 (DAERA/NISRA, data updated 11 Aug 2026) and statistical bulletin (9 Jun 2026); NI Carbon Intensity Indicators 2024; DAERA June Agricultural Census 2025, Agricultural Incomes 2025 and Soil Nutrient Balances 1991–2024; Irish Almanac via CAIN (1995 livestock); AFBI; DAERA Peatland Strategy Delivery Plan; Agriland; Farmers Weekly; ABC Council; Irish Farmers Journal. Each figure’s source is listed under Data and sources below.</p>
+</div>
+<script>(function(){
+  var F = {
+    text: function(v){ return String(v); },
+    int: d3.format(','),
+    dec1: d3.format(',.1f'),
+    dec2: d3.format(',.2f'),
+    dec3: d3.format(',.3f'),
+    pct0: function(v){ return d3.format('.0f')(v) + '%'; },
+    pct1: function(v){ return d3.format('.1f')(v) + '%'; },
+    spct1: function(v){ return (v > 0 ? '+' : '') + d3.format('.1f')(v) + '%'; },
+    spts1: function(v){ return (v > 0 ? '+' : '') + d3.format('.1f')(v) + ' pts'; },
+    sint: function(v){ return (v > 0 ? '+' : '') + d3.format(',')(v); },
+    eur2: function(v){ return '€' + d3.format(',.2f')(v); },
+    eur0: function(v){ return '€' + d3.format(',.0f')(v); },
+    gbp0: function(v){ return '£' + d3.format(',.0f')(v); },
+    gbp2: function(v){ return '£' + d3.format(',.2f')(v); },
+    gbpbn: function(v){ return '£' + d3.format('.1f')(v) + 'bn'; },
+    pkwh: function(v){ return d3.format('.2f')(v) + 'p'; },
+    mt: function(v){ return d3.format(',.1f')(v) + ' Mt'; },
+    mt3: function(v){ return d3.format(',.3f')(v) + ' Mt'; },
+    t1: function(v){ return d3.format(',.1f')(v) + ' t'; }
+  };
+  function fmt(name){ return F[name] || F.text; }
+  function state(id){ var d = dash.data(id); return d; }
+  function rows(id){ var d = dash.data(id); if (d.status !== 'ok') return null; return Array.isArray(d.data) ? d.data : []; }
+  function pick(list, el){
+    var r = el.getAttribute('data-row');
+    if (r != null) return list[+r];
+    var w = el.getAttribute('data-where');
+    if (!w) return list[0];
+    var conds = w.split('&').map(function(p){ return p.split('=').map(decodeURIComponent); });
+    return list.find(function(row){ return conds.every(function(c){ return String(row[c[0]]) === c[1]; }); });
+  }
+  function filt(list, el){
+    var f = el.getAttribute('data-filter');
+    if (!f) return list;
+    var conds = f.split('&').map(function(p){ return p.split('='); });
+    return list.filter(function(r){ return conds.every(function(c){ return String(r[c[0]]) === c[1]; }); });
+  }
+  function fail(el){
+    el.innerHTML = '';
+    var d = document.createElement('div'); d.className = 'k-fail';
+    var dot = document.createElement('span'); dot.className = 'k-dot';
+    var t = document.createElement('span'); t.textContent = 'Failed to load';
+    d.append(dot, t); el.appendChild(d);
+  }
+  function values(root){
+    root.querySelectorAll('[data-source][data-field]').forEach(function(el){
+      if (el.tagName === 'TH' || el.tagName === 'TABLE') return;
+      var id = el.getAttribute('data-source').split(' ')[0];
+      var list = rows(id);
+      if (!list){ el.textContent = '—'; if (state(id).status === 'error' || state(id).status === 'missing') el.classList.remove('dash-skeleton'); return; }
+      el.classList.remove('dash-skeleton');
+      var row = pick(list, el);
+      if (!row){ el.textContent = '—'; return; }
+      var v = row[el.getAttribute('data-field')];
+      el.textContent = (v == null || v === '') ? '—' : fmt(el.getAttribute('data-fmt'))(v);
+      var tone = el.getAttribute('data-tone');
+      if (tone && typeof v === 'number'){
+        el.classList.toggle('k-good', tone === 'up' ? v > 0 : v < 0);
+        el.classList.toggle('k-bad', tone === 'up' ? v < 0 : v > 0);
+      }
+    });
+  }
+  function bars(el){
+    var id = el.getAttribute('data-source');
+    var list = rows(id);
+    el.innerHTML = '';
+    if (!list){ if (state(id).status === 'error') fail(el); return; }
+    list = filt(list, el);
+    var lab = el.dataset.label, val = el.dataset.value, f = fmt(el.dataset.fmt || 'dec1');
+    var max = el.dataset.max ? +el.dataset.max : (d3.max(list, function(r){ return Math.abs(+r[val]); }) || 1);
+    var sorted = el.dataset.sort === 'none' ? list.slice() : list.slice().sort(function(a, b){ return b[val] - a[val]; });
+    sorted.forEach(function(r){
+      var row = document.createElement('div'); row.className = 'k-bar-row';
+      var l = document.createElement('span'); l.className = 'k-bar-label'; l.textContent = r[lab];
+      var tr = document.createElement('span'); tr.className = 'k-bar-track';
+      var b = document.createElement('span'); b.className = 'k-bar';
+      b.style.width = Math.max(0.5, Math.abs(+r[val]) / max * 100) + '%';
+      b.style.background = dash.colors[+(el.dataset.color || 0)];
+      if (el.dataset.accent && String(r[lab]) === el.dataset.accent) b.style.background = 'var(--cds-chart-status-critical)';
+      if (el.dataset.hlField && String(r[el.dataset.hlField]) === el.dataset.hlValue) b.style.background = dash.colors[+(el.dataset.hlColor || 1)];
+      if (el.dataset.mutedKey && String(r[el.dataset.mutedKey]) === el.dataset.mutedVal) b.classList.add('k-muted');
+      tr.appendChild(b);
+      var v = document.createElement('span'); v.className = 'k-bar-val'; v.textContent = f(+r[val]);
+      row.append(l, tr, v); el.appendChild(row);
+    });
+  }
+  function table(t){
+    var id = t.getAttribute('data-source');
+    var list = rows(id);
+    var tb = t.querySelector('tbody'); tb.innerHTML = '';
+    var box = t.closest('.k-tablebox');
+    if (!list){ if (state(id).status === 'error' && box){ var f = box.querySelector('.k-fail'); if (!f){ var d = document.createElement('div'); box.appendChild(d); fail(d);} } return; }
+    list = filt(list, t);
+    var ths = Array.prototype.slice.call(t.querySelectorAll('thead th'));
+    list.forEach(function(r){
+      var tr = document.createElement('tr');
+      var keys = (t.getAttribute('data-row-key') || '').split(',');
+      tr.setAttribute('data-key', keys.length === 1 ? String(r[keys[0]]) : keys.map(function(x){ return encodeURIComponent(String(r[x])); }).join(','));
+      if (t.dataset.rowClass && r[t.dataset.rowClass]) tr.className = 'k-row-' + String(r[t.dataset.rowClass]).toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      ths.forEach(function(th){
+        var td = document.createElement('td');
+        var name = th.getAttribute('data-fmt') || 'text';
+        var v = r[th.getAttribute('data-field')];
+        td.textContent = (v == null || v === '') ? '—' : fmt(name)(v);
+        if (name !== 'text') td.className = 'k-num';
+        tr.appendChild(td);
+      });
+      tb.appendChild(tr);
+    });
+  }
+  window.K = {
+    render: function(){
+      var root = document.getElementById('dash-root');
+      values(root);
+      root.querySelectorAll('.k-bars').forEach(bars);
+      root.querySelectorAll('table[data-row-key]').forEach(table);
+    }
+  };
+})();
+</script>
+<script>
+dash.calc('agc', {inputs: ['ag_compare'], title: 'Farm sources then and now', description: 'Each source with change 1990-2024 and its share of the 2024 agriculture total.',
+  fn: (ag_compare) => { const tot = ag_compare.reduce((s, r) => s + +r.y2024_kt, 0);
+    return ag_compare.map(r => ({key: r.key, source_name: r.source_name, gas: r.gas, y1990_kt: +r.y1990_kt, y2024_kt: +r.y2024_kt, change_pct: (r.y2024_kt / r.y1990_kt - 1) * 100, share_2024_pct: r.y2024_kt / tot * 100})); }});
+dash.calc('ag_kpis', {inputs: ['ag_series'], title: 'Agriculture headline figures', description: 'Latest year against 1990: total, livestock methane, its share of NI methane, and soils N2O change.',
+  fn: (ag_series) => { const y = Math.max(...ag_series.map(r => +r.year)), a = ag_series.find(r => +r.year === y), b = ag_series.find(r => +r.year === 1990);
+    return [{year: y, total_2024_mt: a.ag_total_kt / 1000, change_pct: (a.ag_total_kt / b.ag_total_kt - 1) * 100, livestock_ch4_mt: a.livestock_ch4_kt / 1000, methane_share_pct: a.livestock_ch4_kt / a.ni_ch4_kt * 100, soils_change_pct: (a.soils_n2o_kt / b.soils_n2o_kt - 1) * 100}]; }});
+dash.calc('ag_periods', {inputs: ['ag_series'], title: 'Agriculture by reporting period', description: 'Latest year and three prior years singly, then three-year averages of published years back to 1990.',
+  fn: (ag_series) => { const latest = Math.max(...ag_series.map(r => +r.year)), out = [];
+    const add = (period, kind, list) => { const m = k => list.reduce((s, r) => s + +r[k], 0) / list.length / 1000; out.push({period, kind, years_in_data: list.length, ag_total_mt: m('ag_total_kt'), livestock_ch4_mt: m('livestock_ch4_kt'), soils_n2o_mt: m('soils_n2o_kt')}); };
+    for (let i = 0; i < 4; i++) { const r = ag_series.find(x => +x.year === latest - i); if (r) add(String(r.year), i === 0 ? 'Latest year' : 'Single year', [r]); }
+    for (let end = latest - 4; end >= 1990; end -= 3) { const start = Math.max(end - 2, 1990), list = ag_series.filter(x => +x.year >= start && +x.year <= end);
+      if (list.length) add(start === end ? String(start) : start + '–' + end, start === end ? 'Earliest year' : '3-year average', list); }
+    return out; }});
+dash.calc('milk_c', {inputs: ['indicators'], title: 'Milk carbon intensity change', description: 'Change in g CO2e per kg energy-corrected milk, 1990 to 2021.',
+  fn: (indicators) => { const v = k => indicators.find(r => r.key === k).value; const c = (v('milk_2021') / v('milk_1990') - 1) * 100; return [{change_pct: c, cut_pct: -c}]; }});
+dash.calc('fert_rows', {inputs: ['indicators'], title: 'Fertiliser indicators', description: 'Fertiliser-related rows from the indicator file.',
+  fn: (indicators) => indicators.filter(r => ['mfg_fert_change', 'fert_lime_spend', 'fert_volume_change', 'fert_cost_change'].includes(r.key)).map(r => ({key: r.key, label: r.label, value: +r.value})) });
+dash.calc('livestock_c', {inputs: ['livestock'], title: 'Livestock change', description: 'Change in head, 1995 to 2025, where both years exist.',
+  fn: (livestock) => livestock.map(r => ({type: r.type, y1995_head: r.y1995_head, y2025_head: r.y2025_head, change_pct: r.y1995_head ? (r.y2025_head / r.y1995_head - 1) * 100 : null})) });
+dash.calc('fgas_c', {inputs: ['fgas'], title: 'F-gas change', description: 'Change in ktCO2e from the 1995 F-gas base year to 2024.',
+  fn: (fgas) => fgas.map(r => ({key: r.key, group: r.group, label: r.label, y1995_kt: +r.y1995_kt, y2024_kt: +r.y2024_kt, change_kt: r.y2024_kt - r.y1995_kt})) });
+dash.calc('land_c', {inputs: ['land'], title: 'Land use change', description: 'Change in ktCO2e, 1990 to 2024.',
+  fn: (land) => land.map(r => ({key: r.key, item: r.item, y1990_kt: +r.y1990_kt, y2024_kt: +r.y2024_kt, change_kt: r.y2024_kt - r.y1990_kt})) });
+dash.calc('scope_tot', {inputs: ['scopes'], title: 'Scope 1 total', description: 'Sum of Scope 1 rows for 1990 and 2024.',
+  fn: (scopes) => [{y1990_kt: scopes.reduce((s, r) => s + +r.y1990_kt, 0), y2024_kt: scopes.reduce((s, r) => s + +r.y2024_kt, 0)}] });
+dash.calc('scope2', {inputs: ['indicators', 'ag_series'], title: 'Scope 2, indicative', description: 'End-user agriculture emissions (share times end-user total) minus by-source agriculture, 2024; inputs are rounded.',
+  fn: (indicators, ag_series) => { const v = k => indicators.find(r => r.key === k).value, a = ag_series.find(r => +r.year === 2024);
+    return [{scope2_kt: v('enduser_total') * v('enduser_ag_share') / 100 * 1000 - a.ag_total_kt}]; }});
+dash.calc('forest_c', {inputs: ['indicators'], title: 'Woodland progress', description: 'New woodland created by end 2025 as a share of the 2030 target.',
+  fn: (indicators) => { const v = k => indicators.find(r => r.key === k).value; return [{pct_done: v('forest_done') / v('forest_target') * 100}]; }});
+dash.calc('nutr_kpis', {inputs: ['nutrients'], title: 'Nutrient balance headline', description: 'First and latest years: N surplus, its change, N use efficiency (output over input), P surplus change.',
+  fn: (nutrients) => { const r = nutrients.slice().sort((a, b) => a.year - b.year), f = r[0], l = r[r.length - 1];
+    return [{n_surplus_now: l.n_input - l.n_output, n_surplus_change: ((l.n_input - l.n_output) / (f.n_input - f.n_output) - 1) * 100, n_eff_now: l.n_output / l.n_input * 100, p_surplus_change: ((l.p_input - l.p_output) / (f.p_input - f.p_output) - 1) * 100}]; }});
+dash.calc('nutr_steps', {inputs: ['nutrients'], title: 'Nitrogen surplus every third year', description: 'N surplus (input minus output) for every third year counting back from the latest.',
+  fn: (nutrients) => { const latest = Math.max(...nutrients.map(r => +r.year));
+    return nutrients.filter(r => (latest - r.year) % 3 === 0).sort((a, b) => a.year - b.year).map(r => ({label: String(r.year), n_surplus: r.n_input - r.n_output, latest: +r.year === latest ? 'yes' : 'no'})); }});
+dash.calc('nutr_table', {inputs: ['nutrients'], title: 'Nutrients then and now', description: 'Inputs, outputs and surplus for N and P, first year against latest year.',
+  fn: (nutrients) => { const r = nutrients.slice().sort((a, b) => a.year - b.year), f = r[0], l = r[r.length - 1];
+    const row = (measure, a, b) => ({measure, then: a, now: b, change_pct: (b / a - 1) * 100});
+    return [row('Nitrogen input', f.n_input, l.n_input), row('Nitrogen output in produce', f.n_output, l.n_output), row('Nitrogen surplus', f.n_input - f.n_output, l.n_input - l.n_output),
+            row('Phosphorus input', f.p_input, l.p_input), row('Phosphorus output in produce', f.p_output, l.p_output), row('Phosphorus surplus', f.p_input - f.p_output, l.p_input - l.p_output)]; }});
+dash.onData(K.render);
+</script>
+
+<section class="k-wrap" aria-labelledby="data-sources">
+<h2 class="k-h2" id="data-sources">Data and sources</h2>
+<p style="color:var(--color-fg-muted);font-size:var(--cds-font-size-caption);max-width:60rem">Every figure above is worked out in your browser from the tables below, which are fixed copies of official releases. Download any table as CSV to check or reuse it, crediting the original source.</p>
+<div class="src-list" id="src-list"></div>
+</section>
+<script>
+(function(){
+  var box = document.getElementById('src-list');
+  function csv(rows){ var cols = Object.keys(rows[0] || {}); var q = function(v){ v = v == null ? '' : String(v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
+    return [cols.join(',')].concat(rows.map(function(r){ return cols.map(function(c){ return q(r[c]); }).join(','); })).join('\r\n'); }
+  Object.keys(DASH_META).forEach(function(id){
+    var m = DASH_META[id], card = document.createElement('div'); card.className = 'k-card';
+    var h = document.createElement('h3'); h.textContent = m.title; card.appendChild(h);
+    var p = document.createElement('p'); p.textContent = m.description + (m.updated ? ' Copied ' + m.updated.split('-').reverse().join('/') + '.' : ''); card.appendChild(p);
+    if (m.sources.length){ var ul = document.createElement('ul'); m.sources.forEach(function(s){ var li = document.createElement('li'); li.textContent = s; ul.appendChild(li); }); card.appendChild(ul); }
+    var b = document.createElement('button'); b.type = 'button'; b.textContent = 'Download CSV (' + DASH_DATA[id].length + ' rows)';
+    b.addEventListener('click', function(){ var u = URL.createObjectURL(new Blob(['\ufeff' + csv(DASH_DATA[id])], {type: 'text/csv'})); var a = document.createElement('a'); a.href = u; a.download = 'ni-agri-land-carbon-' + id + '.csv'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(function(){ URL.revokeObjectURL(u); }, 1000); });
+    card.appendChild(b); box.appendChild(card);
+  });
+})();
+</script>
+</main>
+<footer class="site-foot">Robert J. Park · Environment · Carbon · Public Affairs · Northern Ireland. Figures as at 18 October 2026; see <a href="/blog/focus-on-agriculture-october-2026/">Focus on Agriculture, October 2026</a> for the commentary. <a href="/contact/">Contact</a> · <a href="/privacy/">Privacy</a></footer>
+</body>
+</html>

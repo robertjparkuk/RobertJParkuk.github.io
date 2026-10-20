@@ -25,6 +25,12 @@ For Northern Ireland farms asked for carbon data by a processor, supermarket, le
 
 [Open the Farm Carbon Data Checker →]({{ '/tools/farm-data-checker/' | relative_url }}) · Background: [Focus on Agriculture, October 2026]({{ '/blog/focus-on-agriculture-october-2026/' | relative_url }})
 
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Dashboards</h2>
+
+Northern Ireland data on one page, from official statistics, with every table downloadable as CSV. The first is **NI Agriculture and Land Carbon**: farm and land emissions from 1990 to 2024, nutrients, livestock, peatland, F-gases and the measures that cut them.
+
+[Open the dashboards →]({{ '/dashboards/' | relative_url }})
+
 <h2 class="tool-h"><img src="{{ '/assets/icons/land-repair-helix.svg' | relative_url }}" alt="" width="48" height="48">The Land Repair Helix</h2>
 
 A design tool for healthier land, now with 22 base pairs. Each base pair links a problem (compacted soil, fertiliser overuse, flooding, blue-green algae, contamination, forever chemicals, oil spills, mown-out verges, flailed hedges) to the low-cost or nature-based fix that answers it. Choose your type of site and it builds a starter plan.
