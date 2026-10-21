@@ -4,12 +4,12 @@ description: Independent environmental, carbon and public affairs consultancy fo
 location: Northern Ireland
 image: /assets/og-image.jpg   # picture shown when the site is shared on LinkedIn, WhatsApp etc.
 author: Robert J. Park
-email: r.j.park@outlook.com
+email: robert@robertjpark.co.uk
 linkedin: "https://uk.linkedin.com/in/robertparkuk"
 whatsapp: "@robertjpark"   # WhatsApp username (keeps your number private)
 
 # Set this to your new domain once you have it, e.g. https://www.yourdomain.co.uk
-url: ""
+url: "https://robertjpark.co.uk"
 
 permalink: /blog/:year/:month/:title/
 timezone: Europe/London

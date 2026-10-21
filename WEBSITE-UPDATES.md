@@ -3,7 +3,7 @@
 This file logs every change to the Robert J. Park website. It lives in the root of the repo and is kept off the public site by `_config.yml`. Add a new entry at the top each time something goes live.
 
 - **Repo:** https://github.com/robertjparkuk/RobertJParkuk.github.io (Jekyll on GitHub Pages, branch `main`, folder `/`)
-- **Live address:** https://robertjparkuk.github.io (custom domain to follow)
+- **Live address:** https://robertjpark.co.uk (robertjparkuk.github.io redirects)
 - **Other guides:** `README.md` covers set-up and the domain; `HOW-TO-POST.md` covers blog posts
 
 ## Versioning
@@ -24,6 +24,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 ---
 
 ## Changelog
+
+### v0.9.1 — 21 October 2026: custom domain and new email
+
+**Changed**
+- `CNAME`: the site now serves at https://robertjpark.co.uk (www redirects to it). GoDaddy DNS: four A records for @ to GitHub Pages (185.199.108.153, .109, .110, .111) and a CNAME for www to robertjparkuk.github.io. Old robertjparkuk.github.io links redirect automatically.
+- `_config.yml`: `url` set to https://robertjpark.co.uk; `email` now robert@robertjpark.co.uk (Microsoft 365 Business Basic, tenant RobertJPark.onmicrosoft.com).
+- `contact.md`, Planet Check, the farm checker, the agriculture briefing and dashboard: hard-coded addresses and email updated.
+
+**Not changed:** the Focus on Agriculture PDF still prints robertjparkuk.github.io; that address redirects, so it can wait for the November issue.
 
 ### v0.9.0 — 20 October 2026: Dashboards
 

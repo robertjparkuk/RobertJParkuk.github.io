@@ -5,7 +5,7 @@ permalink: /contact/
 lead: The best way to start is a short conversation about what you need.
 ---
 
-**Email:** [r.j.park@outlook.com](mailto:r.j.park@outlook.com)
+**Email:** [robert@robertjpark.co.uk](mailto:robert@robertjpark.co.uk)
 
 **WhatsApp:** {{ site.whatsapp }} — start a new chat in WhatsApp and search for the username.
 

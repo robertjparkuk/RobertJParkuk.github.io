@@ -102,7 +102,7 @@ button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
   </section>
 
   <div class="foot">
-    <div>Questions written by Robert J. Park (BSc Chemistry), aligned to the published GCSE specifications as at October 2026. Spotted an error? Email r.j.park@outlook.com.</div>
+    <div>Questions written by Robert J. Park (BSc Chemistry), aligned to the published GCSE specifications as at October 2026. Spotted an error? Email robert@robertjpark.co.uk.</div>
   </div>
 </div>
 
@@ -173,7 +173,7 @@ function end(){
 }
 function worksheet(){const qs=Q.filter(q=>active.has(q[0]));
   $("ws").innerHTML=`<h2>Planet Check: GCSE worksheet</h2><p class="meta2">Name: ______________________ &nbsp; Class: ________ &nbsp; Date: __________ &nbsp; Score: ____ / ${qs.length}</p><p class="meta2">Circle the best answer for each question.</p><ol>${qs.map(q=>`<li>${q[2]} <span class="spec">[${q[1]}]</span><div class="ch">${q[3].map((o,k)=>`<span>${"ABCD"[k]}. ${o}</span>`).join("")}</div></li>`).join("")}</ol>
-   <div class="key"><h2>Answers</h2><p class="meta2">Robert J. Park · robertjparkuk.github.io · Free to copy for classroom use.</p><ol>${qs.map(q=>`<li><b>${"ABCD"[q[4]]}</b>: ${q[5]}</li>`).join("")}</ol></div>`;}
+   <div class="key"><h2>Answers</h2><p class="meta2">Robert J. Park · robertjpark.co.uk · Free to copy for classroom use.</p><ol>${qs.map(q=>`<li><b>${"ABCD"[q[4]]}</b>: ${q[5]}</li>`).join("")}</ol></div>`;}
 const pw=$("printWs");try{if(window.self===window.top){pw.hidden=false;pw.onclick=()=>{worksheet();window.print();};}}catch(e){}
 window.addEventListener("beforeprint",worksheet);
 topics();start();worksheet();
