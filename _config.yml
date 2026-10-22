@@ -6,6 +6,8 @@ image: /assets/og-image.jpg   # picture shown when the site is shared on LinkedI
 author: Robert J. Park
 email: robert@robertjpark.co.uk
 linkedin: "https://uk.linkedin.com/in/robertparkuk"
+phone: "07450 349480"          # Work mobile (business use only)
+phone_intl: "+447450349480"
 whatsapp: "@robertjpark"   # WhatsApp username (keeps your number private)
 
 # Set this to your new domain once you have it, e.g. https://www.yourdomain.co.uk
