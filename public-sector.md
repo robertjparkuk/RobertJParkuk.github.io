@@ -7,6 +7,12 @@ lead: I work with district councils, public bodies and trade associations across
 
 Public sector and membership organisations face the same carbon and environmental questions as business, with added layers of accountability, procurement rules and public scrutiny. My background spans both worlds: technical environmental work, and more than twenty years of communications, public affairs and governance, much of it in and around the public sector.
 
+## NI Consultation Watch
+
+I track every public consultation run by Northern Ireland's councils, Executive departments and UK Government where NI is in scope: what is open, who publishes an outcome, and how easy each council makes it to take part. Only about one in five closed consultations has an outcome I could find.
+
+[Read the findings]({{ '/public-sector/consultation-watch/' | relative_url }}) · [Open the dashboard]({{ '/tools/dashboards/ni-consultation-watch.html' | relative_url }})
+
 ## For district councils
 
 <figure class="page-photo"><img src="{{ '/assets/photos/bins-collection.jpg' | relative_url }}" alt="A refuse collection crew emptying wheelie bins on a street" loading="lazy"><figcaption>Waste, land and public space: the everyday business of local government.</figcaption></figure>

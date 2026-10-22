@@ -25,6 +25,17 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.10.0 — 22 October 2026: NI Consultation Watch
+
+**Added**
+- `public-sector/consultation-watch.md` at `/public-sector/consultation-watch/`: findings page. Headline figures, a council transparency table (score out of 6 for listing closed consultations, showing dates and a working page, plus outcomes found), the statutory duties that bear on consultation (NI Act 1998 Sch 9; Local Government Act (NI) 2014 ss 87 and 92; Planning Act (NI) 2011 s 4; FOIA s 19; Accessibility Regulations 2018 reg 8), what good looks like, method, and a corrections and right-of-reply section.
+- `tools/dashboards/ni-consultation-watch.html`: self-contained dashboard (385 consultations and the council page findings inside the page, no outside scripts, self-hosted fonts, nothing stored). Open consultations by closing date (those closing after the snapshot drop off), status by body, outcome rates by level, transparency scorecard, searchable list with details, NI Planning Portal links, CSV downloads.
+
+**Changed**
+- `public-sector.md`: NI Consultation Watch section. `dashboards.md`: new entry. `assets/style.css`: table styles for pages.
+
+**Watch:** snapshot as at 22 October 2026. Before each refresh, recheck the councils' pages and log any corrections under "Corrections and right of reply" on the findings page.
+
 ### v0.9.1 — 21 October 2026: custom domain and new email
 
 **Changed**
