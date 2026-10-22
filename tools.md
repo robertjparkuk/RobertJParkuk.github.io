@@ -27,9 +27,9 @@ For Northern Ireland farms asked for carbon data by a processor, supermarket, le
 
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Dashboards</h2>
 
-Northern Ireland data on one page, from official statistics, with every table downloadable as CSV. The first is **NI Agriculture and Land Carbon**: farm and land emissions from 1990 to 2024, nutrients, livestock, peatland, F-gases and the measures that cut them.
+Northern Ireland data on one page, from official statistics, with every table downloadable as CSV. **CBAM Exposure Tracker**: where an NI business stands under the EU and UK carbon border charges, the EU certificate price and the rules side by side. **NI Agriculture and Land Carbon**: farm and land emissions from 1990 to 2024, nutrients, livestock, peatland, F-gases and the measures that cut them.
 
-[Open the dashboards →]({{ '/dashboards/' | relative_url }})
+[Open the CBAM Exposure Tracker →]({{ '/tools/dashboards/cbam-exposure-tracker.html' | relative_url }}) · [All dashboards →]({{ '/dashboards/' | relative_url }})
 
 <h2 class="tool-h"><img src="{{ '/assets/icons/land-repair-helix.svg' | relative_url }}" alt="" width="48" height="48">The Land Repair Helix</h2>
 
