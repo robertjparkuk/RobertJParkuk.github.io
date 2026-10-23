@@ -1,0 +1,49 @@
+# Publishes future-dated posts.
+#
+# GitHub Pages hides any post dated in the future, and only rebuilds the site
+# when something changes. This workflow asks Pages to rebuild every day shortly
+# after noon, so a post dated for a given day at 12:00 goes live then.
+#
+# Times here are UTC. It runs twice: 11:05 and 12:05 UTC, which covers
+# 12:05 in summer (BST) and 12:05 in winter (GMT). GitHub can start scheduled
+# runs a few minutes late.
+#
+# To publish straight away, open the Actions tab, choose this workflow and
+# press "Run workflow".
+
+name: Publish scheduled posts
+
+on:
+  schedule:
+    - cron: "5 11 * * *"
+    - cron: "5 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ask GitHub Pages to rebuild the site
+        id: build
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -fsS -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds"
+
+      - name: Fall back to an empty commit if the request was refused
+        if: steps.build.outcome == 'failure'
+        uses: actions/checkout@v4
+      - if: steps.build.outcome == 'failure'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "Rebuild to publish scheduled posts"
+          git push

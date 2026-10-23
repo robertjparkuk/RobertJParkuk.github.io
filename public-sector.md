@@ -42,6 +42,12 @@ Arm's-length bodies, agencies and publicly funded organisations can draw on the 
 - **Local and independent.** Based in Larne, working across Northern Ireland, with no products to sell and no conflicts with suppliers.
 - **Collaborative delivery.** For specialist elements such as ESOS sign-off or site investigation, I work with established, accredited partners and manage the work as a single point of contact.
 
+{% if site.categories['consultation-responses'] %}
+## Consultation responses
+
+I respond to public consultations across Northern Ireland and publish a selection once they close. [Read my consultation responses]({{ '/public-sector/consultation-responses/' | relative_url }}).
+
+{% endif %}
 ## Procurement
 
 I'm happy to provide quotations, capability statements and CVs, to join supplier lists and frameworks, and to respond to tenders, either directly or as part of a consortium. If you're planning work and want to understand what's possible before going to market, I'm also glad to have an informal conversation.

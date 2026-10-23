@@ -25,6 +25,21 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.11.0 — 24 October 2026: Consultation responses
+
+**Added**
+- `public-sector/consultation-responses.md` (/public-sector/consultation-responses/): a section for selected consultation responses, listing every post in the `consultation-responses` category with consulting body, closing date and outcome.
+- `_posts/2026-10-24-response-historic-environment-policy.md`: first entry, Robert's response to the DfC Historic Environment Policy consultation (closed 23 October 2026), with the eight asks and a link to the full response. Scheduled for 12:00 on 24 October 2026.
+- `assets/consultations/2026-10-dfc-historic-environment-policy-response.pdf`: the branded 14-page response as submitted. The file is on the server from the merge but is not linked anywhere until the post publishes.
+- `_posts/2026-10-24-publishing-my-consultation-responses.md`: blog post announcing the section. Scheduled for 12:01 on 24 October 2026.
+- `.github/workflows/publish-scheduled-posts.yml`: asks GitHub Pages to rebuild at 11:05 and 12:05 UTC every day (falls back to an empty commit if the request is refused), so future-dated posts go live on time. Can also be run by hand from the Actions tab.
+
+**Changed**
+- `public-sector.md`: new "Consultation responses" paragraph linking the section. It only shows once at least one response has published.
+- `HOW-TO-POST.md`: how to schedule a post and how to add a consultation response.
+
+**Checked:** DfC's privacy notice for the consultation places no restriction on respondents publishing their own responses; DfC may publish responses itself, with personal data removed.
+
 ### v0.10.0 — 22 October 2026: CBAM Exposure Tracker
 
 **Added**
