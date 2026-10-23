@@ -25,6 +25,11 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.11.1 — 23 October 2026: response PDF rebranded
+
+**Changed**
+- `assets/consultations/2026-10-dfc-historic-environment-policy-response.pdf`: rebuilt with the official logo files (full lockup in the header, mark in the footer) and brand red #A61C1C. Text unchanged.
+
 ### v0.11.0 — 24 October 2026: Consultation responses
 
 **Added**
