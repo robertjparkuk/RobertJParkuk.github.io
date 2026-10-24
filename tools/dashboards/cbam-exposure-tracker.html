@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CBAM Exposure Tracker for Northern Ireland | Robert J. Park</title>
+<meta name="description" content="Who in Northern Ireland pays a carbon border charge, from when, and at what price: EU CBAM certificate prices, the UK CBAM from 1 January 2027, NI trade and the EU and UK rules side by side. Figures as at 22 October 2026.">
+<link rel="canonical" href="https://robertjpark.co.uk/tools/dashboards/cbam-exposure-tracker.html">
+<meta property="og:title" content="CBAM Exposure Tracker for Northern Ireland">
+<meta property="og:description" content="EU and UK carbon border rules for Northern Ireland businesses, with the latest EU CBAM certificate price, from official sources.">
+<meta property="og:url" content="https://robertjpark.co.uk/tools/dashboards/cbam-exposure-tracker.html">
+<meta property="og:image" content="https://robertjpark.co.uk/assets/og-image.jpg">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+:root{
+  --bg:#FFFFFF; --fg:#1B1817; --muted:#5F5856; --panel:#F6F4F2; --line:#DDD6D2; --grid:#ECE7E4; --bar:#5E6E80;
+  --red:#B3121B; --note:#FBF1F1;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif; --sans:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#171413; --fg:#F1ECE9; --muted:#B3AAA6; --panel:#221E1D; --line:#3A3332; --grid:#2E2827; --bar:#93A6BA;
+  --red:#F0787C; --note:#2A1F1F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#171413; --fg:#F1ECE9; --muted:#B3AAA6; --panel:#221E1D; --line:#3A3332; --grid:#2E2827; --bar:#93A6BA;
+  --red:#F0787C; --note:#2A1F1F; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.5;
+  padding:24px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+a{color:var(--red)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--bg);padding:8px 12px;border:2px solid var(--red);z-index:9}
+.skip:focus{left:16px}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.site-top,.wrap,.site-foot{max-width:72rem;margin-inline:auto}
+.site-top{margin-bottom:20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.brand b{color:var(--red)}
+.site-top nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+.site-top nav a{color:var(--muted);text-decoration:none}.site-top nav a:hover{color:var(--red)}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4vw,40px);line-height:1.15;margin:0 0 6px}
+.lead{color:var(--muted);font-size:17px;max-width:60rem;margin:0 0 20px}
+h2{font-family:var(--serif);font-weight:600;font-size:22px;margin:36px 0 10px}
+h3{font-size:18px;font-weight:600;margin:0}
+.key{border-left:4px solid var(--red);background:var(--note);padding:12px 16px;border-radius:0 8px 8px 0;margin:0 0 20px;max-width:60rem}
+.key p{margin:0}.key p+p{margin-top:6px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}
+.lab{font-size:14px;color:var(--muted)}
+.big{font-family:var(--serif);font-size:clamp(26px,3.4vw,34px);font-variant-numeric:tabular-nums;margin:4px 0;line-height:1.2}
+.sub{font-size:14px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:14px}
+.note{font-size:14px;color:var(--muted);margin:4px 0 14px}
+.bars{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.bars li{display:grid;grid-template-columns:minmax(6rem,34%) 1fr auto;align-items:center;gap:8px;font-size:14px}
+.bt{height:14px;background:var(--grid);border-radius:7px;overflow:hidden}
+.bf{display:block;height:100%;background:var(--bar);border-radius:7px}
+.bars li.hl .bf{background:var(--red)}
+.bv{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.tablebox{overflow:auto;max-height:44rem;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+thead th{position:sticky;top:0;background:var(--panel);text-align:left;font-weight:600;color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--line)}
+tbody th,tbody td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+tbody th{font-weight:600;min-width:11rem}
+tbody td{min-width:12rem}
+.callout{border-left:3px solid var(--muted);padding:8px 12px;color:var(--muted);font-size:14px;margin-top:12px}
+.src-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:14px}
+.src-list p{margin:4px 0;font-size:14px;color:var(--muted)}
+.src-list ul{margin:4px 0 10px;padding-left:1.1em;font-size:14px}
+.src-list button{font:inherit;font-size:13px;padding:5px 10px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+.src-list button:hover{border-color:var(--red)}
+.cta{margin-top:36px;max-width:60rem}
+.site-foot{margin-top:36px;border-top:1px solid var(--line);padding-top:14px;font-size:14px;color:var(--muted)}
+@media print{.site-top nav,.src-list button,.skip{display:none}.tablebox{max-height:none;overflow:visible}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-top">
+  <a class="brand" href="/" aria-label="Robert J. Park home"><img src="/assets/tools-mark.svg" alt="" width="30" height="30">Robert J. <b>Park</b> · Dashboards</a>
+  <nav aria-label="Main"><a href="/">Home</a><a href="/services/">Services</a><a href="/tools/">Tools</a><a href="/dashboards/">Dashboards</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></nav>
+</header>
+<main id="main" class="wrap">
+<h1>CBAM Exposure Tracker</h1>
+<p class="lead">Who in Northern Ireland pays a carbon border charge, from when, and at what price. The EU has charged for the carbon in imported steel, aluminium, cement, fertiliser, hydrogen and electricity since 1 January 2026; the UK starts on 1 January 2027. Figures as at 22 October 2026.</p>
+
+<div class="key" role="note">
+<p><strong>The short version for NI.</strong> Goods made in Northern Ireland, or released for free circulation there, are outside the EU CBAM. The UK CBAM applies across the whole UK, including NI, so the charge NI firms face is on what they <em>import</em> from outside the UK, from 1 January 2027.</p>
+<p>EU customers may still ask for your product emissions for their own reporting, and NI groups with an EU company importing CBAM goods are caught on that side.</p>
+</div>
+
+<section aria-labelledby="h-numbers">
+<h2 id="h-numbers" class="sr">Key figures</h2>
+<div class="tiles">
+<div class="card"><div class="lab">EU CBAM certificate price, Q3 2026</div><div class="big">€82.32</div><div class="sub">Per tonne CO2e embedded, published 5 October 2026</div></div>
+<div class="card"><div class="lab">Change on Q2 2026</div><div class="big">+9.4%</div><div class="sub">Follows the EU ETS auction price</div></div>
+<div class="card"><div class="lab">1,000 tCO2e embedded, at that price</div><div class="big">€82,320</div><div class="sub">Before the free-allocation adjustment and any carbon price paid abroad</div></div>
+<div class="card"><div class="lab">UK CBAM starts</div><div class="big">1 Jan 2027</div><div class="sub" id="countdown">On imports of CBAM goods worth £50,000 or more</div></div>
+<div class="card"><div class="lab">NI goods exports to the EU</div><div class="big">£7.4bn</div><div class="sub">Year to June 2026, +6.7% on a year earlier; all goods</div></div>
+<div class="card"><div class="lab">EU share of NI goods exports</div><div class="big">66.7%</div><div class="sub">Year to June 2026; all goods</div></div>
+</div>
+</section>
+
+<section aria-labelledby="h-exposure">
+<h2 id="h-exposure">Where an NI business stands</h2>
+<p class="note">Common situations under each regime. A summary of official guidance, not advice: check it against your own goods, commodity codes and routes.</p>
+<div class="tablebox" tabindex="0" role="region" aria-label="Where an NI business stands under each CBAM"><table><caption class="sr">Where an NI business stands under each CBAM</caption><thead><tr><th scope="col">Your situation</th><th scope="col">EU CBAM</th><th scope="col">UK CBAM</th><th scope="col">What to do</th></tr></thead><tbody><tr><th scope="row">You make goods in NI and sell them to Ireland or elsewhere in the EU</th><td>Not subject. Goods produced in NI are outside the EU CBAM.</td><td>Not relevant: these are exports.</td><td>No CBAM declaration is needed for these goods. Customers may still ask for product emissions for their own reporting, so keep the figures to hand.</td></tr><tr><th scope="row">You import steel, aluminium, cement, fertiliser or hydrogen into NI from outside the UK</th><td>Not subject. Goods released for free circulation in NI are outside the EU CBAM.</td><td>Liable from 1 January 2027 once CBAM goods pass £50,000 (30-day forward or 12-month backward test). Register by 31 January 2028; first return and payment by 31 May 2028.</td><td>Check commodity codes and import values now. Ask suppliers for verified emissions per tonne, or plan to use default values. Keep records for six years.</td></tr><tr><th scope="row">You send goods from NI to the EU for processing and bring them back</th><td>Not the issue here.</td><td>Outward processing rules apply. A UK carbon price already paid on the UK-origin goods can reduce the UK CBAM due.</td><td>Keep the evidence of the UK carbon price on the original goods.</td></tr><tr><th scope="row">You export goods from NI to the EU and reimport them unchanged within three years</th><td>Not the issue here.</td><td>Returned goods relief: no UK CBAM, if the goods come back in the same state within three years. The importer need not be the original exporter.</td><td>Keep export and reimport records that link the two movements.</td></tr><tr><th scope="row">Your group has an EU company that imports CBAM goods into the EU</th><td>That EU importer is caught: authorised declarant status above 50 tonnes a year, certificates from 1 February 2027, first declaration by 30 September 2027 for 2026 imports.</td><td>Not relevant to the EU import.</td><td>Make sure the EU company has applied for authorisation and is collecting supplier emissions data for 2026 imports.</td></tr><tr><th scope="row">Goods move from Great Britain to NI, or on through NI to the EU</th><td>GB to NI movements carry no EU CBAM formalities at present. Movements onward to the EU are covered in the Commission&#x27;s Q&amp;A (question 7.14).</td><td>GB to NI is an internal UK movement, not an import.</td><td>Check the Commission&#x27;s current answer before routing GB-made CBAM goods to EU customers through NI.</td></tr></tbody></table></div>
+</section>
+
+<section aria-labelledby="h-prices">
+<h2 id="h-prices">Carbon price and trade</h2>
+<div class="grid">
+<div class="card"><h3>EU CBAM certificate price by quarter</h3><p class="note">€ per tonne CO2e, as published by the European Commission. One price a quarter in 2026; weekly prices from 2027. Q4 2026 is due on 4 January 2027.</p>
+<ul class="bars">
+<li><span class="bl">Q1 2026</span><span class="bt" aria-hidden="true"><span class="bf" style="width:91.5%"></span></span><span class="bv">€75.36</span></li>
+<li><span class="bl">Q2 2026</span><span class="bt" aria-hidden="true"><span class="bf" style="width:91.4%"></span></span><span class="bv">€75.28</span></li>
+<li class="hl"><span class="bl">Q3 2026</span><span class="bt" aria-hidden="true"><span class="bf" style="width:100.0%"></span></span><span class="bv">€82.32</span></li>
+</ul></div>
+<div class="card"><h3>NI goods trade, year to June 2026</h3><p class="note">£ billion, all goods; change on the year to June 2025. HMRC does not publish NI trade in CBAM goods on its own, so this shows the size of the trade, not the CBAM share of it. 2026 figures are provisional.</p>
+<ul class="bars">
+<li><span class="bl">Exports to EU</span><span class="bt" aria-hidden="true"><span class="bf" style="width:100.0%"></span></span><span class="bv">£7.4bn (+6.7%)</span></li>
+<li><span class="bl">Exports to non-EU</span><span class="bt" aria-hidden="true"><span class="bf" style="width:50.0%"></span></span><span class="bv">£3.7bn (-2.0%)</span></li>
+<li><span class="bl">Imports from EU</span><span class="bt" aria-hidden="true"><span class="bf" style="width:94.6%"></span></span><span class="bv">£7.0bn (-1.1%)</span></li>
+<li><span class="bl">Imports from non-EU</span><span class="bt" aria-hidden="true"><span class="bf" style="width:47.3%"></span></span><span class="bv">£3.5bn (+8.9%)</span></li>
+</ul></div>
+</div>
+</section>
+
+<section aria-labelledby="h-regimes">
+<h2 id="h-regimes">EU CBAM and UK CBAM side by side</h2>
+<p class="note">The rules that matter most to a small or mid-sized business. Implementing acts and guidance keep changing, so confirm the current text before you act.</p>
+<div class="tablebox" tabindex="0" role="region" aria-label="EU CBAM and UK CBAM side by side"><table><caption class="sr">EU CBAM and UK CBAM side by side</caption><thead><tr><th scope="col">Topic</th><th scope="col">EU CBAM</th><th scope="col">UK CBAM</th></tr></thead><tbody><tr><th scope="row">Start of the paying regime</th><td>1 January 2026 (definitive regime)</td><td>1 January 2027</td></tr><tr><th scope="row">Goods covered</th><td>Cement, iron and steel, aluminium, fertilisers, electricity, hydrogen</td><td>Aluminium, cement, fertiliser, hydrogen, iron and steel (no electricity), by commodity code</td></tr><tr><th scope="row">Threshold</th><td>50 tonnes of CBAM goods per importer per year (does not apply to electricity or hydrogen)</td><td>£50,000 of CBAM goods: 30-day forward test or 12-month backward test, applied on the first of each month</td></tr><tr><th scope="row">Who is liable</th><td>The EU importer, as an authorised CBAM declarant</td><td>The importer of the CBAM goods</td></tr><tr><th scope="row">Carbon price</th><td>EU ETS auction average: one price per quarter in 2026, weekly from 2027</td><td>One rate per sector, published by the government at the start of each quarter from 1 January 2027</td></tr><tr><th scope="row">How you pay</th><td>Buy CBAM certificates on the central platform from 1 February 2027; hold at least 50% of the year&#x27;s embedded emissions at each quarter end</td><td>Tax return and payment to HMRC; no certificates</td></tr><tr><th scope="row">First declaration or return</th><td>By 30 September 2027, for 2026 imports</td><td>Registration opens 1 January 2028 (first-year deadline 31 January 2028); return and payment for 2027 by 31 May 2028</td></tr><tr><th scope="row">Surplus certificates</th><td>Can be repurchased by the Member State, within limits; the rest are cancelled</td><td>Not applicable</td></tr><tr><th scope="row">Carbon price paid abroad</th><td>Deduction for a carbon price effectively paid in the country of origin</td><td>Carbon Price Relief, backed by a verification form; cannot exceed the liability</td></tr><tr><th scope="row">Emissions data</th><td>Verified actual emissions, or the Commission&#x27;s default values</td><td>Verified emissions per tonne from the producer, or one default value per CBAM good from 2027; records kept for six years</td></tr><tr><th scope="row">Northern Ireland</th><td>Does not apply to goods produced in, or released for free circulation in, NI</td><td>Applies across the whole UK, including NI</td></tr><tr><th scope="row">UK–EU link</th><td>Negotiations on linking the two emissions trading systems began after the Council mandate of November 2025; a link would allow mutual CBAM exemptions</td><td>No jurisdiction is exempt from the UK CBAM at present</td></tr></tbody></table></div>
+<p class="callout">The UK CBAM rate for each sector will be published at the start of each quarter from 1 January 2027, and this page will add it then. The UK and EU are negotiating a link between their emissions trading systems that could exempt each other's goods from their CBAMs; until it is in force, both charges apply as set out here.</p>
+</section>
+
+<section aria-labelledby="data-sources">
+<h2 id="data-sources">Data and sources</h2>
+<p class="note">Every figure on this page comes from the tables below, which are fixed copies of official releases made on 22 October 2026. Nothing updates by itself. Download any table as CSV to check or reuse it, crediting the original source.</p>
+<div class="src-list">
+<div class="card"><h3>EU CBAM certificate prices</h3><p>Quarterly price of CBAM certificates for 2026, as published by the European Commission. The Q4 2026 price is due on 4 January 2027. Copied 22 October 2026; 3 rows.</p><ul><li><a href="https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism/price-cbam-certificates_en">Price of CBAM certificates</a></li></ul><button type="button" data-csv="cbam_prices">Download CSV</button></div>
+<div class="card"><h3>NI goods trade, year to June 2026</h3><p>All goods, not just CBAM goods: HMRC does not publish NI trade in CBAM goods on its own. 2026 figures are provisional; change is against the year to June 2025. Copied 22 October 2026; 4 rows.</p><ul><li><a href="https://www.gov.uk/government/statistics/uk-regional-trade-in-goods-statistics-second-quarter-april-to-june-2026/uk-regional-trade-in-goods-statistics-second-quarter-april-to-june-2026-commentary">HMRC regional trade in goods, Q2 2026: commentary</a></li></ul><button type="button" data-csv="ni_trade">Download CSV</button></div>
+<div class="card"><h3>Where an NI business stands</h3><p>Common situations for NI firms under each regime. A summary, not advice: check the current guidance against your own goods and routes. Copied 22 October 2026; 6 rows.</p><ul><li><a href="https://questions-statements.parliament.uk/written-questions/detail/2025-11-19/HL12132/">UK Parliament written answer HL12132</a></li><li><a href="https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary">UK CBAM policy summary</a></li><li><a href="https://taxation-customs.ec.europa.eu/document/download/013fa763-5dce-4726-a204-69fec04d5ce2_en?filename=CBAM_Questions+and+Answers.pdf">Commission CBAM Questions and Answers (PDF)</a></li><li><a href="https://www.sustainableni.org/assets/cms/downloads/Carbon-Border-Adjustment-Mechanism-CBAM-for-Northern-Ireland-businesses-April-2026.pdf">Invest NI: CBAM for NI businesses (PDF)</a></li></ul><button type="button" data-csv="ni_exposure">Download CSV</button></div>
+<div class="card"><h3>EU CBAM and UK CBAM rules</h3><p>Key rules of each regime, from the regulation, the Commission&#x27;s guidance and the GOV.UK policy summary. Copied 22 October 2026; 12 rows.</p><ul><li><a href="https://eur-lex.europa.eu/eli/reg/2023/956/oj">EUR-Lex: Regulation (EU) 2023/956</a></li><li><a href="https://eur-lex.europa.eu/eli/reg/2025/2083/oj">EUR-Lex: Regulation (EU) 2025/2083</a></li><li><a href="https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism/cbam-definitive-regime_en">Commission: CBAM definitive regime</a></li><li><a href="https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary">UK CBAM policy summary</a></li><li><a href="https://www.consilium.europa.eu/en/press/press-releases/2025/11/13/eu-uk-relations-council-greenlights-negotiations-on-agri-food-deal-and-linking-emissions-trading-systems/">Council of the EU, 13 November 2025</a></li></ul><button type="button" data-csv="regimes">Download CSV</button></div>
+</div>
+<noscript><p class="note">CSV downloads need JavaScript. Every table is also shown in full above.</p></noscript>
+</section>
+
+<section class="cta" aria-labelledby="h-help">
+<h2 id="h-help">Not sure where your business stands?</h2>
+<p>I help Northern Ireland manufacturers and importers work out their CBAM position under both regimes, gather supplier emissions data and get ready for the first UK return. <a href="/services/#cbam-and-csrd">CBAM and CSRD services</a> · <a href="/contact/">Get in touch</a> · <a href="/tools/incoterms.html">Incoterms Chooser</a> · <a href="/blog/2026/10/cbam-and-csrd-for-ni-manufacturers/">CBAM and CSRD: what NI manufacturers need to know</a></p>
+</section>
+</main>
+<footer class="site-foot">Robert J. Park · Environment · Carbon · Public Affairs · Northern Ireland. Figures as at 22 October 2026. General information, not legal or tax advice. <a href="/contact/">Contact</a> · <a href="/privacy/">Privacy</a></footer>
+<script>
+/* Data snapshot taken 2026-10-22. Fixed figures: nothing is fetched, nothing is stored. */
+window.CBAM_DATA = {"cbam_prices": [{"quarter": "Q1 2026", "price_eur": 75.36, "published": "7 April 2026", "source": "European Commission, Taxation and Customs Union: Price of CBAM certificates"}, {"quarter": "Q2 2026", "price_eur": 75.28, "published": "6 July 2026", "source": "European Commission, Taxation and Customs Union: Price of CBAM certificates"}, {"quarter": "Q3 2026", "price_eur": 82.32, "published": "5 October 2026", "source": "European Commission, Taxation and Customs Union: Price of CBAM certificates"}], "ni_trade": [{"flow": "Exports to EU", "value_gbp_bn": 7.4, "change_pct": 6.7, "period": "Year to June 2026", "source": "HMRC, UK regional trade in goods statistics, second quarter 2026 (published 17 September 2026), commentary"}, {"flow": "Exports to non-EU", "value_gbp_bn": 3.7, "change_pct": -2.0, "period": "Year to June 2026", "source": "HMRC, UK regional trade in goods statistics, second quarter 2026 (published 17 September 2026), commentary"}, {"flow": "Imports from EU", "value_gbp_bn": 7.0, "change_pct": -1.1, "period": "Year to June 2026", "source": "HMRC, UK regional trade in goods statistics, second quarter 2026 (published 17 September 2026), commentary"}, {"flow": "Imports from non-EU", "value_gbp_bn": 3.5, "change_pct": 8.9, "period": "Year to June 2026", "source": "HMRC, UK regional trade in goods statistics, second quarter 2026 (published 17 September 2026), commentary"}], "ni_exposure": [{"situation": "You make goods in NI and sell them to Ireland or elsewhere in the EU", "eu_cbam": "Not subject. Goods produced in NI are outside the EU CBAM.", "uk_cbam": "Not relevant: these are exports.", "what_to_do": "No CBAM declaration is needed for these goods. Customers may still ask for product emissions for their own reporting, so keep the figures to hand.", "source": "UK Parliament written answer HL12132, Lord Whitehead for DESNZ, 3 December 2025; European Commission CBAM FAQ, Northern Ireland questions (7.12 to 7.15), as updated October 2026"}, {"situation": "You import steel, aluminium, cement, fertiliser or hydrogen into NI from outside the UK", "eu_cbam": "Not subject. Goods released for free circulation in NI are outside the EU CBAM.", "uk_cbam": "Liable from 1 January 2027 once CBAM goods pass £50,000 (30-day forward or 12-month backward test). Register by 31 January 2028; first return and payment by 31 May 2028.", "what_to_do": "Check commodity codes and import values now. Ask suppliers for verified emissions per tonne, or plan to use default values. Keep records for six years.", "source": "HM Treasury and HMRC, Carbon Border Adjustment Mechanism (CBAM): policy summary, GOV.UK (updated 16 October 2026); European Commission CBAM FAQ, Northern Ireland questions (7.12 to 7.15), as updated October 2026"}, {"situation": "You send goods from NI to the EU for processing and bring them back", "eu_cbam": "Not the issue here.", "uk_cbam": "Outward processing rules apply. A UK carbon price already paid on the UK-origin goods can reduce the UK CBAM due.", "what_to_do": "Keep the evidence of the UK carbon price on the original goods.", "source": "HM Treasury and HMRC, Carbon Border Adjustment Mechanism (CBAM): policy summary, GOV.UK (updated 16 October 2026)"}, {"situation": "You export goods from NI to the EU and reimport them unchanged within three years", "eu_cbam": "Not the issue here.", "uk_cbam": "Returned goods relief: no UK CBAM, if the goods come back in the same state within three years. The importer need not be the original exporter.", "what_to_do": "Keep export and reimport records that link the two movements.", "source": "HM Treasury and HMRC, Carbon Border Adjustment Mechanism (CBAM): policy summary, GOV.UK (updated 16 October 2026)"}, {"situation": "Your group has an EU company that imports CBAM goods into the EU", "eu_cbam": "That EU importer is caught: authorised declarant status above 50 tonnes a year, certificates from 1 February 2027, first declaration by 30 September 2027 for 2026 imports.", "uk_cbam": "Not relevant to the EU import.", "what_to_do": "Make sure the EU company has applied for authorisation and is collecting supplier emissions data for 2026 imports.", "source": "Regulation (EU) 2023/956 as amended by Regulation (EU) 2025/2083; European Commission, CBAM Questions and Answers (updated 27 May 2026)"}, {"situation": "Goods move from Great Britain to NI, or on through NI to the EU", "eu_cbam": "GB to NI movements carry no EU CBAM formalities at present. Movements onward to the EU are covered in the Commission's Q&A (question 7.14).", "uk_cbam": "GB to NI is an internal UK movement, not an import.", "what_to_do": "Check the Commission's current answer before routing GB-made CBAM goods to EU customers through NI.", "source": "Invest NI, CBAM for Northern Ireland businesses (AECOM, April 2026), section 4.1; European Commission CBAM FAQ, Northern Ireland questions (7.12 to 7.15), as updated October 2026"}], "regimes": [{"item": "Start of the paying regime", "eu_cbam": "1 January 2026 (definitive regime)", "uk_cbam": "1 January 2027", "source": "European Commission, CBAM definitive regime page; HM Treasury and HMRC, Carbon Border Adjustment Mechanism (CBAM): policy summary, GOV.UK (updated 16 October 2026)"}, {"item": "Goods covered", "eu_cbam": "Cement, iron and steel, aluminium, fertilisers, electricity, hydrogen", "uk_cbam": "Aluminium, cement, fertiliser, hydrogen, iron and steel (no electricity), by commodity code", "source": "Regulation (EU) 2023/956 as amended by Regulation (EU) 2025/2083; European Commission, CBAM Questions and Answers (updated 27 May 2026); HM Treasury and HMRC, Carbon Border Adjustment Mechanism (CBAM): policy summary, GOV.UK (updated 16 October 2026)"}, {"item": "Threshold", "eu_cbam": "50 tonnes of CBAM goods per importer per year (does not apply to electricity or hydrogen)", "uk_cbam": "£50,000 of CBAM goods: 30-day forward test or 12-month backward test, applied on the first of each month", "source": "Regulation (EU) 2023/956 as amended by Regulation (EU) 2025/2083; European Commission, CBAM Questions and Answers (updated 27 May 2026); HM Treasury and HMRC, Carbon Border Adjustment Mechanism (CBAM): policy summary, GOV.UK (updated 16 October 2026)"}, {"item": "Who is liable", "eu_cbam": "The EU importer, as an authorised CBAM declarant", "uk_cbam": "The importer of the CBAM goods", "source": "Regulation (EU) 2023/956 as amended by Regulation (EU) 2025/2083; European Commission, CBAM Questions and Answers (updated 27 May 2026); HM Treasury and HMRC, Carbon Border Adjustment Mechanism (CBAM): policy summary, GOV.UK (updated 16 October 2026)"}, {"item": "Carbon price", "eu_cbam": "EU ETS auction average: one price per quarter in 2026, weekly from 2027", "uk_cbam": "One rate per sector, published by the government at the start of each quarter from 1 January 2027", "source": "European Commission, Taxation and Customs Union: Price of CBAM certificates; HM Treasury and HMRC, Carbon Border Adjustment Mechanism (CBAM): policy summary, GOV.UK (updated 16 October 2026)"}, {"item": "How you pay", "eu_cbam": "Buy CBAM certificates on the central platform from 1 February 2027; hold at least 50% of the year's embedded emissions at each quarter end", "uk_cbam": "Tax return and payment to HMRC; no certificates", "source": "Regulation (EU) 2023/956 as amended by Regulation (EU) 2025/2083; European Commission, CBAM Questions and Answers (updated 27 May 2026); HM Treasury and HMRC, Carbon Border Adjustment Mechanism (CBAM): policy summary, GOV.UK (updated 16 October 2026)"}, {"item": "First declaration or return", "eu_cbam": "By 30 September 2027, for 2026 imports", "uk_cbam": "Registration opens 1 January 2028 (first-year deadline 31 January 2028); return and payment for 2027 by 31 May 2028", "source": "Regulation (EU) 2023/956 as amended by Regulation (EU) 2025/2083; European Commission, CBAM Questions and Answers (updated 27 May 2026); HM Treasury and HMRC, Carbon Border Adjustment Mechanism (CBAM): policy summary, GOV.UK (updated 16 October 2026)"}, {"item": "Surplus certificates", "eu_cbam": "Can be repurchased by the Member State, within limits; the rest are cancelled", "uk_cbam": "Not applicable", "source": "Regulation (EU) 2023/956 as amended by Regulation (EU) 2025/2083; European Commission, CBAM Questions and Answers (updated 27 May 2026)"}, {"item": "Carbon price paid abroad", "eu_cbam": "Deduction for a carbon price effectively paid in the country of origin", "uk_cbam": "Carbon Price Relief, backed by a verification form; cannot exceed the liability", "source": "Regulation (EU) 2023/956 as amended by Regulation (EU) 2025/2083; European Commission, CBAM Questions and Answers (updated 27 May 2026); HM Treasury and HMRC, Carbon Border Adjustment Mechanism (CBAM): policy summary, GOV.UK (updated 16 October 2026)"}, {"item": "Emissions data", "eu_cbam": "Verified actual emissions, or the Commission's default values", "uk_cbam": "Verified emissions per tonne from the producer, or one default value per CBAM good from 2027; records kept for six years", "source": "European Commission, CBAM definitive regime page; HM Treasury and HMRC, Carbon Border Adjustment Mechanism (CBAM): policy summary, GOV.UK (updated 16 October 2026)"}, {"item": "Northern Ireland", "eu_cbam": "Does not apply to goods produced in, or released for free circulation in, NI", "uk_cbam": "Applies across the whole UK, including NI", "source": "UK Parliament written answer HL12132, Lord Whitehead for DESNZ, 3 December 2025; European Commission CBAM FAQ, Northern Ireland questions (7.12 to 7.15), as updated October 2026; HM Treasury and HMRC, Carbon Border Adjustment Mechanism (CBAM): policy summary, GOV.UK (updated 16 October 2026)"}, {"item": "UK–EU link", "eu_cbam": "Negotiations on linking the two emissions trading systems began after the Council mandate of November 2025; a link would allow mutual CBAM exemptions", "uk_cbam": "No jurisdiction is exempt from the UK CBAM at present", "source": "Council of the EU press release, 13 November 2025: negotiations on linking emissions trading systems; HM Treasury and HMRC, Carbon Border Adjustment Mechanism (CBAM): policy summary, GOV.UK (updated 16 October 2026)"}]};
+(function(){
+  var start = Date.UTC(2027, 0, 1), now = new Date(), today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+  var days = Math.round((start - today) / 864e5), el = document.getElementById('countdown');
+  if (el) el.textContent = days > 0 ? days + ' days to go. Applies to CBAM goods worth £50,000 or more' : 'In force. Applies to CBAM goods worth £50,000 or more';
+  function csv(rows){ var cols = Object.keys(rows[0] || {}); var q = function(v){ v = v == null ? '' : String(v); return /[",\r\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
+    return [cols.join(',')].concat(rows.map(function(r){ return cols.map(function(c){ return q(r[c]); }).join(','); })).join('\r\n'); }
+  document.querySelectorAll('button[data-csv]').forEach(function(b){
+    var id = b.getAttribute('data-csv');
+    b.textContent = 'Download CSV (' + CBAM_DATA[id].length + ' rows)';
+    b.addEventListener('click', function(){
+      var u = URL.createObjectURL(new Blob(['﻿' + csv(CBAM_DATA[id])], {type: 'text/csv;charset=utf-8'}));
+      var a = document.createElement('a'); a.href = u; a.download = 'cbam-exposure-tracker-' + id.replace(/_/g, '-') + '.csv';
+      document.body.appendChild(a); a.click(); a.remove(); setTimeout(function(){ URL.revokeObjectURL(u); }, 1000);
+    });
+  });
+})();
+</script>
+</body>
+</html>

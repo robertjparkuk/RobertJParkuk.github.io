@@ -32,5 +32,6 @@ You can do this from your phone in the GitHub app or in a web browser.
 
 - The first paragraph is used as the summary on the blog list and home page, so make it count.
 - To edit or delete a post later, open its file in `_posts` and use the pencil (edit) or bin icon.
-- To hold a post back, give it a future date. It stays hidden until that date has passed **and** you next make any change to the site (GitHub only rebuilds when something changes).
+- To schedule a post, give it a future date and time, e.g. `date: 2026-11-02 12:00:00 +0000`. The site rebuilds itself every day shortly after noon (the *Publish scheduled posts* workflow in `.github/workflows`), so a post dated for noon appears then. For any other time, open the **Actions** tab, choose *Publish scheduled posts* and press **Run workflow** once the time has passed.
+- To add a consultation response, copy `_posts/2026-10-24-response-historic-environment-policy.md`: keep `categories: [consultation-responses]` and fill in `consulting_body`, `closed`, `outcome` and `pdf`. Put the PDF in `assets/consultations/`. It then appears on the Consultation responses page and in the blog.
 - To add an image, upload it to the `assets` folder, then put `![Description of image](/assets/your-image.jpg)` in your post.

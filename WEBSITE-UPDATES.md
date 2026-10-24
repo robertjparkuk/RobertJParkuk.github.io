@@ -25,6 +25,47 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.11.1 — 23 October 2026: response PDF rebranded
+
+**Changed**
+- `assets/consultations/2026-10-dfc-historic-environment-policy-response.pdf`: rebuilt with the official logo files (full lockup in the header, mark in the footer) and brand red #A61C1C. Text unchanged.
+
+### v0.11.0 — 24 October 2026: Consultation responses
+
+**Added**
+- `public-sector/consultation-responses.md` (/public-sector/consultation-responses/): a section for selected consultation responses, listing every post in the `consultation-responses` category with consulting body, closing date and outcome.
+- `_posts/2026-10-24-response-historic-environment-policy.md`: first entry, Robert's response to the DfC Historic Environment Policy consultation (closed 23 October 2026), with the eight asks and a link to the full response. Scheduled for 12:00 on 24 October 2026.
+- `assets/consultations/2026-10-dfc-historic-environment-policy-response.pdf`: the branded 14-page response as submitted. The file is on the server from the merge but is not linked anywhere until the post publishes.
+- `_posts/2026-10-24-publishing-my-consultation-responses.md`: blog post announcing the section. Scheduled for 12:01 on 24 October 2026.
+- `.github/workflows/publish-scheduled-posts.yml`: asks GitHub Pages to rebuild at 11:05 and 12:05 UTC every day (falls back to an empty commit if the request is refused), so future-dated posts go live on time. Can also be run by hand from the Actions tab.
+
+**Changed**
+- `public-sector.md`: new "Consultation responses" paragraph linking the section. It only shows once at least one response has published.
+- `HOW-TO-POST.md`: how to schedule a post and how to add a consultation response.
+
+**Checked:** DfC's privacy notice for the consultation places no restriction on respondents publishing their own responses; DfC may publish responses itself, with personal data removed.
+
+### v0.10.0 — 22 October 2026: CBAM Exposure Tracker
+
+**Added**
+- `tools/dashboards/cbam-exposure-tracker.html`: the CBAM Exposure Tracker, rebuilt from Robert's working dashboard as a fixed snapshot (figures as at 22 October 2026). One self-contained page: four data tables (EU certificate prices, NI goods trade, where an NI business stands, EU and UK rules), self-hosted fonts, no outside scripts, nothing stored. Unlike the agriculture dashboard, the tables and figures are written into the HTML, so the page reads without JavaScript; the script only adds the CSV downloads and the days-to-go count for the UK CBAM. Skip link, `:focus-visible`, scrollable labelled tables, dark mode.
+- New "Where an NI business stands" table: six common situations (selling NI goods to the EU, importing CBAM goods into NI, outward processing, returned goods, an EU group company, GB goods via NI), with what applies under each regime and what to do.
+
+**Checked against primary sources, and corrected**
+- EU certificate prices (Q1 €75.36, Q2 €75.28, Q3 €82.32) and publication dates: match the Commission's price page.
+- HMRC NI trade, year to June 2026 (£7.4bn exports to the EU, +6.7%, etc.): match the Q2 2026 commentary, published 17 September 2026. Now labelled as all goods, not CBAM goods.
+- UK CBAM rules: match the GOV.UK policy summary updated 16 October 2026.
+- **Northern Ireland row was wrong.** The working copy said EU CBAM treatment of NI goods should be checked case by case, and its intro said NI suppliers face data requests "from both sides". Corrected: goods produced in, or released for free circulation in, NI are outside the EU CBAM (UK Government written answer HL12132, 3 December 2025; Commission FAQ update, October 2026). The UK CBAM applies in NI from 1 January 2027.
+- Removed the unverified "unused 2026 certificates cancelled 1 Nov 2027"; now "repurchased within limits, the rest cancelled".
+- Added rows for emissions data and default values, and the UK–EU ETS link (Council mandate November 2025; no exemption in force).
+
+**Changed**
+- `dashboards.md`: CBAM Exposure Tracker entry, listed first.
+- `tools.md`: Dashboards entry names both dashboards and links the tracker.
+- `services.md`: link to the tracker under CBAM and CSRD. (There is no CBAM Desk offer page yet; link it from there when it exists.)
+
+**Refresh due:** Q4 2026 EU price on 4 January 2027; first UK CBAM sector rates from 1 January 2027.
+
 ### v0.9.1 — 21 October 2026: custom domain and new email
 
 **Changed**

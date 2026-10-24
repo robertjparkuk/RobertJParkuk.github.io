@@ -15,6 +15,8 @@ Northern Ireland manufacturers often trade into both the UK and EU markets, whic
 - what emissions and supply-chain data you'll need, and where to get it
 - how to prepare without building a reporting burden you don't need
 
+See where an NI business stands under both regimes, and the latest EU certificate price, on the free [CBAM Exposure Tracker]({{ '/tools/dashboards/cbam-exposure-tracker.html' | relative_url }}).
+
 ## Carbon inventories
 
 <figure class="page-photo"><img src="{{ '/assets/photos/food-manufacturing.jpg' | relative_url }}" alt="Food production workers at a stainless-steel line" loading="lazy"><figcaption>Every product has a footprint behind it.</figcaption></figure>

@@ -40,6 +40,7 @@
         <p><strong>{{ site.title }}</strong> · {{ site.tagline }} · {{ site.location }}</p>
         <p>
           <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          {% if site.phone and site.phone != "" %} · <a href="tel:{{ site.phone_intl }}">{{ site.phone }}</a>{% endif %}
           {% if site.linkedin != "" %} · <a href="{{ site.linkedin }}" rel="me">LinkedIn</a>{% endif %}
           {% if site.whatsapp != "" %} · WhatsApp {{ site.whatsapp }}{% endif %}
           · <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
