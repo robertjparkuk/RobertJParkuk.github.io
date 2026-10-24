@@ -18,4 +18,10 @@ Farm and land emissions in Northern Ireland from 1990 to 2024: emissions by sour
 
 [Open the dashboard →]({{ '/tools/dashboards/ni-agriculture-land-carbon.html' | relative_url }}) · Commentary: [Focus on Agriculture, October 2026]({{ '/blog/focus-on-agriculture-october-2026/' | relative_url }})
 
-More dashboards will follow.
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">NI Food and Drink Processing</h2>
+
+Turnover from 2020, where sales go, NI emissions by sector, what the EU deforestation rules cover and who enforces them, and every deadline for processors to the end of 2027. Figures checked on 21 October 2026, from NISRA, DAERA, GOV.UK and PackUK.
+
+[Open the dashboard →]({{ '/tools/dashboards/ni-food-drink-processing.html' | relative_url }}) · Commentary: [Focus on Food & Drink Processing, 24 October 2026]({{ '/blog/focus-on-food-and-drink-processing-october-2026/' | relative_url }})
+
+More dashboards follow alongside each weekly *Focus on* briefing.
