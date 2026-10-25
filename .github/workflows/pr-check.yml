@@ -1,0 +1,47 @@
+# Builds the site for every pull request, exactly as GitHub Pages does,
+# and fails on things the house rules forbid. Runs on pull requests only;
+# it never publishes anything.
+
+name: PR check
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build with Jekyll (same action as GitHub Pages), future posts included
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+          future: true
+
+      - name: House-rule checks on the built site
+        run: |
+          fail=0
+          check() { if grep -rIl --include='*.html' -E "$1" _site >/dev/null; then echo "::error::Found forbidden pattern: $2"; grep -rIl --include='*.html' -E "$1" _site | head; fail=1; fi; }
+          check '07595 ?157 ?825|07595157825' "personal mobile number"
+          check 'robertjparkuk\.github\.io' "old github.io address"
+          check 'fonts\.googleapis|fonts\.gstatic' "Google Fonts request"
+          check '<script[^>]+src="https?://' "external script"
+          exit $fail
+
+      - name: Check the hero rotation script is valid JavaScript
+        run: |
+          python3 - <<'PY'
+          import re,subprocess
+          s=open('_site/index.html').read()
+          js=[m for m in re.findall(r'<script>(.*?)</script>',s,re.S) if 'hero-title' in m][0]
+          open('/tmp/hero.js','w').write(js.replace('document.getElementById','(function(){return null;})'))
+          PY
+          node --check /tmp/hero.js && echo "hero script parses"
+          grep -c '{e:' _site/index.html | xargs echo "hero messages in built page:"
