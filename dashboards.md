@@ -24,4 +24,10 @@ Turnover from 2020, where sales go, NI emissions by sector, what the EU deforest
 
 [Open the dashboard →]({{ '/tools/dashboards/ni-food-drink-processing.html' | relative_url }}) · Commentary: [Focus on Food & Drink Processing, 24 October 2026]({{ '/blog/focus-on-food-and-drink-processing-october-2026/' | relative_url }})
 
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">EU Law and the Windsor Framework</h2>
+
+Which EU laws apply in Northern Ireland, every Stormont Brake case and new EU act added since 2024, how NI rules reach businesses in Great Britain, and open European Commission and Irish government consultations. Checked on 25 October 2026.
+
+[Open the dashboard →]({{ '/tools/dashboards/eu-law-windsor-framework.html' | relative_url }})
+
 More dashboards follow alongside each weekly *Focus on* briefing.
