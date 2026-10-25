@@ -7,7 +7,7 @@ image: /assets/photos/customs-declaration.jpg
 
 Northern Ireland businesses work under two rulebooks, and most of them can't easily tell which one applies to what. So I've built a free dashboard that sets it out on one page: [EU Law and the Windsor Framework]({{ '/tools/dashboards/eu-law-windsor-framework.html' | relative_url }}).
 
-<figure class="page-photo"><img src="{{ '/assets/photos/customs-declaration.jpg' | relative_url }}" alt="A customs declaration form on a desk" loading="lazy"><figcaption>Which rules apply depends on what you make, where it goes and who buys it.</figcaption></figure>
+<figure class="page-photo"><img src="{{ '/assets/photos/customs-declaration.jpg' | relative_url }}" alt="Close-up of a customs declaration label with a barcode" loading="lazy"><figcaption>Which rules apply depends on what you make, where it goes and who buys it.</figcaption></figure>
 
 ## Why I made it
 
