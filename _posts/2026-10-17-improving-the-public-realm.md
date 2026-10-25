@@ -3,6 +3,12 @@ title: "Improving the public realm: guardianship, not just maintenance"
 date: 2026-10-17 00:10:00 +0100
 tags: [Public realm, Land, Waste, Councils, Policy]
 image: /assets/photos/bins-collection.jpg
+hero_eyebrow: "Land · Waste · Duty · Civic pride"
+hero_title: "Good places don't happen by accident. They're <em>looked after</em>."
+hero_lead: "Clean land, well-run waste services and public spaces people are proud of come from clear duties and steady care. I help councils, landowners and businesses take on that guardianship, and make the case for it to the people who decide."
+hero_button: "Read: improving the public realm"
+hero_button2: ["Try the Land Repair Helix", "/tools/land-repair-helix.html"]
+hero_until: 2026-11-12T12:00:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/bins-collection.jpg' | relative_url }}" alt="A refuse collection crew emptying wheelie bins on a street" loading="lazy"><figcaption>The public realm is looked after every day, mostly by people nobody thanks.</figcaption></figure>

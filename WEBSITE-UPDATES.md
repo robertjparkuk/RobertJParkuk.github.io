@@ -25,6 +25,19 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.13.0 — 27 October 2026: spicy headlines and four thought pieces (for sign-off)
+
+**Changed**
+- `index.html`: the home-page hero rotation now reads extra headlines from post front matter (`hero_eyebrow`, `hero_title`, `hero_lead`, `hero_button`, `hero_button2`, optional `hero_until`). A post's headline joins the rotation only once the post is live, so the banner never links to an unpublished page. The three standing messages (manufacturers, suppliers, public sector) are unchanged; the manufacturers message stays the no-JavaScript default.
+- `_posts/2026-10-17-improving-the-public-realm.md`: its old hard-coded hero message moved into front matter, with `hero_until` set to 12 November 2026 at 12:00, when the new public realm piece replaces it.
+
+**Added** (scheduled posts, each with a hero headline)
+- `_posts/2026-11-02-save-local-agriculture-stop-offshoring-our-food.md`: "If we want to save local agriculture, stop the regulations that offshore our food". Monday 2 November, 12:00.
+- `_posts/2026-11-05-when-did-your-voice-on-a-consultation-last-get-heard.md`: "When did you last have your voice on a Stormont or EU consultation heard?" Thursday 5 November, 12:00.
+- `_posts/2026-11-10-northern-ireland-screen-how-do-we-grow-it.md`: "Northern Ireland Screen is fantastic. So how do we grow it?" Tuesday 10 November, 12:00.
+- `_posts/2026-11-12-we-dont-fund-the-drains-then-we-pay-for-the-flood.md`: public realm failure on investment and climate, drawing on the Public Realm Bill. Thursday 12 November, 12:00.
+
+Each piece has three illustrative scenarios, practical fixes, the strongest counter-argument, "what would change my mind" and a source list (official sources first; no energy broker sites).
 ### v0.12.0 — 26 October 2026: Storm Boelo post and first briefing PDF
 
 **Added**
