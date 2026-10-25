@@ -48,6 +48,11 @@ Arm's-length bodies, agencies and publicly funded organisations can draw on the 
 I respond to public consultations across Northern Ireland and publish a selection once they close. [Read my consultation responses]({{ '/public-sector/consultation-responses/' | relative_url }}).
 
 {% endif %}
+## EU law and the Windsor Framework
+
+Which EU laws apply in Northern Ireland, every Stormont Brake case, how NI rules reach Great Britain, and the European Commission and Irish government consultations open now. [Open the EU Law and the Windsor Framework dashboard]({{ '/tools/dashboards/eu-law-windsor-framework.html' | relative_url }}).
+
+
 ## Procurement
 
 I'm happy to provide quotations, capability statements and CVs, to join supplier lists and frameworks, and to respond to tenders, either directly or as part of a consortium. If you're planning work and want to understand what's possible before going to market, I'm also glad to have an informal conversation.
