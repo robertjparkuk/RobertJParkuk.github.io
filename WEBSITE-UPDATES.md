@@ -25,6 +25,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.12.0 — 26 October 2026: Storm Boelo post and first briefing PDF
+
+**Added**
+- Blog post: *Largs flooded this morning. Nobody is to blame. That is the problem.* (`_posts/2026-10-26-largs-flooded-nobody-to-blame.md`), drawing on a UK/EU evidence review of public-realm under-investment and climate impacts, with a section on Kilroot and Ballylumford.
+- First branded briefing PDF, *Built for Yesterday's Weather* (Briefing 01), at `assets/briefings/2026-10-built-for-yesterdays-weather-briefing.pdf`, linked from the post. New `assets/briefings/` folder for future briefings.
+
 ### v0.11.1 — 23 October 2026: response PDF rebranded
 
 **Changed**
