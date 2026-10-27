@@ -1,6 +1,6 @@
 ---
 title: "Crystals in Confinement: from sea urchins to soil"
-date: 2026-10-27 21:30:00 +0000
+date: 2026-10-27 21:00:00 +0000
 tags: [Contaminated land, Chemistry, PFAS, Northern Ireland, Policy]
 permalink: /research/crystals-in-confinement/
 ---
