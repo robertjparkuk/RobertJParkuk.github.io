@@ -10,6 +10,7 @@ submitted: 2026-10-23
 outcome: awaited
 pdf: /assets/consultations/2026-10-dfc-historic-environment-policy-response.pdf
 image: /assets/photos/giants-causeway.jpg
+description: "I support a single, ten-year Historic Environment Policy for Northern Ireland, but the draft is strong on value and weak on means."
 ---
 
 I support a single, ten-year Historic Environment Policy for Northern Ireland, but the draft is strong on value and weak on means. My response asks the Department for Communities to strengthen it in eight ways, starting with the land that most of our heritage stands on.

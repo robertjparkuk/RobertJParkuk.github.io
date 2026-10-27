@@ -3,6 +3,7 @@ title: "Offsets are a scam. Here's what to do instead."
 date: 2026-10-17 00:20:00 +0100
 tags: [Carbon, Offsets, Greenwashing, ESG]
 image: /assets/photos/recycle-forest.jpg
+description: "That's a strong title, so let me be precise about what I mean. Protecting forests, restoring peat and funding clean cookstoves can all be worthwhile."
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/recycle-forest.jpg' | relative_url }}" alt="Sunlight through a forest canopy" loading="lazy"><figcaption>A protected forest is a good thing. Paying for it doesn't cancel your boiler.</figcaption></figure>

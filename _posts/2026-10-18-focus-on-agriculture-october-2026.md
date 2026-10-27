@@ -4,6 +4,7 @@ date: 2026-10-18 00:30:00 +0100
 tags: [Agriculture, Carbon, Land, Northern Ireland]
 image: /assets/focus-on-agriculture/2026-10/01-then-and-now.png
 link: /blog/focus-on-agriculture-october-2026/
+description: "Northern Ireland farming now gets far more food from every kilogram of nitrogen, but farm emissions are still 10% above 1990."
 ---
 
 Northern Ireland farming now gets far more food from every kilogram of nitrogen, but farm emissions are still 10% above 1990. My October briefing covers livestock methane, fertiliser and nutrient balances, peatland and woodland, new research at Hillsborough, and three things a farm can do this month.

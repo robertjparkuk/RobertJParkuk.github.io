@@ -9,6 +9,7 @@ hero_lead: "Clean land, well-run waste services and public spaces people are pro
 hero_button: "Read: improving the public realm"
 hero_button2: ["Try the Land Repair Helix", "/tools/land-repair-helix.html"]
 hero_until: 2026-11-12T12:00:00Z
+description: "Streets, verges, parks, rivers and beaches: the public realm we share but don't own, and why it needs guardianship rather than just maintenance."
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/bins-collection.jpg' | relative_url }}" alt="A refuse collection crew emptying wheelie bins on a street" loading="lazy"><figcaption>The public realm is looked after every day, mostly by people nobody thanks.</figcaption></figure>

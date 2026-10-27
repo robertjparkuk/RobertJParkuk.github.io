@@ -4,6 +4,7 @@ date: 2026-10-24 23:30:00 +0100
 tags: [Food and drink, Carbon, Deforestation, Packaging, Northern Ireland]
 image: /assets/focus-on-food-drink/2026-10/01-markets.png
 link: /blog/focus-on-food-and-drink-processing-october-2026/
+description: "Northern Ireland's food and drink processors turn over an estimated £7.1bn, and almost half of their sales go to Great Britain."
 ---
 
 Northern Ireland's food and drink processors turn over an estimated £7.1bn, and almost half of their sales go to Great Britain. This week's briefing covers where their emissions sit, why the farm is in every processor's footprint, and a new section on drinks, and seven new rules arriving in fourteen months, from EU deforestation checks on 30 December to deposit return in October 2027.

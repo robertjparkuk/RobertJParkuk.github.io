@@ -3,6 +3,7 @@ title: "A dashboard for EU law and the Windsor Framework"
 date: 2026-10-25 17:30:00 +0000
 tags: [Windsor Framework, EU law, Public affairs, Northern Ireland, Dashboards]
 image: /assets/photos/customs-declaration.jpg
+description: "Take a packaging firm in Craigavon. From August this year, anything it packs for a Northern Ireland customer has to meet the EU's new packaging regulation."
 ---
 
 Take a packaging firm in Craigavon. From August this year, anything it packs for a Northern Ireland customer has to meet the EU's new packaging regulation. Anything it packs for a customer in Leeds doesn't, but carries UK producer-responsibility fees instead. Its tumble-dryer-making neighbour sells CE-marked machines into both markets today, and from January will answer to a new EU Machinery Regulation in one and old GB rules in the other. Neither firm has a lawyer on staff. I've built a free page that sets out which rules apply where, with a source behind every line: [EU Law and the Windsor Framework]({{ '/tools/dashboards/eu-law-windsor-framework.html' | relative_url }}).

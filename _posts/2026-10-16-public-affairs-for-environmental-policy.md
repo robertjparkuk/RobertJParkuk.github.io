@@ -2,6 +2,7 @@
 title: "Public affairs for environmental policy: being heard before the rules are written"
 date: 2026-10-16 00:01:00 +0100
 tags: [Public affairs, Policy, Communications]
+description: "Most businesses meet environmental regulation at the end of the process, when the rules are final and the only question is how to comply."
 ---
 
 Most businesses meet environmental regulation at the end of the process, when the rules are final and the only question is how to comply. By then, the useful conversations are over. Public affairs is about getting into those conversations earlier.
