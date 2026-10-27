@@ -29,7 +29,7 @@ If you own or occupy industrial land in Northern Ireland, or you're buying it, t
 
 I don't own testing equipment, and I don't pretend to. Site investigation, sampling and remediation are specialist jobs, so I bring in established firms to do them. My role is to frame the questions, manage the process and make sense of the results for you: what the findings mean for your plans, your liabilities and your lenders.
 
-My chemistry background helps here. Contaminants behave according to their chemistry and the ground they're in, and understanding that makes it easier to judge which risks are real and which are theoretical.
+My chemistry background helps here. Contaminants behave according to their chemistry and the ground they're in, and understanding that makes it easier to judge which risks are real and which are theoretical. [Crystals in Confinement]({{ '/research/crystals-in-confinement/' | relative_url }}) explains where that background comes from and how it applies to contaminated land and PFAS.
 
 ## The policy angle
 

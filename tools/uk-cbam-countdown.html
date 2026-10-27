@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UK CBAM Countdown | Robert J. Park</title>
+<meta name="description" content="Countdown to the UK Carbon Border Adjustment Mechanism on 1 January 2027, with the key dates and a five-point checklist for Northern Ireland importers of steel, aluminium, cement, fertiliser and hydrogen.">
+<link rel="canonical" href="https://robertjpark.co.uk/tools/uk-cbam-countdown.html">
+<meta property="og:title" content="UK CBAM Countdown: 1 January 2027">
+<meta property="og:description" content="How long until the UK carbon border charge starts, the dates that follow, and what NI importers should do now.">
+<meta property="og:url" content="https://robertjpark.co.uk/tools/uk-cbam-countdown.html">
+<meta property="og:image" content="https://robertjpark.co.uk/assets/og-image.jpg">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+:root{
+  --bg:#FFFFFF; --fg:#1B1817; --muted:#5F5856; --panel:#F6F4F2; --line:#DDD6D2; --grid:#ECE7E4; --bar:#5E6E80;
+  --red:#B3121B; --note:#FBF1F1;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif; --sans:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#171413; --fg:#F1ECE9; --muted:#B3AAA6; --panel:#221E1D; --line:#3A3332; --grid:#2E2827; --bar:#93A6BA;
+  --red:#F0787C; --note:#2A1F1F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#171413; --fg:#F1ECE9; --muted:#B3AAA6; --panel:#221E1D; --line:#3A3332; --grid:#2E2827; --bar:#93A6BA;
+  --red:#F0787C; --note:#2A1F1F; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.5;
+  padding:24px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+a{color:var(--red)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--bg);padding:8px 12px;border:2px solid var(--red);z-index:9}
+.skip:focus{left:16px}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.site-top,.wrap,.site-foot{max-width:72rem;margin-inline:auto}
+.site-top{margin-bottom:20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.brand b{color:var(--red)}
+.site-top nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+.site-top nav a{color:var(--muted);text-decoration:none}.site-top nav a:hover{color:var(--red)}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(28px,4vw,40px);line-height:1.15;margin:0 0 6px}
+.lead{color:var(--muted);font-size:17px;max-width:60rem;margin:0 0 20px}
+h2{font-family:var(--serif);font-weight:600;font-size:22px;margin:36px 0 10px}
+h3{font-size:18px;font-weight:600;margin:0}
+.key{border-left:4px solid var(--red);background:var(--note);padding:12px 16px;border-radius:0 8px 8px 0;margin:0 0 20px;max-width:60rem}
+.key p{margin:0}.key p+p{margin-top:6px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}
+.lab{font-size:14px;color:var(--muted)}
+.big{font-family:var(--serif);font-size:clamp(26px,3.4vw,34px);font-variant-numeric:tabular-nums;margin:4px 0;line-height:1.2}
+.sub{font-size:14px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:14px}
+.note{font-size:14px;color:var(--muted);margin:4px 0 14px}
+.bars{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.bars li{display:grid;grid-template-columns:minmax(6rem,34%) 1fr auto;align-items:center;gap:8px;font-size:14px}
+.bt{height:14px;background:var(--grid);border-radius:7px;overflow:hidden}
+.bf{display:block;height:100%;background:var(--bar);border-radius:7px}
+.bars li.hl .bf{background:var(--red)}
+.bv{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.tablebox{overflow:auto;max-height:44rem;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+thead th{position:sticky;top:0;background:var(--panel);text-align:left;font-weight:600;color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--line)}
+tbody th,tbody td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+tbody th{font-weight:600;min-width:11rem}
+tbody td{min-width:12rem}
+.callout{border-left:3px solid var(--muted);padding:8px 12px;color:var(--muted);font-size:14px;margin-top:12px}
+.src-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:14px}
+.src-list p{margin:4px 0;font-size:14px;color:var(--muted)}
+.src-list ul{margin:4px 0 10px;padding-left:1.1em;font-size:14px}
+.src-list button{font:inherit;font-size:13px;padding:5px 10px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+.src-list button:hover{border-color:var(--red)}
+.cta{margin-top:36px;max-width:60rem}
+.site-foot{margin-top:36px;border-top:1px solid var(--line);padding-top:14px;font-size:14px;color:var(--muted)}
+@media print{.site-top nav,.src-list button,.skip{display:none}.tablebox{max-height:none;overflow:visible}}
+
+/* Countdown: one large clock, then the dates that follow, then the checklist. */
+.clock{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:44rem;margin:8px 0 10px}
+.unit{background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--red);border-radius:8px;padding:14px 10px;text-align:center}
+.num{font-family:'IBM Plex Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums;font-size:clamp(34px,7vw,64px);line-height:1;color:var(--fg)}
+.ul{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.started{font-family:var(--serif);font-size:clamp(24px,4vw,34px);color:var(--red);margin:10px 0}
+.eyebrow{font-size:13.6px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin:0 0 6px}
+ol.dates{list-style:none;margin:0;padding:0;display:grid;gap:10px;max-width:52rem}
+ol.dates li{display:grid;grid-template-columns:minmax(9rem,12rem) 1fr auto;gap:12px;align-items:baseline;border-bottom:1px solid var(--line);padding:8px 0}
+ol.dates .d{font-weight:600}
+ol.dates .left{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:14px;color:var(--muted);white-space:nowrap}
+ol.dates li.past .left{color:var(--red)}
+@media (max-width:560px){ol.dates li{grid-template-columns:1fr}.clock{gap:8px}.unit{padding:10px 4px}}
+.checks{max-width:52rem;padding-left:1.2em}
+.checks li{margin:0 0 8px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-top">
+  <a class="brand" href="/" aria-label="Robert J. Park home"><img src="/assets/tools-mark.svg" alt="" width="30" height="30">Robert J. <b>Park</b> · Tools</a>
+  <nav aria-label="Main"><a href="/">Home</a><a href="/services/">Services</a><a href="/tools/">Tools</a><a href="/dashboards/">Dashboards</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></nav>
+</header>
+<main id="main" class="wrap">
+<p class="eyebrow">UK carbon border charge</p>
+<h1>UK CBAM countdown</h1>
+<p class="lead">The UK Carbon Border Adjustment Mechanism starts on 1 January 2027. From then, importers of aluminium, cement, fertiliser, hydrogen, iron and steel pay for the carbon in those goods once their imports pass £50,000. It applies across the whole UK, including Northern Ireland.</p>
+
+<div id="clock" class="clock" role="timer" aria-live="off" aria-label="Time until the UK CBAM starts">
+  <div class="unit"><div class="num" id="dd">--</div><div class="ul">Days</div></div>
+  <div class="unit"><div class="num" id="hh">--</div><div class="ul">Hours</div></div>
+  <div class="unit"><div class="num" id="mm">--</div><div class="ul">Minutes</div></div>
+  <div class="unit"><div class="num" id="ss">--</div><div class="ul">Seconds</div></div>
+</div>
+<p class="started" id="started" hidden>The UK CBAM is now in force.</p>
+<p class="note">Counting down to 00:00 on 1 January 2027, UK time.</p>
+
+<div class="key"><p><strong>The short version for NI.</strong> Goods made in Northern Ireland and sold into Ireland or the EU are outside the EU CBAM. The UK CBAM bites on what NI firms <em>import</em> from outside the UK. EU customers will still ask for your product emissions, so have the figures ready.</p></div>
+
+<h2>The dates that follow</h2>
+<ol class="dates" id="dates">
+  <li data-when="2027-01-01"><span class="d">1 January 2027</span><span>UK CBAM starts. Quarterly sector rates are published by the government from this date.</span><span class="left"></span></li>
+  <li data-when="2027-02-01"><span class="d">1 February 2027</span><span>EU CBAM certificates go on sale (affects NI groups with an EU importing company).</span><span class="left"></span></li>
+  <li data-when="2027-09-30"><span class="d">30 September 2027</span><span>First EU CBAM declaration, covering 2026 imports.</span><span class="left"></span></li>
+  <li data-when="2028-01-31"><span class="d">31 January 2028</span><span>UK CBAM registration deadline for the first year (registration opens 1 January 2028).</span><span class="left"></span></li>
+  <li data-when="2028-05-31"><span class="d">31 May 2028</span><span>First UK CBAM return and payment, covering 2027 imports.</span><span class="left"></span></li>
+</ol>
+
+<h2>Five things to do before the clock runs out</h2>
+<ol class="checks">
+  <li><strong>List your CBAM goods.</strong> Check the commodity codes of everything you import from outside the UK against the CBAM list: aluminium, cement, fertiliser, hydrogen, iron and steel.</li>
+  <li><strong>Test the £50,000 threshold.</strong> Look forward 30 days and back 12 months, on the first of each month. Fixings, brackets and steel sections add up quickly.</li>
+  <li><strong>Ask suppliers for verified emissions.</strong> Actual emissions per tonne usually cost less than default values. Ask now; good data takes months.</li>
+  <li><strong>Check your contracts and Incoterms.</strong> Decide who carries the carbon cost. The <a href="/tools/incoterms.html">Incoterms Chooser</a> helps.</li>
+  <li><strong>Keep records for six years.</strong> Imports, values, emissions data and any carbon price paid abroad, which can reduce what you owe.</li>
+</ol>
+
+<div class="cta">
+<p>More detail: the <a href="/tools/dashboards/cbam-exposure-tracker.html">CBAM Exposure Tracker</a> sets the EU and UK rules side by side, and <a href="/blog/2026/10/cbam-and-csrd-for-ni-manufacturers/">CBAM and CSRD: what NI manufacturers actually need to know</a> explains the background. <a href="/contact/">Get in touch</a> for a fixed-fee CBAM scoping.</p>
+</div>
+<p class="note">Sources: HM Revenue &amp; Customs and HM Treasury guidance on the UK CBAM; European Commission CBAM guidance and Q&amp;A. Dates as at 27 October 2026 and may change; check the current guidance before you act.</p>
+</main>
+<footer class="site-foot">Robert J. Park · Environment · Carbon · Public Affairs · Northern Ireland. Dates as at 27 October 2026. General information, not legal or tax advice. <a href="/contact/">Contact</a> · <a href="/privacy/">Privacy</a></footer>
+<script>
+(function(){
+  // 1 Jan 2027 00:00 in the UK is 00:00 UTC (GMT in winter).
+  var target=Date.UTC(2027,0,1,0,0,0);
+  var el={d:document.getElementById('dd'),h:document.getElementById('hh'),m:document.getElementById('mm'),s:document.getElementById('ss')};
+  function pad(n){return n<10?'0'+n:''+n}
+  function tick(){
+    var ms=target-Date.now();
+    if(ms<=0){document.getElementById('clock').hidden=true;document.getElementById('started').hidden=false;return false}
+    var t=Math.floor(ms/1000);
+    el.d.textContent=Math.floor(t/86400);el.h.textContent=pad(Math.floor(t%86400/3600));
+    el.m.textContent=pad(Math.floor(t%3600/60));el.s.textContent=pad(t%60);return true}
+  if(tick()){var iv=setInterval(function(){if(!tick())clearInterval(iv)},1000)}
+  var now=Date.now(),DAY=86400000;
+  [].forEach.call(document.querySelectorAll('#dates li'),function(li){
+    var w=Date.parse(li.getAttribute('data-when')+'T00:00:00Z'),left=li.querySelector('.left');
+    var d=Math.ceil((w-now)/DAY);
+    if(d>0){left.textContent=d+(d===1?' day':' days')}else{li.classList.add('past');left.textContent='Passed'}
+  });
+})();
+</script>
+</body>
+</html>

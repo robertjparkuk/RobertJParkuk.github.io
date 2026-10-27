@@ -37,6 +37,12 @@ A design tool for healthier land, now with 22 base pairs. Each base pair links a
 
 [Open the Land Repair Helix →]({{ '/tools/land-repair-helix.html' | relative_url }}) · Printable site plans: [farm]({{ '/tools/site-plans/site-plan-farm.pdf' | relative_url }}), [verge]({{ '/tools/site-plans/site-plan-verge.pdf' | relative_url }}), [brownfield]({{ '/tools/site-plans/site-plan-brown.pdf' | relative_url }}), [factory]({{ '/tools/site-plans/site-plan-factory.pdf' | relative_url }}), [park]({{ '/tools/site-plans/site-plan-park.pdf' | relative_url }}), [river]({{ '/tools/site-plans/site-plan-river.pdf' | relative_url }}) (PDF)
 
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">UK CBAM Countdown</h2>
+
+The UK carbon border charge starts on 1 January 2027. A live countdown, the dates that follow for UK and EU CBAM, and five things Northern Ireland importers of steel, aluminium, cement, fertiliser and hydrogen should do now.
+
+[Open the UK CBAM Countdown →]({{ '/tools/uk-cbam-countdown.html' | relative_url }})
+
 <h2 class="tool-h"><img src="{{ '/assets/icons/incoterms.svg' | relative_url }}" alt="" width="48" height="48">Incoterms Chooser</h2>
 
 Four questions to find the Incoterms® 2020 rule that matches how you split transport, risk, insurance and customs with your buyer or seller. Includes a who-does-what matrix for all 11 rules, plus notes on GB–NI movements, EU trade and CBAM.

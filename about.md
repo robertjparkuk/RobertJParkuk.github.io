@@ -11,18 +11,17 @@ I've worked as a sustainability and carbon consultant since 2018 and in communic
 
 ## Background
 
-My training is in science. I studied Chemistry at Imperial College London and Queen Mary University of London, then carried out doctoral research in materials chemistry at Queen Mary, working on biominerals. That work led to published research papers, and it still shapes how I approach environmental questions — from contaminated land to greenhouse gases.
-
-Alongside the science, my career has covered communications and parliamentary work at the General Social Care Council, sales management at Vodafone, and leadership roles including Chief Executive of Birkbeck Students' Union.
-
-Much of that experience has been in and around the public sector: a national regulator, a students' union with its own governance and accountability, and parliamentary work. Today I work with district councils, public bodies and trade associations as well as businesses. [More on public sector work]({{ '/public-sector/' | relative_url }}).
+My training is in science. I studied Chemistry at Imperial College London and Queen Mary University of London, then carried out doctoral research in materials chemistry at Queen Mary with Professor Fiona Meldrum, working on how porous confinement controls crystal growth. I didn't submit a thesis, but the work led to three published papers (2002 and 2004), and it still shapes how I approach environmental questions, from contaminated land to greenhouse gases. [Crystals in Confinement]({{ '/research/crystals-in-confinement/' | relative_url }}) tells that story and where it leads now.
 
 ## Qualifications and memberships
 
-- BSc Chemistry — Imperial College London and Queen Mary University of London
-- Sustainability Leadership — University of Cambridge Institute for Sustainability Leadership (CISL)
-- Internal audit qualifications — Institute of Internal Auditors
-- Member of the Chartered Institute of Public Relations (CIPR)
+- BSc Chemistry, Imperial College London and Queen Mary University of London
+- Doctoral research in materials chemistry, Queen Mary University of London (2000 to 2004; no degree awarded)
+- High Impact Leadership in Sustainability, University of Cambridge Institute for Sustainability Leadership (CISL), 2023
+- Certificate in Internal Audit modules, Chartered Institute of Internal Auditors, 2023
+- Member of the Chartered Institute of Public Relations (CIPR) since 2014
+- Fellow of the Royal Society for Arts, Manufactures and Commerce (FRSA)
+- Member of the Institute of Directors (IoD)
 
 ## My approach
 
