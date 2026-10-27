@@ -1,23 +1,25 @@
 ---
-title: "We don't fund the drains. Then we pay for the flood."
+title: "We don't fund the drains. Then we pay for the flood. Who pays to fix it?"
 date: 2026-11-12 12:00:00 +0000
 tags: [Public realm, Infrastructure, Climate adaptation, Water, Councils, Policy, Northern Ireland, Thought piece]
 image: /assets/photos/bins-collection.jpg
-description: "Full sewage works, held-back homes, late flood schemes and a green Lough Neagh: why Northern Ireland's public realm is failing on investment and climate, three scenarios, and what a Public Realm Bill would change."
+description: "Full sewage works, held-back homes, worn-out roads and a green Lough Neagh: why Northern Ireland's public realm is under-funded, how appraisal and land value capture could pay for it, and three scenarios."
 hero_eyebrow: "Land · Water · Duty · Civic pride"
 hero_title: "We don't fund the drains. <em>Then we pay for the flood.</em>"
-hero_lead: "Around 100 places in Northern Ireland can't take new development because the sewers are full, flood defences miss their maintenance targets, and Lough Neagh turns green every summer. The public realm needs a duty and a funding model, not another emergency grant."
+hero_lead: "Around 100 places in Northern Ireland can't take new homes because the sewers are full, and our roads get a quarter of what they need. A duty to maintain is only half the answer. The other half is who pays."
 hero_button: "Read the piece"
-hero_button2: ["Improving the public realm", "/blog/2026/10/improving-the-public-realm/"]
+hero_button2: ["Read: Largs flooded", "/blog/2026/10/largs-flooded-nobody-to-blame/"]
 ---
 
-*Northern Ireland's streets, sewers, rivers and flood defences are failing for the same reason: we treat looking after them as optional, then pay many times over when they break.*
+*Northern Ireland's sewers, roads, rivers and flood defences are failing for the same reason: we treat looking after them as optional, then pay many times over when they break. A duty to maintain them is half the answer. This piece is about the other half: who pays.*
 
 <figure class="page-photo"><img src="{{ '/assets/photos/bins-collection.jpg' | relative_url }}" alt="A refuse collection crew emptying wheelie bins on a street" loading="lazy"><figcaption>The public realm is looked after every day. The question is whether we fund it to keep up.</figcaption></figure>
 
-In October 2023, floods went through Newry, Downpatrick and Portadown. The Executive found £15 million in emergency support within weeks, followed by grants of up to £100,000 a business. Nobody argued that it shouldn't. But the drains, culverts and defences that might have kept the water out had been competing for money for years, and mostly losing.
+Last month, Storm Boelo put Largs Main Street under water, two years after its seawall was rebuilt. In [Largs flooded this morning. Nobody is to blame. That is the problem.]({{ '/blog/2026/10/largs-flooded-nobody-to-blame/' | relative_url }}) I argued that the Public Realm Bill should be built around a duty to provide, not a hunt for blame, because blame rarely survives a courtroom and the evidence on flood defences is clear: they are under-funded, and everyone admits it.
 
-That is the pattern across the public realm. It is cheap to neglect and expensive to repair, and our budgets only count the second bit.
+But a duty without money, as Spain's Ombudsman found with its unenforced wildfire plans, is a letter nobody answers. So this piece follows the money. It looks past flooding to the rest of Northern Ireland's public realm, and asks how we would actually pay to put it right.
+
+In October 2023, floods went through Newry, Downpatrick and Portadown. The Executive found £15 million in emergency support within weeks, followed by grants of up to £100,000 a business. Nobody argued that it shouldn't. That is the pattern: the public realm is cheap to neglect and expensive to repair, and our budgets only count the second bit.
 
 ## The evidence in Northern Ireland
 
@@ -25,7 +27,7 @@ That is the pattern across the public realm. It is cheap to neglect and expensiv
 
 **Storm overflows are spilling.** NI Water has 2,458 storm overflows. It has modelled about half, and around 37% of those are unsatisfactory. Monitoring is due to reach only about 30% of them by spring 2027.
 
-**Flood defences are falling behind.** The NI Audit Office reported in June that about 45,000 properties sit in river and coastal floodplains. Spending on flood risk rose 73% to £96 million in 2024-25. Yet only about one in five of 21 flood schemes finished on time, inspection and maintenance targets for defences are not consistently met, and Living With Water now moves at whatever pace the budget allows.
+**Flood defences are falling behind.** I set out the evidence in the Largs piece. The short version, from the NI Audit Office in June: about 45,000 properties in floodplains, spending up 73% in four years, and still only one flood scheme in five finishing on time.
 
 **Roads are wearing out.** An independent assessment for DfI puts the need for structural road maintenance at about £190 million a year, plus about £60 million for routine work. The opening budget this year was £68 million. The Infrastructure Minister reported 49,000 road defects in three months.
 
@@ -51,7 +53,7 @@ These are illustrative scenarios for Northern Ireland to the mid-2030s, based on
 
 ## What the Bill would change
 
-The full draft runs to 215 clauses and 26 Schedules. I'm now reworking it into a shorter framework-and-entitlement Bill. The parts that matter most here:
+The Largs piece set out the duties: to maintain public realm assets to a published standard, to keep public asset registers, and to plan for emergencies. I'm reworking the full draft, 215 clauses and 26 Schedules, into a shorter Public Realm (Framework and Entitlement) Bill. Here are the parts that decide whether those duties can be paid for:
 
 1. **A continuous improvement duty.** Not just keeping things at a minimum, but showing they are getting better, with published measures that residents would recognise.
 2. **Minimum public realm entitlements**, so that a town's drainage or a park's upkeep isn't decided by whichever budget line was squeezed hardest that year.
