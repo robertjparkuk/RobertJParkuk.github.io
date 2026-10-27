@@ -25,7 +25,9 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
-### v0.14.0 — 27 October 2026: Crystals in Confinement and the UK CBAM countdown
+### v0.15.0 — 27 October 2026: Crystals in Confinement and the UK CBAM countdown
+
+*Released ahead of v0.14.0 (review actions, CBAM Desk), which is still awaiting sign-off in PR 10.*
 
 **Added**
 - `_posts/2026-10-27-crystals-in-confinement.md` at /research/crystals-in-confinement/: a web article version of the Crystals in Confinement positioning paper, with facts rechecked on 27 October 2026. DAERA's cost and resource study received no tenders (DAERA says it may be completed in 2027), so the "report commissioned" line from v4 of the paper is corrected. The PFAS Plan land guidance is no longer given a date. The PDF is not linked until the updated paper is cleared.
