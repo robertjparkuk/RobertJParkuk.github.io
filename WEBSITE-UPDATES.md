@@ -25,6 +25,16 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.14.0 — 27 October 2026: Crystals in Confinement and the UK CBAM countdown
+
+**Added**
+- `_posts/2026-10-27-crystals-in-confinement.md` at /research/crystals-in-confinement/: a web article version of the Crystals in Confinement positioning paper, with facts rechecked on 27 October 2026. DAERA's cost and resource study received no tenders (DAERA says it may be completed in 2027), so the "report commissioned" line from v4 of the paper is corrected. The PFAS Plan land guidance is no longer given a date. The PDF is not linked until the updated paper is cleared.
+- `tools/uk-cbam-countdown.html`: a live countdown to the UK CBAM on 1 January 2027, with the UK and EU dates that follow and a five-point checklist. Listed on `tools.md`.
+
+**Changed**
+- `about.md`: Vodafone corrected to Dot Mobile, a Vodafone subsidiary. Doctoral research described accurately (no degree awarded) and linked to the new article. Qualifications updated: CISL High Impact Leadership in Sustainability, Chartered IIA Certificate in Internal Audit modules, CIPR since 2014, FRSA, IoD.
+- `_posts/2026-10-16-contaminated-land-in-northern-ireland.md`: links to the new article.
+
 ### v0.13.0 — 27 October 2026: spicy headlines and four thought pieces (for sign-off)
 
 *Rebased on v0.12.0 (Storm Boelo). The public realm piece now builds on the Largs post rather than repeating its flood evidence: new title, banner and opening, with a link through to Largs.*
