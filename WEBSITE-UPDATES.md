@@ -27,6 +27,8 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ### v0.13.0 — 27 October 2026: spicy headlines and four thought pieces (for sign-off)
 
+*Rebased on v0.12.0 (Storm Boelo). The public realm piece now builds on the Largs post rather than repeating its flood evidence: new title, banner and opening, with a link through to Largs.*
+
 **Changed**
 - `index.html`: the home-page hero rotation now reads extra headlines from post front matter (`hero_eyebrow`, `hero_title`, `hero_lead`, `hero_button`, `hero_button2`, optional `hero_until`). A post's headline joins the rotation only once the post is live, so the banner never links to an unpublished page. The three standing messages (manufacturers, suppliers, public sector) are unchanged; the manufacturers message stays the no-JavaScript default.
 - `_posts/2026-10-17-improving-the-public-realm.md`: its old hard-coded hero message moved into front matter, with `hero_until` set to 12 November 2026 at 12:00, when the new public realm piece replaces it.
