@@ -126,13 +126,20 @@ title: Environment · Carbon · Public Affairs
 </section>
 
 <script>
-// Four hero messages; one is picked at random on each visit. The manufacturers message is the default without JavaScript.
+// Hero messages; one is picked at random on each visit. The manufacturers message is the default without JavaScript.
+// Thought pieces join the rotation automatically: any published post with hero_title in its front matter is added
+// once it is live, so the banner never links to a post that hasn't published yet.
 (function(){
   var H=[
     {e:"Independent consultancy · Northern Ireland",t:"Carbon and environmental compliance for manufacturers working <em>across two regimes</em>.",l:"Northern Ireland businesses sit between UK and EU rules. I help small and mid-sized firms make sense of CBAM, CSRD and carbon reporting — and turn the work into something the board can actually use.",b1:["Start a conversation","{{ '/contact/' | relative_url }}"],b2:["See services","{{ '/services/' | relative_url }}"]},
-    {e:"Land · Waste · Duty · Civic pride",t:"Good places don't happen by accident. They're <em>looked after</em>.",l:"Clean land, well-run waste services and public spaces people are proud of come from clear duties and steady care. I help councils, landowners and businesses take on that guardianship, and make the case for it to the people who decide.",b1:["Read: improving the public realm","{{ '/blog/2026/10/improving-the-public-realm/' | relative_url }}"],b2:["Try the Land Repair Helix","{{ '/tools/land-repair-helix.html' | relative_url }}"]},
     {e:"For suppliers to manufacturers",t:"Your customers are about to ask for <em>your</em> carbon data.",l:"When a manufacturer measures its footprint, its suppliers' emissions are usually the biggest part, and the questionnaires are already arriving. I help suppliers get ahead with a clear, proportionate inventory that wins and keeps contracts.",b1:["Try the Carbon Jigsaw","{{ '/tools/carbon-jigsaw.html' | relative_url }}"],b2:["Start a conversation","{{ '/contact/' | relative_url }}"]},
     {e:"Councils · Public bodies · Trade bodies",t:"Net zero is now a public duty. <em>Delivering it</em> takes more than a report.",l:"All 11 NI councils are among the 40 public bodies now reporting on climate, and trade bodies field members' questions on CBAM, CSRD and ESOS every week. I bring technical carbon work and two decades of public affairs to both.",b1:["Public sector services","{{ '/public-sector/' | relative_url }}"],b2:["Get in touch","{{ '/contact/' | relative_url }}"]}
+{%- assign hero_posts = site.posts | where_exp: "p", "p.hero_title" -%}
+{%- assign now_s = site.time | date: "%s" | plus: 0 -%}
+{%- for p in hero_posts -%}
+{%- if p.hero_until -%}{%- assign until_s = p.hero_until | date: "%s" | plus: 0 -%}{%- if now_s >= until_s -%}{%- continue -%}{%- endif -%}{%- endif -%},
+    {e:{{ p.hero_eyebrow | default: "Thought piece · Northern Ireland" | jsonify }},t:{{ p.hero_title | jsonify }},l:{{ p.hero_lead | jsonify }},b1:[{{ p.hero_button | default: "Read the piece" | jsonify }},{{ p.url | relative_url | jsonify }}],b2:[{{ p.hero_button2[0] | default: "Get in touch" | jsonify }},{{ p.hero_button2[1] | default: "/contact/" | relative_url | jsonify }}]}
+{%- endfor %}
   ];
   var h=H[Math.floor(Math.random()*H.length)];
   var g=function(id){return document.getElementById(id);};
