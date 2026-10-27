@@ -2,6 +2,7 @@
 title: "Carbon inventories without the jargon: scopes, boundaries and why the process matters"
 date: 2026-10-16 00:04:00 +0100
 tags: [Carbon, Carbon inventory]
+description: "A carbon inventory is simply an organised account of the greenhouse gases your business is responsible for. It sounds straightforward."
 ---
 
 A carbon inventory is simply an organised account of the greenhouse gases your business is responsible for. It sounds straightforward. In practice, the decisions you make along the way shape what the number means, and whether anyone should trust it.

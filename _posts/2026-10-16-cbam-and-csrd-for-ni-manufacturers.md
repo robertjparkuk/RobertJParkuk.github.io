@@ -2,7 +2,20 @@
 title: "CBAM and CSRD: what Northern Ireland manufacturers actually need to know"
 date: 2026-10-16 00:05:00 +0100
 tags: [CBAM, CSRD, Northern Ireland]
+description: "What the EU and UK carbon border rules and the slimmed-down CSRD mean for Northern Ireland manufacturers, and what to do before January 2027."
 ---
+
+<div class="update-box" role="note" markdown="1">
+<p class="update-date">Update, 27 October 2026</p>
+
+Three things have moved since this post first went up:
+
+- **UK–EU emissions trading link.** POLITICO reported on 7 October that negotiators had reached a deal to link the UK and EU schemes. Neither side has published a text or a start date, and the Prime Minister told the Commons on 12 October that it was still "on the table" for the UK–EU summit in Brussels on 20 November. Even a signed deal would not exempt anyone straight away: each side's CBAM exemption needs its own legal act afterwards. Plan for both CBAMs applying in 2027, and treat an exemption as upside.
+- **UK CBAM detail.** The regulations on registration, rates, carbon price relief and emissions verification were made between July and September. The Government has published an illustrative CBAM rate and default emissions values for iron and steel, and has put off charging for indirect emissions until at least 2029.
+- **Northern Ireland and the EU CBAM.** Goods produced in Northern Ireland, or released for free circulation there, are outside the EU CBAM, as the UK Government confirmed in a written answer (HL12132). The UK CBAM applies in Northern Ireland from 1 January 2027.
+
+For the live picture, see the [CBAM Exposure Tracker]({{ '/tools/dashboards/cbam-exposure-tracker.html' | relative_url }}).
+</div>
 
 If you make things in Northern Ireland and sell them into Great Britain, the Republic or further into Europe, you've probably had an email in the last year asking about your carbon. Sometimes it's a customer's procurement team. Sometimes it's a questionnaire that seems to have been written for a multinational. Either way, the acronyms doing the asking are usually CBAM and CSRD.
 
@@ -18,7 +31,7 @@ The UK is following with its own CBAM from 1 January 2027. It covers aluminium, 
 
 Northern Ireland sits between the UK and EU systems in a way nowhere else does. The UK Government's position is that the EU CBAM does not currently apply in Northern Ireland. Bringing it in would need a joint decision under the Windsor Framework, and that hasn't happened. Meanwhile the UK and EU are negotiating a link between their emissions trading schemes, which is widely expected to lead to mutual exemptions from each other's CBAM. That deal isn't done yet.
 
-So the honest answer to "does CBAM apply to me?" is often "not directly, but your customers are going to ask anyway". If you supply steel components, aluminium extrusions, cement products or fertiliser into the EU, your EU customer is the importer, and it is their declaration that needs your embedded emissions data. If you import covered goods into GB, the UK scheme may hit you from 2027.
+So the honest answer to "does CBAM apply to me?" is often "not directly, but your customers are going to ask anyway". If you supply steel components, aluminium extrusions, cement products or fertiliser into the EU, your EU customer is the importer, and it is their declaration that needs your embedded emissions data. If you import covered goods into the UK, including into Northern Ireland, the UK scheme may hit you from 2027.
 
 ## CSRD has shrunk, but it hasn't gone away
 

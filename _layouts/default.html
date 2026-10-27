@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
   {% feed_meta %}
+  {% if page.url == '/' %}
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"Robert J. Park","description":"{{ site.description }}","url":"{{ site.url }}/","email":"{{ site.email }}","telephone":"{{ site.phone_intl }}","image":"{{ site.url }}{{ site.image }}","address":{"@type":"PostalAddress","addressLocality":"Larne","addressRegion":"County Antrim","addressCountry":"GB"},"areaServed":"Northern Ireland","founder":{"@type":"Person","name":"Robert J. Park","jobTitle":"Environmental, carbon and public affairs consultant","sameAs":["{{ site.linkedin }}"]},"knowsAbout":["Carbon Border Adjustment Mechanism","CSRD","Carbon inventories","ESOS","Contaminated land","Public affairs"]}
+  </script>
+  {% endif %}
   <link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
   <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/fonts/fonts.css' | relative_url }}">
@@ -22,6 +27,7 @@
         <a href="{{ '/services/' | relative_url }}" {% if p contains '/services' %}aria-current="page"{% endif %}>Services</a>
         <a href="{{ '/public-sector/' | relative_url }}" {% if p contains '/public-sector' %}aria-current="page"{% endif %}>Public sector</a>
         <a href="{{ '/tools/' | relative_url }}" {% if p == '/tools/' %}aria-current="page"{% endif %}>Tools</a>
+        <a href="{{ '/dashboards/' | relative_url }}" {% if p contains '/dashboards' %}aria-current="page"{% endif %}>Dashboards</a>
         <a href="{{ '/about/' | relative_url }}" {% if p contains '/about' %}aria-current="page"{% endif %}>About</a>
         <a href="{{ '/blog/' | relative_url }}" {% if p contains '/blog' %}aria-current="page"{% endif %}>Blog</a>
         <a href="{{ '/contact/' | relative_url }}" {% if p contains '/contact' %}aria-current="page"{% endif %}>Contact</a>

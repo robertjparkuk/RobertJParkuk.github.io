@@ -3,6 +3,7 @@ layout: page
 title: Contact
 permalink: /contact/
 lead: The best way to start is a short conversation about what you need.
+description: Contact Robert J. Park in Larne, Co. Antrim, about CBAM, carbon inventories, ESOS, contaminated land or public affairs, by email, phone or WhatsApp.
 ---
 
 **Email:** [robert@robertjpark.co.uk](mailto:robert@robertjpark.co.uk)

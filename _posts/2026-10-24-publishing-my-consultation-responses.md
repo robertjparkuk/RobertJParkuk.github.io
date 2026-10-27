@@ -2,6 +2,7 @@
 title: "Why I'm publishing my consultation responses"
 date: 2026-10-24 12:01:00 +0100
 tags: [Public affairs, Consultations, Transparency]
+description: "From today I'm publishing a selection of my responses to public consultations on a new Consultation responses page under Public sector."
 ---
 
 From today I'm publishing a selection of my responses to public consultations on a new [Consultation responses]({{ '/public-sector/consultation-responses/' | relative_url }}) page under Public sector. The first is my response to the Department for Communities on a Historic Environment Policy for Northern Ireland, which closed last night.

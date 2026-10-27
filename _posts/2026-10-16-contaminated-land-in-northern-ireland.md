@@ -2,6 +2,7 @@
 title: "Contaminated land in Northern Ireland: the regime that never started"
 date: 2026-10-16 00:02:00 +0100
 tags: [Contaminated land, Northern Ireland, Policy]
+description: "Northern Ireland has a law setting up a full contaminated land regime, and it has never been switched on. What that means for landowners and councils."
 ---
 
 Here's something that surprises people from England, Scotland and Wales. Northern Ireland has a law setting up a full contaminated land regime, and it has never been switched on.

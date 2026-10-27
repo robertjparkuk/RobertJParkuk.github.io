@@ -25,6 +25,24 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.14.0 — 27 October 2026: review actions, CBAM Desk and Who I work with (for sign-off)
+
+*Actions from the 22 October deep review. Not merged until Robert signs off; CBAM Desk prices are a recommendation awaiting his decision.*
+
+**Added**
+- `cbam-desk.md` (/cbam-desk/): fixed-price CBAM offer — free first call, £495 Exposure Check, £1,250 UK CBAM Importer Readiness, Supplier Data Pack from £1,750 per site, £250-a-month CBAM Desk. Prices benchmarked against published UK CBAM fees (October 2026).
+- `working-with.md` (/working-with/): how each service is delivered, the registered specialists brought in (by category, no firm names yet), the Imperial associate roles, and consortium working.
+- Home page: CBAM Exposure Tracker, Farm Carbon Data Checker and Dashboards tiles; structured business data (ProfessionalService, Larne, Co. Antrim; no street address).
+- `assets/style.css`: `.update-box` for dated updates at the top of posts.
+
+**Changed**
+- Main menu: Dashboards added.
+- Unique meta descriptions for Services, Public sector, Tools, About, Contact, Privacy, Blog and every published post.
+- `_config.yml`: `locale: en_GB`.
+- About: "sales management at Vodafone" corrected to "Dot Mobile, a Vodafone subsidiary".
+- CBAM and CSRD post: dated update box (ETS link status and the 20 November summit, UK CBAM regulations, illustrative rate, indirect emissions deferred to 2029, NI outside the EU CBAM); "into GB" corrected to "into the UK, including Northern Ireland".
+- Services and Public sector: links to CBAM Desk and Who I work with; "accredited partners" reworded to "registered and accredited specialists".
+
 ### v0.13.0 — 27 October 2026: spicy headlines and four thought pieces (for sign-off)
 
 *Rebased on v0.12.0 (Storm Boelo). The public realm piece now builds on the Largs post rather than repeating its flood evidence: new title, banner and opening, with a link through to Largs.*
