@@ -8,7 +8,7 @@ lead: Fixed-price help with the EU and UK carbon border rules, for firms too sma
 
 The UK CBAM starts on 1 January 2027. The EU's has been charging since January 2026. If you import steel, aluminium, cement, fertiliser or hydrogen into the UK, or your EU customers are asking for the emissions behind what you sell them, you need answers that will stand up, and you need to know the cost before you start.
 
-Start with the free [CBAM Exposure Tracker]({{ '/tools/dashboards/cbam-exposure-tracker.html' | relative_url }}). If it shows you're affected, these are the ways I can help.
+Start with the free [CBAM Exposure Tracker]({{ '/tools/dashboards/cbam-exposure-tracker.html' | relative_url }}). If it shows you're affected, these are the ways I can help. If you're agreeing who carries customs and carbon costs with a buyer or seller, the [Incoterms Chooser]({{ '/tools/incoterms.html' | relative_url }}) sets out who does what under each rule.
 
 ## Fixed-price services
 
