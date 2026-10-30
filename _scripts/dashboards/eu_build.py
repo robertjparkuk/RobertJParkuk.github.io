@@ -158,7 +158,7 @@ NEXT = [  # date, jurisdiction, what
 ]
 
 CHANGES = [  # newest first: date, what changed
- ('30 Oct 2026', 'Weekly check. Removed eight consultations that closed between 26 and 30 October (six European Commission, two Irish Government). Countdown tiles and the "as at" date updated. No other changes published this week.'),
+ ('30 Oct 2026', 'Weekly check. Removed seven consultations that closed between 26 and 30 October (five European Commission, two Irish Government). Countdown tiles and the "as at" date updated. No other changes published this week.'),
  ('25 Oct 2026', 'Published. Same evening: nine corrections after an independent fact-check (Customs Code Brake window to 5 Nov; plastic-waste export ban 21 Nov; EUDR wood-product date; VAT cut is temporary; REACH, machinery and single electricity market rows reworded; two weak sources replaced; one unverified consultation removed). Added: who each law affects, the kind of each GB effect, the UK Internal Market Scheme, parcel duty, the Murphy review, a glossary, filters and this log.'),
 ]
 GLOSSARY = [
