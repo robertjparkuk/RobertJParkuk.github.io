@@ -82,7 +82,7 @@ APPLIES = [
  (('Detergents and Surfactants Regulation (EU) 2026/405', NIA + 'reg2026405'), 'Chemical products', 'Cleaning-product makers and distributors', 'Yes', 'Adopted 11 Feb 2026', 'Inquiry report 26 Mar 2026'),
  (('Vehicle circularity and end-of-life vehicles (EU) 2026/1738', NIA + 'reg20261738/'), 'Circular economy', 'Vehicle makers, dealers, dismantlers and parts recyclers', 'Yes', 'Adopted 8 Jul 2026', 'Inquiry report 27 Aug 2026'),
  (('Farmers in the food supply chain (EU) 2026/1739', NIA + 'reg20261739/'), 'Agri-food', 'Farmers, processors and retailers in the food supply chain', 'Yes', 'Adopted 8 Jul 2026', 'Inquiry report 27 Aug 2026'),
- (('Union Customs Code recast (EU) 2026/2108', NIA + 'reg20262108/'), 'Customs', 'Every business moving goods into NI from GB or outside the EU; parcel carriers', 'Yes', 'Adopted 16 Sep 2026', 'Inquiry report 22 Oct 2026; Brake window open to 5 Nov 2026'),
+ (('Union Customs Code recast (EU) 2026/2108', NIA + 'reg20262108/'), 'Customs', 'Every business moving goods into NI from GB or outside the EU; parcel carriers', 'Yes', 'Adopted 16 Sep 2026', 'Inquiry report 22 Oct 2026 found no significant impact on everyday life in NI; Brake window open to 5 Nov 2026'),
  (('REACH (EC) 1907/2006', 'https://www.hse.gov.uk/reach/northern-ireland.htm'), 'Chemicals', 'Chemical makers, importers and downstream users', 'Yes: EU REACH in NI, UK REACH in GB', 'Ongoing', '—'),
  (('EU Emissions Trading System, Directive 2003/87/EC', 'https://www.daera-ni.gov.uk/articles/emissions-trading-schemes'), 'Carbon pricing', 'Electricity generators in NI', 'Partly: NI electricity generators only. Other NI sites are in the UK ETS', 'Since 1 Jan 2021', '—'),
  (('Single Electricity Market rules (Windsor Framework Article 9 and Annex 4)', 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12020W/TXT'), 'Wholesale electricity', 'Generators, suppliers and large energy users on the all-island market', 'Partly: the all-island wholesale market', 'Ongoing', '—'),
@@ -104,7 +104,7 @@ BRAKE = [
  ('4 Sep 2025', ('Lord Murphy\'s independent review of the Windsor Framework published', 'https://assets.publishing.service.gov.uk/media/68b59ad53f3e5483efdba87d/Independent_Review_of_the_Windsor_Framework_by_the_Rt_Hon_Lord_Murphy.pdf'), 'Government response 16 Dec 2025'),
  ('2 Feb 2026', ('Decision 1/2026 adds road-going non-road mobile machinery (EU) 2025/14', 'https://assets.publishing.service.gov.uk/media/69a86867487f0b64a680d4df/TS_10.2026_Decision_No_1.2026_Joint_Committee_Withdrawal_Agreement.pdf'), 'Article 13(4) addition'),
  ('18 Sep 2026', ('Draft decision to add the common chemicals data platform (EU) 2025/2455 sent to the Council', 'https://data.consilium.europa.eu/doc/document/ST-13391-2026-ADD-1/en/pdf'), 'Pending'),
- ('22 Oct 2026', ('Assembly scrutiny committee reports on the Union Customs Code recast, its 15th inquiry', 'https://www.niassembly.gov.uk/assembly-business/brexit-and-beyond/eu-law-scrutiny-tracker/reg20262108/'), 'Brake window open to 5 Nov 2026'),
+ ('22 Oct 2026', ('Assembly scrutiny committee reports on the Union Customs Code recast, its 15th inquiry', 'https://www.niassembly.gov.uk/contentassets/4fb58dfebc9143458ea140296e39de52/nia-205-22-27-windsor-framework-democratic-scrutiny-committee.pdf'), 'Found no significant impact specific to everyday life in NI, so a Brake condition is not met. Brake window open to 5 Nov 2026'),
 ]
 
 # 3. GB knock-on effects -----------------------------------------------------------
@@ -138,7 +138,9 @@ CONS = [
  ('16 Nov 2026', ('Battery passport access rights', HYS + '16473_en'), 'European Commission', 'Yes', 'Batteries Regulation applies in NI'),
  ('19 Nov 2026', ('Electricity network tariff structure review, phase 1', 'https://consult.cru.ie/en/consultation/electricity-network-tariff-structure-review-phase-1-consultation-objectives-principles-scope-and'), 'Ireland: CRU', 'No', 'Feeds the all-island electricity market'),
  ('20 Nov 2026', ('EirGrid draft Transmission Development Plan 2026–2035', 'https://consult.cru.ie/en/consultation/draft-transmission-development-plan-2026-2035'), 'Ireland: CRU', 'No', 'Grid on the Irish side of the all-island system'),
+ ('23 Nov 2026', ('New EU hydrogen strategy: call for evidence', HYS + '18695-Clean-energy-new-EU-hydrogen-strategy_en'), 'European Commission', 'No', 'EU energy policy, not in the annexes; relevant to all-island energy planning and NI hydrogen projects'),
  ('14 Dec 2026', ('Data centres: minimum performance standards', HYS + '19293-Data-centres-in-Europe-minimum-performance-standards_en'), 'European Commission', 'No', "Ireland's data-centre load on the shared grid"),
+ ('17 Dec 2026', ('National Wastewater and Drainage Plan: proposed approach', 'https://www.water.ie/news/help-shape-future-wastewater-services-ireland'), 'Ireland: Uisce Éireann', 'No', 'Wastewater discharges in catchments and loughs shared with NI'),
  ('13 Jan 2027', ('Plastic packaging with bio-based feedstock', HYS + '19498-Plastic-packaging-containing-biobased-feedstock-EU-rules/public-consultation_en'), 'European Commission', 'Likely', 'Packaging product rules apply in NI'),
 ]
 
@@ -158,6 +160,7 @@ NEXT = [  # date, jurisdiction, what
 ]
 
 CHANGES = [  # newest first: date, what changed
+ ('30 Oct 2026', 'Reviewed changes: Union Customs Code recast rows now give the scrutiny committee\'s finding (no significant impact on everyday life in NI) and link to its report. Added two consultations: the European Commission call for evidence on a new EU hydrogen strategy (closes 23 Nov) and Uisce Éireann\'s National Wastewater and Drainage Plan (closes 17 Dec).'),
  ('30 Oct 2026', 'Weekly check. Removed seven consultations that closed between 26 and 30 October (five European Commission, two Irish Government). Countdown tiles and the "as at" date updated. No other changes published this week.'),
  ('25 Oct 2026', 'Published. Same evening: nine corrections after an independent fact-check (Customs Code Brake window to 5 Nov; plastic-waste export ban 21 Nov; EUDR wood-product date; VAT cut is temporary; REACH, machinery and single electricity market rows reworded; two weak sources replaced; one unverified consultation removed). Added: who each law affects, the kind of each GB effect, the UK Internal Market Scheme, parcel duty, the Murphy review, a glossary, filters and this log.'),
 ]
