@@ -25,6 +25,14 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.16.0 — 30 October 2026: Budget 2026 briefing and post
+
+**Added**
+- `_posts/2026-10-30-budget-2026-what-it-means-for-northern-ireland-businesses.md`: *Budget 2026: what it means for Northern Ireland businesses on energy, carbon and CBAM*, with a hero headline. Lead: the GB electricity discount, the 0% VAT on electricity and the end of Carbon Price Support all stop at the Irish Sea; NI is "funded to deliver a comparable scheme" with no design or date. Also covers UK CBAM default values (global 2027–28, country-specific from 2029), refined products proposed for CBAM scope, the energy-from-waste UK ETS delay, Landfill Tax, Plastic Packaging Tax certification, capital allowances, tariff suspensions and self-employed measures. Every claim paragraph-referenced to the Red Book (HC 726) or gov.uk guidance.
+- `assets/briefings/2026-10-budget-2026-northern-ireland-business-briefing.pdf`: Briefing 02, six pages, in the Briefing 01 house style.
+
+**Still to do** (from the Budget review of 28 October): CBAM countdown and CBAM Exposure Tracker need the global-default caveat for 2027–28; ESG regime tracker needs the Carbon Price Support, CCL, BICS, energy-from-waste and PPT entries and Red Book citations; CBAM and CSRD post needs a paragraph on default values and scope; the 2 November agriculture post should mention the fertiliser tariff suspension.
+
 ### v0.15.0 — 27 October 2026: Crystals in Confinement and the UK CBAM countdown
 
 *Released ahead of v0.14.0 (review actions, CBAM Desk), which is still awaiting sign-off in PR 10.*
