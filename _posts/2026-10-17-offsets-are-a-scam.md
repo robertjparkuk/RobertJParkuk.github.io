@@ -1,5 +1,5 @@
 ---
-title: "Offsets are a scam. Here's what to do instead."
+title: "Offsets don't cancel your emissions. Here's what to do instead."
 date: 2026-10-17 00:20:00 +0100
 tags: [Carbon, Offsets, Greenwashing, ESG]
 image: /assets/photos/recycle-forest.jpg
@@ -7,7 +7,7 @@ image: /assets/photos/recycle-forest.jpg
 
 <figure class="page-photo"><img src="{{ '/assets/photos/recycle-forest.jpg' | relative_url }}" alt="Sunlight through a forest canopy" loading="lazy"><figcaption>A protected forest is a good thing. Paying for it doesn't cancel your boiler.</figcaption></figure>
 
-That's a strong title, so let me be precise about what I mean. Protecting forests, restoring peat and funding clean cookstoves can all be worthwhile. Some carbon removal projects are genuine. My problem is with the idea at the centre of the offset market: that a business can keep emitting and buy a certificate that makes those emissions disappear, so it can call itself "carbon neutral".
+Let me be precise about what I mean. Protecting forests, restoring peat and funding clean cookstoves can all be worthwhile. Some carbon removal projects are genuine. My problem is with the idea at the centre of the offset market: that a business can keep emitting and buy a certificate that makes those emissions disappear, so it can call itself "carbon neutral".
 
 That idea doesn't survive contact with the evidence. And from this autumn, in the EU, it doesn't survive contact with the law either.
 
