@@ -34,6 +34,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - `.github/workflows/publish-scheduled-posts.yml`: extra daily rebuild at 07:35 UTC. Policy series posts are dated 07:30, but the site only rebuilt at 11:05 and 12:05 UTC, so they would have gone live about four and a half hours late.
 - `.github/workflows/pr-check.yml`: the hero-script check is replaced by a check for exactly one h1, the fixed hero line, and no rotation script.
 
+### v0.18.1 — 1 November 2026: build fix
+
+**Fixed**
+- `policy-series.md`: sorting ran before the empty-state check, so the live Pages build (future posts hidden) failed on a null list. Sort now happens inside the check.
+- `cbam-desk.md`, `about.md`, `tools.md` and `privacy.md`: unquoted colons in `description` broke their front matter since v0.17.0 (Jekyll warned but built). Quoted.
+- `.github/workflows/pr-check.yml`: the PR check now also builds with future posts hidden, as Pages does, and fails on front matter that does not parse.
+
 ### v0.18.0 — 1 November 2026: Policy series (17 scheduled pieces)
 
 **Added**

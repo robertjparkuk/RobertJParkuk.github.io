@@ -12,8 +12,9 @@ This series takes one subject at a time. Each piece follows the same shape: the 
 
 The pieces set out the arguments on each side. The recommendations are mine. They are written to be useful to anyone making or influencing these decisions, whichever side they come from, and I update them as the rules change.
 
-{% assign pieces = site.categories['policy-series'] | sort: 'date' %}
+{% assign pieces = site.categories['policy-series'] %}
 {% if pieces and pieces.size > 0 %}
+{% assign pieces = pieces | sort: 'date' %}
 {% assign themes = pieces | map: 'series_theme' | uniq %}
 {% for theme in themes %}
 ## {{ theme }}
