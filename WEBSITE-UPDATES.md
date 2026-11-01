@@ -25,6 +25,20 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.18.0 — 1 November 2026: Policy series (17 scheduled pieces)
+
+**Added**
+- `policy-series.md` (/policy-series/): index page for the series, grouped by theme, listing each piece once it is live, with an empty state before 16 November.
+- 17 scheduled posts in `_posts/` with `categories: [policy-series]` and `series_theme`, publishing at 07:30 on Mondays and Wednesdays from 16 November 2026 to 25 January 2027 (no posts in the Christmas fortnight): One data set, many requests (16 Nov); The price of a separate grid (18 Nov); ESOS and the audit that pays only if you act (23 Nov); The Irish Sea carbon bill (25 Nov); Carbon borders as industrial policy (30 Nov); Fertiliser: a small tax, a big bill and a lough (2 Dec); Two refrigerant rulebooks, one small market (7 Dec); Green money, fewer rules (9 Dec); Northern Ireland's waste bill (14 Dec); Brown bins, black holes (16 Dec); The end of the paper trail (4 Jan); Gold in the bin (6 Jan); Closed for booking (11 Jan); Forever chemicals, two rulebooks (13 Jan); The land law Stormont never switched on (18 Jan); Lough Neagh and the price of clean water (20 Jan); The Act that outran its plan (25 Jan). Time-sensitive pieces (consultations closing 30 Nov, ESOS 5 Dec, CBAM and F-gas 1 Jan) go first.
+- `assets/policy-series/<slug>-lifecycle.png`: the lifecycle diagram from each piece (17 files, 2.8 MB in all).
+- Each post carries a one-week home-page hero headline (`hero_until` = publish date + 7 days) pointing to the piece and to the series index.
+
+**Changed**
+- `public-sector.md`: "Policy series" paragraph linking the index, shown once the first piece is live.
+
+**Source and process**
+- Text taken unchanged from the 17 final drafts Robert approved on 1 November 2026 (Claude Docs, dated 30 October). Removed from each: the author chip line, the "final draft for review" line (replaced by "Facts checked to 30 October 2026") and the "Checks before publishing" list. Those checks are collected in the project doc `claude/policy-series-checks.md` for the week before each piece publishes.
+
 ### v0.17.0 — 1 November 2026: review actions, CBAM Desk and Who I work with (signed off 1 Nov)
 
 *Merged on top of v0.16.0. On merge: the offsets post's description rewritten to match its new title; descriptions added to the two posts published since this branch was opened (Crystals in Confinement, Focus on Hospitality, Retail & Leisure), so every post has one.*
