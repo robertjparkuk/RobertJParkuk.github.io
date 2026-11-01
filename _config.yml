@@ -15,6 +15,7 @@ url: "https://robertjpark.co.uk"
 
 permalink: /blog/:year/:month/:title/
 timezone: Europe/London
+locale: en_GB
 
 markdown: kramdown
 plugins:

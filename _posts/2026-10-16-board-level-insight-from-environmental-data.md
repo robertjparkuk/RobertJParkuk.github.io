@@ -2,6 +2,7 @@
 title: "Board-level insight: turning environmental data into decisions"
 date: 2026-10-16 00:00:00 +0100
 tags: [Governance, ESG, Board]
+description: "Most boards get excellent financial information and very little else. They see revenue, margin and cash flow in detail every month."
 ---
 
 Most boards get excellent financial information and very little else. They see revenue, margin and cash flow in detail every month. They rarely see, in any structured way, how exposed the business is to energy prices, which suppliers it can't do without, or what customers and regulators will ask of it next year.

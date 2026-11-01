@@ -2,6 +2,7 @@
 title: "ESOS Phase 4: making it more than a compliance exercise"
 date: 2026-10-16 00:03:00 +0100
 tags: [ESOS, Energy]
+description: "The Energy Savings Opportunity Scheme, ESOS, has a reputation as a four-yearly chore. An assessor visits, a report gets written, it goes in a drawer."
 ---
 
 The Energy Savings Opportunity Scheme, ESOS, has a reputation as a four-yearly chore. An assessor visits, a report gets written, it goes in a drawer. Phase 4 is a good moment to break that habit, because the rules are moving towards accountability for what you actually do with the findings.

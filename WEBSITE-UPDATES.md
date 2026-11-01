@@ -25,6 +25,25 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.17.0 — 1 November 2026: review actions, CBAM Desk and Who I work with (signed off 1 Nov)
+
+*Merged on top of v0.16.0. On merge: the offsets post's description rewritten to match its new title; descriptions added to the two posts published since this branch was opened (Crystals in Confinement, Focus on Hospitality, Retail & Leisure), so every post has one.*
+
+*Actions from the 22 October deep review. Not merged until Robert signs off; CBAM Desk prices are a recommendation awaiting his decision.*
+
+**Added**
+- `cbam-desk.md` (/cbam-desk/): fixed-price CBAM offer — free first call, £495 Exposure Check, £1,250 UK CBAM Importer Readiness, Supplier Data Pack from £1,750 per site, £250-a-month CBAM Desk. Prices benchmarked against published UK CBAM fees (October 2026).
+- `working-with.md` (/working-with/): how each service is delivered, the registered specialists brought in (by category, no firm names yet), the Imperial associate roles, and consortium working.
+- Home page: CBAM Exposure Tracker, Farm Carbon Data Checker and Dashboards tiles; structured business data (ProfessionalService, Larne, Co. Antrim; no street address).
+- `assets/style.css`: `.update-box` for dated updates at the top of posts.
+
+**Changed**
+- Main menu: Dashboards added.
+- Unique meta descriptions for Services, Public sector, Tools, About, Contact, Privacy, Blog and every published post.
+- `_config.yml`: `locale: en_GB`.
+- About: "sales management at Vodafone" corrected to "Dot Mobile, a Vodafone subsidiary".
+- CBAM and CSRD post: dated update box (ETS link status and the 20 November summit, UK CBAM regulations, illustrative rate, indirect emissions deferred to 2029, NI outside the EU CBAM); "into GB" corrected to "into the UK, including Northern Ireland".
+- Services and Public sector: links to CBAM Desk and Who I work with; "accredited partners" reworded to "registered and accredited specialists".
 ### v0.16.0 — 30 October 2026: Budget 2026 briefing and post
 
 **Added**

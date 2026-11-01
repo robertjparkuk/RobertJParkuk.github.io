@@ -3,6 +3,7 @@ title: "Largs flooded this morning. Nobody is to blame. That is the problem."
 date: 2026-10-26 00:45:00 +0000
 tags: [Public realm, Flooding, Climate adaptation, Energy, Northern Ireland, Policy]
 image: /assets/photos/weather-station.jpg
+description: "Storm Boelo put Largs Main Street under water on Sunday morning. The seawall was rebuilt two years ago."
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/weather-station.jpg' | relative_url }}" alt="A weather station instrument against a stormy sky" loading="lazy"><figcaption>Storm Boelo was the second named storm of the season. A third, Chloe, is forecast within days.</figcaption></figure>

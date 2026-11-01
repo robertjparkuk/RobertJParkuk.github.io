@@ -4,6 +4,7 @@ date: 2026-10-30 07:00:00 +0000
 tags: [Hospitality, Retail, Leisure, Carbon, Northern Ireland]
 image: /assets/focus-on-hospitality/2026-10/01-trips.png
 link: /blog/focus-on-hospitality-retail-leisure-october-2026/
+description: "NI tourism grew 9% in 2025 while hotel occupancy fell to 65%. Where hospitality, retail and leisure emissions sit, the quickest energy savings, F-gas and deforestation rules, and five key dates."
 ---
 
 Northern Ireland tourism grew 9% in 2025, but hotel occupancy fell to 65%. My third Focus on briefing covers where hotels, shops, pubs, cafés and leisure venues' emissions sit, the quickest energy savings, the F-gas limits on new cooling kit from 1 January, deforestation rules reaching the café on 30 December, and five dates in twelve months.

@@ -178,3 +178,9 @@ h3 { font-size: 1.2rem; margin: 1.75rem 0 0.5rem; }
 .tool-section h2 { margin-bottom: 0.25rem; }
 .tool-h { display: flex; gap: 0.75rem; align-items: center; }
 .tool-h img { flex: none; }
+
+/* Dated update box at the top of a post */
+.update-box { border-left: 4px solid var(--red); background: rgba(166, 28, 28, 0.06); padding: 0.9rem 1.1rem; margin: 0 0 1.75rem; border-radius: 0 6px 6px 0; }
+.update-box p { margin: 0.4rem 0; }
+.update-box ul { margin: 0.4rem 0 0.4rem 1.2rem; padding: 0; }
+.update-box .update-date { font-weight: 700; color: var(--red); }

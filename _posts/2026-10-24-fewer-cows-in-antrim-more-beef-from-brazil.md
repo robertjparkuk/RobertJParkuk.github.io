@@ -3,6 +3,7 @@ title: "Fewer cows in Antrim, more beef from Brazil?"
 date: 2026-10-24 23:31:00 +0100
 tags: [Agriculture, Carbon, Trade, Northern Ireland, Thought piece]
 image: /assets/photos/farm-panorama.jpg
+description: "Cutting Northern Ireland's herd while demand holds steady doesn't cut emissions. It moves them, often somewhere worse."
 ---
 
 *Cutting Northern Ireland's herd while demand holds steady doesn't cut emissions. It moves them, often somewhere worse.*

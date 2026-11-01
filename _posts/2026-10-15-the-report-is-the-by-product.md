@@ -1,6 +1,7 @@
 ---
 title: "The report is the by-product: what a carbon inventory is really for"
 tags: [Carbon, ESG]
+description: "Most firms measure carbon because a customer, tender or regulation asked. The real value of a carbon inventory is the conversations it forces along the way."
 ---
 
 Ask most businesses why they're measuring their carbon footprint and you'll hear one of three answers: a customer asked for it, a tender required it, or a regulation is coming. All fair reasons. But if the only thing you get out of the exercise is a number in a report, you've paid for the least valuable part.

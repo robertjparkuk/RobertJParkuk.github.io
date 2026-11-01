@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 lead: I'm Robert Park, an independent environmental, carbon and public affairs consultant based in Larne, Northern Ireland.
+description: Robert J. Park: independent environmental, carbon and public affairs consultant in Larne. Chemistry training, carbon consulting since 2018, CIPR member.
 ---
 
 <img class="about-portrait" src="{{ '/assets/robert-park.jpg' | relative_url }}" alt="Robert J. Park" width="640" height="640">

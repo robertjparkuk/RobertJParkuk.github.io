@@ -3,6 +3,7 @@ layout: page
 title: Councils, public bodies & trade bodies
 permalink: /public-sector/
 lead: I work with district councils, public bodies and trade associations across Northern Ireland, and I'm open to quotations, framework opportunities and tenders.
+description: Carbon baselines, climate plans, contaminated land readiness and member briefings for NI councils, public bodies and trade associations. Quotes and tenders welcome.
 ---
 
 Public sector and membership organisations face the same carbon and environmental questions as business, with added layers of accountability, procurement rules and public scrutiny. My background spans both worlds: technical environmental work, and more than twenty years of communications, public affairs and governance, much of it in and around the public sector.
@@ -40,7 +41,7 @@ Arm's-length bodies, agencies and publicly funded organisations can draw on the 
 - **Technical depth.** A chemistry and materials science background, sustainability consulting since 2018, and qualifications from the Cambridge Institute for Sustainability Leadership and the Institute of Internal Auditors.
 - **Policy and communications.** Member of the Chartered Institute of Public Relations, experienced in consultations, briefings and working with elected representatives and officials.
 - **Local and independent.** Based in Larne, working across Northern Ireland, with no products to sell and no conflicts with suppliers.
-- **Collaborative delivery.** For specialist elements such as ESOS sign-off or site investigation, I work with established, accredited partners and manage the work as a single point of contact.
+- **Collaborative delivery.** For specialist elements such as ESOS sign-off or site investigation, I work with registered and accredited specialists and manage the work as a single point of contact. See [who I work with]({{ '/working-with/' | relative_url }}).
 
 {% if site.categories['consultation-responses'] %}
 ## Consultation responses

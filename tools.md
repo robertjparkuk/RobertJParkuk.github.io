@@ -3,6 +3,7 @@ layout: page
 title: Tools
 permalink: /tools/
 lead: Free, interactive tools for Northern Ireland businesses, councils and anyone working on carbon and environmental compliance. Facts are as at 18 October 2026. Everything runs in your browser and nothing you type is stored on a server.
+description: Free, private carbon and environmental tools for NI businesses and councils: Carbon Jigsaw, Scopes Map, CBAM tracker, farm data checker, puzzles and guides.
 ---
 
 <img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="72" height="72" style="display:block;margin:0 0 1rem">

@@ -3,6 +3,7 @@ layout: page
 title: Services
 permalink: /services/
 lead: Focused support for small and mid-sized Northern Ireland businesses — especially manufacturers — dealing with UK and EU carbon and environmental rules.
+description: CBAM, CSRD, carbon inventories, ESOS, contaminated land and public affairs for Northern Ireland manufacturers working across UK and EU carbon rules.
 ---
 
 ## CBAM and CSRD
@@ -14,6 +15,8 @@ Northern Ireland manufacturers often trade into both the UK and EU markets, whic
 - whether the EU Carbon Border Adjustment Mechanism (CBAM) and the Corporate Sustainability Reporting Directive (CSRD) affect you, directly or through your customers
 - what emissions and supply-chain data you'll need, and where to get it
 - how to prepare without building a reporting burden you don't need
+
+For fixed-price help, from a £495 exposure check to a monthly desk, see the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}).
 
 See where an NI business stands under both regimes, and the latest EU certificate price, on the free [CBAM Exposure Tracker]({{ '/tools/dashboards/cbam-exposure-tracker.html' | relative_url }}).
 
@@ -52,6 +55,9 @@ As a member of the Chartered Institute of Public Relations, I support organisati
 I also work with district councils, public bodies and trade associations: carbon baselines for council operations, climate planning, contaminated land readiness, member briefings and consultation responses. I'm open to quotations, supplier frameworks and tenders. [See public sector services]({{ '/public-sector/' | relative_url }}).
 
 ## How I work
+
+You deal with me throughout. Where a job needs a registration I don't hold, such as ESOS sign-off or site investigation, I bring in specialists and manage them. See [who I work with]({{ '/working-with/' | relative_url }}).
+
 
 Every engagement starts with a conversation about what you actually need. I'd rather help you do the right amount of work well than sell you a bigger project.
 

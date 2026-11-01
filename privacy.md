@@ -3,6 +3,7 @@ layout: page
 title: Privacy
 permalink: /privacy/
 lead: This website does not collect your data. Nothing you type into any tool, quiz or puzzle on this site is sent to me or stored on a server.
+description: This site collects no data: no analytics, no cookies, no forms. Tool inputs stay in your browser. How GitHub hosting works and your rights.
 ---
 
 *Last updated: 19 October 2026*

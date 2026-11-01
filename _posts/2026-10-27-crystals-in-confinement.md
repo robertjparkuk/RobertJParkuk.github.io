@@ -3,6 +3,7 @@ title: "Crystals in Confinement: from sea urchins to soil"
 date: 2026-10-27 21:00:00 +0000
 tags: [Contaminated land, Chemistry, PFAS, Northern Ireland, Policy]
 permalink: /research/crystals-in-confinement/
+description: "How a sea-urchin crystal grown in 2002 leads to contaminated land, forever chemicals and Northern Ireland being the only part of the UK without a contaminated land regime in force."
 ---
 
 In 2002 I grew a crystal in the shape of a sea urchin. The question behind it was simple: how do pores control what minerals do? More than twenty years later, that question sits behind some of the hardest problems on my desk, from cleaning up contaminated land to capturing forever chemicals. And it leads to an uncomfortable fact about Northern Ireland: we are the only part of the UK without a contaminated land regime in force.
