@@ -1,11 +1,14 @@
 # Builds the site for every pull request, exactly as GitHub Pages does,
-# and fails on things the house rules forbid. Runs on pull requests only;
-# it never publishes anything.
+# and fails on things the house rules forbid. Runs on pull requests into main
+# and again on every push to main, so a direct push that breaks a rule still
+# shows a failed check (and GitHub emails the owner). It never publishes anything.
 
 name: PR check
 
 on:
   pull_request:
+    branches: [main]
+  push:
     branches: [main]
   workflow_dispatch:
 
