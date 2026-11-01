@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Which EU rules apply to me? Northern Ireland and the Windsor Framework</title>
+<meta name="description" content="Three questions about what you make and where it goes, and a list of the EU and UK rules that matter to your business in Northern Ireland, with dates and official sources.">
+<link rel="canonical" href="https://robertjpark.co.uk/tools/which-eu-rules-apply.html">
+<meta property="og:title" content="Which EU rules apply to me? Northern Ireland and the Windsor Framework">
+<meta property="og:description" content="Three questions about what you make and where it goes, and a list of the EU and UK rules that matter to your business in Northern Ireland, with dates and official sources.">
+<meta property="og:url" content="https://robertjpark.co.uk/tools/which-eu-rules-apply.html">
+<meta property="og:image" content="https://robertjpark.co.uk/assets/og-image.jpg">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+/* Site wrapper and tokens. The dashboard body below keeps its original classes; these tokens map them to the Robert J. Park brand. */
+:root{
+  --color-bg:#FFFFFF; --color-fg:#1B1817; --color-fg-muted:#5F5856; --color-panel:#F6F4F2; --color-border-line:#DDD6D2;
+  --color-ok:#2F7A3B; --color-warn:#B5650F; --color-bad:#B3121B;
+  --cds-chart-grid:#ECE7E4; --cds-chart-muted:#5E6E80; --cds-chart-reference:#8A817D; --cds-chart-status-critical:#B3121B;
+  --font-anthropic-serif:'Fraunces',Georgia,'Times New Roman',serif; --font-anthropic-sans:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+  --cds-font-size-caption:14px; --cds-font-size-body:17px; --cds-font-size-heading:20px; --cds-font-size-title:clamp(28px,4vw,40px); --cds-font-weight-medium:600;
+  --cds-gap-xs:4px; --cds-gap-sm:8px; --cds-gap-md:14px; --cds-gap-lg:20px; --cds-gap-xl:36px;
+  --cds-pad-xs:5px; --cds-pad-sm:8px; --cds-pad-md:12px; --cds-pad-lg:16px; --cds-radius:8px; --cds-dur-slow:.3s;
+  --red:#B3121B; color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --color-bg:#171413; --color-fg:#F1ECE9; --color-fg-muted:#B3AAA6; --color-panel:#221E1D; --color-border-line:#3A3332;
+  --color-ok:#7FC48A; --color-warn:#E9A55A; --color-bad:#F0787C;
+  --cds-chart-grid:#2E2827; --cds-chart-muted:#93A6BA; --cds-chart-reference:#8A817D; --cds-chart-status-critical:#F0787C; --red:#E5484D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --color-bg:#171413; --color-fg:#F1ECE9; --color-fg-muted:#B3AAA6; --color-panel:#221E1D; --color-border-line:#3A3332;
+  --color-ok:#7FC48A; --color-warn:#E9A55A; --color-bad:#F0787C;
+  --cds-chart-grid:#2E2827; --cds-chart-muted:#93A6BA; --cds-chart-reference:#8A817D; --cds-chart-status-critical:#F0787C; --red:#E5484D; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-anthropic-sans);font-size:16px;line-height:1.45;
+  padding:24px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+.site-top{max-width:72rem;margin:0 auto 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-fg-muted);text-decoration:none}
+.brand b{color:var(--red)}
+.site-top nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+.site-top nav a{color:var(--color-fg-muted);text-decoration:none}.site-top nav a:hover{color:var(--red)}
+a{color:var(--red)}
+.k-h2{font-family:var(--font-anthropic-serif);font-weight:600}
+.dash-skeleton{color:var(--color-fg-muted)}
+.src-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:var(--cds-gap-md)}
+.src-list .k-card p{margin:var(--cds-gap-xs) 0;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.src-list ul{margin:var(--cds-gap-xs) 0 var(--cds-gap-sm);padding-left:1.1em;font-size:var(--cds-font-size-caption)}
+.src-list button{font:inherit;font-size:13px;padding:5px 10px;border-radius:6px;border:1px solid var(--color-border-line);background:var(--color-bg);color:var(--color-fg);cursor:pointer}
+.src-list button:hover{border-color:var(--red)}
+.site-foot{max-width:72rem;margin:var(--cds-gap-xl) auto 0;border-top:1px solid var(--color-border-line);padding-top:14px;font-size:14px;color:var(--color-fg-muted)}
+@media print{.site-top nav,.src-list button{display:none}}
+</style>
+<style>.k-wrap { max-width: 72rem; margin-inline: auto; font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+.k-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0 0 var(--cds-gap-xs); }
+.k-head p { color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-lg); font-size: var(--cds-font-size-body); max-width: 60rem; }
+.k-h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: var(--cds-gap-xl) 0 var(--cds-gap-sm); }
+.k-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: var(--cds-gap-md); }
+.k-tile, .k-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); }
+.k-tile .k-lab { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.k-tile .k-big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin: var(--cds-gap-xs) 0; min-height: 1.3em; }
+.k-tile .k-sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.k-good { color: var(--color-ok); } .k-bad { color: var(--color-bad); }
+.k-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.k-card h3 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.k-card .k-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); }
+.k-bars { display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-height: 4rem; }
+.k-bar-row { display: grid; grid-template-columns: minmax(6rem, 38%) 1fr auto; align-items: center; gap: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); }
+.k-bar-label { color: var(--color-fg); overflow-wrap: anywhere; }
+.k-bar-track { height: 14px; background: var(--cds-chart-grid); border-radius: 7px; overflow: hidden; }
+.k-bar { display: block; height: 100%; background: var(--cds-chart-muted); border-radius: 7px; }
+.k-bar.k-accent { background: var(--cds-chart-status-critical); }
+.k-bars.k-blue .k-bar { background: var(--cds-chart-muted); }
+.k-bar-val { font-variant-numeric: tabular-nums; min-width: 4.5rem; text-align: right; color: var(--color-fg); }
+.k-tablebox { max-height: 34rem; overflow: auto; }
+.k-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); }
+.k-table th { position: sticky; top: 0; background: var(--color-panel); text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.k-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.k-table td.k-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.k-fail { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); min-height: 4rem; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.k-dot { width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+.k-callout { border-left: 3px solid var(--cds-chart-reference); padding: var(--cds-pad-sm) var(--cds-pad-md); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin-top: var(--cds-gap-md); }
+.k-foot { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin-top: var(--cds-gap-xl); }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+
+
+.k-bar-row.k-hi .k-bar-label{font-weight:600}
+.k-div{position:relative;height:14px;background:var(--cds-chart-grid);border-radius:7px}
+.k-div .k-mid{position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--color-fg-muted)}
+.k-div .k-bar{position:absolute;top:0;height:100%}
+.k-bar.k-pos{background:var(--color-bad)} .k-bar.k-neg{background:var(--color-ok)}
+.k-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:var(--cds-gap-md);font-size:13px}
+.k-src{font-size:13px;color:var(--color-fg-muted);margin-top:var(--cds-gap-sm)}
+.k-wide{grid-column:1/-1}
+.k-tiles{grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr))}
+.k-pill{display:inline-block;font-size:12px;padding:1px 8px;border-radius:10px;border:1px solid var(--color-border-line);color:var(--color-fg-muted)}
+
+.k-pill.k-yes{border-color:var(--color-ok);color:var(--color-ok)} .k-pill.k-part{border-color:#B7791F;color:#8A5A12}
+.k-pill.k-no{border-color:var(--color-fg-muted)} .k-tablebox{max-height:none;overflow-x:auto} .k-table td{vertical-align:top}
+.k-time{list-style:none;margin:0;padding:0} .k-time li{display:grid;grid-template-columns:7.5em 1fr;gap:12px;padding:8px 0;border-top:1px solid var(--color-border-line)}
+.k-time li:first-child{border-top:0} .k-time b{color:var(--color-accent,#A61C1C)}
+.k-filter{display:flex;gap:8px;align-items:center;margin:0 0 10px;font-size:14px} .k-filter input{flex:1;max-width:360px;padding:6px 10px;border:1px solid var(--color-border-line);border-radius:6px;font:inherit;background:var(--color-bg,#fff);color:inherit}
+.k-anchor{font-size:12px;color:var(--color-fg-muted);text-decoration:none;margin-left:8px} .k-card h3:hover .k-anchor{color:var(--color-accent,#A61C1C)}
+.k-tl{width:100%;height:auto;display:block;margin:6px 0 2px} .k-juris{display:inline-block;min-width:3.4em;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--color-fg-muted);margin-right:8px}
+.k-glos dt{font-weight:600;margin-top:10px} .k-glos dd{margin:2px 0 0}
+.k-log li{margin:0 0 6px}
+.k-cta{background:var(--color-accent,#A61C1C);color:#fff;border-radius:8px;padding:18px 22px} .k-cta a{color:#fff;font-weight:600} .k-cta p{margin:0 0 6px}
+@media print{.site-top nav,.k-filter,.k-actions,.k-anchor,.k-cta{display:none!important}.k-card{break-inside:avoid;border:1px solid #ccc}.k-tablebox{overflow:visible}body{font-size:11px}}
+
+.w-q{border:1px solid var(--color-rule,#e4e0dc);border-radius:10px;padding:16px 18px;margin:0 0 14px;background:#fff}
+.w-q legend{font-weight:700;font-size:1.05rem;padding:0 6px}
+.w-q .w-hint{margin:2px 0 10px;color:#555;font-size:.95rem}
+.w-opts{display:grid;gap:6px 18px;grid-template-columns:1fr}
+@media(min-width:760px){.w-opts{grid-template-columns:1fr 1fr}}
+.w-opts label{display:flex;gap:8px;align-items:flex-start;line-height:1.35;cursor:pointer;padding:4px 0}
+.w-opts input{margin-top:3px;width:18px;height:18px;flex:0 0 auto;accent-color:#A61C1C}
+.w-btns{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 22px}
+.w-btns button{font:inherit;font-weight:600;border-radius:6px;padding:10px 18px;cursor:pointer;border:2px solid #A61C1C}
+.w-go{background:#A61C1C;color:#fff} .w-reset{background:#fff;color:#A61C1C}
+.w-res h2{margin-top:28px}
+.w-item{border-left:4px solid #A61C1C;background:#fff;border-radius:0 8px 8px 0;padding:12px 16px;margin:0 0 10px}
+.w-item h3{margin:0 0 4px;font-size:1.05rem}
+.w-item p{margin:4px 0;font-size:.97rem}
+.w-item .w-tag{display:inline-block;font-size:.8rem;font-weight:600;background:#f7f5f4;border:1px solid #e4e0dc;border-radius:4px;padding:1px 6px;margin-right:6px}
+.w-note{background:#f7f5f4;border-radius:8px;padding:12px 16px;margin:0 0 12px}
+.w-empty{color:#555}
+#w-atrisk[hidden]{display:none}
+</style>
+</head>
+<body>
+<header class="site-top">
+  <a class="brand" href="/" aria-label="Robert J. Park home"><img src="/assets/tools-mark.svg" alt="" width="30" height="30">Robert J. <b>Park</b> · Tools</a>
+  <nav aria-label="Main"><a href="/">Home</a><a href="/services/">Services</a><a href="/tools/">Tools</a><a href="/dashboards/">Dashboards</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></nav>
+</header>
+<main id="dash-root">
+<div class="k-wrap">
+<header class="k-head"><h1>Which EU rules apply to me?</h1>
+<p>Answer three questions about what you make and where it goes. You get the EU and UK rules from the <a href="/tools/dashboards/eu-law-windsor-framework.html">EU law and the Windsor Framework dashboard</a> that matter to you, with dates and official sources. As at 30 October 2026. Nothing you tick leaves your browser.</p></header>
+
+<form id="w-form" novalidate>
+<fieldset class="w-q"><legend>1. What do you make, sell or handle?</legend><p class="w-hint">Tick all that apply.</p>
+<div class="w-opts"><label><input type="checkbox" name="tag" value="food">Food, drink or farm produce</label><label><input type="checkbox" name="tag" value="forest">Timber, paper or furniture, or goods made with cattle, cocoa, coffee, palm oil, rubber or soya</label><label><input type="checkbox" name="tag" value="packaging">Anything sold in packaging</label><label><input type="checkbox" name="tag" value="machinery">Machinery or equipment, including farm and construction machinery</label><label><input type="checkbox" name="tag" value="batteries">Batteries, electronics, e-bikes or vehicles</label><label><input type="checkbox" name="tag" value="chemicals">Chemicals, cleaning products, paints or agri-supplies</label><label><input type="checkbox" name="tag" value="construction">Construction products</label><label><input type="checkbox" name="tag" value="consumer">Consumer products sold to the public, including online</label><label><input type="checkbox" name="tag" value="toys">Toys</label><label><input type="checkbox" name="tag" value="cooling">Refrigeration, air conditioning or heat pumps (selling, installing or running them)</label><label><input type="checkbox" name="tag" value="waste">Waste, scrap or recycling</label><label><input type="checkbox" name="tag" value="energy">Generating electricity, or using a lot of it</label></div></fieldset>
+
+<fieldset class="w-q"><legend>2. Where do your goods go?</legend><p class="w-hint">Tick all that apply.</p>
+<div class="w-opts">
+<label><input type="checkbox" name="route" value="ni">We sell or use goods in Northern Ireland</label>
+<label><input type="checkbox" name="route" value="gb2ni">We move goods from Great Britain into Northern Ireland</label>
+<label><input type="checkbox" name="route" value="ni2gb">We are in Northern Ireland and sell into Great Britain</label>
+<label><input type="checkbox" name="route" value="eu">We sell into Ireland or elsewhere in the EU</label>
+</div></fieldset>
+
+<fieldset class="w-q" id="w-atrisk" hidden><legend>3. Are the goods you bring from Great Britain "at risk" of moving on into the EU?</legend>
+<p class="w-hint">Goods are "not at risk" when an authorised trader under the UK Internal Market Scheme declares they will stay in the UK.</p>
+<div class="w-opts">
+<label><input type="radio" name="risk" value="no">Not at risk: they stay in Northern Ireland or the UK</label>
+<label><input type="radio" name="risk" value="yes">At risk: some may go on to Ireland or the EU</label>
+<label><input type="radio" name="risk" value="unsure" checked>Not sure</label>
+</div></fieldset>
+
+<div class="w-btns"><button type="submit" class="w-go">Show my rules</button><button type="reset" class="w-reset">Start again</button></div>
+</form>
+
+<div id="w-res" class="w-res" aria-live="polite"></div>
+
+<section class="k-cta"><p><strong>Want this turned into a compliance register?</strong></p><p>I help Northern Ireland businesses work out which rules apply to what they make and where it goes, and what to do first. <a href="/contact/">Get in touch</a> or see <a href="/services/">what I do</a>.</p></section>
+<h2 class="k-h2">About this tool</h2>
+<section class="k-card"><p class="k-note">A guide, not legal advice. It covers the selected laws on the EU law dashboard (environment, carbon, products and goods), not every EU law that applies in Northern Ireland, and it does not cover tax, employment or data rules. It is rebuilt from the dashboard's data each time the dashboard is updated, every Friday. Check the official source on each result before you act.</p></section>
+<p class="k-foot">Related: <a href="/tools/dashboards/eu-law-windsor-framework.html">EU law and the Windsor Framework dashboard</a> · <a href="/tools/dashboards/cbam-exposure-tracker.html">CBAM Exposure Tracker</a>.</p>
+</div>
+</main>
+<footer class="site-foot">Robert J. Park · Environment · Carbon · Public Affairs · Northern Ireland. Checked on 30 October 2026. <a href="/contact/">Contact</a> · <a href="/privacy/">Privacy</a></footer>
+<script id="w-data" type="application/json">{"rows": [{"g": "ni", "n": "Deforestation Regulation (EU) 2023/1115 (EUDR)", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-and-beyond/eu-law-scrutiny-tracker/reg20252650/", "tags": ["food", "forest"], "topic": "Forest-risk goods: cattle, cocoa, coffee, palm oil, rubber, soya, wood", "who": "Food and drink processors; timber, furniture and paper; printers; anyone importing cattle, cocoa, coffee, palm oil, rubber, soya or wood", "applies": "Yes", "dates": "Large and medium firms 30 Dec 2026; micro and small 30 Jun 2027, except wood products already under the EU Timber Regulation (30 Dec 2026)"}, {"g": "ni", "n": "Machinery Regulation (EU) 2023/1230", "u": "https://commonsbusiness.parliament.uk/Document/106373/Pdf", "tags": ["machinery"], "topic": "Machinery", "who": "Machinery makers, importers and dealers; agricultural and construction equipment", "applies": "Yes", "dates": "Applies 20 Jan 2027, replacing Directive 2006/42"}, {"g": "ni", "n": "Batteries Regulation (EU) 2023/1542", "u": "https://www.gov.uk/guidance/eu-batteries-regulations-in-northern-ireland", "tags": ["batteries"], "topic": "Batteries", "who": "Battery and e-bike sellers; electronics; vehicle dealers; waste operators", "applies": "Yes", "dates": "Labels 18 Aug 2026; QR code, passport and removability 18 Feb 2027; due diligence 18 Aug 2027"}, {"g": "ni", "n": "Packaging and Packaging Waste Regulation (EU) 2025/40 (PPWR)", "u": "https://www.daera-ni.gov.uk/articles/packaging-and-packaging-waste", "tags": ["packaging", "food"], "topic": "Packaging", "who": "Every business that packs goods for the NI market; food and drink; retail", "applies": "Partly: design, recyclability, labelling, substances and single-use restrictions. Not producer responsibility, deposit return, reuse or recycling targets", "dates": "Applies 12 Aug 2026, phased to 2030 and 2040"}, {"g": "ni", "n": "CLP revision (EU) 2024/2865", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-and-beyond/eu-law-scrutiny-tracker/regulation-eu-20252439/", "tags": ["chemicals"], "topic": "Chemical classification and labelling", "who": "Chemical makers, formulators, distributors; cleaning products; paints; agri-supplies", "applies": "Yes", "dates": "New label format, advertising and online-sales rules postponed to 1 Jan 2028 by 2025/2439"}, {"g": "ni", "n": "Construction Products Regulation (EU) 2024/3110", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-and-beyond/eu-law-scrutiny-tracker/regulation-eu-20243110/", "tags": ["construction"], "topic": "Construction products", "who": "Builders merchants, manufacturers of construction products, contractors", "applies": "Yes", "dates": "Applies from 8 Jan 2026, alongside 305/2011 until 2040"}, {"g": "ni", "n": "Waste Shipments Regulation (EU) 2024/1157", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-and-beyond/eu-law-scrutiny-tracker/regulation-eu-20241157/", "tags": ["waste"], "topic": "Waste", "who": "Waste and recycling operators; exporters of plastic, metal and paper waste", "applies": "Yes", "dates": "Most rules from 21 May 2026; plastic waste exports to non-OECD countries banned from 21 Nov 2026"}, {"g": "ni", "n": "F-gas Regulation (EU) 2024/573", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-and-beyond/eu-law-scrutiny-tracker/regulation-eu-2024573/", "tags": ["cooling"], "topic": "F-gases", "who": "Refrigeration, air-conditioning and heat-pump installers; cold chain; supermarkets", "applies": "Yes", "dates": "In force since 11 Mar 2024; product bans and quota cuts phased in to 2050"}, {"g": "ni", "n": "Ecodesign for Sustainable Products Regulation (EU) 2024/1781", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-and-beyond/eu-law-scrutiny-tracker/regulation-eu-20241781/", "tags": ["consumer", "batteries", "machinery"], "topic": "Ecodesign", "who": "Makers and importers of energy-related and consumer products; textiles", "applies": "Yes", "dates": "In force 18 Jul 2024; product rules follow by delegated act"}, {"g": "ni", "n": "General Product Safety Regulation (EU) 2023/988", "u": "https://www.gov.uk/government/publications/eu-regulation-2023988-on-general-product-safety/eu-regulation-on-general-product-safety-2023988", "tags": ["consumer", "toys"], "topic": "Consumer product safety", "who": "Every consumer-product seller and online marketplace supplying NI", "applies": "Yes", "dates": "Since 13 Dec 2024"}, {"g": "ni", "n": "Product Liability Directive (EU) 2024/2853", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-and-beyond/eu-law-scrutiny-tracker/directive-eu-20242853/", "tags": ["food", "forest", "packaging", "machinery", "batteries", "chemicals", "construction", "consumer", "toys", "cooling"], "topic": "Product liability", "who": "Manufacturers, importers and online sellers; software and AI products", "applies": "Yes", "dates": "Transposition due 9 Dec 2026"}, {"g": "ni", "n": "Toy Safety Regulation (EU) 2025/2509", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-and-beyond/eu-law-scrutiny-tracker/reg20252509/", "tags": ["toys"], "topic": "Toys", "who": "Toy makers, importers and retailers", "applies": "Yes", "dates": "Applies from 1 Aug 2030"}, {"g": "ni", "n": "Detergents and Surfactants Regulation (EU) 2026/405", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-and-beyond/eu-law-scrutiny-tracker/reg2026405", "tags": ["chemicals"], "topic": "Chemical products", "who": "Cleaning-product makers and distributors", "applies": "Yes", "dates": "Adopted 11 Feb 2026"}, {"g": "ni", "n": "Vehicle circularity and end-of-life vehicles (EU) 2026/1738", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-and-beyond/eu-law-scrutiny-tracker/reg20261738/", "tags": ["batteries", "waste"], "topic": "Circular economy", "who": "Vehicle makers, dealers, dismantlers and parts recyclers", "applies": "Yes", "dates": "Adopted 8 Jul 2026"}, {"g": "ni", "n": "Farmers in the food supply chain (EU) 2026/1739", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-and-beyond/eu-law-scrutiny-tracker/reg20261739/", "tags": ["food"], "topic": "Agri-food", "who": "Farmers, processors and retailers in the food supply chain", "applies": "Yes", "dates": "Adopted 8 Jul 2026"}, {"g": "ni", "n": "Union Customs Code recast (EU) 2026/2108", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-and-beyond/eu-law-scrutiny-tracker/reg20262108/", "tags": ["ALL"], "topic": "Customs", "who": "Every business moving goods into NI from GB or outside the EU; parcel carriers", "applies": "Yes", "dates": "Adopted 16 Sep 2026"}, {"g": "ni", "n": "REACH (EC) 1907/2006", "u": "https://www.hse.gov.uk/reach/northern-ireland.htm", "tags": ["chemicals"], "topic": "Chemicals", "who": "Chemical makers, importers and downstream users", "applies": "Yes: EU REACH in NI, UK REACH in GB", "dates": "Ongoing"}, {"g": "ni", "n": "EU Emissions Trading System, Directive 2003/87/EC", "u": "https://www.daera-ni.gov.uk/articles/emissions-trading-schemes", "tags": ["energy"], "topic": "Carbon pricing", "who": "Electricity generators in NI", "applies": "Partly: NI electricity generators only. Other NI sites are in the UK ETS", "dates": "Since 1 Jan 2021"}, {"g": "ni", "n": "Single Electricity Market rules (Windsor Framework Article 9 and Annex 4)", "u": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12020W/TXT", "tags": ["energy"], "topic": "Wholesale electricity", "who": "Generators, suppliers and large energy users on the all-island market", "applies": "Partly: the all-island wholesale market", "dates": "Ongoing"}, {"g": "gb", "kind": "Selling into NI", "n": "Product safety (GPSR)", "u": "https://www.gov.uk/government/publications/eu-regulation-2023988-on-general-product-safety/eu-regulation-on-general-product-safety-2023988", "tags": ["consumer", "toys"], "what": "GB sellers into NI need a responsible person in NI or the EU on the product", "dates": "Since 13 Dec 2024"}, {"g": "gb", "kind": "Selling into NI", "n": "Deforestation (EUDR)", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-beyond-newsletters/issue-220--29-june-2026/", "tags": ["food", "forest"], "what": "GB firms moving cattle, soya, wood and other goods to NI must meet EUDR. Defra proposes a GB regime aligned with it", "dates": "NI from 30 Dec 2026; GB proposal 23 Jun 2026"}, {"g": "gb", "kind": "Selling into NI", "n": "Packaging (PPWR)", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-beyond-newsletters/issue-221--01-september-2026/", "tags": ["packaging", "food"], "what": "Packaging sold in NI must meet EU design and labelling rules; GB has not decided whether to follow", "dates": "NI from 12 Aug 2026"}, {"g": "gb", "kind": "Selling into NI", "n": "UK Internal Market Scheme", "u": "https://www.economy-ni.gov.uk/articles/uk-internal-market-scheme", "tags": ["ALL"], "what": "Authorised GB traders can declare goods \"not at risk\" of entering the EU and move them to NI with simplified information instead of a full customs declaration. Whether a shipment is at risk decides how much of this page applies to it", "dates": "Since 30 Sep 2023"}, {"g": "gb", "kind": "GB follows the EU", "n": "\"Not for EU\" labels", "u": "https://www.gov.wales/written-statement-marking-retail-goods-regulations-2025", "tags": ["food"], "what": "Labels on food sent to NI shops. A reserve power (SI 2025/790) could extend them GB-wide product by product", "dates": "Power made 1 Jul 2025"}, {"g": "gb", "kind": "GB follows the EU", "n": "Plant health import rules", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-beyond-newsletters/issue-222--07-september-2026/", "tags": ["food"], "what": "GB rules on tomatoes, peppers and ginger aligned with the EU so goods can still go to NI (SI 2026/458)", "dates": "Debated 2 Sep 2026"}, {"g": "gb", "kind": "GB follows the EU", "n": "Chemical labelling (CLP)", "u": "https://consultations.hse.gov.uk/hse/chemicals-legislative-reform-proposals/results/responsereport-chemicalslegislativereformproposals.pdf", "tags": ["chemicals"], "what": "HSE to change GB CLP so one label works UK-wide, in effect following EU changes", "dates": "Response Feb 2026; law to follow"}, {"g": "gb", "kind": "GB follows the EU", "n": "Batteries", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-beyond-newsletters/issue-224--21-september-2026/", "tags": ["batteries"], "what": "EU rules in NI; UK to consult on an aligned UK-wide regime", "dates": "NI enforcement approved 15 Sep 2026"}, {"g": "gb", "kind": "GB follows the EU", "n": "Agri-food (SPS) agreement", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-beyond-newsletters/issue-216--01-june-2026/", "tags": ["food"], "what": "GB would follow EU food and plant-health rules as they change, removing most GB-to-NI checks", "dates": "Target mid-2027; not yet agreed"}, {"g": "gb", "kind": "GB follows the EU", "n": "Emissions trading link", "u": "https://www.consilium.europa.eu/en/press/press-releases/2025/11/13/eu-uk-relations-council-greenlights-negotiations-on-agri-food-deal-and-linking-emissions-trading-systems/", "tags": ["energy"], "what": "Linking UK and EU ETS, with each side exempt from the other's CBAM. A deal was reported in October but not confirmed", "dates": "UK–EU summit 20 Nov 2026"}, {"g": "gb", "kind": "Two regimes", "n": "REACH", "u": "https://www.hse.gov.uk/reach/northern-ireland.htm", "tags": ["chemicals"], "what": "EU REACH applies in NI, UK REACH in GB. A GB firm cannot hold an EU REACH registration itself: it needs an EU- or NI-based registrant or only representative", "dates": "Ongoing"}, {"g": "gb", "kind": "Two regimes", "n": "F-gas", "u": "https://www.daera-ni.gov.uk/articles/fluorinated-greenhouse-gases", "tags": ["cooling"], "what": "GB and NI quotas diverge; GB suppliers to NI must meet EU bans", "dates": "Gap widens 1 Jan 2027"}, {"g": "gb", "kind": "Two regimes", "n": "Machinery and tumble dryers", "u": "https://commonsbusiness.parliament.uk/Document/106373/Pdf", "tags": ["machinery", "consumer"], "what": "GB continues to recognise CE marking for machinery, so EU-compliant machinery can still be sold in GB. New GB ecodesign rules ban vented and convector tumble dryers from January 2027", "dates": "NI applies the EU Machinery Regulation from 20 Jan 2027"}, {"g": "gb", "kind": "Two regimes", "n": "Electricity VAT", "u": "https://www.gov.uk/government/publications/temporary-zero-rate-of-vat-for-domestic-electricity-in-great-britain/temporary-zero-rate-of-vat-in-great-britain-for-domestic-electricity", "tags": ["energy"], "what": "A temporary zero rate of VAT on GB household electricity does not apply in NI, where EU VAT rules on goods apply. The UK is funding NI households instead this winter", "dates": "1 Oct 2026 to 31 Mar 2027"}, {"g": "gb", "kind": "Two regimes", "n": "Parcel and low-value customs duty", "u": "https://www.niassembly.gov.uk/assembly-business/brexit-beyond-newsletters/issue-221--01-september-2026/", "tags": ["consumer"], "what": "A new EU customs duty on low-value parcels applies in NI, but GB-to-NI goods that are not at risk of entering the EU are exempt", "dates": "From 1 Jul 2026"}, {"g": "eu", "n": "EU Carbon Border Adjustment Mechanism (EU) 2023/956", "u": "https://researchbriefings.files.parliament.uk/documents/CBP-9935/CBP-9935.pdf", "tags": ["ALL"], "why": "Not applied in NI. The UK CBAM covers NI from 1 Jan 2027"}, {"g": "eu", "n": "Corporate Sustainability Reporting Directive (EU) 2022/2464", "u": "", "tags": ["ALL"], "why": "Not in the Windsor Framework annexes. NI firms are caught only through EU subsidiaries or EU turnover"}, {"g": "eu", "n": "Corporate Sustainability Due Diligence Directive (EU) 2024/1760", "u": "", "tags": ["ALL"], "why": "Not in the annexes. Reaches NI firms through EU customers"}], "tags": [["food", "Food, drink or farm produce"], ["forest", "Timber, paper or furniture, or goods made with cattle, cocoa, coffee, palm oil, rubber or soya"], ["packaging", "Anything sold in packaging"], ["machinery", "Machinery or equipment, including farm and construction machinery"], ["batteries", "Batteries, electronics, e-bikes or vehicles"], ["chemicals", "Chemicals, cleaning products, paints or agri-supplies"], ["construction", "Construction products"], ["consumer", "Consumer products sold to the public, including online"], ["toys", "Toys"], ["cooling", "Refrigeration, air conditioning or heat pumps (selling, installing or running them)"], ["waste", "Waste, scrap or recycling"], ["energy", "Generating electricity, or using a lot of it"]]}</script>
+<script>
+(function(){
+var D=JSON.parse(document.getElementById('w-data').textContent);
+var f=document.getElementById('w-form'),out=document.getElementById('w-res'),risk=document.getElementById('w-atrisk');
+function vals(n){return Array.prototype.map.call(f.querySelectorAll('input[name="'+n+'"]:checked'),function(i){return i.value})}
+function e(s){var d=document.createElement('div');d.textContent=s==null?'':String(s);return d.innerHTML}
+function link(r){return r.u?'<a href="'+e(r.u)+'" rel="noopener">'+e(r.n)+'</a>':e(r.n)}
+function hit(r,tags){return r.tags.indexOf('ALL')>-1||r.tags.some(function(t){return tags.indexOf(t)>-1})}
+f.addEventListener('change',function(){risk.hidden=vals('route').indexOf('gb2ni')<0});
+f.addEventListener('reset',function(){setTimeout(function(){risk.hidden=true;out.innerHTML=''},0)});
+f.addEventListener('submit',function(ev){
+ ev.preventDefault();
+ var tags=vals('tag'),routes=vals('route'),rk=(vals('risk')[0]||'unsure'),h='';
+ if(!tags.length||!routes.length){out.innerHTML='<p class="w-note">Tick at least one answer to question 1 and one to question 2.</p>';out.focus&&out.focus();return}
+ var inNI=routes.indexOf('ni')>-1||routes.indexOf('gb2ni')>-1,gb2ni=routes.indexOf('gb2ni')>-1,ni2gb=routes.indexOf('ni2gb')>-1,eu=routes.indexOf('eu')>-1;
+ if(inNI){
+  var a=D.rows.filter(function(r){return r.g==='ni'&&hit(r,tags)&&(r.tags.indexOf('ALL')<0||gb2ni)});
+  h+='<h2>EU rules that apply to your goods in Northern Ireland ('+a.length+')</h2>';
+  if(gb2ni&&rk==='no')h+='<p class="w-note">Goods declared not at risk under the UK Internal Market Scheme move with simplified paperwork, but product rules still apply once they are sold in Northern Ireland.</p>';
+  if(gb2ni&&rk==='yes')h+='<p class="w-note">Goods at risk of moving into the EU need a full customs declaration, and EU duties can apply.</p>';
+  h+=a.length?a.map(function(r){return '<div class="w-item"><h3>'+link(r)+'</h3><p><span class="w-tag">'+e(r.applies)+'</span>'+e(r.topic)+'</p><p><b>Key dates:</b> '+e(r.dates)+'</p><p><b>Who:</b> '+e(r.who)+'</p></div>'}).join(''):'<p class="w-empty">None of the laws on the dashboard matches these answers.</p>';
+ }
+ if(gb2ni){
+  var b=D.rows.filter(function(r){return r.g==='gb'&&r.kind==='Selling into NI'&&hit(r,tags)});
+  if(rk==='no')b=b.concat(D.rows.filter(function(r){return r.g==='gb'&&r.n.indexOf('Parcel')===0&&hit(r,tags)}));
+  h+='<h2>Moving goods from Great Britain into Northern Ireland ('+b.length+')</h2>'+(b.length?b.map(function(r){return '<div class="w-item"><h3>'+link(r)+'</h3><p>'+e(r.what)+'</p><p><b>Key date:</b> '+e(r.dates)+'</p></div>'}).join(''):'<p class="w-empty">Nothing extra on the dashboard for these goods.</p>');
+ }
+ if(inNI||ni2gb){
+  var c=D.rows.filter(function(r){return r.g==='gb'&&r.kind!=='Selling into NI'&&hit(r,tags)});
+  h+='<h2>Where GB and NI rules differ ('+c.length+')</h2>';
+  if(ni2gb)h+='<p class="w-note">Qualifying Northern Ireland goods have unfettered access to the GB market. Where GB rules differ, check which ones you must meet for what you sell in GB.</p>';
+  h+=c.length?c.map(function(r){return '<div class="w-item"><h3>'+link(r)+'</h3><p><span class="w-tag">'+e(r.kind)+'</span>'+e(r.what)+'</p><p><b>Key date:</b> '+e(r.dates)+'</p></div>'}).join(''):'<p class="w-empty">No differences on the dashboard for these goods.</p>';
+ }
+ if(eu){
+  var d=D.rows.filter(function(r){return r.g==='eu'});
+  h+='<h2>Rules that reach you through EU customers ('+d.length+')</h2><p class="w-note">These EU laws do not apply in Northern Ireland, but EU customers may ask you for data or terms because of them.</p>'+d.map(function(r){return '<div class="w-item"><h3>'+link(r)+'</h3><p>'+e(r.why)+'</p></div>'}).join('');
+ }
+ h+='<p class="w-note">This list covers the laws on the <a href="/tools/dashboards/eu-law-windsor-framework.html">EU law dashboard</a> only. It is a starting point, not legal advice.</p>';
+ out.innerHTML=h;out.setAttribute('tabindex','-1');out.focus();
+});
+})();
+</script>
+</body>
+</html>

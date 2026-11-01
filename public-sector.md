@@ -57,7 +57,7 @@ Where environmental, carbon, energy and waste rules stand in Northern Ireland, w
 {% endif %}
 ## EU law and the Windsor Framework
 
-Which EU laws apply in Northern Ireland, every Stormont Brake case, how NI rules reach Great Britain, and the European Commission and Irish government consultations open now. [Open the EU Law and the Windsor Framework dashboard]({{ '/tools/dashboards/eu-law-windsor-framework.html' | relative_url }}).
+Which EU laws apply in Northern Ireland, every Stormont Brake case, how NI rules reach Great Britain, and the European Commission and Irish government consultations open now. [Open the EU Law and the Windsor Framework dashboard]({{ '/tools/dashboards/eu-law-windsor-framework.html' | relative_url }}), or [answer three questions]({{ '/tools/which-eu-rules-apply.html' | relative_url }}) to see the rules that apply to one business.
 
 
 ## Procurement

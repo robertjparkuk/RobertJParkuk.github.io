@@ -25,6 +25,16 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.20.0 — 1 November 2026: "Which EU rules apply to me?" (decision 10)
+
+**Added**
+- `tools/which-eu-rules-apply.html`: three questions (what you make or handle, where your goods go, and whether goods from GB are "at risk") that return the matching rows from the EU law dashboard in four groups: EU rules for your goods in NI, moving goods from GB into NI, where GB and NI rules differ, and rules that reach you through EU customers. Runs in the browser; nothing is sent.
+- `_scripts/dashboards/eu_rules_tool.py`: builds the tool from the data lists in `eu_build.py`, so the two never drift. Each law is mapped to the questions in two small tables; the build stops if a new law has no mapping, so the weekly update can't publish a law the tool doesn't know about. Run it after `eu_build.py`.
+
+**Changed**
+- EU law dashboard: links to the tool in the introduction and footer (no data change).
+- `tools.md` and `public-sector.md`: links to the tool.
+
 ### v0.19.0 — 1 November 2026: one fixed home-page hero (decision 6)
 
 **Changed**
