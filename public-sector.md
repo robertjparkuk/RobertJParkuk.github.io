@@ -49,6 +49,12 @@ Arm's-length bodies, agencies and publicly funded organisations can draw on the 
 I respond to public consultations across Northern Ireland and publish a selection once they close. [Read my consultation responses]({{ '/public-sector/consultation-responses/' | relative_url }}).
 
 {% endif %}
+{% if site.categories['policy-series'] %}
+## Policy series
+
+Where environmental, carbon, energy and waste rules stand in Northern Ireland, who decides them, where every party stands, and what councils and firms should do. Seventeen pieces, two a week from 16 November 2026. [Read the policy series]({{ '/policy-series/' | relative_url }}).
+
+{% endif %}
 ## EU law and the Windsor Framework
 
 Which EU laws apply in Northern Ireland, every Stormont Brake case, how NI rules reach Great Britain, and the European Commission and Irish government consultations open now. [Open the EU Law and the Windsor Framework dashboard]({{ '/tools/dashboards/eu-law-windsor-framework.html' | relative_url }}).
