@@ -25,6 +25,29 @@ jobs:
           destination: ./_site
           future: true
 
+      - name: Build again as GitHub Pages does on a normal day (future posts hidden)
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site_today
+          future: false
+
+      - name: Fail on YAML front-matter warnings
+        run: |
+          # jekyll-build-pages prints "YAML Exception reading" for a page whose front matter does not parse
+          python3 - <<'PY'
+          import glob,re,sys,yaml
+          bad=[]
+          for f in glob.glob('**/*.md',recursive=True)+glob.glob('*.html'):
+              t=open(f,encoding='utf-8').read()
+              if not t.startswith('---'): continue
+              fm=t.split('---',2)[1]
+              try: yaml.safe_load(fm)
+              except Exception as e: bad.append(f"{f}: {e}")
+          if bad: print("::error::Front matter does not parse:\n"+"\n".join(bad)); sys.exit(1)
+          print("front matter parses")
+          PY
+
       - name: House-rule checks on the built site
         run: |
           fail=0

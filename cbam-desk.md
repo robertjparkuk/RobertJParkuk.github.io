@@ -2,7 +2,7 @@
 layout: page
 title: CBAM Desk
 permalink: /cbam-desk/
-description: Fixed-price CBAM help for small manufacturers, suppliers and importers: an exposure check from £495, supplier data packs, UK CBAM readiness and a monthly desk.
+description: "Fixed-price CBAM help for small manufacturers, suppliers and importers: an exposure check from £495, supplier data packs, UK CBAM readiness and a monthly desk."
 lead: Fixed-price help with the EU and UK carbon border rules, for firms too small for a big consultancy and too exposed to ignore it.
 ---
 
