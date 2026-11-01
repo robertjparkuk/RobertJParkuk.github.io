@@ -217,7 +217,7 @@ def page_eu(tiles, cards):
 <main id="dash-root">
 <div class="k-wrap">
 <header class="k-head"><h1>EU law and the Windsor Framework</h1>
-<p>Which EU laws apply in Northern Ireland, where the Stormont Brake has been tried, how NI rules reach businesses in Great Britain, and which Irish and European Commission consultations are open. As at {AS_AT}.</p></header>
+<p>Which EU laws apply in Northern Ireland, where the Stormont Brake has been tried, how NI rules reach businesses in Great Britain, and which Irish and European Commission consultations are open. As at {AS_AT}. Short of time? <a href="/tools/which-eu-rules-apply.html">Answer three questions</a> to see only the rules that apply to you.</p></header>
 <div class="k-tiles">{''.join(tiles)}</div>
 <h2 class="k-h2">The tracker</h2>
 <div class="k-grid">{''.join(cards)}</div>
@@ -228,7 +228,7 @@ def page_eu(tiles, cards):
 <section class="k-cta"><p><strong>Caught between the two rulebooks?</strong></p><p>I help Northern Ireland businesses work out which rules apply to what they make and where it goes, respond to consultations, and build a compliance register from pages like this one. <a href="/contact/">Get in touch</a> or see <a href="/services/">what I do</a>.</p></section>
 <h2 class="k-h2">About this page</h2>
 <section class="k-card"><p class="k-note">A dated snapshot, checked on 30 October 2026 against the NI Assembly's EU law scrutiny tracker and Brexit and Beyond newsletters, GOV.UK, DAERA, the Council of the EU, the European Commission and gov.ie. "Not in the annexes" rows are my reading of the Windsor Framework annexes, not legal advice. Every link is to an official source except where a row says "as reported by"; the NI Assembly's Brexit and Beyond newsletter is used where a GOV.UK page could not be opened. Commission close dates are usually midnight Brussels time; check the consultation page before you rely on one. Nothing on this page is fetched or sent, and every table can be downloaded as CSV.</p></section>
-<p class="k-foot">More dashboards: <a href="/dashboards/">all dashboards</a>. Related: <a href="/tools/dashboards/cbam-exposure-tracker.html">CBAM Exposure Tracker</a>.</p>
+<p class="k-foot">More dashboards: <a href="/dashboards/">all dashboards</a>. Related: <a href="/tools/which-eu-rules-apply.html">Which EU rules apply to me?</a> · <a href="/tools/dashboards/cbam-exposure-tracker.html">CBAM Exposure Tracker</a>.</p>
 </div>
 </main>
 <footer class="site-foot">Robert J. Park · Environment · Carbon · Public Affairs · Northern Ireland. Checked on {AS_AT}. <a href="/contact/">Contact</a> · <a href="/privacy/">Privacy</a></footer>

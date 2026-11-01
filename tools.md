@@ -26,6 +26,12 @@ For Northern Ireland farms asked for carbon data by a processor, supermarket, le
 
 [Open the Farm Carbon Data Checker →]({{ '/tools/farm-data-checker/' | relative_url }}) · Background: [Focus on Agriculture, October 2026]({{ '/blog/focus-on-agriculture-october-2026/' | relative_url }})
 
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Which EU rules apply to me?</h2>
+
+For Northern Ireland businesses caught between UK and EU rules. Tick what you make or handle and where your goods go, say whether goods from Great Britain are "at risk" of moving into the EU, and get the EU and UK rules that matter to you, with dates and official sources. It uses the same data as the EU Law and the Windsor Framework dashboard and is updated with it every Friday. Nothing you tick leaves your browser.
+
+[Open Which EU rules apply to me? →]({{ '/tools/which-eu-rules-apply.html' | relative_url }})
+
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Dashboards</h2>
 
 Northern Ireland data on one page, from official statistics, with every table downloadable as CSV. **CBAM Exposure Tracker**: where an NI business stands under the EU and UK carbon border charges, the EU certificate price and the rules side by side. **NI Agriculture and Land Carbon**: farm and land emissions from 1990 to 2024, nutrients, livestock, peatland, F-gases and the measures that cut them. **EU Law and the Windsor Framework**: which EU laws apply in NI, Stormont Brake cases, effects on GB and open EU and Irish consultations.
