@@ -58,13 +58,10 @@ jobs:
           check '<script[^>]+src="https?://' "external script"
           exit $fail
 
-      - name: Check the hero rotation script is valid JavaScript
+      - name: Check the home page has one fixed hero
         run: |
-          python3 - <<'PY'
-          import re,subprocess
-          s=open('_site/index.html').read()
-          js=[m for m in re.findall(r'<script>(.*?)</script>',s,re.S) if 'hero-title' in m][0]
-          open('/tmp/hero.js','w').write(js.replace('document.getElementById','(function(){return null;})'))
-          PY
-          node --check /tmp/hero.js && echo "hero script parses"
-          grep -c '{e:' _site/index.html | xargs echo "hero messages in built page:"
+          h1=$(grep -c '<h1' _site/index.html); echo "h1 on home page: $h1"
+          test "$h1" -eq 1 || { echo "::error::Home page should have exactly one h1"; exit 1; }
+          grep -q 'across two regimes' _site/index.html || { echo "::error::Fixed hero line missing"; exit 1; }
+          if grep -q 'Math.random' _site/index.html; then echo "::error::Hero rotation script is back"; exit 1; fi
+          echo "Latest thinking items: $(grep -o 'class="post-list latest-list"' -c _site/index.html)"

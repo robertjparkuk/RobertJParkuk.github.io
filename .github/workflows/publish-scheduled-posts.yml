@@ -4,7 +4,8 @@
 # when something changes. This workflow asks Pages to rebuild every day shortly
 # after noon, so a post dated for a given day at 12:00 goes live then.
 #
-# Times here are UTC. It runs twice: 11:05 and 12:05 UTC, which covers
+# Times here are UTC. It also runs at 07:35 UTC, for Policy series posts dated 07:30.
+# Otherwise it runs twice: 11:05 and 12:05 UTC, which covers
 # 12:05 in summer (BST) and 12:05 in winter (GMT). GitHub can start scheduled
 # runs a few minutes late.
 #
@@ -15,6 +16,7 @@ name: Publish scheduled posts
 
 on:
   schedule:
+    - cron: "35 7 * * *"
     - cron: "5 11 * * *"
     - cron: "5 12 * * *"
   workflow_dispatch:

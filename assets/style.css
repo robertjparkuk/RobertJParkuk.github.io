@@ -184,3 +184,11 @@ h3 { font-size: 1.2rem; margin: 1.75rem 0 0.5rem; }
 .update-box p { margin: 0.4rem 0; }
 .update-box ul { margin: 0.4rem 0 0.4rem 1.2rem; padding: 0; }
 .update-box .update-date { font-weight: 700; color: var(--red); }
+
+/* Home page: one fixed hero, with current thought pieces in a strip below (v0.19.0) */
+.latest-thinking { background: var(--bg-alt); padding-top: 2rem; padding-bottom: 2rem; }
+.latest-thinking h2 { margin-top: 0; }
+.latest-list { max-width: none; display: grid; gap: 0 2rem; grid-template-columns: 1fr; }
+.latest-list li:first-child { border-top: 0; }
+.latest-list h3 em { font-style: normal; color: var(--red); }
+@media (min-width: 900px) { .latest-list { grid-template-columns: repeat(3, 1fr); } .latest-list li { border-bottom: 0; } }

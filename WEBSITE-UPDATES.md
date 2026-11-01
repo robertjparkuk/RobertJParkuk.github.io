@@ -25,6 +25,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.19.0 — 1 November 2026: one fixed home-page hero (decision 6)
+
+**Changed**
+- `index.html`: the rotating hero is gone. The home page always opens on "Carbon and environmental compliance for manufacturers working across two regimes" (Robert's decision 6, confirmed 1 Nov). The random-rotation script is removed.
+- Thought pieces and Policy series posts with `hero_title` now appear in a "Latest thinking" strip under the hero instead: up to three, newest first, each shown only once published and until its `hero_until` date. Front matter is unchanged, so `hero_eyebrow`, `hero_title`, `hero_lead` and `hero_until` keep working as before; `hero_button` and `hero_button2` are no longer used.
+- `assets/style.css`: `.latest-thinking` strip, three columns on wide screens.
+- `.github/workflows/publish-scheduled-posts.yml`: extra daily rebuild at 07:35 UTC. Policy series posts are dated 07:30, but the site only rebuilt at 11:05 and 12:05 UTC, so they would have gone live about four and a half hours late.
+- `.github/workflows/pr-check.yml`: the hero-script check is replaced by a check for exactly one h1, the fixed hero line, and no rotation script.
+
 ### v0.18.1 — 1 November 2026: build fix
 
 **Fixed**
