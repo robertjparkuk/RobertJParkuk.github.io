@@ -25,6 +25,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.19.1 — 1 November 2026: check every push to main (decision 11, part 1)
+
+**Changed**
+- `.github/workflows/pr-check.yml`: also runs on every push to `main`, not only on pull requests, so a direct push that breaks a house rule (personal number, github.io address, Google Fonts, external script, broken front matter, rotating hero) shows a failed check and GitHub emails Robert.
+
+**Still to do (Robert, in GitHub settings):** the branch ruleset on `main` that stops direct pushes and requires the PR check to pass. The tools Claude uses cannot change repository settings.
+
 ### v0.19.0 — 1 November 2026: one fixed home-page hero (decision 6)
 
 **Changed**
