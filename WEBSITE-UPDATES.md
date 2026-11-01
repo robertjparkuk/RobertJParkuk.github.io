@@ -25,7 +25,9 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
-### v0.14.0 — 27 October 2026: review actions, CBAM Desk and Who I work with (for sign-off)
+### v0.17.0 — 1 November 2026: review actions, CBAM Desk and Who I work with (signed off 1 Nov)
+
+*Merged on top of v0.16.0. On merge: the offsets post's description rewritten to match its new title; descriptions added to the two posts published since this branch was opened (Crystals in Confinement, Focus on Hospitality, Retail & Leisure), so every post has one.*
 
 *Actions from the 22 October deep review. Not merged until Robert signs off; CBAM Desk prices are a recommendation awaiting his decision.*
 
@@ -42,6 +44,25 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - About: "sales management at Vodafone" corrected to "Dot Mobile, a Vodafone subsidiary".
 - CBAM and CSRD post: dated update box (ETS link status and the 20 November summit, UK CBAM regulations, illustrative rate, indirect emissions deferred to 2029, NI outside the EU CBAM); "into GB" corrected to "into the UK, including Northern Ireland".
 - Services and Public sector: links to CBAM Desk and Who I work with; "accredited partners" reworded to "registered and accredited specialists".
+### v0.16.0 — 30 October 2026: Budget 2026 briefing and post
+
+**Added**
+- `_posts/2026-10-30-budget-2026-what-it-means-for-northern-ireland-businesses.md`: *Budget 2026: what it means for Northern Ireland businesses on energy, carbon and CBAM*, with a hero headline. Lead: the GB electricity discount, the 0% VAT on electricity and the end of Carbon Price Support all stop at the Irish Sea; NI is "funded to deliver a comparable scheme" with no design or date. Also covers UK CBAM default values (global 2027–28, country-specific from 2029), refined products proposed for CBAM scope, the energy-from-waste UK ETS delay, Landfill Tax, Plastic Packaging Tax certification, capital allowances, tariff suspensions and self-employed measures. Every claim paragraph-referenced to the Red Book (HC 726) or gov.uk guidance.
+- `assets/briefings/2026-10-budget-2026-northern-ireland-business-briefing.pdf`: Briefing 02, six pages, in the Briefing 01 house style.
+
+**Still to do** (from the Budget review of 28 October): CBAM countdown and CBAM Exposure Tracker need the global-default caveat for 2027–28; ESG regime tracker needs the Carbon Price Support, CCL, BICS, energy-from-waste and PPT entries and Red Book citations; CBAM and CSRD post needs a paragraph on default values and scope; the 2 November agriculture post should mention the fertiliser tariff suspension.
+
+### v0.15.0 — 27 October 2026: Crystals in Confinement and the UK CBAM countdown
+
+*Released ahead of v0.14.0 (review actions, CBAM Desk), which is still awaiting sign-off in PR 10.*
+
+**Added**
+- `_posts/2026-10-27-crystals-in-confinement.md` at /research/crystals-in-confinement/: a web article version of the Crystals in Confinement positioning paper, with facts rechecked on 27 October 2026. DAERA's cost and resource study received no tenders (DAERA says it may be completed in 2027), so the "report commissioned" line from v4 of the paper is corrected. The PFAS Plan land guidance is no longer given a date. The PDF is not linked until the updated paper is cleared.
+- `tools/uk-cbam-countdown.html`: a live countdown to the UK CBAM on 1 January 2027, with the UK and EU dates that follow and a five-point checklist. Listed on `tools.md`.
+
+**Changed**
+- `about.md`: Vodafone corrected to Dot Mobile, a Vodafone subsidiary. Doctoral research described accurately (no degree awarded) and linked to the new article. Qualifications updated: CISL High Impact Leadership in Sustainability, Chartered IIA Certificate in Internal Audit modules, CIPR since 2014, FRSA, IoD.
+- `_posts/2026-10-16-contaminated-land-in-northern-ireland.md`: links to the new article.
 
 ### v0.13.0 — 27 October 2026: spicy headlines and four thought pieces (for sign-off)
 
