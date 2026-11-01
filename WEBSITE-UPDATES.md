@@ -25,6 +25,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.21.0 — 1 November 2026: Halloween pumpkins post and Briefing 03
+
+**Added**
+- `_posts/2026-11-01-carved-binned-and-smashed-the-full-cost-of-halloween-pumpkins.md`: *Carved, binned and smashed: the full cost of Halloween pumpkins in Northern Ireland*. Estimates for NI (about 818,000 carved, 425,000 uneaten, ~911 t of flesh, 21–41 t of seed), rats, hedgehogs and woodland, public realm harm, and a "design the after-party, not the ban" approach with seven recommendations. NI figures are pro-rata estimates from Hubbub UK data.
+- `assets/briefings/2026-11-halloween-pumpkins-full-cost-briefing.pdf`: Briefing 03, four pages, in the Briefing 01 house style.
+
 ### v0.20.0 — 1 November 2026: "Which EU rules apply to me?" (decision 10)
 
 **Added**
