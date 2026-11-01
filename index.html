@@ -20,6 +20,31 @@ title: Environment · Carbon · Public Affairs
   </div>
 </section>
 
+{%- assign now_s = site.time | date: "%s" | plus: 0 -%}
+{%- assign latest_shown = 0 -%}
+{%- capture latest_items -%}
+{%- for p in site.posts -%}
+{%- unless p.hero_title -%}{%- continue -%}{%- endunless -%}
+{%- if p.hero_until -%}{%- assign until_s = p.hero_until | date: "%s" | plus: 0 -%}{%- if now_s >= until_s -%}{%- continue -%}{%- endif -%}{%- endif -%}
+{%- if latest_shown >= 3 -%}{%- break -%}{%- endif -%}
+{%- assign latest_shown = latest_shown | plus: 1 %}
+      <li>
+        <p class="meta">{{ p.hero_eyebrow | default: "Thought piece · Northern Ireland" }}</p>
+        <h3><a href="{{ p.link | default: p.url | relative_url }}">{{ p.hero_title }}</a></h3>
+        <p>{{ p.hero_lead }}</p>
+      </li>
+{%- endfor -%}
+{%- endcapture -%}
+{%- if latest_shown > 0 %}
+<section class="section latest-thinking" aria-labelledby="latest-thinking-h">
+  <div class="wrap">
+    <h2 id="latest-thinking-h">Latest thinking</h2>
+    <ul class="post-list latest-list">{{ latest_items }}
+    </ul>
+  </div>
+</section>
+{%- endif %}
+
 <section class="section">
   <div class="wrap">
     <h2>What I do</h2>
@@ -128,27 +153,3 @@ title: Environment · Carbon · Public Affairs
   </div>
 </section>
 
-<script>
-// Hero messages; one is picked at random on each visit. The manufacturers message is the default without JavaScript.
-// Thought pieces join the rotation automatically: any published post with hero_title in its front matter is added
-// once it is live, so the banner never links to a post that hasn't published yet.
-(function(){
-  var H=[
-    {e:"Independent consultancy · Northern Ireland",t:"Carbon and environmental compliance for manufacturers working <em>across two regimes</em>.",l:"Northern Ireland businesses sit between UK and EU rules. I help small and mid-sized firms make sense of CBAM, CSRD and carbon reporting — and turn the work into something the board can actually use.",b1:["Start a conversation","{{ '/contact/' | relative_url }}"],b2:["See services","{{ '/services/' | relative_url }}"]},
-    {e:"For suppliers to manufacturers",t:"Your customers are about to ask for <em>your</em> carbon data.",l:"When a manufacturer measures its footprint, its suppliers' emissions are usually the biggest part, and the questionnaires are already arriving. I help suppliers get ahead with a clear, proportionate inventory that wins and keeps contracts.",b1:["Try the Carbon Jigsaw","{{ '/tools/carbon-jigsaw.html' | relative_url }}"],b2:["Start a conversation","{{ '/contact/' | relative_url }}"]},
-    {e:"Councils · Public bodies · Trade bodies",t:"Net zero is now a public duty. <em>Delivering it</em> takes more than a report.",l:"All 11 NI councils are among the 40 public bodies now reporting on climate, and trade bodies field members' questions on CBAM, CSRD and ESOS every week. I bring technical carbon work and two decades of public affairs to both.",b1:["Public sector services","{{ '/public-sector/' | relative_url }}"],b2:["Get in touch","{{ '/contact/' | relative_url }}"]}
-{%- assign hero_posts = site.posts | where_exp: "p", "p.hero_title" -%}
-{%- assign now_s = site.time | date: "%s" | plus: 0 -%}
-{%- for p in hero_posts -%}
-{%- if p.hero_until -%}{%- assign until_s = p.hero_until | date: "%s" | plus: 0 -%}{%- if now_s >= until_s -%}{%- continue -%}{%- endif -%}{%- endif -%},
-    {e:{{ p.hero_eyebrow | default: "Thought piece · Northern Ireland" | jsonify }},t:{{ p.hero_title | jsonify }},l:{{ p.hero_lead | jsonify }},b1:[{{ p.hero_button | default: "Read the piece" | jsonify }},{{ p.url | relative_url | jsonify }}],b2:[{{ p.hero_button2[0] | default: "Get in touch" | jsonify }},{{ p.hero_button2[1] | default: "/contact/" | relative_url | jsonify }}]}
-{%- endfor %}
-  ];
-  var h=H[Math.floor(Math.random()*H.length)];
-  var g=function(id){return document.getElementById(id);};
-  if(!g("hero-title"))return;
-  g("hero-eyebrow").textContent=h.e; g("hero-title").innerHTML=h.t; g("hero-lead").textContent=h.l;
-  g("hero-btn1").textContent=h.b1[0]; g("hero-btn1").href=h.b1[1];
-  g("hero-btn2").textContent=h.b2[0]; g("hero-btn2").href=h.b2[1];
-})();
-</script>
