@@ -36,4 +36,16 @@ Which EU laws apply in Northern Ireland, every Stormont Brake case and new EU ac
 
 [Open the dashboard →]({{ '/tools/dashboards/eu-law-windsor-framework.html' | relative_url }})
 
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">NI Screen Industry</h2>
+
+NI Screen's funding and results for 2022–26, local crew depth, the Department for the Economy budget around it, Ireland's incentives next door, the assets that keep value between shoots and three scenarios for 2026–30. Figures as at 2 November 2026.
+
+[Open the dashboard →]({{ '/tools/dashboards/ni-screen-industry.html' | relative_url }}) · Commentary: [Northern Ireland Screen is fantastic. So how do we grow it?]({{ '/blog/2026/11/northern-ireland-screen-how-do-we-grow-it/' | relative_url }})
+
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">NI Public Realm: Water, Roads and Floods</h2>
+
+Wastewater capacity and the homes it holds back, storm overflows, road maintenance against need, flood risk, Lough Neagh, UK public investment and how other places pay for infrastructure. Figures as at 2 November 2026.
+
+[Open the dashboard →]({{ '/tools/dashboards/ni-public-realm-water-roads.html' | relative_url }}) · Commentary: [We don't fund the drains. Then we pay for the flood.]({{ '/blog/2026/11/we-dont-fund-the-drains-then-we-pay-for-the-flood/' | relative_url }})
+
 More dashboards follow alongside each weekly *Focus on* briefing.

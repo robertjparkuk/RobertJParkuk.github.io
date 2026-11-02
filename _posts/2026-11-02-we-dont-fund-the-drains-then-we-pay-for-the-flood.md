@@ -1,6 +1,6 @@
 ---
 title: "We don't fund the drains. Then we pay for the flood. Who pays to fix it?"
-date: 2026-11-12 12:00:00 +0000
+date: 2026-11-02 00:45:00 +0000
 tags: [Public realm, Infrastructure, Climate adaptation, Water, Councils, Policy, Northern Ireland, Thought piece]
 image: /assets/photos/bins-collection.jpg
 description: "Full sewage works, held-back homes, worn-out roads and a green Lough Neagh: why Northern Ireland's public realm is under-funded, how appraisal and land value capture could pay for it, and three scenarios."
@@ -12,6 +12,8 @@ hero_button2: ["Read: Largs flooded", "/blog/2026/10/largs-flooded-nobody-to-bla
 ---
 
 *Northern Ireland's sewers, roads, rivers and flood defences are failing for the same reason: we treat looking after them as optional, then pay many times over when they break. A duty to maintain them is half the answer. This piece is about the other half: who pays.*
+
+[Download the full briefing (PDF, 4 pages)]({{ '/assets/briefings/2026-11-who-pays-for-the-public-realm-briefing.pdf' | relative_url }}) · [See the figures on the Water, Roads and Floods dashboard]({{ '/tools/dashboards/ni-public-realm-water-roads.html' | relative_url }})
 
 <figure class="page-photo"><img src="{{ '/assets/photos/bins-collection.jpg' | relative_url }}" alt="A refuse collection crew emptying wheelie bins on a street" loading="lazy"><figcaption>The public realm is looked after every day. The question is whether we fund it to keep up.</figcaption></figure>
 
@@ -99,6 +101,8 @@ Evidence that year-by-year funding has produced steady improvement anywhere in t
 - [Paying for Crossrail: business rate supplement (Greater London Authority)](https://www.london.gov.uk/paying-crossrail-business-rate-supplement)
 - [Developer Contributions Framework (Belfast City Council)](https://www.belfastcity.gov.uk/documents/developer-contributions-framework)
 - [Consultation responses report: developer contributions for wastewater infrastructure (Department for Infrastructure, 19 March 2026)](https://www.infrastructure-ni.gov.uk/publications/consultation-reponses-report-developer-contributions-wastewater-infrastructure)
+
+**Go further:** the [NI Public Realm: Water, Roads and Floods dashboard]({{ '/tools/dashboards/ni-public-realm-water-roads.html' | relative_url }}) brings together wastewater capacity, storm overflows, roads, flooding, Lough Neagh and how other places pay, with every table downloadable as CSV. The [full briefing (PDF)]({{ '/assets/briefings/2026-11-who-pays-for-the-public-realm-briefing.pdf' | relative_url }}) has the whole piece and its sources.
 
 ---
 

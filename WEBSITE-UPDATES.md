@@ -25,6 +25,18 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.23.0 — 2 November 2026: two thought pieces live with briefings and dashboards; Focus on Agriculture November
+
+*Robert's instructions, 2 Nov 01:03–01:05.*
+
+**Added**
+- `_posts/2026-11-02-focus-on-agriculture-november-2026.md` at /blog/focus-on-agriculture-november-2026/, from the approved Claude Doc (sources opened 1 Nov 2026).
+- Briefing 04 `assets/briefings/2026-11-ni-screen-how-do-we-grow-it-briefing.pdf` and Briefing 05 `assets/briefings/2026-11-who-pays-for-the-public-realm-briefing.pdf`: the full pieces with an "In numbers" panel and sources (built by `_scripts/briefings/build_thought_pdfs.py`).
+- Dashboards `tools/dashboards/ni-screen-industry.html` and `tools/dashboards/ni-public-realm-water-roads.html` (built by `_scripts/dashboards/build_thought.py` from the figures cited in each piece; listed on `dashboards.md`).
+
+**Changed**
+- "Northern Ireland Screen is fantastic. So how do we grow it?" and "We don't fund the drains. Then we pay for the flood." moved from 10 and 12 Nov to publish now (files renamed to 2026-11-02-*), each with links to its briefing and dashboard.
+
 ### v0.22.0 — 2 November 2026: 13 policy pieces published now; four held
 
 *Robert's instruction, 2 Nov 01:04, following his 1 Nov sign-off.*

@@ -1,6 +1,6 @@
 ---
 title: "Northern Ireland Screen is fantastic. So how do we grow it?"
-date: 2026-11-10 12:00:00 +0000
+date: 2026-11-02 00:40:00 +0000
 tags: [Creative industries, Economy, Public affairs, Carbon, Northern Ireland, Thought piece]
 image: /assets/photos/giants-causeway.jpg
 description: "NI Screen turned £73m of public money into £477m of local spend. Three scenarios for what comes next, and five practical ways to grow the screen industry in Northern Ireland."
@@ -12,6 +12,8 @@ hero_button2: ["Talk about public affairs", "/contact/"]
 ---
 
 *Few public bodies in Northern Ireland can show a return like NI Screen's. That is exactly why its next four years shouldn't be left to a year-by-year budget.*
+
+[Download the full briefing (PDF, 3 pages)]({{ '/assets/briefings/2026-11-ni-screen-how-do-we-grow-it-briefing.pdf' | relative_url }}) · [See the figures on the NI Screen Industry dashboard]({{ '/tools/dashboards/ni-screen-industry.html' | relative_url }})
 
 <figure class="page-photo"><img src="{{ '/assets/photos/giants-causeway.jpg' | relative_url }}" alt="Basalt columns of the Giant's Causeway with the sea behind" loading="lazy"><figcaption>Our landscape sold the world on Northern Ireland. Our crews, studios and stories now have to keep it.</figcaption></figure>
 
@@ -91,6 +93,8 @@ Evidence that local spend per pound of public money is falling, or that local cr
 - [Games Development Call, summer 2026 (nibusinessinfo)](https://www.nibusinessinfo.co.uk/content/games-development-call-summer-2026)
 - [Blue Lights boosted the NI economy by £20m (Advanced Television, 15 November 2024)](https://www.advanced-television.com/2024/11/15/report-blue-lights-boosted-northern-ireland-economy-by-20m/)
 - [UNESCO Creative Cities in the UK (UK National Commission for UNESCO)](https://unesco.org.uk/creative-cities/)
+
+**Go further:** the [NI Screen Industry dashboard]({{ '/tools/dashboards/ni-screen-industry.html' | relative_url }}) sets out the funding, the results, the Irish offer next door and the three scenarios, with every table downloadable as CSV. The [full briefing (PDF)]({{ '/assets/briefings/2026-11-ni-screen-how-do-we-grow-it-briefing.pdf' | relative_url }}) has the whole piece and its sources.
 
 ---
 
