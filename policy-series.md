@@ -2,8 +2,8 @@
 layout: page
 title: Policy series
 permalink: /policy-series/
-description: Seventeen pieces on where environmental, carbon, energy and waste rules stand in Northern Ireland, who decides them, where the parties stand, and what firms and councils should do. Publishing twice a week from 16 November 2026.
-lead: Where the rules stand in Northern Ireland, who decides them, where the parties stand, and what to do about it. A new piece every Monday and Wednesday from 16 November 2026.
+description: Seventeen pieces on where environmental, carbon, energy and waste rules stand in Northern Ireland, who decides them, where the parties stand, and what firms and councils should do. Thirteen published on 2 November 2026; four more to follow.
+lead: Where the rules stand in Northern Ireland, who decides them, where the parties stand, and what to do about it. Thirteen pieces are live; four more follow once their facts are rechecked.
 ---
 
 Northern Ireland sits between two rulebooks. Some rules are made in Brussels and reach us through the Windsor Framework. Some are made at Westminster and apply UK-wide. Some are Stormont's alone, and some of those have never been switched on. The result is that a manufacturer in Craigavon, a council in Fermanagh or a farm in Antrim can be living under three regimes at once, with nobody setting out how they fit together.

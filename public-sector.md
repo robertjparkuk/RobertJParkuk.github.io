@@ -52,7 +52,7 @@ I respond to public consultations across Northern Ireland and publish a selectio
 {% if site.categories['policy-series'] %}
 ## Policy series
 
-Where environmental, carbon, energy and waste rules stand in Northern Ireland, who decides them, where every party stands, and what councils and firms should do. Seventeen pieces, two a week from 16 November 2026. [Read the policy series]({{ '/policy-series/' | relative_url }}).
+Where environmental, carbon, energy and waste rules stand in Northern Ireland, who decides them, where every party stands, and what councils and firms should do. Thirteen pieces published on 2 November 2026, with four more to follow. [Read the policy series]({{ '/policy-series/' | relative_url }}).
 
 {% endif %}
 ## EU law and the Windsor Framework
