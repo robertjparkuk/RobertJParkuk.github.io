@@ -1,6 +1,6 @@
 ---
 title: "Green money, fewer rules: what sustainable finance now asks of Northern Ireland"
-date: 2026-12-09 07:30:00 +0000
+date: 2026-11-02 00:09:00 +0000
 tags: ["Reporting", "Finance", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Reporting and finance"
@@ -11,7 +11,7 @@ hero_title: "Green money, <em>fewer rules</em>."
 hero_lead: "Finance rules are loosening at the top, but banks, customers and grant bodies still want evidenced carbon data. NI SMEs that provide it borrow more cheaply."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
-hero_until: 2026-12-16T07:30:00Z
+hero_until: 2026-11-09T07:30:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/boardroom.jpg' | relative_url }}" alt="An empty boardroom table with chairs" loading="lazy"><figcaption>Rules about where money goes are loosening at the top. The demand for carbon data from smaller firms is not.</figcaption></figure>
@@ -107,7 +107,7 @@ Most finance rules are set in London and apply UK-wide. EU finance rules reach N
 
 - **EU customers' requests now have a ceiling.** Under the Omnibus, firms averaging up to 1,000 staff can decline value-chain requests beyond the Voluntary Standard (VSME) from FY2027. Build your data to that level.
 
-- **Grants reward good data.** Invest NI's Energy Efficiency Capital Grant funds energy-efficient equipment. The Shared Island Sustainability Capital Grant closed to applications on 2 May 2025.
+- **Grants reward good data.** Invest NI's Energy Efficiency Capital Grant, which funded energy-efficient equipment, is not taking applications: it is paused for review with no reopening date, and the Resource Efficiency Capital Grant closed to new applications on 27 March 2026. The Shared Island Sustainability Capital Grant closed to applications on 2 May 2025.
 
 - **Councils sit outside the English pension shake-up.** NILGOSC reports voluntarily against TCFD and moved £2.8bn of passive equity into a low-carbon fund in 2022.
 

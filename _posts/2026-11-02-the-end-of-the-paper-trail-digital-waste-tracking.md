@@ -1,6 +1,6 @@
 ---
 title: "The end of the paper trail: digital waste tracking"
-date: 2027-01-04 07:30:00 +0000
+date: 2026-11-02 00:06:00 +0000
 tags: ["Waste", "Councils", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Waste and resources"
@@ -11,7 +11,7 @@ hero_title: "The end of the <em>paper trail</em>."
 hero_lead: "Digital waste tracking reaches Northern Ireland in January 2027. It is the right fix for waste crime, but Phase 1 records waste only when it reaches a permitted site, and NI needs NIEA analysts, not just a database."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
-hero_until: 2027-01-11T07:30:00Z
+hero_until: 2026-11-09T07:30:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/warehouse.jpg' | relative_url }}" alt="A person holding a tablet in a warehouse with digital icons overlaid" loading="lazy"><figcaption>Digital waste tracking records a load only when it reaches a permitted site. The dumping happens before that.</figcaption></figure>

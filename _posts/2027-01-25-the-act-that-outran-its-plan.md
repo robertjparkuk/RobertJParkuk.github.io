@@ -1,6 +1,7 @@
 ---
 title: "The Act that outran its plan"
 date: 2027-01-25 07:30:00 +0000
+published: false   # held by Robert, 1 Nov 2026 sign-off
 tags: ["Climate Change Act", "Policy", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Climate law"

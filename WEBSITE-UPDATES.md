@@ -25,6 +25,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.22.0 — 2 November 2026: 13 policy pieces published now; four held
+
+*Robert's instruction, 2 Nov 01:04, following his 1 Nov sign-off.*
+
+**Changed**
+- 13 approved Policy series pieces moved from the 16 Nov–20 Jan schedule to publish now (dated 2 Nov 2026, 00:01–00:13; files renamed to 2026-11-02-*; home-page `hero_until` 9 Nov): One data set, many requests; The price of a separate grid; ESOS and the audit that pays only if you act; Two refrigerant rulebooks; Green money, fewer rules; Northern Ireland's waste bill; Brown bins, black holes; The end of the paper trail; Gold in the bin; Closed for booking; Forever chemicals, two rulebooks; The land law Stormont never switched on; Lough Neagh and the price of clean water.
+- Green money, fewer rules: grants line corrected. The Energy Efficiency Capital Grant is paused for review with no reopening date; the Resource Efficiency Capital Grant closed to new applications on 27 March 2026.
+- Held with `published: false` (Robert's 1 Nov decision): The Irish Sea carbon bill (until after the 20 Nov UK–EU summit), Carbon borders as industrial policy (CBAM), Fertiliser: a small tax, a big bill and a lough, The Act that outran its plan (NICCA).
+
 ### v0.21.0 — 1 November 2026: Halloween pumpkins post and Briefing 03
 
 **Added**

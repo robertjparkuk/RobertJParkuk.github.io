@@ -1,6 +1,6 @@
 ---
 title: "Two refrigerant rulebooks, one small market"
-date: 2026-12-07 07:30:00 +0000
+date: 2026-11-02 00:10:00 +0000
 tags: ["Energy", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Energy"
@@ -11,7 +11,7 @@ hero_title: "Two refrigerant rulebooks, <em>one small market</em>."
 hero_lead: "NI applies the EU F-gas Regulation, including 2027 heat pump bans, while GB keeps its 2014 regime. NI also has no heat pump grant, so its manufacturers and households pay for the gap."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
-hero_until: 2026-12-14T07:30:00Z
+hero_until: 2026-11-09T07:30:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/lpg-cylinders.jpg' | relative_url }}" alt="Three yellow gas cylinders against a rendered wall" loading="lazy"><figcaption>Northern Ireland follows EU refrigerant rules. Great Britain does not. The gap opens on 1 January 2027.</figcaption></figure>

@@ -1,6 +1,6 @@
 ---
 title: "ESOS and the audit that pays only if you act"
-date: 2026-11-23 07:30:00 +0000
+date: 2026-11-02 00:11:00 +0000
 tags: ["Reporting", "Finance", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Reporting and finance"
@@ -11,7 +11,7 @@ hero_title: "ESOS: the audit that pays <em>only if you act</em>."
 hero_lead: "NI firms carry the full UK audit duty without GB relief. ESOS pays only when boards fund what the audit finds, ideally alongside a carbon inventory and a contract review. Phase 4 qualification date: 31 December 2026."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
-hero_until: 2026-11-30T07:30:00Z
+hero_until: 2026-11-09T07:30:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/plant-room.jpg' | relative_url }}" alt="Pipes, pumps and tanks in an industrial plant room" loading="lazy"><figcaption>The audit finds the savings. Only the board can decide to fund them.</figcaption></figure>

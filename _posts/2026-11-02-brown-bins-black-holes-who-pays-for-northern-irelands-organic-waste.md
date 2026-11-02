@@ -1,6 +1,6 @@
 ---
 title: "Brown bins, black holes: who pays for Northern Ireland's organic waste"
-date: 2026-12-16 07:30:00 +0000
+date: 2026-11-02 00:07:00 +0000
 tags: ["Waste", "Councils", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Waste and resources"
@@ -11,7 +11,7 @@ hero_title: "Brown bins, <em>black holes</em>."
 hero_lead: "Separate food waste collection is settled UK-wide. NI's open questions are who pays for garden waste, its stalled business rules, and where phosphorus and plastics in compost and digestate end up."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
-hero_until: 2026-12-23T07:30:00Z
+hero_until: 2026-11-09T07:30:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/young-tree.jpg' | relative_url }}" alt="A young tree in full leaf in a garden" loading="lazy"><figcaption>Separate food waste collection is settled. Who pays for garden waste, and where the phosphorus ends up, is not.</figcaption></figure>
