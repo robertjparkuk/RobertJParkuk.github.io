@@ -1,6 +1,6 @@
 ---
 title: "One data set, many requests"
-date: 2026-11-16 07:30:00 +0000
+date: 2026-11-02 00:13:00 +0000
 tags: ["Reporting", "Finance", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Reporting and finance"
@@ -11,7 +11,7 @@ hero_title: "One data set, <em>many requests</em>."
 hero_lead: "EU and UK reporting cuts mean fewer, more standard requests reach NI SMEs. Build one carbon data set and it can answer EU customers, UK listed customers and public buyers alike."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
-hero_until: 2026-11-23T07:30:00Z
+hero_until: 2026-11-09T07:30:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/co2-compass.jpg' | relative_url }}" alt="A compass whose needle points to zero per cent CO2" loading="lazy"><figcaption>One set of figures can point in every direction a customer, bank or public buyer asks for.</figcaption></figure>

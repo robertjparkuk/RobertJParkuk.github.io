@@ -1,6 +1,6 @@
 ---
 title: "The land law Stormont never switched on"
-date: 2027-01-18 07:30:00 +0000
+date: 2026-11-02 00:02:00 +0000
 tags: ["Contaminated land", "Water", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Chemicals, land and water"
@@ -11,7 +11,7 @@ hero_title: "The land law Stormont <em>never switched on</em>."
 hero_lead: "Stormont should agree before May 2027 to switch on the 1997 contaminated land law, phased and with capped funding, because land is now cleaned up only when someone builds on it."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
-hero_until: 2027-01-25T07:30:00Z
+hero_until: 2026-11-09T07:30:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/net-zero-sand.jpg' | relative_url }}" alt="The words Net Zero written in sand at the edge of the sea" loading="lazy"><figcaption>Land in Northern Ireland is cleaned up only when someone builds on it. The law to change that was passed in 1997.</figcaption></figure>

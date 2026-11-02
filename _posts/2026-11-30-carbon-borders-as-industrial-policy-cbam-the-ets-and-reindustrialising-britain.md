@@ -1,6 +1,7 @@
 ---
 title: "Carbon borders as industrial policy: CBAM, the ETS and reindustrialising Britain"
 date: 2026-11-30 07:30:00 +0000
+published: false   # held by Robert, 1 Nov 2026 sign-off
 tags: ["Carbon", "CBAM", "Trade", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Carbon pricing and trade"

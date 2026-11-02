@@ -1,6 +1,6 @@
 ---
 title: "Closed for booking: how restricting the tip pushes rubbish into lay-bys and lanes"
-date: 2027-01-11 07:30:00 +0000
+date: 2026-11-02 00:04:00 +0000
 tags: ["Waste", "Councils", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Waste and resources"
@@ -11,7 +11,7 @@ hero_title: "Closed for booking: how restricting the tip <em>pushes rubbish into
 hero_lead: "Booking, van caps and ID checks save council money by turning waste away, but nobody measures where that waste goes. All 11 NI councils' rules compared."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
-hero_until: 2027-01-18T07:30:00Z
+hero_until: 2026-11-09T07:30:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/bins-collection.jpg' | relative_url }}" alt="A refuse collection crew emptying wheelie bins on a street" loading="lazy"><figcaption>Booking systems and van bans save councils money by turning waste away. Nobody measures where it goes.</figcaption></figure>

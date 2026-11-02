@@ -1,6 +1,6 @@
 ---
 title: "The price of a separate grid"
-date: 2026-11-18 07:30:00 +0000
+date: 2026-11-02 00:12:00 +0000
 tags: ["Energy", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Energy"
@@ -11,7 +11,7 @@ hero_title: "The price of a <em>separate grid</em>."
 hero_lead: "GB industrial power relief and the VAT cut stop at the Irish Sea. The Budget funds an NI version, still to be designed. The lasting fix is cheaper local generation and a stronger grid."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
-hero_until: 2026-11-25T07:30:00Z
+hero_until: 2026-11-09T07:30:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/energy-costs.jpg' | relative_url }}" alt="An electricity meter showing kilowatt hours beside stacks of coins" loading="lazy"><figcaption>Great Britain's industrial power relief stops at the Irish Sea. The Budget has funded an NI version, but nobody has designed it yet.</figcaption></figure>

@@ -1,6 +1,6 @@
 ---
 title: "Forever chemicals, two rulebooks"
-date: 2027-01-13 07:30:00 +0000
+date: 2026-11-02 00:03:00 +0000
 tags: ["Contaminated land", "Water", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Chemicals, land and water"
@@ -11,7 +11,7 @@ hero_title: "Forever chemicals, <em>two rulebooks</em>."
 hero_lead: "NI is moving to EU PFAS limits while GB waits and monitors. The case for EU drinking-water limits in NI law, NI monitoring, and a contaminated-land regime ready to use."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
-hero_until: 2027-01-20T07:30:00Z
+hero_until: 2026-11-09T07:30:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/paint-reuse-container.jpg' | relative_url }}" alt="A metal paint re-use container at a recycling centre" loading="lazy"><figcaption>Northern Ireland is moving to EU limits on forever chemicals. Great Britain is waiting and monitoring.</figcaption></figure>

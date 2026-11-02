@@ -1,6 +1,6 @@
 ---
 title: "Gold in the bin"
-date: 2027-01-06 07:30:00 +0000
+date: 2026-11-02 00:05:00 +0000
 tags: ["Waste", "Councils", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Waste and resources"
@@ -11,7 +11,7 @@ hero_title: "Gold <em>in the bin</em>."
 hero_lead: "E-waste paperwork breaks between collection and the refiner, where the value is highest. NI firms need evidence of what was recovered, not just a treatment certificate."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
-hero_until: 2027-01-13T07:30:00Z
+hero_until: 2026-11-09T07:30:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/ev-charging.jpg' | relative_url }}" alt="An electric car charging with a blue cable" loading="lazy"><figcaption>The value in electronic waste sits at the refiner. The paperwork stops at the collection point.</figcaption></figure>

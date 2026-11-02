@@ -1,6 +1,6 @@
 ---
 title: "Lough Neagh and the price of clean water"
-date: 2027-01-20 07:30:00 +0000
+date: 2026-11-02 00:01:00 +0000
 tags: ["Contaminated land", "Water", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Chemicals, land and water"
@@ -11,7 +11,7 @@ hero_title: "Lough Neagh and the <em>price of clean water</em>."
 hero_lead: "Everyone agrees farm and sewage phosphorus is killing the lough, but the Executive keeps putting off who pays, so costs pile up for the next mandate."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
-hero_until: 2027-01-27T07:30:00Z
+hero_until: 2026-11-09T07:30:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/weather-station.jpg' | relative_url }}" alt="A weather station instrument in a field under a grey sky" loading="lazy"><figcaption>Everyone agrees what is killing Lough Neagh. The Executive keeps putting off who pays to fix it.</figcaption></figure>

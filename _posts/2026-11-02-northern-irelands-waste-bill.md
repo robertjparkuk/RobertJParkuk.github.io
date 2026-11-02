@@ -1,6 +1,6 @@
 ---
 title: "Northern Ireland's waste bill"
-date: 2026-12-14 07:30:00 +0000
+date: 2026-11-02 00:08:00 +0000
 tags: ["Waste", "Councils", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Waste and resources"
@@ -11,7 +11,7 @@ hero_title: "Northern Ireland's <em>waste bill</em>."
 hero_lead: "NI waste rules are moving faster than the infrastructure and money behind them, so costs fall on households, shops and councils while illegal dumping stays underfunded."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
-hero_until: 2026-12-21T07:30:00Z
+hero_until: 2026-11-09T07:30:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/packaging-conveyor.jpg' | relative_url }}" alt="Cardboard boxes moving along a conveyor in a warehouse" loading="lazy"><figcaption>Producer fees, a deposit scheme and EU packaging rules all arrive before the infrastructure to handle them.</figcaption></figure>
