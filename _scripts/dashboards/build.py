@@ -43,6 +43,11 @@ SRC = {
  'trade': ('NI Economic Trade Statistics 2024 (DfE/NISRA, 11 March 2026)', 'https://www.economy-ni.gov.uk/news/northern-ireland-economic-trade-statistics-2024-northern-ireland-annual-business-inquiry-2024'),
  'tradeni': ('NI Economic Trade Statistics (NISRA)', 'https://www.nisra.gov.uk/statistics/business/ni-economic-trade'),
  'mni': ('Manufacturing and the Northern Ireland Economy (Manufacturing NI, May 2025)', 'https://www.manufacturingni.org/wp-content/uploads/2025/05/Manufacturing-and-the-Northern-Ireland-Economy.pdf'),
+ 'cbamreg': ('Check if you\'ll need to register for CBAM (HMRC, GOV.UK, updated 20 October 2026)', 'https://www.gov.uk/government/collections/check-if-youll-need-to-register-for-carbon-border-adjustment-mechanism-cbam'),
+ 'cbamsi': ('The Carbon Border Adjustment Mechanism (Emissions and Verification) Regulations 2026, SI 2026/995 (legislation.gov.uk)', 'https://www.legislation.gov.uk/uksi/2026/995/made'),
+ 'cbamfs': ('Factsheet: Carbon Border Adjustment Mechanism (HM Treasury and HMRC, GOV.UK)', 'https://www.gov.uk/government/publications/factsheet-carbon-border-adjustment-mechanism-cbam/factsheet-carbon-border-adjustment-mechanism'),
+ 'cc': ('2026 UK CBAM primer (Clifford Chance, September 2026)', 'https://www.cliffordchance.com/content/dam/cliffordchance/briefings/2026/09/2026-UK-CBAM-primer.pdf'),
+ 'budget': ('Budget 2026, HC 726, para 6.217 (HM Treasury, 28 October 2026)', 'https://assets.publishing.service.gov.uk/media/6ae20b9039d29f3f9b9b3f55/E03668986_HMT_Budget_2026_TEXT_PRINT__1_.pdf'),
  'ets': ('ETS linkage agreed, The Day in Trade (Institute of Export & International Trade, 8 October 2026)', 'https://www.export.org.uk/insights/trade-news/the-day-in-trade-emissions-trading-scheme-linkage-agreed-burnham-in-berlin-and-french-minister-says-uk-can-come-back-anytime-to-eu/'),
  'ev': ('Public EV charging infrastructure statistics, 1 July 2026 (DfT)', 'https://www.gov.uk/government/statistics/electric-vehicle-charging-infrastructure-statistics-1-july-2026/public-electric-vehicle-charging-infrastructure-statistics-1-july-2026'),
  'evatt': ('Attitudes towards electric vehicles in NI 2023/24 (DfI/NISRA)', 'https://datavis.nisra.gov.uk/infrastructure/electricvehiclereport.html'),
@@ -241,9 +246,11 @@ D['ni-hospitality-retail-leisure'] = dict(
 # 3 Metals and manufacturing ---------------------------------------------------
 dest = [('Within Northern Ireland', 69.5, '£69.5bn'), ('Great Britain', 20.1, '£20.1bn · +14.2%'), ('Republic of Ireland', 10.5, '£10.5bn · +19.6%'), ('Rest of the world (derived)', 5.5, '≈£5.5bn'), ('Rest of the EU', 3.6, '£3.6bn · +23.5%')]
 cbam_goods = [('Iron and steel', 'Yes', 'Yes'), ('Aluminium', 'Yes', 'Yes'), ('Cement', 'Yes', 'Yes'), ('Fertilisers', 'Yes', 'Yes'), ('Hydrogen', 'Yes', 'Yes'), ('Electricity', 'Yes', 'No'), ('Glass and ceramics', 'No', 'No (excluded at start)')]
-cbam_dates = [('1 Jan 2026', 'EU CBAM definitive period begins', 'EU importers'), ('1 Jan 2027', 'UK CBAM starts', 'Importers from outside the UK and EU'),
- ('1 Feb 2027', 'EU CBAM certificate sales open for 2026 imports', 'EU importers; NI DDP sellers'), ('30 Sep 2027', 'First EU CBAM annual declaration and surrender', 'EU importers; NI DDP sellers'),
- ('5 Dec 2027', 'ESOS phase 4 notification deadline', 'Large businesses'), ('31 Jan 2028', 'UK CBAM registration deadline for 2027', 'Importers past £50,000'),
+cbam_dates = [('1 Jan 2026', 'EU CBAM definitive period begins', 'EU importers'), ('20 Nov 2026', 'UK–EU summit: emissions trading link expected, not yet confirmed', 'All NI manufacturers'),
+ ('1 Jan 2027', 'UK CBAM starts (SI 2026/995 in force)', 'Importers from outside the UK and EU'),
+ ('1 Feb 2027', 'EU CBAM certificate sales open for 2026 imports', 'EU importers'), ('30 Sep 2027', 'First EU CBAM annual declaration and surrender', 'EU importers'),
+ ('5 Dec 2027', 'ESOS phase 4 notification deadline', 'Large businesses'), ('1 Jan 2028', 'HMRC UK CBAM registration opens', 'Importers past £50,000'),
+ ('31 Jan 2028', 'UK CBAM registration deadline for 2027', 'Importers past £50,000 in 2027'),
  ('31 May 2028', 'First UK CBAM return and payment', 'Registered importers')]
 D['ni-metals-manufacturing'] = dict(
  title='NI Metals and Manufacturing dashboard', h1='NI metals and manufacturing',
@@ -255,8 +262,8 @@ D['ni-metals-manufacturing'] = dict(
  cards=[
   card('Where NI sales go, 2024', 'All NI businesses, not manufacturing alone. Rest of world is derived as exports outside the UK (£19.6bn) less ROI and rest of EU.', bars(dest, hi=['Republic of Ireland', 'Rest of the EU']), ['trade', 'tradeni'], csv_href(['destination', 'sales_gbp_bn', 'label'], [list(r) for r in dest]), 'ni-sales-by-destination-2024'),
   sector_card(['Industry']), change_card(['Industry']),
-  card('Goods covered by CBAM', 'UK CBAM from 1 January 2027 and EU CBAM. Indirect emissions are out of UK CBAM until 2029 at the earliest.', table(['Goods', 'EU CBAM', 'UK CBAM'], cbam_goods), ['cbam'], csv_href(['goods', 'eu_cbam', 'uk_cbam'], cbam_goods), 'cbam-goods'),
-  card('CBAM and ESOS dates', 'Key dates for NI manufacturers. UK–EU emissions trading linking, reported as agreed in October 2026, would exempt goods covered by both schemes once in force.', table(['When', 'What', 'Who'], cbam_dates), ['cbam', 'esos', 'ets'], csv_href(['when', 'what', 'who'], cbam_dates), 'cbam-esos-dates', wide=True),
+  card('Goods covered by CBAM', 'UK CBAM from 1 January 2027 and EU CBAM. Indirect emissions are out of UK CBAM until 2029 at the earliest. UK default values are one global figure per good in 2027 and 2028, then country-specific from 2029.', table(['Goods', 'EU CBAM', 'UK CBAM'], cbam_goods), ['cbam', 'cbamfs', 'budget'], csv_href(['goods', 'eu_cbam', 'uk_cbam'], cbam_goods), 'cbam-goods'),
+  card('CBAM and ESOS dates', 'Key dates for NI manufacturers. UK–EU emissions trading linking was reported as agreed in October 2026 but has not been confirmed; it is expected at the summit on 20 November. Once in force it would exempt goods covered by both schemes. UK CBAM registration dates are from HMRC and Clifford Chance.', table(['When', 'What', 'Who'], cbam_dates), ['cbamreg', 'cbamsi', 'cc', 'esos', 'ets'], csv_href(['when', 'what', 'who'], cbam_dates), 'cbam-esos-dates', wide=True),
   card('Renewable share of NI electricity', 'Share of gross final electricity consumption from renewables, year to June, against the 2030 target. Cleaner electricity lowers Scope 2.', bars([('Year to June 2025', 44, '44%'), ('Year to June 2026', 50, '50%'), ('2030 target', 80, '80%')], hi=['Year to June 2026'], maxv=100), ['elec'], csv_href(['period', 'renewable_share_pct'], [['Year to June 2025', 44], ['Year to June 2026', 50], ['2030 target', 80]]), 'ni-renewable-electricity'),
  ], issue='/blog/focus-on-metals-manufacturing-november-2026/', issue_title='Focus on Metals & Manufacturing, 6 November 2026', date='6 November 2026')
 

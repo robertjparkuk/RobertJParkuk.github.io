@@ -25,6 +25,23 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### Focus on Metals & Manufacturing — 6 November 2026 (branch `publish/metals-2026-11-06`)
+
+*Built 5 November for sign-off. Merged only if the Sign-off dropdown in the drafts doc says "Signed off".*
+
+**Added**
+- `blog/focus-on-metals-manufacturing-november-2026/index.html`: the issue as a web page, with three charts and the PDF.
+- `assets/focus-on-metals/2026-11/`: charts (sales by destination, sector emissions, six deadlines) and the 6-page PDF.
+- `_posts/2026-11-06-focus-on-metals-manufacturing-november-2026.md`: summary post (07:00, 6 November).
+- `tools/dashboards/ni-metals-manufacturing.html`, and its entry in `dashboards.md`.
+
+**Changed from the draft, checked 5 November**
+- ETS linking: still reported, not confirmed; the summit is on 20 November. The paragraph says so and promises an update after it.
+- UK CBAM: the Emissions and Verification Regulations 2026 (SI 2026/995) are made and in force from 1 January 2027. Registration threshold is £50,000 in any 12 months (or expected within 30 days); HMRC registration opens 1 January 2028; 2027 importers have until 31 January 2028 (as reported by Clifford Chance). Budget 2026 default values (global 2027–28, country-specific from 2029) added.
+- EU CBAM: "not formally extended to NI, under review" replaced with "does not apply in NI", matching the CBAM tracker and the EU law dashboard. The DDP point is softened to "check with your customs agent".
+- Tool links moved from the github.io address to robertjpark.co.uk.
+- `_scripts/dashboards/build.py`: metals dashboard dates and notes updated to match; new sources (HMRC, SI 2026/995, Budget 2026, Clifford Chance).
+
 ### v0.23.2 — 5 November 2026: DfI response marked as submitted
 
 - `_posts/2026-11-06-response-planning-classes-and-thresholds.md`: Robert submitted the response to DfI on 5 November; `submitted` front matter and the page's details list now say so (closing date 6 November unchanged). Still publishes at 17:00 on Friday 6 November.
