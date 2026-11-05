@@ -34,7 +34,7 @@ Overnight trips by market and occupancy, building emissions, the refrigerant lim
 
 Industry emissions against other sectors, where NI sales go, which goods the UK and EU CBAMs cover, the CBAM and ESOS dates to May 2028, and progress on renewable electricity. Figures checked on 21 October 2026; CBAM rules and dates checked on 5 November 2026, from NISRA, DAERA, DfE, HMRC and GOV.UK.
 
-[Open the dashboard →]({{ '/tools/dashboards/ni-metals-manufacturing.html' | relative_url }}) · Commentary: [Focus on Metals & Manufacturing, 6 November 2026]({{ '/blog/focus-on-metals-manufacturing-november-2026/' | relative_url }})
+[Open the dashboard →]({{ '/tools/dashboards/ni-metals-manufacturing.html' | relative_url }}) · Commentary: [Focus on Metals & Manufacturing, 5 November 2026]({{ '/blog/focus-on-metals-manufacturing-november-2026/' | relative_url }})
 
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">EU Law and the Windsor Framework</h2>
 

@@ -25,14 +25,14 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
-### Focus on Metals & Manufacturing — 6 November 2026 (branch `publish/metals-2026-11-06`)
+### Focus on Metals & Manufacturing — 5 November 2026 (branch `publish/metals-2026-11-06`)
 
-*Built 5 November for sign-off. Merged only if the Sign-off dropdown in the drafts doc says "Signed off".*
+*Signed off by Robert at 12:55 on 5 November and published straight away, a day early; re-dated to 5 November throughout (page, PDF file name and footer, post, dashboard).*
 
 **Added**
 - `blog/focus-on-metals-manufacturing-november-2026/index.html`: the issue as a web page, with three charts and the PDF.
 - `assets/focus-on-metals/2026-11/`: charts (sales by destination, sector emissions, six deadlines) and the 6-page PDF.
-- `_posts/2026-11-06-focus-on-metals-manufacturing-november-2026.md`: summary post (07:00, 6 November).
+- `_posts/2026-11-06-focus-on-metals-manufacturing-november-2026.md`: summary post (12:00, 5 November).
 - `tools/dashboards/ni-metals-manufacturing.html`, and its entry in `dashboards.md`.
 
 **Changed after a three-reviewer check on 5 November (scientist, engineer, Big Four consultant)**
