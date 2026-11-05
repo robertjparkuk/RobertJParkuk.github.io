@@ -6,7 +6,7 @@ permalink: /public-sector/consultation-responses/planning-classes-and-thresholds
 tags: [Consultation response, Planning, Energy, Waste, Land, Carbon capture]
 consulting_body: Department for Infrastructure
 closed: 2026-11-06
-submitted: 2026-11-06
+submitted: 2026-11-05
 outcome: awaited
 pdf: /assets/consultations/2026-11-dfi-development-management-classes-thresholds-response.pdf
 image: /assets/photos/plant-room.jpg
@@ -18,7 +18,8 @@ I support the Department's redesign of the classes and thresholds that decide wh
 
 - **Consultation:** [Review of the Classes and Thresholds in the Schedule to the Planning (Development Management) Regulations (NI) 2015](https://www.infrastructure-ni.gov.uk/consultations/review-classes-and-thresholds-schedule-planning-development-management-regulations-ni-2015)
 - **Consulting body:** Department for Infrastructure
-- **Closed and submitted:** 6 November 2026 (extended from 9 October)
+- **Submitted:** 5 November 2026
+- **Closed:** 6 November 2026 (extended from 9 October)
 - **Outcome:** awaited
 
 **[Read the full response (PDF, 14 pages)]({{ page.pdf | relative_url }})**

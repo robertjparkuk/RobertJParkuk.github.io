@@ -25,6 +25,10 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.23.2 — 5 November 2026: DfI response marked as submitted
+
+- `_posts/2026-11-06-response-planning-classes-and-thresholds.md`: Robert submitted the response to DfI on 5 November; `submitted` front matter and the page's details list now say so (closing date 6 November unchanged). Still publishes at 17:00 on Friday 6 November.
+
 ### v0.23.1 — 6 November 2026: consultation response on planning classes and thresholds
 
 *Robert's instruction, 5 Nov 00:10: find the DfI consultation and draft a full response.*
