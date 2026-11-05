@@ -34,7 +34,7 @@ A carbon inventory measures your organisation's greenhouse gas emissions across 
 
 <figure class="page-photo"><img src="{{ '/assets/photos/plant-room.jpg' | relative_url }}" alt="Pipework and plant in an industrial plant room" loading="lazy"><figcaption>Most energy savings are found in the plant room, not the report.</figcaption></figure>
 
-I offer the Energy Savings Opportunity Scheme as a service, delivered with experienced ESOS Lead Assessors. I recommend running ESOS alongside a carbon inventory and a review of your energy contracts, so the work produces savings rather than just compliance.
+ESOS applies to large undertakings: 250 or more staff, or turnover above £44 million with a balance sheet above £38 million. Phase 4 qualification is judged on 31 December 2026, with notification by 5 December 2027. If that is you, I deliver ESOS with experienced Lead Assessors, and recommend running it alongside a carbon inventory and a review of your energy contracts so the work produces savings rather than just compliance. If you are smaller, ESOS does not apply to you: a carbon inventory and an energy-contract review give you the same savings without the compliance overhead.
 
 ## Contaminated land
 
