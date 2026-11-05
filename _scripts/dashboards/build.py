@@ -43,6 +43,12 @@ SRC = {
  'trade': ('NI Economic Trade Statistics 2024 (DfE/NISRA, 11 March 2026)', 'https://www.economy-ni.gov.uk/news/northern-ireland-economic-trade-statistics-2024-northern-ireland-annual-business-inquiry-2024'),
  'tradeni': ('NI Economic Trade Statistics (NISRA)', 'https://www.nisra.gov.uk/statistics/business/ni-economic-trade'),
  'mni': ('Manufacturing and the Northern Ireland Economy (Manufacturing NI, May 2025)', 'https://www.manufacturingni.org/wp-content/uploads/2025/05/Manufacturing-and-the-Northern-Ireland-Economy.pdf'),
+ 'cbamreg': ('Check if you\'ll need to register for CBAM (HMRC, GOV.UK, updated 20 October 2026)', 'https://www.gov.uk/government/collections/check-if-youll-need-to-register-for-carbon-border-adjustment-mechanism-cbam'),
+ 'cbamsi': ('The Carbon Border Adjustment Mechanism (Emissions and Verification) Regulations 2026, SI 2026/995 (legislation.gov.uk)', 'https://www.legislation.gov.uk/uksi/2026/995/made'),
+ 'cbamfs': ('Factsheet: Carbon Border Adjustment Mechanism (HM Treasury and HMRC, GOV.UK)', 'https://www.gov.uk/government/publications/factsheet-carbon-border-adjustment-mechanism-cbam/factsheet-carbon-border-adjustment-mechanism'),
+ 'cbampol': ('Carbon Border Adjustment Mechanism: policy summary (HMRC, updated 2 November 2026)', 'https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary'),
+ 'cbamqs': ('UK CBAM: current qualifying carbon pricing schemes (HMRC, 27 August 2026)', 'https://www.gov.uk/government/publications/uk-cbam-current-qualifying-carbon-pricing-schemes/carbon-border-adjustment-mechanism-list-of-current-qualifying-carbon-pricing-schemes'),
+ 'budget': ('Budget 2026, HC 726, para 6.217 (HM Treasury, 28 October 2026)', 'https://assets.publishing.service.gov.uk/media/6ae20b9039d29f3f9b9b3f55/E03668986_HMT_Budget_2026_TEXT_PRINT__1_.pdf'),
  'ets': ('ETS linkage agreed, The Day in Trade (Institute of Export & International Trade, 8 October 2026)', 'https://www.export.org.uk/insights/trade-news/the-day-in-trade-emissions-trading-scheme-linkage-agreed-burnham-in-berlin-and-french-minister-says-uk-can-come-back-anytime-to-eu/'),
  'ev': ('Public EV charging infrastructure statistics, 1 July 2026 (DfT)', 'https://www.gov.uk/government/statistics/electric-vehicle-charging-infrastructure-statistics-1-july-2026/public-electric-vehicle-charging-infrastructure-statistics-1-july-2026'),
  'evatt': ('Attitudes towards electric vehicles in NI 2023/24 (DfI/NISRA)', 'https://datavis.nisra.gov.uk/infrastructure/electricvehiclereport.html'),
@@ -239,26 +245,28 @@ D['ni-hospitality-retail-leisure'] = dict(
  ], issue='/blog/focus-on-hospitality-retail-leisure-october-2026/', issue_title='Focus on Hospitality, Retail & Leisure, 30 October 2026', date='30 October 2026')
 
 # 3 Metals and manufacturing ---------------------------------------------------
-dest = [('Within Northern Ireland', 69.5, '£69.5bn'), ('Great Britain', 20.1, '£20.1bn · +14.2%'), ('Republic of Ireland', 10.5, '£10.5bn · +19.6%'), ('Rest of the world (derived)', 5.5, '≈£5.5bn'), ('Rest of the EU', 3.6, '£3.6bn · +23.5%')]
+dest = [('Within Northern Ireland', 69.5, '£69.5bn'), ('Great Britain', 20.1, '£20.1bn · +14.2%'), ('Republic of Ireland', 10.5, '£10.5bn · +19.6%'), ('Rest of the world', 5.5, '£5.5bn · +1.5%'), ('Rest of the EU', 3.6, '£3.6bn · +23.5%')]
 cbam_goods = [('Iron and steel', 'Yes', 'Yes'), ('Aluminium', 'Yes', 'Yes'), ('Cement', 'Yes', 'Yes'), ('Fertilisers', 'Yes', 'Yes'), ('Hydrogen', 'Yes', 'Yes'), ('Electricity', 'Yes', 'No'), ('Glass and ceramics', 'No', 'No (excluded at start)')]
-cbam_dates = [('1 Jan 2026', 'EU CBAM definitive period begins', 'EU importers'), ('1 Jan 2027', 'UK CBAM starts', 'Importers from outside the UK and EU'),
- ('1 Feb 2027', 'EU CBAM certificate sales open for 2026 imports', 'EU importers; NI DDP sellers'), ('30 Sep 2027', 'First EU CBAM annual declaration and surrender', 'EU importers; NI DDP sellers'),
- ('5 Dec 2027', 'ESOS phase 4 notification deadline', 'Large businesses'), ('31 Jan 2028', 'UK CBAM registration deadline for 2027', 'Importers past £50,000'),
+cbam_dates = [('1 Jan 2026', 'EU CBAM definitive period begins', 'EU importers'), ('20 Nov 2026', 'UK–EU summit: emissions trading link expected, not yet confirmed', 'All NI manufacturers'),
+ ('1 Jan 2027', 'UK CBAM starts (Finance Act 2026 Part 5; SI 2026/995 in force)', 'Importers of covered goods of any non-UK origin'),
+ ('1 Feb 2027', 'EU CBAM certificate sales open for 2026 imports', 'EU importers'), ('30 Sep 2027', 'First EU CBAM annual declaration and surrender', 'EU importers'),
+ ('5 Dec 2027', 'ESOS phase 4 notification deadline', 'Large businesses'), ('1 Jan 2028', 'HMRC UK CBAM registration opens', 'Importers past £50,000'),
+ ('31 Jan 2028', 'UK CBAM registration deadline for 2027', 'Importers past £50,000 in 2027'),
  ('31 May 2028', 'First UK CBAM return and payment', 'Registered importers')]
 D['ni-metals-manufacturing'] = dict(
  title='NI Metals and Manufacturing dashboard', h1='NI metals and manufacturing',
  desc='Dashboard of Northern Ireland manufacturing: industry emissions, sales by market, UK and EU CBAM scope and dates, and renewable electricity. By Robert J. Park.',
- lead='NI industry emissions fell from <b>3.3</b> to <b>1.0</b> MtCO2e between the base year and 2024. NI businesses sold <b>£20.1bn</b> to Great Britain and <b>£14.1bn</b> to the EU in 2024. From 1 January 2027 the UK carbon border levy applies to imported steel, aluminium, cement, fertiliser and hydrogen.',
+ lead='NI industry emissions fell from <b>3.3</b> to <b>1.0</b> MtCO2e between the base year and 2024. NI businesses sold <b>£20.1bn</b> to Great Britain and <b>£14.1bn</b> to the EU in 2024. From 1 January 2027 the UK carbon border levy applies to imported steel, aluminium, cement, fertiliser and hydrogen of any non-UK origin, EU included.',
  tiles=[tile('Industry emissions, 2024', '1.0 Mt', 'Down from 3.3 Mt in the base year'), tile('Change since base year', '−69.4%', 'Largest fall of any NI sector', 'k-good'),
         tile('Sales to the EU, 2024', '£14.1bn', 'ROI £10.5bn + rest of EU £3.6bn'), tile('Sales to GB, 2024', '£20.1bn', 'Up 14.2% on 2023'),
-        tile('Manufacturing share of jobs', '10.5%', 'Workforce jobs, Sept 2023; UK 7.1%'), tile('UK CBAM registration', '£50,000', 'Covered imports a year')],
+        tile('Manufacturing share of jobs', '10.5%', 'Workforce jobs, Sept 2023; UK 7.1%'), tile('UK CBAM registration', '£50,000', 'Non-UK-origin covered imports in 12 months')],
  cards=[
-  card('Where NI sales go, 2024', 'All NI businesses, not manufacturing alone. Rest of world is derived as exports outside the UK (£19.6bn) less ROI and rest of EU.', bars(dest, hi=['Republic of Ireland', 'Rest of the EU']), ['trade', 'tradeni'], csv_href(['destination', 'sales_gbp_bn', 'label'], [list(r) for r in dest]), 'ni-sales-by-destination-2024'),
+  card('Where NI sales go, 2024', 'All NI businesses, not manufacturing alone. Published figures; DfE labels the ROI, rest of EU and rest of world figures as exports.', bars(dest, hi=['Republic of Ireland', 'Rest of the EU']), ['trade', 'tradeni'], csv_href(['destination', 'sales_gbp_bn', 'label'], [list(r) for r in dest]), 'ni-sales-by-destination-2024'),
   sector_card(['Industry']), change_card(['Industry']),
-  card('Goods covered by CBAM', 'UK CBAM from 1 January 2027 and EU CBAM. Indirect emissions are out of UK CBAM until 2029 at the earliest.', table(['Goods', 'EU CBAM', 'UK CBAM'], cbam_goods), ['cbam'], csv_href(['goods', 'eu_cbam', 'uk_cbam'], cbam_goods), 'cbam-goods'),
-  card('CBAM and ESOS dates', 'Key dates for NI manufacturers. UK–EU emissions trading linking, reported as agreed in October 2026, would exempt goods covered by both schemes once in force.', table(['When', 'What', 'Who'], cbam_dates), ['cbam', 'esos', 'ets'], csv_href(['when', 'what', 'who'], cbam_dates), 'cbam-esos-dates', wide=True),
+  card('Goods covered by CBAM', 'UK CBAM from 1 January 2027 and EU CBAM. Indirect emissions are out of UK CBAM until 2029 at the earliest. UK default values are one global figure per good in 2027 and 2028 (HMRC draft notice); the Budget said country-specific values follow from 2029.', table(['Goods', 'EU CBAM', 'UK CBAM'], cbam_goods), ['cbam', 'cbamfs', 'budget'], csv_href(['goods', 'eu_cbam', 'uk_cbam'], cbam_goods), 'cbam-goods'),
+  card('CBAM and ESOS dates', 'Key dates for NI manufacturers. UK–EU emissions trading linking was reported as agreed in October 2026 but has not been confirmed; it is expected at the summit on 20 November. Once a full link is in force and legislated for, goods covered by both schemes could be exempted. Until then EU-origin goods are inside UK CBAM: HMRC says no jurisdiction is exempt, and relief applies only to a carbon price actually paid. UK CBAM dates are from HMRC.', table(['When', 'What', 'Who'], cbam_dates), ['cbampol', 'cbamreg', 'cbamsi', 'cbamqs', 'esos', 'ets'], csv_href(['when', 'what', 'who'], cbam_dates), 'cbam-esos-dates', wide=True),
   card('Renewable share of NI electricity', 'Share of gross final electricity consumption from renewables, year to June, against the 2030 target. Cleaner electricity lowers Scope 2.', bars([('Year to June 2025', 44, '44%'), ('Year to June 2026', 50, '50%'), ('2030 target', 80, '80%')], hi=['Year to June 2026'], maxv=100), ['elec'], csv_href(['period', 'renewable_share_pct'], [['Year to June 2025', 44], ['Year to June 2026', 50], ['2030 target', 80]]), 'ni-renewable-electricity'),
- ], issue='/blog/focus-on-metals-manufacturing-november-2026/', issue_title='Focus on Metals & Manufacturing, 6 November 2026', date='6 November 2026')
+ ], issue='/blog/focus-on-metals-manufacturing-november-2026/', issue_title='Focus on Metals & Manufacturing, 5 November 2026', date='5 November 2026')
 
 # 4 Transport and fleet -------------------------------------------------------
 chg = [('London', 345.1), ('Scotland', 231.6), ('Wales', 185.5), ('United Kingdom', 174.9), ('West Midlands', 164.0), ('South East', 159.4), ('South West', 156.7), ('North East', 150.2), ('East of England', 150.2), ('East Midlands', 121.5), ('North West', 112.1), ('Yorkshire and the Humber', 110.7), ('Northern Ireland', 60.0)]

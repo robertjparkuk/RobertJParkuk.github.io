@@ -25,6 +25,32 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### Focus on Metals & Manufacturing — 5 November 2026 (branch `publish/metals-2026-11-06`)
+
+*Signed off by Robert at 12:55 on 5 November and published straight away, a day early; re-dated to 5 November throughout (page, PDF file name and footer, post, dashboard).*
+
+**Added**
+- `blog/focus-on-metals-manufacturing-november-2026/index.html`: the issue as a web page, with three charts and the PDF.
+- `assets/focus-on-metals/2026-11/`: charts (sales by destination, sector emissions, six deadlines) and the 6-page PDF.
+- `_posts/2026-11-06-focus-on-metals-manufacturing-november-2026.md`: summary post (12:00, 5 November).
+- `tools/dashboards/ni-metals-manufacturing.html`, and its entry in `dashboards.md`.
+
+**Changed after a three-reviewer check on 5 November (scientist, engineer, Big Four consultant)**
+- Blocker fixed: the draft said goods from the EU were outside UK CBAM. HMRC's policy summary (2 Nov 2026) says no jurisdiction is exempt and the levy applies to goods of any non-UK origin; carbon price relief covers only a carbon price actually paid, and free allowances do not count. Text, table, action points, stat tile, dashboard and charts all corrected.
+- Industry emissions: the inventory attributes the fall to food and drink, chemicals and cement; the coal-and-oil-to-gas explanation belongs to electricity supply, so the heading and paragraph were rewritten. "1990" is now "the 1990 base year" (1995 for F-gases).
+- Energy section rewritten for fabrication shops (welding and cutting plant, compressors, high-bay lighting, space heating on oil or LPG; LEDs, leak repair, VSDs, destratification).
+- Product data advice: direct production emissions per tonne by product, precursors included, which is the shape of a CBAM request; corporate Scope 1 and 2 kept separate.
+- Records to keep from 1 January, default values when the mill can't supply data, stockholder and freight-forwarder liability, ESOS thresholds, the Finance Act 2026 Part 5 citation, and a not-tax-advice line added.
+- DDP point corrected: goods dispatched from NI do not trigger EU CBAM; exposure is shipping from GB or outside the EU direct to an EU customer.
+- Rest-of-world sales are published (£5.5bn, +1.5%), not derived. Sources: Clifford Chance replaced by HMRC's own pages.
+
+**Changed from the draft, checked 5 November (first pass)**
+- ETS linking: still reported, not confirmed; the summit is on 20 November. The paragraph says so and promises an update after it.
+- UK CBAM: the Emissions and Verification Regulations 2026 (SI 2026/995) are made and in force from 1 January 2027. Registration threshold is £50,000 in any 12 months (or expected within 30 days); HMRC registration opens 1 January 2028; 2027 importers have until 31 January 2028 (as reported by Clifford Chance). Budget 2026 default values (global 2027–28, country-specific from 2029) added.
+- EU CBAM: "not formally extended to NI, under review" replaced with "does not apply in NI", matching the CBAM tracker and the EU law dashboard. The DDP point is softened to "check with your customs agent".
+- Tool links moved from the github.io address to robertjpark.co.uk.
+- `_scripts/dashboards/build.py`: metals dashboard dates and notes updated to match; new sources (HMRC, SI 2026/995, Budget 2026, Clifford Chance).
+
 ### v0.23.2 — 5 November 2026: DfI response marked as submitted
 
 - `_posts/2026-11-06-response-planning-classes-and-thresholds.md`: Robert submitted the response to DfI on 5 November; `submitted` front matter and the page's details list now say so (closing date 6 November unchanged). Still publishes at 17:00 on Friday 6 November.
