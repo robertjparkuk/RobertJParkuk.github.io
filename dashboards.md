@@ -3,7 +3,7 @@ layout: page
 title: Dashboards
 permalink: /dashboards/
 description: Free dashboards of Northern Ireland environmental and carbon data, drawn from official statistics, with every table downloadable as CSV.
-lead: Northern Ireland environmental and carbon data on one page each, drawn from official statistics. Each dashboard is a dated snapshot. Figures are worked out in your browser and every table can be downloaded as CSV.
+lead: Northern Ireland environmental, carbon and consultation data on one page each, drawn from official statistics. Each dashboard is a dated snapshot. Figures are worked out in your browser and every table can be downloaded as CSV.
 ---
 
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">CBAM Exposure Tracker</h2>
@@ -35,6 +35,12 @@ Overnight trips by market and occupancy, building emissions, the refrigerant lim
 Industry emissions against other sectors, where NI sales go, which goods the UK and EU CBAMs cover, the CBAM and ESOS dates to May 2028, and progress on renewable electricity. Figures checked on 21 October 2026; CBAM rules and dates checked on 5 November 2026, from NISRA, DAERA, DfE, HMRC and GOV.UK.
 
 [Open the dashboard →]({{ '/tools/dashboards/ni-metals-manufacturing.html' | relative_url }}) · Commentary: [Focus on Metals & Manufacturing, 5 November 2026]({{ '/blog/focus-on-metals-manufacturing-november-2026/' | relative_url }})
+
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">NI Consultations Monitor</h2>
+
+Every open public consultation at the 11 councils, the nine Stormont departments and UK Government where Northern Ireland is in scope, with closing dates, how often each body publishes a response to what it was told, and how easy each council makes its consultations to find. 403 consultations since April 2025. Checked on 5 November 2026; updated every Friday.
+
+[Open the dashboard →]({{ '/tools/dashboards/ni-consultations-monitor.html' | relative_url }}) · Related: [Consultation responses]({{ '/public-sector/consultation-responses/' | relative_url }})
 
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">EU Law and the Windsor Framework</h2>
 

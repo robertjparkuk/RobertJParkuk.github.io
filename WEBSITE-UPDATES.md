@@ -25,6 +25,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.24.0 — 5 November 2026: NI Consultations Monitor dashboard
+
+- `tools/dashboards/ni-consultations-monitor.html`: new dashboard of every open, upcoming and recently closed public consultation at the 11 councils, nine departments and UK Government where NI is in scope (403 since 22 April 2025), with closing dates, response-publication rates by level and body, a council transparency score, and a filterable full list with summaries. Static, no outside scripts, self-hosted fonts.
+- `data/dashboards/ni-consultations/`: the data behind it (`consultations.json`, `council_access.json`) and a full `consultations.csv` for download, following the 22 October review's data-folder pattern.
+- `_scripts/dashboards/consultations_build.py`: builds the page from the data. Refresh: update the JSON, set `AS_AT`, add a `CHANGES` line, run `python3 _scripts/dashboards/consultations_build.py .`
+- `dashboards.md`: entry added; lead line widened to mention consultations.
+
 ### Focus on Metals & Manufacturing — 5 November 2026 (branch `publish/metals-2026-11-06`)
 
 *Signed off by Robert at 12:55 on 5 November and published straight away, a day early; re-dated to 5 November throughout (page, PDF file name and footer, post, dashboard).*
