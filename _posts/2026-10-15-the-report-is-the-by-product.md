@@ -1,5 +1,6 @@
 ---
 title: "The report is the by-product: what a carbon inventory is really for"
+date: 2026-10-15 09:00:00 +0000
 tags: [Carbon, ESG]
 description: "Most firms measure carbon because a customer, tender or regulation asked. The real value of a carbon inventory is the conversations it forces along the way."
 ---

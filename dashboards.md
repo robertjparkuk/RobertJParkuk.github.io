@@ -38,7 +38,7 @@ Industry emissions against other sectors, where NI sales go, which goods the UK 
 
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">NI Consultations Monitor</h2>
 
-Every open public consultation at the 11 councils, the nine Stormont departments and UK Government where Northern Ireland is in scope, with closing dates, how often each body publishes a response to what it was told, and how easy each council makes its consultations to find. 403 consultations since April 2025. Checked on 5 November 2026; updated every Friday.
+Every open public consultation at the 11 councils, the nine Stormont departments and UK Government where Northern Ireland is in scope, with closing dates, how often each body publishes a response to what it was told, and how easy each council makes its consultations to find. 402 consultations since April 2025. Checked on 5 November 2026; updated every Friday.
 
 [Open the dashboard →]({{ '/tools/dashboards/ni-consultations-monitor.html' | relative_url }}) · Related: [Consultation responses]({{ '/public-sector/consultation-responses/' | relative_url }})
 
@@ -60,4 +60,4 @@ Wastewater capacity and the homes it holds back, storm overflows, road maintenan
 
 [Open the dashboard →]({{ '/tools/dashboards/ni-public-realm-water-roads.html' | relative_url }}) · Commentary: [We don't fund the drains. Then we pay for the flood.]({{ '/blog/2026/11/we-dont-fund-the-drains-then-we-pay-for-the-flood/' | relative_url }})
 
-More dashboards follow alongside each weekly *Focus on* briefing.
+More dashboards follow alongside each monthly *Focus on* briefing.

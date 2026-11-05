@@ -1232,28 +1232,6 @@
   "notes": ""
  },
  {
-  "id": "C057",
-  "level": "NI Executive",
-  "body": "Department for Infrastructure",
-  "body_short": "DfI",
-  "title": "Review of the Classes and Thresholds in the Schedule to the Planning (Development Management) Regulations (NI) 2015",
-  "status": "closed_awaiting_response",
-  "status_label": "Closed – awaiting response",
-  "opened": "2026-08-14",
-  "closes": "2026-10-09",
-  "response_published": "",
-  "relevance": "high",
-  "verified": "yes",
-  "url": "https://consultations2.nidirect.gov.uk/dfi-1/review-of-the-classes-and-thresholds/",
-  "response_url": "",
-  "summary": "Phase 2 of the Planning Improvement Programme review of development hierarchy classes (especially energy infrastructure) and the thresholds for pre-application community consultation on major applications.",
-  "topics": "planning",
-  "relevance_note": "Sets which developments are 'major' and trigger pre-application community consultation, the main lever for public engagement in placemaking and for any planning-obligation or land value capture threshold. Planning is a transferred matter in NI (Planning Act (NI) 2011); any Westminster provision extending here would need an Assembly legislative consent motion under the Sewel convention.",
-  "ni_extent": "",
-  "devolution_note": "",
-  "notes": ""
- },
- {
   "id": "C058",
   "level": "Council",
   "body": "Causeway Coast and Glens Borough Council",
@@ -8489,7 +8467,7 @@
   "relevance_note": "Sets which schemes count as major development and so trigger pre-application community consultation and council committee decisions. Directly shapes how public realm, energy, transport and waste infrastructure is consented. Robert J. Park submitted an individual response (18 asks).",
   "ni_extent": "NI only",
   "devolution_note": "Planning is transferred; made by DfI under the Planning Act (NI) 2011.",
-  "notes": "Missed by the 22 Oct scan. Originally closed 9 Oct 2026; extended by four weeks to 5pm Fri 6 Nov 2026 (DfI page, checked 5 Nov). Respond to Legislation.Planning@infrastructure-ni.gov.uk or on Citizen Space."
+  "notes": "Missed by the 22 Oct scan. Originally closed 9 Oct 2026; extended by four weeks to 5pm Fri 6 Nov 2026 (DfI page, checked 5 Nov). Respond to Legislation.Planning@infrastructure-ni.gov.uk or on Citizen Space. An earlier duplicate entry (C057, the original 9 October close) was removed on 5 November."
  },
  {
   "id": "C387",

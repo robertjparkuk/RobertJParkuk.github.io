@@ -26,7 +26,7 @@ lead: You deal with one person from first call to final report. Where a job need
 - **Geo-environmental and site investigation firms** working in Northern Ireland, with accredited laboratories for soil, water and PFAS testing.
 - **Carbon accountants and inventory auditors** for calculation-heavy work.
 
-I name a partner on a proposal before any work starts, so you know exactly who will be on your site and who signs what. Every partner holds their own professional indemnity insurance, and I hold mine for the work I manage.
+I name a partner on a proposal before any work starts, so you know exactly who will be on your site and who signs what. Every partner holds their own professional indemnity insurance. My own cover for the work I manage is being arranged, and a certificate is supplied before any paid work starts.
 
 ## Associates
 

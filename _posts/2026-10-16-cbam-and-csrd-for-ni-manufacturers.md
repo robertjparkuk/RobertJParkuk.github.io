@@ -49,3 +49,5 @@ That sounds like it lets small and mid-sized NI firms off the hook. Directly, it
 None of this has to be a box-ticking exercise. Done properly, the work of answering these questions tells you a lot about your costs, your suppliers and where your business is exposed. That's the bit I find most useful, and it's what the rest of this series is about.
 
 *This post reflects my understanding of the rules as of October 2026. The UK–EU linking talks in particular could change the picture quickly, so check the current position before making decisions.*
+
+*This piece is general information for Northern Ireland businesses, not tax, legal or financial advice. Check your own position with your adviser before acting on it.*

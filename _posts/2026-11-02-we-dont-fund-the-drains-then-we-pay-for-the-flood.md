@@ -31,7 +31,7 @@ In October 2023, floods went through Newry, Downpatrick and Portadown. The Execu
 
 **Flood defences are falling behind.** I set out the evidence in the Largs piece. The short version, from the NI Audit Office in June: about 45,000 properties in floodplains, spending up 73% in four years, and still only one flood scheme in five finishing on time.
 
-**Roads are wearing out.** An independent assessment for DfI puts the need for structural road maintenance at about £190 million a year, plus about £60 million for routine work. The opening budget this year was £68 million. The Infrastructure Minister reported 49,000 road defects in three months.
+**Roads are wearing out.** An independent assessment for DfI puts the need for structural road maintenance at about £190 million a year, plus about £60 million for routine work. The opening structural maintenance budget for 2025–26 was £68 million. The Infrastructure Minister reported 49,000 road defects in three months.
 
 **Lough Neagh, which supplies about 40% of our drinking water, has had three years of major algal blooms.** DAERA names nutrients from farms, wastewater works, septic tanks and industry, record water temperatures and zebra mussels. Of its 37 actions, 23 are complete. The Minister has said recovery will take decades.
 
@@ -87,6 +87,7 @@ Evidence that year-by-year funding has produced steady improvement anywhere in t
 - [Flood support programme for businesses (Department for the Economy, 21 February 2024)](https://www.economy-ni.gov.uk/news/murphy-announces-details-flood-support-programme-businesses)
 - [Details of £15m flood support allocation (ITV News, 9 November 2023)](https://www.itv.com/news/utv/2023-11-09/details-of-15m-flood-support-allocation-revealed)
 - [Road maintenance funding shortfall (agendaNi, 22 April 2026)](https://www.agendani.com/road-maintenance-funding-shortfall/)
+- [Breaking point: Northern Ireland roads suffer 'shocking' in-year funding round (Highways Magazine, 2025) — £68m 2025–26 structural maintenance allocation](https://www.highwaysmagazine.co.uk/Breaking-point-Northern-Ireland-roads-suffer-shocking-in-year-funding-round--/14661)
 - [Update on road infrastructure projects (Department for Infrastructure, 9 December 2025)](https://www.infrastructure-ni.gov.uk/news/council-receives-update-road-infrastructure-projects-fermanagh-and-omagh-district-council-2025)
 - [Action being taken to address issues at Lough Neagh (DAERA, updated 11 August 2026)](https://www.daera-ni.gov.uk/articles/action-being-taken-address-issues-lough-neagh)
 - [Adapting to climate change: progress in Northern Ireland (Climate Change Committee, 20 April 2023)](https://www.theccc.org.uk/publication/adapting-to-climate-change-progress-in-northern-ireland/)

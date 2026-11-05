@@ -25,9 +25,20 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.24.1 — 5 November 2026: corrections from the three-reviewer hard review
+
+- `working-with.md`: the professional indemnity line now says cover for the work Robert manages is being arranged and a certificate is supplied before any paid work starts.
+- `assets/focus-on-agriculture/2026-10/Focus-on-Agriculture-October-2026.pdf`: the footer (page 1), contact line (page 6) and the farm-data-checker link now use robertjpark.co.uk; the old github.io address is gone from every public asset.
+- Consultations Monitor: the DfI classes and thresholds review was listed twice (original 9 October close and the 6 November extension). Duplicate removed; 402 consultations; dashboard rebuilt; `dashboards.md` and the v0.24.0 entry corrected.
+- "We don't fund the drains": the £68m road maintenance figure is the 2025–26 opening structural maintenance budget, not "this year"; relabelled in the post and the public realm dashboard tile, with the Highways Magazine source added.
+- A "general information, not tax, legal or financial advice" line added to eight CBAM, ESOS and finance posts (including the three held pieces).
+- `policy-series.md`: no longer says the first piece "publishes on 16 November" or "two a week". `dashboards.md`: "weekly" *Focus on* → monthly. `cbam-desk.md`: who it is for now reflects that goods dispatched from NI do not trigger EU CBAM.
+- `_posts/2026-10-15-the-report-is-the-by-product.md`: date added to the front matter. Changelog filename for the Metals post corrected.
+- `pr-check.yml`: now also fails if any PDF under `assets/` carries the old address or the personal mobile, or if a data file lists the same body and title twice.
+
 ### v0.24.0 — 5 November 2026: NI Consultations Monitor dashboard
 
-- `tools/dashboards/ni-consultations-monitor.html`: new dashboard of every open, upcoming and recently closed public consultation at the 11 councils, nine departments and UK Government where NI is in scope (403 since 22 April 2025), with closing dates, response-publication rates by level and body, a council transparency score, and a filterable full list with summaries. Static, no outside scripts, self-hosted fonts.
+- `tools/dashboards/ni-consultations-monitor.html`: new dashboard of every open, upcoming and recently closed public consultation at the 11 councils, nine departments and UK Government where NI is in scope (402 since 22 April 2025), with closing dates, response-publication rates by level and body, a council transparency score, and a filterable full list with summaries. Static, no outside scripts, self-hosted fonts.
 - `data/dashboards/ni-consultations/`: the data behind it (`consultations.json`, `council_access.json`) and a full `consultations.csv` for download, following the 22 October review's data-folder pattern.
 - `_scripts/dashboards/consultations_build.py`: builds the page from the data. Refresh: update the JSON, set `AS_AT`, add a `CHANGES` line, run `python3 _scripts/dashboards/consultations_build.py .`
 - `dashboards.md`: entry added; lead line widened to mention consultations.
@@ -39,7 +50,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 **Added**
 - `blog/focus-on-metals-manufacturing-november-2026/index.html`: the issue as a web page, with three charts and the PDF.
 - `assets/focus-on-metals/2026-11/`: charts (sales by destination, sector emissions, six deadlines) and the 6-page PDF.
-- `_posts/2026-11-06-focus-on-metals-manufacturing-november-2026.md`: summary post (12:00, 5 November).
+- `_posts/2026-11-05-focus-on-metals-manufacturing-november-2026.md`: summary post (12:00, 5 November).
 - `tools/dashboards/ni-metals-manufacturing.html`, and its entry in `dashboards.md`.
 
 **Changed after a three-reviewer check on 5 November (scientist, engineer, Big Four consultant)**

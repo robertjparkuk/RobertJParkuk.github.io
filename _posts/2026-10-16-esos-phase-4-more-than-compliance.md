@@ -41,3 +41,5 @@ What I add is the wrapping around it. I think ESOS works best delivered alongsid
 Twelve months sounds like plenty of time. It isn't, once you factor in site visits, data gathering across a group and board sign-off. If you think you'll qualify on 31 December, now is a sensible time to start pulling the data together.
 
 Done well, ESOS gives you a costed list of savings, a clear energy picture and evidence that your board is on top of it. That's worth having whether or not the regulator asks.
+
+*This piece is general information for Northern Ireland businesses, not tax, legal or financial advice. Check your own position with your adviser before acting on it.*

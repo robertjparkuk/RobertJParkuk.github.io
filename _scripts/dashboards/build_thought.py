@@ -82,7 +82,7 @@ D['ni-screen-industry'] = dict(
 
 # Public realm: drains and floods ---------------------------------------------
 pr_ww = [('Areas where development is restricted', 100, 'about 100'), ('Sewer networks under constraint', 107, 'about 107'), ('Treatment works at or over capacity', 66, 'about 66')]
-pr_roads = [('Structural maintenance needed a year', 190, '£190m'), ('Routine maintenance needed a year', 60, '£60m'), ('Opening budget this year (all maintenance)', 68, '£68m')]
+pr_roads = [('Structural maintenance needed a year', 190, '£190m'), ('Routine maintenance needed a year', 60, '£60m'), ('Opening structural maintenance budget, 2025–26', 68, '£68m')]
 pr_inv = [('Up to the 1970s', 4.0, 'about 4% of GDP'), ('This century, average', 1.0, 'about 1% of GDP'), ('Now, rising to', 2.5, 'about 2.5% of GDP')]
 pr_ln = [('Actions complete', 23, '23'), ('Actions still open (derived)', 14, '14')]
 pr_so = [('Storm overflows', '2,458', 'NI Water'), ('Modelled so far', 'About half', 'NI Water'), ('Unsatisfactory, of those modelled', 'About 37%', 'NI Water'), ('Monitored by spring 2027', 'About 30%', 'NI Water')]
@@ -99,7 +99,7 @@ D['ni-public-realm-water-roads'] = dict(
  desc='Dashboard of Northern Ireland wastewater capacity, storm overflows, roads, flood risk, Lough Neagh, UK public investment and how other places pay for infrastructure. By Robert J. Park.',
  lead='Around <b>100</b> places in Northern Ireland can\'t take new homes because the sewers are full, roads get about <b>a quarter</b> of the maintenance money they need, and NI Water puts its wastewater need at <b>£7bn</b>. This page brings the figures together.',
  tiles=[tile('Homes held back', '≈15,000', 'By wastewater limits (DfI)', 'k-bad'), tile('Wastewater investment needed', '≈£7bn', 'NI Water estimate', 'k-bad'),
-        tile('Storm overflows unsatisfactory', '≈37%', 'Of those modelled, out of 2,458', 'k-bad'), tile('Road maintenance funded', '≈27%', 'Derived: £68m against £250m a year needed', 'k-bad'),
+        tile('Storm overflows unsatisfactory', '≈37%', 'Of those modelled, out of 2,458', 'k-bad'), tile('Road maintenance funded', '≈27%', 'Derived: £68m (2025–26 opening budget) against £250m a year needed', 'k-bad'),
         tile('Properties in floodplains', '≈45,000', 'Flood spending up 73% in four years'), tile('Lough Neagh actions complete', '23 of 37', 'Lough supplies about 40% of drinking water')],
  cards=[
   card('Wastewater: where the system is full', 'Development restricted (about 100 areas, including 25 cities and towns), networks constrained and treatment works at capacity.', bars(pr_ww, hi=['Areas where development is restricted']), ['pr_niao_w', 'pr_cap'], csv_href(['measure', 'count'], [[a, b] for a, b, c in pr_ww]), 'ni-wastewater-capacity'),

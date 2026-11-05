@@ -24,7 +24,7 @@ Prices are fixed and quoted in writing before any work starts. VAT is added if i
 
 ## Who this is for
 
-- Northern Ireland and UK manufacturers that import CBAM goods or sell into the EU
+- Northern Ireland and UK manufacturers that import CBAM goods, dispatch from Great Britain to EU customers, or supply the firms that do
 - Suppliers further down the chain who are being sent emissions questionnaires
 - Exporters anywhere in the English-speaking world selling CBAM goods into the UK or EU. I work remotely.
 

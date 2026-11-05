@@ -233,3 +233,5 @@ Added 30 October 2026 (Budget):
 Robert J. Park is an independent environment, carbon and public-affairs consultant based in Larne, Northern Ireland. He helps firms and public bodies measure their carbon and make their case on policy.
 
 Agree or disagree? Get in touch on [LinkedIn](https://uk.linkedin.com/in/robertparkuk) or WhatsApp @robertjpark.
+
+*This piece is general information for Northern Ireland businesses, not tax, legal or financial advice. Check your own position with your adviser before acting on it.*

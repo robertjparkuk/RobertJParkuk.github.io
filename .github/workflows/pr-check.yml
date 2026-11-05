@@ -61,6 +61,29 @@ jobs:
           check '<script[^>]+src="https?://' "external script"
           exit $fail
 
+      - name: House-rule checks on PDFs and data files
+        run: |
+          sudo apt-get install -y -qq poppler-utils >/dev/null
+          fail=0
+          for f in $(find assets -name '*.pdf' -not -path '*/_site/*'); do
+            if pdftotext "$f" - 2>/dev/null | grep -qE 'robertjparkuk\.github\.io|07595 ?157 ?825'; then echo "::error::$f carries the old address or the personal mobile"; fail=1; fi
+          done
+          python3 - <<'PY' || fail=1
+          import glob,json,sys,collections,re
+          bad=[]
+          for f in glob.glob('data/**/*.json',recursive=True):
+              try: rows=json.load(open(f,encoding='utf-8'))
+              except Exception as e: bad.append(f"{f}: {e}"); continue
+              if isinstance(rows,list) and rows and isinstance(rows[0],dict) and 'title' in rows[0] and 'body' in rows[0]:
+                  norm=lambda t: re.sub(r'[^a-z0-9]+',' ',str(t).lower()).strip()
+                  c=collections.Counter((r.get('body'),norm(r.get('title'))) for r in rows)
+                  for k,n in c.items():
+                      if n>1: bad.append(f"{f}: same body and title listed {n} times: {k}")
+          if bad: print("::error::Data checks failed:\n"+"\n".join(bad)); sys.exit(1)
+          print("PDF and data checks pass")
+          PY
+          exit $fail
+
       - name: Check the home page has one fixed hero
         run: |
           h1=$(grep -c '<h1' _site/index.html); echo "h1 on home page: $h1"

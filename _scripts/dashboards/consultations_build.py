@@ -23,6 +23,7 @@ rows = json.load(open(os.path.join(DATA, 'consultations.json'), encoding='utf-8'
 access = json.load(open(os.path.join(DATA, 'council_access.json'), encoding='utf-8'))
 
 CHANGES = [  # newest first: date, what changed
+ ('5 Nov 2026', 'Correction: the DfI classes and thresholds review was listed twice (the original 9 October close and the 6 November extension). The duplicate is removed; 402 consultations.'),
  ('5 Nov 2026', 'Published. Data first compiled on 22 October 2026 and refreshed on 5 November: 12 consultations that closed between 23 October and 4 November marked closed and awaiting a response; 18 added, including the DfI review of planning classes and thresholds (extended to 6 November), the Eastern Transport Plan engagement, Moving Together, the Black Paths scheme and the Planning Appeals Commission fee regulations.'),
 ]
 

@@ -29,12 +29,12 @@ The pieces set out the arguments on each side. The recommendations are mine. The
 </ul>
 {% endfor %}
 {% else %}
-<p>The first piece, on sustainability reporting, publishes on Monday 16 November 2026.</p>
+<p>Thirteen pieces published on 2 November 2026; four more follow as the rules settle.</p>
 {% endif %}
 
 ## What is coming
 
-Six themes, seventeen pieces, two a week until late January 2027: reporting and finance; energy; carbon pricing and trade; waste and resources; chemicals, land and water; and climate law. Each piece is checked against its sources in the week before it publishes, and updated afterwards when the rules move.
+Six themes, seventeen pieces, thirteen of them live and four to follow between late November 2026 and January 2027: reporting and finance; energy; carbon pricing and trade; waste and resources; chemicals, land and water; and climate law. Each piece is checked against its sources in the week before it publishes, and updated afterwards when the rules move.
 
 ## Use them
 
