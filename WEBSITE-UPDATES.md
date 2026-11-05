@@ -25,6 +25,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.23.1 — 6 November 2026: consultation response on planning classes and thresholds
+
+*Robert's instruction, 5 Nov 00:10: find the DfI consultation and draft a full response.*
+
+- `_posts/2026-11-06-response-planning-classes-and-thresholds.md`: second entry on the Consultation responses page, Robert's response to DfI's Review of the Classes and Thresholds in the Schedule to the Planning (Development Management) Regulations (NI) 2015 (closed 6 November 2026, extended from 9 October). Better-regulation framing (second pass, 5 Nov 00:30): opens with the consultation response numbers (224, 100, 59, 67) and an open question on why they are tolerated; eighteen asks tagged by remit, context and five positions in Annex A; reviewed twice on 5 Nov by five agents (planning law, EU/trade law, science, business, finance) plus a US political/FDI/security reviewer in round two, with legal and factual corrections applied (nuclear is Class 2 not Class 1; reg 2(1)(b) already covers extensions; s.26(7) bars a deemed notice; NI tariffs just below the GB cap; dispatch-down 29.6%/22%; Celtic 2028), with a section on the EU and GB rules NI carries under the Windsor Framework without prior scrutiny (SMRs kept open, storage against dispatch-down, demand reduction with vouchers and training, no offshoring of production, energy equipment inside the carbon border and judged on the whole of ESG, with an embodied-carbon and supply-chain statement on major energy applications), including 20 MW for generation to match Scotland, Scotland's extensions rule, a fuel-production description, COMAH instead of GWh for chemical storage, NIFRS as consultee rather than major status for batteries, a hazardous-waste de minimis, a 28-day clock on section 26 referrals, and application numbers for the RIA. Scheduled for 17:00 on Friday 6 November, the moment the consultation closes; a 17:05 UTC Friday rebuild was added to `publish-scheduled-posts.yml`.
+- `assets/consultations/2026-11-dfi-development-management-classes-thresholds-response.pdf`: the full response, 14 pages, built with the site fonts and logo (`_scripts/consultations/build_dfi_classes_thresholds_pdf.py` from `_scripts/consultations/dfi-classes-thresholds-response.md`).
+
 ### v0.23.0 — 2 November 2026: two thought pieces live with briefings and dashboards; Focus on Agriculture November
 
 *Robert's instructions, 2 Nov 01:03–01:05.*
