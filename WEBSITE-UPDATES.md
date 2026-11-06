@@ -25,6 +25,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.24.2 — 6 November 2026: Consultations Monitor weekly refresh
+
+- `data/dashboards/ni-consultations/consultations.json`: 19 consultations added (C404–C422; 420 in all). One is high relevance (DfI Quay Street car park abandonment, Lisburn, closes 15 Dec), two medium (Belfast draft playing pitches strategy; DfT zero emission vehicle mandate review, closed), the rest low (UK Government items with NI in scope, including HMT/HMRC CBAM refinery products).
+- Status roll-forward: 3 records closed and awaiting a response (C038, C372, C373). Responses found for 2 (C115 Lagan Meadows quiet area; C225 Belfast masterplan SPGs). 83 open, 2 not yet open.
+- Corrections: C388 Black Paths engagement now opens 16 Nov (not yet open; no closing date given); closing dates filled for 11 records; opening dates fixed for C042, C372, C394, C402; better links for 13 records; duplicate C403 (Single Construction Regulator, already C202) removed.
+- `_scripts/dashboards/consultations_build.py`: AS_AT 6 November 2026 and a changes line; page and CSV rebuilt.
+
 ### v0.24.1 — 5 November 2026: corrections from the three-reviewer hard review
 
 - `working-with.md`: the professional indemnity line now says cover for the work Robert manages is being arranged and a certificate is supplied before any paid work starts.
