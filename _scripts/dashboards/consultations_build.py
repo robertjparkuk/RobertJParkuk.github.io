@@ -15,7 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 src = open(os.path.join(HERE, 'build.py'), encoding='utf-8').read()
 exec(src[:src.index('\nD = {}')])  # helpers (esc, tile, csv_href) and CSS only
 
-AS_AT = '5 November 2026'
+AS_AT = '6 November 2026'
 WINDOW_FROM = '22 April 2025'
 TODAY = dt.datetime.strptime(AS_AT, '%d %B %Y')
 DATA = os.path.join(ROOT, 'data', 'dashboards', 'ni-consultations')
@@ -23,6 +23,7 @@ rows = json.load(open(os.path.join(DATA, 'consultations.json'), encoding='utf-8'
 access = json.load(open(os.path.join(DATA, 'council_access.json'), encoding='utf-8'))
 
 CHANGES = [  # newest first: date, what changed
+ ('6 Nov 2026', 'Weekly refresh: 19 added (420 in all), including the DfI Quay Street car park abandonment in Lisburn, Belfast’s draft playing pitches strategy and the HM Treasury consultation on adding refinery products to the UK CBAM; 3 rolled to closed; responses found for the Lagan Meadows quiet area and Belfast’s Sailortown and Cathedral Quarter masterplans; the Black Paths engagement now opens on 16 November; closing dates filled for 11 records; a duplicate Single Construction Regulator entry removed.'),
  ('5 Nov 2026', 'Correction: the DfI classes and thresholds review was listed twice (the original 9 October close and the 6 November extension). The duplicate is removed; 402 consultations.'),
  ('5 Nov 2026', 'Published. Data first compiled on 22 October 2026 and refreshed on 5 November: 12 consultations that closed between 23 October and 4 November marked closed and awaiting a response; 18 added, including the DfI review of planning classes and thresholds (extended to 6 November), the Eastern Transport Plan engagement, Moving Together, the Black Paths scheme and the Planning Appeals Commission fee regulations.'),
 ]
