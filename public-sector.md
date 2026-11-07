@@ -43,6 +43,10 @@ Arm's-length bodies, agencies and publicly funded organisations can draw on the 
 - **Local and independent.** Based in Larne, working across Northern Ireland, with no products to sell and no conflicts with suppliers.
 - **Collaborative delivery.** For specialist elements such as ESOS sign-off or site investigation, I work with registered and accredited specialists and manage the work as a single point of contact. See [who I work with]({{ '/working-with/' | relative_url }}).
 
+## NI Consultations Monitor
+
+Every open public consultation at Northern Ireland's 11 councils, the nine Stormont departments and UK Government departments whose rules reach NI, with closing dates, how often each body publishes a response, and how easy each council makes its consultations to find. Updated every Friday. [Open the NI Consultations Monitor]({{ '/tools/dashboards/ni-consultations-monitor.html' | relative_url }}).
+
 {% if site.categories['consultation-responses'] %}
 ## Consultation responses
 

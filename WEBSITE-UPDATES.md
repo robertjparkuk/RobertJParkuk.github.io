@@ -25,6 +25,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.24.3 — 7 November 2026: links to the Consultations Monitor
+
+- `public-sector.md`: new "NI Consultations Monitor" section above Consultation responses, with a link to the dashboard (shown whether or not any responses are published).
+- `public-sector/consultation-responses.md`: links to the monitor in the introduction and in "Help with your own response".
+- `_posts/2026-11-05-when-did-your-voice-on-a-consultation-last-get-heard.md`: fix 2 ("A public consultation tracker") now points to the monitor, says what it covers and that it cannot count responses.
+
 ### v0.24.2 — 6 November 2026: Consultations Monitor weekly refresh
 
 - `data/dashboards/ni-consultations/consultations.json`: 19 consultations added (C404–C422; 420 in all). One is high relevance (DfI Quay Street car park abandonment, Lisburn, closes 15 Dec), two medium (Belfast draft playing pitches strategy; DfT zero emission vehicle mandate review, closed), the rest low (UK Government items with NI in scope, including HMT/HMRC CBAM refinery products).
