@@ -1,7 +1,6 @@
 ---
 title: "Fertiliser: a small tax, a big bill and a lough"
-date: 2026-12-02 07:30:00 +0000
-published: false   # held by Robert, 1 Nov 2026 sign-off
+date: 2026-11-09 19:00:00 +0000
 tags: ["Carbon", "CBAM", "Trade", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Carbon pricing and trade"
@@ -12,12 +11,14 @@ hero_title: "Fertiliser: a small tax, a big bill <em>and a lough</em>."
 hero_lead: "The fertiliser CBAM is about £3.77 a tonne of ammonium nitrate in 2027. Gas prices and NI nutrient rules matter far more, and the charge grows as free allowances taper."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
-hero_until: 2026-12-09T07:30:00Z
+hero_until: 2026-11-23T12:00:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/farm-panorama.jpg' | relative_url }}" alt="Green grassland at sunrise with a feed mill and grain silos behind a line of trees" loading="lazy"><figcaption>The carbon charge on a tonne of fertiliser is small. The nutrient rules are what will shape how much NI farms buy and spread.</figcaption></figure>
 
 *Part of the [Policy series]({{ '/policy-series/' | relative_url }}): where the rules stand in Northern Ireland, who decides them, and what to do about it. Updated as the rules change.*
+
+*Published early, on 9 November 2026. I'll update this piece in December, with a refresh of the [NI Agriculture and Land Carbon dashboard]({{ '/tools/dashboards/ni-agriculture-land-carbon.html' | relative_url }}), once the first UK CBAM rates and the outcome of the 20 November UK–EU summit are known.*
 
 ## The argument in brief
 

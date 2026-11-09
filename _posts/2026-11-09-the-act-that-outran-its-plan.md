@@ -1,7 +1,6 @@
 ---
 title: "The Act that outran its plan"
-date: 2027-01-25 07:30:00 +0000
-published: false   # held by Robert, 1 Nov 2026 sign-off
+date: 2026-11-09 19:00:00 +0000
 tags: ["Climate Change Act", "Policy", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Climate law"
@@ -12,12 +11,16 @@ hero_title: "The Act that <em>outran its plan</em>."
 hero_lead: "The NI Climate Change Act is law but its plan, fourth budget, sectoral plans and Commissioner are late. The fight is over revising targets after 2027, while reporting and procurement duties already apply."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
-hero_until: 2027-02-01T07:30:00Z
+hero_until: 2026-11-23T12:00:00Z
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/wind-turbines-sunset.jpg' | relative_url }}" alt="Wind turbines and solar panels at sunset" loading="lazy"><figcaption>The Act is law. Its plan, its fourth budget, its sectoral plans and its Commissioner are all late.</figcaption></figure>
 
 *Part of the [Policy series]({{ '/policy-series/' | relative_url }}): where the rules stand in Northern Ireland, who decides them, and what to do about it. Updated as the rules change.*
+
+*Published early, on 9 November 2026, and correct as at that date. I'll update it in January 2027, when the Climate Action Plan and the fourth carbon budget are due to come forward ahead of the May 2027 election.*
+
+**Where I stand.** The Act's targets are law and should be met, but through a plan that keeps farming and industry producing here, not by pushing emissions offshore and importing the same goods from places with weaker rules. A transition that leaves Northern Ireland poorer will not last. The Executive should publish its plan before the election, so voters can judge it.
 
 ## The argument in brief
 
