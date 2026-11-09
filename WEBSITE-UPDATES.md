@@ -25,6 +25,32 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.28.0 — 9 November 2026: NI Regulatory Horizon dashboard
+
+*Approved by Robert on 9 November 2026.*
+
+**Added**
+- `tools/dashboards/ni-regulatory-horizon.html`: NI Regulatory Horizon. Every dated rule change, deadline and consultation close for NI businesses and councils from November 2026 to December 2028 on one page: 62 dates across carbon, energy, environment, waste and packaging, chemicals and PFAS, products, trade, customs and CBAM, the Windsor Framework and public affairs. Each row gives the date (or month, where the source gives only a month), what happens, who it affects, where it applies (NI, GB, UK, EU or UK–EU), how firm it is (in force, confirmed, expected or proposed), the action needed and the official source it was checked on. Also: the next 90 days, dates per month (inline SVG), a jump list by month, counts by topic and year and by status, how to read the page, data and sources, a change log, and a closing panel for the £620 Two-Regime Readiness Review (`/cbam-desk/`). "As at 9 November 2026" shown under the title and in the footer.
+- Built in the house pattern: self-contained HTML, no outside scripts, self-hosted fonts via `/assets/fonts/fonts.css`, brand red #A61C1C and ink #1A1A1A on warm grey, light and dark. The page reads in full without JavaScript; filters (topic, who it affects, where, status, type, search) are progressive enhancement and keep their settings in the address so a filtered view can be bookmarked. Each month (`#m-2027-01`) and each row (`#H010`) has its own link. Below 820px the table becomes one card per date.
+- `data/dashboards/ni-regulatory-horizon/horizon.json`: the 62 rows, and `horizon.csv` (generated) for download, following the 22 October review's data-folder pattern.
+- `_scripts/dashboards/horizon_build.py`: builds the page and the CSV from the JSON, using the shared helpers and CSS in `build.py`. It stops on an empty field, an unknown topic, status or jurisdiction, a non-https source, a duplicate id, or the personal mobile or old host address in any output; it warns if a "related" link points to a page that does not exist. Rows dated before `AS_AT` move to "Passed since the last check". Refresh: update the JSON, set `AS_AT`, add a `CHANGES` line, run `python3 _scripts/dashboards/horizon_build.py .`
+- `dashboards.md`: entry added (suggest first in the list, above the CBAM Exposure Tracker).
+
+**How the dates were gathered and checked**
+- Mined first from the site: the EU Law and the Windsor Framework "Coming up" list, the CBAM Exposure Tracker, the Focus on deadline tables (Agriculture, Food and Drink, Hospitality, Metals, Transport, Construction), the Policy series and the Consultations Monitor. Gaps filled from official sources. Every row was checked on 9 November 2026 against the page linked in it: GOV.UK, HMRC, HM Treasury (Budget 2026), legislation.gov.uk, DAERA and NIEA, NetRegs, DfE, the NI Assembly, the Utility Regulator, the FCA, the European Commission, EUR-Lex and the Irish EPA (EU CBAM competent authority). No energy-broker or commercial sources.
+- By year: 9 in 2026, 35 in 2027, 18 in 2028. By status: 7 in force, 41 confirmed, 8 expected, 6 proposed.
+
+**Differences from other pages on the site, found while checking (not changed in this release)**
+- GB zero VAT on household electricity: Budget 2026 (para 6.210) extends it "to 1 July 2027". The EU law dashboard's "Coming up" list still says it ends on 31 March 2027, and "The price of a separate grid" says 30 June 2027.
+- ESOS phase 4: GOV.UK lists annual progress updates in 2029 and 2030; "ESOS and the audit that pays only if you act" says 2029, 2030 and 2031.
+- EU CBAM certificate sales: the Commission and the Irish EPA say "from February 2027"; other dashboards say 1 February 2027.
+
+**Checked**
+- Playwright at 390px and 1280px, light and dark, with and without JavaScript: no horizontal page scroll, no empty table cells, no console errors, no requests to other hosts. Filters, address-bar state, Clear and month anchors tested.
+- No personal mobile number and no github.io address in any new file.
+
+**Facts as at:** 9 November 2026, shown on the page.
+
 ### v0.27.2 — 9 November 2026: personal number out of the public repo
 
 - `.github/workflows/pr-check.yml`: the personal mobile number was written out in full in the PR check's patterns, so it was readable in the public repository. The check now stores only a salted SHA-256 hash and compares every UK mobile-shaped number in the built site and the PDFs against it. (The number remains in older commits' history; only rewriting history would remove it.)
