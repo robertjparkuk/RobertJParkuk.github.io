@@ -25,6 +25,10 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.25.1 — 9 November 2026: public realm post describes the revised Bill
+
+- `_posts/2026-10-17-improving-the-public-realm.md`: "The law is part of the problem" now describes the reworked, shorter framework Bill (old amenity laws left to a Law Commission consolidation; definition, stewardship and continuous improvement, minimum and enhanced entitlements, appraisal; devolved adoption and the NI position). The live post still described the August draft (215 clauses, 26 Schedules, 37 enactments). The text was written on 17 October on branch `v0.7.0-content` but never merged; front matter kept as on main.
+
 ### v0.25.0 — 9 November 2026: put the priced offer where a buyer can see it
 
 *From the commissioning-client review of 5 November. Approved by Robert on 9 November.*
