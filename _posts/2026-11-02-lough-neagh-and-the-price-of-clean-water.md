@@ -76,8 +76,8 @@ Most levers sit at Stormont. Cross-cutting or controversial decisions need the w
 
 | Instrument                                  | Who decides                                               | Whose approval is needed            | Position in Northern Ireland                                                                                                                |
 |---------------------------------------------|-----------------------------------------------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| NAP Regulations 2027–2030                   | DAERA Minister                                            | Executive, then Assembly            | Domestic regulations that must meet Water Framework Directive objectives. Nitrates Directive status under the Windsor Framework unconfirmed |
-| Water Framework Directive Regulations 2017  | DAERA                                                     | Assembly for any change             | Assimilated law; reported as outside Windsor Framework Annex 2, so EU updates do not apply automatically                                    |
+| NAP Regulations 2027–2030                   | DAERA Minister                                            | Executive, then Assembly            | Domestic regulations that must meet Water Framework Directive objectives. Nitrates Directive not on DAERA's list of Windsor Framework Annex 2 law (3 Apr 2026) |
+| Water Framework Directive Regulations 2017  | DAERA                                                     | Assembly for any change             | Assimilated law; not on DAERA's list of Windsor Framework Annex 2 law (3 Apr 2026), so EU updates do not apply automatically                                    |
 | SORPI withdrawal                            | DAERA and NIEA                                            | Executive referral as cross-cutting | Proposed 3 Mar 2026; still awaiting Executive approval (22 Oct 2026)                                                                        |
 | Water pollution fines                       | Assembly                                                  | Bill stages before 16 Mar 2027      | Second Stage 30 Jun 2026; Committee Stage since 1 Jul 2026                                                                                  |
 | NI Water funding                            | Department for Infrastructure (DfI) and Utility Regulator | Executive budget                    | PC28 business plan due Nov 2026; draft determination Jun 2027                                                                               |
@@ -176,6 +176,8 @@ Most levers sit at Stormont. Cross-cutting or controversial decisions need the w
 - [NI Assembly: Written Ministerial Statement on developer contributions (19 Mar 2026)](https://www.niassembly.gov.uk/assembly-business/official-report/written-ministerial-statements/department-for-infrastructure-developer-contributions-for-wastewater-infrastructure)
 
 - [Utility Regulator: Decision on approach to PC28 (18 Dec 2025)](https://www.uregni.gov.uk/node/8264)
+
+- [Utility Regulator: Decision on NI Water's allowed revenue for the PC21 extension year (21 Aug 2026)](https://www.uregni.gov.uk/files/uregni/documents/2026-08/Decision%20for%20PC21%20extension.pdf)
 
 - [Irish News: Earl of Shaftesbury will give Lough Neagh away for free (7 Mar 2026)](https://www.irishnews.com/news/northern-ireland/earl-of-shaftesbury-ill-give-lough-neagh-away-for-free-EOWT7TWBZFCWTPDLB3TRYPJVPA/)
 

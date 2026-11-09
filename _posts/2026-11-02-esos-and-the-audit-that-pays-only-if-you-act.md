@@ -114,7 +114,7 @@ Most business energy duties in NI are set in London. Most of the support is set 
 
 - **Councils are usually outside ESOS.** GOV.UK says public sector bodies do not usually need to comply. Council-owned companies should check their own status.
 
-- **NI support is narrower.** No IETF, and the funded NI version of BICS is not yet designed (28 Oct 2026). Invest NI's Energy Efficiency Capital Grant (up to £150,000) and Technical Consultancy can fund follow-through. The €13m NI share of the Shared Island Sustainability Challenge Fund opened 12 Oct 2026.
+- **NI support is narrower.** No IETF, and the funded NI version of BICS is not yet designed (28 Oct 2026). Invest NI's Technical Consultancy can fund follow-through, but its Energy Efficiency Capital Grant is paused for review and not taking applications. The €13m NI share of the Shared Island Sustainability Challenge Fund opened 12 Oct 2026.
 
 - **Cross-border groups face two regimes.** Sites in the Republic face EU audit duties above 10 TJ and energy management systems above 85 TJ by 11 Oct 2027.
 
@@ -152,7 +152,7 @@ Most business energy duties in NI are set in London. Most of the support is set 
 
 - [GOV.UK: Energy Savings Opportunity Scheme (updated 2 Sep 2026)](https://www.gov.uk/guidance/energy-savings-opportunity-scheme-esos)
 
-- [SI 2026/701, ESOS (Amendment) Regulations 2026 (made 23 Jun 2026, in force 22 Jul 2026)](https://www.legislation.gov.uk/uksi/2026/701/contents)
+- [SI 2026/701, ESOS (Amendment) Regulations 2026 (made 23 Jun 2026, in force 22 Jul 2026)](https://www.legislation.gov.uk/uksi/2026/701/made)
 
 - [Environment Agency: ESOS newsletter, issue 43 (7 Aug 2026)](https://www.theema.org.uk/?p=28202)
 

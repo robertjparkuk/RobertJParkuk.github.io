@@ -25,6 +25,18 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.25.2 — 9 November 2026: Policy series checks on the live pieces
+
+The 13 Policy series pieces went live on 2 November before their pre-publication checks. The open checks were run on 9 November against official sources; these were corrected:
+
+- ESOS: Invest NI's Energy Efficiency Capital Grant is paused and not taking applications (it was listed as able to fund follow-through); SI 2026/701 link now points to the `/made` version Parliament's record gives.
+- Digital waste tracking: the Assembly's AERA Committee lists the Digital Waste Tracking Regulations (NI) 2026 (no made rule yet); the Waste Crime Action Plan statement now links to Parliament's record (HCWS1430), not a mirror.
+- Closed for booking: NI legal basis for free household waste deposit added (1997 Order, Art. 25(1)(b)).
+- Land law: ELD and Soil Monitoring Directive described as not on DAERA's Windsor Framework Annex 2 list (3 Apr 2026); CL:AIRE's own page replaces the LexisNexis summary.
+- Lough Neagh: Utility Regulator's PC21 extension decision (21 Aug 2026) added as the source for £693m and 3.4%; Water Framework and Nitrates Directives described as not on DAERA's Annex 2 list.
+
+Checked with no change needed: VAT zero rate still GB only; no NI BICS details yet; no DESNZ SECR/ESOS consultation; no Defra HFC next-steps report; no Year 2 PackUK fees; no final NI waste strategy; no England PFAS drinking-water consultation. Not verifiable from here (Hansard and legislation.gov.uk pages would not open): the DfE official's remark date, two Hansard link swaps, the Lough Neagh JR outcome.
+
 ### v0.25.1 — 9 November 2026: public realm post describes the revised Bill
 
 - `_posts/2026-10-17-improving-the-public-realm.md`: "The law is part of the problem" now describes the reworked, shorter framework Bill (old amenity laws left to a Law Commission consolidation; definition, stewardship and continuous improvement, minimum and enhanced entitlements, appraisal; devolved adoption and the NI position). The live post still described the August draft (215 clauses, 26 Schedules, 37 enactments). The text was written on 17 October on branch `v0.7.0-content` but never merged; front matter kept as on main.

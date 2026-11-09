@@ -79,7 +79,7 @@ Access is almost entirely a council decision. National governments set the free-
 | Instrument                         | Who decides                                                | Whose approval is needed | Position in Northern Ireland                                         |
 |------------------------------------|------------------------------------------------------------|--------------------------|----------------------------------------------------------------------|
 | Booking, permits, van rules, hours | Council executive or committee                             | Council procedure only   | Same; each of the 11 councils sets its own rules                     |
-| Free deposit of household waste    | Environmental Protection Act 1990 s.51 (England and Wales) | Parliament or Senedd     | NI uses separate legislation; no NI equivalent of the DIY rule found |
+| Free deposit of household waste    | Environmental Protection Act 1990 s.51 (England and Wales) | Parliament or Senedd     | Waste and Contaminated Land (NI) Order 1997, Art. 25(1)(b): councils must provide places to deposit household waste free of charge; no NI equivalent of the DIY rule found |
 | DIY waste limits                   | SI 2023/1243 (England only)                                | Parliament               | Does not apply                                                       |
 | Fly-tipping fixed penalties        | Each legislature                                           | Respective legislature   | Belfast: £400 for fly-tipping, £300 for duty of care breaches        |
 | Packaging EPR payments to councils | Defra and the devolved administrations                     | All four                 | Applies in NI                                                        |
