@@ -44,7 +44,7 @@ The chain breaks between stages 4 and 5. Land that nobody applies to develop is 
 | Environmental Liability (Prevention and Remediation) Regulations (NI) 2009 | In force since 24 Jul 2009                                                                      | Unchanged                                                                                                                                                                          | Does not cover damage from events that ended before July 2009, so it cannot reach legacy land                     |
 | Planning route (DAERA guidance; Practice Guide, Apr 2019)                  | Main tool in practice                                                                           | Main tool in practice (DAERA page last changed 10 Jun 2020)                                                                                                                        | Developers carry out remediation when they build. Idle sites are never assessed                                   |
 | GB Part 2A                                                                 | In force: England and Scotland 2000, Wales 2001; English statutory guidance dates from Apr 2012 | Unchanged. English capital grants ended 1 Apr 2017                                                                                                                                 | Without grants, much of the work moved into planning in GB too                                                    |
-| EU Soil Monitoring Directive 2025/2360                                     | Proposal under negotiation                                                                      | In force 16 Dec 2025; three years to transpose; public register of potentially contaminated sites due within 10 years                                                              | Ireland must list its sites. Whether it applies in NI is unconfirmed                                              |
+| EU Soil Monitoring Directive 2025/2360                                     | Proposal under negotiation                                                                      | In force 16 Dec 2025; three years to transpose; public register of potentially contaminated sites due within 10 years                                                              | Ireland must list its sites. Not on DAERA's list of EU law applying in NI under Windsor Framework Annex 2 (3 Apr 2026)                                              |
 | PFAS on land                                                               | Barely addressed in UK or Irish land practice                                                   | CL:AIRE published 13 PFAS site profiles for the Environment Agency (29 Jul 2026). Dublin Airport warned of a legal gap for PFAS soil (Irish Examiner, 27 May 2026)                 | Firefighting foam legacies at airfields, fire stations and military sites are now being mapped                    |
 | NI Housing Supply Strategy 2024–2039                                       | In development                                                                                  | Published Dec 2024: at least 100,000 homes, one third social                                                                                                                       | The strategy does not mention brownfield land or contamination                                                    |
 | Landfill tax and waste crime funding (UK Budget)                           | Rates set each year by HM Treasury                                                              | Budget (28 Oct 2026): standard rate rises by RPI from 1 Apr 2027 and applies in NI. Funding to cover tax liabilities from clearing six illegal waste sites, not stated to cover NI | Dearer landfill widens the saving from illegal dumping. No new money for NI legacy land                           |
@@ -85,7 +85,7 @@ Commencement is a DAERA order, but it needs Executive agreement and a budget lin
 | Mobuoy remediation                       | DAERA and NIEA, using Water (NI) Order 1999 duties | Business case approval; Executive or UK funding      | Strategy being finalised                    |
 | Environmental Liability Regulations 2009 | DAERA                                              | None                                                 | In force, not retrospective                 |
 | Planning conditions                      | Councils (local development plans), DfI policy     | None                                                 | Main route in practice                      |
-| EU Soil Monitoring Directive             | EU                                                 | Member states transpose                              | Applies in Ireland; NI coverage unconfirmed |
+| EU Soil Monitoring Directive             | EU                                                 | Member states transpose                              | Applies in Ireland; not on DAERA's Annex 2 list (3 Apr 2026) |
 
 ## Where the pillars compete
 
@@ -125,7 +125,7 @@ Commencement is a DAERA order, but it needs Executive agreement and a budget lin
 
 - **PFAS soil at Dublin Airport.** daa found PFAS at a former fire training ground, first seen in 2023 during apron works. On one underpass job it was cheaper to class 150 tonnes as contaminated than to test it ([Irish Examiner, 27 May 2026](https://www.irishexaminer.com/news/arid-41852241.html)).
 
-- **England maps PFAS source sectors.** CL:AIRE published 13 site profiles for the Environment Agency's PFAS Risk Screening Project, covering metal finishing, paper and textiles among others ([LexisNexis, 29 Jul 2026](https://www.lexisnexis.co.uk/legal/news/cl-aire-publishes-pfas-site-profiles-for-potential-pfas-source-sectors)). NI manufacturers in those sectors can use them to screen their own sites.
+- **England maps PFAS source sectors.** CL:AIRE published 13 site profiles for the Environment Agency's PFAS Risk Screening Project, covering metal finishing, paper and textiles among others ([CL:AIRE](https://claire.co.uk/home/news-new/pfas-site-profiles)). NI manufacturers in those sectors can use them to screen their own sites.
 
 ## Recommendations
 
@@ -179,7 +179,7 @@ Commencement is a DAERA order, but it needs Executive agreement and a budget lin
 
 - [Irish Examiner, Dublin Airport PFAS soil (27 May 2026)](https://www.irishexaminer.com/news/arid-41852241.html)
 
-- [LexisNexis, CL:AIRE PFAS site profiles (29 Jul 2026)](https://www.lexisnexis.co.uk/legal/news/cl-aire-publishes-pfas-site-profiles-for-potential-pfas-source-sectors)
+- [CL:AIRE, PFAS site profiles](https://claire.co.uk/home/news-new/pfas-site-profiles)
 
 - [HM Treasury and HMRC, Budget 2026 Overview of Tax Legislation and Rates (28 Oct 2026)](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar)
 
