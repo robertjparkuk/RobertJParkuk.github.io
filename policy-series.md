@@ -2,7 +2,7 @@
 layout: page
 title: Policy series
 permalink: /policy-series/
-description: Seventeen pieces on where environmental, carbon, energy and waste rules stand in Northern Ireland, who decides them, where the parties stand, and what firms and councils should do. Thirteen published on 2 November 2026; four more to follow.
+description: Seventeen pieces on where environmental, carbon, energy and waste rules stand in Northern Ireland, who decides them, where the parties stand, and what firms and councils should do. Fifteen published; two more to follow after the 20 November UK–EU summit.
 lead: Where the rules stand in Northern Ireland, who decides them, where the parties stand, and what to do about it. Thirteen pieces are live; four more follow once their facts are rechecked.
 ---
 
@@ -29,7 +29,7 @@ The pieces set out the arguments on each side. The recommendations are mine. The
 </ul>
 {% endfor %}
 {% else %}
-<p>Thirteen pieces published on 2 November 2026; four more follow as the rules settle.</p>
+<p>Thirteen pieces published on 2 November 2026 and two more on 9 November; the last two follow after the 20 November UK–EU summit.</p>
 {% endif %}
 
 ## What is coming

@@ -25,6 +25,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.27.0 — 9 November 2026: Robert's decisions of 9 November
+
+*From the decisions pane signed off by Robert at 19:17 on 9 November.*
+
+- Policy series: "Fertiliser: a small tax, a big bill and a lough" (was 2 December) and "The Act that outran its plan" (was 25 January 2027) published now, re-dated to 9 November, with notes that Fertiliser is updated in December with the agriculture dashboard and the Act piece in January 2027; the Act piece gains a short "Where I stand". `policy-series.md` counts updated. "The Irish Sea carbon bill" (25 Nov) and "Carbon borders as industrial policy" (30 Nov) stay scheduled for after the 20 November UK–EU summit.
+- Offer: the £620 **Two-Regime Readiness Review** replaces the £495 UK CBAM Exposure Check as the entry product (questionnaire, 90-minute call, 6–8 page review with a 12-month plan, 30-minute follow-up, ten working days; fee credited against the next service within three months). Changed in `cbam-desk.md`, `services.md`, the home hero button, the Metals issue page, the CBAM Exposure Tracker and the UK CBAM Countdown.
+
 ### Focus on Construction & Building — 9 November 2026
 
 *Signed off by Robert and published on 9 November, eleven days early (was due Friday 20 November); dated 9 November throughout (page, PDF file name, header and footer, post, dashboard). Built from the signed-off draft in "Focus on series: five final drafts"; wording kept except where facts had changed.*

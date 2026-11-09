@@ -2,7 +2,7 @@
 layout: page
 title: CBAM Desk
 permalink: /cbam-desk/
-description: "Fixed-price CBAM help for small manufacturers, suppliers and importers: an exposure check from £495, supplier data packs, UK CBAM readiness and a monthly desk."
+description: "Fixed-price help for NI and UK manufacturers, suppliers and importers caught between the UK and EU carbon rules: a £620 Two-Regime Readiness Review, UK CBAM readiness, supplier data packs and a monthly desk."
 lead: Fixed-price help with the EU and UK carbon border rules, for firms too small for a big consultancy and too exposed to ignore it.
 ---
 
@@ -15,12 +15,12 @@ Start with the free [CBAM Exposure Tracker]({{ '/tools/dashboards/cbam-exposure-
 | Service | What you get | Price |
 | --- | --- | --- |
 | **First call** | 20 minutes to talk through your products and trade, and whether you need anything at all | Free |
-| **CBAM Exposure Check** | A 90-minute call; your products mapped to the EU and UK CBAM by commodity code; a short written note on what applies, from when, and roughly what it could cost; a checklist of the data you'll need. Delivered within five working days. | £495 |
+| **Two-Regime Readiness Review** | A short questionnaire, then a 90-minute call; your products and trade mapped against the UK and EU carbon border rules (CBAM) by commodity code, and against the other UK and EU rules that reach you in Northern Ireland; a 6–8 page written review with a 12-month plan, setting out what applies, from when and roughly what it could cost; a 30-minute follow-up call. Delivered within ten working days. | £620 |
 | **UK CBAM Importer Readiness** | Threshold and registration check; data requests written for up to five non-UK suppliers; carbon price relief evidence; a 2027 liability estimate under central and high carbon prices | £1,250 (each extra supplier £195) |
 | **Supplier Data Pack** | For UK and NI suppliers whose EU customers want embedded-emissions data: emissions calculated for up to three product lines at one site, set out in the format the customer's CBAM declaration needs, with a short method statement | From £1,750 per site |
 | **CBAM Desk** | Customer data requests answered as they arrive; a quarterly liability update as carbon prices move; preparation of your first UK CBAM return, due by 31 May 2028 | £250 a month (six-month minimum) |
 
-Prices are fixed and quoted in writing before any work starts. VAT is added if it applies. If the Exposure Check shows you need more help, its fee comes off the next service you book within three months.
+Prices are fixed and quoted in writing before any work starts. VAT is added if it applies. If the Readiness Review shows you need more help, its fee comes off the next service you book within three months.
 
 ## Who this is for
 
