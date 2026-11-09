@@ -25,6 +25,10 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.27.1 — 9 November 2026: correction to the DfI response page
+
+- `_posts/2026-11-06-response-planning-classes-and-thresholds.md`: ask 17 said EU Connecting Europe money funds links to France and not Great Britain. Corrected to the narrower, accurate point (the €530m works grant went to the Celtic Interconnector; links to GB can qualify as projects of mutual interest, e.g. MaresConnect, listed Dec 2025, but nothing comparable has been funded) and added a dated correction note linking the maritime piece. The submitted PDF is unchanged, as a record of what was sent.
+
 ### v0.27.0 — 9 November 2026: Robert's decisions of 9 November
 
 *From the decisions pane signed off by Robert at 19:17 on 9 November.*
