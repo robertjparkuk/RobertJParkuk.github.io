@@ -82,3 +82,9 @@ Wastewater capacity and the homes it holds back, storm overflows, road maintenan
 [Open the dashboard →]({{ '/tools/dashboards/ni-public-realm-water-roads.html' | relative_url }}) · Commentary: [We don't fund the drains. Then we pay for the flood.]({{ '/blog/2026/11/we-dont-fund-the-drains-then-we-pay-for-the-flood/' | relative_url }})
 
 More dashboards follow alongside each monthly *Focus on* briefing.
+
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">The Catholic Church in numbers</h2>
+
+Schools, hospitals and charity centres worldwide, five centuries of science and business milestones, and the carbon footprint of Vatican City State: emissions from 2011 to 2022, where they come from, and its 2030 and 2035 targets. As at 9 November 2026, from the Church's own statistics (Agenzia Fides) and Vatican City State's reports to the UN.
+
+[Open the dashboard →]({{ '/tools/dashboards/catholic-church-science-environment.html' | relative_url }}) · Briefing: [Faith, reason and the common home]({{ '/blog/2026/11/catholic-church-science-business-environment/' | relative_url }})
