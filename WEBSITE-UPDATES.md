@@ -25,6 +25,11 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.27.2 — 9 November 2026: personal number out of the public repo
+
+- `.github/workflows/pr-check.yml`: the personal mobile number was written out in full in the PR check's patterns, so it was readable in the public repository. The check now stores only a salted SHA-256 hash and compares every UK mobile-shaped number in the built site and the PDFs against it. (The number remains in older commits' history; only rewriting history would remove it.)
+- `poppins-0.1.0-py3-none-any.whl`: a stray third-party Python package file at the site root, served publicly, removed.
+
 ### v0.27.1 — 9 November 2026: ESG Regime Tracker UK CBAM card corrected
 
 - **Removed** the card "UK CBAM: NI outward-processing carve-out". It merged two separate rules into one exemption ("goods that leave NI for processing in the EU and return within three years in the same state are exempt"). It also wrongly said no equivalent applies elsewhere in the UK, and it cited a non-official source (an accountancy blog).
