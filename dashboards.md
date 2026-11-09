@@ -36,6 +36,13 @@ Industry emissions against other sectors, where NI sales go, which goods the UK 
 
 [Open the dashboard →]({{ '/tools/dashboards/ni-metals-manufacturing.html' | relative_url }}) · Commentary: [Focus on Metals & Manufacturing, 5 November 2026]({{ '/blog/focus-on-metals-manufacturing-november-2026/' | relative_url }})
 
+
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">NI Transport and Fleet</h2>
+
+Public and rapid EV chargers for every UK nation and region, transport emissions against other sectors, Translink bus and rail journeys, driver attitudes to EVs, company car tax rates, and what has changed for fleets and freight (Electric Car Grant, UK ETS on GB–NI shipping, zero emission vans). Figures as at 9 November 2026, from DfT, DAERA/NISRA, DfI, HMRC and GOV.UK.
+
+[Open the dashboard →]({{ '/tools/dashboards/ni-transport-fleet.html' | relative_url }}) · Commentary: [Focus on Transport & Fleet, 9 November 2026]({{ '/blog/focus-on-transport-fleet-november-2026/' | relative_url }})
+
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">NI Consultations Monitor</h2>
 
 Every open public consultation at the 11 councils, the nine Stormont departments and UK Government where Northern Ireland is in scope, with closing dates, how often each body publishes a response to what it was told, and how easy each council makes its consultations to find. 402 consultations since April 2025. Checked on 5 November 2026; updated every Friday.
