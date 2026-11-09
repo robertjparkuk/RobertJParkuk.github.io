@@ -6,6 +6,13 @@ description: Free dashboards of Northern Ireland environmental and carbon data, 
 lead: Northern Ireland environmental, carbon and consultation data on one page each, drawn from official statistics. Each dashboard is a dated snapshot. Figures are worked out in your browser and every table can be downloaded as CSV.
 ---
 
+
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">NI Regulatory Horizon</h2>
+
+Every dated rule change, deadline and consultation close that matters to Northern Ireland businesses and councils, from November 2026 to December 2028, on one page: carbon, energy, environment, waste and packaging, chemicals and PFAS, products, trade, customs and CBAM, and the Windsor Framework. 62 dates, each with who it affects, where it applies, how firm it is, what to do and the official source, filterable by topic, sector and status. As at 9 November 2026, from GOV.UK, HMRC, DAERA, NIEA, DfE, the NI Assembly, the Utility Regulator, the FCA, the European Commission and EUR-Lex.
+
+[Open the dashboard →]({{ '/tools/dashboards/ni-regulatory-horizon.html' | relative_url }}) · Related: [Two-Regime Readiness Review, £620]({{ '/cbam-desk/' | relative_url }})
+
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">CBAM Exposure Tracker</h2>
 
 Who in Northern Ireland pays a carbon border charge, from when, and at what price. Where an NI business stands under the EU CBAM and the UK CBAM (which starts on 1 January 2027), the EU CBAM certificate price for each quarter of 2026, NI goods trade with the EU, and the two regimes' rules side by side. Figures as at 22 October 2026, from the European Commission, HMRC, GOV.UK and the UK Parliament.
