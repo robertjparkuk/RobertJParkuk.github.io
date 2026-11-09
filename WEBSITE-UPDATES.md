@@ -25,6 +25,26 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### Focus on Transport & Fleet — 9 November 2026
+
+*Signed off by Robert and published on Monday 9 November, four days early (was due Friday 13 November); re-dated to 9 November throughout (page, PDF file name and footer, post, dashboard).*
+
+**Added**
+- `blog/focus-on-transport-fleet-november-2026/index.html`: the issue as a web page, with three charts, the PDF reader and links to the dashboard and the Scopes Map.
+- `assets/focus-on-transport/2026-11/`: charts (`01-chargers.png` public chargers per 100,000 by nation and region; `02-sectors.png` sector emissions, base year and 2024; `03-journeys.png` Translink bus and rail journeys) and the 5-page PDF `Focus-on-Transport-and-Fleet-9-November-2026.pdf`.
+- `_posts/2026-11-09-focus-on-transport-fleet-november-2026.md`: summary post (18:45, 9 November).
+- `tools/dashboards/ni-transport-fleet.html` (from branch `focus-on-dashboards`, updated), and its entry in `dashboards.md`.
+
+**Changed from the signed-off draft, checked 9 November against official sources**
+- Scopes Map link moved from the github.io address to robertjpark.co.uk.
+- UK ETS shipping: the 50% surrender deduction for GB–NI voyages (either direction) is confirmed by the UK ETS Authority's main response on domestic maritime (GOV.UK, November 2025), which replaces the interim response as the source; port stays count in full (DNV). The same response confirms the first surrender, for 2026 and 2027 emissions, is due by 30 April 2028, so that date (left out of the draft pending this check) is now in the deadlines table.
+- EV chargers: no newer DfT release. The 1 July 2026 statistics (published 27 August) remain the latest; the 1 October release is due on 25 November. NI figures unchanged (60.0 and 19.3 per 100,000).
+- Public transport: DfI published 2025-26 statistics on 16 September 2026. Journeys rose to 84.0m, above 2019-20 (83.4m); rail 15.9m (4.9% above 2019-20), bus 68.1m (0.2% below). Stat tile, intro sentence, section heading ("Rail has recovered, buses nearly"), paragraph, chart and dashboard updated; the draft's "rail use has not recovered" was no longer true.
+- EV attitudes: the 2024/25 survey (DfI/NISRA, 4 December 2025) replaces 2023/24: 19% would consider an EV next (25% in 2023/24, 38% in 2021/22); barriers price 75%, recharging 54%, public chargers 44%, range 43%.
+- Zero emission goods vehicles: the draft said DfI was preparing changes; since 1 August 2026 category B drivers with two years' licence can drive ZEGVs up to 4,250 kg (5,000 kg with specialist equipment for disabled users) (DfI, 30 July 2026).
+- Sources: RAC and Fleet News replaced by GOV.UK (DfT Electric Car Grant statements of 15 July and 3 December 2025; HMRC company car tax policy paper for 2028–30). Figures re-checked with no change: inventory (3.9 Mt, 21.3%, +9.2%), Electric Car Grant (£3,750, £37,000 cap, £1.3bn to 2030), BIK 4/5/7/9%.
+- Dashboard: as-at date 9 November 2026; Translink, EV intent and barriers charts and tiles updated; shipping and ZEGV rows updated; sources moved to GOV.UK/DfI; footer and commentary links re-dated.
+
 ### v0.26.0 — 9 November 2026: thought piece on maritime and subsea-cable security
 
 - `_posts/2026-11-09-ireland-europes-weak-flank.md`: "Ireland is Europe's weak flank, and the cables, cash and freight all land there" (agreed 5 November), signed off by Robert on 9 November and published the same evening (was due 16 November), in the Latest thinking strip until 23 November. Evidence-led; no motive claims. Corrections to the brief: the Yantar entered Ireland's zone in November 2024, not 2025; the EU-funding point is framed as the post-Brexit "project of mutual interest" mechanism, not a snub; Ireland ordered primary radar in September 2026 (full capability end of 2028).
