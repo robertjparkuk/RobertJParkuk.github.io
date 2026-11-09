@@ -27,7 +27,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ### v0.26.0 — 9 November 2026: thought piece on maritime and subsea-cable security
 
-- `_posts/2026-11-16-ireland-europes-weak-flank.md`: "Ireland is Europe's weak flank, and the cables, cash and freight all land there" (agreed 5 November), signed off by Robert on 9 November and published the same evening (was due 16 November), in the Latest thinking strip until 23 November. Evidence-led; no motive claims. Corrections to the brief: the Yantar entered Ireland's zone in November 2024, not 2025; the EU-funding point is framed as the post-Brexit "project of mutual interest" mechanism, not a snub; Ireland ordered primary radar in September 2026 (full capability end of 2028).
+- `_posts/2026-11-09-ireland-europes-weak-flank.md`: "Ireland is Europe's weak flank, and the cables, cash and freight all land there" (agreed 5 November), signed off by Robert on 9 November and published the same evening (was due 16 November), in the Latest thinking strip until 23 November. Evidence-led; no motive claims. Corrections to the brief: the Yantar entered Ireland's zone in November 2024, not 2025; the EU-funding point is framed as the post-Brexit "project of mutual interest" mechanism, not a snub; Ireland ordered primary radar in September 2026 (full capability end of 2028).
 
 ### v0.25.2 — 9 November 2026: Policy series checks on the live pieces
 

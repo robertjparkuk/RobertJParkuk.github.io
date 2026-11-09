@@ -1,6 +1,6 @@
 ---
 title: "Ireland is Europe's weak flank, and the cables, cash and freight all land there"
-date: 2026-11-16 12:00:00 +0000
+date: 2026-11-09 18:30:00 +0000
 tags: [Security, Maritime, Infrastructure, Energy, Data, Public affairs, Northern Ireland, Thought piece]
 description: "Subsea data and power cables, interconnectors and Irish Sea freight all meet around an island where one jurisdiction spends about 0.2% of GDP on defence and the other is in NATO. What the gap means for Northern Ireland, and how to close it."
 hero_eyebrow: "Cables · Power · Freight · Security"
@@ -8,7 +8,7 @@ hero_title: "Ireland is Europe's weak flank, <em>and the cables, cash and freigh
 hero_lead: "Ireland is building radar, sonar and a maritime security centre, but most of it arrives in 2027 and 2028. Northern Ireland shares the seas, the cables and the risk. Here is where the gaps are and how to close them."
 hero_button: "Read the piece"
 hero_button2: ["Read: The price of a separate grid", "/blog/2026/11/the-price-of-a-separate-grid/"]
-hero_until: 2026-11-30T12:00:00Z
+hero_until: 2026-11-23T12:00:00Z
 ---
 
 *The seas around Ireland carry transatlantic data, the island's electricity links and most of Northern Ireland's trade. The island is split between a neutral state with a small defence budget and a corner of a NATO country. That split is a sovereign choice and a political settlement. It is also a seam, and seams are where pressure goes.*
