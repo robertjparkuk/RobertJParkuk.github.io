@@ -25,6 +25,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.25.0 — 9 November 2026: put the priced offer where a buyer can see it
+
+*From the commissioning-client review of 5 November. Approved by Robert on 9 November.*
+
+- `_layouts/default.html`: "CBAM Desk" added to the main navigation after Services; same link in the self-contained navs of the UK CBAM Countdown and the CBAM Exposure Tracker.
+- `index.html`: second hero button is now "UK CBAM Exposure Check, £495" (was "See services"); the tools band shows four tiles (Countdown, Exposure Tracker, Consultations Monitor, Carbon Jigsaw) instead of sixteen; puzzles, guides and classroom material stay on the tools page.
+- Metals issue page, Countdown and Exposure Tracker: closing lines now point to the £495 check rather than "get in touch".
+- `services.md`: ESOS section rewritten for the thresholds (250 staff, £44m/£38m; Phase 4 qualification 31 December 2026, notify by 5 December 2027) and says plainly that smaller firms are out of scope and get a carbon inventory and contract review instead.
+
 ### v0.24.3 — 7 November 2026: links to the Consultations Monitor
 
 - `public-sector.md`: new "NI Consultations Monitor" section above Consultation responses, with a link to the dashboard (shown whether or not any responses are published).
