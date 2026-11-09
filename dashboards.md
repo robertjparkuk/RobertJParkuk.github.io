@@ -43,6 +43,13 @@ Public and rapid EV chargers for every UK nation and region, transport emissions
 
 [Open the dashboard →]({{ '/tools/dashboards/ni-transport-fleet.html' | relative_url }}) · Commentary: [Focus on Transport & Fleet, 9 November 2026]({{ '/blog/focus-on-transport-fleet-november-2026/' | relative_url }})
 
+
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">NI Construction and Building</h2>
+
+Construction output by type of work, housing growth and new dwelling starts, wastewater pressures, building and industry emissions against other sectors, and the rules on imported materials (UK CBAM, EU deforestation rules), contaminated land and wastewater connections. Figures checked on 21 October 2026; CBAM, timber, housing supply and release dates checked on 9 November 2026, from NISRA, DAERA, DoF, DfI, NI Water, HMRC, GOV.UK and the European Commission.
+
+[Open the dashboard →]({{ '/tools/dashboards/ni-construction-building.html' | relative_url }}) · Commentary: [Focus on Construction & Building, 9 November 2026]({{ '/blog/focus-on-construction-building-november-2026/' | relative_url }})
+
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">NI Consultations Monitor</h2>
 
 Every open public consultation at the 11 councils, the nine Stormont departments and UK Government where Northern Ireland is in scope, with closing dates, how often each body publishes a response to what it was told, and how easy each council makes its consultations to find. 402 consultations since April 2025. Checked on 5 November 2026; updated every Friday.

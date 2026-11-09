@@ -25,6 +25,32 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### Focus on Construction & Building — 9 November 2026
+
+*Signed off by Robert and published on 9 November, eleven days early (was due Friday 20 November); dated 9 November throughout (page, PDF file name, header and footer, post, dashboard). Built from the signed-off draft in "Focus on series: five final drafts"; wording kept except where facts had changed.*
+
+**Added**
+- `blog/focus-on-construction-building-november-2026/index.html`: the issue as a web page, with three charts, the PDF reader, the dashboard and Land Repair Helix links. Self-contained, self-hosted fonts, no outside scripts; canonical and Open Graph on robertjpark.co.uk; BlogPosting JSON-LD dated 2026-11-09.
+- `assets/focus-on-construction/2026-11/`: charts (`01-output.png` change in output by type of work, Q1 2026; `02-sectors.png` sector emissions, base year and 2024; `03-deadlines.png` five dates to January 2028) and the 6-page PDF `Focus-on-Construction-and-Building-9-November-2026.pdf`.
+- `_posts/2026-11-09-focus-on-construction-building-november-2026.md`: summary post (18:50, 9 November).
+- `tools/dashboards/ni-construction-building.html` (from branch `focus-on-dashboards`, updated as below), and its entry in `dashboards.md`.
+
+**Changed from the signed-off draft (checked 9 November)**
+- Blocker fixed, UK CBAM: the draft said supplies from the EU were outside the levy and the deadline table said "importers from outside the UK and EU". HMRC's policy summary (updated 2 November 2026) says the charge applies to goods originating outside the UK and "there are currently no jurisdictions exempt"; relief covers only a carbon price actually paid. Text, deadline table, chart and dashboard now say any non-UK origin, EU included (Republic of Ireland cement and steel too). GB-stockholder point added (their import, not yours). Threshold worded as £50,000 "in any 12 months", matching HMRC.
+- UK CBAM default values: one sentence added from Budget 2026 (HC 726, para 6.217): global defaults in 2027 and 2028, country-specific from 2029.
+- EUDR: the draft said most micro and small businesses have until 30 June 2027. For timber that is wrong: the European Commission and GOV.UK say micro and small operators placing products covered by the old EU Timber Regulation must comply from 30 December 2026; 30 June 2027 is for other commodities. Paragraph corrected, 30 June 2027 row removed from the deadline table, 30 December row now says all business sizes; dashboard rules table and CSV corrected.
+- "Two rules arrive within six weeks" became "within eight weeks" (publication moved from 20 November to 9 November).
+- Care note: "Q3 2026 figures are due in December" corrected to 14 January 2027 (GOV.UK release calendar, confirmed).
+- Care notes added: housing supply (new dwelling starts 1,502 in April to June 2026, 746 fewer than a year earlier; completions 1,571; DoF/NISRA, 19 August 2026; July to September due 18 November) and a CBAM/EUDR checked-on and not-advice line, with the Republic of Ireland movement point.
+- Sources: NI Water's own 28 January 2026 release replaces the Water Magazine report; added NISRA Q2 2026 output, GOV.UK release announcement, DoF new dwelling statistics, DfI news release (19 March 2026), HMRC CBAM policy summary, Budget 2026 Red Book, European Commission EUDR page.
+- Land Repair Helix link moved from the github.io address to robertjpark.co.uk (relative link on the page).
+- Checked and unchanged: Q1 2026 output figures (NISRA, 25 June 2026), Q2 2026 (−1.7% on the quarter, +17.5% on pre-pandemic; NISRA, 24 September 2026), NI Water £7bn and 156 of 192 overflows, DfI voluntary developer contributions and 5,300 homes (19 March 2026), DAERA contaminated land status (Part III uncommenced; study "may be completed in 2027").
+
+**Dashboard (`tools/dashboards/ni-construction-building.html`)**
+- Rules table and CSV: UK CBAM now any non-UK origin, EU included, with the 31 January 2028 registration date; EUDR micro and small timber businesses from 30 December 2026.
+- Context table: new dwelling starts and completions, April to June 2026, added.
+- Sources: HMRC policy summary, European Commission EUDR page, DoF/NISRA new dwelling statistics and the Q3 release date added; NI Water primary source replaces Water Magazine. Checked-on note and footer now say updated 9 November 2026; commentary links say 9 November 2026. No github.io links.
+
 ### Focus on Transport & Fleet — 9 November 2026
 
 *Signed off by Robert and published on Monday 9 November, four days early (was due Friday 13 November); re-dated to 9 November throughout (page, PDF file name and footer, post, dashboard).*
