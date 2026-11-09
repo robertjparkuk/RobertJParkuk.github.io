@@ -25,6 +25,21 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.27.1 — 9 November 2026: ESG Regime Tracker UK CBAM card corrected
+
+- **Removed** the card "UK CBAM: NI outward-processing carve-out". It merged two separate rules into one exemption ("goods that leave NI for processing in the EU and return within three years in the same state are exempt"). It also wrongly said no equivalent applies elsewhere in the UK, and it cited a non-official source (an accountancy blog).
+- **Added** three Northern Ireland cards, each dated "As at 9 November 2026" and citing official sources only:
+  - **UK CBAM in NI: returned goods relief for Union goods.** Goods that leave NI for the EU as Union goods and come back unaltered within three years carry no UK CBAM (Finance Act 2026, s.147(2)(d)). These goods do not count towards the £50,000 threshold. GB gets the same result through ordinary returned goods relief (s.147(2)(b) and (c)).
+  - **UK CBAM in NI: goods processed in the EU and returned.** These goods are not exempt. They are handled like outward processing. CBAM is due if the returning good is a CBAM good, but not on emissions from UK-origin inputs (s.147(3)). A UK carbon price already paid can reduce the liability. Only the value added abroad counts towards the threshold.
+  - **UK CBAM in NI: scope, origin and carbon price relief.** CBAM applies across the whole UK, including NI. Goods of UK origin, including goods made in NI, are out of scope. EU goods entering NI count as imports unless Treasury regulations exclude them (s.144(5)(a)), and some goods moving from NI to GB have a separate import point (s.144(6)). Carbon price relief is available for a qualifying carbon price paid elsewhere. HMRC says no jurisdiction is currently exempt.
+- The tracker now lists 33 regimes, up from 31. The filters, the count and search are unaffected because cards have no ids and the count is worked out from the data.
+
+Sources:
+- HM Treasury and HMRC, Carbon Border Adjustment Mechanism (CBAM): policy summary, GOV.UK (updated 2 November 2026): https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary
+- HMRC, Imported CBAM goods that may not contribute towards the registration threshold, GOV.UK (updated 25 September 2026): https://www.gov.uk/guidance/imported-carbon-border-adjustment-cbam-goods-that-may-not-contribute-towards-the-registration-threshold
+- Finance Act 2026 (c. 11), Part 5, ss.144, 147 and 150: https://www.legislation.gov.uk/ukpga/2026/11/contents
+- The Carbon Border Adjustment Mechanism (Calculation of CBAM Rate and Determination of Carbon Price Relief) Regulations 2026 (SI 2026/809): https://www.legislation.gov.uk/uksi/2026/809
+
 ### v0.27.1 — 9 November 2026: correction to the DfI response page
 
 - `_posts/2026-11-06-response-planning-classes-and-thresholds.md`: ask 17 said EU Connecting Europe money funds links to France and not Great Britain. Corrected to the narrower, accurate point (the €530m works grant went to the Celtic Interconnector; links to GB can qualify as projects of mutual interest, e.g. MaresConnect, listed Dec 2025, but nothing comparable has been funded) and added a dated correction note linking the maritime piece. The submitted PDF is unchanged, as a record of what was sent.
