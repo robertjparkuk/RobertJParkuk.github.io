@@ -479,9 +479,9 @@ page = f'''<!doctype html>
 <p class="k-note">Rechecked when a source moves and at least monthly. Tell me about a date I have missed: <a href="/contact/">contact</a>. More: <a href="/tools/dashboards/ni-consultations-monitor.html">NI Consultations Monitor</a> · <a href="/tools/dashboards/eu-law-windsor-framework.html">EU Law and the Windsor Framework</a> · <a href="/tools/dashboards/cbam-exposure-tracker.html">CBAM Exposure Tracker</a> · <a href="/dashboards/">all dashboards</a>.</p></section>
 <section class="h-cta" id="readiness-review" aria-labelledby="cta-h">
 <h2 id="cta-h">Which of these dates are yours?</h2>
-<p>The <strong>Two-Regime Readiness Review</strong> turns this page into your own plan. For a fixed £620:</p>
+<p>The <strong>Two-Regime Readiness Review</strong> turns this page into your own plan. For a fixed £650:</p>
 <ul><li>a short questionnaire, then a 90-minute call</li><li>your products and trade mapped against the UK and EU carbon border rules (CBAM) by commodity code, and against the other UK and EU rules that reach you in Northern Ireland</li><li>a 6–8 page written review with a 12-month plan: what applies, from when, and roughly what it could cost</li><li>a 30-minute follow-up call, all within ten working days</li></ul>
-<a class="h-btn" href="/cbam-desk/">Book a Two-Regime Readiness Review, £620</a><a href="/contact/">Or ask a question first</a>
+<a class="h-btn" href="/cbam-desk/">Book a Two-Regime Readiness Review, £650</a><a href="/contact/">Or ask a question first</a>
 <small>Price fixed and quoted in writing before work starts; VAT added if it applies. The fee comes off the next service you book within three months.</small>
 </section>
 </div>
