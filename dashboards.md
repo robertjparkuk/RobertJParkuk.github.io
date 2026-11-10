@@ -11,7 +11,7 @@ lead: Northern Ireland environmental, carbon and consultation data on one page e
 
 Every dated rule change, deadline and consultation close that matters to Northern Ireland businesses and councils, from November 2026 to December 2028, on one page: carbon, energy, environment, waste and packaging, chemicals and PFAS, products, trade, customs and CBAM, and the Windsor Framework. 62 dates, each with who it affects, where it applies, how firm it is, what to do and the official source, filterable by topic, sector and status. As at 9 November 2026, from GOV.UK, HMRC, DAERA, NIEA, DfE, the NI Assembly, the Utility Regulator, the FCA, the European Commission and EUR-Lex.
 
-[Open the dashboard →]({{ '/tools/dashboards/ni-regulatory-horizon.html' | relative_url }}) · Related: [Two-Regime Readiness Review, £620]({{ '/cbam-desk/' | relative_url }})
+[Open the dashboard →]({{ '/tools/dashboards/ni-regulatory-horizon.html' | relative_url }}) · Related: [Two-Regime Readiness Review, £650]({{ '/cbam-desk/' | relative_url }})
 
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">CBAM Exposure Tracker</h2>
 
@@ -82,3 +82,9 @@ Wastewater capacity and the homes it holds back, storm overflows, road maintenan
 [Open the dashboard →]({{ '/tools/dashboards/ni-public-realm-water-roads.html' | relative_url }}) · Commentary: [We don't fund the drains. Then we pay for the flood.]({{ '/blog/2026/11/we-dont-fund-the-drains-then-we-pay-for-the-flood/' | relative_url }})
 
 More dashboards follow alongside each monthly *Focus on* briefing.
+
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">The Catholic Church in numbers</h2>
+
+Schools, hospitals and charity centres worldwide, five centuries of science and business milestones, and the carbon footprint of Vatican City State: emissions from 2011 to 2022, where they come from, and its 2030 and 2035 targets. As at 9 November 2026, from the Church's own statistics (Agenzia Fides) and Vatican City State's reports to the UN.
+
+[Open the dashboard →]({{ '/tools/dashboards/catholic-church-science-environment.html' | relative_url }}) · Briefing: [Faith, reason and the common home]({{ '/blog/2026/11/catholic-church-science-business-environment/' | relative_url }})

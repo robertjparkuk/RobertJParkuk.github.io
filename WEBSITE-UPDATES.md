@@ -25,6 +25,24 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.29.0 — 9 November 2026: Catholic Church briefing and dashboard; Twelve dates to Easter
+
+*Approved by Robert in the decisions pane on 10 November 2026.*
+
+**Added**
+- `_posts/2026-11-10-catholic-church-science-business-environment.md`: "Faith, reason and the common home", the Catholic Church's record in science, business and the environment, its global footprint, the Vatican offices that do this work and Vatican City State's own carbon footprint. Scheduled 07:30 on 10 November.
+- `assets/briefings/2026-11-catholic-church-science-business-environment-briefing.pdf`: 9-page briefing with 38 sources, built from `_scripts/briefings/catholic-church/briefing.html` by `python3 _scripts/briefings/catholic-church/build_pdf.py .` (house fonts, logo and colours).
+- `tools/dashboards/catholic-church-science-environment.html`: The Catholic Church in numbers. Education and health counts (Agenzia Fides, 16 Oct 2026), Vatican emissions 2011–2022 with the 2030 and 2035 targets (UNFCCC BTR and NDCs), sources of 2022 emissions, a 16-date timeline and a quiz. Built by `python3 _scripts/dashboards/build_catholic.py .` with the shared `build.py` helpers. `dashboards.md` entry added at the end.
+- `assets/briefings/catholic-church/`: two share images (1200×630 and 1080×1080), made by `_scripts/briefings/catholic-church/cards/make_cards.py` (needs a local server on port 8765).
+- `_posts/2026-11-11-twelve-dates-to-easter.md`: the twelve dates to April 2027 that matter most to NI firms, each with what to do, taken from `data/dashboards/ni-regulatory-horizon/horizon.json` (checked 9 Nov). Ends with the £620 Readiness Review. Latest thinking headline to 25 November. Scheduled 07:30 on 11 November.
+- `assets/briefings/twelve-dates/twelve-dates-to-easter.png`: timeline image, made by `_scripts/briefings/twelve-dates/make_timeline.py`.
+
+**Changed**
+- Two-Regime Readiness Review price £620 → £650 everywhere it appears (home, Services, CBAM Desk, Dashboards, Regulatory Horizon and its build script, Metals briefing page, countdown, CBAM tracker, ESG tracker and the two new posts), per Robert's decision of 10 November. CBAM Desk now says: £650 for bookings made by 28 February 2027 and £910 from 1 March 2027. No PDF carried the price.
+
+**Checked**
+- Dashboard at 390px and 1280px: no horizontal scroll, no console errors, no requests to other hosts. No personal number and no github.io address in any new file or PDF.
+
 ### v0.28.0 — 9 November 2026: NI Regulatory Horizon dashboard
 
 *Approved by Robert on 9 November 2026.*
