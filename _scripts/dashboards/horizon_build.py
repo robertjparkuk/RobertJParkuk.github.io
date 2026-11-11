@@ -34,7 +34,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 src = open(os.path.join(HERE, 'build.py'), encoding='utf-8').read()
 exec(src[:src.index('\nD = {}')])  # house helpers (esc, tile, csv_href) and the shared dashboard CSS
 
-AS_AT = '9 November 2026'
+AS_AT = '11 November 2026'
 TODAY = dt.datetime.strptime(AS_AT, '%d %B %Y').date()
 WINDOW = ('November 2026', 'December 2028')
 SOON_DAYS = 90
@@ -44,6 +44,7 @@ PAGE = os.path.join(ROOT, 'tools', 'dashboards', SLUG + '.html')
 SITE = 'https://robertjpark.co.uk'
 
 CHANGES = [  # newest first: date, what changed
+ ('11 Nov 2026', 'CBAM dates corrected and extended after a review: the first UK CBAM rates move to December 2026 (HMRC publishes them by the start of each quarter); EU certificate sales dated 1 February 2027; the refinery consultation close marked confirmed; the £50,000 forward test described correctly; the split 2028 UK returns added (31 July and 29 September); added the HMRC guidance feedback close (13 November), the EU ETS review target (11 December), the pending Commission CBAM acts and the proposed 2028 EU downstream extension. 68 items.'),
  ('9 Nov 2026', 'Published, approved by Robert on 9 November 2026. 62 dated items from November 2026 to December 2028, drawn first from this site’s dashboards, Focus on issues and Policy series, then checked against the official source for each row on 9 November 2026.'),
 ]
 

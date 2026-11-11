@@ -24,7 +24,7 @@ hero_until: 2026-11-23T12:00:00Z
 
 On 26 October 2026 Reform UK published a 65-point alternative Budget, two days before the Prime Minister's first Budget. Point 7 pledges to stop the Carbon Border Adjustment Mechanism (CBAM), and names "the fertiliser tax" as part of it. The Conservatives made the same promise in April. On 19 October the government confirmed that the UK CBAM starts on 1 January 2027 regardless. The Budget of 28 October 2026 made no fertiliser-specific CBAM change.
 
-The row is loud, but the tax itself is small. HMRC's illustrative 2027 rate for fertiliser is £1.45 per tonne of CO2e. On ammonium nitrate (AN) that comes to about £3.77 a tonne, against a market price of around £480 a tonne in October. What actually sets the bill is gas prices, disrupted shipping through the Strait of Hormuz since February 2026, EU tariffs on Russian supply and the fact that Britain no longer makes its own ammonia.
+The row is loud, but the tax itself is small. HMRC's illustrative 2027 rate for fertiliser is £1.45 per tonne of CO2e. On ammonium nitrate (AN) that comes to about £3.77 a tonne, against a market price of around £480 a tonne in October. What actually sets the bill is gas prices, disrupted shipping through the Strait of Hormuz since February 2026, EU tariffs on Russian supply and the fact that the UK no longer makes its own ammonia.
 
 In Northern Ireland the binding constraint is the nutrient rules, not CBAM. The new Nutrients Action Programme (NAP) and Lough Neagh will shape how much fertiliser NI farms buy and spread far more than any carbon border levy. The CBAM charge is low only while free allowances last, and it will rise as they taper. The political fight is over a cost that has barely started.
 
@@ -127,7 +127,7 @@ Westminster sets the tax, Brussels sets some product rules for NI, and Stormont 
 
 - **Soil data at scale.** The Soil Nutrient Health Scheme reached 92.5% of NI farm businesses by September 2025. It is a condition of the Farm Sustainability Payment from 2026 ([AFBI, 18 Sep 2025](https://www.afbini.gov.uk/news/soil-nutrient-health-scheme-zone-4-uptake)). Merchants asked to check soil tests under the new NAP will have data to work from.
 
-- **What the charge comes to.** Farmers Weekly applied HMRC's £1.45 rate to a default of 2.6 tCO2e per tonne of AN: about £3.77 a tonne, against £480–485 delivered ([19 Oct 2026](https://www.fwi.co.uk/business/markets-and-trends/input-prices/government-presses-on-with-fertiliser-import-tax)). A 100-tonne merchant order would carry about £377 of CBAM in 2027 (author's arithmetic).
+- **What the charge comes to.** HMRC's [draft default values](https://www.gov.uk/government/publications/check-the-default-values-for-the-carbon-border-adjustment-mechanism-cbam/fertilisers-default-values) (16 Oct 2026) give ammonium nitrate (CN 3102 30 90) 2.600 tCO2e per tonne and CAN at up to 28% nitrogen, the 27% product sold here (3102 40 10), 2.120. At the illustrative £1.45 rate that is about £3.77 a tonne of AN and £3.07 a tonne of CAN, against £480–485 delivered ([Farmers Weekly, 19 Oct 2026](https://www.fwi.co.uk/business/markets-and-trends/input-prices/government-presses-on-with-fertiliser-import-tax)). Fertiliser defaults carry no UK mark-up. A 100-tonne merchant order of AN would carry about £377 of CBAM in 2027 (author's arithmetic). The importer pays: usually the merchant or co-op that brings the fertiliser in, not the farm, which sees it in the price. Origin decides, not route: urea made in Egypt and bought through an Irish merchant is non-UK origin either way, and fertiliser made in the EU and delivered into NI counts as an import too (Finance Act 2026, s.144(5)(a)). Each 8-digit code has its own default value, so check the code on the invoice.
 
 ## Recommendations
 
@@ -139,7 +139,7 @@ Westminster sets the tax, Brussels sets some product rules for NI, and Stormont 
 
 4.  **DAERA and DfE: collect data on fertiliser stocks.** Without it, supply risk cannot be judged.
 
-5.  **UK and EU negotiators: secure mutual CBAM exemption as part of ETS linkage.** This removes the risk of a CBAM border in the Irish Sea.
+5.  **UK and EU negotiators: secure mutual CBAM exemption as part of ETS linkage.** This would remove the UK charge on EU-made fertiliser coming into NI from Ireland, and the EU charge on GB-made goods going the other way.
 
 6.  **DAERA and NI Water: set PFAS testing for biosolids before their use grows.**
 

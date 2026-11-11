@@ -15,7 +15,7 @@ Every dated rule change, deadline and consultation close that matters to Norther
 
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">CBAM Exposure Tracker</h2>
 
-Who in Northern Ireland pays a carbon border charge, from when, and at what price. Where an NI business stands under the EU CBAM and the UK CBAM (which starts on 1 January 2027), the EU CBAM certificate price for each quarter of 2026, NI goods trade with the EU, and the two regimes' rules side by side. Figures as at 22 October 2026, from the European Commission, HMRC, GOV.UK and the UK Parliament.
+Who in Northern Ireland pays a carbon border charge, from when, and at what price. Where an NI business stands under the EU CBAM and the UK CBAM (which starts on 1 January 2027), the EU CBAM certificate price for each quarter of 2026 before and after the free-allocation adjustment, NI goods trade with the EU, and the two regimes' rules side by side, including goods arriving in NI from Ireland and the EU. Rules checked on 11 November 2026; trade figures as at 22 October 2026. From the European Commission, HMRC, GOV.UK and legislation.gov.uk.
 
 [Open the dashboard →]({{ '/tools/dashboards/cbam-exposure-tracker.html' | relative_url }}) · Background: [CBAM and CSRD: what NI manufacturers need to know]({{ '/blog/2026/10/cbam-and-csrd-for-ni-manufacturers/' | relative_url }})
 
@@ -39,7 +39,7 @@ Overnight trips by market and occupancy, building emissions, the refrigerant lim
 
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">NI Metals and Manufacturing</h2>
 
-Industry emissions against other sectors, where NI sales go, which goods the UK and EU CBAMs cover, the CBAM and ESOS dates to May 2028, and progress on renewable electricity. Figures checked on 21 October 2026; CBAM rules and dates checked on 5 November 2026, from NISRA, DAERA, DfE, HMRC and GOV.UK.
+Industry emissions against other sectors, where NI sales go, which goods the UK and EU CBAMs cover, the CBAM and ESOS dates to May 2028, and progress on renewable electricity. Figures checked on 21 October 2026; CBAM rules and dates checked on 11 November 2026, from NISRA, DAERA, DfE, HMRC and GOV.UK.
 
 [Open the dashboard →]({{ '/tools/dashboards/ni-metals-manufacturing.html' | relative_url }}) · Commentary: [Focus on Metals & Manufacturing, 5 November 2026]({{ '/blog/focus-on-metals-manufacturing-november-2026/' | relative_url }})
 
@@ -59,13 +59,13 @@ Construction output by type of work, housing growth and new dwelling starts, was
 
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">NI Consultations Monitor</h2>
 
-Every open public consultation at the 11 councils, the nine Stormont departments and UK Government where Northern Ireland is in scope, with closing dates, how often each body publishes a response to what it was told, and how easy each council makes its consultations to find. 402 consultations since April 2025. Checked on 5 November 2026; updated every Friday.
+Every open public consultation at the 11 councils, the nine Stormont departments and UK Government where Northern Ireland is in scope, with closing dates, how often each body publishes a response to what it was told, and how easy each council makes its consultations to find. Consultations since April 2025, now including the UK and EU CBAM and emissions trading items that matter to importers and exporters. Checked on 11 November 2026; updated every Friday.
 
 [Open the dashboard →]({{ '/tools/dashboards/ni-consultations-monitor.html' | relative_url }}) · Related: [Consultation responses]({{ '/public-sector/consultation-responses/' | relative_url }})
 
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">EU Law and the Windsor Framework</h2>
 
-Which EU laws apply in Northern Ireland, every Stormont Brake case and new EU act added since 2024, how NI rules reach businesses in Great Britain, and open European Commission and Irish government consultations. Checked on 25 October 2026.
+Which EU laws apply in Northern Ireland, every Stormont Brake case and new EU act added since 2024, how NI rules reach businesses in Great Britain, and open UK CBAM, European Commission and Irish government consultations. Checked on 11 November 2026.
 
 [Open the dashboard →]({{ '/tools/dashboards/eu-law-windsor-framework.html' | relative_url }})
 

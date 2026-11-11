@@ -4,15 +4,17 @@ title: Services
 permalink: /services/
 lead: Focused support for small and mid-sized Northern Ireland businesses — especially manufacturers — dealing with UK and EU carbon and environmental rules.
 description: CBAM, CSRD, carbon inventories, ESOS, contaminated land and public affairs for Northern Ireland manufacturers working across UK and EU carbon rules.
+rules_checked: 11 November 2026
 ---
 
 ## CBAM and CSRD
 
 <figure class="page-photo"><img src="{{ '/assets/photos/shipping-containers.jpg' | relative_url }}" alt="Stacked shipping containers at a port" loading="lazy"><figcaption>Two carbon regimes, one supply chain.</figcaption></figure>
 
-Northern Ireland manufacturers often trade into both the UK and EU markets, which means navigating two sets of carbon rules at once. I help you work out:
+Northern Ireland manufacturers often trade into both the UK and EU markets, which means navigating two sets of carbon rules at once: the UK CBAM applies across the UK, including Northern Ireland, from 1 January 2027, while goods made in Northern Ireland are outside the EU CBAM. I help you work out:
 
-- whether the EU Carbon Border Adjustment Mechanism (CBAM) and the Corporate Sustainability Reporting Directive (CSRD) affect you, directly or through your customers
+- whether the UK and EU Carbon Border Adjustment Mechanisms (CBAM) and the Corporate Sustainability Reporting Directive (CSRD) affect you, directly or through your customers
+- whether you are the importer at all: goods arriving in Northern Ireland from Ireland or the rest of the EU count as UK CBAM imports under the Finance Act 2026, and bolts, brackets, tanks, drums, cans, kegs and foil are CBAM goods, not just raw steel and aluminium
 - what emissions and supply-chain data you'll need, and where to get it
 - how to prepare without building a reporting burden you don't need
 

@@ -25,6 +25,30 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.30.0 — 11 November 2026: CBAM review corrections (eight-reviewer review, Opus second pass)
+
+*Rebased onto main on 13 November 2026 (after v0.29.1, v0.29.2 and the EU law update). The consultations data, EU law dashboard and "Which EU rules apply" tool were rebuilt from the merged data: 438 consultations; the HMRC MRV feedback request is row C440 (C423 was taken by the weekly refresh); it closes on 13 November, so the EU law dashboard no longer lists it as open. Dashboards carry an "as at" date of 13 November.*
+
+*Requested by Robert on 11 November 2026 ("correct the website fully"). Source: the eight-reviewer sign-off pane (items A1–H4). Awaiting Robert's merge.*
+
+**Changed**
+- `cbam-desk.md`: rewritten as short headed sections. "Two ways this reaches you"; in-scope and not-in-scope lists (incl. bolts, tanks, foil, cans, nitric acid, ammonia, hydrogen; lids and crown corks out); NI position quoted from the Commission CBAM Q&A 7.12–7.14; EU/Irish goods into NI under Finance Act 2026 s.144(5)(a) and s.146(4), flagged for customs advice; Supplier Data Pack now "verification-ready" for GB and non-UK producers, with mark-ups, timing and a secondary-processor boundary; two separate verifier accreditations; carbon price relief mechanics; default-or-actual worked example; fertiliser box (CAN 3102 40 10 £3.07/t, AN 3102 30 90 £3.77/t); UK–EU link clause; first UK return split out; contact lines, reply promise and NDA line. £650/£910 Readiness Review unchanged.
+- New products listed on `cbam-desk.md` (prices for Robert to confirm): NI CBAM status letter £95/£150; Fertiliser and Packaging CBAM Check £295; Default-or-actual check £195; one-product answer £95; first UK CBAM return £750; monthly desk on one month's notice.
+- `tools/dashboards/cbam-exposure-tracker.html` and `tools/uk-cbam-countdown.html`: €82,320 tile restated after the free-allocation adjustment; all five UK illustrative rates; mark-ups; forward/backward £50,000 tests corrected; new rows for EU/Irish goods into NI, NI-to-GB, packaging and fertiliser buyers; downstream extension (proposed); summit holding line; refinery consultation; live UK Q1 2027 rates due by 1 January 2027 (GOV.UK).
+- `tools/dashboards/eu-law-windsor-framework.html` (via `eu_build.py`), `tools/which-eu-rules-apply.html` (via `eu_rules_tool.py`), `tools/incoterms.html`: Brake wording, summit agenda, "UK–EU agreement" category, CBAM row quotes Q7.12, new CBAM path in the rules tool, DDP and CBAM card.
+- `tools/dashboards/ni-consultations-monitor.html` and `tools/dashboards/ni-regulatory-horizon.html` (via their builders): HMRC MRV feedback (C440) added; C199/C154/C378 corrected; past rows closed; EU CBAM and ETS dates and the 2028 UK return dates added to the Horizon.
+- Posts: 16 Oct CBAM post, Focus on Agriculture (November), fertiliser post, Twelve dates to Easter, metals static page and dashboard, food and drink dashboard (EUDR delegated act, CBAM row), farm data checker tip. Held essay (still unpublished): verdict and Recommendation 7 removed, neutral title and hero, NI parties, "excepted" for NI.
+- `working-with.md`, `services.md`, `contact.md`, `index.html`, `_layouts/default.html` (optional "rules last checked" footer line via `rules_checked` front matter), `assets/style.css` (tables stack below 40rem), `tools.md`, `dashboards.md`.
+
+**Added**
+- `cbam-desk/checklist.md` (CBAM data checklist), `cbam-desk/sample-review.md` (fictional sample Readiness Review), `cbam-desk/is-it-a-cbam-good.md` (lookup).
+- Two unpublished drafts for the 20 November UK–EU summit (agreed / no deal): publish one, delete the other.
+
+**Checked**
+- Front matter, Liquid tags and HTML parse on all 39 changed files; no personal number, github.io address or placeholder. Builders for EU law, rules tool, monitor and horizon ran cleanly. Jekyll itself could not be run in the build environment.
+
+**Not done (needs Robert)**
+- Contact form (needs a Formspree or Google account); professional indemnity, trading entity and liability-cap wording; any rename of "CBAM Desk" (trade-mark search first); regenerating the metals PDF and the Easter timeline image; `build.py` is behind the hand-edited food, transport and construction dashboards.
 ### v0.29.2 — 13 November 2026: worksheet address and Policy series counts
 
 - `puzzles/planet-check-worksheet.pdf`: the answers-page footer now reads robertjpark.co.uk (it still carried the old github.io address; the check only scanned PDFs under `assets/`).

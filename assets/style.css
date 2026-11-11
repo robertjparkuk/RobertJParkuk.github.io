@@ -192,3 +192,15 @@ h3 { font-size: 1.2rem; margin: 1.75rem 0 0.5rem; }
 .latest-list li:first-child { border-top: 0; }
 .latest-list h3 em { font-style: normal; color: var(--red); }
 @media (min-width: 900px) { .latest-list { grid-template-columns: repeat(3, 1fr); } .latest-list li { border-bottom: 0; } }
+
+/* Tables in page and post text (e.g. CBAM Desk prices, Who I work with) */
+.prose table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.95rem; }
+.prose th, .prose td { text-align: left; vertical-align: top; padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(0,0,0,0.12); }
+.prose thead th { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.03em; }
+@media (max-width: 40rem) {
+  .prose table, .prose thead, .prose tbody, .prose tr, .prose th, .prose td { display: block; width: 100%; }
+  .prose thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .prose tr { padding: 0.6rem 0; border-bottom: 1px solid rgba(0,0,0,0.15); }
+  .prose td { border-bottom: 0; padding: 0.2rem 0; }
+  .prose td:first-child { font-weight: 600; }
+}

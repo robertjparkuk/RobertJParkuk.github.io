@@ -14,7 +14,7 @@ Between now and Easter, Northern Ireland firms face a UK carbon border levy, a U
 
 ## Before Christmas
 
-**20 November: UK–EU summit, Brussels.** Press reports of draft texts suggest a deal to link the UK and EU emissions trading systems, which would exempt each side's goods from the other's carbon border levy, plus an agri-food (SPS) agreement. None of this is confirmed, and nothing changes for either CBAM until both sides legislate. *Do:* plan on both CBAMs applying as they stand, and read the summit statement for a start date and for how goods moving from GB to NI are treated.
+**20 November: UK–EU summit, Brussels.** A [draft agreement](https://data.consilium.europa.eu/doc/document/CM-4531-2026-INIT/en/pdf) to link the UK and EU emissions trading systems was before the Council's working party on the UK on 10 November, and an agri-food (SPS) agreement is also expected. A link could later exempt each side's goods from the other's carbon border levy. No text has been published, and nothing changes for either CBAM until both sides legislate. *Do:* plan on both CBAMs applying as they stand, and read the summit statement for a start date and for how goods moving from GB to NI are treated.
 
 **9 December: new EU product liability rules apply to products placed on the NI market.** Software, digital files and online sellers come within strict liability for defective products. *Do:* check your product liability insurance and supply contracts cover products sold into NI from this date.
 
@@ -28,7 +28,7 @@ Between now and Easter, Northern Ireland firms face a UK carbon border levy, a U
 
 **1 January: EU F-gas bans on new cooling and heat pump kit in NI.** Many small air-conditioning units, heat pumps and chillers using high-GWP refrigerants can no longer be placed on the NI market, and EU HFC supply halves. Great Britain keeps its own rules. *Do:* specify low-GWP refrigerants for kit bought for NI sites, and budget for dearer servicing gas.
 
-**January: first quarterly UK CBAM rates published.** *Do:* reprice 2027 import budgets and customer quotes using the published rate for your goods.
+**By 1 January: first quarterly UK CBAM rates published.** HMRC says it will publish each quarter's rates [by the beginning of the quarter](https://www.gov.uk/guidance/rates-for-the-carbon-border-adjustment-mechanism-cbam), so the January to March 2027 rates come out on or before 1 January. *Do:* reprice 2027 import budgets and customer quotes using the published rate for your goods.
 
 **20 January: EU Machinery Regulation applies in NI.** *Do:* makers and importers should update technical files, instructions and declarations of conformity for machinery placed on the NI market.
 

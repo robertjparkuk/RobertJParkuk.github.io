@@ -53,6 +53,7 @@
           · <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
           · <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
         </p>
+        {% if page.rules_checked %}<p class="small">Rules last checked against GOV.UK and EUR-Lex on {{ page.rules_checked }}. General information, not legal or tax advice.</p>{% endif %}
         <p class="small">© {{ 'now' | date: '%Y' }} Robert J. Park</p>
       </div>
     </div>
