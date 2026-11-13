@@ -105,8 +105,9 @@ BRAKE = [
  ('2 Feb 2026', ('Decision 1/2026 adds road-going non-road mobile machinery (EU) 2025/14', 'https://assets.publishing.service.gov.uk/media/69a86867487f0b64a680d4df/TS_10.2026_Decision_No_1.2026_Joint_Committee_Withdrawal_Agreement.pdf'), 'Article 13(4) addition'),
  ('18 Sep 2026', ('Draft decision to add the common chemicals data platform (EU) 2025/2455 sent to the Council', 'https://data.consilium.europa.eu/doc/document/ST-13391-2026-ADD-1/en/pdf'), 'Pending'),
  ('22 Oct 2026', ('Assembly scrutiny committee reports on the Union Customs Code recast, its 15th inquiry', 'https://www.niassembly.gov.uk/contentassets/4fb58dfebc9143458ea140296e39de52/nia-205-22-27-windsor-framework-democratic-scrutiny-committee.pdf'), 'Found no significant impact specific to everyday life in NI, so a Brake condition is not met. Brake window closed 5 Nov 2026'),
- ('4 Nov 2026', ('UK explanatory memorandum: UK intends to agree at the 10 Nov Joint Committee to apply the EU Forced Labour Regulation (EU) 2024/3015 in NI', 'https://assets.publishing.service.gov.uk/media/6aec60d7d548048bba0e7db3/2026-11-04_-_EU_EM_Regulation__EU__2024.3015.pdf'), 'Pending. Would apply from 14 Dec 2027, Article 36 excluded'),
+ ('4 Nov 2026', ('UK explanatory memorandum: UK intends to agree at the 10 Nov Joint Committee to apply the EU Forced Labour Regulation (EU) 2024/3015 in NI', 'https://assets.publishing.service.gov.uk/media/6aec60d7d548048bba0e7db3/2026-11-04_-_EU_EM_Regulation__EU__2024.3015.pdf'), 'Adopted 10 Nov 2026 as Joint Committee Decision 4/2026 (see below). Under the memorandum it applies in NI from 14 Dec 2027, Article 36 excluded'),
  ('5 Nov 2026', ('Stormont Brake notified on the Union Customs Code recast (EU) 2026/2108 by 34 MLAs (DUP, UUP, TUV and one independent)', 'https://www.niassembly.gov.uk/assembly-business/office-of-the-speaker/correspondence/letter-from-the-speaker-to-the-secretary-of-state-regarding-notification-under-part-3-of-schedule-6b-of-the-northern-ireland-act-1998-stormont-brake/'), 'Second use. Speaker says the notification conditions are met; Secretary of State to decide whether to apply the Brake'),
+ ('10 Nov 2026', ('Joint Committee adopts Decision 3/2026 (artificial intelligence) and Decision 4/2026 (forced labour), adding new EU acts to the Windsor Framework', 'https://www.gov.uk/government/news/joint-statement-on-the-withdrawal-agreement-joint-committee-10-november-2026'), 'Article 13(4) additions: the Forced Labour Regulation (EU) 2024/3015 and, from the UK\'s 4 Nov memoranda, limited provisions of the AI Act (EU) 2024/1689. A joint declaration treats the EU parcel handling fee like a customs duty, not charged on goods staying in the UK. The chemicals data platform decision was not among those adopted'),
 ]
 
 # 3. GB knock-on effects -----------------------------------------------------------
@@ -139,6 +140,7 @@ CONS = [
  ('14 Dec 2026', ('Data centres: minimum performance standards', HYS + '19293-Data-centres-in-Europe-minimum-performance-standards_en'), 'European Commission', 'No', "Ireland's data-centre load on the shared grid"),
  ('17 Dec 2026', ('National Wastewater and Drainage Plan: proposed approach', 'https://www.water.ie/news/help-shape-future-wastewater-services-ireland'), 'Ireland: Uisce Éireann', 'No', 'Wastewater discharges in catchments and loughs shared with NI'),
  ('13 Jan 2027', ('Plastic packaging with bio-based feedstock', HYS + '19498-Plastic-packaging-containing-biobased-feedstock-EU-rules/public-consultation_en'), 'European Commission', 'Likely', 'Packaging product rules apply in NI'),
+ ('9 Feb 2027', ('Ecodesign requirements on product repairability: call for evidence and consultation', 'https://environment.ec.europa.eu/news/commission-launches-consultation-easier-product-repairs-2026-11-03_en'), 'European Commission', 'Yes', 'Ecodesign for Sustainable Products Regulation applies in NI'),
 ]
 
 # 5. Coming up -------------------------------------------------------------------------
@@ -152,10 +154,12 @@ NEXT = [  # date, jurisdiction, what
  ('18 Feb 2027', 'NI', 'Battery passport, QR code and removability rules'),
  ('31 Mar 2027', 'GB', 'Temporary zero rate of VAT on household electricity ends'),
  ('30 Jun 2027', 'NI', 'EU deforestation rules apply to micro and small firms'),
+ ('14 Dec 2027', 'NI', 'EU Forced Labour Regulation applies (Joint Committee Decision 4/2026)'),
  ('1 Jan 2028', 'NI', 'New CLP label format, advertising and online-sales rules apply'),
 ]
 
 CHANGES = [  # newest first: date, what changed
+ ('13 Nov 2026', 'Reviewed changes: added the 10 November Joint Committee, which adopted decisions adding the EU Forced Labour Regulation and limited AI Act provisions to the Windsor Framework and agreed a declaration on parcel handling fees. Forced labour row updated from pending to adopted; its NI start date, 14 December 2027, added to Coming up. Added the European Commission consultation on ecodesign repairability requirements (closes 9 Feb 2027).'),
  ('13 Nov 2026', 'Weekly check. Removed three European Commission consultations that closed on 10 and 11 November or close today, 13 November (gas transmission capacity network code, animal disease contingency plans, nitrates RENURE for liquid digestates). Removed the passed 10 November Joint Committee meeting from Coming up. "As at" date updated.'),
  ('6 Nov 2026', 'Reviewed changes: Stormont Brake notified on 5 November on the Union Customs Code recast, its second use (Brake table, law row and glossary updated; Secretary of State\'s decision awaited). Added the UK\'s stated intention to agree to apply the EU Forced Labour Regulation in NI, and the 10 November Joint Committee meeting to Coming up. Updated the agri-food and emissions trading rows with the state of the draft agreements before the 20 November summit. Added the CRU consultation on the Gas Networks Ireland Network Development Plan (closes 9 Dec).'),
  ('6 Nov 2026', 'Weekly check. Removed three European Commission consultations that closed on 3 and 4 November or close today, 6 November (EU ETS and Market Stability Reserve review, VAT and the circular economy, methane reporting templates). Removed the passed 5 November Brake deadline from Coming up; its countdown tile now counts down to UK CBAM on 1 January 2027. "As at" date updated.'),
