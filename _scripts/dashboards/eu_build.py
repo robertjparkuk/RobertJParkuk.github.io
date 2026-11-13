@@ -4,7 +4,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 src = open(os.path.join(HERE, 'build.py'), encoding='utf-8').read()
 exec(src[:src.index('\nD = {}')])  # helpers and CSS only
 
-AS_AT = '6 November 2026'
+AS_AT = '13 November 2026'
 NIA = 'https://www.niassembly.gov.uk/assembly-business/brexit-and-beyond/eu-law-scrutiny-tracker/'
 
 def cell(c):
@@ -131,9 +131,6 @@ GB = [
 # 4. Open consultations --------------------------------------------------------------
 HYS = 'https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/'
 CONS = [
- ('10 Nov 2026', ('Gas transmission capacity network code', HYS + '15032_en'), 'European Commission', 'No', 'Gas flows into and across the island'),
- ('11 Nov 2026', ('Animal disease contingency plans', HYS + '13638_en'), 'European Commission', 'Yes', 'EU Animal Health Law applies in NI'),
- ('13 Nov 2026', ('Nitrates: RENURE for liquid digestates', HYS + '19475-Nitrates-extending-the-rules-on-recovered-nitrogen-from-manure_en'), 'European Commission', 'No', 'Manure, digestate, Lough Neagh and the NI biomethane strategy'),
  ('16 Nov 2026', ('Battery passport access rights', HYS + '16473_en'), 'European Commission', 'Yes', 'Batteries Regulation applies in NI'),
  ('19 Nov 2026', ('Electricity network tariff structure review, phase 1', 'https://consult.cru.ie/en/consultation/electricity-network-tariff-structure-review-phase-1-consultation-objectives-principles-scope-and'), 'Ireland: CRU', 'No', 'Feeds the all-island electricity market'),
  ('20 Nov 2026', ('EirGrid draft Transmission Development Plan 2026–2035', 'https://consult.cru.ie/en/consultation/draft-transmission-development-plan-2026-2035'), 'Ireland: CRU', 'No', 'Grid on the Irish side of the all-island system'),
@@ -146,7 +143,6 @@ CONS = [
 
 # 5. Coming up -------------------------------------------------------------------------
 NEXT = [  # date, jurisdiction, what
- ('10 Nov 2026', 'UK–EU', '16th meeting of the Withdrawal Agreement Joint Committee: decisions to be adopted'),
  ('20 Nov 2026', 'UK–EU', 'Summit: agri-food (SPS) agreement and emissions trading link expected on the table'),
  ('21 Nov 2026', 'NI', 'Plastic waste exports to non-OECD countries banned (Waste Shipments Regulation)'),
  ('9 Dec 2026', 'NI', 'Product Liability Directive transposition date'),
@@ -160,6 +156,7 @@ NEXT = [  # date, jurisdiction, what
 ]
 
 CHANGES = [  # newest first: date, what changed
+ ('13 Nov 2026', 'Weekly check. Removed three European Commission consultations that closed on 10 and 11 November or close today, 13 November (gas transmission capacity network code, animal disease contingency plans, nitrates RENURE for liquid digestates). Removed the passed 10 November Joint Committee meeting from Coming up. "As at" date updated.'),
  ('6 Nov 2026', 'Reviewed changes: Stormont Brake notified on 5 November on the Union Customs Code recast, its second use (Brake table, law row and glossary updated; Secretary of State\'s decision awaited). Added the UK\'s stated intention to agree to apply the EU Forced Labour Regulation in NI, and the 10 November Joint Committee meeting to Coming up. Updated the agri-food and emissions trading rows with the state of the draft agreements before the 20 November summit. Added the CRU consultation on the Gas Networks Ireland Network Development Plan (closes 9 Dec).'),
  ('6 Nov 2026', 'Weekly check. Removed three European Commission consultations that closed on 3 and 4 November or close today, 6 November (EU ETS and Market Stability Reserve review, VAT and the circular economy, methane reporting templates). Removed the passed 5 November Brake deadline from Coming up; its countdown tile now counts down to UK CBAM on 1 January 2027. "As at" date updated.'),
  ('30 Oct 2026', 'Reviewed changes: Union Customs Code recast rows now give the scrutiny committee\'s finding (no significant impact on everyday life in NI) and link to its report. Added two consultations: the European Commission call for evidence on a new EU hydrogen strategy (closes 23 Nov) and Uisce Éireann\'s National Wastewater and Drainage Plan (closes 17 Dec).'),
@@ -229,7 +226,7 @@ def page_eu(tiles, cards):
 <section class="k-card" id="glossary"><dl class="k-glos">{''.join(f'<dt>{esc(a)}</dt><dd>{esc(b)}</dd>' for a, b in GLOSSARY)}</dl><p class="k-src">Sources: <a href="https://www.niassembly.gov.uk/assembly-business/committees/2022-2027/windsor-framework-democratic-scrutiny-committee/useful-resources/the-stormont-brake/" rel="noopener">The Stormont Brake (NI Assembly)</a>; <a href="https://www.economy-ni.gov.uk/articles/uk-internal-market-scheme" rel="noopener">UK Internal Market Scheme (Department for the Economy)</a>; <a href="https://www.gov.uk/government/publications/retail-movement-scheme-how-the-scheme-will-work/retail-movement-scheme-how-the-scheme-will-work" rel="noopener">Retail Movement Scheme (GOV.UK)</a>.</p></section>
 <section class="k-cta"><p><strong>Caught between the two rulebooks?</strong></p><p>I help Northern Ireland businesses work out which rules apply to what they make and where it goes, respond to consultations, and build a compliance register from pages like this one. <a href="/contact/">Get in touch</a> or see <a href="/services/">what I do</a>.</p></section>
 <h2 class="k-h2">About this page</h2>
-<section class="k-card"><p class="k-note">A dated snapshot, checked on 6 November 2026 against the NI Assembly's EU law scrutiny tracker and Brexit and Beyond newsletters, GOV.UK, DAERA, the Council of the EU, the European Commission and gov.ie. "Not in the annexes" rows are my reading of the Windsor Framework annexes, not legal advice. Every link is to an official source except where a row says "as reported by"; the NI Assembly's Brexit and Beyond newsletter is used where a GOV.UK page could not be opened. Commission close dates are usually midnight Brussels time; check the consultation page before you rely on one. Nothing on this page is fetched or sent, and every table can be downloaded as CSV.</p></section>
+<section class="k-card"><p class="k-note">A dated snapshot, checked on 13 November 2026 against the NI Assembly's EU law scrutiny tracker and Brexit and Beyond newsletters, GOV.UK, DAERA, the Council of the EU, the European Commission and gov.ie. "Not in the annexes" rows are my reading of the Windsor Framework annexes, not legal advice. Every link is to an official source except where a row says "as reported by"; the NI Assembly's Brexit and Beyond newsletter is used where a GOV.UK page could not be opened. Commission close dates are usually midnight Brussels time; check the consultation page before you rely on one. Nothing on this page is fetched or sent, and every table can be downloaded as CSV.</p></section>
 <p class="k-foot">More dashboards: <a href="/dashboards/">all dashboards</a>. Related: <a href="/tools/which-eu-rules-apply.html">Which EU rules apply to me?</a> · <a href="/tools/dashboards/cbam-exposure-tracker.html">CBAM Exposure Tracker</a>.</p>
 </div>
 </main>
@@ -261,7 +258,7 @@ cards = [
  lcard('Often assumed, but not applying in NI', 'These are not in the Windsor Framework annexes, though NI firms can still be caught through EU customers.', ltable(c2, NOT_NI, tag_col=1), c2, NOT_NI, 'eu-law-not-applying-in-ni', 'Sources: House of Commons Library; NI Human Rights Commission; Windsor Framework annexes.'),
  lcard('Stormont Brake and new EU acts', 'Every Brake case, every Joint Committee decision adding a new EU act under Article 13(4), and the main oversight events, oldest first.', ltable(c3, BRAKE), c3, BRAKE, 'stormont-brake-and-new-acts', 'Sources: NI Assembly; GOV.UK; Council of the EU.'),
  lcard('How NI rules reach Great Britain', 'Three kinds of effect: GB firms must meet EU rules to sell into NI; GB rules are moved towards the EU to keep goods flowing; or GB and NI run two regimes and firms carry both.', ltable(c4, GB, tag_col=1), c4, GB, 'gb-effects-of-windsor-framework', 'Sources: NI Assembly Brexit and Beyond; GOV.UK; HSE; Welsh Government; Council of the EU; NI Business Info.'),
- lcard('Open consultations: European Commission and Ireland', 'Open on 6 November 2026, soonest first. "Yes" means the EU law in question applies in NI, so NI businesses have a direct stake.', ltable(c5, CONS, tag_col=3), c5, CONS, 'open-consultations-eu-ireland', 'Sources: European Commission Have your say; gov.ie; CRU; Uisce Éireann. The NI Assembly scrutiny committee had no open calls for evidence.'),
+ lcard('Open consultations: European Commission and Ireland', 'Open on 13 November 2026, soonest first. "Yes" means the EU law in question applies in NI, so NI businesses have a direct stake.', ltable(c5, CONS, tag_col=3), c5, CONS, 'open-consultations-eu-ireland', 'Sources: European Commission Have your say; gov.ie; CRU; Uisce Éireann. The NI Assembly scrutiny committee had no open calls for evidence.'),
 ]
 out = page_eu(tiles, cards)
 open(os.path.join(ROOT, 'tools/dashboards/eu-law-windsor-framework.html'), 'w', encoding='utf-8').write(out)
