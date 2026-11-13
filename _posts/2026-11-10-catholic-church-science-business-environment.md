@@ -73,6 +73,6 @@ No official figure exists for the Church's land holdings or global carbon footpr
 
 The world's smallest state measures its emissions, sets a base year and publishes dated targets. Most Northern Ireland manufacturers are bigger emitters than the Vatican and publish nothing. Their EU customers will increasingly ask for these numbers under CBAM and CSRD. The Vatican's biggest source turned out to be its vehicles, not its buildings, which is a reminder to measure before you assume. For farms and food processors with land and large power bills, agrivoltaics is worth a serious look.
 
-If your customers are asking for carbon numbers, the £650 [Two-Regime Readiness Review]({{ '/cbam-desk/' | relative_url }}) tells you in ten working days what applies to you under the UK and EU rules and what to do first.
+If your customers are asking for carbon numbers, the £1,685 [Two-Regime Readiness Review]({{ '/cbam-desk/' | relative_url }}) tells you in ten working days what applies to you under the UK and EU rules and what to do first.
 
 *Figures checked against the sources in the briefing as at 9 November 2026. This post is general information, not legal, financial or investment advice. Full sources are in the [PDF]({{ '/assets/briefings/2026-11-catholic-church-science-business-environment-briefing.pdf' | relative_url }}).*

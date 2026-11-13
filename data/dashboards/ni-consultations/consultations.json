@@ -811,7 +811,7 @@
   "relevance_note": "Domestic heating market policy.",
   "ni_extent": "Not stated on the page",
   "devolution_note": "Energy and heat are transferred in NI. If the scheme does not extend to NI, an NI equivalent would need DfE or Assembly action.",
-  "notes": ""
+  "notes": "Closed 8 November 2026."
  },
  {
   "id": "C038",
@@ -3349,8 +3349,8 @@
   "body": "HM Revenue & Customs",
   "body_short": "HMRC",
   "title": "Draft regulations: Carbon Border Adjustment Mechanism (CBAM) (Emissions and Verification)",
-  "status": "closed_awaiting_response",
-  "status_label": "Closed – awaiting response",
+  "status": "closed_unknown_response",
+  "status_label": "Closed – no response found",
   "opened": "2026-04-09",
   "closes": "2026-05-21",
   "response_published": "",
@@ -3358,12 +3358,12 @@
   "verified": "yes",
   "url": "https://www.gov.uk/government/consultations/draft-regulations-carbon-border-adjustment-mechanism-cbam-emissions-and-verification",
   "response_url": "",
-  "summary": "Technical consultation on draft CBAM regulations covering embodied emissions and the monitoring and verification of emissions data.",
+  "summary": "Technical consultation on draft CBAM regulations covering embodied emissions and the monitoring and verification of emissions data. No response document has been published, but the regulations have been made as SI 2026/995 (8 September 2026), in force from 1 January 2027.",
   "topics": "CBAM; tax; climate; trade",
-  "relevance_note": "Carbon pricing technical rules.",
+  "relevance_note": "CBAM Desk relevance: high. Carbon pricing technical rules.",
   "ni_extent": "UK-wide including Northern Ireland: HMRC CBAM policy summary (published 10 Feb 2026, updated 16 Oct 2026) states CBAM applies 'across the whole of the UK, including Northern Ireland'. Consultation page itself silent; EU CBAM/Windsor Framework interaction not addressed by HMRC beyond NI–EU outward processing and returned-goods rules.",
   "devolution_note": "UK tax — excepted (NI Act 1998 Sch 2); no LCM. NI in scope of UK CBAM per HMRC policy summary (https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary); potential overlap with EU CBAM for goods entering NI under the Windsor Framework is not resolved on GOV.UK.",
-  "notes": ""
+  "notes": "No response document published: the GOV.UK page (last updated 30 September 2026) still says HMRC is analysing feedback. The regulations have since been made as SI 2026/995 (Emissions and Verification), made 8 September 2026, in force from 1 January 2027. Regulations: https://www.legislation.gov.uk/uksi/2026/995/made Checked 11 November 2026."
  },
  {
   "id": "C155",
@@ -4339,8 +4339,8 @@
   "body": "HM Revenue & Customs",
   "body_short": "HMRC",
   "title": "Draft regulations: Carbon Border Adjustment Mechanism (CBAM)",
-  "status": "closed_awaiting_response",
-  "status_label": "Closed – awaiting response",
+  "status": "closed_unknown_response",
+  "status_label": "Closed – no response found",
   "opened": "2026-02-10",
   "closes": "2026-03-24",
   "response_published": "",
@@ -4348,12 +4348,12 @@
   "verified": "yes",
   "url": "https://www.gov.uk/government/consultations/draft-regulations-carbon-border-adjustment-mechanism-cbam",
   "response_url": "",
-  "summary": "Technical consultation on draft CBAM secondary legislation covering registration, returns, reimbursement, goods weight and record keeping, ahead of the start on 1 January 2027.",
+  "summary": "Technical consultation on draft CBAM secondary legislation covering registration, returns, reimbursement, goods weight and record keeping, ahead of the start on 1 January 2027. No response document has been published, but the regulations have been made: SI 2026/802, SI 2026/809 and SI 2026/830, in force from 1 January 2027.",
   "topics": "CBAM; tax; climate; trade",
-  "relevance_note": "Carbon pricing on imports. No public space link.",
+  "relevance_note": "CBAM Desk relevance: high. Carbon pricing on imports. No public space link.",
   "ni_extent": "UK-wide including Northern Ireland: HMRC CBAM policy summary (published 10 Feb 2026, updated 16 Oct 2026) states CBAM applies 'across the whole of the UK, including Northern Ireland'. Consultation page itself silent; EU CBAM/Windsor Framework interaction not addressed by HMRC beyond NI–EU outward processing and returned-goods rules.",
   "devolution_note": "UK tax — excepted (NI Act 1998 Sch 2); no LCM. NI in scope of UK CBAM per HMRC policy summary (https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary); potential overlap with EU CBAM for goods entering NI under the Windsor Framework is not resolved on GOV.UK.",
-  "notes": ""
+  "notes": "No response document published: the GOV.UK page (last updated 30 September 2026) still says HMRC is analysing feedback. The regulations have since been made as SI 2026/802 (Administrative Provisions), SI 2026/809 (Calculation of CBAM Rate and Determination of Carbon Price Relief) and SI 2026/830 (Transitory Provision), in force from 1 January 2027. The Commons debated SI 2026/809 on 12 October 2026. Regulations: https://www.legislation.gov.uk/uksi/2026/802/made ; https://www.legislation.gov.uk/uksi/2026/809/made ; https://www.legislation.gov.uk/uksi/2026/830/made Checked 11 November 2026."
  },
  {
   "id": "C200",
@@ -8280,18 +8280,18 @@
   "status": "closed_unknown_response",
   "status_label": "Closed – no response found",
   "opened": "2026-09-08",
-  "closes": "",
+  "closes": "2026-10-02",
   "response_published": "",
   "relevance": "low",
-  "verified": "no",
+  "verified": "yes",
   "url": "https://www.daera-ni.gov.uk/consultations/uk-ets-free-allocation-rules-hydrogen-production",
   "response_url": "",
-  "summary": "UK-wide consultation on UK ETS free allocation rules for hydrogen production.",
-  "topics": "climate",
-  "relevance_note": "Emissions trading; not public realm.",
+  "summary": "UK-wide consultation on UK ETS free allocation rules for hydrogen production. Open 8 September to 2 October 2026; no response yet.",
+  "topics": "climate; UK ETS; CBAM; hydrogen",
+  "relevance_note": "CBAM Desk relevance: medium. Emissions trading; not public realm. Splits hydrogen sub-installations so the UK ETS free-allocation cut tied to UK CBAM falls only on CBAM goods.",
   "ni_extent": "",
   "devolution_note": "",
-  "notes": ""
+  "notes": "Open 8 September to 2 October 2026 (DAERA page, checked 11 November 2026). No response yet."
  },
  {
   "id": "C379",
@@ -8797,7 +8797,7 @@
   "relevance_note": "Not a public realm matter; relevant to NI generators and electricity costs.",
   "ni_extent": "UK-wide, including the NI Renewables Obligation.",
   "devolution_note": "Energy is transferred in NI; the NIRO is made by DfE but administered with the GB schemes.",
-  "notes": "Published 3 Nov 2026; closing date not read. Link is to the DESNZ organisation page."
+  "notes": "Published 3 Nov 2026; closing date not read. Link is to the DESNZ organisation page. Closes 11:59pm on 12 January 2027."
  },
  {
   "id": "C402",
@@ -8948,7 +8948,7 @@
   "response_url": "",
   "summary": "Asks whether refinery products should be added to the UK CBAM from its planned start, and what the effects would be.",
   "topics": "carbon; CBAM; trade; tax; industry; fuels",
-  "relevance_note": "A tax and trade measure rather than public realm, but directly relevant to CBAM advice for NI importers.",
+  "relevance_note": "CBAM Desk relevance: high. A tax and trade measure rather than public realm, but directly relevant to CBAM advice for NI importers.",
   "ni_extent": "Not stated on the page; UK tax",
   "devolution_note": "Reserved. How UK CBAM applies to goods entering NI under the Windsor Framework is not addressed on the page.",
   "notes": "Added 6 Nov 2026. Published date on GOV.UK used as the opening date."
@@ -9612,5 +9612,27 @@
   "ni_extent": "",
   "devolution_note": "",
   "notes": "Added 13 Nov 2026."
+ },
+ {
+  "id": "C440",
+  "level": "UK Government",
+  "body": "HM Revenue & Customs",
+  "body_short": "HMRC",
+  "title": "Carbon Border Adjustment Mechanism (CBAM): technical guidance for monitoring, verifying and reporting emissions (technical feedback)",
+  "status": "open",
+  "status_label": "Open",
+  "opened": "2026-10-16",
+  "closes": "2026-11-13",
+  "response_published": "",
+  "relevance": "low",
+  "verified": "yes",
+  "url": "https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-technical-guidance-for-monitoring-verifying-and-reporting-emissions",
+  "response_url": "",
+  "summary": "HMRC invites technical feedback on its 313-page guidance on how overseas installations monitor and report emissions, and how verifiers check them, for UK CBAM returns. Send feedback on or before 13 November 2026 to cbampolicyteam@hmrc.gov.uk with 'MRV technical guidance feedback' in the subject line. HMRC says it may update the guidance before 1 January 2027.",
+  "topics": "CBAM; tax; climate; trade; verification",
+  "relevance_note": "CBAM Desk relevance: high. Sets the data overseas suppliers must give UK importers and how it is verified. Not a public realm matter.",
+  "ni_extent": "UK-wide including Northern Ireland (HMRC CBAM policy summary).",
+  "devolution_note": "UK tax: excepted (NI Act 1998 Sch 2).",
+  "notes": "A request for technical feedback on published guidance rather than a formal consultation. Page published 16 October 2026, updated 10 November 2026; checked 11 November 2026."
  }
 ]

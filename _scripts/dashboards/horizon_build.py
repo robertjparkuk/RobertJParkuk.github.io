@@ -34,7 +34,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 src = open(os.path.join(HERE, 'build.py'), encoding='utf-8').read()
 exec(src[:src.index('\nD = {}')])  # house helpers (esc, tile, csv_href) and the shared dashboard CSS
 
-AS_AT = '9 November 2026'
+AS_AT = '11 November 2026'
 TODAY = dt.datetime.strptime(AS_AT, '%d %B %Y').date()
 WINDOW = ('November 2026', 'December 2028')
 SOON_DAYS = 90
@@ -44,6 +44,7 @@ PAGE = os.path.join(ROOT, 'tools', 'dashboards', SLUG + '.html')
 SITE = 'https://robertjpark.co.uk'
 
 CHANGES = [  # newest first: date, what changed
+ ('11 Nov 2026', 'CBAM dates corrected and extended after a review: the first UK CBAM rates move to December 2026 (HMRC publishes them by the start of each quarter); EU certificate sales dated 1 February 2027; the refinery consultation close marked confirmed; the £50,000 forward test described correctly; the split 2028 UK returns added (31 July and 29 September); added the HMRC guidance feedback close (13 November), the EU ETS review target (11 December), the pending Commission CBAM acts and the proposed 2028 EU downstream extension. 68 items.'),
  ('9 Nov 2026', 'Published, approved by Robert on 9 November 2026. 62 dated items from November 2026 to December 2028, drawn first from this site’s dashboards, Focus on issues and Policy series, then checked against the official source for each row on 9 November 2026.'),
 ]
 
@@ -479,9 +480,9 @@ page = f'''<!doctype html>
 <p class="k-note">Rechecked when a source moves and at least monthly. Tell me about a date I have missed: <a href="/contact/">contact</a>. More: <a href="/tools/dashboards/ni-consultations-monitor.html">NI Consultations Monitor</a> · <a href="/tools/dashboards/eu-law-windsor-framework.html">EU Law and the Windsor Framework</a> · <a href="/tools/dashboards/cbam-exposure-tracker.html">CBAM Exposure Tracker</a> · <a href="/dashboards/">all dashboards</a>.</p></section>
 <section class="h-cta" id="readiness-review" aria-labelledby="cta-h">
 <h2 id="cta-h">Which of these dates are yours?</h2>
-<p>The <strong>Two-Regime Readiness Review</strong> turns this page into your own plan. For a fixed £650:</p>
+<p>The <strong>Two-Regime Readiness Review</strong> turns this page into your own plan. For a fixed £1,685:</p>
 <ul><li>a short questionnaire, then a 90-minute call</li><li>your products and trade mapped against the UK and EU carbon border rules (CBAM) by commodity code, and against the other UK and EU rules that reach you in Northern Ireland</li><li>a 6–8 page written review with a 12-month plan: what applies, from when, and roughly what it could cost</li><li>a 30-minute follow-up call, all within ten working days</li></ul>
-<a class="h-btn" href="/cbam-desk/">Book a Two-Regime Readiness Review, £650</a><a href="/contact/">Or ask a question first</a>
+<a class="h-btn" href="/cbam-desk/">Book a Two-Regime Readiness Review, £1,685</a><a href="/contact/">Or ask a question first</a>
 <small>Price fixed and quoted in writing before work starts; VAT added if it applies. The fee comes off the next service you book within three months.</small>
 </section>
 </div>

@@ -62,7 +62,7 @@
   "source_url": "https://www.gov.uk/government/news/prime-minister-to-attend-uk-eu-summit-in-brussels-on-20-november",
   "related": "/tools/dashboards/cbam-exposure-tracker.html",
   "related_title": "CBAM Exposure Tracker",
-  "note": "The summit date is confirmed by GOV.UK. The ETS link and SPS outcomes are reported from draft texts (Euronews, 6 November 2026), not confirmed."
+  "note": "The summit date is confirmed by GOV.UK. The ETS link and SPS outcomes are reported from draft texts (Euronews, 6 November 2026), not confirmed. On 10 November 2026 the Council’s Working Party on the United Kingdom discussed a draft agreement linking the two emissions trading systems (Council document CM 4531/26). Any CBAM exemption then needs UK regulations approved by both Houses (Finance Act 2026 s.156) and an EU delegated act adding the UK to Annex III of Regulation (EU) 2023/956."
  },
  {
   "id": "H004",
@@ -194,7 +194,7 @@
   "id": "H010",
   "date": "2027-01-01",
   "title": "UK CBAM starts",
-  "detail": "The UK carbon border levy applies across the UK, NI included, to imported aluminium, cement, fertiliser, hydrogen, iron and steel of any non-UK origin, EU included: HMRC says no jurisdiction is currently exempt. Liability starts once covered imports pass £50,000 in any 12 months. Charged on direct emissions, using global default values in 2027 and 2028 where supplier data is missing.",
+  "detail": "The UK carbon border levy applies across the UK, NI included, to imported aluminium, cement, fertiliser, hydrogen, iron and steel of any non-UK origin, EU included: HMRC says no jurisdiction is currently exempt. Liability starts once covered imports pass £50,000: looking back over the last 12 months (tested on the first of each month) or forward over the next 30 days (tested on any day). Union goods entering NI from Ireland or the EU count as imports under Finance Act 2026 s.144(5)(a); HMRC guidance does not yet cover this case. Charged on direct emissions, using global default values in 2027 and 2028 where supplier data is missing.",
   "topic": "Trade, customs and CBAM",
   "sectors": [
    "Importers",
@@ -205,7 +205,7 @@
   "jurisdiction": "UK",
   "status": "confirmed",
   "kind": "Rule change",
-  "action": "From 1 January keep a record for every covered import: commodity code, origin, mass, value and the supplier's emissions data, and track the £50,000 test monthly.",
+  "action": "From 1 January keep a record for every covered import: commodity code, origin, mass, value and the supplier’s emissions data. Run the backward test on the first of each month, and check before any large delivery whether the next 30 days will take you past £50,000.",
   "source_title": "Carbon Border Adjustment Mechanism: policy summary (HMRC, updated 2 November 2026)",
   "source_url": "https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary",
   "related": "/tools/dashboards/cbam-exposure-tracker.html",
@@ -214,9 +214,9 @@
  },
  {
   "id": "H011",
-  "date": "2027-01",
-  "title": "First quarterly UK CBAM rates published",
-  "detail": "The government calculates and publishes UK CBAM rates at the beginning of each quarter from 1 January 2027, so the next ones follow in April, July and October 2027.",
+  "date": "2026-12",
+  "title": "First UK CBAM rates (for January to March 2027) published",
+  "detail": "HMRC publishes UK CBAM rates by the beginning of each quarter from 1 January 2027, so the January to March 2027 rates appear by 1 January and later ones by 1 April, 1 July and 1 October 2027. They replace the illustrative rates published on 16 October 2026 (iron and steel £9.69, aluminium £9.79, cement £8.78, fertiliser £1.45, hydrogen £9.24 per tCO2e).",
   "topic": "Trade, customs and CBAM",
   "sectors": [
    "Importers",
@@ -227,8 +227,8 @@
   "status": "confirmed",
   "kind": "Milestone",
   "action": "Reprice 2027 import budgets and customer quotes using the published rate for your goods.",
-  "source_title": "Carbon Border Adjustment Mechanism: policy summary (HMRC, updated 2 November 2026)",
-  "source_url": "https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary",
+  "source_title": "Rates for the Carbon Border Adjustment Mechanism (HMRC, updated 20 October 2026)",
+  "source_url": "https://www.gov.uk/guidance/rates-for-the-carbon-border-adjustment-mechanism-cbam",
   "related": "/tools/dashboards/cbam-exposure-tracker.html",
   "related_title": "CBAM Exposure Tracker",
   "note": ""
@@ -370,14 +370,14 @@
    "Transport and shipping"
   ],
   "jurisdiction": "UK",
-  "status": "proposed",
+  "status": "confirmed",
   "kind": "Consultation close",
   "action": "If you import fuels or other refinery products from outside the UK, respond with your volumes and costs by 20 January.",
   "source_title": "CBAM: a consultation on sectoral scope expansion to include refinery products (HM Treasury and HMRC, 28 October 2026)",
   "source_url": "https://www.gov.uk/government/consultations/carbon-border-adjustment-mechanism-cbam-a-consultation-on-sectoral-scope-expansion-to-include-refinery-products",
   "related": "/tools/dashboards/ni-consultations-monitor.html",
   "related_title": "NI Consultations Monitor",
-  "note": ""
+  "note": "The closing date is fixed; the scope expansion itself is only proposed, with no start date."
  },
  {
   "id": "H019",
@@ -402,7 +402,7 @@
  },
  {
   "id": "H020",
-  "date": "2027-02",
+  "date": "2027-02-01",
   "title": "EU CBAM certificates go on sale",
   "detail": "EU importers buy CBAM certificates on the common central platform from February 2027, starting with certificates for goods imported in 2026.",
   "topic": "Trade, customs and CBAM",
@@ -418,7 +418,7 @@
   "source_url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism/price-cbam-certificates_en",
   "related": "/tools/dashboards/cbam-exposure-tracker.html",
   "related_title": "CBAM Exposure Tracker",
-  "note": "The Commission and the EPA (Ireland) give February 2027; the site's other dashboards use 1 February. The EU CBAM does not apply in NI."
+  "note": "Regulation (EU) 2025/2083 sets the start of sales at 1 February 2027. The Commission act on the platform, fees and repurchase had not been adopted at 11 November 2026. The EU CBAM does not apply in NI: the Commission’s CBAM Q&A (Q7.14) says goods produced or released for free circulation in Northern Ireland are not subject to CBAM."
  },
  {
   "id": "H021",
@@ -1186,7 +1186,7 @@
   "id": "H058",
   "date": "2028-05-31",
   "title": "First UK CBAM return and payment",
-  "detail": "Registered importers file their first UK CBAM return and pay for the 2027 accounting period, five months after it ends.",
+  "detail": "Registered importers file their first UK CBAM return and pay for the 2027 accounting period, five months after it ends. The Transitory Provision Regulations split the next period: returns and payment for January to March 2028 are due by 31 July 2028, and for April to June 2028 by 29 September 2028.",
   "topic": "Trade, customs and CBAM",
   "sectors": [
    "Importers",
@@ -1201,7 +1201,7 @@
   "source_url": "https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary",
   "related": "/tools/dashboards/cbam-exposure-tracker.html",
   "related_title": "CBAM Exposure Tracker",
-  "note": ""
+  "note": "Dates set by SI 2026/830, made 14 July 2026: https://www.legislation.gov.uk/uksi/2026/830/made"
  },
  {
   "id": "H059",
@@ -1285,5 +1285,127 @@
   "related": "/tools/dashboards/eu-law-windsor-framework.html",
   "related_title": "EU Law and the Windsor Framework dashboard",
   "note": "The Assembly says 'in four years'; December 2028 is counted from the December 2024 vote, not a date the Assembly gives."
+ },
+ {
+  "id": "H063",
+  "date": "2026-11-13",
+  "title": "HMRC feedback window on UK CBAM emissions guidance closes",
+  "detail": "HMRC invites technical feedback on its guidance for monitoring, verifying and reporting emissions under the UK CBAM, by email to cbampolicyteam@hmrc.gov.uk with 'MRV technical guidance feedback' in the subject line. HMRC says it may update the guidance before 1 January 2027.",
+  "topic": "Trade, customs and CBAM",
+  "sectors": [
+   "Importers",
+   "Manufacturers"
+  ],
+  "jurisdiction": "UK",
+  "status": "confirmed",
+  "kind": "Consultation close",
+  "action": "If your overseas suppliers will struggle with HMRC’s monitoring or verification rules, say so by 13 November.",
+  "source_title": "CBAM: technical guidance for monitoring, verifying and reporting emissions (HMRC, updated 10 November 2026)",
+  "source_url": "https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-technical-guidance-for-monitoring-verifying-and-reporting-emissions",
+  "related": "/tools/dashboards/ni-consultations-monitor.html",
+  "related_title": "NI Consultations Monitor",
+  "note": "A request for technical feedback on published guidance, not a formal consultation."
+ },
+ {
+  "id": "H064",
+  "date": "2026-12-11",
+  "title": "EU ministers aim to agree their position on the EU ETS review",
+  "detail": "The Irish Council Presidency aims for a general approach at the Environment Council on the Commission’s July 2026 proposal to revise the EU ETS, which would extend free allocation to 2040 and slow the phase-in of the EU CBAM to 2038 instead of 2034. Talks with the European Parliament follow.",
+  "topic": "Carbon",
+  "sectors": [
+   "Exporters to the EU",
+   "Manufacturers"
+  ],
+  "jurisdiction": "EU",
+  "status": "expected",
+  "kind": "Decision",
+  "action": "If you sell CBAM goods from Great Britain into the EU, treat any cost figure for 2028 to 2034 as a range until the law is settled.",
+  "source_title": "Council of the EU background note on the EU ETS review (ST 13435/26)",
+  "source_url": "https://data.consilium.europa.eu/doc/document/ST-13435-2026-INIT/en/pdf",
+  "related": "/tools/dashboards/cbam-exposure-tracker.html",
+  "related_title": "CBAM Exposure Tracker",
+  "note": "The 11 December date is the Presidency’s target and may move."
+ },
+ {
+  "id": "H065",
+  "date": "2026-12",
+  "title": "Commission due to adopt CBAM acts on certificate sales and carbon prices paid abroad",
+  "detail": "Two EU acts were consulted on in 2026 and are not yet adopted: the rules for selling and repurchasing CBAM certificates on the common central platform, and the rules for deducting a carbon price paid in a third country. The Commission says the carbon price act will be adopted in 2026, in time for declarations due by 30 September 2027.",
+  "topic": "Trade, customs and CBAM",
+  "sectors": [
+   "Exporters to the EU",
+   "Manufacturers"
+  ],
+  "jurisdiction": "EU",
+  "status": "expected",
+  "kind": "Rule change",
+  "action": "If you sell from Great Britain to EU customers, keep evidence of UK ETS costs your plant actually pays, net of free allowances.",
+  "source_title": "CBAM legislation and guidance (European Commission)",
+  "source_url": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism/cbam-legislation-and-guidance_en",
+  "related": "/tools/dashboards/cbam-exposure-tracker.html",
+  "related_title": "CBAM Exposure Tracker",
+  "note": "Neither act was on the Commission’s list of adopted acts at 11 November 2026. The December timing for the certificate act comes from secondary reports. Goods made in NI are outside the EU CBAM."
+ },
+ {
+  "id": "H066",
+  "date": "2028-01-01",
+  "title": "Proposed EU CBAM extension to downstream steel and aluminium goods would apply",
+  "detail": "The Commission proposed in December 2025 (COM(2025) 989) to add steel- and aluminium-intensive downstream goods, such as machinery parts, fabrications and vehicle components, to the EU CBAM from 1 January 2028, with stronger anti-circumvention rules. The Council agreed its position on 12 June 2026 and the European Parliament on 15 September 2026; negotiations between them are under way. The UK has no equivalent proposal.",
+  "topic": "Trade, customs and CBAM",
+  "sectors": [
+   "Exporters to the EU",
+   "Manufacturers"
+  ],
+  "jurisdiction": "EU",
+  "status": "proposed",
+  "kind": "Rule change",
+  "action": "If you make fabricated metal goods in Great Britain for EU customers, check whether your commodity codes are on the draft lists. Goods made in NI stay outside the EU CBAM.",
+  "source_title": "Procedure 2025/0419(COD): CBAM downstream extension and anti-circumvention (European Parliament Legislative Observatory)",
+  "source_url": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025%2F0419%28COD%29",
+  "related": "/tools/dashboards/cbam-exposure-tracker.html",
+  "related_title": "CBAM Exposure Tracker",
+  "note": "Not law. The product list is not final. A second round of talks has been reported for 30 November 2026, but no institution has published a date."
+ },
+ {
+  "id": "H067",
+  "date": "2028-07-31",
+  "title": "UK CBAM return and payment for January to March 2028",
+  "detail": "Registered importers file the UK CBAM return and pay for the period 1 January to 31 March 2028.",
+  "topic": "Trade, customs and CBAM",
+  "sectors": [
+   "Importers",
+   "Manufacturers",
+   "Construction and developers"
+  ],
+  "jurisdiction": "UK",
+  "status": "confirmed",
+  "kind": "Deadline",
+  "action": "Keep 2028 import records and supplier data quarterly from January 2028.",
+  "source_title": "The Carbon Border Adjustment Mechanism (Transitory Provision) Regulations 2026 (SI 2026/830)",
+  "source_url": "https://www.legislation.gov.uk/uksi/2026/830/made",
+  "related": "/tools/dashboards/cbam-exposure-tracker.html",
+  "related_title": "CBAM Exposure Tracker",
+  "note": ""
+ },
+ {
+  "id": "H068",
+  "date": "2028-09-29",
+  "title": "UK CBAM return and payment for April to June 2028",
+  "detail": "Registered importers file the UK CBAM return and pay for the period 1 April to 30 June 2028.",
+  "topic": "Trade, customs and CBAM",
+  "sectors": [
+   "Importers",
+   "Manufacturers",
+   "Construction and developers"
+  ],
+  "jurisdiction": "UK",
+  "status": "confirmed",
+  "kind": "Deadline",
+  "action": "File and pay by 29 September 2028.",
+  "source_title": "The Carbon Border Adjustment Mechanism (Transitory Provision) Regulations 2026 (SI 2026/830)",
+  "source_url": "https://www.legislation.gov.uk/uksi/2026/830/made",
+  "related": "/tools/dashboards/cbam-exposure-tracker.html",
+  "related_title": "CBAM Exposure Tracker",
+  "note": ""
  }
 ]

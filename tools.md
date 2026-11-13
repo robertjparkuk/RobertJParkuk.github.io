@@ -50,6 +50,18 @@ The UK carbon border charge starts on 1 January 2027. A live countdown, the date
 
 [Open the UK CBAM Countdown →]({{ '/tools/uk-cbam-countdown.html' | relative_url }})
 
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Is my part or chemical a CBAM good?</h2>
+
+The commodity-code headings that most often catch engineering, pharmaceutical, food and drink firms: bolts, tanks, drums, gas cylinders, cans, kegs, foil, nitric acid, ammonia and hydrogen. Each shows whether it is covered by the EU CBAM now, the UK CBAM from 2027 and the EU's 2028 proposal, and which common goods are out.
+
+[Open the lookup →]({{ '/cbam-desk/is-it-a-cbam-good/' | relative_url }})
+
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">CBAM data checklist</h2>
+
+What producers and importers should start gathering now for the EU and UK carbon border rules, from site boundaries and fuels to commodity codes, customs values and records. Free to use and share.
+
+[Open the checklist →]({{ '/cbam-desk/checklist/' | relative_url }})
+
 <h2 class="tool-h"><img src="{{ '/assets/icons/incoterms.svg' | relative_url }}" alt="" width="48" height="48">Incoterms Chooser</h2>
 
 Four questions to find the Incoterms® 2020 rule that matches how you split transport, risk, insurance and customs with your buyer or seller. Includes a who-does-what matrix for all 11 rules, plus notes on GB–NI movements, EU trade and CBAM.

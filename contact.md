@@ -14,7 +14,9 @@ description: Contact Robert J. Park in Larne, Co. Antrim, about CBAM, carbon inv
 
 **LinkedIn:** [Robert Park]({{ site.linkedin }}) — connect or send a message.
 
-Based in Larne, working with businesses across Northern Ireland.
+I reply within one working day. A mutual non-disclosure agreement is available before you send product, customer or supplier data.
+
+Based in Larne, working with businesses across Northern Ireland, and remotely with exporters elsewhere.
 
 **Councils, public bodies and trade bodies:** I'm happy to provide quotations, capability statements and CVs, and to respond to tenders and framework opportunities.
 

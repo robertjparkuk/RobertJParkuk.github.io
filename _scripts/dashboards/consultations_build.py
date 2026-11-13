@@ -24,6 +24,7 @@ access = json.load(open(os.path.join(DATA, 'council_access.json'), encoding='utf
 
 CHANGES = [  # newest first: date, what changed
  ('13 Nov 2026', 'Weekly refresh: 17 added (437 in all), including the DfI regulations on pavement and footway parking, Derry’s £45m Central Riverfront project, a DAERA anchoring ban for the Outer Belfast Lough Marine Conservation Zone and the Housing Executive’s draft Irish Traveller Accommodation Strategy; 9 rolled to closed; DAERA’s final Nature Recovery Strategy and consultation report recorded as the response; Strabane Canal Basin now closes 11 December; dates corrected for 5 other records.'),
+ ('13 Nov 2026', 'CBAM rows corrected after a review: the two HMRC draft-regulation consultations (C199, C154) now show that no response document has been published but the regulations have been made (SI 2026/802, 809 and 830; SI 2026/995); the UK ETS hydrogen free-allocation consultation (C378) given its closing date of 2 October 2026; HMRC’s request for technical feedback on its CBAM monitoring, reporting and verification guidance added (C423, closes 13 November); CBAM rows carry a CBAM relevance note, so typing CBAM in a filter finds them; 6 consultations that closed between 6 and 10 November rolled to closed (421 in all).'),
  ('6 Nov 2026', 'Weekly refresh: 19 added (420 in all), including the DfI Quay Street car park abandonment in Lisburn, Belfast’s draft playing pitches strategy and the HM Treasury consultation on adding refinery products to the UK CBAM; 3 rolled to closed; responses found for the Lagan Meadows quiet area and Belfast’s Sailortown and Cathedral Quarter masterplans; the Black Paths engagement now opens on 16 November; closing dates filled for 11 records; a duplicate Single Construction Regulator entry removed.'),
  ('5 Nov 2026', 'Correction: the DfI classes and thresholds review was listed twice (the original 9 October close and the 6 November extension). The duplicate is removed; 402 consultations.'),
  ('5 Nov 2026', 'Published. Data first compiled on 22 October 2026 and refreshed on 5 November: 12 consultations that closed between 23 October and 4 November marked closed and awaiting a response; 18 added, including the DfI review of planning classes and thresholds (extended to 6 November), the Eastern Transport Plan engagement, Moving Together, the Black Paths scheme and the Planning Appeals Commission fee regulations.'),
@@ -57,7 +58,7 @@ def section(sid, title, note, body, csv_cols=None, csv_rows=None, fname=None, sr
     filt_html = ''
     if filt:
         filt_html = (f'<div class="k-filter"><label for="f-{sid}">Filter</label><input id="f-{sid}" type="search" data-filter="t-{sid}" '
-                     f'placeholder="Type a word: planning, DfI, Belfast, waste…" autocomplete="off"><span class="k-count" aria-live="polite"></span></div>')
+                     f'placeholder="Type a word: planning, DfI, Belfast, waste, CBAM…" autocomplete="off"><span class="k-count" aria-live="polite"></span></div>')
     act = ''
     if csv_url:
         act = f'<div class="k-actions"><a download="{fname}.csv" href="{csv_url}">Download CSV</a></div>'

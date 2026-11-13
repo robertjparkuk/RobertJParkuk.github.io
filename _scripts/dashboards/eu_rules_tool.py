@@ -22,6 +22,7 @@ TAGS = [
  ('cooling', 'Refrigeration, air conditioning or heat pumps (selling, installing or running them)'),
  ('waste', 'Waste, scrap or recycling'),
  ('energy', 'Generating electricity, or using a lot of it'),
+ ('cbam', 'Steel, aluminium, cement, fertiliser or hydrogen, or goods made from them (such as bolts, tanks, drums, cans or foil)'),
 ]
 PRODUCTS = ['food', 'forest', 'packaging', 'machinery', 'batteries', 'chemicals', 'construction', 'consumer', 'toys', 'cooling']
 
@@ -152,6 +153,7 @@ def page():
 <label><input type="checkbox" name="route" value="gb2ni">We move goods from Great Britain into Northern Ireland</label>
 <label><input type="checkbox" name="route" value="ni2gb">We are in Northern Ireland and sell into Great Britain</label>
 <label><input type="checkbox" name="route" value="eu">We sell into Ireland or elsewhere in the EU</label>
+<label><input type="checkbox" name="route" value="eu2ni">We bring goods into Northern Ireland from Ireland or elsewhere in the EU</label>
 </div></fieldset>
 
 <fieldset class="w-q" id="w-atrisk" hidden><legend>3. Are the goods you bring from Great Britain "at risk" of moving on into the EU?</legend>
@@ -189,7 +191,7 @@ f.addEventListener('submit',function(ev){{
  ev.preventDefault();
  var tags=vals('tag'),routes=vals('route'),rk=(vals('risk')[0]||'unsure'),h='';
  if(!tags.length||!routes.length){{out.innerHTML='<p class="w-note">Tick at least one answer to question 1 and one to question 2.</p>';out.focus&&out.focus();return}}
- var inNI=routes.indexOf('ni')>-1||routes.indexOf('gb2ni')>-1,gb2ni=routes.indexOf('gb2ni')>-1,ni2gb=routes.indexOf('ni2gb')>-1,eu=routes.indexOf('eu')>-1;
+ var eu2ni=routes.indexOf('eu2ni')>-1,inNI=routes.indexOf('ni')>-1||routes.indexOf('gb2ni')>-1||eu2ni,gb2ni=routes.indexOf('gb2ni')>-1,ni2gb=routes.indexOf('ni2gb')>-1,eu=routes.indexOf('eu')>-1;
  if(inNI){{
   var a=D.rows.filter(function(r){{return r.g==='ni'&&hit(r,tags)&&(r.tags.indexOf('ALL')<0||gb2ni)}});
   h+='<h2>EU rules that apply to your goods in Northern Ireland ('+a.length+')</h2>';
@@ -205,12 +207,19 @@ f.addEventListener('submit',function(ev){{
  if(inNI||ni2gb){{
   var c=D.rows.filter(function(r){{return r.g==='gb'&&r.kind!=='Selling into NI'&&hit(r,tags)}});
   h+='<h2>Where GB and NI rules differ ('+c.length+')</h2>';
-  if(ni2gb)h+='<p class="w-note">Qualifying Northern Ireland goods have unfettered access to the GB market. Where GB rules differ, check which ones you must meet for what you sell in GB.</p>';
+  if(ni2gb)h+='<p class="w-note">Qualifying Northern Ireland goods can be sold in Great Britain without extra checks under the UK Internal Market Act 2020. Where GB rules differ, check which ones you must meet for what you sell in GB.</p>';
   h+=c.length?c.map(function(r){{return '<div class="w-item"><h3>'+link(r)+'</h3><p><span class="w-tag">'+e(r.kind)+'</span>'+e(r.what)+'</p><p><b>Key date:</b> '+e(r.dates)+'</p></div>'}}).join(''):'<p class="w-empty">No differences on the dashboard for these goods.</p>';
  }}
  if(eu){{
   var d=D.rows.filter(function(r){{return r.g==='eu'}});
   h+='<h2>Rules that reach you through EU customers ('+d.length+')</h2><p class="w-note">These EU laws do not apply in Northern Ireland, but EU customers may ask you for data or terms because of them.</p>'+d.map(function(r){{return '<div class="w-item"><h3>'+link(r)+'</h3><p>'+e(r.why)+'</p></div>'}}).join('');
+ }}
+ if(tags.indexOf('cbam')>-1){{
+  h+='<h2>Carbon border rules (CBAM)</h2><div class="w-item"><h3><a href="/tools/dashboards/cbam-exposure-tracker.html">EU CBAM and UK CBAM</a></h3>'
+   +'<p><b>EU CBAM:</b> not applied in Northern Ireland. The European Commission&rsquo;s CBAM Q&amp;A (15 Oct 2026, Q7.14) says: &ldquo;Goods produced and/or released for free circulation in Northern Ireland are not subject to CBAM.&rdquo; Goods made in Great Britain and sold into the EU are in scope.</p>'
+   +'<p><b>UK CBAM:</b> from 1 January 2027 it covers the whole UK, including Northern Ireland, for CBAM goods brought in from outside the UK once they pass &pound;50,000 in 12 months.</p>'
+   +(eu2ni?'<p class="w-note">Bringing these goods into Northern Ireland from Ireland or the EU? There is no customs declaration, but that does not mean no UK CBAM. The Finance Act 2026 (section 144(5)(a)) treats &ldquo;a Union good that is imported into the United Kingdom as a result of its entry into Northern Ireland&rdquo; as an import, and the importer is &ldquo;the person on whose behalf the good is imported&rdquo; (section 146(4)), often the Northern Ireland buyer. HMRC guidance does not yet cover this case: take customs advice before 1 January 2027.</p>':'')
+   +'<p>Sources: <a href="https://taxation-customs.ec.europa.eu/document/download/013fa763-5dce-4726-a204-69fec04d5ce2_en?filename=CBAM_Questions+and+Answers.pdf" rel="noopener">European Commission CBAM Q&amp;A</a>; <a href="https://www.legislation.gov.uk/ukpga/2026/11/part/5" rel="noopener">Finance Act 2026, Part 5</a>; <a href="https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary" rel="noopener">HMRC CBAM policy summary</a>.</p></div>';
  }}
  h+='<p class="w-note">This list covers the laws on the <a href="/tools/dashboards/eu-law-windsor-framework.html">EU law dashboard</a> only. It is a starting point, not legal advice.</p>';
  out.innerHTML=h;out.setAttribute('tabindex','-1');out.focus();
