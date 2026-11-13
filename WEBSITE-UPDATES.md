@@ -25,6 +25,16 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.31.0 — 13 November 2026: rotating home-page headline
+
+*Robert's instruction, 13 Nov 23:16: "Ensure we have a rotating headline". This reverses decision 6 of 1 November (one fixed hero).*
+
+- `index.html`: the hero now rotates, in order, every 8 seconds through: the main line ("…across two regimes", with the £1,685 Readiness Review button); a UK CBAM slide on goods from the Republic and the EU (Readiness Review and "Is it a CBAM good?"); the NI Consultations Monitor; then up to three live posts with `hero_title` (skipping any marked `hero_notebook: true`, and dropping each at its `hero_until`). The Latest thinking strip below is unchanged.
+- Accessibility: one visually hidden h1 that never changes; slides are a labelled carousel; inactive slides are hidden from screen readers and the keyboard; a Pause/Play button and one dot per headline; rotation pauses on hover or focus; with reduced motion the hero starts paused; without JavaScript only the main line shows. All slides share one grid cell, so the page doesn't jump.
+- `assets/style.css`: styles for the rotator, `.sr-only` and `.hero-h`.
+- `.github/workflows/pr-check.yml`: the home-page check now requires the pause button and the reduced-motion rule, and still fails on random rotation or more than one h1.
+- Prices checked site-wide after v0.30.0: Readiness Review £1,685 everywhere; no £495, £620, £650 or £910 left in pages, data or PDFs (the £495 quarterly desk is correct).
+
 ### v0.30.0 — 11 November 2026: CBAM review corrections (eight-reviewer review, Opus second pass)
 
 *Prices and terms updated again on 13 November 2026 per Robert's round-3 sign-off (20:10): Readiness Review £1,685 everywhere; credit capped at £350; one-product answer £195; bespoke status letter £250; Default or actual? £395; short answers now "within a week"; Supplier Data Pack £2,450 for a simple site, larger sites quoted after a scoping call; first UK return in two sizes (£695 / £1,050); CBAM Desk fair-use limit of four hours a month, two-working-day replies, and a quarterly desk at £495 a quarter; prices reviewed each January; urgent work may carry an additional fee of no more than 50%.*
