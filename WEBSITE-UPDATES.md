@@ -27,9 +27,9 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ### v0.29.1 — 13 November 2026: Consultations Monitor weekly refresh
 
-- `data/dashboards/ni-consultations/consultations.json`: 11 consultations added (C423–C433; 431 in all). One is high relevance (DfI Footways and Carriageways (Prohibition of Waiting) Regulations 2027, pavement parking, closes 3 Dec), three medium (DfI Coalisland waiting restrictions, closes 4 Dec; DAERA Outer Belfast Lough anchoring ban, closes 15 Jan; Antrim & Newtownabbey Borough Life Survey, closes 31 Dec), seven low.
-- Status roll-forward: 9 records closed and awaiting a response (C032–C037, C370, C386, C415). Response found for 1 (C179 DAERA Nature Recovery Strategy: final strategy and consultation report, 27 Oct). 85 open, 2 not yet open, 15 closing within 14 days.
-- Corrections: C370 closing date 6 Nov added; C038 opening date 8 Oct; C384 note on a press-reported 22 Nov close (not yet confirmed by the council).
+- `data/dashboards/ni-consultations/consultations.json`: 17 consultations added (C423–C439; 437 in all). Two are high relevance (DfI Footways and Carriageways (Prohibition of Waiting) Regulations 2027, pavement parking, closes 3 Dec; Derry & Strabane / DfI Central Riverfront Project, closes 11 Dec), five medium (DfI Coalisland waiting restrictions; DAERA Outer Belfast Lough anchoring ban; NIHE draft Irish Traveller Accommodation Strategy; Utility Regulator use-of-system tariff reform; Antrim & Newtownabbey Borough Life Survey), ten low.
+- Status roll-forward: 9 records closed and awaiting a response (C032–C037, C370, C386, C415). Response found for 1 (C179 DAERA Nature Recovery Strategy: final strategy and consultation report, 27 Oct). 91 open, 2 not yet open, 15 closing within 14 days.
+- Corrections: C384 Strabane Canal Basin closes 11 Dec (council release; better link); C370 closing date 6 Nov; C413 closes 21 Dec (not 22); opening dates for C038, C405, C406.
 - `_scripts/dashboards/consultations_build.py`: AS_AT 13 November 2026 and a changes line; page and CSV rebuilt.
 
 ### v0.29.0 — 9 November 2026: Catholic Church briefing and dashboard; Twelve dates to Easter
