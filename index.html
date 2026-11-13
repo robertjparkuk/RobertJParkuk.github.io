@@ -5,12 +5,61 @@ title: Environment · Carbon · Public Affairs
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-text">
-    <p class="eyebrow" id="hero-eyebrow">Independent consultancy · Northern Ireland</p>
-    <h1 id="hero-title">Carbon and environmental compliance for manufacturers working <em>across two regimes</em>.</h1>
-    <p class="lead" id="hero-lead">Northern Ireland businesses sit between UK and EU rules. I help small and mid-sized firms make sense of CBAM, CSRD and carbon reporting — and turn the work into something the board can actually use.</p>
-    <div class="actions">
-      <a class="btn" id="hero-btn1" href="{{ '/contact/' | relative_url }}">Start a conversation</a>
-      <a class="btn btn-ghost" id="hero-btn2" href="{{ '/cbam-desk/' | relative_url }}">Two-Regime Readiness Review, £1,685</a>
+    <h1 class="sr-only">Robert J. Park: carbon and environmental compliance for manufacturers working across two regimes, Northern Ireland</h1>
+{%- assign now_s = site.time | date: "%s" | plus: 0 -%}
+{%- assign hero_posts = 0 -%}
+    <div class="hero-rotator" role="region" aria-roledescription="carousel" aria-label="Headlines">
+      <div class="hero-slides" id="hero-slides" aria-live="off">
+        <div class="hero-slide is-active" role="group" aria-roledescription="slide">
+          <p class="eyebrow">Independent consultancy · Northern Ireland</p>
+          <p class="hero-h">Carbon and environmental compliance for manufacturers working <em>across two regimes</em>.</p>
+          <p class="lead">Northern Ireland businesses sit between UK and EU rules. I help small and mid-sized firms make sense of CBAM, CSRD and carbon reporting — and turn the work into something the board can actually use.</p>
+          <div class="actions">
+            <a class="btn" href="{{ '/contact/' | relative_url }}">Start a conversation</a>
+            <a class="btn btn-ghost" href="{{ '/cbam-desk/' | relative_url }}">Two-Regime Readiness Review, £1,685</a>
+          </div>
+        </div>
+        <div class="hero-slide" role="group" aria-roledescription="slide" hidden>
+          <p class="eyebrow">UK CBAM starts 1 January 2027</p>
+          <p class="hero-h">Steel, aluminium or fertiliser from the Republic? <em>It's in the UK carbon levy.</em></p>
+          <p class="lead">Goods made in the EU and brought into Northern Ireland count as UK CBAM imports. Find out whether you're the importer, whether you pass the £50,000 test, and roughly what 2027 will cost.</p>
+          <div class="actions">
+            <a class="btn" href="{{ '/cbam-desk/' | relative_url }}">Two-Regime Readiness Review, £1,685</a>
+            <a class="btn btn-ghost" href="{{ '/cbam-desk/is-it-a-cbam-good/' | relative_url }}">Is it a CBAM good?</a>
+          </div>
+        </div>
+        <div class="hero-slide" role="group" aria-roledescription="slide" hidden>
+          <p class="eyebrow">Free · Updated every Friday</p>
+          <p class="hero-h">Every Northern Ireland consultation, <em>in one place</em>.</p>
+          <p class="lead">Open, upcoming and recently closed consultations from the 11 councils, the nine departments and UK Government where NI is in scope, with closing dates and who publishes their outcomes.</p>
+          <div class="actions">
+            <a class="btn" href="{{ '/tools/dashboards/ni-consultations-monitor.html' | relative_url }}">Open the Consultations Monitor</a>
+            <a class="btn btn-ghost" href="{{ '/public-sector/' | relative_url }}">For councils and public bodies</a>
+          </div>
+        </div>
+{%- for p in site.posts -%}
+{%- unless p.hero_title -%}{%- continue -%}{%- endunless -%}
+{%- if p.hero_notebook -%}{%- continue -%}{%- endif -%}
+{%- if p.hero_until -%}{%- assign until_s = p.hero_until | date: "%s" | plus: 0 -%}{%- if now_s >= until_s -%}{%- continue -%}{%- endif -%}{%- endif -%}
+{%- if hero_posts >= 3 -%}{%- break -%}{%- endif -%}
+{%- assign hero_posts = hero_posts | plus: 1 %}
+        <div class="hero-slide" role="group" aria-roledescription="slide" hidden>
+          <p class="eyebrow">{{ p.hero_eyebrow | default: "Latest thinking · Northern Ireland" }}</p>
+          <p class="hero-h">{{ p.hero_title }}</p>
+          {%- if p.hero_lead %}
+          <p class="lead">{{ p.hero_lead }}</p>
+          {%- endif %}
+          <div class="actions">
+            <a class="btn" href="{{ p.link | default: p.url | relative_url }}">Read the piece</a>
+            <a class="btn btn-ghost" href="{{ '/cbam-desk/' | relative_url }}">Two-Regime Readiness Review, £1,685</a>
+          </div>
+        </div>
+{%- endfor %}
+      </div>
+      <div class="hero-controls" id="hero-controls" hidden>
+        <button type="button" class="hero-pause" id="hero-pause" aria-pressed="false">Pause</button>
+        <span class="hero-dots" id="hero-dots"></span>
+      </div>
     </div>
     </div>
     <figure class="hero-portrait">
@@ -19,6 +68,30 @@ title: Environment · Carbon · Public Affairs
     </figure>
   </div>
 </section>
+<script>
+(function(){
+  var box=document.getElementById('hero-slides'); if(!box) return;
+  var slides=[].slice.call(box.querySelectorAll('.hero-slide')); if(slides.length<2) return;
+  var ctr=document.getElementById('hero-controls'), dots=document.getElementById('hero-dots'), pb=document.getElementById('hero-pause');
+  var reduce=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var i=0, timer=null, paused=reduce, hover=false, DELAY=8000;
+  box.classList.add('is-rotating');
+  slides.forEach(function(s,n){ s.hidden=false; s.setAttribute('aria-label',(n+1)+' of '+slides.length);
+    var b=document.createElement('button'); b.type='button'; b.className='hero-dot'; b.setAttribute('aria-label','Show headline '+(n+1));
+    b.addEventListener('click',function(){ box.setAttribute('aria-live','polite'); show(n); }); dots.appendChild(b); });
+  function show(n){ i=(n+slides.length)%slides.length;
+    slides.forEach(function(s,k){ var on=k===i; s.classList.toggle('is-active',on); s.setAttribute('aria-hidden',on?'false':'true');
+      [].forEach.call(s.querySelectorAll('a,button'),function(a){ a.tabIndex=on?0:-1; }); });
+    [].forEach.call(dots.children,function(d,k){ d.setAttribute('aria-current',k===i?'true':'false'); }); }
+  function tick(){ if(!paused && !hover){ box.setAttribute('aria-live','off'); show(i+1); } }
+  function setPaused(v){ paused=v; pb.setAttribute('aria-pressed',v?'true':'false'); pb.textContent=v?'Play':'Pause'; }
+  pb.addEventListener('click',function(){ setPaused(!paused); });
+  var area=box.parentNode;
+  area.addEventListener('mouseenter',function(){ hover=true; }); area.addEventListener('mouseleave',function(){ hover=false; });
+  area.addEventListener('focusin',function(){ hover=true; }); area.addEventListener('focusout',function(){ hover=false; });
+  ctr.hidden=false; setPaused(paused); show(0); timer=setInterval(tick,DELAY);
+})();
+</script>
 
 {%- assign now_s = site.time | date: "%s" | plus: 0 -%}
 {%- assign latest_shown = 0 -%}

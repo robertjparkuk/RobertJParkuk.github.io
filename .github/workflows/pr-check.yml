@@ -110,10 +110,12 @@ jobs:
           PY
           exit $fail
 
-      - name: Check the home page has one fixed hero
+      - name: Check the home page hero (one h1; accessible rotating headline)
         run: |
           h1=$(grep -c '<h1' _site/index.html); echo "h1 on home page: $h1"
           test "$h1" -eq 1 || { echo "::error::Home page should have exactly one h1"; exit 1; }
-          grep -q 'across two regimes' _site/index.html || { echo "::error::Fixed hero line missing"; exit 1; }
-          if grep -q 'Math.random' _site/index.html; then echo "::error::Hero rotation script is back"; exit 1; fi
+          grep -q 'across two regimes' _site/index.html || { echo "::error::Main hero line missing"; exit 1; }
+          if grep -q 'Math.random' _site/index.html; then echo "::error::Hero must rotate in order, not at random"; exit 1; fi
+          grep -q 'id="hero-pause"' _site/index.html || { echo "::error::Rotating hero needs its pause button"; exit 1; }
+          grep -q 'prefers-reduced-motion' _site/index.html || { echo "::error::Rotating hero must respect reduced motion"; exit 1; }
           echo "Latest thinking items: $(grep -o 'class="post-list latest-list"' -c _site/index.html)"
