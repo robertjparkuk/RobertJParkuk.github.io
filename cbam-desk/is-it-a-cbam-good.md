@@ -69,6 +69,6 @@ The European Commission has proposed adding about 180 steel- and aluminium-heavy
 - GOV.UK: [iron and steel](https://www.gov.uk/government/publications/check-which-goods-are-in-scope-of-carbon-border-adjustment-mechanism-cbam/goods-within-the-iron-and-steel-sector), [aluminium](https://www.gov.uk/government/publications/check-which-goods-are-in-scope-of-carbon-border-adjustment-mechanism-cbam/goods-within-the-aluminium-sector), [fertilisers](https://www.gov.uk/government/publications/check-which-goods-are-in-scope-of-carbon-border-adjustment-mechanism-cbam/goods-within-the-fertiliser-sector), [hydrogen](https://www.gov.uk/government/publications/check-which-goods-are-in-scope-of-carbon-border-adjustment-mechanism-cbam/goods-within-the-hydrogen-sector)
 - EUR-Lex: [Regulation (EU) 2023/956, Annex I, consolidated](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A02023R0956-20251020)
 
-Not sure about one product? A written answer for one product costs £95 and comes within 48 hours. See the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}).
+Not sure about one product? A written answer for one product costs £135 and comes within 48 hours. See the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}).
 
 *General information, not legal or tax advice. Classification is a customs matter: where a heading is marked "check", ask your customs agent. Checked on 11 November 2026.*
