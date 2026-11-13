@@ -80,7 +80,7 @@ jobs:
                   try:
                       if hit(open(f,encoding='utf-8',errors='ignore').read()): bad.append(f)
                   except IsADirectoryError: pass
-          for f in glob.glob('assets/**/*.pdf',recursive=True):
+          for f in [x for x in glob.glob('**/*.pdf',recursive=True) if not x.startswith(('_site','_site_today','vendor'))]:
               t=subprocess.run(['pdftotext',f,'-'],capture_output=True,text=True).stdout
               if hit(t): bad.append(f)
           if bad: print("::error::The personal mobile number appears in:\n"+"\n".join(bad)); sys.exit(1)
@@ -91,7 +91,7 @@ jobs:
         run: |
           sudo apt-get install -y -qq poppler-utils >/dev/null
           fail=0
-          for f in $(find assets -name '*.pdf' -not -path '*/_site/*'); do
+          for f in $(find . -name '*.pdf' -not -path './_site*' -not -path './.git/*' -not -path './vendor/*'); do
             if pdftotext "$f" - 2>/dev/null | grep -qE 'robertjparkuk\.github\.io'; then echo "::error::$f carries the old address"; fail=1; fi
           done
           python3 - <<'PY' || fail=1

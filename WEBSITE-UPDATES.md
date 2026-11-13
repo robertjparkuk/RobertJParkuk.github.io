@@ -25,6 +25,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.29.2 — 13 November 2026: worksheet address and Policy series counts
+
+- `puzzles/planet-check-worksheet.pdf`: the answers-page footer now reads robertjpark.co.uk (it still carried the old github.io address; the check only scanned PDFs under `assets/`).
+- `pr-check.yml`: the old-address and personal-number checks now cover every PDF in the repo, not only `assets/`.
+- `policy-series.md`: lead and body now say fifteen pieces live and two to follow, matching the description line.
+
 ### v0.29.1 — 13 November 2026: Consultations Monitor weekly refresh
 
 - `data/dashboards/ni-consultations/consultations.json`: 17 consultations added (C423–C439; 437 in all). Two are high relevance (DfI Footways and Carriageways (Prohibition of Waiting) Regulations 2027, pavement parking, closes 3 Dec; Derry & Strabane / DfI Central Riverfront Project, closes 11 Dec), five medium (DfI Coalisland waiting restrictions; DAERA Outer Belfast Lough anchoring ban; NIHE draft Irish Traveller Accommodation Strategy; Utility Regulator use-of-system tariff reform; Antrim & Newtownabbey Borough Life Survey), ten low.
