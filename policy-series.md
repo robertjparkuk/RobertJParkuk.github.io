@@ -3,7 +3,7 @@ layout: page
 title: Policy series
 permalink: /policy-series/
 description: Seventeen pieces on where environmental, carbon, energy and waste rules stand in Northern Ireland, who decides them, where the parties stand, and what firms and councils should do. Fifteen published; two more to follow after the 20 November UK–EU summit.
-lead: Where the rules stand in Northern Ireland, who decides them, where the parties stand, and what to do about it. Thirteen pieces are live; four more follow once their facts are rechecked.
+lead: Where the rules stand in Northern Ireland, who decides them, where the parties stand, and what to do about it. Fifteen pieces are live; two more follow once their facts are rechecked.
 ---
 
 Northern Ireland sits between two rulebooks. Some rules are made in Brussels and reach us through the Windsor Framework. Some are made at Westminster and apply UK-wide. Some are Stormont's alone, and some of those have never been switched on. The result is that a manufacturer in Craigavon, a council in Fermanagh or a farm in Antrim can be living under three regimes at once, with nobody setting out how they fit together.
@@ -34,7 +34,7 @@ The pieces set out the arguments on each side. The recommendations are mine. The
 
 ## What is coming
 
-Six themes, seventeen pieces, thirteen of them live and four to follow between late November 2026 and January 2027: reporting and finance; energy; carbon pricing and trade; waste and resources; chemicals, land and water; and climate law. Each piece is checked against its sources in the week before it publishes, and updated afterwards when the rules move.
+Six themes, seventeen pieces, fifteen of them live and two to follow after the 20 November UK–EU summit: reporting and finance; energy; carbon pricing and trade; waste and resources; chemicals, land and water; and climate law. Each piece is checked against its sources in the week before it publishes, and updated afterwards when the rules move.
 
 ## Use them
 
