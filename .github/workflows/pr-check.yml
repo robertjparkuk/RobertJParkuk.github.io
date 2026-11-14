@@ -118,8 +118,8 @@ jobs:
           if grep -q 'Math.random' _site/index.html; then echo "::error::Hero must rotate in order, not at random"; exit 1; fi
           grep -q 'id="hero-pause"' _site/index.html || { echo "::error::Rotating hero needs its pause button"; exit 1; }
           grep -q 'prefers-reduced-motion' _site/index.html || { echo "::error::Rotating hero must respect reduced motion"; exit 1; }
-          slides=$(grep -c 'class="hero-slide' _site/index.html); echo "Hero slides in this build: $slides"
+          slides=$(grep -cE 'class="hero-slide[ "]' _site/index.html); echo "Hero slides in this build: $slides"
           test "$slides" -le 5 || { echo "::error::Home-page headline has more than five slides"; exit 1; }
-          nodate=$(grep 'class="hero-slide' _site/index.html | grep -vc 'data-until=' || true)
+          nodate=$(grep -E 'class="hero-slide[ "]' _site/index.html | grep -vc 'data-until=' || true)
           test "$nodate" -eq 0 || { echo "::error::Every hero slide needs an expiry date (data-until)"; exit 1; }
           echo "Latest thinking items: $(grep -o 'class="post-list latest-list"' -c _site/index.html)"
