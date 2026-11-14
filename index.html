@@ -6,20 +6,52 @@ title: Environment · Carbon · Public Affairs
   <div class="wrap hero-grid">
     <div class="hero-text">
     <h1 class="sr-only">Robert J. Park: carbon and environmental compliance for manufacturers working across two regimes, Northern Ireland</h1>
+{%- comment -%}
+  Home-page headline rules (Master Tidy, 14 Nov 2026; WORK Project instructions):
+  five slides at most; slide 1 (positioning) fixed; one slide tied to the nearest
+  dated matter in the next 30 days; one free tool; two recent pieces. Every slide
+  carries an expiry date (data-until). The price button appears on CBAM slides only.
+  Expiry is applied when the site builds (it rebuilds at least daily) and again in
+  the browser, so a slide drops at its expiry time even between builds.
+  Slide 1's date is a review-by date: it is never hidden, the daily check flags it.
+{%- endcomment -%}
 {%- assign now_s = site.time | date: "%s" | plus: 0 -%}
 {%- assign hero_posts = 0 -%}
     <div class="hero-rotator" role="region" aria-roledescription="carousel" aria-label="Headlines">
       <div class="hero-slides" id="hero-slides" aria-live="off">
-        <div class="hero-slide is-active" role="group" aria-roledescription="slide">
+        {%- comment -%} 1. Positioning (fixed). Not a CBAM slide, so no price button. {%- endcomment %}
+        <div class="hero-slide is-active" role="group" aria-roledescription="slide" data-fixed data-until="2027-01-31T23:59:00Z">
           <p class="eyebrow">Independent consultancy · Northern Ireland</p>
           <p class="hero-h">Carbon and environmental compliance for manufacturers working <em>across two regimes</em>.</p>
           <p class="lead">Northern Ireland businesses sit between UK and EU rules. I help small and mid-sized firms make sense of CBAM, CSRD and carbon reporting — and turn the work into something the board can actually use.</p>
           <div class="actions">
             <a class="btn" href="{{ '/contact/' | relative_url }}">Start a conversation</a>
+            <a class="btn btn-ghost" href="{{ '/services/' | relative_url }}">What I do</a>
+          </div>
+        </div>
+{%- comment -%}
+  2. Nearest dated matter in the next 30 days. One slide shows at a time:
+  the UK–EU summit until 27 November, then the UK CBAM start date.
+  Summit wording holds whatever the outcome; after 20 November, update it from the
+  joint declaration. Never say goods or firms are "exempt" until regulations are made.
+{%- endcomment -%}
+{%- assign s_from = "2026-11-01T00:00:00Z" | date: "%s" | plus: 0 -%}
+{%- assign s_until = "2026-11-27T23:59:00Z" | date: "%s" | plus: 0 -%}
+{%- if now_s >= s_from and now_s < s_until %}
+        <div class="hero-slide" role="group" aria-roledescription="slide" data-from="2026-11-01T00:00:00Z" data-until="2026-11-27T23:59:00Z" hidden>
+          <p class="eyebrow">UK–EU summit · Brussels, 20 November 2026</p>
+          <p class="hero-h">A carbon-market deal is on the table. <em>The law changes later.</em></p>
+          <p class="lead">Whatever the summit agrees on linking the UK and EU emissions trading systems, nothing changes in law on the day. Any CBAM relief between the two needs regulations made in London and a legal act in Brussels. Until then, UK CBAM still applies to goods imported from 1 January 2027.</p>
+          <div class="actions">
+            <a class="btn" href="{{ '/cbam-desk/is-it-a-cbam-good/' | relative_url }}">Is it a CBAM good?</a>
             <a class="btn btn-ghost" href="{{ '/cbam-desk/' | relative_url }}">Two-Regime Readiness Review, £1,685</a>
           </div>
         </div>
-        <div class="hero-slide" role="group" aria-roledescription="slide" hidden>
+{%- endif -%}
+{%- assign c_from = "2026-11-27T23:59:00Z" | date: "%s" | plus: 0 -%}
+{%- assign c_until = "2027-01-01T00:00:00Z" | date: "%s" | plus: 0 -%}
+{%- if now_s >= c_from and now_s < c_until %}
+        <div class="hero-slide" role="group" aria-roledescription="slide" data-from="2026-11-27T23:59:00Z" data-until="2027-01-01T00:00:00Z" hidden>
           <p class="eyebrow">UK CBAM starts 1 January 2027</p>
           <p class="hero-h">Steel, aluminium or fertiliser from the Republic? <em>It's in the UK carbon levy.</em></p>
           <p class="lead">Goods made in the EU and brought into Northern Ireland count as UK CBAM imports. Find out whether you're the importer, whether you pass the £50,000 test, and roughly what 2027 will cost.</p>
@@ -28,7 +60,11 @@ title: Environment · Carbon · Public Affairs
             <a class="btn btn-ghost" href="{{ '/cbam-desk/is-it-a-cbam-good/' | relative_url }}">Is it a CBAM good?</a>
           </div>
         </div>
-        <div class="hero-slide" role="group" aria-roledescription="slide" hidden>
+{%- endif -%}
+{%- comment -%} 3. One free tool. Review by the date below. {%- endcomment -%}
+{%- assign t_until = "2027-01-31T23:59:00Z" | date: "%s" | plus: 0 -%}
+{%- if now_s < t_until %}
+        <div class="hero-slide" role="group" aria-roledescription="slide" data-until="2027-01-31T23:59:00Z" hidden>
           <p class="eyebrow">Free · Updated every Friday</p>
           <p class="hero-h">Every Northern Ireland consultation, <em>in one place</em>.</p>
           <p class="lead">Open, upcoming and recently closed consultations from the 11 councils, the nine departments and UK Government where NI is in scope, with closing dates and who publishes their outcomes.</p>
@@ -37,13 +73,21 @@ title: Environment · Carbon · Public Affairs
             <a class="btn btn-ghost" href="{{ '/public-sector/' | relative_url }}">For councils and public bodies</a>
           </div>
         </div>
+{%- endif -%}
+{%- comment -%}
+  4–5. Two recent pieces: posts with hero_title, newest first, skipping hero_notebook.
+  Expiry is hero_until, or 14 days after the post date if none is set.
+  Price button only on posts tagged CBAM.
+{%- endcomment -%}
 {%- for p in site.posts -%}
 {%- unless p.hero_title -%}{%- continue -%}{%- endunless -%}
 {%- if p.hero_notebook -%}{%- continue -%}{%- endif -%}
-{%- if p.hero_until -%}{%- assign until_s = p.hero_until | date: "%s" | plus: 0 -%}{%- if now_s >= until_s -%}{%- continue -%}{%- endif -%}{%- endif -%}
-{%- if hero_posts >= 3 -%}{%- break -%}{%- endif -%}
-{%- assign hero_posts = hero_posts | plus: 1 %}
-        <div class="hero-slide" role="group" aria-roledescription="slide" hidden>
+{%- if p.hero_until -%}{%- assign until_s = p.hero_until | date: "%s" | plus: 0 -%}{%- else -%}{%- assign until_s = p.date | date: "%s" | plus: 1209600 -%}{%- endif -%}
+{%- if now_s >= until_s -%}{%- continue -%}{%- endif -%}
+{%- if hero_posts >= 2 -%}{%- break -%}{%- endif -%}
+{%- assign hero_posts = hero_posts | plus: 1 -%}
+{%- assign is_cbam = false -%}{%- for t in p.tags -%}{%- assign tl = t | downcase -%}{%- if tl contains "cbam" -%}{%- assign is_cbam = true -%}{%- endif -%}{%- endfor %}
+        <div class="hero-slide" role="group" aria-roledescription="slide" data-until="{{ until_s | date: '%Y-%m-%dT%H:%M:%S%:z' }}" hidden>
           <p class="eyebrow">{{ p.hero_eyebrow | default: "Latest thinking · Northern Ireland" }}</p>
           <p class="hero-h">{{ p.hero_title }}</p>
           {%- if p.hero_lead %}
@@ -51,7 +95,9 @@ title: Environment · Carbon · Public Affairs
           {%- endif %}
           <div class="actions">
             <a class="btn" href="{{ p.link | default: p.url | relative_url }}">Read the piece</a>
+            {%- if is_cbam %}
             <a class="btn btn-ghost" href="{{ '/cbam-desk/' | relative_url }}">Two-Regime Readiness Review, £1,685</a>
+            {%- endif %}
           </div>
         </div>
 {%- endfor %}
@@ -71,6 +117,12 @@ title: Environment · Carbon · Public Affairs
 <script>
 (function(){
   var box=document.getElementById('hero-slides'); if(!box) return;
+  var nowMs=Date.now();
+  [].slice.call(box.querySelectorAll('.hero-slide')).forEach(function(s){
+    if(s.hasAttribute('data-fixed')) return;
+    var f=Date.parse(s.getAttribute('data-from')||''), u=Date.parse(s.getAttribute('data-until')||'');
+    if((!isNaN(f) && nowMs<f) || (!isNaN(u) && nowMs>=u)) s.parentNode.removeChild(s);
+  });
   var slides=[].slice.call(box.querySelectorAll('.hero-slide')); if(slides.length<2) return;
   var ctr=document.getElementById('hero-controls'), dots=document.getElementById('hero-dots'), pb=document.getElementById('hero-pause');
   var reduce=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
