@@ -25,6 +25,14 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.32.2 — 16 November 2026: short links for LinkedIn
+
+*Robert's instruction, 16 Nov: use a URL shortener for the links back to the website in LinkedIn posts.*
+
+- `go/<name>/`: short links on the site's own domain, so no third-party shortener sees the clicks. Each page sends the reader straight on to the full page with its LinkedIn tracking tag, carries `noindex`, a canonical link to the real page, and is left out of the sitemap.
+- First six: `/go/readiness/` (CBAM Desk, Readiness Review offer), `/go/roads/` (Exposure Tracker, road costs), `/go/summit/` (Exposure Tracker, summit post), `/go/cbam38/` (CBAM Desk, countdown), `/go/importer/` (Is it a CBAM good?, importer of record), `/go/fert/` (CBAM Desk, Fertiliser and Packaging Check).
+- To add one: copy a folder in `go/`, change the permalink, the title, and the address in the three places it appears.
+
 ### v0.32.0 — 16 November 2026: Christmas decorations post, briefing and dashboard
 
 *Requested by Robert, 16 November 2026 ("Blog to go live later today"). Awaiting Robert's merge.*
