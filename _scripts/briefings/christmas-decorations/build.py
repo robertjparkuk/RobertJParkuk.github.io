@@ -82,7 +82,7 @@ def post_body():
     s = open(POST, encoding='utf-8').read()
     fm, body = s.split('---', 2)[1], s.split('---', 2)[2]
     title = re.search(r'^title: "(.*)"$', fm, re.M).group(1)
-    body = re.sub(r'<figure class="page-photo"><img src="\{\{ \'/assets/briefings/christmas-decorations/bunting.svg\'.*?</figure>', '', body, flags=re.S)
+    body = re.sub(r'<figure class="page-photo[^"]*"><img src="\{\{ \'/assets/briefings/christmas-decorations/bunting.svg\'.*?</figure>', '', body, flags=re.S)
     body = re.sub(r"\{\{ '/assets/briefings/christmas-decorations/([^']+)' \| relative_url \}\}", lambda m: 'file://' + os.path.join(A, m.group(1)), body)
     body = re.sub(r"\{\{ '([^']+)' \| relative_url \}\}", r'https://robertjpark.co.uk\1', body)
     body = '\n'.join(l for l in body.split('\n') if not l.startswith('[Download the briefing (PDF)]'))
