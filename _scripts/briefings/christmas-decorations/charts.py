@@ -120,16 +120,52 @@ def lights():
         for lab, wt, _ in LIGHTS:
             k = wt * HOURS / 1000; c.writerow([lab, wt, HOURS, round(k, 2), round(k * NI_P / 100, 2), round(k * GB_P / 100, 2)])
 
+IMPORTS = """group,year,country,value_gbp,netmass_kg
+Christmas articles 950510,2025,TOTAL,252342033,48519816
+Christmas articles 950510,2025,China,206706892,44291712
+Christmas articles 950510,2025,Netherlands,15202642,1494099
+Christmas articles 950510,2025,India,5322795,381315
+Christmas articles 950510,2025,Hong Kong,3665837,619550
+Christmas articles 950510,2025,Poland,3622652,87587
+Christmas articles 950510,2025,Vietnam,2606210,547954
+Christmas articles 950510,2025,Denmark,2495848,83859
+Christmas articles 950510,2025,United States,1408499,57388
+Christmas articles 950510,2024,TOTAL,243945119,64514516
+Christmas articles 950510,2024,China,203772717,60621766
+of which glass 95051010,2025,TOTAL,17521182,1685175
+of which glass 95051010,2025,China,10616332,1198218
+of which glass 95051010,2025,Netherlands,3622782,316438
+Christmas lighting strings 94053100+94053900,2025,TOTAL,63280815,8467358
+Christmas lighting strings 94053100+94053900,2025,China,57375336,8046762
+Christmas lighting strings 94053100+94053900,2024,TOTAL,59386066,6820044
+Fresh Christmas trees 06042020,2025,TOTAL,19486725,16536124
+Fresh Christmas trees 06042020,2025,Denmark,10180135,8653047
+Fresh Christmas trees 06042020,2025,Ireland,4188854,4673864
+Fresh Christmas trees 06042020,2025,Netherlands,3841611,1948553
+Fresh Christmas trees 06042020,2025,Belgium,563124,684787
+Fresh Christmas trees 06042020,2024,TOTAL,19081138,16914705
+"""
+
 def main():
     hbar('tree-carbon.svg', 'Carbon footprint of a 2 m Christmas tree (kg CO2e)',
          'Artificial PVC tree about 40 kg CO2e; real tree landfilled about 16 kg; real tree chipped about 3.5 kg.',
          [('Artificial (PVC), made once', 40, '≈40 kg', False), ('Real, sent to landfill', 16, '≈16 kg', True), ('Real, chipped or burned', 3.5, '≈3.5 kg', True)],
          None, note='As quoted by the British Christmas Tree Growers Association (trade body), attributed to the Carbon Trust. Unverified at source.')
     line_chart(); studies_chart(); lights()
-    hbar('litter-fines.svg', 'Maximum fixed penalty for dropping litter',
-         'England: up to £500 since 31 July 2023. Northern Ireland: up to £200 since 30 December 2022.',
-         [('England (since 31 Jul 2023)', 500, '£500', False), ('Northern Ireland (since 30 Dec 2022)', 200, '£200', True)],
-         None, note='SI 2023/770 (England); SR 2012/35 reg 3 as amended by SR 2022/302 (NI). Councils set the amount within the range.')
+    hbar('litter-fines.svg', 'Maximum fixed penalties: Northern Ireland and England',
+         'Fly-tipping: England up to £5,000 since 1 September 2026; Northern Ireland up to £400. Dropping litter: England up to £750 since 1 September 2026; Northern Ireland up to £200 since 30 December 2022.',
+         [('Fly-tipping, England', 5000, '£5,000', False), ('Fly-tipping, Northern Ireland', 400, '£400', True),
+          ('Litter, England', 750, '£750', False), ('Litter, Northern Ireland', 200, '£200', True)],
+         None, note='England: S.I. 2026/816, from 1 Sep 2026 (GOV.UK, 15 Jul 2026). NI: SR 2012/35 as amended; 1997 Order, art. 4A.')
+    hbar('imports-christmas-articles.svg', 'UK imports of Christmas articles, 2025, by country (£ million)',
+         'China 206.7; Netherlands 15.2; India 5.3; Hong Kong 3.7; Poland 3.6; Vietnam 2.6; Denmark 2.5; all others 12.7. Total 252.3 million pounds. China is 81.9 per cent by value and 91.3 per cent by weight.',
+         [('China', 206.7, '£206.7m (81.9%)', True), ('Netherlands', 15.2, '£15.2m', False), ('India', 5.3, '£5.3m', False), ('Hong Kong', 3.7, '£3.7m', False),
+          ('Poland', 3.6, '£3.6m', False), ('Vietnam', 2.6, '£2.6m', False), ('Denmark', 2.5, '£2.5m', False), ('All others', 12.7, '£12.7m', False)],
+         None, note='HMRC Overseas Trade Statistics, code 9505 10, calendar 2025 (total £252.3m; 48,520 tonnes). EU figures are by country of dispatch.')
+    hbar('imports-fresh-trees.svg', 'UK imports of fresh Christmas trees, 2025, by country (£ million)',
+         'Denmark 10.2; Ireland 4.2; Netherlands 3.8; Belgium 0.6; all others 0.7. Total 19.5 million pounds.',
+         [('Denmark', 10.2, '£10.2m (52%)', True), ('Ireland', 4.2, '£4.2m (21.5%)', True), ('Netherlands', 3.8, '£3.8m (19.7%)', True), ('Belgium', 0.6, '£0.6m', True), ('All others', 0.7, '£0.7m', False)],
+         None, note='HMRC Overseas Trade Statistics, code 0604 20 20, calendar 2025 (total £19.5m; 16,536 tonnes).')
     hbar('fires-1959.svg', 'Fires involving Christmas decorations, England and Wales, 24–31 December 1959',
          'Fourteen fires: naked lights 5, electrical faults 4, decorations falling on fires 4, soot 1.',
          [('Naked lights (candles, matches)', 5, '5', True), ('Electrical faults', 4, '4', True), ('Decorations fell on fires', 4, '4', True), ('Soot', 1, '1', True)],
@@ -137,6 +173,7 @@ def main():
     with open(os.path.join(DATA, 'tree-carbon.csv'), 'w', newline='') as f:
         c = csv.writer(f); c.writerow(['years', 'artificial_kept_kg', 'real_chipped_kg', 'real_landfilled_kg'])
         for y in range(1, 21): c.writerow([y, 40, round(3.5 * y, 1), 16 * y])
+    open(os.path.join(DATA, 'hmrc-imports-2025.csv'), 'w').write(IMPORTS)
     print('charts written to', OUT)
 
 main()

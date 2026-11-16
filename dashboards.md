@@ -9,7 +9,7 @@ lead: Northern Ireland environmental, carbon and consultation data on one page e
 
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Christmas decorations: rules, costs and carbon</h2>
 
-How Christmas decorations in Northern Ireland's homes, shops and streets are regulated, and where NI, GB and EU rules differ: loose glitter, product safety and CE marking, packaging, green claims, litter fines and the carbon border tax on aluminium foil. Also the cost of running lights at Power NI prices and the carbon of real and artificial trees. As at 16 November 2026, from GOV.UK, Defra, DAERA, DfC, HMRC, the European Commission, Ofgem, the Utility Regulator and legislation.gov.uk.
+Who makes our Christmas decorations, how they are regulated, and where NI, GB and EU rules differ. HMRC import figures for decorations, lights and trees (2025), Home Office candle fire figures, loose glitter, product safety and CE marking, packaging, green claims, the paperwork for moving a tree across the Irish Sea, litter and fly-tipping penalties, VAT on candles and the carbon border tax on aluminium foil. Also the cost of running lights at Power NI prices and the carbon of real and artificial trees. As at 16 November 2026, from HMRC, the Home Office, GOV.UK, Defra, DAERA, DfC, the European Commission, Ofgem, the Utility Regulator, Revenue and legislation.gov.uk.
 
 [Open the dashboard →]({{ '/tools/dashboards/christmas-decorations.html' | relative_url }}) · Commentary: [Deck the halls, check the rules]({{ '/blog/2026/11/deck-the-halls-check-the-rules/' | relative_url }})
 

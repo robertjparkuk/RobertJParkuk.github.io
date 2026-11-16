@@ -20,12 +20,15 @@ def b64(path, mime='image/svg+xml'):
 
 BUNTING = os.path.join(A, 'bunting.svg')
 
-KPIS = [('17 Oct 2023', 'Loose plastic glitter restricted in NI (EU 2023/2055). Still legal in GB.'),
+KPIS = [('£252.3m', 'UK imports of Christmas articles in 2025; 81.9% from China by value, 91.3% by weight (HMRC)'),
+        ('£77,500', "Belfast City Hall's artificial tree: 16.6 m, ten-year stated life (council minutes, Nov 2025)"),
+        ('9,371', 'Candle fires in England, nine years to March 2019; the highest severe-casualty rate of any cause (Home Office)'),
+        ('17 Oct 2023', 'Loose plastic glitter restricted in NI (EU 2023/2055). Still legal in GB.'),
+        ('19 Oct 2026', 'Vans need a permit and a booked slot at Redlands, Larne; 12 visits a year, no Sundays'),
+        ('£400 v £5,000', 'Maximum fly-tipping fixed penalty: NI against England (from 1 Sep 2026). Litter: £200 against £750'),
         ('34.15p', 'Power NI unit rate incl. 5% VAT from 1 Jul 2026, against the GB cap of 26.32p (VAT zero-rated)'),
-        ('£200 v £500', 'Maximum litter fine: NI (since 30 Dec 2022) against England (since 31 Jul 2023)'),
-        ('11.4 years', 'Before a kept artificial tree beats a chipped real tree, on the quoted figures'),
-        ('1 Jan 2027', 'UK CBAM starts; aluminium foil (7607) is in scope, NI included'),
-        ('CE, not UKCA', 'Fairy lights sold in NI must be CE marked (Low Voltage Directive)')]
+        ('0% to 23%', 'Irish VAT on plain white church candles: zero-rated from 1978, standard-rated since 1 Jan 2022'),
+        ('1 Jan 2027', 'UK CBAM starts; aluminium foil (7607) is in scope, NI included')]
 
 CSS = """
 @font-face{font-family:'SS3';src:url('%(f)s/source-sans-3.woff')}
@@ -102,8 +105,8 @@ def pdf():
     def fig(name, alt): return f'<figure><img src="file://{os.path.join(A, name)}" alt="{html.escape(alt)}"></figure>'
     dash = f"""<section class="dash"><div class="lab">Dashboard · as at {AS_AT}</div><h2>Christmas decorations in numbers</h2>
 <div class="kpis">{kpi_html()}</div>
-<div class="grid2">{fig('lights-season-cost.svg','Cost of running lights for a season')}{fig('litter-fines.svg','Maximum litter fines')}
-{fig('tree-carbon.svg','Tree carbon by end of life')}{fig('fires-1959.svg','Decoration fires, Christmas week 1959')}</div>
+<div class="grid2">{fig('imports-christmas-articles.svg','UK imports of Christmas articles 2025')}{fig('lights-season-cost.svg','Cost of running lights for a season')}
+{fig('litter-fines.svg','Maximum fixed penalties')}{fig('imports-fresh-trees.svg','UK imports of fresh Christmas trees 2025')}</div>
 <p class="note">Full tables, sources and CSV downloads: robertjpark.co.uk/tools/dashboards/christmas-decorations.html</p></section>"""
     garland = b64(BUNTING)
     doc = f"""<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><title>{html.escape(title)}</title><style>{CSS % {'f': FONTS}}</style></head><body>
@@ -111,7 +114,7 @@ def pdf():
 <img class="logo" src="{LOGO}" alt="Robert J. Park"><div class="tag">Environment · Carbon · Public Affairs</div>
 <div class="kicker">Briefing · Christmas · Product safety · Public realm</div>
 <h1>Deck the halls, <em>check the rules</em></h1>
-<p class="stand">Christmas decorations from Nuremberg tinsel to the carbon tax on your turkey foil: history, regulation then and now, where Northern Ireland, Great Britain and the EU disagree, twelve ways to a better Christmas, and a carol for the regulators.</p>
+<p class="stand">Father Christmas, banned Christmases and decorations from Nuremberg tinsel to the carbon tax on your turkey foil: who makes them, how they are regulated, Belfast's £77,500 artificial tree, van permits at Larne's recycling centre, twelve ways to a better Christmas, and a carol for the regulators. Nollaig Shona daoibh.</p>
 <div class="baubles"><img src="{bauble}" alt=""><img src="{bauble}" alt=""><img src="{bauble}" alt=""></div>
 <div class="meta">Robert J. Park · Larne, Northern Ireland · {AS_AT}<br>robert@robertjpark.co.uk · 07450 349480 · robertjpark.co.uk<br>Status as at {AS_AT}. Not legal, tax or customs advice.</div></section>
 {dash}
@@ -137,7 +140,7 @@ def card():
 <img src="{b64(BUNTING)}" style="width:100%">
 <div style="font-family:PM;letter-spacing:.14em;text-transform:uppercase;color:#A61C1C;font-size:20px;margin-top:20px">Christmas · Product safety · Public realm</div>
 <div style="font-family:SS4;font-weight:600;font-size:70px;line-height:1.05;color:#1A1A1A;margin-top:14px">Deck the halls,<br><span style="color:#A61C1C">check the rules</span></div>
-<div style="font-family:SS4;font-size:28px;color:#2b2b2b;margin-top:16px;max-width:900px">Glitter restricted in Larne, legal in Stranraer. Twelve ways to a better Christmas.</div>
+<div style="font-family:SS4;font-size:28px;color:#2b2b2b;margin-top:16px;max-width:900px">Glitter restricted in Larne, legal in Stranraer. Twelve ways to a better Christmas. Nollaig Shona daoibh.</div>
 <div style="margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between"><img src="{LOGO}" style="height:52px"><div style="display:flex;gap:18px"><img src="{bauble}" style="height:130px"><img src="{bauble}" style="height:100px"></div></div>
 </div></body></html>"""
     tmp = os.path.join(ROOT, '_scripts/briefings/christmas-decorations/_card.html'); open(tmp, 'w').write(doc)
@@ -151,8 +154,11 @@ MATRIX = [
  ('General product safety', 'EU GPSR 2023/988 since 13 Dec 2024', 'GPSR 2005; new framework consulted on, Mar–Jun 2026', 'EU GPSR since 13 Dec 2024'),
  ('Fairy lights marking', 'CE only, not UKCA', 'UKCA or CE', 'CE'),
  ('Packaging design and labels', 'EU PPWR from 12 Aug 2026, plus UK packaging EPR', 'UK packaging EPR', 'EU PPWR from 12 Aug 2026'),
- ('Generic "eco" claims', 'Case by case, DMCC Act (from 6 Apr 2025)', 'Case by case, DMCC Act', 'EU rule from 27 Sep 2026 bans them unless proven (Directive 2024/825)*; Irish transposition not checked'),
- ('Maximum litter fine', '£200 (since 30 Dec 2022)', '£500 in England (since 31 Jul 2023)', 'Not checked'),
+ ('Generic "eco" claims', 'Case by case, DMCC Act (from 6 Apr 2025)', 'Case by case, DMCC Act', 'Banned unless proven from 27 Sep 2026 (Directive 2024/825)*'),
+ ('Cut Christmas tree from GB', 'Retail scheme, or certificate and notification', 'Within GB: none under 3 m; UK plant passport over 3 m', 'Phytosanitary certificate'),
+ ('VAT on a candle', '20%', '20%', '23% (white church candles were 0% from 1978 to 2021)'),
+ ('Maximum fly-tipping fixed penalty', '£400', '£5,000 in England (since 1 Sep 2026)', 'Not checked'),
+ ('Maximum litter fixed penalty', '£200 (since 30 Dec 2022)', '£750 in England (since 1 Sep 2026)', 'Not checked'),
  ('Aluminium foil (CBAM)', 'UK CBAM from 1 Jan 2027', 'UK CBAM from 1 Jan 2027', 'EU CBAM, definitive since 1 Jan 2026'),
  ('Electricity price', 'Power NI 34.15p/kWh incl. 5% VAT (regulated tariff)', 'Ofgem cap 26.32p/kWh, VAT zero-rated to 31 Mar 2027', 'Not compared')]
 
@@ -199,6 +205,7 @@ a{{color:var(--red)}} .note{{font-size:.9rem;color:var(--muted)}}
 <h2>Headline figures</h2><div class="kpis">{kpi_html()}</div>
 <h2>Charts</h2><p class="note">Hover or tap a bar for its value.</p>
 <div class="charts">
+<figure>{inline('imports-christmas-articles.svg')}</figure><figure>{inline('imports-fresh-trees.svg')}</figure>
 <figure>{inline('lights-season-cost.svg')}</figure><figure>{inline('litter-fines.svg')}</figure>
 <figure>{inline('tree-cumulative-carbon.svg')}</figure><figure>{inline('tree-breakeven-studies.svg')}</figure>
 <figure>{inline('tree-carbon.svg')}</figure><figure>{inline('fires-1959.svg')}</figure>
@@ -209,9 +216,11 @@ a{{color:var(--red)}} .note{{font-size:.9rem;color:var(--muted)}}
 <h2>Data and sources</h2>
 <ul>
 <li><a href="../../data/dashboards/christmas-decorations/rules-matrix.csv">Rules matrix (CSV)</a></li>
+<li><a href="../../data/dashboards/christmas-decorations/hmrc-imports-2025.csv">UK imports of Christmas articles, lights and trees (CSV)</a>: HMRC Overseas Trade Statistics, calendar 2025, retrieved 16 November 2026; sums of monthly figures. EU imports are recorded by country of dispatch, so the China share is probably understated.</li>
+<li>Candle fires: Home Office, In-depth review of fire-related fatalities and severe casualties in England, 2010/11 to 2018/19. Belfast tree: council working group minutes, 18 November 2025. Redlands: Mid and East Antrim Borough Council. Irish candle VAT: S.I. 146 of 1978 and Revenue.</li>
 <li><a href="../../data/dashboards/christmas-decorations/lights-season-cost.csv">Cost of running lights (CSV)</a>: 240 hours; Power NI 34.15p/kWh incl. VAT from 1 Jul 2026 (Utility Regulator, Power NI); Ofgem cap 26.32p/kWh, 1 Oct–31 Dec 2026, with GB domestic electricity VAT zero-rated to 31 Mar 2027. Bulb ratings: Yukon Government and US EPA Energy Star; the 40 W mini-light rating is an assumption.</li>
 <li><a href="../../data/dashboards/christmas-decorations/tree-carbon.csv">Tree carbon over 20 years (CSV)</a>: 40, 16 and 3.5 kg CO2e as quoted by the British Christmas Tree Growers Association (trade body), attributed to the Carbon Trust but not on the Carbon Trust's own page. The Carbon Trust's own advice is 7 to 20 years of reuse.</li>
-<li>Litter fines: SR 2012/35 reg 3 as amended by SR 2022/302 (NI); SI 2023/770 (England). Fires 1959: Hansard, 8 December 1960.</li>
+<li>Litter fines: SR 2012/35 reg 3 as amended by SR 2022/302 (NI); S.I. 2026/816 (England, from 1 September 2026). Fly-tipping: Waste and Contaminated Land (NI) Order 1997 art. 4A; GOV.UK, 15 July 2026. Fires 1959: Hansard, 8 December 1960.</li>
 <li>Full source list: <a href="/blog/2026/11/deck-the-halls-check-the-rules/#sources">the article</a> and the <a href="../../assets/briefings/2026-11-christmas-decorations-briefing.pdf">briefing PDF</a>.</li>
 </ul>
 <p class="note">Robert J. Park · Environment · Carbon · Public Affairs · Larne, Northern Ireland · robert@robertjpark.co.uk · 07450 349480</p>
