@@ -179,6 +179,10 @@ DAERA drafts the plan and budgets. Under the Executive's cross-cutting rules, an
 
 - [Assembly approves Just Transition Commission, DAERA (27 Apr 2026)](https://www.daera-ni.gov.uk/news/assembly-approves-establishment-just-transition-commission)
 
+- [Public appointment vacancies: Chair and 15 members, Just Transition Commission, DAERA (19 May–9 Jul 2026)](https://www.daera-ni.gov.uk/articles/public-appointment-vacancies-chair-and-15-members-just-transition-commission-jtc)
+
+- [Minister Muir to convene summit on climate action and the green economy, DAERA (9 Nov 2026)](https://www.daera-ni.gov.uk/news/minister-muir-convene-summit-progressing-climate-action-and-growing-green-economy)
+
 - [Public bodies celebrated for climate reporting, DAERA (12 Jun 2026)](https://www.daera-ni.gov.uk/news/public-bodies-celebrated-milestone-achievement-climate-change-reporting)
 
 - [Unionist opposition to climate role 'illogical', Irish Post (8 Apr 2025)](https://www.irishpost.com/news/unionist-opposition-climate-role-288884)
