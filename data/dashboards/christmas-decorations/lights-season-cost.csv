@@ -1,0 +1,6 @@
+string,watts,hours,kwh,cost_ni_gbp,cost_gb_gbp
+"C9 bulbs, 25 × 7 W",175,240,42.0,14.34,11.05
+"C7 bulbs, 25 × 5 W",125,240,30.0,10.24,7.9
+"Mini incandescent, 100 bulbs (≈40 W)*",40,240,9.6,3.28,2.53
+"LED, 100 bulbs (Energy Star ceiling 20 W)",20,240,4.8,1.64,1.26
+"LED, 70 bulbs (2 W)",2,240,0.48,0.16,0.13

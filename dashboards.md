@@ -7,6 +7,12 @@ lead: Northern Ireland environmental, carbon and consultation data on one page e
 ---
 
 
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Christmas decorations: rules, costs and carbon</h2>
+
+How Christmas decorations in Northern Ireland's homes, shops and streets are regulated, and where NI, GB and EU rules differ: loose glitter, product safety and CE marking, packaging, green claims, litter fines and the carbon border tax on aluminium foil. Also the cost of running lights at Power NI prices and the carbon of real and artificial trees. As at 16 November 2026, from GOV.UK, Defra, DAERA, DfC, HMRC, the European Commission, Ofgem, the Utility Regulator and legislation.gov.uk.
+
+[Open the dashboard →]({{ '/tools/dashboards/christmas-decorations.html' | relative_url }}) · Commentary: [Deck the halls, check the rules]({{ '/blog/2026/11/deck-the-halls-check-the-rules/' | relative_url }})
+
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">NI Regulatory Horizon</h2>
 
 Every dated rule change, deadline and consultation close that matters to Northern Ireland businesses and councils, from November 2026 to December 2028, on one page: carbon, energy, environment, waste and packaging, chemicals and PFAS, products, trade, customs and CBAM, and the Windsor Framework. 62 dates, each with who it affects, where it applies, how firm it is, what to do and the official source, filterable by topic, sector and status. As at 9 November 2026, from GOV.UK, HMRC, DAERA, NIEA, DfE, the NI Assembly, the Utility Regulator, the FCA, the European Commission and EUR-Lex.

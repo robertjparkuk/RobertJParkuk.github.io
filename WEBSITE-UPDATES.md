@@ -25,6 +25,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.32.0 — 16 November 2026: Christmas decorations post, briefing and dashboard
+
+*Requested by Robert, 16 November 2026 ("Blog to go live later today"). Awaiting Robert's merge.*
+
+- `_posts/2026-11-16-deck-the-halls-check-the-rules.md`: then-and-now of tinsel, baubles, real and artificial trees, lights, spray snow, glitter, candles and CO, wrapping paper and CBAM on foil; retail, hospitality and public realm; NI/GB/EU rules table; ESG conflicts; Twelve ways to make Christmas better; "The twelve days of regulation". `hero_title` with `hero_until: 2026-12-24`; not tagged CBAM, so no price button.
+- `assets/briefings/2026-11-christmas-decorations-briefing.pdf`: branded A4 briefing with a dashboard page, bauble and garland decorations. Built by `_scripts/briefings/christmas-decorations/charts.py` then `build.py`.
+- `tools/dashboards/christmas-decorations.html`: self-contained dashboard (inline SVG charts with hover values, rules matrix, CSV downloads in `data/dashboards/christmas-decorations/`). Listed on /dashboards/.
+- Facts checked to 16 November 2026 by two research passes and an independent fact-check. Open items: Home Office candle fire figures (FIRE0602), HMRC import data for HS 950510, whether Directive 2024/825 applies in NI, rules for cut trees moving GB to NI.
+
 ### v0.31.1 — 14 November 2026: headline rules and IndexNow
 
 *Master Tidy handover, 14 November 2026 (sections 5 and 6). Also covers the 14 November status check card "hero-price-button".*
