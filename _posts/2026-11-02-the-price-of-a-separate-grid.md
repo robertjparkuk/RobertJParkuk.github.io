@@ -1,6 +1,7 @@
 ---
 title: "The price of a separate grid"
 date: 2026-11-02 00:12:00 +0000
+last_modified_at: 2026-11-16
 tags: ["Energy", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Energy"
@@ -26,7 +27,7 @@ The VAT row is the household version of a bigger gap for industry. Since 2023, W
 
 Northern Ireland cannot simply copy GB relief. GB funds part of it by moving costs elsewhere, and in a small market those costs would land on households, many of them fuel poor and dependent on heating oil. The lasting fix is cheaper NI generation and a stronger grid: renewables auctions and the North–South interconnector. Those take years, and business needs help sooner. The funded NI version of BICS could bridge the gap, and Exchequer money keeps its cost off household bills. How soon depends on the Executive.
 
-*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026.*
+*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026; rechecked and updated 16 November 2026.*
 
 ## The lifecycle at a glance
 
@@ -42,7 +43,7 @@ Cost builds at every stage, and gas spikes and wasted wind add to it. GB relief 
 | British Industrial Competitiveness Scheme (BICS)              | Did not exist                                                                           | Guidance published 10 Aug 2026; applications 1 Oct to 30 Nov 2026; RO and FiT exemptions from April 2027, Capacity Market exemption from October 2027; GB only. Budget (28 Oct 2026) funds the NI Executive to set up its own version; no amount stated | Industrial Strategy response to high GB industrial power prices. Government says up to £40/MWh off for over 10,000 firms (written statement, 16 Apr 2026) |
 | Carbon Price Support                                          | In force for GB generators; NI generators not covered                                   | To be removed from April 2028 (Treasury statement, 16 Apr 2026)                                                                                                                                                                                         | Treasury says it has done its job; removing it helps offset the cost of BICS                                                                              |
 | Climate Change Levy (CCL)                                     | Main rates set at each Budget; Climate Change Agreement (CCA) holders pay reduced rates | From 1 Apr 2028 the electricity main rate is frozen at the 2027–28 level; gas and solid fuel rise by RPI; LPG stays frozen (Budget, 28 Oct 2026)                                                                                                        | Shifts the levy in favour of electricity over gas. UK-wide, so NI firms benefit. CCA reduced rates stay fixed percentages of the main rates               |
-| VAT on domestic electricity                                   | 5% across the UK                                                                        | 0% in GB from 1 Oct 2026 to 31 Mar 2027, extended to 30 Jun 2027 (Budget, 28 Oct 2026); NI stays at 5% (HMRC, 8 Sep 2026)                                                                                                                               | Burnham's first cost-of-living measure. Windsor Framework VAT rules apply in NI, so NI homes get a one-off credit instead                                 |
+| VAT on domestic electricity                                   | 5% across the UK                                                                        | 0% in GB from 1 Oct 2026 to 31 Mar 2027; Budget (28 Oct 2026) to extend this to 30 Jun 2027; NI stays at 5% (HMRC, 8 Sep 2026)                                                                                                                               | Burnham's first cost-of-living measure. Windsor Framework VAT rules apply in NI, so NI homes get a one-off credit instead                                 |
 | Link between gas and electricity prices (GB)                  | Review of electricity market arrangements under way                                     | Package of 21 Apr 2026: voluntary wholesale CfDs for older renewables, allocation planned for 2027; generator levy to rise from 45% to 55%                                                                                                              | Gas price spike linked to the Middle East conflict. GB measures only                                                                                      |
 | NI renewables support                                         | No scheme; design consultation Feb 2023                                                 | Renewable Electricity Price Guarantee (REPG) final design Sept 2025. Enabling Bill passed Second Stage 8 Sep 2026 and is in Committee (Oct 2026). No auction date set; lawyers expect early 2028                                                        | The 80% by 2030 target in the Climate Change Act (NI) 2022 cannot be met without new projects                                                             |
 | NI renewable share of electricity                             | About 50%                                                                               | 50% for July 2025 to June 2026 (NISRA, 3 Sep 2026)                                                                                                                                                                                                      | Up from 44% a year earlier, but well short of the 80% target for 2030                                                                                     |
@@ -93,7 +94,7 @@ Most GB relief is a Westminster decision. NI electricity is governed by Stormont
 
 ## Where the pillars compete
 
-- **Industrial relief against fuel poverty.** A senior DfE official told the Economy Committee that GB-style relief is funded through household bills, which makes it hard to copy in NI without hurting fuel-poor homes (reported early 2026). Exchequer funding for an NI version of BICS, announced on 28 Oct 2026, eases this if the scheme stays off household bills.
+- **Industrial relief against fuel poverty.** DfE's Head of Energy Group, Richard Rodgers, told the Economy Committee that GB-style relief is funded through household bills, which makes it hard to copy in NI without hurting fuel-poor homes (reported early 2026). Exchequer funding for an NI version of BICS, announced on 28 Oct 2026, eases this if the scheme stays off household bills.
 
 - **Cheaper gas power now against carbon signals.** Ending Carbon Price Support in 2028 lowers the cost of GB gas generation. That cuts bills but weakens the reason to switch away from gas.
 
@@ -121,7 +122,7 @@ Most GB relief is a Westminster decision. NI electricity is governed by Stormont
 
 ## Practical examples
 
-- **NI manufacturers named in Parliament.** Jim Shannon (DUP) said Magellan Aerospace, T.G. Eakin and Mash Direct may not qualify for BICS. Peter Kyle replied that the Government was working with the Assembly so NI manufacturers would benefit ([Commons, 16 Apr 2026](https://parallelparliament.co.uk/debate/2026-04-16/commons/commons-chamber/british-industrial-competitiveness-scheme)).
+- **NI manufacturers named in Parliament.** Jim Shannon (DUP) said Magellan Aerospace, T.G. Eakin and Mash Direct may not qualify for BICS. Peter Kyle replied that the Government was working with the Assembly so NI manufacturers would benefit ([Commons, 16 Apr 2026](https://hansard.parliament.uk/Commons/2026-04-16)).
 
 - **A council buying local wind power.** Belfast City Council became the first customer for power from 3T Power's Ballyutoag wind farm. The supply covers City Hall and over 200 other council buildings ([Belfast City Council, 9 Dec 2025](https://www.belfastcity.gov.uk/news/council-venues-to-make-the-switch-to-locally-gener)).
 
@@ -165,7 +166,7 @@ Most GB relief is a Westminster decision. NI electricity is governed by Stormont
 
 - [Hansard: Written statements on BICS (HCWS1521) and Carbon Price Support (HCWS1519) (16 Apr 2026)](https://hansard.parliament.uk/html/Commons/2026-04-16/WrittenStatements)
 
-- [Commons statement: BICS, Parallel Parliament copy of Hansard (16 Apr 2026)](https://parallelparliament.co.uk/debate/2026-04-16/commons/commons-chamber/british-industrial-competitiveness-scheme)
+- [Hansard: Commons sitting of 16 Apr 2026, BICS statement and debate](https://hansard.parliament.uk/Commons/2026-04-16)
 
 - [Travers Smith: decoupling gas and electricity prices (27 Apr 2026)](https://www.traverssmith.com/knowledge/knowledge-container/breaking-the-link-government-moves-to-decouple-gas-and-electricity-prices/)
 

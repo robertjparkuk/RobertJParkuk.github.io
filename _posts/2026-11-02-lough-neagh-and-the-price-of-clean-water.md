@@ -1,6 +1,7 @@
 ---
 title: "Lough Neagh and the price of clean water"
 date: 2026-11-02 00:01:00 +0000
+last_modified_at: 2026-11-16
 tags: ["Contaminated land", "Water", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Chemicals, land and water"
@@ -24,7 +25,7 @@ On 22 October 2026, Sinn Féin president Mary Lou McDonald asked the Irish gover
 
 The lough has had blue-green algae every summer since 2023, and in 2026 signs appeared as early as February. Everyone agrees on the diagnosis: too much phosphorus from farms, sewage and septic tanks, made worse by warmer water and zebra mussels. No one agrees on who should pay. Every remedy costs a defined group: farmers, households, developers or other public services. Stormont has so far made each choice only part of the way. The Assembly rises on 16 March 2027, and the next five months will show which choices are settled and which are left to the next mandate.
 
-*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026.*
+*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026; rechecked and updated 16 November 2026.*
 
 ## The lifecycle at a glance
 
@@ -42,7 +43,7 @@ Phosphorus enters with feed and fertiliser, builds up in soil and leaks from far
 | NI Water and the regulator (SORPI)          | 2007 arrangement limits NIEA enforcement against NI Water | Withdrawal proposed 3 Mar 2026; not approved by the Executive (22 Oct 2026)                                                                                                                                                                          | Farmers asked why NI Water faces less enforcement than they do                                                         |
 | Pollution penalties                         | Old Water (NI) Order fines                                | Fisheries, Aquaculture and Water Environment Bill introduced 22 Jun 2026; at Committee Stage since 1 Jul 2026 (NI Assembly, checked 28 Oct 2026)                                                                                                     | Higher maximum penalties for all pollution sources; a £50,000 cap and fixed penalties were trailed on 3 Mar 2026       |
 | Independent environmental protection agency | 2020 New Decade, New Approach commitment unmet            | Proposed 4 Nov 2025; blocked at the Executive in early Feb 2026                                                                                                                                                                                      | DUP opposition. Muir says none will be set up this mandate (14 Feb 2026)                                               |
-| NI Water funding                            | PC21 underfunded                                          | PC21 shortfall of about £470m; PC28 gap of about £2bn (12 Mar 2026); PC21 extended to 2027/28 at £693m allowed revenue (Aug 2026). Budget (28 Oct 2026): extra £270m for the Executive and a £1.5bn three-year offer, neither earmarked for NI Water | Capital is funded from the Executive budget, with no domestic water charges                                            |
+| NI Water funding                            | PC21 underfunded                                          | PC21 shortfall of about £470m; PC28 gap of about £2bn (12 Mar 2026); PC21 extended to 2027/28 at £693m allowed revenue, nominal (Utility Regulator, 21 Aug 2026). Budget (28 Oct 2026): extra £270m for the Executive and a £1.5bn three-year offer, neither earmarked for NI Water | Capital is funded from the Executive budget, with no domestic water charges                                            |
 | Developer contributions                     | None                                                      | Voluntary scheme confirmed 19 Mar 2026; compulsory levy not ruled out                                                                                                                                                                                | Over 100 towns and villages have restricted wastewater connections                                                     |
 | Lough bed ownership                         | Shaftesbury Estates, sand extraction licensed             | The Earl is open to a transfer for nothing (7 Mar 2026); no deal reported                                                                                                                                                                            | He says ownership will not fix catchment pollution                                                                     |
 
@@ -99,7 +100,7 @@ Most levers sit at Stormont. Cross-cutting or controversial decisions need the w
 
 ## What it means for Northern Ireland firms and councils
 
-- **Trade effluent costs will rise.** The trade effluent tariff basket rises 3.4% in real terms in 2027/28 (Utility Regulator, Aug 2026). Expect tighter consent limits as NI Water faces enforcement.
+- **Trade effluent costs will rise.** NI Water's price limit for 2027/28 is 3.4% above inflation (Utility Regulator, 21 Aug 2026). Trade effluent charges sit within it. Expect tighter consent limits as NI Water faces enforcement.
 
 - **Discharge consents are under review.** DAERA plans new standards across NI (3 Mar 2026). Firms with direct discharges should check headroom now.
 
@@ -117,7 +118,7 @@ Most levers sit at Stormont. Cross-cutting or controversial decisions need the w
 
 - **An eel fishery cut back.** For 2026, DAERA allowed a 25-tonne catch of silver eels only and closed the yellow eel fishery for three years ([DAERA, 4 Jun 2026](https://www.daera-ni.gov.uk/news/minister-confirms-2026-eel-fishery-measures-lough-neagh)). A food business that depends on the lough is shrinking while the remedies are argued over.
 
-- **A fisherman takes DAERA to court.** A Lough Neagh eel fisherman sought judicial review of DAERA's pollution controls, with a permission hearing in Belfast on 24 March 2026. River Action and Friends of the Earth NI applied to intervene ([Irish Legal News, 24 Mar 2026](https://www.irishlegal.com/articles/fisherman-seeks-to-bring-judicial-review-over-lough-neagh-pollution)).
+- **A fisherman takes DAERA to court.** Eel fisherman Declan Conlon is seeking judicial review of DAERA's pollution controls. By October 2026 River Action had permission to intervene. The court had not yet decided whether the case can go to a full hearing ([River Action, 5 Oct 2026](https://riveractionuk.com/news/lough-neagh-pollution-legal-challenge-update/)).
 
 - **Capacity bought with public money.** An extra £30m of capital has unlocked wastewater capacity for 5,300 more homes, above the 4,300 NI Water had planned by the end of PC28. A voluntary developer scheme comes next ([NI Assembly, 19 Mar 2026](https://www.niassembly.gov.uk/assembly-business/official-report/written-ministerial-statements/department-for-infrastructure-developer-contributions-for-wastewater-infrastructure)).
 
@@ -200,6 +201,8 @@ Most levers sit at Stormont. Cross-cutting or controversial decisions need the w
 - [Irish Farmers Journal: Lakeland fined £115,000 for Artigarvan pollution (14 Aug 2026)](https://www.farmersjournal.ie/news/news/lakeland-fined-115-000-for-artigarvan-pollution-928215)
 
 - [Irish Legal News: Fisherman seeks judicial review over Lough Neagh pollution (24 Mar 2026)](https://www.irishlegal.com/articles/fisherman-seeks-to-bring-judicial-review-over-lough-neagh-pollution)
+
+- [River Action: Lough Neagh pollution legal challenge update (5 Oct 2026, modified 12 Oct 2026)](https://riveractionuk.com/news/lough-neagh-pollution-legal-challenge-update/)
 
 - [DAERA: First year of Farm Sustainability Payments (1 Sep 2026)](https://www.daera-ni.gov.uk/news/minister-welcomes-first-year-farm-sustainability-payments)
 

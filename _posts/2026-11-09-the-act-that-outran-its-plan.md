@@ -1,11 +1,12 @@
 ---
 title: "The Act that outran its plan"
 date: 2026-11-09 19:00:00 +0000
+last_modified_at: 2026-11-16
 tags: ["Climate Change Act", "Policy", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Climate law"
 image: /assets/photos/wind-turbines-sunset.jpg
-description: "The Climate Change Act (Northern Ireland) 2022 is law, but its action plan, fourth carbon budget, sectoral plans and Commissioner are all late. What that means ahead of the May 2027 election."
+description: "The Climate Change Act (Northern Ireland) 2022 is law, but its action plan, fourth carbon budget, sectoral plans and Commissioner are all late. What that means for firms and councils."
 hero_eyebrow: "Climate Change Act · Stormont"
 hero_title: "The Act that <em>outran its plan</em>."
 hero_lead: "The NI Climate Change Act is law but its plan, fourth budget, sectoral plans and Commissioner are late. The fight is over revising targets after 2027, while reporting and procurement duties already apply."
@@ -20,7 +21,7 @@ hero_until: 2026-11-23T12:00:00Z
 
 *Published early, on 9 November 2026, and correct as at that date. I'll update it in January 2027, when the Climate Action Plan and the fourth carbon budget are due to come forward ahead of the May 2027 election.*
 
-**Where I stand.** The Act's targets are law and should be met, but through a plan that keeps farming and industry producing here, not by pushing emissions offshore and importing the same goods from places with weaker rules. A transition that leaves Northern Ireland poorer will not last. The Executive should publish its plan before the election, so voters can judge it.
+**Where I stand.** The Act's targets are law and should be met, but through a plan that keeps farming and industry producing here, not by pushing emissions offshore and importing the same goods from places with weaker rules. A transition that leaves Northern Ireland poorer will not last. The Executive should publish the plan now, as the Act requires.
 
 ## The argument in brief
 
@@ -30,7 +31,7 @@ The Climate Change Act (Northern Ireland) 2022 is law, but most of the machinery
 
 The real political argument is whether the targets are revised after the May 2027 election, not whether they are met. For firms and councils, the duties that already bite are reporting, procurement and planning. Those will survive any revision of the targets.
 
-*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026.*
+*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026; rechecked and updated 16 November 2026.*
 
 ## The lifecycle at a glance
 
@@ -44,10 +45,10 @@ The Act and the CCC's advice are in place. Delay starts at the budgets and build
 |----------------------------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | Climate Change Act (NI) 2022     | In force since 6 Jun 2022: net zero 2050, at least 48% by 2030, 80% renewable electricity by 2030 | Unchanged. Muir said he had "no plans" to review the targets (12 Nov 2025). The First Minister said she was open to amending it to get the A5 built (23 May 2026) | The Act is now a dividing line for the 2027 election                                   |
 | Carbon budgets 1–3 (2023–37)     | Not set; deadline end of 2023                                                                     | Approved by the Assembly Dec 2024 (DAERA, 11 Dec 2024): 33%, 48%, 62% average cuts; 2040 target 77%                                                               | About a year late after the collapse of devolution                                     |
-| First Climate Action Plan (s.51) | Not drafted                                                                                       | Draft of 52 policies consulted 19 Jun–8 Oct 2025; response summary 13 Apr 2026; with the Executive (3 Sep 2026); no laying found (30 Oct 2026)                    | About 28 months past the statutory date                                                |
+| First Climate Action Plan (s.51) | Not drafted                                                                                       | Draft of 52 policies consulted 19 Jun–8 Oct 2025; response summary 13 Apr 2026; with the Executive (3 Sep 2026); no laying found (30 Oct 2026); Minister still pressing for adoption and plans a second plan (9 Nov 2026) | About 28 months past the statutory date                                                |
 | Fourth carbon budget (2038–42)   | No advice                                                                                         | CCC advised 77% (19 Mar 2025); consulted Jul–Nov 2025; not set, "in due course" (3 Sep 2026); no draft regulations found (30 Oct 2026)                            | Missed the 31 Dec 2025 deadline                                                        |
 | Climate Commissioner (s.50)      | Regulations not made                                                                              | Regulations approved by the Assembly, DUP and TUV against (Apr 2025). About £1m a year. Not appointed (Oct 2026)                                                  | DUP cited cost; the First Minister called unionist opposition "illogical" (8 Apr 2025) |
-| Just Transition Commission       | Not established                                                                                   | Regulations approved 27 Apr 2026; public appointments competition to follow                                                                                       | Muir pledged to set it up "without delay" (27 Apr 2026)                                |
+| Just Transition Commission       | Not established                                                                                   | Regulations approved 27 Apr 2026; Chair and 15 members recruited May–Jul 2026; appointments expected by 1 Feb 2027 (DAERA)                                        | Muir pledged to set it up "without delay" (27 Apr 2026)                                |
 | Public body reporting            | Regulations pending                                                                               | All 40 specified bodies filed first reports (11 Jun 2026)                                                                                                         | Reporting Bodies Regulations 2024 now apply                                            |
 | Section 52 duty on departments   | Untested                                                                                          | High Court quashed the A5 decision on s.52 (27 Jun 2025); Court of Appeal reversed on all grounds (6 Oct 2026)                                                    | s.52 read as a duty of rational, evidenced decisions, not a bar on emitting projects   |
 
@@ -136,7 +137,7 @@ DAERA drafts the plan and budgets. Under the Executive's cross-cutting rules, an
 
 ## Recommendations
 
-1.  **Executive: agree and lay the Climate Action Plan before the election.** The statutory date passed in June 2024, and delay raises legal and investment risk.
+1.  **Executive: agree and lay the Climate Action Plan without further delay.** The statutory date passed in June 2024, and delay raises legal and investment risk.
 
 2.  **DAERA: lay draft regulations for the fourth carbon budget with a statement on the missed deadline.** Openness protects credibility.
 
