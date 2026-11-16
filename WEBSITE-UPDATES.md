@@ -25,6 +25,18 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.32.0 — 16 November 2026: Christmas decorations post, briefing and dashboard
+
+*Requested by Robert, 16 November 2026 ("Blog to go live later today"). Awaiting Robert's merge.*
+
+- `_posts/2026-11-16-deck-the-halls-check-the-rules.md`: then-and-now of tinsel, baubles, real and artificial trees, lights, spray snow, glitter, candles and CO, wrapping paper and CBAM on foil; retail, hospitality and public realm; NI/GB/EU rules table; ESG conflicts; Twelve ways to make Christmas better; "The twelve days of regulation". `hero_title` with `hero_until: 2026-12-24`; not tagged CBAM, so no price button.
+- `assets/briefings/2026-11-christmas-decorations-briefing.pdf`: branded A4 briefing with a dashboard page, bauble and garland decorations. Built by `_scripts/briefings/christmas-decorations/charts.py` then `build.py`.
+- `tools/dashboards/christmas-decorations.html`: self-contained dashboard (inline SVG charts with hover values, rules matrix, CSV downloads in `data/dashboards/christmas-decorations/`). Listed on /dashboards/.
+- Second pass, same day (Robert's instruction, 14:44): added Father Christmas and the banned Christmases (1647, Scotland, 1973 lighting ban), Belfast City Hall signs, an Ulster Irish glossary and sayings, HMRC import figures for 2025 (two new charts and `hmrc-imports-2025.csv`), Home Office candle fire figures, greenwashing, the tree-movement paperwork table, Belfast's £77,500 artificial tree (with the Ballyboley and Belfast Zoo questions), Mid and East Antrim's van permits and booking at Redlands and the fly-tipping evidence, and Irish VAT on candles. "Father Christmas" throughout. Corrections against the brief: Ireland's zero rate on white candles ended on 1 January 2022; Redlands has permits and booking for vans, not a height barrier (1.95 m barriers are at the smaller centres); "first ever" artificial tree not supported; the zoo uses trees for enrichment and woodchip. England's fixed penalties updated to £5,000 (fly-tipping) and £750 (litter) from 1 September 2026.
+- `assets/style.css`: new `.page-photo.chart` and `.page-photo.garland` classes so charts and the garland are not cropped to the 16:7 photo frame (found in the 17:36 preview).
+- Third pass (Robert, 17:16): Belfast tree section now argues the offset parallel (carbon spent up front, savings promised; forest-sink permanence, Badgley 2022), the conflict with public-estate reduction (DoF 40% by 2028), and a verdict framed as opinion; new subsection "Pay now, promise later: the offset pattern" listing nine similar cases in the piece.
+- Facts checked to 16 November 2026 by six research passes and two independent fact-checks. Open items: Home Office table FIRE0602 (candle fires after 2019) and NIFRS figures; S.I. 2026/816 in-force date to confirm on legislation.gov.uk; whether Directive 2024/825 applies in NI; outcome of the 10 November Joint Committee on the Forced Labour Regulation; Irish phrases to be checked by a fluent Ulster speaker; update the tree-movement section after the 20 November summit.
+
 ### v0.31.1 — 14 November 2026: headline rules and IndexNow
 
 *Master Tidy handover, 14 November 2026 (sections 5 and 6). Also covers the 14 November status check card "hero-price-button".*
