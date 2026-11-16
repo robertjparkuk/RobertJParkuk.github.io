@@ -2,9 +2,12 @@
 title: "What the UK–EU ETS link does and does not change for your CBAM bill in 2027"
 date: 2026-11-21 07:30:00 +0000
 published: false   # Draft B, for use if the 20 Nov summit statement does not record agreement on linking. Check every line against the joint statement before publishing; delete Draft A.
+image: /assets/photos/eu-flags-berlaymont.jpg
 tags: [CBAM, Carbon, Trade, Northern Ireland]
 description: "The UK–EU summit on 20 November did not settle the emissions trading link. Both carbon border charges apply from January 2027 as they stand."
 ---
+
+<figure class="page-photo"><img src="{{ '/assets/photos/eu-flags-berlaymont.jpg' | relative_url }}" alt="EU flags in a row outside the European Commission's Berlaymont building in Brussels" loading="lazy"><figcaption>A link agreed in Brussels still needs a legal act on each side. <span class="photo-credit">Photo: <a href="https://unsplash.com/@guillaumeperigois?utm_source=robertjpark&utm_medium=referral">Guillaume Périgois</a> on <a href="https://unsplash.com/photos/row-of-european-union-flags-0NRkVddA2fw?utm_source=robertjpark&utm_medium=referral">Unsplash</a>.</span></figcaption></figure>
 
 The UK–EU summit in Brussels on 20 November 2026 did not conclude an agreement to link the UK and EU emissions trading systems. Talks continue. For your CBAM bill, the position is the one to plan around anyway: both charges apply as they stand.
 

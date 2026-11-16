@@ -5,7 +5,7 @@ published: false   # held by Robert, 1 Nov 2026 sign-off; reworked 11 Nov 2026 t
 tags: ["Carbon", "CBAM", "Trade", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Carbon pricing and trade"
-image: /assets/photos/shipping-containers.jpg
+image: /assets/photos/steelworks-night.jpg
 description: "Both CBAMs will charge UK firms from January 2027. What keeping, linking or scrapping the UK CBAM and ETS would mean for Northern Ireland manufacturers, with the case each side makes."
 hero_eyebrow: "CBAM · Industrial policy"
 hero_title: "Carbon borders as <em>industrial policy</em>."
@@ -15,7 +15,7 @@ hero_button2: ["All policy pieces", "/policy-series/"]
 hero_until: 2026-12-07T07:30:00Z
 ---
 
-<figure class="page-photo"><img src="{{ '/assets/photos/shipping-containers.jpg' | relative_url }}" alt="Stacks of brightly coloured shipping containers" loading="lazy"><figcaption>Both carbon border charges will apply to UK trade from January 2027.</figcaption></figure>
+<figure class="page-photo"><img src="{{ '/assets/photos/steelworks-night.jpg' | relative_url }}" alt="A steelworks lit up at night" loading="lazy"><figcaption>Both carbon border charges will apply to UK trade from January 2027. <span class="photo-credit">Photo: <a href="https://unsplash.com/@ggriffay?utm_source=robertjpark&utm_medium=referral">Gérard Griffay</a> on <a href="https://unsplash.com/photos/industrial-complex-illuminated-at-night-with-red-lights-bhpyQFlKysQ?utm_source=robertjpark&utm_medium=referral">Unsplash</a>.</span></figcaption></figure>
 
 *Part of the [Policy series]({{ '/policy-series/' | relative_url }}): where the rules stand in Northern Ireland, who decides them, and what to do about it. Updated as the rules change.*
 

@@ -25,6 +25,17 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.31.1 — 16 November 2026: Unsplash photos on three policy posts
+
+*Robert's instruction, 16 Nov: use royalty-free images suited to the posts and credit each photographer.*
+
+- `assets/photos/`: three photos under the free Unsplash Licence, web-sized (max 1600 px), self-hosted so no page contacts a third party: `eu-flags-berlaymont.jpg` (Guillaume Périgois), `ferry-lorries-port.jpg` (Abishanth Ahilan; Folkestone, not an NI port), `steelworks-night.jpg` (Gérard Griffay).
+- UK–EU ETS link post (both drafts, 21 Nov, still unpublished): new header photo of EU flags at the Berlaymont, with `image:` set for link previews.
+- The Irish Sea carbon bill (25 Nov): header photo changed from `logistics-freight.jpg` to the ferry and lorries.
+- Carbon borders as industrial policy (30 Nov): header photo changed from `shipping-containers.jpg` to the steelworks at night.
+- Every Unsplash photo carries a credit line in its caption ("Photo: name on Unsplash", both linked, as Unsplash asks). New `.photo-credit` style in `assets/style.css`.
+- The Unsplash Licence allows free commercial use; attribution is not required but is given. Adobe Stock and Robert's own photos are unchanged.
+
 ### v0.31.0 — 13 November 2026: rotating home-page headline
 
 *Robert's instruction, 13 Nov 23:16: "Ensure we have a rotating headline". This reverses decision 6 of 1 November (one fixed hero).*

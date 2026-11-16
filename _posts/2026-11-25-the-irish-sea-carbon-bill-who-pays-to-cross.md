@@ -5,7 +5,7 @@ published: false   # held by Robert, 1 Nov 2026 sign-off
 tags: ["Carbon", "CBAM", "Trade", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Carbon pricing and trade"
-image: /assets/photos/logistics-freight.jpg
+image: /assets/photos/ferry-lorries-port.jpg
 description: "The UK ETS now covers Irish Sea ferries. The 50% GB–NI discount is temporary by design, so NI firms should plan for a rising carbon line on freight, and ETS money should come back to NI ports."
 hero_eyebrow: "Freight · Carbon pricing"
 hero_title: "The Irish Sea carbon bill: <em>who pays to cross</em>?"
@@ -15,7 +15,7 @@ hero_button2: ["All policy pieces", "/policy-series/"]
 hero_until: 2026-12-02T07:30:00Z
 ---
 
-<figure class="page-photo"><img src="{{ '/assets/photos/logistics-freight.jpg' | relative_url }}" alt="A container ship, a lorry, an aircraft and stacked containers at a port" loading="lazy"><figcaption>Every trailer from Great Britain now carries a carbon line on the invoice.</figcaption></figure>
+<figure class="page-photo"><img src="{{ '/assets/photos/ferry-lorries-port.jpg' | relative_url }}" alt="A ferry docked at a port with lorries queuing to board" loading="lazy"><figcaption>Every trailer from Great Britain now carries a carbon line on the invoice. <span class="photo-credit">Photo: <a href="https://unsplash.com/@flywrk?utm_source=robertjpark&utm_medium=referral">Abishanth Ahilan</a> on <a href="https://unsplash.com/photos/large-ferry-docked-at-a-port-with-trucks-waiting-GmlA1Ql4M7c?utm_source=robertjpark&utm_medium=referral">Unsplash</a>.</span></figcaption></figure>
 
 *Part of the [Policy series]({{ '/policy-series/' | relative_url }}): where the rules stand in Northern Ireland, who decides them, and what to do about it. Updated as the rules change.*
 
