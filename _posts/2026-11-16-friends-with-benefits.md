@@ -6,7 +6,7 @@ image: /assets/briefings/friends-with-benefits/friends-with-benefits-card.png
 description: "Voice, but no vote. Ahead of Friday's UK–EU summit: why mutual recognition beats dynamic alignment, what the trade data shows, and what it means for Northern Ireland."
 ---
 
-<figure class="page-photo"><img src="{{ '/assets/photos/customs-declaration.jpg' | relative_url }}" alt="A customs declaration form being filled in by hand" loading="lazy"><figcaption>Some food consignments have been refused for the wrong colour of ink. The deal ends that paperwork, and hands the EU the pen on the rules.</figcaption></figure>
+<figure class="page-photo page-photo--etching"><img src="https://iiif.wellcomecollection.org/image/V0039525/full/1600,/0/default.jpg" alt="An 18th-century etching of a butcher riding a large black boar, swinging a string of sausages from a knife" loading="lazy"><figcaption>A butcher swinging a string of sausages from a knife rides on the back of a large black boar. Etching, 1774. Wellcome Collection. Public Domain Mark.</figcaption></figure>
 
 *Status as at 16 November 2026. Friday's summit has not happened yet, and no agreement text has been published. Not legal, tax or customs advice.*
 
@@ -15,6 +15,8 @@ description: "Voice, but no vote. Ahead of Friday's UK–EU summit: why mutual r
 On Sunday the BBC published an interview with Hamish Falconer, the EU relations minister. It was refreshingly candid. The food deal expected in Brussels on Friday 20 November will strip out reams of export paperwork and reopen the EU to products such as Lincolnshire sausages. In return, Great Britain will follow EU food and farming rules in full, now and as they change. Britain gets a "voice in the room". And, as the BBC's Faisal Islam reported him saying: **"Yes, we will not have a vote under these arrangements."**
 
 The paperwork is real. The BBC reports some Marks & Spencer lorries carrying over 300 pages of documents, and consignments refused because a form was signed in the wrong colour of ink. The minister also confirmed an exit clause is under discussion, because the EU worries about paying to rebuild border posts if a future government walks away. Both the Conservatives and Reform UK say they would undo the deal.
+
+<figure class="page-photo"><img src="{{ '/assets/photos/customs-declaration.jpg' | relative_url }}" alt="A customs declaration form being filled in by hand" loading="lazy"><figcaption>Some food consignments have been refused for the wrong colour of ink. The deal ends that paperwork, and hands the EU the pen on the rules.</figcaption></figure>
 
 So Britain escapes the tyranny of the wrong pen by handing over the pen altogether. Voice without a vote is a suggestion box with a better chair.
 
