@@ -176,6 +176,8 @@ h3 { font-size: 1.2rem; margin: 1.75rem 0 0.5rem; }
 .page-photo figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 0.35rem; }
 .page-photo.chart img { aspect-ratio: auto; object-fit: contain; border-radius: 0; }
 .page-photo.garland img { aspect-ratio: auto; object-fit: contain; border-radius: 0; max-width: 42rem; }
+.page-photo .photo-credit { display: block; font-size: 0.78rem; }
+.page-photo .photo-credit a { color: inherit; }
 .tool-section { margin-top: 2rem; }
 .tool-section h2 { margin-bottom: 0.25rem; }
 .tool-h { display: flex; gap: 0.75rem; align-items: center; }
@@ -222,3 +224,25 @@ h3 { font-size: 1.2rem; margin: 1.75rem 0 0.5rem; }
 .hero-dot[aria-current="true"] { background: var(--red); border-color: var(--red); }
 .hero-pause:focus-visible, .hero-dot:focus-visible { outline: 3px solid var(--red); outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) { .hero-slides.is-rotating > .hero-slide { transition: none; } }
+
+/* v0.33.0: dashboards page as a grid of cards (thumbnail, title, description underneath) */
+.dash-count { color: var(--muted); margin: 0.25rem 0 0; }
+.dash-group { margin-top: 2.5rem; }
+.dash-group h2 { margin: 0 0 0.25rem; }
+.dash-intro { color: var(--muted); margin: 0 0 1rem; max-width: 46rem; }
+.dash-grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+@media (min-width: 40rem) { .dash-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 64rem) { .dash-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .dash-grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.dash-card { display: flex; flex-direction: column; background: var(--bg); border: 1px solid var(--rule); border-top: 4px solid var(--red); border-radius: 0 0 6px 6px; overflow: hidden; min-width: 0; }
+.dash-card:hover, .dash-card:focus-within { border-color: var(--red-soft); border-top-color: var(--red); }
+.dash-thumb { display: block; border-bottom: 1px solid var(--rule); background: var(--bg-alt); }
+.dash-thumb img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top left; }
+.dash-body { display: flex; flex-direction: column; flex: 1; padding: 1rem 1.1rem 1.1rem; }
+.dash-body h3 { margin: 0 0 0.4rem; font-size: 1.2rem; line-height: 1.25; }
+.dash-body h3 a { color: var(--ink); text-decoration: none; }
+.dash-body h3 a:hover, .dash-body h3 a:focus { color: var(--red); text-decoration: underline; }
+.dash-body p { margin: 0 0 0.5rem; font-size: 0.98rem; }
+.dash-meta { color: var(--muted); font-size: 0.88rem !important; }
+.dash-links { margin-top: auto !important; padding-top: 0.25rem; font-size: 0.95rem !important; }
+.dash-links span { color: var(--muted); font-size: 0.9rem; }
+.dash-foot { margin-top: 2.5rem; color: var(--muted); }

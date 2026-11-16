@@ -1,11 +1,11 @@
 ---
 title: "The Irish Sea carbon bill: who pays to cross"
-date: 2026-11-25 07:30:00 +0000
-published: false   # held by Robert, 1 Nov 2026 sign-off
+date: 2026-11-21 12:00:00 +0000
+published: false   # held by Robert, 1 Nov 2026 sign-off; Robert 16 Nov 2026: publish 21-23 Nov once the 20 Nov summit lines are updated
 tags: ["Carbon", "CBAM", "Trade", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Carbon pricing and trade"
-image: /assets/photos/logistics-freight.jpg
+image: /assets/photos/ferry-lorries-port.jpg
 description: "The UK ETS now covers Irish Sea ferries. The 50% GB–NI discount is temporary by design, so NI firms should plan for a rising carbon line on freight, and ETS money should come back to NI ports."
 hero_eyebrow: "Freight · Carbon pricing"
 hero_title: "The Irish Sea carbon bill: <em>who pays to cross</em>?"
@@ -15,7 +15,7 @@ hero_button2: ["All policy pieces", "/policy-series/"]
 hero_until: 2026-12-02T07:30:00Z
 ---
 
-<figure class="page-photo"><img src="{{ '/assets/photos/logistics-freight.jpg' | relative_url }}" alt="A container ship, a lorry, an aircraft and stacked containers at a port" loading="lazy"><figcaption>Every trailer from Great Britain now carries a carbon line on the invoice.</figcaption></figure>
+<figure class="page-photo"><img src="{{ '/assets/photos/ferry-lorries-port.jpg' | relative_url }}" alt="A ferry docked at a port with lorries queuing to board" loading="lazy"><figcaption>Every trailer from Great Britain now carries a carbon line on the invoice. <span class="photo-credit">Photo: <a href="https://unsplash.com/@flywrk?utm_source=robertjpark&utm_medium=referral">Abishanth Ahilan</a> on <a href="https://unsplash.com/photos/large-ferry-docked-at-a-port-with-trucks-waiting-GmlA1Ql4M7c?utm_source=robertjpark&utm_medium=referral">Unsplash</a>.</span></figcaption></figure>
 
 *Part of the [Policy series]({{ '/policy-series/' | relative_url }}): where the rules stand in Northern Ireland, who decides them, and what to do about it. Updated as the rules change.*
 
@@ -136,7 +136,7 @@ The UK ETS is run jointly by four governments. EU rules reach NI through the Win
 
 1.  **UK ETS Authority: ring-fence a share of maritime proceeds for NI port shore power.** None is earmarked, and berth emissions are charged in full.
 
-2.  **DESNZ and NIO: publish route-level cost estimates for GB–NI freight before the 2028 review.** The 1% and 6% figures cannot both be right.
+2.  **DESNZ and NIO: publish route-level cost estimates for GB–NI freight before the 2028 review.** The 1% and 6% figures cannot both be right, and ministers have also said ticket prices would rise by a "low single digit" percentage (written answer HL15805, 7 Apr 2026).
 
 3.  **UK Government: set out how and when the NI deduction ends under any EU link.** Firms need a known date.
 
@@ -162,7 +162,7 @@ The UK ETS is run jointly by four governments. EU rules reach NI through the Win
 
 - [UK ETS Authority: domestic maritime main response (Nov 2025)](https://assets.publishing.service.gov.uk/media/6925919c33d088f6d5da2ccd/uk-ets-domestic-maritime-main-authority-response.pdf)
 
-- [SI 2026/392 text (made 1 Apr 2026), LawPlayer mirror](https://lawplayer.com/uk/act/uksi-2026-392)
+- [SI 2026/392 (made 1 Apr 2026), legislation.gov.uk](https://www.legislation.gov.uk/uksi/2026/392/made)
 
 - [gov.scot: final BRIA for UK ETS maritime (30 Jan 2026)](https://www.gov.scot/publications/expansion-uk-emissions-trading-scheme-domestic-maritime-sector-final-business-regulatory-impact-assessment-2026/pages/3/)
 

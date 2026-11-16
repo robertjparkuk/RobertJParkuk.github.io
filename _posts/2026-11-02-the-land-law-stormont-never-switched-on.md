@@ -1,14 +1,15 @@
 ---
 title: "The land law Stormont never switched on"
 date: 2026-11-02 00:02:00 +0000
+last_modified_at: 2026-11-16
 tags: ["Contaminated land", "Water", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Chemicals, land and water"
 image: /assets/photos/net-zero-sand.jpg
-description: "Northern Ireland's contaminated land law was passed in 1997 and never commenced. The case for switching it on before the May 2027 election, phased and with capped funding."
+description: "Northern Ireland's contaminated land law was passed in 1997 and never commenced. The case for switching it on within this Assembly mandate, phased and with capped funding."
 hero_eyebrow: "Contaminated land · Stormont"
 hero_title: "The land law Stormont <em>never switched on</em>."
-hero_lead: "Stormont should agree before May 2027 to switch on the 1997 contaminated land law, phased and with capped funding, because land is now cleaned up only when someone builds on it."
+hero_lead: "Stormont should agree within this mandate to switch on the 1997 contaminated land law, phased and with capped funding, because land is now cleaned up only when someone builds on it."
 hero_button: "Read the piece"
 hero_button2: ["All policy pieces", "/policy-series/"]
 hero_until: 2026-11-09T07:30:00Z
@@ -24,9 +25,9 @@ On 22 May 2026, DAERA Minister Andrew Muir (Alliance) briefed Foyle MLAs on Mobu
 
 Part III of the Waste and Contaminated Land (Northern Ireland) Order 1997 would create that regime. It is the NI version of Part 2A of the Environmental Protection Act 1990, which has applied in Great Britain since 2000–2001. Almost 30 years on, Part III has never been commenced. DAERA's project page, last updated on 14 April 2026, says a tender for a report on the cost and resources of the regime received no bids, officials are considering next steps, and the work may be completed in 2027. In practice, contamination is dealt with when someone applies for planning permission. Land that nobody develops is not dealt with at all.
 
-This piece argues that the Executive should agree to commence Part III before the May 2027 Assembly election, phased in and with capped funding. The case against is serious. Councils face costs, homeowners could face blight and liability, and remediation money competes with money for housing. Those risks can be managed. Doing nothing is also a choice, and the public pays for it later.
+This piece argues that the Executive should agree to commence Part III within the current Assembly mandate, phased in and with capped funding. The case against is serious. Councils face costs, homeowners could face blight and liability, and remediation money competes with money for housing. Those risks can be managed. Doing nothing is also a choice, and the public pays for it later.
 
-*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026.*
+*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026; rechecked and updated 16 November 2026.*
 
 ## The lifecycle at a glance
 
@@ -44,7 +45,7 @@ The chain breaks between stages 4 and 5. Land that nobody applies to develop is 
 | Environmental Liability (Prevention and Remediation) Regulations (NI) 2009 | In force since 24 Jul 2009                                                                      | Unchanged                                                                                                                                                                          | Does not cover damage from events that ended before July 2009, so it cannot reach legacy land                     |
 | Planning route (DAERA guidance; Practice Guide, Apr 2019)                  | Main tool in practice                                                                           | Main tool in practice (DAERA page last changed 10 Jun 2020)                                                                                                                        | Developers carry out remediation when they build. Idle sites are never assessed                                   |
 | GB Part 2A                                                                 | In force: England and Scotland 2000, Wales 2001; English statutory guidance dates from Apr 2012 | Unchanged. English capital grants ended 1 Apr 2017                                                                                                                                 | Without grants, much of the work moved into planning in GB too                                                    |
-| EU Soil Monitoring Directive 2025/2360                                     | Proposal under negotiation                                                                      | In force 16 Dec 2025; three years to transpose; public register of potentially contaminated sites due within 10 years                                                              | Ireland must list its sites. Not on DAERA's list of EU law applying in NI under Windsor Framework Annex 2 (3 Apr 2026)                                              |
+| EU Soil Monitoring Directive 2025/2360                                     | Proposal under negotiation                                                                      | In force 16 Dec 2025; three years to transpose; public register of potentially contaminated sites due within 10 years                                                              | Ireland must list its sites. Not on DAERA's 3 Apr 2026 list of Annex 2 law under UK direction and control                                              |
 | PFAS on land                                                               | Barely addressed in UK or Irish land practice                                                   | CL:AIRE published 13 PFAS site profiles for the Environment Agency (29 Jul 2026). Dublin Airport warned of a legal gap for PFAS soil (Irish Examiner, 27 May 2026)                 | Firefighting foam legacies at airfields, fire stations and military sites are now being mapped                    |
 | NI Housing Supply Strategy 2024–2039                                       | In development                                                                                  | Published Dec 2024: at least 100,000 homes, one third social                                                                                                                       | The strategy does not mention brownfield land or contamination                                                    |
 | Landfill tax and waste crime funding (UK Budget)                           | Rates set each year by HM Treasury                                                              | Budget (28 Oct 2026): standard rate rises by RPI from 1 Apr 2027 and applies in NI. Funding to cover tax liabilities from clearing six illegal waste sites, not stated to cover NI | Dearer landfill widens the saving from illegal dumping. No new money for NI legacy land                           |
@@ -85,7 +86,7 @@ Commencement is a DAERA order, but it needs Executive agreement and a budget lin
 | Mobuoy remediation                       | DAERA and NIEA, using Water (NI) Order 1999 duties | Business case approval; Executive or UK funding      | Strategy being finalised                    |
 | Environmental Liability Regulations 2009 | DAERA                                              | None                                                 | In force, not retrospective                 |
 | Planning conditions                      | Councils (local development plans), DfI policy     | None                                                 | Main route in practice                      |
-| EU Soil Monitoring Directive             | EU                                                 | Member states transpose                              | Applies in Ireland; not on DAERA's Annex 2 list (3 Apr 2026) |
+| EU Soil Monitoring Directive             | EU                                                 | Member states transpose                              | Applies in Ireland; not on DAERA's 3 Apr 2026 list of Annex 2 law under UK direction and control |
 
 ## Where the pillars compete
 
@@ -129,9 +130,9 @@ Commencement is a DAERA order, but it needs Executive agreement and a budget lin
 
 ## Recommendations
 
-1.  **Executive: agree before May 2027 to commence Part III in phases.** It gives a legal footing that does not depend on someone choosing to develop a site.
+1.  **Executive: agree in this mandate to commence Part III in phases.** It gives a legal footing that does not depend on someone choosing to develop a site.
 
-2.  **DAERA: produce the cost and resources assessment in-house or re-tender now.** Waiting until 2027 pushes the decision past the election.
+2.  **DAERA: produce the cost and resources assessment in-house or re-tender now.** Waiting until 2027 leaves the decision to the next Executive.
 
 3.  **Department of Finance and Executive: create a capped, risk-ranked capital fund (the 2019 "Option 4").** Councils asked for this; England shows duties without money stall. The £1.5bn three-year offer of 28 Oct 2026 is one possible source.
 

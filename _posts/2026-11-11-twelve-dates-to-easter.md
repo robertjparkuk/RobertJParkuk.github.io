@@ -3,7 +3,9 @@ title: "Twelve dates to Easter: what Northern Ireland firms need to do before Ap
 date: 2026-11-11 07:30:00 +0000
 tags: [CBAM, ESOS, Carbon, Windsor Framework, Northern Ireland, Deadlines]
 image: /assets/briefings/twelve-dates/twelve-dates-to-easter.png
-hero_title: "Twelve dates to Easter for NI firms"
+hero_eyebrow: "Deadlines · CBAM · Windsor Framework"
+hero_title: "Twelve dates to Easter <em>for NI firms</em>."
+hero_lead: "From the UK–EU summit on 20 November to EU CBAM certificates in February: the twelve dates before April 2027 that matter to Northern Ireland manufacturers, importers and food firms, and what to do before each."
 hero_until: 2026-11-25
 description: "From the UK–EU summit on 20 November to EU CBAM certificates and NI-only F-gas and deforestation rules: the twelve dates between now and April 2027 that matter most to Northern Ireland manufacturers, importers and food firms, and what to do before each."
 ---

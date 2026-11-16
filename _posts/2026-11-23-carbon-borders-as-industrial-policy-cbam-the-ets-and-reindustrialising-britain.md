@@ -1,11 +1,11 @@
 ---
 title: "Carbon borders as industrial policy: CBAM, the ETS and UK manufacturing"
-date: 2026-11-30 07:30:00 +0000
-published: false   # held by Robert, 1 Nov 2026 sign-off; reworked 11 Nov 2026 to remove the verdict (review item E1). Hold until the 20 Nov summit statement is out, then update the linking rows.
+date: 2026-11-23 12:00:00 +0000
+published: false   # held by Robert, 1 Nov 2026 sign-off; Robert 16 Nov 2026: publish 21-23 Nov, keep over 4,000 words; reworked 11 Nov 2026 to remove the verdict (review item E1). Hold until the 20 Nov summit statement is out, then update the linking rows.
 tags: ["Carbon", "CBAM", "Trade", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Carbon pricing and trade"
-image: /assets/photos/shipping-containers.jpg
+image: /assets/photos/steelworks-night.jpg
 description: "Both CBAMs will charge UK firms from January 2027. What keeping, linking or scrapping the UK CBAM and ETS would mean for Northern Ireland manufacturers, with the case each side makes."
 hero_eyebrow: "CBAM · Industrial policy"
 hero_title: "Carbon borders as <em>industrial policy</em>."
@@ -15,7 +15,7 @@ hero_button2: ["All policy pieces", "/policy-series/"]
 hero_until: 2026-12-07T07:30:00Z
 ---
 
-<figure class="page-photo"><img src="{{ '/assets/photos/shipping-containers.jpg' | relative_url }}" alt="Stacks of brightly coloured shipping containers" loading="lazy"><figcaption>Both carbon border charges will apply to UK trade from January 2027.</figcaption></figure>
+<figure class="page-photo"><img src="{{ '/assets/photos/steelworks-night.jpg' | relative_url }}" alt="A steelworks lit up at night" loading="lazy"><figcaption>Both carbon border charges will apply to UK trade from January 2027. <span class="photo-credit">Photo: <a href="https://unsplash.com/@ggriffay?utm_source=robertjpark&utm_medium=referral">Gérard Griffay</a> on <a href="https://unsplash.com/photos/industrial-complex-illuminated-at-night-with-red-lights-bhpyQFlKysQ?utm_source=robertjpark&utm_medium=referral">Unsplash</a>.</span></figcaption></figure>
 
 *Part of the [Policy series]({{ '/policy-series/' | relative_url }}): where the rules stand in Northern Ireland, who decides them, and what to do about it. Updated as the rules change.*
 
@@ -108,7 +108,7 @@ This matters for the abolition pledges. A Conservative or Reform government coul
 
 ## Scrapping the UK CBAM and ETS: the case for and against
 
-Reform UK would abolish the UK ETS and stop the UK CBAM (point 6 and point 7 of its 65-point plan of 26 October 2026, which names "the fertiliser tax"). In February 2026 Richard Tice told POLITICO the party would scrap "all these levies and green taxes", including CBAM. On 1 April 2026 Kemi Badenoch pledged that a Conservative government would scrap the UK ETS, the Carbon Price Support and the UK CBAM; the party restated the pledge in June.
+Reform UK would abolish the UK ETS and stop the UK CBAM (in its 65-point plan of 26 October 2026, which names "the fertiliser tax"). In February 2026 Richard Tice told POLITICO the party would scrap "all these levies and green taxes", including CBAM. On 1 April 2026 Kemi Badenoch pledged that a Conservative government would scrap the UK ETS, the Carbon Price Support and the UK CBAM; the party restated the pledge in June.
 
 **The best case for scrapping, as its supporters make it**
 
@@ -254,7 +254,7 @@ Official and primary sources first. Secondary sources are used only where no pri
 
 - [European Commission: CBAM Questions and Answers, Q 7.12–7.14 on Northern Ireland (updated 15 October 2026)](https://taxation-customs.ec.europa.eu/document/download/013fa763-5dce-4726-a204-69fec04d5ce2_en?filename=CBAM_Questions+and+Answers.pdf)
 
-- [Lords written answer HL12132 on the EU CBAM and electricity in Northern Ireland](https://questions-statements.parliament.uk/written-questions/detail/2025-11-19/hl12132)
+- [Lords written answer HL12132 (3 Dec 2025): EU CBAM does not apply in NI; electricity and the Single Electricity Market](https://questions-statements.parliament.uk/written-questions/detail/2025-11-19/hl12132)
 
 - [Council of the EU: Working Party on the United Kingdom, draft agreement linking the EU and UK emissions trading systems, CM 4531/26 (10 November 2026)](https://data.consilium.europa.eu/doc/document/CM-4531-2026-INIT/en/pdf)
 

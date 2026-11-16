@@ -1,6 +1,7 @@
 ---
 title: "Two refrigerant rulebooks, one small market"
 date: 2026-11-02 00:10:00 +0000
+last_modified_at: 2026-11-16
 tags: ["Energy", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Energy"
@@ -24,7 +25,7 @@ On 15 May 2026, Defra said it would not legislate in 2026 to change the Great Br
 
 The result is a two-speed market inside one country. GB keeps the 2014 regime and its quota cut. Northern Ireland faces EU product bans, an EU route to zero HFCs by 2050 and, possibly, an EU restriction on PFAS. At the same time NI has the UK's heaviest reliance on heating oil and no heat pump grant. The Budget of 28 October 2026 tilted the sums further towards oil. It removed the 4% kerosene tariff, and from 1 April 2027 VAT on installing heat pumps in homes rises from 0% to 5%. Refrigerant policy and heat policy are being made in separate rooms, and NI manufacturers and households carry the cost of the gap. The pillars compete too: low-GWP fluorinated refrigerants can be PFAS, the natural alternatives are flammable or toxic, and heat pumps cut carbon but can raise costs for the households least able to pay.
 
-*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026.*
+*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026; rechecked and updated 16 November 2026.*
 
 ## The lifecycle at a glance
 
@@ -64,7 +65,8 @@ The main split is between parties that would expand heat pump subsidy and partie
 | [NI Communities Minister Gordon Lyons (DUP)](https://www.communities-ni.gov.uk/news/lyons-announces-agreement-home-heating-oil-support)                                                                                                     | £100 heating oil card for more than 300,000 households, £36.4m (16 Apr 2026)                                                                                                                                                                                                                                              |
 | [Sinn Féin and UUP](https://www.irishnews.com/news/northern-ireland/a-drop-in-the-ocean-northern-ireland-homes-get-17m-to-tackle-home-heating-oil-price-rises-X3BQDUD7KBCTLD3XABXZQ6CYQA/)                                                  | Both criticised the £17m Treasury heating oil support as too small (16 Mar 2026)                                                                                                                                                                                                                                          |
 | [DAERA (Andrew Muir, Alliance)](https://www.niassembly.gov.uk/globalassets/committee-blocks/windsor-framework-democratic-scrutiny-committee/inquiries/dsc-01-2024---completed-daera-template-pubr-fluorinated-greenhouse-gases-f-gases.pdf) | DAERA's 2024 assessment for the Windsor Framework scrutiny committee expected divergence from GB to be minimal. That has not held                                                                                                                                                                                         |
-| SDLP, TUV                                                                                                                                                                                                                                   | No published position found (searched 27 Oct 2026)                                                                                                                                                                                                                                                                        |
+| TUV                                                                                                                                                                                                                                         | No published position found (searched 16 Nov 2026)                                                                                                                                                                                                                                                                        |
+| SDLP | Urged urgent heating oil support and a fast-tracked Warm Healthy Homes Fund; no heat pump or F-gas position found (12 Apr 2026) |
 
 - **Subsidy is the real dividing line.** Labour and the Lib Dems would expand grants. Reform would abolish the BUS. The Conservatives question the timetable.
 
@@ -183,6 +185,8 @@ Westminster sets the GB refrigerant rules. Brussels sets the NI refrigerant rule
 - [ACR News: Copeland invests £19m in NI production (16 May 2024)](https://www.acr-news.com/copeland-invests-19m-to-expand-northern-ireland-production)
 
 - [EUR-Lex: Regulation (EU) 2024/573, Annex IV](https://eur-lex.europa.eu/eli/reg/2024/573/oj)
+
+- [legislation.gov.uk: SI 2023/376, VAT relief for energy-saving materials in NI](https://www.legislation.gov.uk/uksi/2023/376/note/made/data.html)
 
 - [Cedrec: EU tightens F-gas legislation, switchgear dates (2024)](https://cedrec.com/r/news/0224-eu-tighten-up-legislation-on-f-gas-and-ozone-depleting-substances)
 
