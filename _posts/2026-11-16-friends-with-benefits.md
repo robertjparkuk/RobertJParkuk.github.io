@@ -85,13 +85,13 @@ I pulled HMRC's trade statistics back to 2000 and built two dashboards.
 
 **The sausage dashboard.** UK sausage exports to the EU fell from £18.9 million in 2020 to £10.5 million in 2021, the first year of the new barriers. By 2025 they were back to £15.7 million in cash terms, but by weight they were still 28% below 2015. Meanwhile imports from the EU more than doubled, from £337 million in 2015 to £782 million in 2025. For every £1 of sausage Britain sells the EU, it buys about £50. That is who Friday's deal really keeps the road open for. The NFU says food export volumes to the EU are down by over a third since 2019. *(Code 1601 covers all sausages, salami and chorizo included, not only the fresh British banger. Figures are not adjusted for inflation.)*
 
-[Open the sausage dashboard](https://claude.ai/artifact/1BMrsrrCfnY5ZUccjTpbD3)
+[Open the sausage dashboard]({{ '/tools/dashboards/uk-eu-sausage-trade.html' | relative_url }})
 
 ![EU share of UK goods and food trade, 2000 to 2026]({{ '/assets/briefings/friends-with-benefits/chart-diversion.png' | relative_url }})
 
 **The trade diversion dashboard.** Trade diversion means trade shifting to a different partner because barriers changed, not because price or quality did. The EU's share of UK goods exports was 56.1% in 2000, 43.7% in 2015 and 42.4% in 2025. Most of that fall came before the referendum. On food and drink the EU still takes 57.9% of UK exports (60.3% in 2015) and supplies 69.0% of imports (69.4% in 2015). In other words: after five years of paperwork, the food trade did not go somewhere else. It stayed with the neighbours and paid more to get there. That is the best argument for removing the friction, and no argument at all for who should hold the pen. *(Totals include gold and other erratic items; a changing share does not by itself prove diversion.)*
 
-[Open the trade diversion dashboard](https://claude.ai/artifact/PN64NQAQN6heDM2WUzF6qP)
+[Open the trade diversion dashboard]({{ '/tools/dashboards/uk-trade-diversion.html' | relative_url }})
 
 ## Beyond sausages: where the pen matters next
 
