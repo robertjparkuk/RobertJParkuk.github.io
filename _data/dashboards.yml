@@ -1,0 +1,116 @@
+# Dashboards shown on /dashboards/ as a grid, in this order within each group.
+# Each card: title, page, thumb (640x400 JPEG in assets/dashboards/), summary (keep to about 40 words),
+# as_at (the date line readers see), and an optional related link.
+# Add a dashboard here when its page in tools/dashboards/ goes live; take a new thumbnail at the same time.
+
+- group: "Rules and deadlines"
+  intro: "Dated rule changes, carbon border charges and consultations that Northern Ireland firms and councils need to act on."
+  items:
+    - title: "NI Regulatory Horizon"
+      page: /tools/dashboards/ni-regulatory-horizon.html
+      thumb: /assets/dashboards/ni-regulatory-horizon.jpg
+      summary: "Every dated rule change, deadline and consultation close that matters to NI businesses and councils, from November 2026 to December 2028. Who it affects, where it applies, how firm it is and what to do, each with its official source."
+      as_at: "Dates checked 11 November 2026"
+      related_title: "Two-Regime Readiness Review"
+      related: /cbam-desk/
+    - title: "CBAM Exposure Tracker"
+      page: /tools/dashboards/cbam-exposure-tracker.html
+      thumb: /assets/dashboards/cbam-exposure-tracker.jpg
+      summary: "Who in Northern Ireland pays a carbon border charge, from when and at what price. The EU and UK CBAMs side by side, quarterly EU certificate prices, NI goods trade with the EU, and goods arriving in NI from Ireland."
+      as_at: "Rules checked 11 November 2026; trade figures as at 22 October 2026"
+      related_title: "CBAM and CSRD: what NI manufacturers need to know"
+      related: /blog/2026/10/cbam-and-csrd-for-ni-manufacturers/
+    - title: "EU Law and the Windsor Framework"
+      page: /tools/dashboards/eu-law-windsor-framework.html
+      thumb: /assets/dashboards/eu-law-windsor-framework.jpg
+      summary: "Which EU laws apply in Northern Ireland, every Stormont Brake case and new EU act added since 2024, how NI rules reach businesses in Great Britain, and open UK, Commission and Irish government consultations."
+      as_at: "Checked 11 November 2026"
+    - title: "NI Consultations Monitor"
+      page: /tools/dashboards/ni-consultations-monitor.html
+      thumb: /assets/dashboards/ni-consultations-monitor.jpg
+      summary: "Every open public consultation at the 11 councils, the nine Stormont departments and UK Government where NI is in scope, with closing dates and how often each body publishes a response to what it was told."
+      as_at: "Updated every Friday"
+      related_title: "Consultation responses"
+      related: /public-sector/consultation-responses/
+
+- group: "Sectors"
+  intro: "One dashboard for each monthly Focus on briefing: emissions, trade, rules and deadlines for a Northern Ireland sector."
+  items:
+    - title: "NI Agriculture and Land Carbon"
+      page: /tools/dashboards/ni-agriculture-land-carbon.html
+      thumb: /assets/dashboards/ni-agriculture-land-carbon.jpg
+      summary: "Farm and land emissions from 1990 to 2024 by source and gas, livestock methane, nitrogen and phosphorus balances, land use and peatland, a Scope 1, 2 and 3 split, and the measures and research under way."
+      as_at: "Figures as at 18 October 2026"
+      related_title: "Focus on Agriculture, October 2026"
+      related: /blog/focus-on-agriculture-october-2026/
+    - title: "NI Food and Drink Processing"
+      page: /tools/dashboards/ni-food-drink-processing.html
+      thumb: /assets/dashboards/ni-food-drink-processing.jpg
+      summary: "Turnover since 2020, where sales go, emissions by sector, what the EU deforestation rules cover and who enforces them, and every deadline for processors to the end of 2027."
+      as_at: "Figures checked 21 October 2026"
+      related_title: "Focus on Food & Drink Processing"
+      related: /blog/focus-on-food-and-drink-processing-october-2026/
+    - title: "NI Hospitality, Retail and Leisure"
+      page: /tools/dashboards/ni-hospitality-retail-leisure.html
+      thumb: /assets/dashboards/ni-hospitality-retail-leisure.jpg
+      summary: "Overnight trips and occupancy, building emissions, refrigerant limits on new cooling equipment, grant status, and every deadline for venues and shops to October 2027."
+      as_at: "Figures checked 21 and 29 October 2026"
+      related_title: "Focus on Hospitality, Retail & Leisure"
+      related: /blog/focus-on-hospitality-retail-leisure-october-2026/
+    - title: "NI Metals and Manufacturing"
+      page: /tools/dashboards/ni-metals-manufacturing.html
+      thumb: /assets/dashboards/ni-metals-manufacturing.jpg
+      summary: "Industry emissions against other sectors, where NI sales go, which goods the UK and EU CBAMs cover, CBAM and ESOS dates to May 2028, and progress on renewable electricity."
+      as_at: "CBAM rules checked 11 November 2026"
+      related_title: "Focus on Metals & Manufacturing"
+      related: /blog/focus-on-metals-manufacturing-november-2026/
+    - title: "NI Transport and Fleet"
+      page: /tools/dashboards/ni-transport-fleet.html
+      thumb: /assets/dashboards/ni-transport-fleet.jpg
+      summary: "EV chargers by UK nation and region, transport emissions, Translink journeys, driver attitudes to EVs, company car tax, and what has changed for fleets and freight, including the UK ETS on GB–NI shipping."
+      as_at: "Figures as at 9 November 2026"
+      related_title: "Focus on Transport & Fleet"
+      related: /blog/focus-on-transport-fleet-november-2026/
+    - title: "NI Construction and Building"
+      page: /tools/dashboards/ni-construction-building.html
+      thumb: /assets/dashboards/ni-construction-building.jpg
+      summary: "Construction output, housing growth and new starts, wastewater pressures, building emissions, and the rules on imported materials, contaminated land and wastewater connections."
+      as_at: "Checked 9 November 2026"
+      related_title: "Focus on Construction & Building"
+      related: /blog/focus-on-construction-building-november-2026/
+
+- group: "Public realm and the economy"
+  intro: "The infrastructure and industries that shape Northern Ireland's places and jobs."
+  items:
+    - title: "NI Public Realm: Water, Roads and Floods"
+      page: /tools/dashboards/ni-public-realm-water-roads.html
+      thumb: /assets/dashboards/ni-public-realm-water-roads.jpg
+      summary: "Wastewater capacity and the homes it holds back, storm overflows, road maintenance against need, flood risk, Lough Neagh, UK public investment and how other places pay for infrastructure."
+      as_at: "Figures as at 2 November 2026"
+      related_title: "We don't fund the drains. Then we pay for the flood."
+      related: /blog/2026/11/we-dont-fund-the-drains-then-we-pay-for-the-flood/
+    - title: "NI Screen Industry"
+      page: /tools/dashboards/ni-screen-industry.html
+      thumb: /assets/dashboards/ni-screen-industry.jpg
+      summary: "NI Screen's funding and results for 2022–26, local crew depth, the Department for the Economy budget around it, Ireland's incentives next door, and three scenarios for 2026–30."
+      as_at: "Figures as at 2 November 2026"
+      related_title: "Northern Ireland Screen: how do we grow it?"
+      related: /blog/2026/11/northern-ireland-screen-how-do-we-grow-it/
+
+- group: "Features"
+  intro: "Dashboards that go with one-off briefings."
+  items:
+    - title: "Christmas decorations: rules, costs and carbon"
+      page: /tools/dashboards/christmas-decorations.html
+      thumb: /assets/dashboards/christmas-decorations.jpg
+      summary: "Who makes our decorations and how NI, GB and EU rules differ: import figures, candle fires, glitter, product safety, packaging, moving a tree across the Irish Sea, fly-tipping penalties, and the cost and carbon of lights and trees."
+      as_at: "As at 16 November 2026"
+      related_title: "Deck the halls, check the rules"
+      related: /blog/2026/11/deck-the-halls-check-the-rules/
+    - title: "The Catholic Church in numbers"
+      page: /tools/dashboards/catholic-church-science-environment.html
+      thumb: /assets/dashboards/catholic-church-science-environment.jpg
+      summary: "Schools, hospitals and charity centres worldwide, five centuries of science and business milestones, and the carbon footprint of Vatican City State from 2011 to 2022 with its 2030 and 2035 targets."
+      as_at: "As at 9 November 2026"
+      related_title: "Faith, reason and the common home"
+      related: /blog/2026/11/catholic-church-science-business-environment/

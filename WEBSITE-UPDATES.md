@@ -25,6 +25,16 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.33.0 — 16 November 2026: dashboards page as a grid
+
+*Requested by Robert, 16 November 2026 ("reshape the dashboards page … grid style rather than a long list, with description underneath"). Awaiting Robert's merge.*
+
+- `dashboards.md`: rebuilt as a grid of cards in four groups (Rules and deadlines; Sectors; Public realm and the economy; Features). Each card has a thumbnail, the title, a short description underneath, the as-at date, an "Open the dashboard" link and the related piece. Groups of 2 or 4 use two columns on wide screens so no card sits alone; one column on phones.
+- `_data/dashboards.yml`: the dashboard list now lives here. Add a dashboard by adding an entry and a 640×400 thumbnail.
+- `assets/dashboards/*.jpg`: 14 thumbnails, screenshots of each dashboard taken 16 November 2026 (about 35 KB each).
+- `assets/style.css`: `.dash-*` grid and card styles.
+- All 14 dashboards in `tools/dashboards/` are listed; nothing was added or removed. Dashboards that exist only as Claude artifacts are private and are not linked from this page.
+
 ### v0.32.0 — 16 November 2026: Christmas decorations post, briefing and dashboard
 
 *Requested by Robert, 16 November 2026 ("Blog to go live later today"). Awaiting Robert's merge.*
