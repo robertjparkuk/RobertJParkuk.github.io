@@ -100,6 +100,20 @@
 - group: "Features"
   intro: "Dashboards that go with one-off briefings."
   items:
+    - title: "The sausage dashboard"
+      page: /tools/dashboards/uk-eu-sausage-trade.html
+      thumb: /assets/dashboards/uk-eu-sausage-trade.jpg
+      summary: "UK sausage trade with the EU and the rest of the world since 2000: values, tonnes, the top partner countries each way, and the timeline from the referendum to the 2026 summit."
+      as_at: "HMRC figures to September 2026, retrieved 16 November 2026"
+      related_title: "Friends with benefits"
+      related: /blog/2026/11/friends-with-benefits/
+    - title: "Trade diversion: the EU's share of UK trade"
+      page: /tools/dashboards/uk-trade-diversion.html
+      thumb: /assets/dashboards/uk-trade-diversion.jpg
+      summary: "The EU's share of UK goods and food trade from 2000 to 2026, exports and imports by value, and the largest partners in 2015 and 2025, with notes on what a falling share can and cannot prove."
+      as_at: "HMRC figures to September 2026, retrieved 16 November 2026"
+      related_title: "Friends with benefits"
+      related: /blog/2026/11/friends-with-benefits/
     - title: "Christmas decorations: rules, costs and carbon"
       page: /tools/dashboards/christmas-decorations.html
       thumb: /assets/dashboards/christmas-decorations.jpg

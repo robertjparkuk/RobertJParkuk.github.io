@@ -25,9 +25,19 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.33.1 — 16 November 2026: static sausage and trade diversion dashboards
+
+*Requested by Robert, 16 November 2026 ("yes to the static website versions. Merge and publish").*
+
+- `tools/dashboards/uk-eu-sausage-trade.html` and `tools/dashboards/uk-trade-diversion.html`: static, public versions of the two private Claude dashboards that go with "Friends with benefits". Same HMRC data, same headline figures, same notes on method breaks; no scripts, nothing fetched. Hover over or tap a point for its value.
+- `data/dashboards/uk-eu-trade/*.csv`: the HMRC series (pulled from api.uktradeinfo.com on 16 November 2026), the compiled timeline and the derived EU-share series, each downloadable from its chart.
+- `_scripts/dashboards/build_trade.py`: rebuilds both pages from the CSVs (`python3 _scripts/dashboards/build_trade.py .`).
+- `_posts/2026-11-16-friends-with-benefits.md`: the two "Open the dashboard" links pointed at private claude.ai artifacts that readers could not open; they now point at the new pages.
+- `_data/dashboards.yml`: both added to Features, with thumbnails. The Dashboards page now lists 16.
+
 ### v0.33.0 — 16 November 2026: dashboards page as a grid
 
-*Requested by Robert, 16 November 2026 ("reshape the dashboards page … grid style rather than a long list, with description underneath"). Awaiting Robert's merge.*
+*Requested by Robert, 16 November 2026 ("reshape the dashboards page … grid style rather than a long list, with description underneath"). Merged 16 November 2026.*
 
 - `dashboards.md`: rebuilt as a grid of cards in four groups (Rules and deadlines; Sectors; Public realm and the economy; Features). Each card has a thumbnail, the title, a short description underneath, the as-at date, an "Open the dashboard" link and the related piece. Groups of 2 or 4 use two columns on wide screens so no card sits alone; one column on phones.
 - `_data/dashboards.yml`: the dashboard list now lives here. Add a dashboard by adding an entry and a 640×400 thumbnail.
