@@ -21,7 +21,7 @@ The pieces set out the arguments on each side. The recommendations are mine. The
 <ul class="post-list">
   {% for p in pieces %}{% if p.series_theme == theme %}
   <li>
-    <p class="meta"><time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: '%-d %B %Y' }}</time></p>
+    <p class="meta"><time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: '%-d %B %Y' }}</time>{% if p.last_modified_at %} · Updated {{ p.last_modified_at | date: '%-d %B %Y' }}{% endif %}</p>
     <h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
     <p>{{ p.description }}</p>
   </li>

@@ -1,6 +1,7 @@
 ---
 title: "Green money, fewer rules: what sustainable finance now asks of Northern Ireland"
 date: 2026-11-02 00:09:00 +0000
+last_modified_at: 2026-11-16
 tags: ["Reporting", "Finance", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Reporting and finance"
@@ -26,7 +27,7 @@ Rules about where money goes are loosening at the top. The demand for carbon dat
 
 The ESG pillars do not line up neatly. Nuclear is now "green" in UK gilts. Fossil-fuel firms may qualify as "transition" investments in the EU. Pension trustees are caught between the duty to earn returns and political pressure from all sides.
 
-*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026.*
+*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026; rechecked and updated 16 November 2026.*
 
 ## The lifecycle at a glance
 
@@ -42,10 +43,10 @@ Green money flows from bills to borrowing and back again, but only for firms tha
 | UK Green Taxonomy                                           | In development                    | Dropped (Treasury response, 15 Jul 2025)                                                                                                               | "No compelling evidence" it would meet its aims                                             |
 | Listed company climate reporting                            | TCFD-aligned FCA rules            | UK SRS S1 and S2 endorsed for voluntary use (25 Feb 2026). FCA PS26/19 (30 Sep 2026): comply-or-explain from 1 Jan 2027                                | FCA dropped mandatory S2 after cost and competitiveness concerns                            |
 | Transition plans                                            | Voluntary                         | Consulted on (25 Jun 2025); government still weighing responses (Sep 2026). Listed firms must say whether they have one, or explain why not (PS26/19)  | To be weighed alongside the corporate reporting review                                      |
-| ESG ratings providers                                       | Voluntary code                    | Legislation published (Oct 2025); FCA CP25/34 (1 Dec 2025); final rules expected Q4 2026; regime starts 29 Jun 2028. EU regime applies from 2 Jul 2026 | Ratings shape capital flows and were opaque                                                 |
+| ESG ratings providers                                       | Voluntary code                    | Legislation published (Oct 2025); FCA CP25/34 (1 Dec 2025); final rules PS26/22 (3 Nov 2026); authorisation applications from 24 Jun 2027; regime starts 29 Jun 2028. EU regime applies from 2 Jul 2026 | Ratings shape capital flows and were opaque                                                 |
 | UK green gilts                                              | 2033 and 2053 gilts               | Framework updated to include nuclear (Nov 2025). £6.25bn 4⅝% Green Gilt 2037 sold (10 Mar 2026)                                                        | Nuclear became eligible; impact reporting now annual                                        |
 | Bank supervision of climate risk                            | PRA SS3/19 (2019)                 | Replaced by SS5/25 (3 Dec 2025)                                                                                                                        | More proportionate, but material exposures must be evidenced                                |
-| EU SFDR                                                     | Article 8 and 9 categories        | SFDR 2.0 proposed (20 Nov 2025); Council mandate (Jun 2026); ECON vote (10 Sep 2026); plenary and trilogues pending; likely to apply in 2029           | Three categories: Transition, ESG Basics, Sustainable                                       |
+| EU SFDR                                                     | Article 8 and 9 categories        | SFDR 2.0 proposed (20 Nov 2025); Council mandate (Jun 2026); Parliament negotiating mandate adopted (Oct 2026); trilogues under way; likely to apply late 2028 or 2029           | Three categories: Transition, ESG Basics, Sustainable                                       |
 | EU Taxonomy and CSRD                                        | CSRD phasing in                   | Taxonomy simplification (8 Jan 2026). Omnibus Directive (EU) 2026/470 (26 Feb 2026): CSRD now for firms over 1,000 staff and €450m turnover            | Member state pressure; requests to suppliers averaging up to 1,000 staff capped from FY2027 |
 
 ## Where the parties and governments stand (October 2026)

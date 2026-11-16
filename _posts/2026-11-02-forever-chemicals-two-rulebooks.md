@@ -1,6 +1,7 @@
 ---
 title: "Forever chemicals, two rulebooks"
 date: 2026-11-02 00:03:00 +0000
+last_modified_at: 2026-11-16
 tags: ["Contaminated land", "Water", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Chemicals, land and water"
@@ -24,9 +25,9 @@ On 6 July 2026 the UK Government replied to the Environmental Audit Committee's 
 
 PFAS has become the clearest case of regulatory divergence inside the UK. Under the Windsor Framework, Northern Ireland follows EU REACH. Great Britain follows UK REACH, which has not restricted any new PFAS group since 2021. NI firms will reach EU standards first, whether or not Westminster follows. The harder question is how fast to move. Fluoropolymers sit inside some of the hardware that decarbonisation needs, and clean-up costs land on water bills and councils. Both sides of that argument rest on real evidence.
 
-*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026.*
+*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026; rechecked and updated 16 November 2026.*
 
-**Why "forever"? A chemist's note.** Fluorine is the most electronegative element. So the carbon–fluorine bond is highly polar and very strong: about 485 kJ/mol, against about 410 kJ/mol for carbon–hydrogen. It is the strongest single bond carbon forms. In a perfluorinated chain, the fluorine atoms also form a tight sheath that shields the carbon backbone from attack. Sunlight, water and microbes rarely supply enough energy, or the right enzyme, to break the bond. These molecules last for decades or longer, and destroying them usually needs high-temperature incineration.
+**Why "forever"? A chemist's note.** Fluorine is the most electronegative element. So the carbon–fluorine bond is highly polar and very strong: an average of about 485 kJ/mol, against about 410 kJ/mol for carbon–hydrogen. It is the strongest single bond carbon forms. In a perfluorinated chain, the fluorine atoms also form a tight sheath that shields the carbon backbone from attack. PFAS barely absorb sunlight, and water and microbes rarely break the bond. These molecules last for decades or longer, and destroying them usually needs high-temperature incineration. Many PFAS are only partly fluorinated. Their non-fluorinated parts can break down, leaving perfluorinated acids that persist.
 
 ## The lifecycle at a glance
 
@@ -43,9 +44,9 @@ PFAS escape at manufacture, use, disposal and in the environment, and recycling 
 | UK REACH firefighting foam restriction (GB) | Not started; Defra asked HSE on 5 Mar 2024                                                      | Annex 15 consultation closed 18 Feb 2026; draft socio-economic opinion consulted 9 Jul to 7 Sep 2026; decision expected 2027                                                   | GB tracks the EU but runs about three years behind                                                            |
 | PFAS in food-contact packaging              | EU PPWR still in negotiation                                                                    | PPWR Article 5 applies from 12 Aug 2026, including in NI (DAERA FAQ, Aug 2026). No GB equivalent being taken forward                                                           | The EU chose a packaging-law route; GB has not followed                                                       |
 | EU PFHxA restriction (Reg 2024/2462)        | Backed by ECHA committees in 2021; awaiting Commission decision                                 | Limits apply to consumer clothing, accessories and footwear from 10 Oct 2026; other textiles and leather from 10 Oct 2027                                                      | First group restriction on a short-chain PFAS. Applies in NI; no GB equivalent listed (Fieldfisher, Feb 2026) |
-| Drinking water limits                       | EU recast Drinking Water Directive limits due 2026; non-statutory guidance in England and Wales | EU limits apply from 12 Jan 2026. England and Wales use a 0.1 µg/L guideline for the sum of 48 PFAS (DWI, Mar 2025). NI has no statutory PFAS standard (NI Water, 13 Mar 2026) | NI Water voluntarily tests against the EU limits                                                              |
+| Drinking water limits                       | EU recast Drinking Water Directive limits due 2026; non-statutory guidance in England and Wales | EU limits apply from 12 Jan 2026. England and Wales use a 0.1 µg/L guideline for the sum of 48 PFAS (DWI, Mar 2025). NI has no statutory PFAS standard (NI Water, 13 Mar 2026). Defra will consult on a statutory limit for England; no date (3 Feb 2026) | NI Water voluntarily tests against the EU limits                                                              |
 | UK policy framework                         | UK REACH options analysis (Mar 2023)                                                            | Defra PFAS Plan 3 Feb 2026; EAC report 23 Apr 2026; Government response 6 Jul 2026; UK REACH reform by Dec 2028                                                                | Government chose monitoring and alignment with the EU unless there are compelling reasons to diverge          |
-| UK persistent organic pollutants list       | PFOS and PFOA listed                                                                            | GB: Defra confirmed on 10 Sep 2026 it will add long-chain PFCAs, in force Dec 2026. NI: the EU POPs Regulation applies                                                         | GB and NI implement Stockholm Convention listings through separate laws                                       |
+| UK persistent organic pollutants list       | PFOS and PFOA listed                                                                            | GB: Defra confirmed on 10 Sep 2026 it will add long-chain PFCAs, intended by 16 Dec 2026; no SI confirmed (16 Nov 2026). NI: the EU POPs Regulation applies                                                         | GB and NI implement Stockholm Convention listings through separate laws                                       |
 
 ## Where the parties and governments stand (October 2026)
 
@@ -124,7 +125,7 @@ EU institutions decide most PFAS rules for NI. Westminster, with Scottish and We
 
 - **The bill for legacy foam.** In April 2026 Guernsey sought approval for up to £16.54m to dig out about 15,000 tonnes of foam-contaminated soil at its airport ([Henderson Chambers](https://www.hendersonchambers.co.uk/wp-content/uploads/2026/10/2026-10-16-Alerter-by-Toby-Riley-Smith-KC-Tim-Green-KC-Lucy-McCormick-Douglas-Maxwell-PFAS-aqueous-film-forming-foam-contaminated-land.pdf), 16 Oct 2026).
 
-- **Clothing rules already live in NI.** Since 10 October 2026, consumer clothing, accessories and footwear placed on the NI market must meet EU PFHxA limits of 25 ppb ([Beveridge & Diamond](https://www.bdlaw.com/publications/new-eu-pfhxa-limits-take-effect-amid-expanding-pfas-rules-for-apparel-and-textiles/), Oct 2026). NI textile and workwear firms selling into the EU need supplier test data now.
+- **Clothing rules already live in NI.** Since 10 October 2026, consumer clothing, accessories and footwear placed on the NI market must meet EU limits of 25 ppb for PFHxA and its salts, and 1,000 ppb for related substances ([Regulation (EU) 2024/2462](https://eur-lex.europa.eu/eli/reg/2024/2462/oj/eng)). NI textile and workwear firms selling into the EU need supplier test data now.
 
 ## Recommendations
 
@@ -190,7 +191,7 @@ EU institutions decide most PFAS rules for NI. Westminster, with Scottish and We
 
 - [Fieldfisher: PFAS regulation in the UK and EU (Feb 2026)](https://www.fieldfisher.com/en/insights/pfas-uk-regulatory-snapshot)
 
-- [Beveridge & Diamond: EU PFHxA limits take effect (Oct 2026)](https://www.bdlaw.com/publications/new-eu-pfhxa-limits-take-effect-amid-expanding-pfas-rules-for-apparel-and-textiles/)
+- [Regulation (EU) 2024/2462: PFHxA restriction, EUR-Lex](https://eur-lex.europa.eu/eli/reg/2024/2462/oj/eng)
 
 - [UK Parliament: Poly and Perfluorinated Alkyl Substances (Guidance) Bill](https://bills.parliament.uk/bills/3883)
 

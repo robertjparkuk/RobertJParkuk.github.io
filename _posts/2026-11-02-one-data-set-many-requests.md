@@ -1,6 +1,7 @@
 ---
 title: "One data set, many requests"
 date: 2026-11-02 00:13:00 +0000
+last_modified_at: 2026-11-16
 tags: ["Reporting", "Finance", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Reporting and finance"
@@ -24,7 +25,7 @@ On 30 September 2026 the Financial Conduct Authority (FCA) published its final r
 
 Both sides of the Irish Sea are cutting reporting duties in the name of competitiveness. For a Northern Ireland SME manufacturer the effect is mixed. The EU now caps what large customers can demand from smaller suppliers. The UK has no such cap, and public buyers still ask for carbon plans. Requests will keep arriving in 2027, in fewer and more standard formats. The sensible response is to build one data set that answers all of them. The political cost of the cuts falls mostly on the social pillar and on impact reporting; investor-focused climate data survives best.
 
-*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026.*
+*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026; rechecked and updated 16 November 2026.*
 
 ## The lifecycle at a glance
 
@@ -39,7 +40,7 @@ The same bills and supplier figures feed every request, from an EU customer's qu
 | EU CSRD scope                                  | Large EU companies (250+ staff), phased in from FY2024    | Directive (EU) 2026/470 published 26 Feb 2026, in force 18 Mar 2026: over 1,000 employees and over €450m turnover. Transposition by 19 Mar 2027                               | Omnibus I simplification after competitiveness pressure from member states and the EPP group |
 | Value-chain requests                           | No limit on what reporters could ask suppliers            | Firms averaging no more than 1,000 employees can decline requests beyond the Voluntary Standard, for financial years from 1 Jan 2027                                          | Protects SMEs from trickle-down questionnaires                                               |
 | ESRS                                           | 2023 delegated act, about 1,100 datapoints                | Delegated Regulation (EU) 2026/1563 adopted 3 Jul 2026, published 21 Sep 2026, in force 10 Nov 2026; 61% fewer mandatory datapoints; mandatory from FY2027                    | Commission and EFRAG simplification                                                          |
-| Voluntary Standard (VSME)                      | EFRAG draft only                                          | Delegated Regulation (EU) 2026/1560 published 21 Sep 2026, applies from FY2027. Basic Module is the minimum; Comprehensive Module adds strategy, targets and risks            | A common format for supplier and bank requests                                               |
+| Voluntary Standard (VSME)                      | EFRAG draft only                                          | Delegated Regulation (EU) 2026/1560 published 21 Sep 2026, in force 24 Sep 2026; the value-chain cap applies from FY2027. Basic Module is the minimum; Comprehensive Module adds strategy, targets and risks            | A common format for supplier and bank requests                                               |
 | EU CSDDD                                       | Under negotiation                                         | Scope now €1.5bn turnover and 5,000 employees; climate transition plan duty deleted and EU civil liability removed; transposition by 26 Jul 2028, compliance from 26 Jul 2029 | France and Germany called for repeal in May 2025                                             |
 | UK SRS and FCA rules                           | TCFD-aligned Listing Rules                                | UK SRS S1/S2 published 25 Feb 2026 for voluntary use. FCA PS26/19 (30 Sep 2026): comply or explain from 1 Jan 2027, first reports 2028, one year of Scope 3 relief            | FCA cited the burden on smaller issuers                                                      |
 | Streamlined Energy and Carbon Reporting (SECR) | In force since 2019                                       | Post-implementation review (26 May 2026): retain with amendments. DESNZ to consult on SECR and ESOS later in 2026                                                             | Ongoing costs £140m a year against £31m forecast                                             |
