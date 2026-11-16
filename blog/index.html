@@ -9,7 +9,7 @@ description: Weekly Focus on sector briefings, CBAM and carbon explainers, and o
   <ul class="post-list">
     {% for post in site.posts %}
     <li>
-      <p class="meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time></p>
+      <p class="meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %B %Y' }}</time>{% if post.last_modified_at %} · Updated {{ post.last_modified_at | date: '%-d %B %Y' }}{% endif %}</p>
       <h2><a href="{{ post.link | default: post.url | relative_url }}">{{ post.title }}</a></h2>
       <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
     </li>

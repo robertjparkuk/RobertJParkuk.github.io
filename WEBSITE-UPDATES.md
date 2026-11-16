@@ -25,16 +25,47 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
-### v0.32.1 — 16 November 2026: Unsplash photos on three policy posts
+### v0.33.2 — 16 November 2026: Unsplash photos on three policy posts
 
 *Robert's instruction, 16 Nov: use royalty-free images suited to the posts and credit each photographer.*
 
 - `assets/photos/`: three photos under the free Unsplash Licence, web-sized (max 1600 px), self-hosted so no page contacts a third party: `eu-flags-berlaymont.jpg` (Guillaume Périgois), `ferry-lorries-port.jpg` (Abishanth Ahilan; Folkestone, not an NI port), `steelworks-night.jpg` (Gérard Griffay).
 - UK–EU ETS link post (both drafts, 21 Nov, still unpublished): new header photo of EU flags at the Berlaymont, with `image:` set for link previews.
-- The Irish Sea carbon bill (25 Nov): header photo changed from `logistics-freight.jpg` to the ferry and lorries.
-- Carbon borders as industrial policy (30 Nov): header photo changed from `shipping-containers.jpg` to the steelworks at night.
+- The Irish Sea carbon bill (21 Nov): header photo changed from `logistics-freight.jpg` to the ferry and lorries.
+- Carbon borders as industrial policy (23 Nov): header photo changed from `shipping-containers.jpg` to the steelworks at night.
 - Every Unsplash photo carries a credit line in its caption ("Photo: name on Unsplash", both linked, as Unsplash asks). New `.photo-credit` style in `assets/style.css`.
 - The Unsplash Licence allows free commercial use; attribution is not required but is given. Adobe Stock and Robert's own photos are unchanged.
+### v0.33.1 — 16 November 2026: static sausage and trade diversion dashboards
+
+*Requested by Robert, 16 November 2026 ("yes to the static website versions. Merge and publish").*
+
+- `tools/dashboards/uk-eu-sausage-trade.html` and `tools/dashboards/uk-trade-diversion.html`: static, public versions of the two private Claude dashboards that go with "Friends with benefits". Same HMRC data, same headline figures, same notes on method breaks; no scripts, nothing fetched. Hover over or tap a point for its value.
+- `data/dashboards/uk-eu-trade/*.csv`: the HMRC series (pulled from api.uktradeinfo.com on 16 November 2026), the compiled timeline and the derived EU-share series, each downloadable from its chart.
+- `_scripts/dashboards/build_trade.py`: rebuilds both pages from the CSVs (`python3 _scripts/dashboards/build_trade.py .`).
+- `_posts/2026-11-16-friends-with-benefits.md`: the two "Open the dashboard" links pointed at private claude.ai artifacts that readers could not open; they now point at the new pages.
+- `_data/dashboards.yml`: both added to Features, with thumbnails. The Dashboards page now lists 16.
+
+### v0.33.0 — 16 November 2026: dashboards page as a grid
+
+*Requested by Robert, 16 November 2026 ("reshape the dashboards page … grid style rather than a long list, with description underneath"). Merged 16 November 2026.*
+
+- `dashboards.md`: rebuilt as a grid of cards in four groups (Rules and deadlines; Sectors; Public realm and the economy; Features). Each card has a thumbnail, the title, a short description underneath, the as-at date, an "Open the dashboard" link and the related piece. Groups of 2 or 4 use two columns on wide screens so no card sits alone; one column on phones.
+- `_data/dashboards.yml`: the dashboard list now lives here. Add a dashboard by adding an entry and a 640×400 thumbnail.
+- `assets/dashboards/*.jpg`: 14 thumbnails, screenshots of each dashboard taken 16 November 2026 (about 35 KB each).
+- `assets/style.css`: `.dash-*` grid and card styles.
+- All 14 dashboards in `tools/dashboards/` are listed; nothing was added or removed. Dashboards that exist only as Claude artifacts are private and are not linked from this page.
+
+### v0.32.1 — 16 November 2026: policy series recheck and corrections
+
+*Requested by Robert, 16 November 2026 (Policy Series Status pane: Yes to all 17; "Mark the post as edited today on the blog, pdf and any dashboards"; freight and CBAM "publish earlier on 21–23 November"; CBAM "happy with over 4000 words"). Merged 16 November 2026 on Robert's instruction ("Merge and publish").*
+
+- 14 live policy series posts corrected after a recheck against official sources on 16 November 2026, each with `last_modified_at: 2026-11-16` and a dated "rechecked and updated" line. Main changes: election framing removed from the land-law and Climate Act pieces; Lough Neagh 3.4% restated as NI Water's overall price limit and the judicial review status corrected; Russian fertiliser tariff updated (€60–70/t since 1 Jul 2026); FCA ESG ratings final rules (PS26/22, 3 Nov 2026) and SFDR 2.0 status; ESOS and energy pieces name the DfE official; 0% VAT extension described as announced, not law; GB POPs date softened; PFAS chemist's note tightened; EU prior-notification rule for NI–Ireland e-waste from 1 Jan 2027; Conservative row in the digital tracking piece filled from Hansard; council-fairness edits in "Closed for booking". Brown bins unchanged.
+- `_layouts/post.html`, `blog/index.html`, `policy-series.md`: show "Updated <date>" where `last_modified_at` is set (also feeds the sitemap).
+- `tools/dashboards/ni-regulatory-horizon.html` and `horizon.json`: 24 rows linking to corrected pieces labelled "(updated 16 Nov 2026)"; CHANGES entry added. No dates changed. No policy series PDFs exist, so none to mark.
+- `_posts/2026-11-11-twelve-dates-to-easter.md`: added `hero_eyebrow` and `hero_lead` so the home-page slide has a summary, not just a headline.
+- Freight and CBAM pieces moved to 21 and 23 November 2026, still `published: false` until the 20 November summit lines are updated (reminder set for 21 Nov). Non-summit fixes: Reform point numbers dropped (no official copy), HL12132 relabelled, HL15805 added, LawPlayer link replaced with legislation.gov.uk. CBAM kept at full length.
+- Not done (sources unreachable from here): several Hansard replacements for Parallel Parliament and beyondthevote links; BBC original for the DfE official's quote; ESOS SI made date (22 or 23 June 2026) left as 23 June pending a check on legislation.gov.uk.
+
 ### v0.32.0 — 16 November 2026: Christmas decorations post, briefing and dashboard
 
 *Requested by Robert, 16 November 2026 ("Blog to go live later today"). Awaiting Robert's merge.*

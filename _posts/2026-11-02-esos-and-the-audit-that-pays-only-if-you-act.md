@@ -1,6 +1,7 @@
 ---
 title: "ESOS and the audit that pays only if you act"
 date: 2026-11-02 00:11:00 +0000
+last_modified_at: 2026-11-16
 tags: ["Reporting", "Finance", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Reporting and finance"
@@ -26,7 +27,7 @@ That has been a lopsided deal for Northern Ireland. NI manufacturers carry the f
 
 Firms that tie the audit to their carbon data and their energy contracts can make it pay. Firms that treat it as paperwork will pay consultants and save little.
 
-*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026.*
+*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026; rechecked and updated 16 November 2026.*
 
 ## The lifecycle at a glance
 
@@ -59,7 +60,7 @@ All parties agree energy costs are hurting firms. They split on whether reportin
 | [UK Government (Labour)](https://www.gov.uk/guidance/energy-savings-opportunity-scheme-esos)                                                                                       | Kept ESOS and tightened disclosure (SI 2026/701, Jun 2026). Will keep SECR with amendments (26 May 2026). BICS covers GB only (10 Aug 2026). Budget (28 Oct 2026) funds an NI version run by the Executive and freezes the CCL electricity rate from April 2028 |
 | [Conservatives (Badenoch)](https://www.cityam.com/conservatives-pledge-to-scrap-stifling-esg-reporting-for-british-businesses/)                                                    | Pledged to scrap mandatory sustainability and climate reporting, naming the carbon reporting framework (9 Nov 2025). ESOS not named                                                                                                                             |
 | [Reform UK (Farage)](https://www.lbc.co.uk/article/richard-tice-end-net-zero-madness-reindustrialise-britain-5HjdTSC_2/)                                                           | Richard Tice pledged to end net zero and bring in a "Great Repeal Act" (24 Feb 2026). No ESOS position found                                                                                                                                                    |
-| [Liberal Democrats (Davey)](https://parallelparliament.co.uk/mp/daisy-cooper/debate/2026-04-16/commons/commons-chamber/british-industrial-competitiveness-scheme)                  | Daisy Cooper proposed low-interest SME energy-saving loans and business rates relief for efficiency investment (16 Apr 2026)                                                                                                                                    |
+| [Liberal Democrats (Davey)](https://hansard.parliament.uk/Commons/2026-04-16)                  | Daisy Cooper proposed low-interest SME energy-saving loans and business rates relief for efficiency investment (16 Apr 2026)                                                                                                                                    |
 | [Green Party E&W (Polanski)](https://www.businessgreen.com/news/4527122/alternative-unacceptable-zack-polanski-calls-government-extend-energy-price-cap)                           | Called for an extended price cap (March 2026). No position on business audits found                                                                                                                                                                             |
 | [Scottish Government (Swinney)](https://www.gov.scot/publications/scotlands-climate-change-plan-2026-2040-crwia/pages/4/)                                                          | Climate Change Plan (24 Mar 2026) gives SEPA a role in efficiency at priority sites; keeps a Scottish IETF                                                                                                                                                      |
 | Welsh Government (ap Iorwerth)                                                                                                                                                     | No business energy efficiency position found (searched 27 Oct 2026)                                                                                                                                                                                             |
@@ -96,7 +97,7 @@ Most business energy duties in NI are set in London. Most of the support is set 
 
 - **Audits without a duty to act.** Only 6% of Phase 1 measures were directly attributed to ESOS. Phase 3 audits found 47 TWh of potential savings, but DESNZ had no data on delivery (PIR, 2025).
 
-- **Relief against fuel poverty (E against S).** GB funds BICS from the Exchequer and savings elsewhere in the energy system ([written statement, 16 Apr 2026](https://hansard.parliament.uk/html/Commons/2026-04-16/WrittenStatements)). NI's senior energy official said an NI version was hard to fund without harming fuel poverty work (reported early 2026). Exchequer funding for an NI version, announced on 28 Oct 2026, eases this if it stays off household bills.
+- **Relief against fuel poverty (E against S).** GB funds BICS from the Exchequer and savings elsewhere in the energy system ([written statement, 16 Apr 2026](https://hansard.parliament.uk/html/Commons/2026-04-16/WrittenStatements)). DfE's Head of Energy Group, Richard Rodgers, said an NI version was hard to fund without harming fuel poverty work (reported early 2026). Exchequer funding for an NI version, announced on 28 Oct 2026, eases this if it stays off household bills.
 
 - **Efficiency against electrification (E against E).** With the net zero element postponed, Phase 4 audits can favour cheap fixes to gas plant and lock in fossil equipment for another decade.
 
@@ -126,7 +127,7 @@ Most business energy duties in NI are set in London. Most of the support is set 
 
 - **Cash is the barrier for smaller firms.** A Utility Regulator study of 42 NI small businesses found they valued efficiency but could not meet upfront costs. Few knew what support existed ([Utility Regulator, 14 Oct 2026](https://www.uregni.gov.uk/news-centre/small-business-consumer-experience-energy-stress-lived-experience-report-published)).
 
-- **NI manufacturers outside GB relief.** Jim Shannon (DUP) said Magellan Aerospace, T.G. Eakin and Mash Direct may not qualify for BICS. Peter Kyle replied that the Government was working with the Assembly on NI help ([Commons, 16 Apr 2026](https://parallelparliament.co.uk/debate/2026-04-16/commons/commons-chamber/british-industrial-competitiveness-scheme)).
+- **NI manufacturers outside GB relief.** Jim Shannon (DUP) said Magellan Aerospace, T.G. Eakin and Mash Direct may not qualify for BICS. Peter Kyle replied that the Government was working with the Assembly on NI help ([Commons, 16 Apr 2026](https://hansard.parliament.uk/Commons/2026-04-16)).
 
 - **Cross-border money for follow-through.** The €26m Shared Island Sustainability Challenge Fund, with a €13m NI share, backs projects in flexible electrification and hard-to-abate industry. Invest NI, Enterprise Ireland and InterTradeIreland deliver it ([News Letter, 12 Oct 2026](https://www.newsletter.co.uk/business/major-opportunity-northern-ireland-businesses-invited-to-bid-for-share-of-eu26m-sustainability-fund-9282644)).
 
@@ -184,7 +185,7 @@ Most business energy duties in NI are set in London. Most of the support is set 
 
 - [Hansard: Written statement on BICS, HCWS1521 (16 Apr 2026)](https://hansard.parliament.uk/html/Commons/2026-04-16/WrittenStatements)
 
-- [Commons statement: BICS, Parallel Parliament copy of Hansard (16 Apr 2026)](https://parallelparliament.co.uk/debate/2026-04-16/commons/commons-chamber/british-industrial-competitiveness-scheme)
+- [Hansard: Commons sitting of 16 Apr 2026, BICS statement and debate](https://hansard.parliament.uk/Commons/2026-04-16)
 
 - [Written answer: BICS and Northern Ireland (4 Sep 2025)](https://www.parallelparliament.co.uk/question/69505)
 
@@ -208,7 +209,7 @@ Most business energy duties in NI are set in London. Most of the support is set 
 
 - [LBC: Tice pledges to end net zero (24 Feb 2026)](https://www.lbc.co.uk/article/richard-tice-end-net-zero-madness-reindustrialise-britain-5HjdTSC_2/)
 
-- [BICS debate, Daisy Cooper (16 Apr 2026)](https://parallelparliament.co.uk/mp/daisy-cooper/debate/2026-04-16/commons/commons-chamber/british-industrial-competitiveness-scheme)
+- [Hansard: Commons sitting of 16 Apr 2026, BICS debate (Daisy Cooper)](https://hansard.parliament.uk/Commons/2026-04-16)
 
 - [BusinessGreen: Polanski on price cap (March 2026)](https://www.businessgreen.com/news/4527122/alternative-unacceptable-zack-polanski-calls-government-extend-energy-price-cap)
 

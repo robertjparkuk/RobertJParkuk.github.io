@@ -1,6 +1,7 @@
 ---
 title: "Closed for booking: how restricting the tip pushes rubbish into lay-bys and lanes"
 date: 2026-11-02 00:04:00 +0000
+last_modified_at: 2026-11-16
 tags: ["Waste", "Councils", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Waste and resources"
@@ -24,9 +25,9 @@ On 14 July 2026 Lincolnshire County Council's Executive voted to bring back book
 
 That assumption is the weak point. Booking systems, van bans, permit caps and residency checks save money by turning waste away. Councils say the waste turned away belongs to traders and people from outside the area. Few councils publish evidence for that, and no government measures where turned-away waste ends up.
 
-Meanwhile England recorded 1.26 million fly-tipping incidents in 2024/25, up 9% on the year, and 37% were on pavements and roads. The tip is tidier. The verge, the lay-by and the river bank pay for it. Councils have real reasons to restrict access, and this piece sets them out fairly. Still, the case for restriction rests on savings that are counted and costs that are not.
+Meanwhile England recorded 1.26 million fly-tipping incidents in 2024/25, up 9% on the year, and 37% were on pavements and roads. The tip is tidier. The verge, the lay-by and the river bank may pay for it. Councils have real reasons to restrict access, and this piece sets them out fairly. Still, the case for restriction rests on savings that are counted and costs that are not.
 
-*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026.*
+*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026; rechecked and updated 16 November 2026.*
 
 ## The lifecycle at a glance
 
@@ -64,7 +65,7 @@ The split does not follow party lines. Councils of every colour bring in booking
 | [Independent MLA Alex Easton](https://alexeastonmla.org/fly-tipping-on-the-increase-and-its-all-councils-fault)                                                                                | Called on Ards and North Down to scrap booking, blaming it for rising fly-tipping (12 Nov 2023)                                                                                                                                                                                                                                                                |
 | Alliance, UUP, SDLP, Sinn Féin, TUV                                                                                                                                                            | No published party position found (searched 27 Oct 2026)                                                                                                                                                                                                                                                                                                       |
 
-- No UK government measures where turned-away waste goes, and Westminster has said in writing that it will not.
+- No UK government measures where turned-away waste goes, and Westminster has said in writing it has no plans to.
 
 - Reform councils say booking cuts waste and favours residents. Lib Dem councils protect opening hours. Both are answering the same cost pressure.
 
@@ -110,13 +111,13 @@ The honest answer is that nobody knows. The 2022 study for Defra found no publis
 
 - **The border adds cost.** In 2020 about one vehicle in ten at Derry's Pennyburn site was Republic-registered. Monaghan's civic amenity sites charge €4 just to enter.
 
-- **Duty of care falls on householders.** A £300 penalty awaits anyone whose waste is dumped by an unlicensed carrier. Tighter access pushes households towards cheap "man with a van" offers.
+- **Duty of care falls on householders.** Householders who do not check their carrier can face a £300 penalty in Belfast. Tighter access pushes households towards cheap "man with a van" offers.
 
 Access rules at the 11 NI councils, from council pages read 27–28 October 2026 unless dated. "Not stated" means the council page is silent.
 
 | Council                                                                                                                                        | Cars                                                                                                  | Vans and trailers                                                          | Trade waste                                                                                                                            |
 |------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| [Antrim and Newtownabbey](https://antrimandnewtownabbey.gov.uk/recyclingcentres/)                                                              | Not stated                                                                                            | Medium and large vans must book; phone booking on weekdays                 | Not stated                                                                                                                             |
+| [Antrim and Newtownabbey](https://antrimandnewtownabbey.gov.uk/recyclingcentres/) | Residents only; photo ID with address (read 16 Nov 2026) | Medium and large vans must book, online or by phone; car trailers allowed | Not accepted |
 | [Ards and North Down](https://www.ardsandnorthdown.gov.uk/HRC-Conditions-of-use)                                                               | Online booking for all; proof of residency                                                            | Six visits a year per address                                              | Not stated                                                                                                                             |
 | [Armagh, Banbridge and Craigavon](https://www.armaghbanbridgecraigavon.gov.uk/resident/recycling-centres/)                                     | No booking stated; numbers on site may be limited                                                     | Not stated                                                                 | Registered business users; charges may apply                                                                                           |
 | [Belfast](https://www.belfastcity.gov.uk/bins-and-environment/bins-and-recycling/recycling/online-booking-system-for-vans-and-light-goods-veh) | No booking                                                                                            | Vans must book                                                             | Not stated                                                                                                                             |

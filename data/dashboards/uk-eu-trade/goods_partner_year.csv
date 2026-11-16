@@ -1,0 +1,385 @@
+year,dir,partner,value_gbp_m
+2010,M,Belgium,17026
+2010,M,Canada,10796
+2010,M,China,28230
+2010,M,France,21781
+2010,M,Germany,46278
+2010,M,Ireland,12763
+2010,M,Italy,14003
+2010,M,Netherlands,25717
+2010,M,Norway,19459
+2010,M,Spain,10086
+2010,M,Switzerland,10636
+2010,M,United States,34923
+2010,X,Belgium,12948
+2010,X,China,7306
+2010,X,France,20282
+2010,X,Germany,28589
+2010,X,Hong Kong,4462
+2010,X,Ireland,16376
+2010,X,Italy,8806
+2010,X,Netherlands,21073
+2010,X,Spain,9710
+2010,X,Switzerland,11041
+2010,X,UAE,4179
+2010,X,United States,37479
+2011,M,Belgium,19014
+2011,M,Canada,13306
+2011,M,China,30158
+2011,M,France,23294
+2011,M,Germany,50449
+2011,M,Ireland,12996
+2011,M,Italy,14207
+2011,M,Netherlands,28413
+2011,M,Norway,25815
+2011,M,Spain,11353
+2011,M,Switzerland,7952
+2011,M,United States,35944
+2011,X,Belgium,15442
+2011,X,China,8773
+2011,X,France,23274
+2011,X,Germany,33240
+2011,X,Hong Kong,5693
+2011,X,Ireland,17333
+2011,X,Italy,9943
+2011,X,Netherlands,22823
+2011,X,Spain,9531
+2011,X,Switzerland,24021
+2011,X,UAE,5196
+2011,X,United States,39054
+2012,M,Belgium,18236
+2012,M,Canada,13235
+2012,M,China,30024
+2012,M,France,23452
+2012,M,Germany,53092
+2012,M,Ireland,12760
+2012,M,Italy,14403
+2012,M,Netherlands,31228
+2012,M,Norway,24429
+2012,M,Spain,11305
+2012,M,Switzerland,19172
+2012,M,United States,36384
+2012,X,Belgium,13995
+2012,X,China,9894
+2012,X,France,22123
+2012,X,Germany,32842
+2012,X,Hong Kong,5748
+2012,X,Ireland,16895
+2012,X,Italy,7950
+2012,X,Netherlands,23944
+2012,X,Spain,8275
+2012,X,Switzerland,10187
+2012,X,UAE,5202
+2012,X,United States,40489
+2013,M,Belgium,20547
+2013,M,Canada,10590
+2013,M,China,31579
+2013,M,France,24672
+2013,M,Germany,55940
+2013,M,Ireland,11834
+2013,M,Italy,15331
+2013,M,Netherlands,34252
+2013,M,Norway,20190
+2013,M,Spain,12541
+2013,M,Switzerland,8081
+2013,M,United States,32060
+2013,X,Belgium,13607
+2013,X,China,11585
+2013,X,France,22392
+2013,X,Germany,30671
+2013,X,Hong Kong,9024
+2013,X,Ireland,18140
+2013,X,Italy,8404
+2013,X,Netherlands,23876
+2013,X,Spain,8477
+2013,X,Switzerland,45435
+2013,X,UAE,9952
+2013,X,United States,39928
+2014,M,Belgium,21041
+2014,M,Canada,9888
+2014,M,China,33891
+2014,M,France,24746
+2014,M,Germany,59898
+2014,M,Ireland,11753
+2014,M,Italy,16709
+2014,M,Netherlands,32372
+2014,M,Norway,17414
+2014,M,Spain,13272
+2014,M,Switzerland,8927
+2014,M,United States,32846
+2014,X,Belgium,12622
+2014,X,China,15934
+2014,X,France,19735
+2014,X,Germany,31577
+2014,X,Hong Kong,7303
+2014,X,Ireland,17805
+2014,X,Italy,8753
+2014,X,Netherlands,22311
+2014,X,Spain,8813
+2014,X,Switzerland,21313
+2014,X,UAE,6400
+2014,X,United States,38887
+2015,M,Belgium,20947
+2015,M,Canada,9523
+2015,M,China,36103
+2015,M,France,23721
+2015,M,Germany,60856
+2015,M,Ireland,12516
+2015,M,Italy,15820
+2015,M,Netherlands,31059
+2015,M,Norway,13176
+2015,M,Spain,14005
+2015,M,Switzerland,8895
+2015,M,United States,35291
+2015,X,Belgium,11589
+2015,X,China,18072
+2015,X,France,17843
+2015,X,Germany,30477
+2015,X,Hong Kong,6626
+2015,X,Ireland,16680
+2015,X,Italy,8414
+2015,X,Netherlands,17311
+2015,X,Spain,8855
+2015,X,Switzerland,22244
+2015,X,UAE,6836
+2015,X,United States,45313
+2016,M,Belgium,23708
+2016,M,Canada,10924
+2016,M,China,39250
+2016,M,France,24439
+2016,M,Germany,64222
+2016,M,Ireland,13138
+2016,M,Italy,17227
+2016,M,Netherlands,34804
+2016,M,Norway,13717
+2016,M,Spain,15669
+2016,M,Switzerland,22566
+2016,M,United States,39618
+2016,X,Belgium,11629
+2016,X,China,13424
+2016,X,France,19580
+2016,X,Germany,32338
+2016,X,Hong Kong,6650
+2016,X,Ireland,16946
+2016,X,Italy,9708
+2016,X,Netherlands,18853
+2016,X,Spain,9641
+2016,X,Switzerland,14624
+2016,X,UAE,6744
+2016,X,United States,45435
+2017,M,Belgium,25373
+2017,M,Canada,12658
+2017,M,China,41641
+2017,M,France,26526
+2017,M,Germany,68666
+2017,M,Ireland,14525
+2017,M,Italy,18719
+2017,M,Netherlands,39771
+2017,M,Norway,19201
+2017,M,Spain,15606
+2017,M,Switzerland,11047
+2017,M,United States,41348
+2017,X,Belgium,13776
+2017,X,China,16593
+2017,X,France,23564
+2017,X,Germany,36142
+2017,X,Hong Kong,7224
+2017,X,Ireland,19505
+2017,X,Italy,10236
+2017,X,Netherlands,21378
+2017,X,Spain,10437
+2017,X,Switzerland,15374
+2017,X,UAE,7483
+2017,X,United States,45738
+2018,M,Belgium,25919
+2018,M,Canada,11299
+2018,M,China,42560
+2018,M,France,27555
+2018,M,Germany,68333
+2018,M,Ireland,13717
+2018,M,Italy,19437
+2018,M,Netherlands,41706
+2018,M,Norway,20104
+2018,M,Spain,15745
+2018,M,Switzerland,6821
+2018,M,United States,44466
+2018,X,Belgium,14212
+2018,X,China,20752
+2018,X,France,24033
+2018,X,Germany,35506
+2018,X,Hong Kong,7718
+2018,X,Ireland,21159
+2018,X,Italy,10458
+2018,X,Netherlands,25852
+2018,X,Spain,10467
+2018,X,Switzerland,19150
+2018,X,UAE,7564
+2018,X,United States,49182
+2019,M,Belgium,25332
+2019,M,Canada,12892
+2019,M,China,46375
+2019,M,France,29870
+2019,M,Germany,66910
+2019,M,Ireland,13926
+2019,M,Italy,20517
+2019,M,Netherlands,42534
+2019,M,Norway,15861
+2019,M,Spain,16752
+2019,M,Switzerland,20588
+2019,M,United States,51066
+2019,X,Belgium,12928
+2019,X,China,23474
+2019,X,France,24630
+2019,X,Germany,36307
+2019,X,Hong Kong,7867
+2019,X,Ireland,21922
+2019,X,Italy,9992
+2019,X,Netherlands,23844
+2019,X,Spain,10741
+2019,X,Switzerland,10482
+2019,X,UAE,7661
+2019,X,United States,54008
+2020,M,Belgium,22360
+2020,M,Canada,12264
+2020,M,China,53430
+2020,M,France,22571
+2020,M,Germany,57163
+2020,M,Ireland,13450
+2020,M,Italy,17844
+2020,M,Netherlands,35857
+2020,M,Norway,10988
+2020,M,Spain,14345
+2020,M,Switzerland,10861
+2020,M,United States,45204
+2020,X,Belgium,10767
+2020,X,China,14398
+2020,X,France,18566
+2020,X,Germany,32378
+2020,X,Hong Kong,7818
+2020,X,Ireland,21640
+2020,X,Italy,8576
+2020,X,Netherlands,19693
+2020,X,Spain,8663
+2020,X,Switzerland,14208
+2020,X,UAE,4732
+2020,X,United States,43223
+2021,M,Belgium,22764
+2021,M,Canada,10941
+2021,M,China,63297
+2021,M,France,21216
+2021,M,Germany,53837
+2021,M,Ireland,13949
+2021,M,Italy,17652
+2021,M,Netherlands,30093
+2021,M,Norway,27082
+2021,M,Spain,14400
+2021,M,Switzerland,12109
+2021,M,United States,43826
+2021,X,Belgium,15723
+2021,X,China,15189
+2021,X,France,19166
+2021,X,Germany,29778
+2021,X,Hong Kong,7154
+2021,X,Ireland,21191
+2021,X,Italy,8849
+2021,X,Netherlands,26913
+2021,X,Spain,8147
+2021,X,Switzerland,28813
+2021,X,UAE,5732
+2021,X,United States,43541
+2022,M,Belgium,29008
+2022,M,Canada,13645
+2022,M,China,69070
+2022,M,France,34859
+2022,M,Germany,69703
+2022,M,Ireland,18716
+2022,M,Italy,23235
+2022,M,Netherlands,54311
+2022,M,Norway,44137
+2022,M,Spain,18537
+2022,M,Switzerland,12306
+2022,M,United States,65481
+2022,X,Belgium,28700
+2022,X,China,28684
+2022,X,France,25248
+2022,X,Germany,34027
+2022,X,Hong Kong,19121
+2022,X,Ireland,29880
+2022,X,Italy,9293
+2022,X,Netherlands,36362
+2022,X,Spain,9827
+2022,X,Switzerland,28358
+2022,X,UAE,10027
+2022,X,United States,52269
+2023,M,Belgium,28291
+2023,M,Canada,10599
+2023,M,China,62221
+2023,M,France,40083
+2023,M,Germany,76300
+2023,M,Ireland,19074
+2023,M,Italy,22134
+2023,M,Netherlands,51591
+2023,M,Norway,26709
+2023,M,Spain,19421
+2023,M,Switzerland,12173
+2023,M,United States,63309
+2023,X,Belgium,20297
+2023,X,China,27365
+2023,X,France,23882
+2023,X,Germany,32446
+2023,X,Hong Kong,12992
+2023,X,Ireland,27601
+2023,X,Italy,9848
+2023,X,Netherlands,30044
+2023,X,Spain,9485
+2023,X,Switzerland,28554
+2023,X,UAE,7395
+2023,X,United States,57709
+2024,M,Belgium,30804
+2024,M,Canada,18133
+2024,M,China,62042
+2024,M,France,35397
+2024,M,Germany,75020
+2024,M,Ireland,18137
+2024,M,Italy,23062
+2024,M,Netherlands,47515
+2024,M,Norway,23549
+2024,M,Spain,20536
+2024,M,Switzerland,16971
+2024,M,United States,62596
+2024,X,Belgium,16980
+2024,X,China,37032
+2024,X,France,22910
+2024,X,Germany,30836
+2024,X,Hong Kong,9519
+2024,X,Ireland,23688
+2024,X,Italy,8917
+2024,X,Netherlands,28312
+2024,X,Spain,9494
+2024,X,Switzerland,22726
+2024,X,UAE,9815
+2024,X,United States,57515
+2025,M,Belgium,29536
+2025,M,Canada,27687
+2025,M,China,62610
+2025,M,France,36799
+2025,M,Germany,74666
+2025,M,Ireland,18649
+2025,M,Italy,23094
+2025,M,Netherlands,48536
+2025,M,Norway,22274
+2025,M,Spain,22580
+2025,M,Switzerland,43178
+2025,M,United States,75932
+2025,X,Belgium,15401
+2025,X,China,27816
+2025,X,France,23020
+2025,X,Germany,32988
+2025,X,Hong Kong,13088
+2025,X,Ireland,23272
+2025,X,Italy,8639
+2025,X,Netherlands,25268
+2025,X,Spain,10582
+2025,X,Switzerland,23810
+2025,X,UAE,8092
+2025,X,United States,67281

@@ -1,6 +1,7 @@
 ---
 title: "Fertiliser: a small tax, a big bill and a lough"
 date: 2026-11-09 19:00:00 +0000
+last_modified_at: 2026-11-16
 tags: ["Carbon", "CBAM", "Trade", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Carbon pricing and trade"
@@ -28,7 +29,7 @@ The row is loud, but the tax itself is small. HMRC's illustrative 2027 rate for 
 
 In Northern Ireland the binding constraint is the nutrient rules, not CBAM. The new Nutrients Action Programme (NAP) and Lough Neagh will shape how much fertiliser NI farms buy and spread far more than any carbon border levy. The CBAM charge is low only while free allowances last, and it will rise as they taper. The political fight is over a cost that has barely started.
 
-*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026.*
+*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026; rechecked and updated 16 November 2026 (tariff, summit and fertiliser-rules lines).*
 
 ## The lifecycle at a glance
 
@@ -42,12 +43,12 @@ The UK CBAM touches fertiliser once, at the border (stage 4), at an illustrative
 |-------------------------------------------------|---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | UK CBAM on fertiliser                           | Announced Dec 2023, no design yet                       | Starts 1 Jan 2027. Illustrative fertiliser rate £1.45/tCO2e (HMRC, 16 Oct 2026). UK-wide, including NI                                                                                                 | Legislated against carbon leakage. Low because HMRC's formula implies about 97.5% of allowances stay free in 2027 (author's calculation) |
 | EU CBAM on fertiliser                           | Transitional reporting from 1 Oct 2023                  | Definitive phase since 1 Jan 2026; certificates on sale 1 Feb 2027. The "emergency brake" (Article 27a) is still disputed: Parliament voted 464 to 50 to delete it (15 Sep 2026); the Council keeps it | Farm lobbies in France, Italy and Ireland pushed for suspension. The Fertiliser Action Plan (19 May 2026) did not exempt fertiliser      |
-| EU tariffs on Russian and Belarusian fertiliser | None                                                    | Regulation (EU) 2025/1227 since 1 Jul 2025: 6.5% plus €40–45/t, rising to €430/t in 2028                                                                                                               | Cut Russia's revenue. EU suspended general tariffs on other suppliers for a year (May 2026)                                              |
+| EU tariffs on Russian and Belarusian fertiliser | None                                                    | Regulation (EU) 2025/1227 since 1 Jul 2025: 6.5% plus €60–70/t since 1 Jul 2026, rising to €315–430/t from 1 Jul 2028                                                                                                            | Cut Russia's revenue. EU suspended general tariffs on other suppliers for a year (May 2026)                                              |
 | UK domestic ammonia                             | Billingham closure announced 25 Jul 2023                | UK makes about 40% of its nitrogen fertiliser; Billingham makes AN from imported ammonia                                                                                                               | Gas and carbon costs made UK ammonia uncompetitive                                                                                       |
 | Fertiliser prices                               | Falling after the 2022 peak                             | AN and urea about £480–485/t, up about 35% on a year (*Farmers Weekly*, 19 Oct 2026)                                                                                                                   | Hormuz shipping disrupted since February 2026; gas is 60–80% of nitrogen production cost                                                 |
 | Fuel duty on farm red diesel                    | Temporary cut from March 2022 in place                  | 3.7p cut for rebated fuels extended to 30 Jun 2027; rates return to pre-March 2022 levels from 1 Jul 2027, then rise with RPI (Budget, 28 Oct 2026)                                                    | Short-term relief on farm running costs. The rise lands in summer 2027, just after the first CBAM year starts                            |
 | NI Nutrients Action Programme                   | 2019 programme rolled over                              | 2027–2030 consultation 29 Jun to 7 Sep 2026: 30% cut in the phosphorus surplus, merchant checks on chemical P, phased low-emission slurry spreading (LESSE) and protected urea                         | The 2025 draft was dropped after an Assembly row and redrafted with stakeholders                                                         |
-| UK fertiliser product rules                     | 1991 rules in GB; EU FPR 2019/1009 in NI from July 2022 | Four-government consultation on new UK rules, 19 Mar to 10 Jun 2026                                                                                                                                    | Allow recycled-nutrient products and improve supply resilience                                                                           |
+| UK fertiliser product rules                     | 1991 rules in GB; EU FPR 2019/1009 in NI from July 2022 | Four-government consultation, 19 Mar to 10 Jun 2026. NI firms could choose EU or UK rules; no response yet (16 Nov 2026)                                                                                                                              | Allow recycled-nutrient products and improve supply resilience                                                                           |
 | NI carbon budgets                               | Under consultation                                      | Approved Dec 2024: 33%, 48%, 62% average cuts; 77% by 2040                                                                                                                                             | Agriculture is the largest sector, 31.4% of 2024 emissions                                                                               |
 
 ## Where the parties and governments stand (October 2026)
@@ -115,7 +116,7 @@ Westminster sets the tax, Brussels sets some product rules for NI, and Stormont 
 
 - **Councils.** Expect more LESSE and slurry-store conditions in planning, and more questions on biosolids and PFAS.
 
-- **ETS linkage.** A UK–EU link is reported as "increasingly likely" at the November summit (Carbon Pulse, 14 Oct 2026), which could ease CBAM friction across the Irish border.
+- **ETS linkage.** A draft deal to link the two ETSs, with mutual CBAM exemptions "subject to respective laws and procedures", is expected at the 20 November summit ([Euronews, 6 Nov 2026](https://www.euronews.com/2026/11/06/eu-and-uk-set-to-link-carbon-markets-in-major-post-brexit-deal)).
 
 ## Practical examples
 
@@ -228,6 +229,12 @@ Added at final review, 28 October 2026:
 Added 30 October 2026 (Budget):
 
 - [Budget 2026: Overview of Tax Legislation and Rates (OOTLAR), HM Treasury and HMRC (28 Oct 2026)](https://www.gov.uk/government/publications/budget-2026-overview-of-tax-legislation-and-rates-ootlar/budget-2026-overview-of-tax-legislation-and-rates-ootlar), paragraphs 2.18 (fuel duty) and 2.28 (CBAM)
+
+Added 16 November 2026 (recheck):
+
+- [EU and UK set to link carbon markets in major post-Brexit deal, Euronews (6 Nov 2026)](https://www.euronews.com/2026/11/06/eu-and-uk-set-to-link-carbon-markets-in-major-post-brexit-deal)
+
+- [UK fertilisers regulatory reform consultation document, Defra and devolved governments (2026), section 4.2](https://consult.defra.gov.uk/fertilisers-team/uk-fertilisers-regulatory-reform/supporting_documents/final-fertilisers-english-2026pdf)
 
 ---
 

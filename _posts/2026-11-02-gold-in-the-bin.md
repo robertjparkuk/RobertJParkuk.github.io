@@ -1,6 +1,7 @@
 ---
 title: "Gold in the bin"
 date: 2026-11-02 00:05:00 +0000
+last_modified_at: 2026-11-16
 tags: ["Waste", "Councils", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Waste and resources"
@@ -26,7 +27,7 @@ Together, those two stories show the problem. Electrical waste holds real value:
 
 The argument of this piece is that the gap between rules on paper and material in practice is now a bigger risk than any one regulation. Firms that can show where their waste ended up will be better placed than firms holding only a certificate.
 
-*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026.*
+*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026; rechecked and updated 16 November 2026.*
 
 ## The lifecycle at a glance
 
@@ -64,15 +65,15 @@ The practical point follows from the chemistry. To recover the critical elements
 
 | Rule or instrument                | 2023                                                                                                   | Now (with date)                                                                                                                                                                          | What changed and why                                                              |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| UK WEEE Regulations 2013 reform   | Consultation launched 28 Dec 2023: kerbside collection, retailer take-back, vapes, online marketplaces | Response of 10 Dec 2024 settled only the marketplace and vape measures (SI 2025/910, UK-wide). No decision on household collection or retailer duties found (searched 27 Oct 2026)       | The cheap measures went first; the costly ones are still waiting                  |
+| UK WEEE Regulations 2013 reform   | Consultation launched 28 Dec 2023: kerbside collection, retailer take-back, vapes, online marketplaces | Response of 10 Dec 2024 settled only the marketplace and vape measures (SI 2025/910, UK-wide). No decision on household collection or retailer duties found (searched 16 Nov 2026)       | The cheap measures went first; the costly ones are still waiting                  |
 | Vapes                             | Counted with toys and leisure equipment                                                                | Single-use vapes banned in NI from 1 Jun 2025. Separate vape category 7.1 from 29 Jul 2025 (SI 2025/910)                                                                                 | Litter, fires and producers who were not paying                                   |
 | EU Batteries Regulation 2023/1542 | Adopted 10 Jul 2023                                                                                    | Applies in NI since 18 Feb 2024. NI enforcement regulations (SI 2026/1053) now in force; OPSS guidance updated 17 Oct 2026. Passport due 18 Feb 2027; due diligence moved to 18 Aug 2027 | EU states had not set up the bodies that check suppliers, so the deadline slipped |
 | GB batteries regime               | 2008/2009 rules                                                                                        | Still the 2008 rules in GB. A UK-wide aligned regime promised for consultation (8 Jul 2026)                                                                                              | The Windsor Framework moved NI first                                              |
 | UK critical minerals              | 2023 strategy refresh                                                                                  | Vision 2035 (24 Nov 2025): 20% of UK demand from recycling by 2035; £50m programme (23 Jun 2026)                                                                                         | Supply security, with Chinese export controls in the background                   |
 | EU Critical Raw Materials Act     | Proposal                                                                                               | Regulation 2024/1252 in force 23 May 2024, with a 25% recycling benchmark for 2030                                                                                                       | EU dependence on single suppliers                                                 |
-| Basel e-waste amendments          | Prior consent only for hazardous e-waste                                                               | All e-waste shipments need prior informed consent from 1 Jan 2025                                                                                                                        | Agreed in 2022 to stop dumping disguised as second-hand trade                     |
+| Basel e-waste amendments          | Prior consent only for hazardous e-waste                                                               | All e-waste shipments need prior informed consent from 1 Jan 2025. Within the EU, including NI to Ireland, untreated non-hazardous e-waste needs prior notification from 1 Jan 2027 (Commission draft act, 26 Oct 2026)                                                                                                                        | Agreed in 2022 to stop dumping disguised as second-hand trade                     |
 | Digital waste tracking            | Delayed                                                                                                | Receipt service live 28 Apr 2026. Mandatory for receivers from Oct 2026 in England and Wales, and from Jan 2027 in NI and Scotland (GOV.UK, updated 1 Oct 2026)                          | Waste crime and paper records that cannot be traced                               |
-| UK Circular Economy Growth Plan   | Promised                                                                                               | Still unpublished; ministers said "soon" on 15 Jun 2026 (none found, 27 Oct 2026)                                                                                                        | A reshuffle in July 2026 and competing priorities                                 |
+| UK Circular Economy Growth Plan   | Promised                                                                                               | Still unpublished; ministers said "soon" on 15 Jun 2026 (none found, 16 Nov 2026)                                                                                                        | A reshuffle in July 2026 and competing priorities                                 |
 
 ## Where the parties and governments stand (October 2026)
 
@@ -207,7 +208,7 @@ Most rules are set in London or Brussels. NI's position depends on whether the E
 
 - [UK Critical Minerals Strategy: Vision 2035, GOV.UK (Nov 2025)](https://assets.publishing.service.gov.uk/media/6937fa7833c7ace9c4a41e25/uk-critical-minerals-strategy-vision-2035.pdf)
 
-- [Critical Minerals Strategy statement, Commons (24 Nov 2025)](https://parallelparliament.co.uk/debate/2025-11-24/commons/commons-chamber/critical-minerals-strategy)
+- [Critical Minerals Strategy, written statement HCWS1085 (24 Nov 2025)](https://hansard.parliament.uk/html/Commons/2025-11-24/WrittenStatements)
 
 - [European Critical Raw Materials Act, European Parliament legislative train](https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age/file-european-critical-raw-material-act)
 
