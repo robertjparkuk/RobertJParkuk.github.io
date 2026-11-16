@@ -25,7 +25,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
-### v0.31.1 — 16 November 2026: Unsplash photos on three policy posts
+### v0.32.1 — 16 November 2026: Unsplash photos on three policy posts
 
 *Robert's instruction, 16 Nov: use royalty-free images suited to the posts and credit each photographer.*
 
@@ -35,6 +35,28 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - Carbon borders as industrial policy (30 Nov): header photo changed from `shipping-containers.jpg` to the steelworks at night.
 - Every Unsplash photo carries a credit line in its caption ("Photo: name on Unsplash", both linked, as Unsplash asks). New `.photo-credit` style in `assets/style.css`.
 - The Unsplash Licence allows free commercial use; attribution is not required but is given. Adobe Stock and Robert's own photos are unchanged.
+### v0.32.0 — 16 November 2026: Christmas decorations post, briefing and dashboard
+
+*Requested by Robert, 16 November 2026 ("Blog to go live later today"). Awaiting Robert's merge.*
+
+- `_posts/2026-11-16-deck-the-halls-check-the-rules.md`: then-and-now of tinsel, baubles, real and artificial trees, lights, spray snow, glitter, candles and CO, wrapping paper and CBAM on foil; retail, hospitality and public realm; NI/GB/EU rules table; ESG conflicts; Twelve ways to make Christmas better; "The twelve days of regulation". `hero_title` with `hero_until: 2026-12-24`; not tagged CBAM, so no price button.
+- `assets/briefings/2026-11-christmas-decorations-briefing.pdf`: branded A4 briefing with a dashboard page, bauble and garland decorations. Built by `_scripts/briefings/christmas-decorations/charts.py` then `build.py`.
+- `tools/dashboards/christmas-decorations.html`: self-contained dashboard (inline SVG charts with hover values, rules matrix, CSV downloads in `data/dashboards/christmas-decorations/`). Listed on /dashboards/.
+- Second pass, same day (Robert's instruction, 14:44): added Father Christmas and the banned Christmases (1647, Scotland, 1973 lighting ban), Belfast City Hall signs, an Ulster Irish glossary and sayings, HMRC import figures for 2025 (two new charts and `hmrc-imports-2025.csv`), Home Office candle fire figures, greenwashing, the tree-movement paperwork table, Belfast's £77,500 artificial tree (with the Ballyboley and Belfast Zoo questions), Mid and East Antrim's van permits and booking at Redlands and the fly-tipping evidence, and Irish VAT on candles. "Father Christmas" throughout. Corrections against the brief: Ireland's zero rate on white candles ended on 1 January 2022; Redlands has permits and booking for vans, not a height barrier (1.95 m barriers are at the smaller centres); "first ever" artificial tree not supported; the zoo uses trees for enrichment and woodchip. England's fixed penalties updated to £5,000 (fly-tipping) and £750 (litter) from 1 September 2026.
+- `assets/style.css`: new `.page-photo.chart` and `.page-photo.garland` classes so charts and the garland are not cropped to the 16:7 photo frame (found in the 17:36 preview).
+- Third pass (Robert, 17:16): Belfast tree section now argues the offset parallel (carbon spent up front, savings promised; forest-sink permanence, Badgley 2022), the conflict with public-estate reduction (DoF 40% by 2028), and a verdict framed as opinion; new subsection "Pay now, promise later: the offset pattern" listing nine similar cases in the piece.
+- Facts checked to 16 November 2026 by six research passes and two independent fact-checks. Open items: Home Office table FIRE0602 (candle fires after 2019) and NIFRS figures; S.I. 2026/816 in-force date to confirm on legislation.gov.uk; whether Directive 2024/825 applies in NI; outcome of the 10 November Joint Committee on the Forced Labour Regulation; Irish phrases to be checked by a fluent Ulster speaker; update the tree-movement section after the 20 November summit.
+
+### v0.31.1 — 14 November 2026: headline rules and IndexNow
+
+*Master Tidy handover, 14 November 2026 (sections 5 and 6). Also covers the 14 November status check card "hero-price-button".*
+
+- `index.html`: the rotating headline now follows the house rules. At most five slides: (1) the positioning line, fixed; (2) the nearest dated matter in the next 30 days, which is the UK–EU summit slide until 27 November and the "UK CBAM starts 1 January 2027" slide from 28 November to 31 December; (3) one free tool (the Consultations Monitor); (4–5) the two newest pieces with a `hero_title`.
+- Every slide carries an expiry date (`data-until`). Posts expire at `hero_until`, or 14 days after the post date if none is set, so the Halloween pumpkins and Budget pieces no longer come back on 25 November. Expiry is applied at build (the site rebuilds daily) and again in the browser. Slide 1's date (31 January 2027) is a review-by date and never hides it.
+- The £1,685 Readiness Review button now appears only on CBAM slides: the summit and UK CBAM slides, and posts tagged CBAM. It is gone from the positioning slide (now "What I do") and from policy pieces such as "Ireland: Europe's weak flank" and the Climate Act piece.
+- UK–EU summit slide (20 November, Brussels): worded to hold whatever the outcome. It says nothing changes in law on the day, that any CBAM relief needs regulations in London and a legal act in Brussels, and that UK CBAM still applies from 1 January 2027. It never says "exempt". Update it from the joint declaration after 20 November.
+- `.github/workflows/pr-check.yml`: fails if the home page has more than five slides or a slide without an expiry date.
+- IndexNow: key file `67b09f8567361a39d9b94b1af110523a.txt` in the root, and `.github/workflows/indexnow.yml`, which after each push to main tells Bing and the other IndexNow engines which pages changed ("Run workflow" submits the whole sitemap). Google does not use IndexNow; it needs Search Console (DNS TXT record for Robert to add).
 
 ### v0.31.0 — 13 November 2026: rotating home-page headline
 

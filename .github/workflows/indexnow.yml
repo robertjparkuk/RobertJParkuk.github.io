@@ -1,0 +1,103 @@
+# Tells Bing (and the other IndexNow search engines) which pages changed,
+# so new and updated pages are crawled within hours rather than weeks.
+#
+# On every push to main it waits for GitHub Pages to deploy, then submits the
+# home page plus the address of every post or page whose source file changed.
+# "Run workflow" in the Actions tab submits every address in the sitemap.
+#
+# The key file is 67b09f8567361a39d9b94b1af110523a.txt in the site root.
+# It is not a secret: IndexNow checks it to confirm the site owns the key.
+# Google does not use IndexNow; it reads the sitemap through Search Console.
+
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'WEBSITE-UPDATES.md'
+      - 'README.md'
+      - 'HOW-TO-POST.md'
+      - '.github/**'
+      - '_scripts/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Wait for GitHub Pages to deploy
+        if: github.event_name == 'push'
+        run: sleep 240
+
+      - name: Work out which addresses changed
+        id: urls
+        env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          python3 - <<'PY'
+          import os, re, subprocess, json, urllib.request
+          site = "https://robertjpark.co.uk"
+          urls = {site + "/"}
+          if os.environ["EVENT"] == "workflow_dispatch":
+              xml = urllib.request.urlopen(site + "/sitemap.xml", timeout=30).read().decode()
+              urls |= set(re.findall(r"<loc>([^<]+)</loc>", xml))
+          else:
+              before = os.environ.get("BEFORE", "")
+              rng = f"{before}..HEAD" if before and not set(before) <= {"0"} else "HEAD~1..HEAD"
+              try:
+                  files = subprocess.check_output(["git", "diff", "--name-only", rng], text=True).split()
+              except subprocess.CalledProcessError:
+                  files = []
+              for f in files:
+                  if not os.path.exists(f):
+                      continue
+                  m = re.match(r"_posts/(\d{4})-(\d{2})-\d{2}-(.+)\.(md|markdown|html)$", f)
+                  if m:
+                      head = open(f, encoding="utf-8").read(3000)
+                      if re.search(r"^published:\s*false", head, re.M):
+                          continue
+                      pl = re.search(r"^permalink:\s*(\S+)", head, re.M)
+                      urls.add(site + (pl.group(1) if pl else f"/blog/{m.group(1)}/{m.group(2)}/{m.group(3)}/"))
+                      continue
+                  if f.startswith(("_", ".")) or not f.endswith((".md", ".html")):
+                      continue
+                  head = open(f, encoding="utf-8").read(3000)
+                  pl = re.search(r"^permalink:\s*(\S+)", head, re.M)
+                  if pl:
+                      urls.add(site + pl.group(1))
+                  elif f.endswith(".html") and f != "index.html":
+                      urls.add(site + "/" + f)
+          urls = sorted(u for u in urls if u.startswith(site))[:10000]
+          print("\n".join(urls))
+          json.dump(urls, open("urls.json", "w"))
+          PY
+
+      - name: Submit to IndexNow
+        run: |
+          python3 - <<'PY'
+          import json, urllib.request
+          key = "67b09f8567361a39d9b94b1af110523a"
+          body = json.dumps({
+              "host": "robertjpark.co.uk",
+              "key": key,
+              "keyLocation": f"https://robertjpark.co.uk/{key}.txt",
+              "urlList": json.load(open("urls.json")),
+          }).encode()
+          req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body,
+                                       headers={"Content-Type": "application/json; charset=utf-8"})
+          try:
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  print("IndexNow response:", r.status)
+          except urllib.error.HTTPError as e:
+              # 202 means accepted and the key is still being checked; anything else is reported, not fatal.
+              print("::warning::IndexNow returned", e.code, e.read().decode()[:300])
+          PY
