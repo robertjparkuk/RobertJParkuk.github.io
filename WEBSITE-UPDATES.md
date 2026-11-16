@@ -25,6 +25,17 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.32.1 — 16 November 2026: policy series recheck and corrections
+
+*Requested by Robert, 16 November 2026 (Policy Series Status pane: Yes to all 17; "Mark the post as edited today on the blog, pdf and any dashboards"; freight and CBAM "publish earlier on 21–23 November"; CBAM "happy with over 4000 words"). Awaiting Robert's merge.*
+
+- 14 live policy series posts corrected after a recheck against official sources on 16 November 2026, each with `last_modified_at: 2026-11-16` and a dated "rechecked and updated" line. Main changes: election framing removed from the land-law and Climate Act pieces; Lough Neagh 3.4% restated as NI Water's overall price limit and the judicial review status corrected; Russian fertiliser tariff updated (€60–70/t since 1 Jul 2026); FCA ESG ratings final rules (PS26/22, 3 Nov 2026) and SFDR 2.0 status; ESOS and energy pieces name the DfE official; 0% VAT extension described as announced, not law; GB POPs date softened; PFAS chemist's note tightened; EU prior-notification rule for NI–Ireland e-waste from 1 Jan 2027; Conservative row in the digital tracking piece filled from Hansard; council-fairness edits in "Closed for booking". Brown bins unchanged.
+- `_layouts/post.html`, `blog/index.html`, `policy-series.md`: show "Updated <date>" where `last_modified_at` is set (also feeds the sitemap).
+- `tools/dashboards/ni-regulatory-horizon.html` and `horizon.json`: 24 rows linking to corrected pieces labelled "(updated 16 Nov 2026)"; CHANGES entry added. No dates changed. No policy series PDFs exist, so none to mark.
+- `_posts/2026-11-11-twelve-dates-to-easter.md`: added `hero_eyebrow` and `hero_lead` so the home-page slide has a summary, not just a headline.
+- Freight and CBAM pieces moved to 21 and 23 November 2026, still `published: false` until the 20 November summit lines are updated (reminder set for 21 Nov). Non-summit fixes: Reform point numbers dropped (no official copy), HL12132 relabelled, HL15805 added, LawPlayer link replaced with legislation.gov.uk. CBAM kept at full length.
+- Not done (sources unreachable from here): several Hansard replacements for Parallel Parliament and beyondthevote links; BBC original for the DfE official's quote; ESOS SI made date (22 or 23 June 2026) left as 23 June pending a check on legislation.gov.uk.
+
 ### v0.32.0 — 16 November 2026: Christmas decorations post, briefing and dashboard
 
 *Requested by Robert, 16 November 2026 ("Blog to go live later today"). Awaiting Robert's merge.*
