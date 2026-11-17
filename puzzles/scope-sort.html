@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Scope Sort: sort 22 everyday business activities into Scope 1, 2, 3 or not counted, with the reason for each. By Robert J. Park.">
-<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/mark.svg">
 <title>Scope Sort</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
@@ -17,17 +17,17 @@ body{margin:0}
 
 /* Layout: the GHG Protocol value chain drawn left to right (upstream → you → downstream), then the grey zones where scopes blur, then the gases that count. */
 :root{
-  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2;
-  --red:#B3121B; --s1:#B3121B; --s1-bg:#FBEDED; --s2:#B5650F; --s2-bg:#FCF1E3; --s3:#2D6CA3; --s3-bg:#E9F1F9; --out:#4F7F2A; --out-bg:#EEF5E6;
-  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --paper:#FFFFFF; --ink:#1A1A1A; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2;
+  --red:#A61C1C; --s1:#A61C1C; --s1-bg:#FBEDED; --s2:#B5650F; --s2-bg:#FCF1E3; --s3:#2D6CA3; --s3-bg:#E9F1F9; --out:#4F7F2A; --out-bg:#EEF5E6;
+  --display:'Source Sans 3','Segoe UI',system-ui,sans-serif;
   --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
-  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}}
+  --red:#E0484A; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
-  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}
+  --red:#E0484A; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
@@ -40,7 +40,7 @@ h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);line-height:1.1;m
 .sec{display:flex;flex-direction:column;gap:16px;border-top:3px solid var(--ink);padding-top:18px}
 .sec>p{margin:0;max-width:72ch}
 
-:root{--s1:#B3121B;--s2:#B5650F;--s3:#2D6CA3;--nc:#5F5856;--ok:#1F6B45;--ok-bg:#E6F2EB;--no-bg:#FBEDED}
+:root{--s1:#A61C1C;--s2:#B5650F;--s3:#2D6CA3;--nc:#5F5856;--ok:#1F6B45;--ok-bg:#E6F2EB;--no-bg:#FBEDED}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--s1:#F0787C;--s2:#E9A55A;--s3:#7DB3E3;--nc:#B3AAA6;--ok:#4CC38A;--ok-bg:#16301F;--no-bg:#3A1C1E}}
 :root[data-theme="dark"]{--s1:#F0787C;--s2:#E9A55A;--s3:#7DB3E3;--nc:#B3AAA6;--ok:#4CC38A;--ok-bg:#16301F;--no-bg:#3A1C1E}
 .head{display:flex;gap:16px;align-items:center}.head img{width:60px;height:60px}
@@ -66,12 +66,20 @@ h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);line-height:1.1;m
 button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
 @media (max-width:640px){.bins{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
+<style id="rjp-brand">
+/* Brand: split-circle mark, red #A61C1C and ink #1A1A1A (reverse: #E0484A and white), Source Sans 3 headings */
+.rjp-mark{flex:none;display:block}
+.rjp-mark .r{fill:#A61C1C}.rjp-mark .k{fill:#1A1A1A}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .rjp-mark .r{fill:#E0484A}:root:not([data-theme="light"]) .rjp-mark .k{fill:#FFFFFF}}
+:root[data-theme="dark"] .rjp-mark .r{fill:#E0484A}:root[data-theme="dark"] .rjp-mark .k{fill:#FFFFFF}
+h1{font-weight:700!important;letter-spacing:-0.005em}h2{letter-spacing:-0.005em}
+</style>
 </head>
 <body>
 <div class="wrap">
   <header style="display:flex;flex-direction:column;gap:10px">
-    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
-    <div class="head"><svg width="60" height="60" style="flex:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Scope Sort logo"><defs><mask id="m-scope-sort" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120"><rect width="120" height="120" fill="#000"/><rect x="8" y="44" width="28" height="62" rx="4" fill="#fff"/><rect x="4" y="32" width="36" height="9" rx="3" fill="#fff"/><rect x="46" y="44" width="28" height="62" rx="4" fill="#fff"/><rect x="42" y="28" width="36" height="9" rx="3" fill="#fff"/><rect x="84" y="44" width="28" height="62" rx="4" fill="#fff"/><rect x="80" y="24" width="36" height="9" rx="3" fill="#fff"/></mask></defs><g mask="url(#m-scope-sort)"><rect width="60" height="120" fill="#1B1817"/><rect x="60" width="60" height="120" fill="#B3121B"/></g></svg><h1>Scope Sort</h1></div>
+    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg class="rjp-mark" width="22" height="26" viewBox="0 0 100 120" aria-hidden="true" focusable="false"><path class="r" d="M53.67 10C26.05 10 3.67 32.39 3.67 60s22.38 50 50 50v-8.67C30.84 101.33 12.33 82.83 12.33 60S30.84 18.67 53.67 18.67Z"/><path class="k" d="M60 97c20.43 0 37-16.57 37-37S80.43 23 60 23v8.67c15.65 0 28.33 12.68 28.33 28.33S75.65 88.33 60 88.33Z"/><path class="r" d="M56 115h2V5.33h-2Z"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+    <div class="head"><svg width="60" height="60" style="flex:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Scope Sort logo"><defs><mask id="m-scope-sort" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120"><rect width="120" height="120" fill="#000"/><rect x="8" y="44" width="28" height="62" rx="4" fill="#fff"/><rect x="4" y="32" width="36" height="9" rx="3" fill="#fff"/><rect x="46" y="44" width="28" height="62" rx="4" fill="#fff"/><rect x="42" y="28" width="36" height="9" rx="3" fill="#fff"/><rect x="84" y="44" width="28" height="62" rx="4" fill="#fff"/><rect x="80" y="24" width="36" height="9" rx="3" fill="#fff"/></mask></defs><g mask="url(#m-scope-sort)"><rect width="60" height="120" fill="#1A1A1A"/><rect x="60" width="60" height="120" fill="#A61C1C"/></g></svg><h1>Scope Sort</h1></div>
     <p class="lede">Twenty-two everyday business activities. Sort each one into Scope 1, Scope 2, Scope 3, or "not counted". Some are easy. Some trip up professionals. Every answer comes with the reason.</p>
   </header>
   <section class="card" id="card" aria-live="polite"></section>

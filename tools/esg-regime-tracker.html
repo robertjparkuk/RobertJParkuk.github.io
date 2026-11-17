@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="ESG Regime Tracker: carbon and sustainability rules across the UK, Northern Ireland, the EU and beyond, then (2023) and now (2026). By Robert J. Park.">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/mark.svg">
 <title>ESG Regime Tracker</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
@@ -14,10 +15,10 @@ body{margin:0}
 
 /* Layout: masthead, filter rail, then a ledger of regime cards (Then 2023 / Now 2026 / Tension), then E-vs-S case files */
 :root{
-  --bg:#f6f4f2; --surface:#ffffff; --ink:#1b1817; --muted:#5f5856; --line:#ddd6d2;
-  --red:#b3121b; --red-soft:#f6e3e3;
+  --bg:#f6f4f2; --surface:#ffffff; --ink:#1A1A1A; --muted:#5f5856; --line:#ddd6d2;
+  --red:#A61C1C; --red-soft:#f6e3e3;
   --ok:#1f6b45; --ok-bg:#e2f1e8; --warn:#8a5a00; --warn-bg:#fbefd6; --stop:#8f1d2c; --stop-bg:#f8e1e5; --info:#24507a; --info-bg:#e1ebf5; --grey-bg:#ecebea;
-  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --display:'Source Sans 3','Segoe UI',system-ui,sans-serif;
   --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
 }
@@ -94,11 +95,19 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:14px;font-si
 @media (max-width:640px){.tn{grid-template-columns:1fr}.row .lab{width:100%}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
+<style id="rjp-brand">
+/* Brand: split-circle mark, red #A61C1C and ink #1A1A1A (reverse: #E0484A and white), Source Sans 3 headings */
+.rjp-mark{flex:none;display:block}
+.rjp-mark .r{fill:#A61C1C}.rjp-mark .k{fill:#1A1A1A}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .rjp-mark .r{fill:#E0484A}:root:not([data-theme="light"]) .rjp-mark .k{fill:#FFFFFF}}
+:root[data-theme="dark"] .rjp-mark .r{fill:#E0484A}:root[data-theme="dark"] .rjp-mark .k{fill:#FFFFFF}
+h1{font-weight:700!important;letter-spacing:-0.005em}h2{letter-spacing:-0.005em}
+</style>
 </head>
 <body>
 <div class="wrap">
 <header class="mast">
-  <svg class="mark" viewBox="0 0 54 54" aria-hidden="true"><path d="M27 2a25 25 0 0 0 0 50z" fill="var(--ink)"/><path d="M27 2a25 25 0 0 1 0 50z" fill="var(--red)"/></svg>
+  <svg class="rjp-mark" width="45" height="54" viewBox="0 0 100 120" aria-hidden="true" focusable="false"><path class="r" d="M53.67 10C26.05 10 3.67 32.39 3.67 60s22.38 50 50 50v-8.67C30.84 101.33 12.33 82.83 12.33 60S30.84 18.67 53.67 18.67Z"/><path class="k" d="M60 97c20.43 0 37-16.57 37-37S80.43 23 60 23v8.67c15.65 0 28.33 12.68 28.33 28.33S75.65 88.33 60 88.33Z"/><path class="r" d="M56 115h2V5.33h-2Z"/></svg>
   <div>
     <a class="brand" href="/" style="text-decoration:none" title="Back to the Robert J. Park website">Robert J. <b>Park</b> · Environment · Carbon · Public Affairs · Northern Ireland</a>
     <div style="display:flex;gap:16px;align-items:center"><img class="tool-logo" src="/assets/icons/esg-regime-tracker.svg" alt="" width="60" height="60" style="flex:none"><h1 style="margin:0">ESG Regime Tracker</h1></div>

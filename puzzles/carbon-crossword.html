@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="The Carbon Crossword: 24 greenhouse gas and climate policy terms with a UK and Northern Ireland lean, by Robert J. Park.">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/mark.svg">
 <title>Carbon Crossword</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
@@ -14,19 +15,19 @@ body{margin:0}
 
 /* Layout: a printed puzzle page. Grid left, clues right; on phones the grid sits under a sticky clue bar. */
 :root{
-  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2;
-  --red:#B3121B; --red-soft:#FBEDED; --word:#F3E3E1; --block:#1B1817;
-  --cell:#FFFFFF; --ok:#1F6B45; --bad:#B3121B; --chip:#F6F4F2;
-  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --paper:#FFFFFF; --ink:#1A1A1A; --muted:#5F5856; --rule:#DDD6D2;
+  --red:#A61C1C; --red-soft:#FBEDED; --word:#F3E3E1; --block:#1A1A1A;
+  --cell:#FFFFFF; --ok:#1F6B45; --bad:#A61C1C; --chip:#F6F4F2;
+  --display:'Source Sans 3','Segoe UI',system-ui,sans-serif;
   --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332;
-  --red:#E5484D; --red-soft:#3A1C1E; --word:#3B2626; --block:#0C0A0A;
+  --red:#E0484A; --red-soft:#3A1C1E; --word:#3B2626; --block:#0C0A0A;
   --cell:#221E1D; --ok:#4CC38A; --bad:#FF6B6B; --chip:#262120; color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332;
-  --red:#E5484D; --red-soft:#3A1C1E; --word:#3B2626; --block:#0C0A0A;
+  --red:#E0484A; --red-soft:#3A1C1E; --word:#3B2626; --block:#0C0A0A;
   --cell:#221E1D; --ok:#4CC38A; --bad:#FF6B6B; --chip:#262120; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
@@ -96,11 +97,19 @@ main{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;
 }
 @media (prefers-reduced-motion:no-preference){.c.l{transition:background-color .12s}}
 </style>
+<style id="rjp-brand">
+/* Brand: split-circle mark, red #A61C1C and ink #1A1A1A (reverse: #E0484A and white), Source Sans 3 headings */
+.rjp-mark{flex:none;display:block}
+.rjp-mark .r{fill:#A61C1C}.rjp-mark .k{fill:#1A1A1A}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .rjp-mark .r{fill:#E0484A}:root:not([data-theme="light"]) .rjp-mark .k{fill:#FFFFFF}}
+:root[data-theme="dark"] .rjp-mark .r{fill:#E0484A}:root[data-theme="dark"] .rjp-mark .k{fill:#FFFFFF}
+h1{font-weight:700!important;letter-spacing:-0.005em}h2{letter-spacing:-0.005em}
+</style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <a class="brand" href="/" style="text-decoration:none" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+    <a class="brand" href="/" style="text-decoration:none" title="Back to the Robert J. Park website"><svg class="rjp-mark" width="22" height="26" viewBox="0 0 100 120" aria-hidden="true" focusable="false"><path class="r" d="M53.67 10C26.05 10 3.67 32.39 3.67 60s22.38 50 50 50v-8.67C30.84 101.33 12.33 82.83 12.33 60S30.84 18.67 53.67 18.67Z"/><path class="k" d="M60 97c20.43 0 37-16.57 37-37S80.43 23 60 23v8.67c15.65 0 28.33 12.68 28.33 28.33S75.65 88.33 60 88.33Z"/><path class="r" d="M56 115h2V5.33h-2Z"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
     <div style="display:flex;gap:16px;align-items:center"><img class="tool-logo" src="/assets/icons/carbon-crossword.svg" alt="" width="60" height="60" style="flex:none"><h1 style="margin:0">The Carbon Crossword</h1></div>
     <p class="lede">Twenty-four terms from greenhouse gas reporting, carbon pricing and Northern Ireland's climate rules. Easy clues define the term. Hard clues assume you've read the guidance.</p>
   </header>

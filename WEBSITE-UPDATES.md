@@ -18,12 +18,35 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 ## How a page is built here
 
 - **Pages and posts** (`.md` files with front matter at the top) use the site layout, with header, navigation and footer.
-- **Tools** (`tools/*.html`, `puzzles/*.html`) are self-contained HTML files with no front matter, so Jekyll copies them as they are. Each one carries its own branding, and its brand line links back to the home page.
+- **Tools** (`tools/*.html`, `puzzles/*.html`, `guides/*.html`) are self-contained HTML files with no front matter, so Jekyll copies them as they are. Each one carries its own branding, and its brand line links back to the home page. Run `python3 _scripts/tools_brand.py .` after adding or editing one; list it in `_data/tools.yml` and take its picture with `python3 _scripts/tools_thumbs.py . <slug>`.
 - **`_snippets/`** holds copy-and-paste code for links and embeds. Jekyll doesn't publish folders whose names start with an underscore.
 
 ---
 
 ## Changelog
+
+### v0.37.0 — 17 November 2026: Tools page as a grid, tools on brand
+
+*Robert's instruction, 17 Nov 05:09: update every place in the Tools section where the brand is needed, including the circle and the font; lay Tools out like the Dashboards grid, with a static picture for each. Awaiting Robert's merge.*
+
+**Changed**
+- `tools.md`: rebuilt on the Dashboards card grid (same `dash-*` styles): 19 cards in five groups (Check where you stand, CBAM, Maps and trackers, Puzzles and quizzes, Guides), each with a 640×400 picture, summary, dated or typed meta line and its extra links (sample bills, site plans, worksheet). Cards are listed in the new `_data/tools.yml`. The lead no longer says "Facts are as at 18 October 2026"; dates now sit on each card where the tool states one.
+- All 16 standalone pages listed on Tools (`tools/*.html`, `tools/farm-data-checker/`, `puzzles/*.html`, `guides/*.html`): the half-filled circle and the jigsaw in the brand line replaced by the real split-circle mark (red outer arc and rule, ink inner arc; reverse red #E0484A and white in dark mode); favicon now the brand mark (three pages had none); tool red #B3121B → brand red #A61C1C, ink #1B1817 → #1A1A1A, dark-mode red #E5484D → #E0484A; headings in Source Sans 3 bold, as on the main site, instead of Fraunces. The farm checker already carried the full logo, so only its heading font changed.
+- `tools/carbon-jigsaw.html`: the jigsaw logo's dark half now follows the text colour, so it shows in dark mode.
+- `tools/which-eu-rules-apply.html`: question panels and result cards were white in dark mode; they now use the page background.
+- `_scripts/dashboards/eu_rules_tool.py`: runs its output through `tools_brand.apply()` and carries the dark-mode panel fix, so the Friday rebuild keeps both.
+
+**Added**
+- `_scripts/tools_brand.py`: applies and checks the brand on every page listed on Tools; stops if the jigsaw mark, Fraunces or #B3121B is left. Safe to run again.
+- `_scripts/tools_thumbs.py`: takes the Tools pictures from `_data/tools.yml` (1280×800 light mode, saved at 640×400). Jekyll pages are shot from a close preview of the page layout.
+- `assets/tools/`: 18 pictures. The Dashboards card reuses the CBAM Exposure Tracker picture.
+
+**Not changed (for a later decision)**
+- The dashboards in `tools/dashboards/` and the home-page tool tiles still use the jigsaw mark, #B3121B and Fraunces headings. `tools_brand.apply()` can be added to the dashboard builders in the same way if wanted.
+
+**Checked**
+- Jekyll is not installable in this workspace (RubyGems blocked), so the grid was checked from a faithful preview with the real style sheet at 1280px and 390px: no horizontal scroll. The PR check builds the real page.
+- Every tool page in light and dark mode after the change; regenerating the EU rules tool gives the same file. No personal number, github.io address, Google Fonts or outside script added.
 
 ### v0.36.0 — 17 November 2026: Learn Batch A
 

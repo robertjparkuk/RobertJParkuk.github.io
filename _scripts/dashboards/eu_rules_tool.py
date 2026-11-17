@@ -92,7 +92,7 @@ for r in NOT_NI:
 DATA = json.dumps({'rows': rows, 'tags': TAGS}, ensure_ascii=False).replace('</', '<\\/')
 
 TOOL_CSS = """
-.w-q{border:1px solid var(--color-rule,#e4e0dc);border-radius:10px;padding:16px 18px;margin:0 0 14px;background:#fff}
+.w-q{border:1px solid var(--color-rule,#e4e0dc);border-radius:10px;padding:16px 18px;margin:0 0 14px;background:var(--color-bg,#fff)}
 .w-q legend{font-weight:700;font-size:1.05rem;padding:0 6px}
 .w-q .w-hint{margin:2px 0 10px;color:#555;font-size:.95rem}
 .w-opts{display:grid;gap:6px 18px;grid-template-columns:1fr}
@@ -101,9 +101,9 @@ TOOL_CSS = """
 .w-opts input{margin-top:3px;width:18px;height:18px;flex:0 0 auto;accent-color:#A61C1C}
 .w-btns{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 22px}
 .w-btns button{font:inherit;font-weight:600;border-radius:6px;padding:10px 18px;cursor:pointer;border:2px solid #A61C1C}
-.w-go{background:#A61C1C;color:#fff} .w-reset{background:#fff;color:#A61C1C}
+.w-go{background:#A61C1C;color:#fff} .w-reset{background:var(--color-bg,#fff);color:#A61C1C}
 .w-res h2{margin-top:28px}
-.w-item{border-left:4px solid #A61C1C;background:#fff;border-radius:0 8px 8px 0;padding:12px 16px;margin:0 0 10px}
+.w-item{border-left:4px solid #A61C1C;background:var(--color-bg,#fff);border-radius:0 8px 8px 0;padding:12px 16px;margin:0 0 10px}
 .w-item h3{margin:0 0 4px;font-size:1.05rem}
 .w-item p{margin:4px 0;font-size:.97rem}
 .w-item .w-tag{display:inline-block;font-size:.8rem;font-weight:600;background:#f7f5f4;border:1px solid #e4e0dc;border-radius:4px;padding:1px 6px;margin-right:6px}
@@ -231,5 +231,7 @@ f.addEventListener('submit',function(ev){{
 '''
 
 out_path = os.path.join(ROOT, 'tools/which-eu-rules-apply.html')
-open(out_path, 'w', encoding='utf-8').write(page())
+sys.path.insert(0, os.path.dirname(HERE))
+import tools_brand  # house brand: split-circle mark, brand red, Source Sans 3 headings
+open(out_path, 'w', encoding='utf-8').write(tools_brand.apply(page())[0])
 print('wrote', out_path, len(rows), 'rows')
