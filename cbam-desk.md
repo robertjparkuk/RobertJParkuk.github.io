@@ -82,7 +82,7 @@ The quarterly desk, at £495 a quarter, suits smaller importers: the quarterly l
 
 ### Prices and terms
 
-Prices are fixed and quoted in writing before any work starts. VAT is added if it applies. If the Readiness Review shows you need more help, up to £350 of its fee comes off the next service you book within three months. Work is done under a one-page letter of engagement setting the scope and the information you supply. Prices are reviewed each January. Urgent work, wanted sooner than the times shown, may carry an additional fee of no more than 50%, agreed in writing first.
+Prices are fixed and quoted in writing before any work starts. All prices exclude VAT, which is charged at the prevailing rate. If the Readiness Review shows you need more help, up to £350 of its fee comes off the next service you book within three months. Work is done under a one-page letter of engagement setting the scope and the information you supply. Prices are reviewed each January. Urgent work, wanted sooner than the times shown, may carry an additional fee of no more than 50%, agreed in writing first.
 
 If a UK–EU agreement exempts your goods from either CBAM, I will tell you in writing what still applies: goods from other countries, records, and your customers' data requests. You can end the monthly desk on one month's notice.
 

@@ -25,6 +25,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.38.3 — 17 November 2026: Prices exclude VAT
+
+At Robert's request, after his VAT registration application (17 November 2026; registration dated from 1 October 2026):
+
+- Footer, every page using the site layout: new line "All prices exclude VAT, which is charged at the prevailing rate."
+- `cbam-desk.md`, Prices and terms: "VAT is added if it applies" replaced with the same sentence.
+- `services.md`, public affairs guide rate: "£1,000 a day, excluding VAT, plus disbursements".
+- No VAT number shown anywhere until HMRC confirms the registration.
+
 ### v0.38.2 — 17 November 2026: Cyanobacteria, carbon, nitrogen, warmth and dogs
 
 - `lough-neagh-and-cyanobacteria.md`, at Robert's request:

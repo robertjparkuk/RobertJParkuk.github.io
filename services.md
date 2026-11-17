@@ -53,7 +53,7 @@ As a member of the Chartered Institute of Public Relations, I support organisati
 - communicating environmental commitments credibly — without greenwash
 - lobbying, where the job needs it
 
-Policy and public affairs work, including lobbying, is priced per job and quoted case by case. As a guide, it is £1,000 a day plus disbursements and out-of-pocket expenses, including travel and subscriptions.
+Policy and public affairs work, including lobbying, is priced per job and quoted case by case. As a guide, it is £1,000 a day, excluding VAT, plus disbursements and out-of-pocket expenses, including travel and subscriptions.
 
 ## Councils, public bodies and trade bodies
 
