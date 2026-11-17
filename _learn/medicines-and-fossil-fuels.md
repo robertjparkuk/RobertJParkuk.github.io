@@ -156,7 +156,7 @@ A community pharmacy wants to help patients whose asthma is poorly controlled.
 4. **“Medicines are exempt from climate rules.”** Desflurane is restricted, inhaler propellants are being phased down, and NHS suppliers face carbon requirements.
 5. **Assuming GB and NI rules are the same.** The EU F-gas Regulation applies in NI; GB has its own.
 
-Previous: [Fish guts and seashells]({{ '/learn/fish-guts-and-seashells/' | relative_url }}) · Related: [Hydrogen by colour]({{ '/learn/hydrogen-by-colour/' | relative_url }}) · [Why is everything counted as “carbon”?]({{ '/learn/why-everything-is-carbon/' | relative_url }})
+Previous: [Fish guts and seashells]({{ '/learn/fish-guts-and-seashells/' | relative_url }}) · Next: [Fracking: what is burned and what leaks]({{ '/learn/fracking/' | relative_url }}) · Related: [Hydrogen by colour]({{ '/learn/hydrogen-by-colour/' | relative_url }}) · [Why is everything counted as “carbon”?]({{ '/learn/why-everything-is-carbon/' | relative_url }})
 
 ## Sources
 
