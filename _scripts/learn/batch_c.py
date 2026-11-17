@@ -409,10 +409,25 @@ def pmi_chart():
         'Kilograms of material used per kilogram of sildenafil, on a log scale: the first laboratory route 17,675; the optimised laboratory route 116; the commercial route 60. Solvents and water were about four-fifths of the mass. One worked example from Cespi and colleagues in Green Chemistry, not an industry average.', b)
 
 
+def bloom_carbon_nitrogen():
+    nodes = [('Bloom grows', 'photosynthesis takes CO₂;', 'faster when warm', False),
+             ('Some fix nitrogen', 'e.g. Dolichospermum:', 'N₂ → NH₃ in heterocysts', False),
+             ('Toxins', 'microcystins (liver),', 'anatoxin-a (nerves)', True),
+             ('Dies and sinks', 'leaks nitrogen and', 'phosphorus into the water', False),
+             ('Rots', 'with oxygen: CO₂ back;', 'without: methane (CH₄)', True),
+             ('Next bloom', 'fed by the nutrients', 'and phosphorus from the mud', False)]
+    cycle('bloom-carbon-nitrogen.svg', 'A bloom’s carbon and nitrogen', 'The carbon is only borrowed, and some comes back as methane. Fixed nitrogen and recycled phosphorus feed the next bloom.',
+          nodes, ['Borrowed carbon', 'a greener lake is a', 'bigger methane source'],
+          'A six-step loop. A bloom grows, taking CO2 from the water by photosynthesis, and from the air when the water runs short; it grows faster in warm water. Some species, such as Dolichospermum and Aphanizomenon, fix nitrogen gas into ammonia in heterocysts; Microcystis cannot. Some make toxins: microcystins attack the liver, anatoxin-a the nerves. '
+          'The bloom dies and sinks, leaking nitrogen and phosphorus into the water. It rots: with oxygen back to CO2, without oxygen to methane. The nutrients, with phosphorus released from the mud, feed the next bloom. The carbon is only borrowed, and a greener lake is a bigger methane source.',
+          w=920, h=620, cx=460, cy=335, R=215)
+
+
 if __name__ == '__main__':
     lime_cycle(); cement_vs_lime(); wall_life_cycle()
     linear_vs_circular(); waste_hierarchy()
     fish_flow(); shell_chemistry(); chitin_scheme()
     feedstock_tree(); aspirin_paracetamol(); medicine_life_cycle()
+    bloom_carbon_nitrogen()
     wall_house_compare(); material_factors(); ni_waste_chart(); bags_chart(); fillet_yield(); nhs_footprint(); pmi_chart()
     print('ok')
