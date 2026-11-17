@@ -123,7 +123,7 @@ A County Antrim food processor is offered hydrogen-ready boilers and asks whethe
 | | Natural gas | Grey hydrogen | Green hydrogen |
 |---|---|---|---|
 | Energy delivered | 1 MWh | 1 MWh (30 kg H₂) | 1 MWh (30 kg H₂) |
-| Emissions (illustrative) | about 0.18 t CO₂ burned (about 0.21 t with gas supply) | about 0.30–0.36 t CO₂e | 0.08 t CO₂e or less |
+| Emissions (illustrative) | about 180 kg CO₂ burned (about 210 kg with gas supply) | about 300–360 kg CO₂e | about 80 kg CO₂e or less |
 | Electricity to make it | none | none | about 1.5 MWh |
 
 The numbers are rounded and illustrative (30 kg of hydrogen at 10–12 kg CO₂e each for grey; up to 2.7 for green). **The lesson:** grey hydrogen is worse than the gas it replaces. Green hydrogen cuts emissions but needs one and a half times as much electricity as the energy in the hydrogen, and more once boiler losses are counted; a heat pump or direct electric heating usually needs far less.

@@ -66,7 +66,7 @@ The life cycle also has a time dimension. Carbon released making something is sp
 | Use | Stored and reused | Used for one season |
 | End of life | Hard to recycle, so often landfill in the end | Chipped, burned or landfilled: the choice decides its footprint |
 
-On figures attributed to the Carbon Trust (quoted by the real-tree growers' trade body and not on the Carbon Trust's own site), a 2 m artificial tree is about 40 kg CO2e, a real tree about 3.5 kg if chipped and about 16 kg if landfilled. The artificial tree only overtakes a chipped real tree after about 11 years of use. The Carbon Trust's own advice gives 7 to 20 years.
+On figures attributed to the Carbon Trust (quoted by the real-tree growers' trade body and not on the Carbon Trust's own site), a 2 m artificial tree is about 40 kg CO₂e, a real tree about 3.5 kg if chipped and about 16 kg if landfilled. The artificial tree only overtakes a chipped real tree after about 11 years of use. The Carbon Trust's own advice gives 7 to 20 years.
 
 **The lesson:** for the artificial tree, the carbon is up front and the saving depends on how long you keep it. For the real tree, the end of life decides the answer.
 </div>

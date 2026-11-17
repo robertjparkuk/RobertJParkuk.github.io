@@ -199,7 +199,7 @@ A council leisure centre runs air conditioning and a chiller on HFC-134a. The an
 |---|---|
 | Gas lost | 10 kg HFC-134a |
 | GWP (AR5, 100 years) | 1,300 |
-| Reported emission | **13 tonnes CO₂e**, in Scope 1 |
+| Reported emission | 10 × 1,300 = 13,000 kg, about **13 tonnes CO₂e**, in Scope 1 |
 | Where it shows up | The council's own carbon report |
 
 **The lesson:** refrigerant top-ups on a maintenance invoice are emissions. Ask the contractor for the kilograms, not just the cost, and plan the switch to lower-GWP refrigerants when equipment is replaced.

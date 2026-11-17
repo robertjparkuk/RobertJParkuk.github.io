@@ -67,3 +67,4 @@ Always write the `alt` text in full: it is what screen readers and search engine
 - Official sources only for rules and figures (legislation.gov.uk, EUR-Lex, GOV.UK, HMRC, DAERA, the standards bodies). Never energy-broker websites.
 - Give a date for every rule or regulatory status.
 - If a number is illustrative rather than measured, say so next to it.
+- Units: give every per-unit figure in **kg CO₂e** (per kg, per m², per MWh), with a subscript ₂. Use tonnes only for totals (a site, firm or country) and the one-tonne carbon credit, and say 1 tonne = 1,000 kg where both appear.

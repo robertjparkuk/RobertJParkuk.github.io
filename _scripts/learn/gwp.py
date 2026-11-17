@@ -21,7 +21,7 @@ def decay():
     L, R, T, B = 90, 760, 80, 420
     X = lambda t: L + t / 100 * (R - L)
     Y = lambda f: B - f * (B - T)
-    b = text(20, 30, 'What is left of one tonne, year by year', 20, INK, 'start', '700')
+    b = text(20, 30, 'What is left of one kilogram, year by year', 20, INK, 'start', '700')
     b += text(20, 52, 'Share of a one-off release still in the air. Lifetimes from IPCC AR6; CO₂ uses the carbon-cycle fit from IPCC AR5 (illustrative).', 13, MUTED, 'start')
     for f in [0, 0.25, 0.5, 0.75, 1]:
         b += f'<line x1="{L}" y1="{Y(f):.1f}" x2="{R}" y2="{Y(f):.1f}" stroke="{RULE}"/>' + text(L - 8, Y(f) + 4, f'{int(f*100)}%', 12, MUTED, 'end')
@@ -41,7 +41,7 @@ def decay():
         ly += 56
     b += text(785, 320, 'HFO-1234yf drops to nothing', 12, BLUE, 'start') + text(785, 336, 'within weeks: its line sits on the axis.', 12, BLUE, 'start')
     b += text(785, 365, 'After 100 years: about 40% of', 12, INK, 'start') + text(785, 381, 'the CO₂ is still there; almost', 12, INK, 'start') + text(785, 397, 'none of the methane.', 12, INK, 'start')
-    svg('gwp-decay-curves.svg', w, h, 'How much of a one-tonne release remains over 100 years',
+    svg('gwp-decay-curves.svg', w, h, 'How much of a one-kilogram release remains over 100 years',
         'Curves of the share of a one-off release still in the air over 100 years. HFO-1234yf, lifetime 12 days, vanishes almost at once. Methane, lifetime 11.8 years, is mostly gone within 30 to 40 years. Nitrous oxide, 109 years, falls to about 40%. '
         'Carbon dioxide drops quickly at first as oceans and plants take some up, then levels off: about 40% remains after 100 years and about a fifth lasts for millennia.', b)
 
@@ -102,23 +102,23 @@ def gwp_bars():
 def methane_fates():
     w, h = 960, 540
     b = arrow_defs(INK, RED, GREEN, BLUE)
-    b += text(20, 30, 'One tonne of methane: vent it, burn it or use it', 20, INK, 'start', '700')
+    b += text(20, 30, 'One kilogram of methane: vent it, burn it or use it', 20, INK, 'start', '700')
     b += text(20, 52, 'Burning turns a potent gas into a weaker one. Using it to replace fossil fuel does better still.', 13, MUTED, 'start')
     b += f'<rect x="20" y="210" width="190" height="110" rx="8" fill="{TINT}" stroke="{RED}" stroke-width="1.8"/>'
-    b += text(115, 240, '1 t methane', 16, INK, weight='700') + text(115, 262, 'from landfill, slurry,', 12, MUTED) + text(115, 278, 'a gas leak or a mine', 12, MUTED)
-    rows = [(90, 'Vented to air', '28 t CO₂e', 'GWP-100, AR5 (non-fossil)', RED, 'CH₄ escapes unchanged'),
-            (240, 'Flared', '2.75 t CO₂', 'about 90% less warming*', '#C98B3A', 'CH₄ + 2O₂ → CO₂ + 2H₂O'),
-            (390, 'Burned for heat or power', '2.75 t CO₂ and', 'fossil gas not burned', GREEN, 'same reaction, useful energy')]
+    b += text(115, 240, '1 kg methane', 16, INK, weight='700') + text(115, 262, 'from landfill, slurry,', 12, MUTED) + text(115, 278, 'a gas leak or a mine', 12, MUTED)
+    rows = [(90, 'Vented to air', '28 kg CO₂e', 'GWP-100, AR5 (non-fossil)', RED, 'CH₄ escapes unchanged'),
+            (240, 'Flared', '2.75 kg CO₂', 'about 90% less warming*', '#C98B3A', 'CH₄ + 2O₂ → CO₂ + 2H₂O'),
+            (390, 'Burned for heat or power', '2.75 kg CO₂ and', 'fossil gas not burned', GREEN, 'same reaction, useful energy')]
     for y, t, big, sub, col, eq in rows:
         b += arr(212, 265, 420, y + 45, 1 if col == RED else (2 if col == GREEN else 0), col, 2.5)
         b += f'<rect x="425" y="{y}" width="510" height="95" rx="8" fill="#fff" stroke="{col}" stroke-width="2"/>'
         b += text(445, y + 28, t, 15, INK, 'start', '700') + text(445, y + 52, eq, 13, MUTED, 'start', extra=MONO if '→' in eq else '')
         b += text(915, y + 34, big, 17, col, 'end', '700') + text(915, y + 58, sub, 12, MUTED, 'end')
-    b += text(20, 512, '* 16 g of methane burns to 44 g of CO₂, so 1 t becomes 2.75 t. If the methane is biogenic (landfill, slurry), inventories count that CO₂ as zero and the saving is close to 100%.', 11.5, MUTED, 'start')
+    b += text(20, 512, '* 16 g of methane burns to 44 g of CO₂, so 1 kg becomes 2.75 kg. If the methane is biogenic (landfill, slurry), inventories count that CO₂ as zero and the saving is close to 100%.', 11.5, MUTED, 'start')
     b += text(20, 530, 'Flares are not perfect: some methane slips through unburned, which is why EU rules set flare-efficiency requirements.', 11.5, MUTED, 'start')
-    svg('methane-vent-flare-use.svg', w, h, 'What happens to one tonne of methane if it is vented, flared or used',
-        'One tonne of methane vented to the air counts as 28 tonnes of CO2 equivalent (GWP-100, AR5). Flared, it burns (methane plus two oxygen gives CO2 and two water) to 2.75 tonnes of CO2, about 90% less warming. '
-        'Burned for heat or power, it gives the same 2.75 tonnes but replaces fossil fuel that would otherwise be burned. If the methane is biogenic, inventories count the CO2 as zero. Flares are not perfect and some methane slips through.', b)
+    svg('methane-vent-flare-use.svg', w, h, 'What happens to one kilogram of methane if it is vented, flared or used',
+        'One kilogram of methane vented to the air counts as 28 kilograms of CO2 equivalent (GWP-100, AR5). Flared, it burns (methane plus two oxygen gives CO2 and two water) to 2.75 kilograms of CO2, about 90% less warming. '
+        'Burned for heat or power, it gives the same 2.75 kilograms but replaces fossil fuel that would otherwise be burned. If the methane is biogenic, inventories count the CO2 as zero. Flares are not perfect and some methane slips through.', b)
 
 
 def capture_by_gas():
