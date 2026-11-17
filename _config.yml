@@ -23,7 +23,20 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+collections:
+  learn:
+    output: true
+    permalink: /learn/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: learn
+    values:
+      layout: explainer
+
 exclude:
+  - HOW-TO-LEARN.md
   - README.md
   - HOW-TO-POST.md
   - WEBSITE-UPDATES.md

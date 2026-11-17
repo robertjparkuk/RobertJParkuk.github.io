@@ -25,6 +25,26 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.34.0 — 17 November 2026: Learn section
+
+*Robert's instruction, 17 Nov 01:05 ("Do it"): an education section, starting with embodied versus embedded carbon and the carbon life cycle, with simple diagrams and examples across sectors, so he can add his own examples. Name agreed: Learn. Awaiting Robert's merge.*
+
+- `_config.yml`: new `learn` collection (`_learn/*.md`, published at /learn/<name>/) with the `explainer` layout as default.
+- `_layouts/explainer.html`: "In one sentence" answer box, content, "Keep learning" list of the other explainers, a "last checked" date from `checked:` front matter, contact prompt.
+- `learn.md`: the Learn page at /learn/, listing explainers automatically (sorted by `order`), then the five puzzles under "Practise" and links to the Scopes Map, CBAM goods lookup, tools and dashboards.
+- `_learn/embodied-vs-embedded-carbon.md`: four meanings side by side (embodied carbon in buildings; EU CBAM embedded emissions; UK CBAM embodied emissions, the UK law's own term; embedded emissions in trade statistics), what each CBAM counts, why it matters in NI, examples for aluminium foil (manufacturing), a steel beam (construction) and fertiliser (agriculture), common mistakes, sources.
+- `_learn/carbon-life-cycle.md`: the six-stage loop, the EN 15978 / EN 15804 modules A to D, cradle to gate, upfront, cradle to grave and cradle to cradle, carbon now versus savings later, examples for the Christmas tree (retail), a timber versus block wall (construction) and a litre of milk (food and drink), common mistakes, sources.
+- `assets/learn/`: three diagrams (`life-cycle-loop.svg`, `life-cycle-stages.svg`, `embodied-vs-embedded.svg`), drawn by `_scripts/learn/diagrams.py`, each with full alt text.
+- `_layouts/default.html`: "Learn" added to the main menu, before Blog. `assets/style.css`: Learn styles (answer box, figures, example cards, tables, card list). `tools.md`: pointer to Learn.
+- `HOW-TO-LEARN.md` (not published): how Robert adds an example or a new explainer from the GitHub app, with copy-and-paste templates.
+- Finance Act 2026 Part 5 read on legislation.gov.uk (link from Robert, 17 Nov 01:28): s.148(1) defines "emissions embodied in a CBAM good" as emissions "attributable to the production of a CBAM good"; the direct-only rule is in SI 2026/995 and the System Boundaries Document; s.158(1) applies Part 5 to goods imported on or after 1 January 2027. Explainer updated to say so.
+- Explainer, NI section: goods from Ireland and the EU into NI are UK CBAM imports (FA 2026 s.144(5)(a), importer under s.146(4)); goods made in NI are outside EU CBAM (Commission Q&A 7.14, as already cited on the CBAM Desk page); carbon price relief (s.150) is left to regulations and free allowances count as no price paid, so EU goods are not automatically free of UK CBAM.
+- Explainer: new section "Think of VAT, then reverse it" (Robert's request, 17 Nov 01:40): NI follows EU VAT rules for goods (XI prefix, acquisitions in Boxes 2 and 9) but the UK CBAM treats the same Irish goods as UK imports; a table of five invented purchases (steel and cement from Ireland, foil from GB, bolts from a Belfast wholesaler, services from Dublin) showing the VAT treatment and whether UK CBAM applies. All VAT numbers are invented placeholders (IE 9999999ZZ, XI 999 9999 99).
+- Explainer, building rules: England's Approved Document L 2026 (in force 24 March 2027) is operational only and "Part Z" is not adopted; London Plan Policy SI 2 and B&NES Policy SCR8 require embodied or whole life-cycle carbon assessments through planning; UK Net Zero Carbon Buildings Standard Version 1 (10 March 2026, voluntary). This closes the last open check.
+- `assets/style.css`: on screens 64rem and wider, the header and menu gaps are slightly tighter so ten menu items stay beside the logo (from about 1,100 px wide).
+- Diagrams in explainers open full size when tapped. The answer box is labelled "In short".
+- Definitions checked 17 November 2026 against the Council's adopted text of Regulation (EU) 2023/956 and 2025/2083 (EUR-Lex could not be opened), HMRC's CBAM factsheet and policy summary, SI 2026/995, RICS WLCA 2nd edition, BSI (BS EN 15978:2026 replaced the 2011 edition on 31 July 2026), ISO and Defra. No open checks remain.
+
 ### v0.33.3 — 16 November 2026: short links for LinkedIn
 
 *Robert's instruction, 16 Nov: use a URL shortener for the links back to the website in LinkedIn posts.*

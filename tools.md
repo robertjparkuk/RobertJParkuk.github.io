@@ -8,6 +8,8 @@ description: "Free, private carbon and environmental tools for NI businesses and
 
 <img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="72" height="72" style="display:block;margin:0 0 1rem">
 
+New to carbon? Start with the plain-English explainers in [Learn]({{ '/learn/' | relative_url }}): embodied versus embedded carbon, and the carbon life cycle.
+
 <h2 class="tool-h"><img src="{{ '/assets/icons/carbon-jigsaw.svg' | relative_url }}" alt="" width="48" height="48">The Carbon Jigsaw</h2>
 
 A rough carbon checker for Northern Ireland businesses. Fill in each piece of the jigsaw from your bills and records: electricity, gas, oil, vehicles, refrigerants, water, waste, travel and commuting. You'll get a rough Scope 1, 2 and partial Scope 3 footprint, and the pieces you can't fill show what a full inventory would add. Your figures stay in your browser. Practise first with the sample bills.

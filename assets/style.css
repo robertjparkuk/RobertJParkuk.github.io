@@ -246,3 +246,28 @@ h3 { font-size: 1.2rem; margin: 1.75rem 0 0.5rem; }
 .dash-links { margin-top: auto !important; padding-top: 0.25rem; font-size: 0.95rem !important; }
 .dash-links span { color: var(--muted); font-size: 0.9rem; }
 .dash-foot { margin-top: 2.5rem; color: var(--muted); }
+
+/* Learn section (v0.34.0) */
+.answer-box { max-width: 42rem; background: var(--red-tint); border-left: 4px solid var(--red); padding: 0.9rem 1.25rem; margin: 0 0 2rem; }
+.answer-box p { margin: 0; font-size: 1.15rem; }
+.answer-box .answer-label { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--red); margin-bottom: 0.35rem; }
+.learn-figure { margin: 1.5rem 0 2rem; max-width: 46rem; }
+.learn-figure img { width: 100%; height: auto; display: block; border: 1px solid var(--rule); background: #fff; }
+.learn-figure figcaption { font-size: 0.9rem; color: var(--muted); margin-top: 0.4rem; }
+.example { max-width: 42rem; border: 1px solid var(--rule); border-top: 4px solid var(--red); padding: 0.25rem 1.25rem 0.75rem; margin: 1.5rem 0; }
+.example h3 { margin-top: 1rem; }
+.example .sector { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--red); margin: 0.75rem 0 0; }
+.prose table { border-collapse: collapse; width: 100%; max-width: 46rem; font-size: 0.95rem; margin: 1rem 0 1.5rem; }
+.prose th, .prose td { text-align: left; vertical-align: top; padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--rule); }
+.prose th { border-bottom: 2px solid var(--ink); }
+.learn-list { list-style: none; padding: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); max-width: 60rem; }
+.learn-list li { border: 1px solid var(--rule); border-top: 4px solid var(--red); padding: 1rem 1.25rem; background: var(--bg); }
+.learn-list h3 { margin: 0 0 0.4rem; font-size: 1.15rem; }
+.learn-list h3 a { color: var(--ink); text-decoration: none; }
+.learn-list h3 a:hover { color: var(--red); }
+.learn-list p { margin: 0; color: var(--muted); }
+.learn-next { max-width: 42rem; margin-top: 2.5rem; }
+.learn-next h2 { font-size: 1.3rem; }
+.explainer-checked { max-width: 42rem; margin-top: 2rem; }
+/* Ten menu items: tighten spacing on wide screens so the menu stays beside the logo (v0.34.0) */
+@media (min-width: 64rem) { .header-inner { column-gap: 1.5rem; } .site-nav { column-gap: 1rem; } }

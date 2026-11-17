@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<article class="wrap page explainer">
+  <p class="meta"><a href="{{ '/learn/' | relative_url }}">← Learn</a>{% if page.level %} · {{ page.level }}{% endif %}{% if page.read_time %} · {{ page.read_time }} read{% endif %}</p>
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% if page.answer %}
+  <div class="answer-box">
+    <p class="answer-label">In short</p>
+    <p>{{ page.answer }}</p>
+  </div>
+  {% endif %}
+  <div class="prose">
+    {{ content }}
+  </div>
+  {% assign others = site.learn | where_exp: "item", "item.url != page.url" | sort: "order" %}
+  {% if others.size > 0 %}
+  <aside class="learn-next">
+    <h2>Keep learning</h2>
+    <ul>
+      {% for item in others %}<li><a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% if item.answer %}: <span class="small">{{ item.answer | truncatewords: 18 }}</span>{% endif %}</li>{% endfor %}
+    </ul>
+  </aside>
+  {% endif %}
+  <p class="small explainer-checked">{% if page.checked %}Facts and definitions last checked against the standards and official sources on {{ page.checked | date: '%-d %B %Y' }}. {% endif %}General information, not legal, tax or customs advice.</p>
+  <aside class="post-cta">
+    <p><strong>Want this worked through for your own products or buildings?</strong>
+    <a href="{{ '/contact/' | relative_url }}">Get in touch</a>.</p>
+  </aside>
+</article>
