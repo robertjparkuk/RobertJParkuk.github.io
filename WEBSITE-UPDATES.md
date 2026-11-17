@@ -25,6 +25,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.37.0 — 17 November 2026: Learn Batch B
+
+- Four new explainers (theme: Land, food and water): `peat-bogs.md` (order 9), `permafrost.md` (10), `lough-neagh-and-cyanobacteria.md` (11), `acid-rain-to-acid-seas.md` (12).
+- Fourteen new diagrams from `_scripts/learn/batch_b.py`: peat wet vs drained, bog life cycle, drained vs rewetted fluxes, NI peat in the inventory, permafrost feedback, ice vs permafrost, permafrost carbon stock, phosphorus and blooms, cyanobacteria timeline, Lough Neagh phosphorus sources, ocean carbonate chemistry, ocean feedbacks, UK SO₂ fall, sea-ice albedo.
+- Independent fact-check before merge.
+
 ### v0.36.0 — 17 November 2026: Learn Batch A
 
 - Four new explainers in the house style: `hydrogen-by-colour.md` (order 5), `fertiliser-and-the-nitrogen-cycle.md` (6), `carbon-capture-and-carbon-negative.md` (7), `offsets.md` (8).
