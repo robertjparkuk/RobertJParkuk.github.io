@@ -25,6 +25,11 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.37.2 — 17 November 2026: CO₂e and GWP in detail
+
+- New explainer `co2e-and-global-warming-potential.md` (Carbon basics, order 13): GWP definition and calculation, strength vs lifetime, GWP-20 vs GWP-100, GWP*, AR5 vs AR6, natural vs man-made gases, Earth's carbon stores (air to mantle), methane capture and flaring, N₂O destruction, F-gas recovery. Replaces the planned Batch D page on gas lifetimes.
+- Seven diagrams from `_scripts/learn/gwp.py`.
+
 ### v0.37.1 — 17 November 2026: Offsets, NI position
 
 - `offsets.md`: replaced "not confirmed" with the reasoned position: the EU offset-claims ban applies by where the consumer is (ROI via S.I. 124/2026), not by customs lane; NI and GB consumer sales follow UK law (DMCC Act 2024 extends UK-wide). Flagged as inference.
