@@ -25,6 +25,11 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.38.1 — 17 November 2026: Blood, fish and bone
+
+- `fish-guts-and-seashells.md`: at Robert's suggestion, the analogy table is now "Think of a box of blood, fish and bone". Also new: a short section on the fertiliser (dried blood, fishmeal, bonemeal; bone mineral as calcium phosphate against shell carbonate; NPK range across brands from the labels; phosphorus caution near water); the Reg. 142/2011 Annex XI rule and its 50 kg retail exemption in the rules table; and sources.
+- `fish-by-products.svg`: heads and frames now list garden fertiliser.
+
 ### v0.38.0 — 17 November 2026: Learn Batch C (materials, circular economy, fish by-products, medicines)
 
 - Four new explainers in the house style, per-unit figures in kg CO₂e:
