@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="The Carbon Jigsaw: a free, rough carbon checker for Northern Ireland businesses. Fill in each piece from your bills to estimate Scope 1, 2 and partial Scope 3 emissions. By Robert J. Park.">
-<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/mark.svg">
 <title>Carbon Jigsaw</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
@@ -15,18 +15,18 @@ body{margin:0}
 
 /* Layout: the jigsaw is the hero. Board left with the result strip under it, the piece you're filling in on the right; stacks on phones. */
 :root{
-  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2; --field:#FFFFFF;
-  --red:#B3121B; --s1:#B3121B; --s2:#C7781A; --s3:#2D6CA3; --gen:#4F7F2A; --bnd:#1B1817; --lock:#6E6866;
+  --paper:#FFFFFF; --ink:#1A1A1A; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2; --field:#FFFFFF;
+  --red:#A61C1C; --s1:#A61C1C; --s2:#C7781A; --s3:#2D6CA3; --gen:#4F7F2A; --bnd:#1A1A1A; --lock:#6E6866;
   --empty:#F1EDEA; --empty-line:#B9AFAA; --ok:#1F6B45; --warn:#A86A00;
-  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --display:'Source Sans 3','Segoe UI',system-ui,sans-serif;
   --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D; --field:#1E1A19;
-  --red:#E5484D; --bnd:#E9E3E0; --lock:#8A8380; --empty:#262120; --empty-line:#5A514F; --ok:#4CC38A; --warn:#E0A84B; color-scheme:dark}}
+  --red:#E0484A; --bnd:#E9E3E0; --lock:#8A8380; --empty:#262120; --empty-line:#5A514F; --ok:#4CC38A; --warn:#E0A84B; color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D; --field:#1E1A19;
-  --red:#E5484D; --bnd:#E9E3E0; --lock:#8A8380; --empty:#262120; --empty-line:#5A514F; --ok:#4CC38A; --warn:#E0A84B; color-scheme:dark}
+  --red:#E0484A; --bnd:#E9E3E0; --lock:#8A8380; --empty:#262120; --empty-line:#5A514F; --ok:#4CC38A; --warn:#E0A84B; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
@@ -105,13 +105,21 @@ section.results h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);m
 @media print{.bar,.panel,.cta .btn,#printBtn{display:none!important}main{grid-template-columns:1fr}body{padding:0}}
 @media (prefers-reduced-motion:reduce){.pc path{transition:none}}
 </style>
+<style id="rjp-brand">
+/* Brand: split-circle mark, red #A61C1C and ink #1A1A1A (reverse: #E0484A and white), Source Sans 3 headings */
+.rjp-mark{flex:none;display:block}
+.rjp-mark .r{fill:#A61C1C}.rjp-mark .k{fill:#1A1A1A}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .rjp-mark .r{fill:#E0484A}:root:not([data-theme="light"]) .rjp-mark .k{fill:#FFFFFF}}
+:root[data-theme="dark"] .rjp-mark .r{fill:#E0484A}:root[data-theme="dark"] .rjp-mark .k{fill:#FFFFFF}
+h1{font-weight:700!important;letter-spacing:-0.005em}h2{letter-spacing:-0.005em}
+</style>
 </head>
 <body>
 <div class="wrap">
   <header style="display:flex;flex-direction:column;gap:12px">
-    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg class="rjp-mark" width="22" height="26" viewBox="0 0 100 120" aria-hidden="true" focusable="false"><path class="r" d="M53.67 10C26.05 10 3.67 32.39 3.67 60s22.38 50 50 50v-8.67C30.84 101.33 12.33 82.83 12.33 60S30.84 18.67 53.67 18.67Z"/><path class="k" d="M60 97c20.43 0 37-16.57 37-37S80.43 23 60 23v8.67c15.65 0 28.33 12.68 28.33 28.33S75.65 88.33 60 88.33Z"/><path class="r" d="M56 115h2V5.33h-2Z"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
     <div class="head">
-      <svg viewBox="0 0 120 120" aria-hidden="true"><defs><clipPath id="lgp"><path d="M22 30 H46 C46 30 44 24 44 20 C44 12 52 8 60 8 C68 8 76 12 76 20 C76 24 74 30 74 30 H98 V54 C98 54 104 52 108 52 C116 52 118 58 118 64 C118 70 116 76 108 76 C104 76 98 74 98 74 V98 H74 C74 98 76 92 76 88 C76 81 68 78 60 78 C52 78 44 81 44 88 C44 92 46 98 46 98 H22 V74 C22 74 16 76 12 76 C4 76 2 70 2 64 C2 58 4 52 12 52 C16 52 22 54 22 54 Z"/></clipPath></defs><g clip-path="url(#lgp)"><rect width="60" height="120" fill="#1B1817"/><rect x="60" width="60" height="120" fill="#B3121B"/></g></svg>
+      <svg viewBox="0 0 120 120" aria-hidden="true"><defs><clipPath id="lgp"><path d="M22 30 H46 C46 30 44 24 44 20 C44 12 52 8 60 8 C68 8 76 12 76 20 C76 24 74 30 74 30 H98 V54 C98 54 104 52 108 52 C116 52 118 58 118 64 C118 70 116 76 108 76 C104 76 98 74 98 74 V98 H74 C74 98 76 92 76 88 C76 81 68 78 60 78 C52 78 44 81 44 88 C44 92 46 98 46 98 H22 V74 C22 74 16 76 12 76 C4 76 2 70 2 64 C2 58 4 52 12 52 C16 52 22 54 22 54 Z"/></clipPath></defs><g clip-path="url(#lgp)"><rect width="60" height="120" fill="currentColor"/><rect x="60" width="60" height="120" fill="#A61C1C"/></g></svg>
       <h1>The Carbon Jigsaw</h1>
     </div>
     <p class="lede">A rough carbon checker for Northern Ireland businesses. Fill in each piece from your bills and records. Pieces you can't fill stay missing, and those gaps tell you as much as the total does.</p>

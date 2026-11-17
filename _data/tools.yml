@@ -1,0 +1,167 @@
+# Tools shown on /tools/ as a grid, in this order within each group (same card design as /dashboards/).
+# Each card: title, page, thumb (640x400 JPEG in assets/tools/), summary (keep to about 40 words),
+# cta (the link text), meta (the line readers see: a date where the tool states one, otherwise what kind of tool it is),
+# and optional extra links (title + url), with an optional extra_label in front of them (default "Also").
+# Add a tool here when its page goes live, and take a new thumbnail at the same time:
+#   python3 _scripts/tools_thumbs.py .   (needs Playwright; serves the repo on port 8765 while it runs)
+
+- group: "Check where you stand"
+  intro: "Work through your own position, piece by piece. Everything runs in your browser and nothing you type is sent to a server."
+  items:
+    - title: "The Carbon Jigsaw"
+      cta: "Open the Carbon Jigsaw"
+      page: /tools/carbon-jigsaw.html
+      thumb: /assets/tools/carbon-jigsaw.jpg
+      summary: "A rough carbon checker for NI businesses. Fill in each piece from your bills and records to get a rough Scope 1, 2 and partial Scope 3 footprint. The pieces you can't fill show what a full inventory would add."
+      meta: "Calculator · your figures stay in your browser"
+      extra:
+        - title: "Practise with the sample bills"
+          url: /tools/sample-bills/sample-01-electricity.pdf
+    - title: "Farm Carbon Data Checker"
+      cta: "Open the Farm Carbon Data Checker"
+      page: /tools/farm-data-checker/
+      thumb: /assets/tools/farm-data-checker.jpg
+      summary: "For NI farms asked for carbon data by a processor, supermarket, lender or scheme. Mark each record as have, can get or missing, and see how ready you are and where to find each gap. It checks records; it doesn't calculate emissions."
+      meta: "Checklist · as at 18 October 2026"
+      extra_label: "Background"
+      extra:
+        - title: "Focus on Agriculture, October 2026"
+          url: /blog/focus-on-agriculture-october-2026/
+    - title: "Which EU rules apply to me?"
+      cta: "Open Which EU rules apply to me?"
+      page: /tools/which-eu-rules-apply.html
+      thumb: /assets/tools/which-eu-rules-apply.jpg
+      summary: "For NI businesses caught between UK and EU rules. Tick what you make and where your goods go, and get the EU and UK rules that matter to you, with dates and official sources. Updated with the Windsor Framework dashboard."
+      meta: "Checked 13 November 2026 · updated every Friday"
+    - title: "Incoterms Chooser"
+      cta: "Open the Incoterms Chooser"
+      page: /tools/incoterms.html
+      thumb: /assets/tools/incoterms.jpg
+      summary: "Four questions to find the Incoterms® 2020 rule that matches how you split transport, risk, insurance and customs with your buyer or seller. Includes a who-does-what matrix for all 11 rules and notes on GB–NI movements, EU trade and CBAM."
+      meta: "Checked 11 November 2026"
+    - title: "The Land Repair Helix"
+      cta: "Open the Land Repair Helix"
+      page: /tools/land-repair-helix.html
+      thumb: /assets/tools/land-repair-helix.jpg
+      summary: "A design tool for healthier land. Twenty-two base pairs link a problem, from compacted soil and flooding to forever chemicals and flailed hedges, to the low-cost or nature-based fix that answers it. Choose your site and it builds a starter plan."
+      meta: "Planner · printable site plans (PDF)"
+      extra_label: "Printable site plans (PDF)"
+      extra:
+        - title: "farm"
+          url: /tools/site-plans/site-plan-farm.pdf
+        - title: "verge"
+          url: /tools/site-plans/site-plan-verge.pdf
+        - title: "brownfield"
+          url: /tools/site-plans/site-plan-brown.pdf
+        - title: "factory"
+          url: /tools/site-plans/site-plan-factory.pdf
+        - title: "park"
+          url: /tools/site-plans/site-plan-park.pdf
+        - title: "river"
+          url: /tools/site-plans/site-plan-river.pdf
+    - title: "The Joined-Up Wheel"
+      cta: "Open the Joined-Up Wheel"
+      page: /tools/joined-up-wheel.html
+      thumb: /assets/tools/joined-up-wheel.jpg
+      summary: "Eight environmental issues most firms handle separately, from carbon and energy costs to PFAS, water and public affairs, and the business goals they all feed. Pick an issue to see its triggers, rules and routes in; pick a goal to see what it depends on."
+      meta: "Interactive map"
+
+- group: "CBAM"
+  intro: "The EU and UK carbon border charges for Northern Ireland importers and exporters of steel, aluminium, cement, fertiliser and hydrogen, and goods made from them."
+  items:
+    - title: "UK CBAM Countdown"
+      cta: "Open the UK CBAM Countdown"
+      page: /tools/uk-cbam-countdown.html
+      thumb: /assets/tools/uk-cbam-countdown.jpg
+      summary: "The UK carbon border charge starts on 1 January 2027. A live countdown, the UK and EU CBAM dates that follow, and the things NI importers of steel, aluminium, cement, fertiliser and hydrogen should do now."
+      meta: "Dates checked 11 November 2026"
+    - title: "Is my part or chemical a CBAM good?"
+      cta: "Open the lookup"
+      page: /cbam-desk/is-it-a-cbam-good/
+      thumb: /assets/tools/is-it-a-cbam-good.jpg
+      summary: "The commodity-code headings that most often catch engineering, pharmaceutical, food and drink firms, from bolts, drums and kegs to nitric acid and hydrogen. Each shows whether it is covered by the EU CBAM now, the UK CBAM from 2027 and the EU's 2028 proposal."
+      meta: "Lookup · rules checked 11 November 2026"
+    - title: "CBAM data checklist"
+      cta: "Open the checklist"
+      page: /cbam-desk/checklist/
+      thumb: /assets/tools/cbam-checklist.jpg
+      summary: "What producers and importers should start gathering now for the EU and UK carbon border rules, from site boundaries and fuels to commodity codes, customs values and records. Free to use and share."
+      meta: "Checklist · rules checked 11 November 2026"
+
+- group: "Maps and trackers"
+  intro: "The rules and the reporting landscape on one page, so you can see how the pieces fit."
+  items:
+    - title: "The Scopes Map"
+      cta: "Open the Scopes Map"
+      page: /tools/scopes-map.html
+      thumb: /assets/tools/scopes-map.jpg
+      summary: "Scope 1, 2 and 3 on one diagram, with all fifteen Scope 3 categories and their definitions, plus the grey zones clients ask about: leaks before or after the meter, borehole water, grey-fleet mileage and landlord-supplied energy."
+      meta: "Reference map"
+    - title: "ESG Regime Tracker"
+      cta: "Open the ESG Regime Tracker"
+      page: /tools/esg-regime-tracker.html
+      thumb: /assets/tools/esg-regime-tracker.jpg
+      summary: "Carbon and sustainability rules across the UK, NI, the EU, North America, Australasia and the UN, comparing the position in 2023 with the position now. Filter by market, by status, or by what matters to NI manufacturers and to councils."
+      meta: "Position as at 16 October 2026"
+    - title: "Dashboards"
+      cta: "All dashboards"
+      page: /dashboards/
+      thumb: /assets/dashboards/cbam-exposure-tracker.jpg
+      summary: "Northern Ireland data from official statistics, one dashboard per subject, with every table downloadable as CSV: the CBAM Exposure Tracker, the Regulatory Horizon, EU Law and the Windsor Framework, and a dashboard for each sector briefing."
+      meta: "Dated snapshots"
+      extra:
+        - title: "CBAM Exposure Tracker"
+          url: /tools/dashboards/cbam-exposure-tracker.html
+
+- group: "Puzzles and quizzes"
+  intro: "For team quizzes, workshop warm-ups and classrooms. Nothing is collected or stored."
+  items:
+    - title: "The Carbon Crossword"
+      cta: "Play the Carbon Crossword"
+      page: /puzzles/carbon-crossword.html
+      thumb: /assets/tools/carbon-crossword.jpg
+      summary: "Twenty-four terms from greenhouse gas reporting, carbon pricing and NI's climate rules. Easy clues define the term; hard clues assume you've read the guidance. Use it as a team quiz, a warm-up or a printable handout."
+      meta: "Crossword · terms as at 16 October 2026"
+    - title: "Scope Sort"
+      cta: "Play Scope Sort"
+      page: /puzzles/scope-sort.html
+      thumb: /assets/tools/scope-sort.jpg
+      summary: "Twenty-two everyday business activities to sort into Scope 1, Scope 2, Scope 3 or not counted. Some trip up professionals, like biomass CO₂, butane leaks and a unit billed through the landlord. Every answer comes with the reason."
+      meta: "Sorting game"
+    - title: "Pillar Clash"
+      cta: "Play Pillar Clash"
+      page: /puzzles/pillar-clash.html
+      thumb: /assets/tools/pillar-clash.jpg
+      summary: "Ten real dilemmas where environmental, social and governance goals pull against each other: the cheap low-carbon import, the plant closure, the offset shortcut. Watch the three gauges move with each decision. There are no free wins."
+      meta: "Decision game"
+    - title: "Acronym Match"
+      cta: "Play Acronym Match"
+      page: /puzzles/acronym-match.html
+      thumb: /assets/tools/acronym-match.jpg
+      summary: "CBAM, SECR, ESOS, NIEA, SuDS and more: match each acronym to its meaning, six per round. Choose Core for the essentials or Everything for all 33. Each match explains why it matters."
+      meta: "Matching game"
+    - title: "Planet Check: GCSE quiz"
+      cta: "Take the Planet Check quiz"
+      page: /puzzles/planet-check.html
+      thumb: /assets/tools/planet-check.jpg
+      summary: "Twenty-eight questions on the atmosphere, water, resources and ecosystems, linked to GCSE science and geography, plus a Real world NI set on Lough Neagh, peatlands and NI's climate targets. Safe for classroom use."
+      meta: "Quiz · printable worksheet (PDF)"
+      extra:
+        - title: "Worksheet with answers (PDF)"
+          url: /puzzles/planet-check-worksheet.pdf
+
+- group: "Guides"
+  intro: "Longer reads with an honest view of what works today and what comes next."
+  items:
+    - title: "E-waste Unpacked"
+      cta: "Read E-waste Unpacked"
+      page: /guides/e-waste.html
+      thumb: /assets/tools/e-waste.jpg
+      summary: "What's inside discarded electricals: precious, critical and rare metals, the poisons that must come out first, how a WEEE treatment line is audited, and why reuse and design beat shredding."
+      meta: "Guide"
+    - title: "Circular Economy Reality Check"
+      cta: "Read the Circular Economy Reality Check"
+      page: /guides/circular-economy.html
+      thumb: /assets/tools/circular-economy.jpg
+      summary: "The theory behind the circular economy, an honest scorecard of what works today, and the dated road ahead for Northern Ireland, the UK and the EU."
+      meta: "Guide"

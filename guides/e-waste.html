@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="E-waste Unpacked: precious, critical and hazardous materials in discarded electricals, how WEEE treatment is audited, and the economics of reuse. For Northern Ireland businesses. By Robert J. Park.">
-<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<link rel="icon" type="image/svg+xml" href="/assets/brand/mark.svg">
 <title>E-waste Unpacked</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
@@ -17,17 +17,17 @@ body{margin:0}
 
 /* Layout: the GHG Protocol value chain drawn left to right (upstream → you → downstream), then the grey zones where scopes blur, then the gases that count. */
 :root{
-  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2;
-  --red:#B3121B; --s1:#B3121B; --s1-bg:#FBEDED; --s2:#B5650F; --s2-bg:#FCF1E3; --s3:#2D6CA3; --s3-bg:#E9F1F9; --out:#4F7F2A; --out-bg:#EEF5E6;
-  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --paper:#FFFFFF; --ink:#1A1A1A; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2;
+  --red:#A61C1C; --s1:#A61C1C; --s1-bg:#FBEDED; --s2:#B5650F; --s2-bg:#FCF1E3; --s3:#2D6CA3; --s3-bg:#E9F1F9; --out:#4F7F2A; --out-bg:#EEF5E6;
+  --display:'Source Sans 3','Segoe UI',system-ui,sans-serif;
   --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
-  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}}
+  --red:#E0484A; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}}
 :root[data-theme="dark"]{
   --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D;
-  --red:#E5484D; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}
+  --red:#E0484A; --s1:#F0787C; --s1-bg:#3A1C1E; --s2:#E9A55A; --s2-bg:#35261A; --s3:#7DB3E3; --s3-bg:#1B2A38; --out:#9CCB6E; --out-bg:#22301A; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:24px 48px}
@@ -40,7 +40,7 @@ h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);line-height:1.1;m
 .sec{display:flex;flex-direction:column;gap:16px;border-top:3px solid var(--ink);padding-top:18px}
 .sec>p{margin:0;max-width:72ch}
 
-:root{--pm:#9A7B12;--pm-bg:#FBF4DC;--cr:#2D6CA3;--cr-bg:#E9F1F9;--hz:#B3121B;--hz-bg:#FBEDED;--ok:#1F6B45;--ok-bg:#E6F2EB}
+:root{--pm:#9A7B12;--pm-bg:#FBF4DC;--cr:#2D6CA3;--cr-bg:#E9F1F9;--hz:#A61C1C;--hz-bg:#FBEDED;--ok:#1F6B45;--ok-bg:#E6F2EB}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--pm:#E3C15A;--pm-bg:#30290F;--cr:#7DB3E3;--cr-bg:#1B2A38;--hz:#F0787C;--hz-bg:#3A1C1E;--ok:#4CC38A;--ok-bg:#16301F}}
 :root[data-theme="dark"]{--pm:#E3C15A;--pm-bg:#30290F;--cr:#7DB3E3;--cr-bg:#1B2A38;--hz:#F0787C;--hz-bg:#3A1C1E;--ok:#4CC38A;--ok-bg:#16301F}
 .stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
@@ -88,11 +88,19 @@ h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);line-height:1.1;m
 @media (max-width:1000px){.line{grid-template-columns:repeat(3,minmax(0,1fr))}.stp:nth-child(3){border-right:none}.inside{grid-template-columns:minmax(0,1fr)}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:700px){.line{grid-template-columns:minmax(0,1fr)}.stp{border-right:none!important}.why,.do{grid-template-columns:minmax(0,1fr)}.rung{grid-template-columns:minmax(0,1fr);gap:4px}}
 </style>
+<style id="rjp-brand">
+/* Brand: split-circle mark, red #A61C1C and ink #1A1A1A (reverse: #E0484A and white), Source Sans 3 headings */
+.rjp-mark{flex:none;display:block}
+.rjp-mark .r{fill:#A61C1C}.rjp-mark .k{fill:#1A1A1A}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .rjp-mark .r{fill:#E0484A}:root:not([data-theme="light"]) .rjp-mark .k{fill:#FFFFFF}}
+:root[data-theme="dark"] .rjp-mark .r{fill:#E0484A}:root[data-theme="dark"] .rjp-mark .k{fill:#FFFFFF}
+h1{font-weight:700!important;letter-spacing:-0.005em}h2{letter-spacing:-0.005em}
+</style>
 </head>
 <body>
 <div class="wrap">
   <header style="display:flex;flex-direction:column;gap:10px">
-    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg class="rjp-mark" width="22" height="26" viewBox="0 0 100 120" aria-hidden="true" focusable="false"><path class="r" d="M53.67 10C26.05 10 3.67 32.39 3.67 60s22.38 50 50 50v-8.67C30.84 101.33 12.33 82.83 12.33 60S30.84 18.67 53.67 18.67Z"/><path class="k" d="M60 97c20.43 0 37-16.57 37-37S80.43 23 60 23v8.67c15.65 0 28.33 12.68 28.33 28.33S75.65 88.33 60 88.33Z"/><path class="r" d="M56 115h2V5.33h-2Z"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
     <div style="display:flex;gap:16px;align-items:center"><img class="tool-logo" src="/assets/icons/e-waste.svg" alt="" width="60" height="60" style="flex:none"><h1 style="margin:0">E-waste Unpacked</h1></div>
     <p class="lede">What's inside discarded electricals: the metals worth recovering, the poisons that must be removed first, why a shredder has to know exactly what it's shredding, how that's audited, and why keeping a device or part in use usually beats recycling it.</p>
   </header>
