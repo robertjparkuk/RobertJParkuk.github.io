@@ -25,6 +25,22 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.39.0 — 17 November 2026: Learn Batch D (fracking; contrails and "chemtrails")
+
+- `fracking.md` (Energy and industry, order 18):
+  - what is burned (2.74 kg CO₂ per kg CH₄) and what leaks (28–82.5 kg CO₂e per kg);
+  - leak-rate evidence (Alvarez, Brandt, IEA, Howarth and its critics), well integrity, earthquakes, water;
+  - England, Scotland, Wales and ROI positions;
+  - NI history (Fermanagh 2014, Woodburn 2016) and the Petroleum Exploration and Licensing (Repeal) Bill (Further Consideration Stage completed 17 November 2026);
+  - verdict table.
+- `contrails-and-chemtrails.md` (Is it true?, order 19):
+  - contrail physics and warming (Lee 2021; Teoh 2020/2024), day vs night, avoidance;
+  - EU non-CO₂ reporting scope;
+  - the chemtrail claim and evidence (Shearer 2016; UK Government statement, 29 September 2026), real solar geoengineering research (ARIA, SCoPEx), Lynmouth as disputed;
+  - verdict table. A private EIR requester is not named or linked.
+- 8 diagrams from `_scripts/learn/batch_d.py`. Medicines page now links forward.
+- Independent fact-check: 3 must-fix items (EU reporting scope; UK statement qualifier "for climate modification"; Shearer respondents) and several should-fix items, all applied.
+
 ### v0.38.2 — 17 November 2026: Cyanobacteria, carbon, nitrogen, warmth and dogs
 
 - `lough-neagh-and-cyanobacteria.md`, at Robert's request:
