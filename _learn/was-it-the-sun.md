@@ -2,6 +2,7 @@
 title: "Was it the Sun? The solar cycle and climate"
 answer: "The Sun drives our weather and has changed the climate in the past, but it is not behind the warming since the mid-20th century. Satellites have measured the Sun's output since 1978 and found no upward trend, while temperatures have risen, and the upper atmosphere has cooled, which a brighter Sun would not do."
 description: "Is the Sun causing global warming? The 11-year solar cycle, what satellites have measured since 1978, the stratosphere fingerprint, where the Sun really does shape our winters, and a word about my friend Piers Corbyn."
+theme: "Is it true?"
 order: 4
 level: "Introductory"
 read_time: "11-minute"
@@ -144,7 +145,7 @@ A mid-sized manufacturer is asked by a bank or a large customer to describe its 
 3. **Assuming critics ignore the Sun.** The IPCC estimates its effect; it comes out small.
 4. **Treating the ozone-driven cooling as the CO₂ fingerprint.** Look higher, in the upper stratosphere.
 
-Previous: [Why is everything counted as “carbon”?]({{ '/learn/why-everything-is-carbon/' | relative_url }}) · Related: [What is a carbon life cycle?]({{ '/learn/carbon-life-cycle/' | relative_url }})
+Previous: [Why is everything counted as “carbon”?]({{ '/learn/why-everything-is-carbon/' | relative_url }}) · Next: [Hydrogen by colour]({{ '/learn/hydrogen-by-colour/' | relative_url }}) · Related: [What is a carbon life cycle?]({{ '/learn/carbon-life-cycle/' | relative_url }})
 
 ## Sources
 

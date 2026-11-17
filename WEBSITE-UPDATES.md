@@ -25,6 +25,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.36.0 — 17 November 2026: Learn Batch A
+
+- Four new explainers in the house style: `hydrogen-by-colour.md` (order 5), `fertiliser-and-the-nitrogen-cycle.md` (6), `carbon-capture-and-carbon-negative.md` (7), `offsets.md` (8).
+- Twelve new diagrams from `_scripts/learn/batch_a.py`: hydrogen routes, hydrogen intensity, hydrogen indirect warming, nitrogen cycle, fertiliser life cycle, fertiliser by region, storage durations, absorption vs adsorption, carbonate cycle, offset life cycle, offset quality ladder, woodland units.
+- Learn index now grouped by theme (`theme` front matter; `.learn-theme` style). HOW-TO-LEARN updated with the house style and themes.
+- Each page fact-checked by an independent agent before merge; findings in the session research notes.
+
 ### v0.35.0 — 17 November 2026: Learn, other gases and the Sun
 
 - New explainer `_learn/why-everything-is-carbon.md` (order 3): CO₂e and GWP; the seven Kyoto gases; AR6 and AR5 GWP table (UK reports on AR5); why a molecule absorbs infrared; absorption bands and the 8–14 µm window; excitation and collisions; water vapour and microwaves (22.235 and 183.31 GHz, dielectric heating in ovens); where each gas is destroyed (OH abstraction, stratospheric photolysis and O(¹D), SF₆ electron attachment); water vapour as feedback; business links (CBAM N₂O and PFCs, SF₆, HFCs).
