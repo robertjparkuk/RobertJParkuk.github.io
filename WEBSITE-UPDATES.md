@@ -38,9 +38,10 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - `_layouts/default.html`: "Learn" added to the main menu, before Blog. `assets/style.css`: Learn styles (answer box, figures, example cards, tables, card list). `tools.md`: pointer to Learn.
 - `HOW-TO-LEARN.md` (not published): how Robert adds an example or a new explainer from the GitHub app, with copy-and-paste templates.
 - Finance Act 2026 Part 5 read on legislation.gov.uk (link from Robert, 17 Nov 01:28): s.148(1) defines "emissions embodied in a CBAM good" as emissions "attributable to the production of a CBAM good"; the direct-only rule is in SI 2026/995 and the System Boundaries Document; s.158(1) applies Part 5 to goods imported on or after 1 January 2027. Explainer updated to say so.
+- Explainer, NI section: goods from Ireland and the EU into NI are UK CBAM imports (FA 2026 s.144(5)(a), importer under s.146(4)); goods made in NI are outside EU CBAM (Commission Q&A 7.14, as already cited on the CBAM Desk page); carbon price relief (s.150) is left to regulations and free allowances count as no price paid, so EU goods are not automatically free of UK CBAM.
 - `assets/style.css`: on screens 64rem and wider, the header and menu gaps are slightly tighter so ten menu items stay beside the logo (from about 1,100 px wide).
 - Diagrams in explainers open full size when tapped. The answer box is labelled "In short".
-- Definitions checked 17 November 2026 against the Council's adopted text of Regulation (EU) 2023/956 and 2025/2083 (EUR-Lex could not be opened), HMRC's CBAM factsheet and policy summary, SI 2026/995, RICS WLCA 2nd edition, BSI (BS EN 15978:2026 replaced the 2011 edition on 31 July 2026), ISO and Defra. Still to check: whether England has any embodied carbon requirement; how EU CBAM treats goods entering NI (customs specialist).
+- Definitions checked 17 November 2026 against the Council's adopted text of Regulation (EU) 2023/956 and 2025/2083 (EUR-Lex could not be opened), HMRC's CBAM factsheet and policy summary, SI 2026/995, RICS WLCA 2nd edition, BSI (BS EN 15978:2026 replaced the 2011 edition on 31 July 2026), ISO and Defra. Still to check: whether England has any embodied carbon requirement.
 
 ### v0.33.3 — 16 November 2026: short links for LinkedIn
 
