@@ -10,6 +10,11 @@ phone: "07450 349480"          # Work mobile (business use only)
 phone_intl: "+447450349480"
 whatsapp: "@robertjpark"   # WhatsApp username (keeps your number private)
 
+# Weekly digest email sign-up. Leave empty until you choose a newsletter service;
+# then paste its sign-up page address here (e.g. a Buttondown or Mailchimp form page)
+# and update the "Weekly digest by email" section of privacy.md.
+digest_signup_url: ""
+
 # Set this to your new domain once you have it, e.g. https://www.yourdomain.co.uk
 url: "https://robertjpark.co.uk"
 
@@ -27,6 +32,9 @@ collections:
   learn:
     output: true
     permalink: /learn/:name/
+  digest:
+    output: true
+    permalink: /digest/:name/
 
 defaults:
   - scope:
@@ -40,3 +48,4 @@ exclude:
   - README.md
   - HOW-TO-POST.md
   - WEBSITE-UPDATES.md
+  - workers

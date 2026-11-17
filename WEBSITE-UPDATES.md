@@ -25,6 +25,25 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.38.0 — 17 November 2026: bill reader, weekly digest, privacy update
+
+*Robert's instruction, 17 Nov 05:15: "Update privacy policy. Do the bill scanner. Do the weekly regulatory digest." Builds on v0.37.0 (merge that first). Awaiting Robert's merge.*
+
+**Bill reader (Carbon Jigsaw)** — off until switched on
+- `workers/bill-reader/`: Cloudflare Worker that sends one bill (photo or PDF) to Claude (`claude-haiku-5-5`) and returns only the figures: kWh, litres, m³, billing period, supplier. Checks the page's origin, caps 5 bills per visitor a day (salted IP hash, deleted after 2 days) and 1,000 a month, 4 MB limit, logging off, stores nothing. Set-up steps in `workers/bill-reader/README.md`.
+- `tools/carbon-jigsaw.html`: "Read it from a photo or PDF of my bill" on the Electricity, Natural gas, Oil and LPG, and Water pieces. Needs a consent tick for each bill; photos are shrunk to 1,600 px in the browser first. Fills the fields, matches the supplier to the NI fuel mix list, works out months from the billing period, adds oil dockets to the running total, and refuses a bill uploaded to the wrong piece. Hidden until `BILL_API` is set near the top of the script.
+- `workers` excluded from the Jekyll build.
+
+**Weekly digest**
+- `_scripts/digest/build_digest.py`: one edition per sector from `horizon.json` and `consultations.json`. Claude (`claude-sonnet-5-5`) picks and words up to six coming items and five consultations; every date, link and source comes from the data, and any sentence with a number not in its source item is replaced by the source text. `--dry-run` builds without Claude.
+- `.github/workflows/weekly-digest.yml`: Fridays 16:35 UTC; opens a pull request `digest/YYYY-MM-DD` for review. Needs repo secret `ANTHROPIC_API_KEY` and "Allow GitHub Actions to create and approve pull requests".
+- Sectors in `_data/digest_sectors.json` (eight). New `digest` collection (`/digest/:name/`), layout `_layouts/digest.html`, index `digest.md` (`/digest/`), and an RSS feed per sector at `/digest/<sector>.xml`.
+- Email: `digest_signup_url` in `_config.yml`, empty for now. When set, sign-up links appear on the digest pages and the email section of the privacy page switches on.
+- `tools.md`: Weekly digest entry.
+
+**Privacy page**
+- Rewritten lead and short version; new sections on the bill reader (what goes where, Cloudflare, Anthropic's 30-day deletion and no training, US processing, consent as lawful basis, cover personal details first) and the weekly digest (conditional email section). Updated 17 November 2026.
+
 ### v0.37.0 — 17 November 2026: NI market-based electricity in the Carbon Jigsaw
 
 *Robert's instruction, 17 Nov 05:04 ("Build it"): a Scope 2 checker using NI supplier fuel mix figures, added to the Carbon Jigsaw. Awaiting Robert's merge.*

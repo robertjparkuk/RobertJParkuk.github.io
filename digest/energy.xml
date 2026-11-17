@@ -1,0 +1,25 @@
+---
+layout: null
+permalink: /digest/energy.xml
+sector: energy
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>{{ site.title | xml_escape }}: Energy and fleet weekly digest</title>
+  <link>{{ '/digest/' | absolute_url }}</link>
+  <atom:link href="{{ page.url | absolute_url }}" rel="self" type="application/rss+xml"/>
+  <description>Energy, renewables, ESOS and fleet rules for NI energy users and operators.</description>
+  <language>en-gb</language>
+  {%- assign eds = site.digest | where: "sector", page.sector | sort: "date" | reverse -%}
+  {%- for e in eds limit: 12 %}
+  <item>
+    <title>{{ e.title | xml_escape }}</title>
+    <link>{{ e.url | absolute_url }}</link>
+    <guid isPermaLink="true">{{ e.url | absolute_url }}</guid>
+    <pubDate>{{ e.date | date_to_rfc822 }}</pubDate>
+    <description>{{ e.content | xml_escape }}</description>
+  </item>
+  {%- endfor %}
+</channel>
+</rss>

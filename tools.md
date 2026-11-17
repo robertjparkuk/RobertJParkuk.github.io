@@ -34,6 +34,12 @@ For Northern Ireland businesses caught between UK and EU rules. Tick what you ma
 
 [Open Which EU rules apply to me? →]({{ '/tools/which-eu-rules-apply.html' | relative_url }})
 
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Weekly digest</h2>
+
+Every Friday, a short briefing for your sector on the Northern Ireland rule changes, deadlines and consultations coming up in the next four months, with what to do about each. Eight sectors, from manufacturers and importers to farming, councils and energy users. Follow your sector's feed in any news reader.
+
+[Open the weekly digest →]({{ '/digest/' | relative_url }})
+
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Dashboards</h2>
 
 Northern Ireland data on one page, from official statistics, with every table downloadable as CSV. **CBAM Exposure Tracker**: where an NI business stands under the EU and UK carbon border charges, the EU certificate price and the rules side by side. **NI Agriculture and Land Carbon**: farm and land emissions from 1990 to 2024, nutrients, livestock, peatland, F-gases and the measures that cut them. **EU Law and the Windsor Framework**: which EU laws apply in NI, Stormont Brake cases, effects on GB and open EU and Irish consultations.
