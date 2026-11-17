@@ -4,7 +4,7 @@ answer: "“Carbon” is shorthand. Carbon accounts cover seven greenhouse gases
 description: "Why nitrous oxide, SF₆, NF₃, PFCs and water vapour all end up in a “carbon” footprint: global warming potentials, molecule shapes, which infrared wavelengths each gas absorbs, and where in the atmosphere each one is finally destroyed."
 order: 3
 level: "Intermediate"
-read_time: "12-minute"
+read_time: "15-minute"
 checked: 2026-11-17
 ---
 
@@ -128,13 +128,81 @@ So water vapour is a **feedback, not a driver**. When CO₂ warms the air, the a
 
 The exceptions are where water is put somewhere it would not otherwise be, such as aircraft vapour trails high up, or methane breaking down into water in the stratosphere. Those effects are studied separately.
 
-## Why this matters to a business
+## Why it matters in Northern Ireland
 
-- **Fertiliser:** a lot of the footprint of nitrogen fertiliser is N₂O, from making nitric acid and from spreading it on fields. Both CBAMs count N₂O from nitric acid production in the embedded emissions of fertiliser goods.
-- **Aluminium:** smelters emit CF₄ and C₂F₆ during “anode effects”. Both CBAMs count PFCs for aluminium goods. A small leak, multiplied by a GWP of 7,000 to 12,000, matters.
-- **Switchgear and electronics:** SF₆ insulates high-voltage switchgear and NF₃ cleans chip-making equipment. A leak of a few kilograms of SF₆ is tens of tonnes of CO₂e.
-- **Cooling:** HFC leaks from fridges, air conditioning and heat pumps go straight into a Scope 1 footprint. Lower-GWP refrigerants change the numbers more than most efficiency projects.
-- **Reporting:** say which GWP set you used (AR5 for UK reporting today), and whether you used 20 or 100 years. A methane-heavy footprint can look three times bigger on a 20-year basis.
+Northern Ireland's greenhouse gas profile is unusual for the UK. In 2024 its emissions were 22.2 million tonnes of CO₂e, or 18.4 million net of what land and forests absorbed. **Agriculture was the largest sector at 31.4%**, ahead of transport at 21.3%. By gas, methane made up 29.5% and nitrous oxide 8.0%: almost two-fifths of the total, most of it from cattle, slurry and fertiliser. F-gases were under 1%. Like the rest of the UK, the inventory uses AR5 100-year GWPs.
+
+<figure class="learn-figure"><a href="{{ '/assets/learn/ni-emissions-split.svg' | relative_url }}" title="Open the chart full size"><img src="{{ '/assets/learn/ni-emissions-split.svg' | relative_url }}" alt="Northern Ireland emissions in 2024. By gas: carbon dioxide 61.5%, methane 29.5%, nitrous oxide 8.0%, F-gases 0.9%. By sector: agriculture 31.4%, domestic transport 21.3%, buildings and product uses 15.5%, land use 11.7%, electricity supply 10.8%, industry 5.5%, waste 3.8%." loading="lazy"></a><figcaption>Almost two-fifths of NI's emissions are not carbon dioxide. Tap or click to open it full size.</figcaption></figure>
+
+That has two consequences. First, the choice of GWP matters more here than in most of the UK: put Northern Ireland's methane on a 20-year basis and it nearly triples. Second, any claim that “carbon” means CO₂ misses most of what NI farming emits.
+
+F-gases also split across the Irish Sea. **Northern Ireland follows the EU F-gas Regulation, (EU) 2024/573**, which entered into force on 11 March 2024 and applies in NI under the Windsor Framework; Great Britain runs its own F-gas regime. A refrigeration contractor or switchgear supplier working on both sides needs to check which rules apply on each job. (Checked 17 November 2026.)
+
+The carbon border taxes add a third consequence. Both CBAMs count nitrous oxide in nitric acid and PFCs in aluminium, so a non-CO₂ gas can turn up on an import bill for fertiliser or aluminium coming into Northern Ireland.
+
+### Think of currency, then exchange it
+
+CO₂e works like converting a pile of foreign cash into sterling. You hold euros (methane), dollars (nitrous oxide) and a few very valuable coins (SF₆). To add them up you need an exchange rate for each: that is the GWP. Two things follow, as they do with money:
+
+| Currency idea | Greenhouse gas equivalent |
+|---|---|
+| The exchange rate | The GWP: 28 for methane, 265 for nitrous oxide, 23,500 for SF₆ (AR5, used in UK reporting) |
+| Which day's rate you use | Which IPCC report: AR5 and AR6 give slightly different rates |
+| Spot rate or long-term average | A 20-year or 100-year GWP. Methane is worth far more “today” than averaged over a century |
+| Mixing rates in one total | Adding an AR5 figure to an AR6 figure: the total is wrong |
+| The coins are not sterling | Converting to CO₂e does not mean the gas contains carbon |
+
+## Examples
+
+<div class="example" markdown="1">
+<p class="sector">Manufacturing</p>
+
+### A leaking switchgear panel
+
+A factory's medium-voltage switchgear holds a few kilograms of SF₆ as insulation. A seal fails and 3 kg leaks before anyone notices.
+
+| | Figure |
+|---|---|
+| Gas lost | 3 kg SF₆ |
+| GWP (AR5, 100 years) | 23,500 |
+| Reported emission | 3 × 23,500 = 70,500 kg, about **70 tonnes CO₂e** |
+| Equivalent in fuel | Roughly what the factory might emit from tens of thousands of litres of diesel |
+
+The numbers are illustrative. **The lesson:** a small, invisible leak can outweigh a year of fuel savings. The F-gas rules require regular leak checks on most equipment above set size thresholds; doing them properly is one of the easiest carbon wins many sites have.
+</div>
+
+<div class="example" markdown="1">
+<p class="sector">Agriculture and food</p>
+
+### A dairy herd on a 20-year view
+
+A dairy farm's footprint is mostly methane from the cows and slurry, and nitrous oxide from fertiliser and manure. Suppose (illustratively) the farm emits 100 tonnes of methane and 4 tonnes of nitrous oxide a year.
+
+| | 100-year GWP (AR5) | 20-year GWP (AR6) |
+|---|---|---|
+| Methane, 100 t | 2,800 t CO₂e | 8,120 t CO₂e |
+| Nitrous oxide, 4 t | 1,060 t CO₂e | 1,092 t CO₂e |
+| Total | 3,860 t CO₂e | 9,212 t CO₂e |
+
+Same farm, same cows, more than double the number. **The lesson:** always say which GWP you used. Cutting methane pays off quickly in warming terms because methane is short-lived; that is the argument for acting on it first.
+</div>
+
+<div class="example" markdown="1">
+<p class="sector">Public sector and retail</p>
+
+### A council leisure centre's chillers
+
+A council leisure centre runs air conditioning and a chiller on HFC-134a. The annual service finds the system has lost 10 kg of refrigerant.
+
+| | Figure |
+|---|---|
+| Gas lost | 10 kg HFC-134a |
+| GWP (AR5, 100 years) | 1,300 |
+| Reported emission | **13 tonnes CO₂e**, in Scope 1 |
+| Where it shows up | The council's own carbon report |
+
+**The lesson:** refrigerant top-ups on a maintenance invoice are emissions. Ask the contractor for the kilograms, not just the cost, and plan the switch to lower-GWP refrigerants when equipment is replaced.
+</div>
 
 ## Common mistakes
 
@@ -158,5 +226,7 @@ Checked 17 November 2026.
 - **Removal chemistry:** Saunois et al. 2025, [Global Methane Budget 2000–2020](https://doi.org/10.5194/essd-17-1873-2025) · NIWA, [Detergent of the atmosphere](https://niwa.co.nz/water-atmosphere/vol16-no1-march-2008/detergent-atmosphere) (the methane oxidation chain) · IPCC TAR, [WG1 4.2.1.2](https://archive.ipcc.ch/ipccreports/tar/wg1/136.htm) (N₂O sinks: photolysis about 90%, O(¹D)) · Ravishankara, Daniel and Portmann, [Science 326, 123 (2009)](https://ozone.unep.org/sites/default/files/2019-08/Ravishankara%20et%20al_Science_N2O_10_2_09.pdf) (N₂O the largest ozone-depleting emission).
 - **Spectroscopy and shapes:** HITRAN, [Vibrational modes](https://lweb.cfa.harvard.edu/HITRAN/vibrational.html) (band centres; µm values converted by me) · HITRAN 2012 [IR cross-section notes](https://www.cfa.harvard.edu/hitran/HITRAN2012/IR-XSect/IRCrossSection_Readme.pdf) (CF₄ and C₂F₆ band ranges) · Colorado State University, [Greenhouse gas handout](https://chemapps.colostate.edu/SustainabilityProfiles/GHGhandout.pdf) (why N₂ and O₂ do not absorb) · LibreTexts, [Molecular geometry](https://chem.libretexts.org/Bookshelves/General_Chemistry/Concept_Development_Studies_in_Chemistry_(Hutchinson)/7%3A_Molecular_Geometry_and_Electron_Domain_Theory/Section_3%3A_Observation_1%3A_Geometries_of_molecules).
 - **Microwaves:** JPL, [IPN Progress Report 42-48](https://ipnpr.jpl.nasa.gov/progress_report/42-48/48G.html) (22.235 GHz line) · Brogniez et al. 2016, [AMT 9, 2207](https://repository.library.noaa.gov/view/noaa/41065/noaa_41065_DS1.pdf) (183.31 GHz in satellite use) · C. S. Baird, West Texas A&M University, [Why are microwave ovens tuned to water?](https://www.wtamu.edu/~cbaird/sq/2014/10/15/why-are-the-microwaves-in-a-microwave-oven-tuned-to-water) (they are not).
+- **Northern Ireland:** DAERA and NISRA, [NI GHG inventory 1990–2024](https://datavis.nisra.gov.uk/daera/northern-ireland-greenhouse-gas-inventory-1990-2024-statistical-bulletin.html) (sector and gas shares) · NI Assembly, [Windsor Framework Democratic Scrutiny Committee: Regulation (EU) 2024/573](https://www.niassembly.gov.uk/assembly-business/committees/2022-2027/windsor-framework-democratic-scrutiny-committee/eu-acts/published-eu-acts/regulation-eu-2024573) and DAERA's [assessment of the F-gas replacement act](https://www.niassembly.gov.uk/globalassets/committee-blocks/windsor-framework-democratic-scrutiny-committee/inquiries/dsc-01-2024---completed-daera-template-pubr-fluorinated-greenhouse-gases-f-gases.pdf) (NI remains subject to EU F-gas law; GB has its own regime) · European Commission, [F-gas Regulation (EU) 2024/573](https://climate.ec.europa.eu/areas-action/fluorinated-greenhouse-gases/documentation/f-gas-legislation_en) (in force 11 March 2024).
+- The three examples use illustrative quantities, not measured data.
 - **CBAM gases:** HMRC, [UK CBAM System Boundaries Document (draft)](https://assets.publishing.service.gov.uk/media/69d65ae10c6c0aacee394ae7/The_Carbon_Border_Adjustment_Mechanism_System_Boundaries_Document__Draft_.pdf), Table 1 (PFCs for aluminium, N₂O for nitric acid) · EU CBAM Regulation (EU) 2023/956, Annex I (same gases; EUR-Lex not reachable today, so not re-checked).
 - **Not checked against a primary source:** the exact 8–14 µm limits of the atmospheric window (a conventional range); the ozone bond angle of 117° is from Bristol Chemistry rather than NIST.

@@ -31,6 +31,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - New explainer `_learn/was-it-the-sun.md` (order 4): solar cycle, satellite record since 1978, AR6 solar forcing, stratosphere fingerprint (upper stratosphere; lower-stratosphere cooling mainly ozone), Ineson et al. 2011 on solar cycle and winters, verdict table, and a box on Piers Corbyn (first sabbatical ICU President, WeatherAction founder). Piers to see the box before merge.
 - New script `_scripts/learn/gases.py` writing `gas-molecules.svg`, `co2-vibrations.svg`, `gas-absorption-bands.svg`, `gas-fates.svg` and `sun-fingerprint.svg` to `assets/learn/`.
 - Corrections found in checking: AR6 uses an SF₆ lifetime of 1,000 years (not 3,200); the 850-year estimate is Ray et al. 2017.
+- Restyled to the house format: NI section, analogy, three sector examples; new diagrams `ni-emissions-split.svg` and `solar-cycle.svg`.
 - Read-time grammar: values now "10-minute", so pages read "10-minute read".
 - "Next" link added to the life cycle explainer.
 

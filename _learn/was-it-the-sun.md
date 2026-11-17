@@ -4,7 +4,7 @@ answer: "The Sun drives our weather and has changed the climate in the past, but
 description: "Is the Sun causing global warming? The 11-year solar cycle, what satellites have measured since 1978, the stratosphere fingerprint, where the Sun really does shape our winters, and a word about my friend Piers Corbyn."
 order: 4
 level: "Introductory"
-read_time: "8-minute"
+read_time: "11-minute"
 checked: 2026-11-17
 ---
 
@@ -31,6 +31,8 @@ The Sun's output, called **total solar irradiance**, averages about 1,361 watts 
 - **The 11-year cycle.** Sunspots come and go on a cycle of about 11 years. At solar maximum the Sun is about **0.1% brighter** than at minimum, roughly 1 W/m² in a strong cycle. Spots are dark, but the bright patches around them more than make up for it.
 - **The current cycle.** Solar Cycle 25 peaked in **October 2024**, according to NASA, NOAA and the Royal Observatory of Belgium, and is now declining. The auroras seen across the UK and Ireland in 2024 were part of that peak.
 - **Longer swings.** Over centuries the Sun has had quieter and busier spells, and over tens of thousands of years changes in the Earth's orbit, not the Sun itself, have paced the ice ages.
+
+<figure class="learn-figure"><a href="{{ '/assets/learn/solar-cycle.svg' | relative_url }}" title="Open the diagram full size"><img src="{{ '/assets/learn/solar-cycle.svg' | relative_url }}" alt="A ring showing the four phases of the solar cycle: solar minimum with few sunspots and the lowest ultraviolet; a rising phase of about four years; solar maximum with the most sunspots, flares and aurora, when the Sun is about 0.1% brighter; and a declining phase of about seven years. The magnetic field flips every cycle, giving a 22-year Hale cycle. Over a cycle total sunlight changes by about 0.1% and ultraviolet by much more. There has been no upward trend in total sunlight since 1978." loading="lazy"></a><figcaption>The cycle repeats; the long-term level has not risen. Tap or click to open it full size.</figcaption></figure>
 
 ## The test: has the Sun got brighter?
 
@@ -61,6 +63,16 @@ Satellites and weather balloons show the second pattern: warming at the surface,
 
 To be fair to the detail: the cooling of the **lower** stratosphere from 1979 to the mid-1990s was mainly caused by the loss of ozone, not CO₂. The CO₂ signal is clearest higher up. (For why CO₂ behaves this way, see [Why is everything counted as “carbon”?]({{ '/learn/why-everything-is-carbon/' | relative_url }}).)
 
+### Think of a dimmer switch and a duvet
+
+Two things can make a bedroom warmer: turning up the heater, or adding a heavier duvet. Both raise the temperature under the covers, but they leave different clues.
+
+| | Heater turned up (the Sun) | Heavier duvet (greenhouse gases) |
+|---|---|---|
+| Under the covers (lower atmosphere) | Warmer | Warmer |
+| On top of the duvet (upper stratosphere) | Warmer | Cooler: less heat gets through |
+| Has the heater dial moved? | It has not, since 1978 | The duvet has thickened: CO₂ and other gases have risen steeply since before industry |
+
 ## Where the Sun really does matter
 
 Rejecting the Sun as the cause of global warming does not mean it has no effect on our weather. It does, and here the solar forecasters have a point.
@@ -68,6 +80,52 @@ Rejecting the Sun as the cause of global warming does not mean it has no effect 
 In 2011 a team from the Met Office, Oxford and Imperial College, including Imperial's Joanna Haigh, published a study in *Nature Geoscience* linking the solar cycle to winters in the UK and northern Europe. Ultraviolet output swings much more over the cycle than total brightness. When the Sun is quiet, the change in the stratosphere can work its way down and weaken the westerly winds in winter, letting cold air in from the east. The Met Office described this as a significant factor in seasonal forecasting, though not the only driver of winter weather.
 
 So the Sun can tilt the odds of a cold winter in Larne. What it cannot do is explain why the whole planet has warmed by more than 1 °C while its output has held flat.
+
+## Why it matters in Northern Ireland
+
+Northern Ireland's weather comes off the Atlantic, so the strength of the winter westerlies decides a lot: mild, wet and windy when they are strong, colder and still when they weaken and the wind swings to the east. That is exactly the link the 2011 Met Office study found the solar cycle can nudge. A quiet Sun slightly raises the odds of a cold, settled winter; a busy one slightly lowers them. The effect is real but modest, and natural swings such as El Niño and the state of the Atlantic matter too.
+
+The other local effect is visible. Around the 2024 solar maximum, aurora were seen across Ireland, including along the Antrim coast. As Solar Cycle 25 declines, displays will become rarer until the next maximum, expected in the 2030s.
+
+None of this changes the long-term picture. Northern Ireland's own rules, the Climate Change Act (Northern Ireland) 2022 and its carbon budgets, rest on the same science: the warming trend is driven by greenhouse gases, and the solar cycle rides on top of it.
+
+## Examples
+
+<div class="example" markdown="1">
+<p class="sector">Public sector</p>
+
+### A council planning its winter gritting
+
+A district council budgets each autumn for salt, gritters and overtime. Seasonal forecasts from the Met Office give the odds of a colder or milder winter than usual, and the state of the Sun is one of many inputs that shape them.
+
+**What to do:** treat a forecast of a cold winter as a shift in the odds, not a promise. Hold salt stocks for a bad winter every year. Use the long-term trend, fewer frosts but heavier rain, for decisions that last decades: drainage, culverts, road surfaces.
+
+**The lesson:** the Sun belongs in the seasonal plan, greenhouse gases in the capital plan.
+</div>
+
+<div class="example" markdown="1">
+<p class="sector">Agriculture and food</p>
+
+### A farmer deciding when to house cattle
+
+A County Antrim beef farmer wants to know whether to plan for an early housing date and extra silage. A long-range forecast may suggest a cold, dry spell or a mild, wet winter.
+
+**What to do:** use seasonal outlooks to nudge silage and bedding stocks, but plan buildings, slurry storage and drainage for the trend: wetter winters and more intense rain, which is what the climate projections for Northern Ireland point to.
+
+**The lesson:** a forecaster who reads the Sun may help with this winter. They cannot tell you what the next twenty will look like.
+</div>
+
+<div class="example" markdown="1">
+<p class="sector">Manufacturing</p>
+
+### A board writing its climate risk statement
+
+A mid-sized manufacturer is asked by a bank or a large customer to describe its climate-related risks. A director suggests saying that warming is “mostly natural”.
+
+**What to do:** do not. Lenders and customers expect climate scenarios based on the IPCC and national projections, and a statement that contradicts them will be challenged and may count against you. Describe the physical risks (flooding, heat, supply disruption) and the transition risks (carbon prices, CBAM, customer targets) instead.
+
+**The lesson:** whatever individual directors believe, the risk statement must rest on the published evidence.
+</div>
 
 ## So, was it the Sun?
 
@@ -97,4 +155,5 @@ Checked 17 November 2026.
 - **Solar Cycle 25:** NASA Scientific Visualization Studio, [solar maximum announcement, 15 October 2024](https://svs.gsfc.nasa.gov/14683/) · Royal Observatory of Belgium (SIDC), [Solar cycle 25 reached its maximum in October 2024](https://sidc.be/article/solar-cycle-25-reached-its-maximum-october-2024).
 - **Stratosphere fingerprint:** Santer et al. 2023, PNAS, [doi:10.1073/pnas.2300758120](https://doi.org/10.1073/pnas.2300758120) (read via a news report; the paper itself not opened).
 - **Sun and winters:** Ineson et al. 2011, *Nature Geoscience* 4, 753–757, [doi:10.1038/ngeo1282](https://doi.org/10.1038/ngeo1282) · Imperial College, [Solar variability helps explain cold winters](https://imperial.ac.uk/news/102866/solar-variability-helps-explain-cold-winters), 10 October 2011.
+- **Northern Ireland:** [Climate Change Act (Northern Ireland) 2022](https://www.legislation.gov.uk/nia/2022/31/contents). The examples are illustrative; the statement that NI projections point to wetter winters and more intense rain follows the Met Office UK Climate Projections (UKCP18) but was not re-checked today.
 - **Piers Corbyn:** Imperial College, [Imperial magazine issue 41, “United we stand”](https://www.imperial.ac.uk/be-inspired/magazine/issue-41/our-imperial/) (first sabbatical President; Physics 1968) · WeatherAction founding year and method: The Register, 29 October 2009 (secondary) and his LinkedIn profile. The RCSA Honorary Vice-Presidency is from my own recollection; I have not found a published record. His MSc year is given differently by different sources, so it is left out.

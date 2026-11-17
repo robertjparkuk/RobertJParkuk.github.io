@@ -310,6 +310,95 @@ def fingerprint():
         'The second pattern is what satellites and weather balloons measure.', defs + b)
 
 
+def ni_split():
+    w, h = 900, 330
+    b = text(20, 30, 'Northern Ireland emissions, 2024: by gas and by sector', 20, INK, 'start', '700')
+    b += text(20, 52, 'Share of 22.2 MtCO₂e (AR5, 100-year GWPs). Source: DAERA and NISRA, published 9 June 2026.', 13, MUTED, 'start')
+    rows = [('By gas', [('Carbon dioxide', 61.5, INK), ('Methane', 29.5, RED), ('Nitrous oxide', 8.0, '#D98C8C'), ('F-gases', 0.9, GREY)]),
+            ('By sector', [('Agriculture', 31.4, RED), ('Transport', 21.3, INK), ('Buildings', 15.5, '#5A5A5A'), ('Land use', 11.7, '#8C8C8C'),
+                           ('Electricity', 10.8, '#B8B8B8'), ('Industry', 5.5, '#D98C8C'), ('Waste', 3.8, '#F2D6D6')])]
+    L, W = 120, 760
+    for i, (lab, parts) in enumerate(rows):
+        y = 90 + i * 120
+        b += text(L - 12, y + 30, lab, 14, INK, 'end', '700')
+        x = L
+        small = []
+        tot = sum(p for _, p, _ in parts)
+        for j, (name, pct, col) in enumerate(parts):
+            ww = W * pct / tot
+            b += f'<rect x="{x:.1f}" y="{y}" width="{max(ww-2,1):.1f}" height="50" fill="{col}"><title>{e(name)}: {pct}%</title></rect>'
+            if ww > 70:
+                ink = '#fff' if col in (INK, RED, '#5A5A5A') else INK
+                b += text(x + ww / 2, y + 22, name, 12.5, ink, weight='700') + text(x + ww / 2, y + 39, f'{pct}%', 12, ink)
+            else:
+                small.append((name, pct, col))
+            x += ww
+        lx = L + W
+        for name, pct, col in reversed(small):
+            t = f'{name} {pct}%'
+            tw = len(t) * 6.6
+            b += text(lx, y + 72, t, 12, INK, 'end')
+            b += f'<rect x="{lx - tw - 16:.1f}" y="{y+62}" width="11" height="11" fill="{col}"/>'
+            lx -= tw + 30
+    svg('ni-emissions-split.svg', w, h, 'Northern Ireland greenhouse gas emissions in 2024 by gas and by sector',
+        'By gas: carbon dioxide 61.5%, methane 29.5%, nitrous oxide 8.0%, F-gases 0.9%. By sector: agriculture 31.4%, domestic transport 21.3%, buildings and product uses 15.5%, '
+        'land use 11.7%, electricity supply 10.8%, industry 5.5%, waste 3.8%. Total 22.2 million tonnes CO2 equivalent, using AR5 100-year GWPs.', b)
+
+
+def solar_cycle():
+    w, h = 900, 580
+    cx, cy, R = 330, 310, 145
+    b = text(20, 30, 'The solar cycle: about 11 years, minimum to minimum', 20, INK, 'start', '700')
+    b += text(20, 52, 'Solar Cycle 25 peaked in October 2024 (smoothed sunspot number 161) and is now declining.', 13, MUTED, 'start')
+    b += f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="none" stroke="{RULE}" stroke-width="14"/>'
+    stages = [(90, 'Solar minimum', 'Few or no sunspots', 'Ultraviolet at its lowest', False),
+              (0, 'Rising', 'Spots appear', 'about 4 years', False),
+              (-90, 'Solar maximum', 'Most spots, flares, aurora', 'About 0.1% brighter', True),
+              (180, 'Declining', 'Spots fade', 'about 7 years', False)]
+    for ang, name, l1, l2, hot in stages:
+        a = math.radians(ang)
+        x, y = cx + R * math.cos(a), cy - R * math.sin(a)
+        b += f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{30 if hot else 24}" fill="{RED if hot else "#fff"}" stroke="{RED}" stroke-width="2.5"/>'
+        if hot:
+            for k in range(12):
+                aa = math.radians(k * 30)
+                b += f'<line x1="{x+36*math.cos(aa):.1f}" y1="{y+36*math.sin(aa):.1f}" x2="{x+46*math.cos(aa):.1f}" y2="{y+46*math.sin(aa):.1f}" stroke="{RED}" stroke-width="2"/>'
+        dx = {90: 0, 0: 1, -90: 0, 180: -1}[ang]
+        dy = {90: -1, 0: 0, -90: 1, 180: 0}[ang]
+        if dx:
+            tx, anc = x + dx * 42, 'start' if dx > 0 else 'end'
+            ty = y - 6
+        else:
+            tx, anc = x, 'middle'
+            ty = y + (-48 if dy < 0 else 64) if ang == 90 else y + 64
+        if ang == 90:
+            ty = y - 62
+        b += text(tx, ty, name, 14, INK, anc, '700') + text(tx, ty + 17, l1, 12, MUTED, anc) + text(tx, ty + 32, l2, 12, MUTED, anc)
+    # arrows round the ring (clockwise in screen terms: min top -> rising right -> max bottom -> declining left)
+    for a0 in (45, -45, -135, 135):
+        a = math.radians(a0)
+        x, y = cx + R * math.cos(a), cy - R * math.sin(a)
+        rot = -a0 + 90
+        b += f'<path d="M-7 -6 L7 0 L-7 6 z" fill="{RED}" transform="translate({x:.1f} {y:.1f}) rotate({rot})"/>'
+    b += text(cx, cy - 6, '≈ 11 years', 18, INK, weight='700') + text(cx, cy + 16, 'magnetic field flips', 12, MUTED) + text(cx, cy + 31, 'every cycle (22-year Hale cycle)', 12, MUTED)
+    # side panel
+    px = 620
+    b += f'<rect x="{px}" y="90" width="260" height="400" rx="8" fill="{TINT}" stroke="{RED}" stroke-width="1.5"/>'
+    lines = [('What changes over a cycle', True), ('Total sunlight: about 0.1%,', False), ('roughly 1 W/m² in a strong cycle', False), ('', False),
+             ('Ultraviolet: much more than', False), ('total sunlight, enough to', False), ('alter the stratosphere', False), ('', False),
+             ('Solar wind and flares: space', False), ('weather, aurora, radio and', False), ('satellite disruption', False), ('', False),
+             ('What has not changed', True), ('No upward trend in total', False), ('sunlight since satellites', False), ('began measuring in 1978', False)]
+    yy = 120
+    for t, bold in lines:
+        if t:
+            b += text(px + 18, yy, t, 13.5 if bold else 12.5, RED if bold else INK, 'start', '700' if bold else '400')
+        yy += 22 if t else 10
+    svg('solar-cycle.svg', w, h, 'The 11-year solar cycle',
+        'A ring showing the four phases of the solar cycle: solar minimum with few sunspots and the lowest ultraviolet; a rising phase of about four years; solar maximum with the most sunspots, flares and aurora, when the Sun is about 0.1% brighter; '
+        'and a declining phase of about seven years. The magnetic field flips every cycle, giving a 22-year Hale cycle. Solar Cycle 25 peaked in October 2024. '
+        'Over a cycle total sunlight changes by about 0.1%, ultraviolet by much more. There has been no upward trend in total sunlight since 1978.', b)
+
+
 if __name__ == '__main__':
-    molecules(); co2_modes(); spectrum(); fates(); fingerprint()
+    molecules(); co2_modes(); spectrum(); fates(); fingerprint(); ni_split(); solar_cycle()
     print('ok')
