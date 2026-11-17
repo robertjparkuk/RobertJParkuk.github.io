@@ -25,6 +25,17 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.37.0 — 17 November 2026: NI market-based electricity in the Carbon Jigsaw
+
+*Robert's instruction, 17 Nov 05:04 ("Build it"): a Scope 2 checker using NI supplier fuel mix figures, added to the Carbon Jigsaw. Awaiting Robert's merge.*
+
+- `tools/carbon-jigsaw.html`: the Electricity piece now asks who supplies your electricity (the eight NI suppliers in the Utility Regulator's 2024 Fuel Mix Disclosure, plus "Other or don't know", which uses the all-island average of 163 g/kWh). It shows a market-based figure next to the location-based DESNZ figure, the difference, and what a 100% renewable supplier would change. The Scope 2 tile in the results shows both.
+- New "Why two electricity figures?" note: location- versus market-based, why NI uses the all-island grid, CO₂-only and certificate caveats, link to the report.
+- Replaces the old "backed by renewable certificates?" question. Worked example now uses Power NI (256 g/kWh): market-based 56.7 t against 29.0 t location-based.
+- Supplier figures sit in one `FMD` block at the top of the script. **Annual update:** when the UR publishes the 2025 report (expected late 2026), change `year`, `published`, `url`, `allIsland` and the supplier list, and the 2024 wording in the page footnote.
+- Source: Utility Regulator, *Fuel Mix Disclosure and CO2 Emissions 2024* (Nov 2025), Table 2 and section 4.3.
+- `tools.md`: Carbon Jigsaw description mentions market-based electricity.
+
 ### v0.36.0 — 17 November 2026: Learn Batch A
 
 - Four new explainers in the house style: `hydrogen-by-colour.md` (order 5), `fertiliser-and-the-nitrogen-cycle.md` (6), `carbon-capture-and-carbon-negative.md` (7), `offsets.md` (8).

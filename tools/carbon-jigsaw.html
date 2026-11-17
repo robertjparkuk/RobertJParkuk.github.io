@@ -72,6 +72,7 @@ main{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;
 .f.full{grid-column:1/-1}
 .f label{font-size:14px;font-weight:600}
 .f small{font-size:12px;color:var(--muted)}
+.why{margin-top:10px}.why summary{cursor:pointer;font-weight:600;font-size:14px}
 input,select{font:16px var(--body);color:var(--ink);background:var(--field);border:1px solid var(--rule);border-radius:6px;padding:8px 10px;width:100%;min-width:0}
 input[type=checkbox],input[type=radio]{width:auto}
 .opts{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:15px}
@@ -151,7 +152,7 @@ section.results h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);m
       <a href="sample-bills/sample-05-waste-collection.pdf">Waste collection</a>
       <a href="sample-bills/sample-06-business-rates.pdf">Business rates</a>
     </div>
-    <div>Emission factors come from the UK Government GHG Conversion Factors for Company Reporting 2026 (DESNZ, June 2026), using location-based UK grid electricity. This is a rough estimate for information only. It is not a verified carbon inventory or legal advice, and it does not include well-to-tank emissions or most Scope 3 categories.</div>
+    <div>Emission factors come from the UK Government GHG Conversion Factors for Company Reporting 2026 (DESNZ, June 2026), using location-based UK grid electricity. Market-based electricity uses each NI supplier's fuel mix disclosure (Utility Regulator, 2024 figures). This is a rough estimate for information only. It is not a verified carbon inventory or legal advice, and it does not include well-to-tank emissions or most Scope 3 categories.</div>
   </div>
 </div>
 
@@ -169,6 +170,16 @@ const F={
   fDom:0.22928, fShort:0.12786, fLong:0.15282,   // flights with RF, average passenger (passenger.km)
   hotel:10.4, home:0.32393                       // UK hotel room night; homeworking per FTE hour
 };
+// ---- Market-based Scope 2: NI supplier fuel mix disclosure (Utility Regulator / SEM Committee) ----
+// CO2 only, g per kWh, after renewable certificates (GOs/REGOs). Update this block when each year's report is published.
+const FMD={
+  year:2024, published:"November 2025",
+  url:"https://www.uregni.gov.uk/files/uregni/documents/2025-11/FMD%202024%20Publication%20.pdf",
+  allIsland:163,
+  suppliers:{"3T":0,"Budget Energy":0,"Click Energy":148,"Electric Ireland":161,"Flogas":0,"Go Power":205,"Power NI":256,"SSE Airtricity":0}
+};
+const OTHER_SUP="Other or don't know";
+function mktG(d){if(d.supplier in FMD.suppliers)return FMD.suppliers[d.supplier];if(d.supplier===OTHER_SUP)return FMD.allIsland;return null;}
 const GWP={R404A:3943,R410A:1924,R407C:1624,R134a:1300,R32:677,R290:0.06};
 const KM={dom:1040,short:2000,long:11000}; // assumed return-trip distances from Belfast
 const WEEKS=46, DAYH=7.5, MI=1.609344;
@@ -223,7 +234,7 @@ const ann=(v,m)=>{const mm=num(m)||12;return num(v)*12/Math.min(12,Math.max(1,mm
 function calc(id){
   const d=S[id]||{};
   switch(id){
-    case "elec":{const k=ann(d.kwh,d.months);return{s2:k*F.elec,s3:k*F.td,detail:`${fmt(k)} kWh a year`};}
+    case "elec":{const k=ann(d.kwh,d.months);const g=mktG(d);return{s2:k*F.elec,s3:k*F.td,mkt:g===null?null:k*g/1000,detail:`${fmt(k)} kWh a year`};}
     case "gas":{const k=ann(d.kwh,d.months);return{s1:k*F.gas,detail:`${fmt(k)} kWh a year`};}
     case "oil":return{s1:num(d.kero)*F.kero+num(d.gasoil)*F.gasoil+num(d.lpg)*F.lpg};
     case "veh":return{s1:num(d.diesel)*F.diesel+num(d.petrol)*F.petrol};
@@ -319,7 +330,10 @@ const FORMS={
   ${radios("boundary","asked","Has a customer, lender or tender asked for your carbon data?",[["no","No"],["yes","Yes"]])}</div>`,
  elec:()=>`<p class="find">On your electricity bill: the <b>total kWh</b> used. Many NI bills also show the last 12 months' total. <a href="sample-bills/sample-01-electricity.pdf">See the sample bill</a>.</p>
   <div class="fields">${fld("elec","kwh","Electricity used (kWh)",{ph:"221,640"})}${months("elec")}${Q("elec")}
-  ${radios("elec","green","Is your tariff backed by renewable certificates?",[["no","No or don't know"],["yes","Yes"]])}</div>`,
+  ${fld("elec","supplier","Who supplies your electricity?",{select:[...Object.keys(FMD.suppliers),OTHER_SUP],full:true,help:`Gives your market-based figure from your supplier's ${FMD.year} fuel mix, the figure printed on NI bills.`})}</div>
+  <details class="why"><summary>Why two electricity figures?</summary>
+  <p style="font-size:14px">The <b>location-based</b> figure uses the average UK grid, as SECR requires. The <b>market-based</b> figure uses what your supplier actually bought, including renewable certificates. Most frameworks now ask for both.</p>
+  <p style="font-size:14px">Northern Ireland is on the all-island grid with Ireland, not the GB grid, so NI suppliers report their own fuel mix to the Utility Regulator each year. The all-island average for ${FMD.year} was ${FMD.allIsland} g CO₂ per kWh. These figures count CO₂ only and rest on certificates rather than metered generation, so treat them as a guide. <a href="${FMD.url}" target="_blank" rel="noopener">Read the ${FMD.year} report (PDF)</a>.</p></details>`,
  gas:()=>`<p class="find">On your gas bill: the <b>kWh</b> figure, not the cubic metres. <a href="sample-bills/sample-02-natural-gas.pdf">See the sample bill</a>.</p>
   <div class="fields">${fld("gas","kwh","Gas used (kWh)",{ph:"42,333"})}${months("gas")}${Q("gas")}</div>`,
  oil:()=>`<p class="find">Add up the <b>litres</b> on every delivery docket for the year. <a href="sample-bills/sample-03-heating-oil.pdf">See the sample docket</a>.</p>
@@ -369,7 +383,13 @@ function updateCalc(){
   const c=calc(sel);const tot=(c.s1||0)+(c.s2||0)+(c.s3||0);
   if((S[sel]||{}).na){o.innerHTML="Marked as not applicable to your business.";return;}
   let extra="";
-  if(sel==="elec"&&(S.elec||{}).green==="yes")extra=`<br><small>A certificate-backed tariff can lower your market-based Scope 2 figure. This checker reports the location-based figure, which is the standard starting point.</small>`;
+  if(sel==="elec"){const d=S.elec||{};
+    if(c.mkt!==null&&c.mkt!==undefined){
+      const diff=c.mkt-c.s2;
+      extra=`<br><span style="font-weight:600">Market-based: ${fmt(t(c.mkt),2)} t CO₂</span> · ${d.supplier===OTHER_SUP?`all-island average, ${FMD.allIsland}`:`${d.supplier}, ${FMD.suppliers[d.supplier]}`} g/kWh (${FMD.year} fuel mix)`;
+      extra+=`<br><small>${Math.abs(diff)<c.s2*0.02?"About the same as":diff>0?`${fmt(t(diff),2)} t higher than`:`${fmt(t(-diff),2)} t lower than`} the location-based ${fmt(t(c.s2),2)} t. ${FMD.suppliers[d.supplier]===0?"A zero market-based figure comes from renewable certificates. It doesn't change the location-based figure, which most reports still lead with.":`A 100% renewable supplier would bring the market-based figure to zero; your location-based figure would stay at ${fmt(t(c.s2),2)} t.`}</small>`;
+    } else if(d.green==="yes")extra=`<br><small>Choose your supplier above to see your market-based figure.</small>`;
+  }
   if(sel==="water"){const w=S.water||{};
     if((w.src||"mains")!=="mains")extra+=`<br><small>Water you draw yourself has no water-company emissions. The energy to pump and treat it is already in your electricity or fuel. In NI, abstracting more than a small daily volume may need an NIEA abstraction licence.</small>`;
     if(w.ww==="onsite")extra+=`<br><small>An on-site treatment plant can release methane and nitrous oxide. Those are your Scope 1, and they need a specialist estimate, so this checker doesn't calculate them.</small>`;}
@@ -394,6 +414,7 @@ function renderMeter(){
 }
 function renderResults(){
   const T=totals();const b=S.boundary||{};const fte=num(b.fte),turn=num(b.turnover);
+  const ce=calc("elec");const mk=state("elec")==="na"||ce.mkt===undefined?null:ce.mkt;
   const max=T.by.length?T.by[0].kg:1;
   const miss=P.filter(p=>state(p.id)==="empty"||p.locked);
   const flags=[];
@@ -406,7 +427,7 @@ function renderResults(){
    <h2>Your rough footprint</h2>
    <div class="meter">
      <div class="m"><div class="k" style="color:var(--s1)">Scope 1</div><div class="v">${fmt(t(T.s1),1)} t</div><div class="s">fuel, vehicles, refrigerants</div></div>
-     <div class="m"><div class="k" style="color:var(--s2)">Scope 2</div><div class="v">${fmt(t(T.s2),1)} t</div><div class="s">electricity, location-based</div></div>
+     <div class="m"><div class="k" style="color:var(--s2)">Scope 2</div><div class="v">${fmt(t(T.s2),1)} t</div><div class="s">electricity, location-based${mk!==null?`<br>market-based: ${fmt(t(mk),1)} t`:""}</div></div>
      <div class="m"><div class="k" style="color:var(--s3)">Scope 3 (partial)</div><div class="v">${fmt(t(T.s3),1)} t</div><div class="s">only the pieces you filled</div></div>
    </div>
    <div class="rgrid">
@@ -427,7 +448,7 @@ function renderResults(){
 
 // ---- Worked example (matches the sample bills) ----
 const EX={boundary:{name:"Carnlough Precision Engineering Ltd (example)",sector:"Manufacturing: engineering and metals",sites:"1",fte:"25",turnover:"4500000",hours:"50",year:"Oct 2025 – Sep 2026",cbam:"yes",asked:"yes",q:"act"},
- elec:{kwh:"221640",months:"12",q:"act",green:"no"},gas:{kwh:"42333",months:"3",q:"act"},oil:{kero:"6750",gasoil:"0",lpg:"0",q:"est"},
+ elec:{kwh:"221640",months:"12",q:"act",supplier:"Power NI"},gas:{kwh:"42333",months:"3",q:"act"},oil:{kero:"6750",gasoil:"0",lpg:"0",q:"est"},
  veh:{diesel:"9800",petrol:"0",q:"act"},ref:{gas:"R410A",kg:"2.5",q:"act"},gen:{has:"no",q:"act"},water:{supply:"312",sewer:"296",months:"6",q:"act"},
  waste:{landfill:"0",efw:"0.94",recyc:"2.03",food:"0.18",months:"1",q:"act"},travel:{miles:"8000",railkm:"0",dom:"6",short:"2",long:"0",nights:"10",q:"est"}};
 document.getElementById("exBtn").onclick=()=>{S=JSON.parse(JSON.stringify(EX));save();pick("boundary");update();};

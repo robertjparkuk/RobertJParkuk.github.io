@@ -12,7 +12,7 @@ New to carbon? Start with the plain-English explainers in [Learn]({{ '/learn/' |
 
 <h2 class="tool-h"><img src="{{ '/assets/icons/carbon-jigsaw.svg' | relative_url }}" alt="" width="48" height="48">The Carbon Jigsaw</h2>
 
-A rough carbon checker for Northern Ireland businesses. Fill in each piece of the jigsaw from your bills and records: electricity, gas, oil, vehicles, refrigerants, water, waste, travel and commuting. You'll get a rough Scope 1, 2 and partial Scope 3 footprint, and the pieces you can't fill show what a full inventory would add. Your figures stay in your browser. Practise first with the sample bills.
+A rough carbon checker for Northern Ireland businesses. Fill in each piece of the jigsaw from your bills and records: electricity, gas, oil, vehicles, refrigerants, water, waste, travel and commuting. You'll get a rough Scope 1, 2 and partial Scope 3 footprint, with electricity shown both location-based and market-based (pick your NI supplier to use its fuel mix disclosure), and the pieces you can't fill show what a full inventory would add. Your figures stay in your browser. Practise first with the sample bills.
 
 [Open the Carbon Jigsaw →]({{ '/tools/carbon-jigsaw.html' | relative_url }})
 
