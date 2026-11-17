@@ -140,7 +140,7 @@ def hydrogen_leak():
              ('More ozone and', 'stratospheric water', 'vapour', False)]
     cycle('hydrogen-indirect-warming.svg', 'Hydrogen is not a greenhouse gas, but a leak still warms',
           'It competes with methane for the hydroxyl radical (OH). Estimated 100-year GWP: 11.6 ± 2.8 (Sand et al. 2023).',
-          nodes, ['Indirect warming', 'about 12 × CO₂ per tonne', 'over 100 years'],
+          nodes, ['Indirect warming', 'about 12 × CO₂ per kg', 'over 100 years'],
           'A four-step loop. Hydrogen leaks from pipes, valves and storage. It reacts with the hydroxyl radical, H2 plus OH gives water and a hydrogen atom, using up the atmosphere’s main cleaning agent. '
           'With less OH, methane lasts longer. The chemistry also produces more ozone and stratospheric water vapour. The result: hydrogen has an estimated 100-year global warming potential of about 11.6, plus or minus 2.8.',
           w=900, h=560, cx=450, cy=310, R=175)
@@ -341,12 +341,12 @@ def ab_vs_ad():
 
 def carbonate_cycle():
     nodes = [('Limestone CaCO₃', 'shells and corals', 'turned to rock', False),
-             ('Kiln: lime and cement', 'CaCO₃ → CaO + CO₂', '0.52 t CO₂ per t clinker', True),
+             ('Kiln: lime and cement', 'CaCO₃ → CaO + CO₂', '0.52 kg CO₂ per kg clinker', True),
              ('Mortar and concrete', 'slowly re-absorb CO₂', 'Ca(OH)₂ + CO₂ → CaCO₃', False),
              ('Captured CO₂ in rock', 'basalt + CO₂ + water', '→ carbonate in <2 years', True)]
     cycle('carbonate-cycle.svg', 'Turning carbon back into stone', 'The carbonate cycle links seashells, cement kilns, lime mortar and the newest way to store CO₂: mineralisation.',
           nodes, ['Carbonate minerals', 'made, broken and', 'made again'],
-          'A four-step cycle. Limestone, calcium carbonate made from ancient shells and corals, is heated in a kiln to make lime and cement, releasing CO2: CaCO3 gives CaO plus CO2, about 0.52 tonnes of CO2 per tonne of clinker. '
+          'A four-step cycle. Limestone, calcium carbonate made from ancient shells and corals, is heated in a kiln to make lime and cement, releasing CO2: CaCO3 gives CaO plus CO2, about 0.52 kilograms of CO2 per kilogram of clinker. '
           'Lime mortar and concrete slowly re-absorb some CO2 as calcium hydroxide turns back into calcium carbonate. Captured CO2 pumped into basalt with water turns into carbonate rock in under two years, as at CarbFix in Iceland, and so back to stone.',
           w=900, h=600, cx=450, cy=330, R=190)
 

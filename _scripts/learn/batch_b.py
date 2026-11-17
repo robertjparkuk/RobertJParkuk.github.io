@@ -264,11 +264,11 @@ def permafrost_stock():
 
 def peat_fluxes():
     w, h = 900, 400
-    L, W, mx = 260, 560, 30
-    b = text(20, 30, 'One hectare of peat grassland: drained against rewetted', 20, INK, 'start', '700')
-    b += text(20, 52, 'Tonnes CO₂e per hectare per year, IPCC 2013 Wetlands Supplement factors, AR5 GWPs. Illustrative arithmetic; real sites vary widely.', 13, MUTED, 'start')
-    data = [('Drained (deep, nutrient-rich)', [(22.4, BROWN, 'CO₂ from rotting peat 22.4'), (2.05, RED, 'methane'), (3.4, '#D98C8C', 'N₂O'), (0.9, GREY, 'dissolved carbon')], 'about 29'),
-            ('Rewetted', [(1.8, BROWN, 'CO₂'), (8.1, RED, 'methane 8.1'), (0.9, GREY, '')], 'about 11')]
+    L, W, mx = 260, 560, 3.0
+    b = text(20, 30, 'Peat grassland, per square metre: drained against rewetted', 20, INK, 'start', '700')
+    b += text(20, 52, 'kg CO₂e per square metre per year, IPCC 2013 Wetlands Supplement factors, AR5 GWPs. Illustrative arithmetic; real sites vary widely.', 13, MUTED, 'start')
+    data = [('Drained (deep, nutrient-rich)', [(2.24, BROWN, 'CO₂ from rotting peat 2.24'), (0.205, RED, 'methane'), (0.34, '#D98C8C', 'N₂O'), (0.09, GREY, 'dissolved carbon')], 'about 2.9'),
+            ('Rewetted', [(0.18, BROWN, 'CO₂'), (0.81, RED, 'methane 0.81'), (0.09, GREY, '')], 'about 1.1')]
     for i, (lab, parts, tot) in enumerate(data):
         y = 90 + i * 110
         b += text(L - 12, y + 28, lab, 14, INK, 'end', '700')
@@ -285,10 +285,10 @@ def peat_fluxes():
     for t, c in [('CO₂ from the peat', BROWN), ('Methane', RED), ('Nitrous oxide', '#D98C8C'), ('Dissolved carbon (as CO₂)', GREY)]:
         b += f'<rect x="{lx}" y="318" width="12" height="12" fill="{c}"/>' + text(lx + 18, 329, t, 12, INK, 'start')
         lx += len(t) * 7 + 40
-    b += text(20, 372, 'Rewetting cuts CO₂ sharply and adds some methane. The net saving here is about 18 t CO₂e per hectare a year.', 12.5, RED, 'start', '700')
+    b += text(20, 372, 'Rewetting cuts CO₂ sharply and adds some methane. The net saving here is about 1.8 kg CO₂e per square metre a year.', 12.5, RED, 'start', '700')
     svg('peat-drained-vs-rewetted.svg', w, h, 'Emissions from drained and rewetted peat grassland',
-        'Stacked bars, tonnes of CO2 equivalent per hectare per year, from IPCC 2013 Wetlands Supplement factors with AR5 GWPs, illustrative: deep-drained nutrient-rich peat grassland about 29, mostly CO2 from rotting peat (22.4) with some methane, nitrous oxide and dissolved carbon; '
-        'rewetted about 11, with CO2 down to 1.8 but methane up to 8.1. Net saving about 18 tonnes per hectare a year.', b)
+        'Stacked bars, kilograms of CO2 equivalent per square metre per year, from IPCC 2013 Wetlands Supplement factors with AR5 GWPs, illustrative: deep-drained nutrient-rich peat grassland about 2.9, mostly CO2 from rotting peat (2.24) with some methane, nitrous oxide and dissolved carbon; '
+        'rewetted about 1.1, with CO2 down to 0.18 but methane up to 0.81. Net saving about 1.8 kilograms per square metre a year.', b)
 
 
 def ni_peat_inventory():

@@ -46,9 +46,9 @@ The peat shrinks and the ground sinks. Some carbon also dissolves and washes out
 
 So a healthy bog is a small methane source but a long-term carbon store. Methane is the price of keeping the peat wet, and studies show it is worth paying: Günther and colleagues (2020) found that rewetting stops the CO₂ losses and that the methane from rewetted peat does not outweigh that benefit; delaying rewetting increases long-term warming.
 
-<figure class="learn-figure"><a href="{{ '/assets/learn/peat-drained-vs-rewetted.svg' | relative_url }}" title="Open the chart full size"><img src="{{ '/assets/learn/peat-drained-vs-rewetted.svg' | relative_url }}" alt="Stacked bars, tonnes of CO2 equivalent per hectare per year, from IPCC 2013 Wetlands Supplement factors with AR5 GWPs, illustrative: deep-drained nutrient-rich peat grassland about 29, mostly CO2 from rotting peat (22.4) with some methane, nitrous oxide and dissolved carbon; rewetted about 11, with CO2 down to 1.8 but methane up to 8.1. Net saving about 18 tonnes per hectare a year." loading="lazy"></a><figcaption>Rewetting swaps a lot of CO₂ for a little methane. Tap or click to open it full size.</figcaption></figure>
+<figure class="learn-figure"><a href="{{ '/assets/learn/peat-drained-vs-rewetted.svg' | relative_url }}" title="Open the chart full size"><img src="{{ '/assets/learn/peat-drained-vs-rewetted.svg' | relative_url }}" alt="Stacked bars, kilograms of CO2 equivalent per square metre per year, from IPCC 2013 Wetlands Supplement factors with AR5 GWPs, illustrative: deep-drained nutrient-rich peat grassland about 2.9, mostly CO2 from rotting peat (2.24) with some methane, nitrous oxide and dissolved carbon; rewetted about 1.1, with CO2 down to 0.18 but methane up to 0.81. Net saving about 1.8 kilograms per square metre a year." loading="lazy"></a><figcaption>Rewetting swaps a lot of CO₂ for a little methane. Tap or click to open it full size.</figcaption></figure>
 
-Using the IPCC's default factors for temperate peat, one hectare of deep-drained, fertile peat grassland emits roughly **29 tonnes of CO₂e a year**; rewetted, about **11**. These are illustrative sums from international defaults; real sites vary widely.
+Using the IPCC's default factors for temperate peat, every square metre of deep-drained, fertile peat grassland emits roughly **2.9 kg of CO₂e a year**; rewetted, about **1.1 kg**. Across a hectare (10,000 m²) that is about 29,000 kg against 11,000 kg. These are illustrative sums from international defaults; real sites vary widely.
 
 **Dry peat burns.** A drained bog in a dry spring is fuel. In April 2025 there were nearly 150 wildfires in the Mournes over a single weekend, and the Fire and Rescue Service declared a major incident; DAERA says such fires are almost always started deliberately.
 
@@ -99,7 +99,7 @@ A lowland farm grazes cattle on drained peat soils that grow good grass but keep
 
 | | Drained grassland | Rewetted or water table raised |
 |---|---|---|
-| Emissions (IPCC defaults, illustrative) | About 29 t CO₂e/ha/yr | About 11 t CO₂e/ha/yr |
+| Emissions (IPCC defaults, illustrative) | About 2.9 kg CO₂e per m² a year (29,000 kg per hectare) | About 1.1 kg CO₂e per m² a year (11,000 kg per hectare) |
 | Grass and stocking | Higher | Lower, or a different use (wetter grazing, paludiculture) |
 | Income options | Grazing | Grazing plus restoration funding or carbon credits |
 

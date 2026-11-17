@@ -25,6 +25,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.37.3 — 17 November 2026: CO₂e units in kg
+
+- One unit rule across the Learn pages, at Robert's request: every per-unit figure (per kg of product, per kg of gas, per m², per MWh) is in **kg CO₂e**, written with a subscript ₂. Totals for a site, company or country stay in tonnes (1 tonne = 1,000 kg), and the carbon-credit unit stays one tonne by definition.
+- Converted: GWP page (formula, worked table, methane flaring, chiller example, answer), hydrogen gas-boiler example (180 / 300–360 / 80 kg), fertiliser (3.3 kg CO₂e per kg N), cement process CO₂ (0.52 kg per kg clinker), peat (2.9 against 1.1 kg CO₂e per m² a year), refrigerant example on the "everything is carbon" page; CO2e notation fixed on two pages.
+- Diagrams regenerated: `peat-drained-vs-rewetted`, `methane-vent-flare-use`, `gwp-decay-curves`, `carbonate-cycle`, `hydrogen-indirect-warming`.
+- `HOW-TO-LEARN.md`: unit rule added to the house rules.
+
 ### v0.37.2 — 17 November 2026: CO₂e and GWP in detail
 
 - New explainer `co2e-and-global-warming-potential.md` (Carbon basics, order 13): GWP definition and calculation, strength vs lifetime, GWP-20 vs GWP-100, GWP*, AR5 vs AR6, natural vs man-made gases, Earth's carbon stores (air to mantle), methane capture and flaring, N₂O destruction, F-gas recovery. Replaces the planned Batch D page on gas lifetimes.

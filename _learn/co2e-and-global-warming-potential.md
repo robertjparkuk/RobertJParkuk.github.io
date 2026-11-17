@@ -1,6 +1,6 @@
 ---
 title: "CO₂e and global warming potential, in detail"
-answer: "CO₂e (carbon dioxide equivalent) puts every greenhouse gas into one unit: tonnes of gas multiplied by its global warming potential (GWP). A GWP compares the heat one kilogram of a gas traps over a set period, usually 100 years, with one kilogram of CO₂. It depends on two things: how strongly the gas absorbs heat and how long it lasts. That is why a short-lived gas can have a tiny GWP however potent it is, and why the same gas has different GWPs over 20 and 100 years."
+answer: "CO₂e (carbon dioxide equivalent) puts every greenhouse gas into one unit: kilograms of gas multiplied by its global warming potential (GWP). A GWP compares the heat one kilogram of a gas traps over a set period, usually 100 years, with one kilogram of CO₂. It depends on two things: how strongly the gas absorbs heat and how long it lasts. That is why a short-lived gas can have a tiny GWP however potent it is, and why the same gas has different GWPs over 20 and 100 years."
 description: "CO₂e and GWP explained properly: how a GWP is calculated, strength and lifetime, GWP-20 against GWP-100, GWP*, natural and man-made gases, where Earth's carbon is stored, and whether methane and nitrous oxide can be captured or burned."
 theme: "Carbon basics"
 order: 13
@@ -9,21 +9,21 @@ read_time: "17-minute"
 checked: 2026-11-17
 ---
 
-Almost every carbon number you see, on a footprint, a CBAM declaration, a council report or a product label, is in **tonnes of CO₂e**. Most people know it means “carbon dioxide equivalent”. Fewer know what the equivalence actually is, why it changes depending on who you ask, or why a gas that vanishes in days can count for almost nothing while CO₂, the weakest of the lot per kilogram, is the one that matters most.
+Almost every carbon number you see, on a footprint, a CBAM declaration, a council report or a product label, is in **CO₂e**: kilograms for a product or a litre of fuel, tonnes for a company or a country (1 tonne = 1,000 kg). On these pages per-unit figures are given in kg. Most people know it means “carbon dioxide equivalent”. Fewer know what the equivalence actually is, why it changes depending on who you ask, or why a gas that vanishes in days can count for almost nothing while CO₂, the weakest of the lot per kilogram, is the one that matters most.
 
 This page goes one level deeper than [Why is everything counted as “carbon”?]({{ '/learn/why-everything-is-carbon/' | relative_url }}).
 
 ## CO₂e in one line
 
-**tonnes of CO₂e = tonnes of gas × GWP**
+**kg of CO₂e = kg of gas × GWP**
 
 | Gas released | GWP-100 (AR5, used in UK reporting) | CO₂e |
 |---|---|---|
-| 1 tonne of CO₂ | 1 | 1 tonne |
-| 1 tonne of methane | 28 | 28 tonnes |
-| 1 tonne of nitrous oxide | 265 | 265 tonnes |
-| 10 kg of HFC-134a refrigerant | 1,300 | 13 tonnes |
-| 1 kg of SF₆ | 23,500 | 23.5 tonnes |
+| 1 kg of CO₂ | 1 | 1 kg |
+| 1 kg of methane | 28 | 28 kg |
+| 1 kg of nitrous oxide | 265 | 265 kg |
+| 10 kg of HFC-134a refrigerant | 1,300 | 13,000 kg |
+| 1 kg of SF₆ | 23,500 | 23,500 kg |
 
 Add the right-hand column up and you have a carbon footprint. Everything interesting is hidden in the middle column.
 
@@ -122,7 +122,7 @@ None of them; each answers a different question.
 
 | Metric | The question it answers | Who uses it |
 |---|---|---|
-| **GWP-100** | How much heat does a tonne trap over a century, compared with CO₂? | UK and NI inventories, DESNZ conversion factors, the Paris Agreement rulebook, most corporate reporting |
+| **GWP-100** | How much heat does a kilogram trap over a century, compared with CO₂? | UK and NI inventories, DESNZ conversion factors, the Paris Agreement rulebook, most corporate reporting |
 | **GWP-20** | How much over the next 20 years? | Used to highlight short-term warming, especially methane |
 | **GTP** (global temperature change potential) | How much warmer would it be at a given future year? | IPCC reports; rarely used in rules |
 | **GWP*** (“GWP-star”) | How much warming does a *change* in a short-lived gas's emission rate cause? | Proposed by Oxford researchers; debated, not used in official inventories |
@@ -155,9 +155,9 @@ Methane is natural gas. Where it comes out of a point source (a landfill, a slur
 
 **CH₄ + 2O₂ → CO₂ + 2H₂O**
 
-Sixteen grams of methane become 44 grams of CO₂, so **one tonne of methane becomes 2.75 tonnes of CO₂**. On a GWP-100 of 28, that turns 28 tonnes of CO₂e into 2.75: a cut of about 90%. If the methane is **biogenic** (from rotting waste, slurry or crops), inventories treat the resulting CO₂ as part of the natural carbon cycle and count it as zero, so the cut is close to 100%. Better still is to **use** it: burned in an engine or boiler, it replaces fossil fuel that would otherwise have been burned.
+Sixteen grams of methane become 44 grams of CO₂, so **1 kg of methane becomes 2.75 kg of CO₂**. On a GWP-100 of 28, that turns 28 kg of CO₂e into 2.75 kg: a cut of about 90%. If the methane is **biogenic** (from rotting waste, slurry or crops), inventories treat the resulting CO₂ as part of the natural carbon cycle and count it as zero, so the cut is close to 100%. Better still is to **use** it: burned in an engine or boiler, it replaces fossil fuel that would otherwise have been burned.
 
-<figure class="learn-figure"><a href="{{ '/assets/learn/methane-vent-flare-use.svg' | relative_url }}" title="Open the diagram full size"><img src="{{ '/assets/learn/methane-vent-flare-use.svg' | relative_url }}" alt="One tonne of methane vented to the air counts as 28 tonnes of CO2 equivalent (GWP-100, AR5). Flared, it burns to 2.75 tonnes of CO2, about 90% less warming. Burned for heat or power, it gives the same 2.75 tonnes but replaces fossil fuel that would otherwise be burned. If the methane is biogenic, inventories count the CO2 as zero. Flares are not perfect and some methane slips through." loading="lazy"></a><figcaption>A flare is a crude fix; a digester or engine is a better one. Tap or click to open it full size.</figcaption></figure>
+<figure class="learn-figure"><a href="{{ '/assets/learn/methane-vent-flare-use.svg' | relative_url }}" title="Open the diagram full size"><img src="{{ '/assets/learn/methane-vent-flare-use.svg' | relative_url }}" alt="One kilogram of methane vented to the air counts as 28 kilograms of CO2 equivalent (GWP-100, AR5). Flared, it burns to 2.75 kilograms of CO2, about 90% less warming. Burned for heat or power, it gives the same 2.75 kilograms but replaces fossil fuel that would otherwise be burned. If the methane is biogenic, inventories count the CO2 as zero. Flares are not perfect and some methane slips through." loading="lazy"></a><figcaption>A flare is a crude fix; a digester or engine is a better one. Tap or click to open it full size.</figcaption></figure>
 
 Flares are not perfect: some methane slips through unburned. That is why the EU Methane Regulation, (EU) 2024/1787, in force since 4 August 2024, banned routine venting and flaring in the EU oil and gas sector from 5 February 2026 (with exceptions for emergencies and where unavoidable) and set efficiency requirements for the flares that remain.
 
@@ -169,7 +169,7 @@ In factories, nitrous oxide comes out of a chimney, so it can be destroyed. At n
 
 **2N₂O → 2N₂ + O₂**
 
-Manufacturers report cuts of up to about 90% from catalysts inside the burner and up to about 99% from catalysts treating the tail gas, at low cost per tonne of CO₂e. That is why European fertiliser has a much lower footprint than fertiliser from plants without abatement (see [Fertiliser and the nitrogen cycle]({{ '/learn/fertiliser-and-the-nitrogen-cycle/' | relative_url }})).
+Manufacturers report cuts of up to about 90% from catalysts inside the burner and up to about 99% from catalysts treating the tail gas, at low cost for each kilogram of CO₂e avoided. That is why European fertiliser has a much lower footprint than fertiliser from plants without abatement (see [Fertiliser and the nitrogen cycle]({{ '/learn/fertiliser-and-the-nitrogen-cycle/' | relative_url }})).
 
 On fields, nitrous oxide seeps out of soil over whole farms; there is nothing to capture. The answers are to apply less nitrogen, at the right time, in the right form, and to use nitrification inhibitors that slow the soil bacteria that make it.
 
@@ -214,7 +214,7 @@ A food factory's chiller holds 50 kg of HFC-134a and loses about 10% a year.
 |---|---|---|
 | Annual leak | 5 kg | 5 kg |
 | GWP-100 (AR6) | 1,530 | 1.37 (lifetime 19 days) |
-| CO₂e | 7.65 tonnes | about 0.007 tonnes |
+| CO₂e | 7,650 kg | about 7 kg |
 
 **The lesson:** the same leak, about 1,100 times smaller in CO₂e, because the new gas lasts days, not years. (Some low-GWP blends sit in the hundreds, so check the actual product.) Check safety, flammability and the PFAS question before switching: some HFOs fall within broad PFAS definitions and break down to persistent trifluoroacetic acid, an issue under active review.
 </div>
@@ -226,7 +226,7 @@ A food factory's chiller holds 50 kg of HFC-134a and loses about 10% a year.
 
 A council owns a closed landfill still producing gas.
 
-**What to check:** whether the gas is collected and flared or used for power; flare efficiency; and how much escapes through the cap. Every tonne of methane captured and burned cuts about 90% of its warming effect, and more if the energy is used.
+**What to check:** whether the gas is collected and flared or used for power; flare efficiency; and how much escapes through the cap. Every kilogram of methane captured and burned cuts about 90% of its warming effect, and more if the energy is used.
 
 **The lesson:** for most councils, landfill methane is the single biggest emission they can still do something about at source.
 </div>

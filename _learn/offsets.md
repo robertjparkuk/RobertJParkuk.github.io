@@ -15,7 +15,7 @@ None of that makes all offsets bad. It makes them a product that needs checking 
 
 ## What a credit is, and the words that matter
 
-A **carbon credit** is a tradable certificate, issued by a crediting programme, for one tonne of CO₂e reduced or removed. Using it to balance your own emissions is **offsetting**.
+A **carbon credit** is a tradable certificate, issued by a crediting programme, for one tonne (1,000 kg) of CO₂e reduced or removed. Using it to balance your own emissions is **offsetting**.
 
 | Term | What it means | Why it matters |
 |---|---|---|

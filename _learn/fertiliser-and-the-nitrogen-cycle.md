@@ -46,7 +46,7 @@ Nitrous oxide matters twice over: it traps 265 times as much heat as CO₂ over 
 
 <figure class="learn-figure"><a href="{{ '/assets/learn/fertiliser-by-region.svg' | relative_url }}" title="Open the chart full size"><img src="{{ '/assets/learn/fertiliser-by-region.svg' | relative_url }}" alt="Kilograms of CO2 equivalent per kilogram of nitrogen, cradle to gate, from an industry-published study using 2013–14 data: European average 3.32; North America 6.71; Russia and neighbouring states 7.11; Middle East 7.15; China, coal-based, 10.88. The main difference is that most European nitric acid plants abate their nitrous oxide." loading="lazy"></a><figcaption>Where the bag was made can double its footprint. Tap or click to open it full size.</figcaption></figure>
 
-A tonne of nitrogen in ammonium nitrate made at an average European plant carried about 3.3 tonnes of CO₂e to the factory gate. The same product from North America, Russia or the Middle East carried 6.7–7.2 tonnes, mostly because the nitrous oxide from nitric acid was not destroyed. The data are from 2013–14 and published by the industry, so treat the exact figures with care; the gap is the point.
+Each kilogram of nitrogen in ammonium nitrate made at an average European plant carried about 3.3 kg of CO₂e to the factory gate. The same product from North America, Russia or the Middle East carried 6.7–7.2 kg, mostly because the nitrous oxide from nitric acid was not destroyed. The data are from 2013–14 and published by the industry, so treat the exact figures with care; the gap is the point.
 
 ## The rules
 
