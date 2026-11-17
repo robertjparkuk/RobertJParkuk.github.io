@@ -25,6 +25,16 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.35.0 — 17 November 2026: Learn, other gases and the Sun
+
+- New explainer `_learn/why-everything-is-carbon.md` (order 3): CO₂e and GWP; the seven Kyoto gases; AR6 and AR5 GWP table (UK reports on AR5); why a molecule absorbs infrared; absorption bands and the 8–14 µm window; excitation and collisions; water vapour and microwaves (22.235 and 183.31 GHz, dielectric heating in ovens); where each gas is destroyed (OH abstraction, stratospheric photolysis and O(¹D), SF₆ electron attachment); water vapour as feedback; business links (CBAM N₂O and PFCs, SF₆, HFCs).
+- New explainer `_learn/was-it-the-sun.md` (order 4): solar cycle, satellite record since 1978, AR6 solar forcing, stratosphere fingerprint (upper stratosphere; lower-stratosphere cooling mainly ozone), Ineson et al. 2011 on solar cycle and winters, verdict table, and a box on Piers Corbyn (first sabbatical ICU President, WeatherAction founder). Piers to see the box before merge.
+- New script `_scripts/learn/gases.py` writing `gas-molecules.svg`, `co2-vibrations.svg`, `gas-absorption-bands.svg`, `gas-fates.svg` and `sun-fingerprint.svg` to `assets/learn/`.
+- Corrections found in checking: AR6 uses an SF₆ lifetime of 1,000 years (not 3,200); the 850-year estimate is Ray et al. 2017.
+- Restyled to the house format: NI section, analogy, three sector examples; new diagrams `ni-emissions-split.svg` and `solar-cycle.svg`.
+- Read-time grammar: values now "10-minute", so pages read "10-minute read".
+- "Next" link added to the life cycle explainer.
+
 ### v0.34.0 — 17 November 2026: Learn section
 
 *Robert's instruction, 17 Nov 01:05 ("Do it"): an education section, starting with embodied versus embedded carbon and the carbon life cycle, with simple diagrams and examples across sectors, so he can add his own examples. Name agreed: Learn. Awaiting Robert's merge.*

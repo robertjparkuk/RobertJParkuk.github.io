@@ -41,7 +41,7 @@ The Learn section lives at robertjpark.co.uk/learn/. Each explainer is one Markd
    description: "The summary search engines and LinkedIn show, under 160 characters."
    order: 3
    level: "Introductory"
-   read_time: "6 minutes"
+   read_time: "6-minute"   # shows as "6-minute read"
    checked: 2026-11-17
    ---
    ```

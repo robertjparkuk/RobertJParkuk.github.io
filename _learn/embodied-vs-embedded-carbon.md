@@ -4,7 +4,7 @@ answer: "Embodied carbon is the building world's term for all the carbon in maki
 description: "Embodied carbon, embedded emissions and the UK CBAM's 'embodied emissions' explained: what each counts, who uses which term, and why mixing them up costs Northern Ireland firms money."
 order: 1
 level: "Introductory"
-read_time: "10 minutes"
+read_time: "10-minute"
 checked: 2026-11-17
 ---
 
