@@ -12,7 +12,7 @@ New to carbon? Start with the plain-English explainers in [Learn]({{ '/learn/' |
 
 <h2 class="tool-h"><img src="{{ '/assets/icons/carbon-jigsaw.svg' | relative_url }}" alt="" width="48" height="48">The Carbon Jigsaw</h2>
 
-A rough carbon checker for Northern Ireland businesses. Fill in each piece of the jigsaw from your bills and records: electricity, gas, oil, vehicles, refrigerants, water, waste, travel and commuting. You'll get a rough Scope 1, 2 and partial Scope 3 footprint, and the pieces you can't fill show what a full inventory would add. Your figures stay in your browser. Practise first with the sample bills.
+A rough carbon checker for Northern Ireland businesses. Fill in each piece of the jigsaw from your bills and records: electricity, gas, oil, vehicles, refrigerants, water, waste, travel and commuting. You'll get a rough Scope 1, 2 and partial Scope 3 footprint, with electricity shown both location-based and market-based (pick your NI supplier to use its fuel mix disclosure), and the pieces you can't fill show what a full inventory would add. Your figures stay in your browser. Practise first with the sample bills.
 
 [Open the Carbon Jigsaw →]({{ '/tools/carbon-jigsaw.html' | relative_url }})
 
@@ -33,6 +33,12 @@ For Northern Ireland farms asked for carbon data by a processor, supermarket, le
 For Northern Ireland businesses caught between UK and EU rules. Tick what you make or handle and where your goods go, say whether goods from Great Britain are "at risk" of moving into the EU, and get the EU and UK rules that matter to you, with dates and official sources. It uses the same data as the EU Law and the Windsor Framework dashboard and is updated with it every Friday. Nothing you tick leaves your browser.
 
 [Open Which EU rules apply to me? →]({{ '/tools/which-eu-rules-apply.html' | relative_url }})
+
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Weekly digest</h2>
+
+Every Friday, a short briefing for your sector on the Northern Ireland rule changes, deadlines and consultations coming up in the next four months, with what to do about each. Eight sectors, from manufacturers and importers to farming, councils and energy users. Follow your sector's feed in any news reader.
+
+[Open the weekly digest →]({{ '/digest/' | relative_url }})
 
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Dashboards</h2>
 

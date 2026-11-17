@@ -1,0 +1,19 @@
+name = "rjp-bill-reader"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+
+# Turn off request logging so bills never appear in Cloudflare's logs.
+[observability]
+enabled = false
+
+[vars]
+ALLOWED_ORIGINS = "https://robertjpark.co.uk,https://www.robertjpark.co.uk"
+MODEL = "claude-haiku-5-5"
+DAILY_LIMIT = "5"        # bills per visitor per day
+MONTHLY_LIMIT = "1000"   # bills per month for the whole site
+
+# Create with: npx wrangler kv namespace create RL
+# then paste the id it prints below.
+[[kv_namespaces]]
+binding = "RL"
+id = "PASTE_KV_NAMESPACE_ID_HERE"

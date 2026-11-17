@@ -1,0 +1,62 @@
+# Weekly regulatory digest.
+#
+# Every Friday at 16:35 UTC (after the Friday data updates), this writes one
+# digest per sector from the NI Regulatory Horizon and Consultations Monitor
+# data, using Claude, and opens a pull request. Nothing is published until the
+# pull request is merged, so every edition is reviewed first.
+#
+# Needs, once:
+#   - Repository secret ANTHROPIC_API_KEY (Settings > Secrets and variables > Actions).
+#   - Settings > Actions > General > "Allow GitHub Actions to create and approve
+#     pull requests" ticked. Without it the branch is still pushed and you can
+#     open the pull request yourself.
+# Optional repository variable DIGEST_MODEL (default claude-sonnet-5-5).
+#
+# To run it now: Actions tab > Weekly digest > Run workflow.
+
+name: Weekly digest
+
+on:
+  schedule:
+    - cron: "35 16 * * 5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Write this week's digests
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DIGEST_MODEL: ${{ vars.DIGEST_MODEL || 'claude-sonnet-5-5' }}
+        run: |
+          pip install -q pyyaml
+          python3 _scripts/digest/build_digest.py
+
+      - name: Open a pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then echo "Nothing new this week"; exit 0; fi
+          day=$(date -u +%Y-%m-%d)
+          branch="digest/$day"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add _digest digest
+          git commit -m "Weekly digest, $day"
+          git push -u origin "$branch"
+          gh pr create --base main --head "$branch" \
+            --title "Weekly digest, $day" \
+            --body "This week's sector digests, drafted by Claude from the Regulatory Horizon and Consultations Monitor data. Dates, links and sources come from the data. Any sentence with a number not in the source item was replaced with the source text. Read each edition, edit if needed, then merge to publish." \
+            || echo "::warning::Branch $branch pushed, but the pull request could not be opened. Open it from the branch page."
