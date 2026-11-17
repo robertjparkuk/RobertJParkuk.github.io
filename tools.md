@@ -46,6 +46,18 @@ Northern Ireland data on one page, from official statistics, with every table do
 
 [Open the CBAM Exposure Tracker →]({{ '/tools/dashboards/cbam-exposure-tracker.html' | relative_url }}) · [EU Law and the Windsor Framework →]({{ '/tools/dashboards/eu-law-windsor-framework.html' | relative_url }}) · [All dashboards →]({{ '/dashboards/' | relative_url }})
 
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Safety Data Sheet Checker</h2>
+
+For Northern Ireland firms that make, buy or sell chemicals and products containing them, including pharmaceutical, cleaning and coatings suppliers. Enter the CAS numbers from a safety data sheet and see which substances are on the EU REACH Candidate List (which applies in NI) and the UK REACH list (Great Britain), where the two differ, and which may be PFAS, F-gases or CBAM goods. The UK list is refreshed from HSE every month.
+
+[Open the Safety Data Sheet Checker →]({{ '/tools/sds-checker.html' | relative_url }})
+
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Site Report Reader</h2>
+
+For anyone buying, lending on or developing land in Northern Ireland. Turns a desk study, site investigation, risk assessment or remediation report into one page: site history, the risks the report identifies, results above screening values, ground gas, next steps and the questions to ask. See it working on an invented example site.
+
+[Open the Site Report Reader →]({{ '/tools/site-report-reader.html' | relative_url }})
+
 <h2 class="tool-h"><img src="{{ '/assets/icons/land-repair-helix.svg' | relative_url }}" alt="" width="48" height="48">The Land Repair Helix</h2>
 
 A design tool for healthier land, now with 22 base pairs. Each base pair links a problem (compacted soil, fertiliser overuse, flooding, blue-green algae, contamination, forever chemicals, oil spills, mown-out verges, flailed hedges) to the low-cost or nature-based fix that answers it. Choose your type of site and it builds a starter plan.

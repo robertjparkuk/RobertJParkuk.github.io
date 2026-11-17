@@ -1,6 +1,14 @@
-# Bill reader (Cloudflare Worker)
+# Document readers (Cloudflare Worker)
 
-Reads a photo or PDF of a bill for the Carbon Jigsaw and returns only the figures (kWh, litres, cubic metres, supplier, billing period). It stores no bills. The only data it keeps is a daily counter per visitor, keyed by a salted hash of their IP address and deleted after two days, plus a monthly total.
+One Worker serves three readers:
+
+| Address | Used by | Reads | Model |
+|---|---|---|---|
+| `/read` | Carbon Jigsaw | Bills: kWh, litres, m³, supplier, billing period | `MODEL` (Haiku) |
+| `/sds` | Safety Data Sheet Checker | Safety data sheets: product, supplier, date, substances with CAS numbers | `MODEL` (Haiku) |
+| `/site` | Site Report Reader | Land and ground reports: history, risks, results, recommendations | `MODEL_SITE` (Sonnet) |
+
+The bill reader returns only the figures (kWh, litres, cubic metres, supplier, billing period). It stores no bills. The only data it keeps is a daily counter per visitor, keyed by a salted hash of their IP address and deleted after two days, plus a monthly total.
 
 The Jigsaw hides the "Read it from my bill" option until `BILL_API` is set in `tools/carbon-jigsaw.html`, so nothing changes on the live site until the steps below are done.
 
@@ -33,15 +41,22 @@ You need a free Cloudflare account and Node.js on your Mac.
    ```
    const BILL_API="https://rjp-bill-reader.<your-subdomain>.workers.dev/read";
    ```
-   and merge. The privacy page already describes the bill reader.
+   and merge. The privacy page already describes the readers.
+7. **Switch on the other two readers.** In `tools/sds-checker.html` and `tools/site-report-reader.html`, set
+   ```
+   const READER_BASE="https://rjp-bill-reader.<your-subdomain>.workers.dev";
+   ```
+   (no `/read` on the end) and merge.
 
 ## Settings
 
 In `wrangler.toml`:
 
-- `DAILY_LIMIT`: bills per visitor per day (default 5).
-- `MONTHLY_LIMIT`: bills per month for the whole site (default 1,000). The Console spend limit is the hard backstop.
+- `DAILY_LIMIT`: bills, and separately safety data sheets, per visitor per day (default 5).
+- `DAILY_LIMIT_SITE`: site reports per visitor per day (default 3). Site reports are long, so each costs more to read.
+- `MONTHLY_LIMIT`: documents per month across all three readers (default 1,000). The Console spend limit is the hard backstop.
 - `MODEL`: defaults to `claude-haiku-5-5`, which is quick and cheap for reading figures. Change it to `claude-sonnet-5-5` if photos of poor-quality bills are misread.
+- `MODEL_SITE`: defaults to `claude-sonnet-5-5` for site reports, which need careful reading. A long report costs noticeably more than a bill, which is why it has its own lower daily limit.
 - `ALLOWED_ORIGINS`: only pages on these addresses can use the Worker.
 
 Logging is turned off (`[observability] enabled = false`), so bills never appear in Cloudflare's logs. Leave it off.

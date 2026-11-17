@@ -125,7 +125,7 @@ section.results h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);m
     <button class="btn" id="exBtn" type="button">Load the worked example</button>
     <button class="btn" id="clrBtn" type="button">Start again</button>
     <button class="btn primary" id="printBtn" type="button" hidden>Print or save results</button>
-    <span class="privacy">Your figures stay in this browser. Nothing is sent or stored on a server.</span>
+    <span class="privacy" id="privLine">Your figures stay in this browser. Nothing is sent or stored on a server.</span>
   </div>
 
   <main>
@@ -328,7 +328,7 @@ let scanMsg="";
 function scanBlock(id){
   if(!BILL_API||!SCAN_KINDS[id])return"";
   return `<div class="scan"><button class="btn" type="button" id="scanOpen" aria-expanded="false" aria-controls="scanBox">Read it from a photo or PDF of my bill</button>
-  <div id="scanBox" hidden><label class="consent" for="scanOk"><input type="checkbox" id="scanOk"> <span>Send this bill to be read. It goes through my server to Anthropic's Claude AI, which returns only the figures. It isn't stored or sent to me. You can cover your name and address first. <a href="/privacy/#bill-reader">How the bill reader handles your bill</a></span></label>
+  <div id="scanBox" hidden><label class="consent" for="scanOk"><input type="checkbox" id="scanOk"> <span>Send this bill to be read. It goes through my server to Anthropic's Claude AI, which returns only the figures. It isn't stored or sent to me. You can cover your name and address first. <a href="/privacy/#readers">How the bill reader handles your bill</a></span></label>
   <input type="file" id="scanFile" accept="image/*,application/pdf" disabled aria-label="Choose a photo or PDF of your bill"></div>
   <p class="scanmsg" id="scanMsg" role="status">${scanMsg}</p></div>`;
 }
@@ -533,6 +533,7 @@ clr.onclick=()=>{if(!armed){armed=true;clr.textContent="Tap again to clear every
   clearTimeout(tm);armed=false;clr.textContent="Start again";S={};save();pick("boundary");update();};
 try{if(window.self===window.top){const pb=document.getElementById("printBtn");pb.hidden=false;pb.onclick=()=>window.print();}}catch(e){}
 
+if(BILL_API){const pl=document.getElementById("privLine");if(pl)pl.innerHTML='Your figures stay in this browser. Bills you choose to have read are not stored. <a href="/privacy/#readers">Privacy</a>';}
 // First visit opens on the worked example so the board shows what it does
 if(!Object.keys(S).length){S=JSON.parse(JSON.stringify(EX));}
 renderPanel();update();

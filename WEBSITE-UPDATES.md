@@ -25,7 +25,25 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
-### v0.38.0 — 17 November 2026: bill reader, weekly digest, privacy update
+### v0.39.0 — 17 November 2026: Safety Data Sheet Checker and Site Report Reader
+
+*Robert's instruction, 17 Nov 05:28: "Start both safety and land." Builds on v0.37.0 and v0.38.0 (merge those first). Awaiting Robert's merge.*
+
+**Safety Data Sheet Checker** (`tools/sds-checker.html`)
+- Type or paste CAS numbers (works now, no AI), or upload a safety data sheet once `READER_BASE` is set. Checks each substance against the EU REACH Candidate List (applies in NI) and the UK REACH Candidate List (GB), marks "NI only" and "GB only" differences, and flags known or possible PFAS, F-gases (EU 2024/573 in NI) and CBAM chemicals (from the site's own CBAM lookup). Validates CAS check digits. Explains the Article 31, 33 and 7(2) duties that apply under both regimes. Flags a safety data sheet issued before the latest list update. Opens on an invented example.
+- Lists: `_scripts/chem/build_lists.py` writes `data/chem/svhc-uk.json`, `svhc-eu.json` and `lists.json`. The UK list downloads from HSE (357 rows, latest additions 19 October 2026). ECHA blocks automated downloads, so the EU list needs the Excel export saved by hand as `data/chem/sources/echa-candidate-list.xlsx` (steps in that folder's README). Until then the page says the EU list isn't loaded.
+- `.github/workflows/chem-lists.yml`: monthly HSE refresh (opens a PR); rebuilds and commits to the branch on any PR that changes the source file or builder.
+
+**Site Report Reader** (`tools/site-report-reader.html`)
+- Upload a desk study, site investigation, risk assessment, remediation strategy or verification report (PDF, up to 20 MB) once `READER_BASE` is set. Returns a one-page summary: report details, site history, contaminants, pollutant linkages with the report's own risk ratings, investigation, results above screening values, ground gas, groundwater, conclusions, recommendations, remediation, guidance cited and limitations. Location is town and council area only; no names or street addresses. Rule-based "Questions to ask", including the NI position that Part III of the 1997 Order is not commenced. Opens on an invented example site.
+
+**Worker** (`workers/bill-reader/`): new `/sds` (Haiku) and `/site` (Sonnet) routes with their own schemas and prompts, separate daily limits (site reports 3 a day), one shared monthly cap. README updated.
+
+**Privacy page**: the bill reader section becomes "The document readers" (anchor `#readers`; `#bill-reader` still works), covering all three. Carbon Jigsaw privacy line updates itself when the bill reader is switched on.
+
+**Tools page**: entries for both new tools.
+
+ — 17 November 2026: bill reader, weekly digest, privacy update
 
 *Robert's instruction, 17 Nov 05:15: "Update privacy policy. Do the bill scanner. Do the weekly regulatory digest." Builds on v0.37.0 (merge that first). Awaiting Robert's merge.*
 

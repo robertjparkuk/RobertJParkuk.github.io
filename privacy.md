@@ -2,8 +2,8 @@
 layout: page
 title: Privacy
 permalink: /privacy/
-lead: This website collects almost nothing. Anything you type into a tool, quiz or puzzle stays in your browser. The one exception is the optional bill reader in the Carbon Jigsaw, which sends a bill you choose to have read and keeps nothing.
-description: "No analytics, no cookies, no forms. Tool inputs stay in your browser. How the optional bill reader handles your bill, the weekly digest, GitHub hosting and your rights."
+lead: This website collects almost nothing. Anything you type into a tool, quiz or puzzle stays in your browser. The exceptions are the optional document readers (bills, safety data sheets and site reports), which send a file you choose to have read and keep nothing.
+description: "No analytics, no cookies, no forms. Tool inputs stay in your browser. How the optional document readers handle your file, the weekly digest, GitHub hosting and your rights."
 ---
 
 *Last updated: 17 November 2026*
@@ -14,7 +14,7 @@ description: "No analytics, no cookies, no forms. Tool inputs stay in your brows
 - **No cookies at all.** This site does not set cookies.
 - **No forms that send anything to me.** If you want to get in touch, you choose to email me or message me yourself.
 - **Your tool inputs stay on your device.** The Carbon Jigsaw, the Carbon Crossword and the other tools run in your web browser. Anything you type is processed on your own device and is never sent to me.
-- **One opt-in exception: the bill reader.** In the Carbon Jigsaw you can choose to have a photo or PDF of a bill read for you. Only then does a file leave your device, and only to be read. It isn't stored, and I never see it. [Details below](#bill-reader).
+- **Opt-in exceptions: the document readers.** You can choose to have a bill (Carbon Jigsaw), a safety data sheet (Safety Data Sheet Checker) or a land report (Site Report Reader) read for you. Only then does a file leave your device, and only to be read. It isn't stored, and I never see it. [Details below](#readers).
 
 ## Who is responsible
 
@@ -34,25 +34,33 @@ This is not a cookie, and it is never sent to me or anyone else. I cannot see it
 
 The other tools and guides don't save anything.
 
-<h2 id="bill-reader">The bill reader in the Carbon Jigsaw</h2>
+<h2 id="readers">The document readers</h2>
 
-Some pieces of the Carbon Jigsaw (electricity, gas, oil and water) offer **Read it from a photo or PDF of my bill**. It is off unless you tick the box to agree and then choose a file. You can always type the figures in instead.
+<span id="bill-reader"></span>Three tools can read a document for you, so you don't have to type the details in:
 
-**What happens to your bill**
+| Tool | What you can send | What comes back |
+|---|---|---|
+| The Carbon Jigsaw | A photo or PDF of an electricity, gas, oil or water bill | Usage figures, billing period and supplier name |
+| The Safety Data Sheet Checker | A safety data sheet (PDF or photo) | Product name, supplier, date and the substances listed in it |
+| The Site Report Reader | A land contamination or ground investigation report (PDF) | A summary of the findings, with no names or street addresses |
+
+Each reader is off unless you tick the box to agree and then choose a file. You can always type the details in instead.
+
+**What happens to your file**
 
 1. If it's a photo, your browser shrinks it first. The file then goes to a small service I run on Cloudflare (a "Worker").
-2. The Worker passes it to Anthropic's Claude AI, which reads the figures: kWh or litres or cubic metres, the billing period and the supplier's name. It is told not to record names, addresses or account numbers.
-3. The Worker sends only those figures back to your browser, which fills in the piece. Your browser keeps them on your device, as with anything you type.
+2. The Worker passes it to Anthropic's Claude AI, which reads it and returns only the details listed above. It is told not to record people's names, addresses, account numbers or contact details.
+3. The Worker sends those details back to your browser, which shows them. The Carbon Jigsaw keeps its figures on your device, as with anything you type. The other two tools keep nothing once you close the page.
 
 **What is kept, by whom**
 
-- **Me:** nothing. The bill and the figures are never stored by the Worker or sent to me. I have no way to see them.
-- **Cloudflare** runs the Worker. Request logging is switched off. To stop the reader being overused, the Worker counts how many bills each visitor sends in a day. It does this with a scrambled, one-way code made from your IP address, which can't be turned back into the address, and deletes the count after two days. It also keeps a running total for the month, with no link to anyone. See [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/).
-- **Anthropic** reads the bill through its API, under its commercial terms. It does not use API content to train its models. It deletes API inputs and outputs within 30 days, unless it needs them longer to enforce its usage policy or the law requires it. Anthropic is based in the United States, so your bill is processed there. See [Anthropic's privacy centre](https://privacy.claude.com/).
+- **Me:** nothing. Your file and what is read from it are never stored by the Worker or sent to me. I have no way to see them.
+- **Cloudflare** runs the Worker. Request logging is switched off. To stop the readers being overused, the Worker counts how many files each visitor sends in a day. It does this with a scrambled, one-way code made from your IP address, which can't be turned back into the address, and deletes the count after two days. It also keeps a running total for the month, with no link to anyone. See [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/).
+- **Anthropic** reads the file through its API, under its commercial terms. It does not use API content to train its models. It deletes API inputs and outputs within 30 days, unless it needs them longer to enforce its usage policy or the law requires it. Anthropic is based in the United States, so your file is processed there. See [Anthropic's privacy centre](https://privacy.claude.com/).
 
-**Before you send a bill**, you can cover or crop out your name, address and account number. The reader only needs the figures. Please only send bills you're entitled to share, such as your own or your business's.
+**Before you send a file**, you can cover or remove names, addresses and account numbers; the readers only need the technical content. Please only send documents you're entitled to share. A site report written for a client may be confidential, so check before sending one that isn't yours.
 
-**Lawful basis:** your consent, given by ticking the box for each bill. You can stop at any time by not using the reader. Because nothing is kept by me, there is nothing for me to delete. The two-day counter deletes itself.
+**Lawful basis:** your consent, given by ticking the box for each file. You can stop at any time by not using the readers. Because nothing is kept by me, there is nothing for me to delete. The two-day counter deletes itself.
 
 ## The weekly digest
 
@@ -67,7 +75,7 @@ The [weekly digest]({{ '/digest/' | relative_url }}) pages and feeds are ordinar
 Even a site that collects nothing has to be hosted somewhere:
 
 - **Hosting (GitHub Pages).** The site is hosted by GitHub. When any GitHub Pages site is visited, GitHub logs the visitor's IP address for security purposes. I don't receive or have access to these logs. See [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
-- **No other third parties when you browse.** Fonts, images and scripts are all served from this site itself. Your browser doesn't contact Google, social networks, advertisers or any other outside service when you read a page or use a tool. The only exception is the bill reader, and only when you choose to use it.
+- **No other third parties when you browse.** Fonts, images and scripts are all served from this site itself. Your browser doesn't contact Google, social networks, advertisers or any other outside service when you read a page or use a tool. The only exceptions are the document readers, and only when you choose to use them.
 
 Links to LinkedIn, WhatsApp and other websites take you to services with their own privacy policies.
 
@@ -85,4 +93,4 @@ If you're unhappy with how I've handled your information, you can complain to th
 
 ## Changes
 
-If anything about how this site works changes, this page is updated first and the date at the top changed. The last change, on 17 November 2026, added the bill reader and the weekly digest.
+If anything about how this site works changes, this page is updated first and the date at the top changed. The last change, on 17 November 2026, added the document readers and the weekly digest.

@@ -54,7 +54,7 @@ def parse(xlsx_bytes):
                         "description": re.sub(r"\s+", " ", str(r[cd] or "").strip()) if cd is not None else "",
                         "ec": EC.findall(str(r[ce] or "")) if ce is not None else [],
                         "cas": CAS.findall(str(r[cc] or "")) if cc is not None else [],
-                        "reason": re.sub(r"\s+", " ", str(r[cr] or "").strip()) if cr is not None else "",
+                        "reason": re.sub(r"\s*#\s*", "; ", re.sub(r"\s+", " ", str(r[cr] or "").strip())) if cr is not None else "",
                         "date": iso(r[ct]) if ct is not None else ""})
                 if out:
                     return out
