@@ -25,6 +25,18 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.38.2 — 17 November 2026: Cyanobacteria, carbon, nitrogen, warmth and dogs
+
+- `lough-neagh-and-cyanobacteria.md`, at Robert's request:
+  - New section "Photosynthesis, carbon, nitrogen and warmth":
+    - blooms draw CO₂ from water and air, and rising CO₂ steepens that draw (Visser 2016);
+    - the carbon is only borrowed and returns partly as methane, which more nutrient-rich lakes will raise by 30–90% this century (Beaulieu 2019);
+    - nitrogen fixation by Dolichospermum and Aphanizomenon, with the nitrogenase equation; Microcystis, the main 2023 species, does not fix nitrogen, so the case is for cutting both N and P;
+    - warmth: optima above 25 °C, heatwaves stop the water mixing, but nutrients matter more.
+  - New "Dogs" subsection: microcystins and anatoxin-a, DAERA advice and signs (21 April 2026), 2023 Lough Melvin and Lough Neagh cases.
+  - Two new common mistakes.
+- New diagram `bloom-carbon-nitrogen.svg` (in `_scripts/learn/batch_c.py`).
+
 ### v0.38.1 — 17 November 2026: Blood, fish and bone
 
 - `fish-guts-and-seashells.md`: at Robert's suggestion, the analogy table is now "Think of a box of blood, fish and bone". Also new: a short section on the fertiliser (dried blood, fishmeal, bonemeal; bone mineral as calcium phosphate against shell carbonate; NPK range across brands from the labels; phosphorus caution near water); the Reg. 142/2011 Annex XI rule and its 50 kg retail exemption in the rules table; and sources.
