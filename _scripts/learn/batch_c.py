@@ -160,7 +160,7 @@ def fish_flow():
     b += text(20, 52, 'A skinless fillet is about a third of a cod or haddock. What happens to the rest decides whether it is waste or a resource.', 13, MUTED, 'start')
     b += f'<rect x="20" y="210" width="170" height="90" rx="8" fill="{INK}"/>'
     b += text(105, 248, 'Whole fish', 16, '#fff', weight='700') + text(105, 270, 'or prawns', 12.5, '#fff')
-    parts = [('Fillet', 'food', GREEN), ('Heads and frames', 'fishmeal, oil, stock', GREEN), ('Guts (viscera)', 'oil, silage, enzymes', GREEN),
+    parts = [('Fillet', 'food', GREEN), ('Heads and frames', 'fishmeal, oil, garden fertiliser', GREEN), ('Guts (viscera)', 'oil, silage, enzymes', GREEN),
              ('Skin and scales', 'collagen, gelatine, leather', GREEN), ('Shells (shellfish)', 'lime, grit, chitin', GREEN)]
     for i, (p, u, c) in enumerate(parts):
         y = 80 + i * 90
@@ -177,7 +177,7 @@ def fish_flow():
     b += text(772, 406, 'The higher-value routes', 14, INK, weight='700')
     b += lines(772, 432, ['Food and supplements first,', 'then feed, then fertiliser and energy:', 'the biological loop of the', 'circular economy.'], 12.5, lh=19)
     svg('fish-by-products.svg', w, h, 'One fish, many products',
-        'A whole fish or prawn splits into five streams: the fillet, used as food; heads and frames, used for fishmeal, oil and stock; guts, used for oil, silage and enzymes; skin and scales, used for collagen, gelatine and leather; and shells from shellfish, used for lime, grit and chitin. '
+        'A whole fish or prawn splits into five streams: the fillet, used as food; heads and frames, used for fishmeal, oil and garden fertiliser such as blood, fish and bone; guts, used for oil, silage and enzymes; skin and scales, used for collagen, gelatine and leather; and shells from shellfish, used for lime, grit and chitin. '
         'If nobody takes them, by-products go to rendering or incineration at a cost; fish waste must not be landfilled, and animal by-products rules apply. The higher-value order is food and supplements first, then feed, then fertiliser and energy.', b)
 
 

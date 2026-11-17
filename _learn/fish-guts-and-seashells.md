@@ -18,7 +18,7 @@ The same material is valuable elsewhere. Fish oil, collagen for cosmetics, chito
 | Part | Share | What it can become | The catch |
 |---|---|---|---|
 | **Fillet** | About a third of cod, haddock or whiting; about half of herring or mackerel | Food | Yields vary widely |
-| **Heads and frames** | Most of the rest | Fishmeal, fish oil, stock, protein | Needs collection and a plant |
+| **Heads and frames** | Most of the rest | Fishmeal, fish oil, protein, garden fertiliser (blood, fish and bone) | Needs collection and a plant |
 | **Guts (viscera)** | About 5% of a fish | Oil, enzymes, silage, biogas | Spoils fast |
 | **Skin and scales** | Varies | Collagen, gelatine, leather | Needs clean handling |
 | **Mollusc shell** | Up to 75% of a mussel or oyster | Lime, poultry grit, aggregate, filters | Heavy; transport eats the benefit |
@@ -26,7 +26,7 @@ The same material is valuable elsewhere. Fish oil, collagen for cosmetics, chito
 
 ## One fish, many products
 
-<figure class="learn-figure"><a href="{{ '/assets/learn/fish-by-products.svg' | relative_url }}" title="Open the diagram full size"><img src="{{ '/assets/learn/fish-by-products.svg' | relative_url }}" alt="A whole fish or prawn splits into five streams: the fillet, used as food; heads and frames, used for fishmeal, oil and stock; guts, used for oil, silage and enzymes; skin and scales, used for collagen, gelatine and leather; and shells, used for lime, grit and chitin. If nobody takes them, by-products go to rendering or incineration at a cost; fish waste must not be landfilled, and animal by-products rules apply. The higher-value order is food and supplements first, then feed, then fertiliser and energy." loading="lazy"></a><figcaption>The same tonne can earn money or cost it. Tap or click to open it full size.</figcaption></figure>
+<figure class="learn-figure"><a href="{{ '/assets/learn/fish-by-products.svg' | relative_url }}" title="Open the diagram full size"><img src="{{ '/assets/learn/fish-by-products.svg' | relative_url }}" alt="A whole fish or prawn splits into five streams: the fillet, used as food; heads and frames, used for fishmeal, oil and garden fertiliser such as blood, fish and bone; guts, used for oil, silage and enzymes; skin and scales, used for collagen, gelatine and leather; and shells, used for lime, grit and chitin. If nobody takes them, by-products go to rendering or incineration at a cost; fish waste must not be landfilled, and animal by-products rules apply. The higher-value order is food and supplements first, then feed, then fertiliser and energy." loading="lazy"></a><figcaption>The same tonne can earn money or cost it. Tap or click to open it full size.</figcaption></figure>
 
 <figure class="learn-figure"><a href="{{ '/assets/learn/fillet-yields.svg' | relative_url }}" title="Open the chart full size"><img src="{{ '/assets/learn/fillet-yields.svg' | relative_url }}" alt="Skinless fillet yield as a share of the whole fish, from FAO: whiting 32%, Atlantic cod 34%, haddock 35%, Atlantic herring 46%, Atlantic mackerel 54%. The rest is heads, frames, guts and skin." loading="lazy"></a><figcaption>For whitefish, about two-thirds of the catch is not fillet. Tap or click to open it full size.</figcaption></figure>
 
@@ -37,6 +37,19 @@ The UN Food and Agriculture Organization (FAO) puts fish processing by-products 
 - **Viscera** are a cheap source of enzymes, and can be made into protein hydrolysates for feed or fertiliser (Pelagia in Shetland began making the UK's first liquid fish hydrolysate from salmon-farm by-products in 2019, according to Seafish).
 - **Silage**: minced fish kept with a little acid, so its own enzymes turn it to a stable liquid feed.
 - **Anaerobic digestion** turns what is left into biogas; a 2025 review of 39 studies found yields vary widely, and mixing fish waste with other feedstocks often helps.
+- **Garden fertiliser**: fishmeal is one of the three ingredients of blood, fish and bone (below).
+
+### Blood, fish and bone
+
+The Royal Horticultural Society lists **blood, fish and bone** among the animal-based organic fertilisers and recommends it as a slow-release feed for fruit. It is three by-products in one box:
+
+- **Dried blood**, from abattoirs, supplies quick nitrogen (sold on its own at about 12% nitrogen).
+- **Fishmeal** supplies nitrogen and some phosphorus.
+- **Bonemeal** supplies phosphorus and calcium. Bone mineral is a calcium phosphate close to hydroxyapatite, **Ca₁₀(PO₄)₆(OH)₂**, the phosphate cousin of the calcium carbonate in shells. It dissolves slowly, which is why the phosphorus is released over months: one brand's label declares 2.5% phosphorus, of which only 0.3% is soluble in water.
+
+Brands differ a lot. Labels checked for this page range from **NPK 5-3-5** (Levington) and **5-5-6** (Vitax) to **3-9-3** (Westland). Potassium usually comes from added potash, because animal by-products carry little of it.
+
+Two cautions. First, the phosphorus is the same nutrient that feeds the [Lough Neagh blooms]({{ '/learn/lough-neagh-and-cyanobacteria/' | relative_url }}), so a high-phosphorus feed should go only where a soil test says it is needed, and never near water. Second, by-product fertilisers are a carbon saving only in the sense that they recycle nitrogen and phosphorus already made, rather than fixing new nitrogen in a [Haber–Bosch plant]({{ '/learn/fertiliser-and-the-nitrogen-cycle/' | relative_url }}) or mining new phosphate rock; no footprint for blood, fish and bone itself was found.
 
 ## The chemistry of shells
 
@@ -83,6 +96,7 @@ The chemicals and heat have their own footprint, so chitosan is only a good use 
 | **Animal By-Products Regulation** (EC) No 1069/2009, Article 10 | Aquatic animals and their parts (except sea mammals) with no signs of transmissible disease, by-products from aquatic animals at food plants, and “shells from shellfish with soft tissue or flesh” are **Category 3**, the lowest-risk class (Art. 10(i), (j), (k)) | Applies in NI under the Windsor Framework (on DAERA's list, July 2026), with Regulation (EU) No 142/2011 |
 | **Animal By-Products (Enforcement) Regulations (NI) 2015** | How DAERA enforces the EU rules in NI | In force |
 | **Mixed loads** | A mixture takes the highest-risk category in it | DAERA guidance |
+| **Organic fertilisers from animal protein**, Regulation (EU) No 142/2011, Annex XI, Chapter II | Must be mixed with a component such as lime or manure so they cannot be used as feed; this does not apply to ready-to-sell packs of up to 50 kg for the final consumer, such as garden boxes of blood, fish and bone | Applies in NI with the main ABP Regulation |
 | **Landfill** | NetRegs guidance: fish waste must not be landfilled or buried | Current guidance |
 | **Clean shell** | Shell with no flesh appears to fall outside Category 3 | Not confirmed; ask DAERA or NIEA. No NI rule on spreading shell on land was found (Scotland has one, authorisation B6) |
 | **End of waste** | When processed shell stops being waste | No NIEA position found |
@@ -95,17 +109,19 @@ The chemicals and heat have their own footprint, so chitosan is only a good use 
 - **Local research.** Kilkeel Seafoods, the NI Fish Producers' Organisation and Queen's University were reported in 2024 to be studying prawn-shell chitosan for removing phosphate from Lough Neagh (news reports; the study itself was not found). Teagasc's all-island AIMBio project, funded by the Shared Island Fund, has pilot sites including Rathlin Island. Queen's used 10 tonnes of clean scallop shell to help rebuild horse mussel reef in Strangford Lough in 2010.
 - **Phosphate and Lough Neagh.** Shell and chitosan both bind phosphate, the nutrient behind the [Lough Neagh blooms]({{ '/learn/lough-neagh-and-cyanobacteria/' | relative_url }}). That is promising, but no product has been shown to work at the scale of the lough.
 
-### Think of a Sunday roast
+### Think of a box of blood, fish and bone
 
-| A Sunday roast | Fish by-products |
+Most gardeners already own a fish by-product: the box of **blood, fish and bone** in the shed.
+
+| A box of blood, fish and bone | The by-product economy |
 |---|---|
-| The joint on the table | The fillet |
-| Bones boiled for stock | Frames for fishmeal, oil and stock |
-| Dripping saved in a jar | Fish oil |
-| Peelings to the compost bin | Guts to silage or biogas |
-| Eggshells crushed for the garden | Crushed shell for liming or grit |
-| Everything in the bin | The linear route: a cost, and lost value |
-| Claiming the bin is a carbon store | Claiming a shell pile locks up carbon |
+| Dried blood: quick-acting nitrogen | Blood from abattoirs, a Category 3 by-product |
+| Fishmeal: nitrogen and some phosphorus | Heads, frames and guts, cooked, dried and ground |
+| Bonemeal: slow-release phosphorus and calcium | Bone mineral, a calcium phosphate: the phosphate twin of a shell's carbonate |
+| Potash added to balance the mix | Animal by-products carry little potassium |
+| The NPK figures on the label | The value is in the nutrients, measured and declared |
+| “Dogs may dig it up” on the pack | Why animal by-products come with rules |
+| Sprinkled on the vegetable patch | The biological loop: nutrients back to the soil |
 
 ## Examples
 
@@ -162,7 +178,7 @@ Checked 17 November 2026.
 
 - **Scale and uses:** FAO, [Fish by-products utilization](https://www.fao.org/flw-in-fish-value-chains/resources/articles/detail/fish-by-products-utilization--getting-more-benefits-from-fish-processing/en) (25 April 2021) · FAO, [State of World Fisheries and Aquaculture 2024](https://openknowledge.fao.org/server/api/core/bitstreams/1273bc36-339b-43d2-8163-af4d805f2ad2/content/sofia/2024/executive-summary.html) (2022 data) · FAO Fisheries Technical Paper 309, [yield and nutritional value of fish species](https://www.fao.org/4/t0219e/T0219E01.htm), table 1 · Ideia et al. 2019, *Waste and Biomass Valorization*, doi:10.1007/s12649-019-00739-1 (viscera about 5%; oil, collagen, enzymes) · Seafish, [Driving a circular economy in seafood supply chains](https://seafish.org/responsible-sourcing/climate-change-and-the-seafood-industry/driving-a-circular-economy-in-seafood-supply-chains) · Shandu et al. 2025, *Environmental and Climate Technologies* 29(1), doi:10.2478/rtuect-2025-0070 (fish waste biogas review).
 - **Shells and carbon:** Morris, Backeljau and Chapelle 2019, [Shells from aquaculture](https://library.naturalsciences.be/pdfs-open-access/2019/Morris-2019-RevAquacult-11-42-Shellsfromaquaculture.pdf), *Reviews in Aquaculture* 11 · Pernet et al. 2025, [Cracking the myth: bivalve farming is not a CO₂ sink](https://archimer.ifremer.fr/doc/00901/101309), *Reviews in Aquaculture* 17 · Frankignoulle, Canon and Gattuso 1994, *Limnology and Oceanography* 39 (the CO₂ released by calcification; as implemented in the [seacarb package](https://rdrr.io/rforge/seacarb/man/psi.html)) · Goossens et al. 2026, *Biogeosciences* 23, doi:10.5194/bg-23-6447-2026.
-- **Chitin and chitosan:** Younes and Rinaudo 2015, [Chitin and chitosan preparation from marine sources](https://pmc.ncbi.nlm.nih.gov/articles/PMC4377977), *Marine Drugs* 13 · Kou, Peters and Mucalo, [Chitosan: a review of sources and preparation methods](https://researchcommons.waikato.ac.nz/bitstream/10289/14259/35/Chitosan%20-%20A%20review%20of%20sources%20and%20preparation%20methods.pdf) (University of Waikato) · Nephrops head oil: [Marine Drugs, December 2016](https://doaj.org/article/8165ec6ed0474fb4990e08644e5fe63e).
+- **Chitin and chitosan:** Younes and Rinaudo 2015, [Chitin and chitosan preparation from marine sources](https://pmc.ncbi.nlm.nih.gov/articles/PMC4377977), *Marine Drugs* 13 · Kou, Peters and Mucalo, [Chitosan: a review of sources and preparation methods](https://researchcommons.waikato.ac.nz/bitstream/10289/14259/35/Chitosan%20-%20A%20review%20of%20sources%20and%20preparation%20methods.pdf) (University of Waikato) · Blood, fish and bone: RHS, [Fertilisers](https://www.rhs.org.uk/advice/profile?PID=304) and [garden jobs: fertilisers](https://www.rhs.org.uk/garden-jobs/fertilisers) · product labels: [Vitax](https://cdn.mr-fothergills.co.uk/product-pdfs/201832.pdf) (5-5-6; phosphorus 0.3% water-soluble, 2.2% acid-soluble), [Levington](https://lovethegarden.com/uk-en/product/miracle-gro-fish-blood-bone-35kg) (5-3-5), [Westland](https://www.watersidegardencentre.co.uk/westland-fish-blood-bone) (3-9-3, retailer listing) · [Regulation (EU) No 142/2011, Annex XI, Chapter II](https://www.legislation.gov.uk/eur/2011/142/annex/XI/chapter/II/section/1) (mixing rule and 50 kg exemption) · Nephrops head oil: [Marine Drugs, December 2016](https://doaj.org/article/8165ec6ed0474fb4990e08644e5fe63e).
 - **Rules:** [Regulation (EC) No 1069/2009, Article 10](https://www.legislation.gov.uk/eur/2009/1069/article/10) ([EUR-Lex](https://eur-lex.europa.eu/eli/reg/2009/1069)) · DAERA, [Windsor Framework legislation list](https://www.daera-ni.gov.uk/sites/default/files/2026-07/LEGISLATION%20WHERE%20THE%20SECRETARY%20OF%20STATE%20HAS%20NOT%20EXERCISED%20DISCRETION%20UNDER.pdf) (July 2026) · DAERA, [Animal products general guidance](https://www.daera-ni.gov.uk/articles/animal-products-general-guidance) · Seafish, [Animal by-products: handling, use and disposal](https://www.seafish.org/trade-and-regulation/uk-seafood-regulation/packaging-and-waste-legislation/animal-by-products-handling-use-and-disposal/) · NetRegs, [Fish waste disposal](https://netregs.org.uk/environmental-topics/waste/managing-waste-materials/fish-waste-disposal) · Scottish Government, [authorisation B6, crustacean shells to land](https://gov.scot/publications/animal-by-products-competent-authority-authorisations/application-of-animal-by-products-and-derived-products-to-land/b6-aquatic-crustacean-shells) (Scotland only).
 - **Northern Ireland:** NI Assembly Research and Information Service, [NI's marine and freshwater fish stock health](https://www.niassembly.gov.uk/globalassets/documents/raise/publications/2022-2027/2026/aera/2926.pdf) (15 April 2026, citing DAERA) · AFBI, [Shellfish management](https://www.afbini.gov.uk/articles/shellfish-management) · ITV/UTV, [prawns and Lough Neagh](https://itv.com/news/utv/2024-06-11/pink-prawns-might-provide-green-solution-to-lough-neaghs-woes) (11 June 2024; news) · Teagasc, [Fishing for value](https://teagasc.ie/about/research--innovation/research-publications/tresearch-articles/fishing-for-value/) (16 December 2025) · Queen's University, [shell cultch deployment, Strangford Lough](https://www.qub.ac.uk/research-centres/ModiolusRestorationResearchGroup/Research/PastResearch/ShellCultchDeploymentandModiolusTranslocation).
-- **Not checked against a primary source:** that clean shell falls outside Category 3; any NI rule on spreading shell; the 1,000 tonnes of Kilkeel prawn shell; port-by-port landings; fish silage details (the source found is marked “do not quote”); the calcification and calcination equations (standard chemistry). The examples are illustrative.
+- **Not checked against a primary source:** that clean shell falls outside Category 3; any NI rule on spreading shell; the 1,000 tonnes of Kilkeel prawn shell; port-by-port landings; fish silage details (the source found is marked “do not quote”); the calcification and calcination equations and the bone-mineral formula (standard chemistry); the 12% nitrogen of dried blood (supplier labels); that the potassium in blood, fish and bone comes from added potash. The examples are illustrative.
