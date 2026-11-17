@@ -183,8 +183,8 @@ def carbon_reservoirs():
             ('Soils (top metre)', 1500, 2400, '#6B4F3A', '1,500–2,400'),
             ('Permafrost region', 1300, 1600, '#9c7f66', '1,300–1,600'),
             ('Oceans', 38000, 38000, '#1f3b57', 'about 38,000'),
-            ('Everything above the surface', 43500, 43500, GREY, 'about 43,500 (0.2%)'),
-            ('Crust, mantle and core', 1.85e9, 1.85e9, INK, 'about 1,850,000,000 (99.8%)')]
+            ('Everything above the surface', 43500, 43500, GREY, 'about 43,500'),
+            ('Crust, mantle and core', 1.85e9, 1.85e9, INK, 'about 1,850,000,000 (over 99.99%)')]
     for i, (lab, a, z, c, t) in enumerate(rows):
         y = 80 + i * 56
         b += text(L - 12, y + 22, lab, 13.5, INK, 'end', '700')
@@ -203,8 +203,8 @@ def carbon_reservoirs():
     b += f'<line x1="{L}" y1="474" x2="{R}" y2="474" stroke="{INK}"/>'
     b += text(20, 515, 'The air holds about 0.00005% of Earth’s carbon. Fossil fuels are a small slice of the crust’s store, moved to the air in two centuries.', 11.5, RED, 'start', '700')
     svg('earth-carbon-reservoirs.svg', w, h, 'Where Earth’s carbon is stored',
-        'Billions of tonnes of carbon on a log scale: atmosphere about 900; land plants about 450; soils in the top metre 1,500 to 2,400; permafrost region 1,300 to 1,600; oceans about 38,000; everything above the surface about 43,500, or 0.2% of the total; '
-        'crust, mantle and core about 1.85 billion, or 99.8%. The air holds about 0.00005% of Earth’s carbon.', b)
+        'Billions of tonnes of carbon on a log scale: atmosphere about 900; land plants about 450; soils in the top metre 1,500 to 2,400; permafrost region 1,300 to 1,600; oceans about 38,000; everything above the surface about 43,500; '
+        'crust, mantle and core about 1.85 billion, over 99.99%. The air holds about 0.00005% of Earth’s carbon.', b)
 
 
 if __name__ == '__main__':

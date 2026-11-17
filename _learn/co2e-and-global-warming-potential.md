@@ -77,7 +77,7 @@ Three patterns explain almost everything:
 - **Potent and lasting a decade means the number depends on the horizon.** Methane traps about 81 times as much heat as CO₂ over its first 20 years but only about 28 times over 100, because by year 40 most of it has gone while the CO₂ is still there. Short-lived gases always look bigger on a 20-year view.
 - **Potent and lasting centuries means a huge, stable number.** SF₆, CF₄ and nitrous oxide are still there at year 100, so their GWP-20 and GWP-100 are similar, and for the longest-lived ones the 100-year figure is higher.
 
-**And CO₂?** It has the lowest GWP of all, exactly 1, by definition. But it is emitted in vast amounts and much of it stays for thousands of years, so it causes most of the warming. A low GWP does not mean a small problem.
+**And CO₂?** Its GWP is exactly 1, by definition, lower than almost every other greenhouse gas (only the very short-lived ones, such as HFO-1234yf, come in lower). But it is emitted in vast amounts and much of it stays for thousands of years, so it causes most of the warming. A low GWP does not mean a small problem.
 
 <figure class="learn-figure"><a href="{{ '/assets/learn/gwp-20-vs-100.svg' | relative_url }}" title="Open the chart full size"><img src="{{ '/assets/learn/gwp-20-vs-100.svg' | relative_url }}" alt="IPCC AR6 values. HFO-1234yf, 12 days: 1.81 over 20 years, 0.501 over 100. Methane, 11.8 years: 81.2 and 27.9. HFC-32, 5.4 years: 2,690 and 771. HFC-134a, 14 years: 4,140 and 1,530. Nitrous oxide, 109 years: 273 and 273. CF4, 50,000 years: 5,300 and 7,380. SF6, 1,000 years: 18,200 and 24,300. Short-lived gases fall between 20 and 100 years; long-lived ones hold or rise." loading="lazy"></a><figcaption>The shorter the life, the bigger the gap between the two numbers. Tap or click to open it full size.</figcaption></figure>
 
@@ -100,7 +100,7 @@ So **nitrous oxide is not a man-made gas**: about four-fifths of what is in the 
 
 **Where is all the carbon?** The answer puts the atmosphere in its place.
 
-<figure class="learn-figure"><a href="{{ '/assets/learn/earth-carbon-reservoirs.svg' | relative_url }}" title="Open the chart full size"><img src="{{ '/assets/learn/earth-carbon-reservoirs.svg' | relative_url }}" alt="Billions of tonnes of carbon on a log scale: atmosphere about 900; land plants about 450; soils in the top metre 1,500 to 2,400; permafrost region 1,300 to 1,600; oceans about 38,000; everything above the surface about 43,500, or 0.2% of the total; crust, mantle and core about 1.85 billion, or 99.8%. The air holds about 0.00005% of Earth's carbon." loading="lazy"></a><figcaption>The air is a thin film on a planet made of carbon-rich rock. Tap or click to open it full size.</figcaption></figure>
+<figure class="learn-figure"><a href="{{ '/assets/learn/earth-carbon-reservoirs.svg' | relative_url }}" title="Open the chart full size"><img src="{{ '/assets/learn/earth-carbon-reservoirs.svg' | relative_url }}" alt="Billions of tonnes of carbon on a log scale: atmosphere about 900; land plants about 450; soils in the top metre 1,500 to 2,400; permafrost region 1,300 to 1,600; oceans about 38,000; everything above the surface about 43,500; crust, mantle and core about 1.85 billion, over 99.99%. The air holds about 0.00005% of Earth's carbon." loading="lazy"></a><figcaption>The air is a thin film on a planet made of carbon-rich rock. Tap or click to open it full size.</figcaption></figure>
 
 | Store | Carbon (billion tonnes) | Share |
 |---|---|---|
@@ -109,10 +109,10 @@ So **nitrous oxide is not a man-made gas**: about four-fifths of what is in the 
 | Soils (top metre) | 1,500–2,400 | |
 | Permafrost region | 1,300–1,600 | |
 | Oceans | about 38,000 | |
-| **Everything above the surface** | **about 43,500** | **0.2%** |
-| **Crust, mantle and core** | **about 1.85 billion** | **99.8%** |
+| **Everything above the surface** | **about 43,500** | **about 0.002%** |
+| **Crust, mantle and core** | **about 1.85 billion** | **more than 99.99%** |
 
-The Deep Carbon Observatory, a ten-year international study reported in 2019, estimated that 99.8% of Earth's carbon is underground, in the crust, mantle and core, though the deep figures are uncertain. Most of that is locked away for geological time. It reaches the air mainly through volcanoes, which the US Geological Survey estimates release about 0.18–0.44 billion tonnes of CO₂ a year, **roughly a hundredth of what people now emit**.
+The Deep Carbon Observatory, a ten-year international study reported in 2019, estimated about 43,500 billion tonnes of carbon above the surface and about 1.85 billion billion tonnes in all; on those totals, more than 99.99% of Earth's carbon is underground in the crust, mantle and core. (The study's own press release rounded this as 99.8%; the deep figures are uncertain either way.) Most of it is locked away for geological time. It reaches the air mainly through volcanoes, which the US Geological Survey puts at about 0.13–0.44 billion tonnes of CO₂ a year: **people now emit roughly 80 to 270 times as much**.
 
 The point is not that the air's share is small. It is that the air is a **thin, sensitive film**: moving even a sliver of the crust's carbon (coal, oil and gas) into it in two centuries has raised CO₂ by half. The deep Earth recycles carbon over millions of years; we are doing it in a lifetime.
 
@@ -161,7 +161,7 @@ Sixteen grams of methane become 44 grams of CO₂, so **one tonne of methane bec
 
 Flares are not perfect: some methane slips through unburned. That is why the EU Methane Regulation, (EU) 2024/1787, in force since 4 August 2024, banned routine venting and flaring in the EU oil and gas sector from 5 February 2026 (with exceptions for emergencies and where unavoidable) and set efficiency requirements for the flares that remain.
 
-**Diffuse methane is harder.** Most farm methane comes from cows' digestion, breathed out across a whole field. It cannot be piped to a flare. The options there are to make less: the feed additive 3-NOP (sold as Bovaer) cuts methane from dairy cows by about 30% in studies, and was assessed as safe by the Food Standards Agency and Food Standards Scotland in March 2023. Taking methane back out of the open air, “methane removal”, is still at the research stage.
+**Diffuse methane is harder.** Most farm methane comes from cows' digestion, breathed out across a whole field. It cannot be piped to a flare. The options there are to make less: the feed additive 3-NOP (sold as Bovaer) cuts methane from dairy cows by about 30% in studies, and has been authorised in the EU since 2022 and assessed as safe for Great Britain by the Food Standards Agency and Food Standards Scotland in 2023. Taking methane back out of the open air, “methane removal”, is still at the research stage.
 
 ### Nitrous oxide: split it, or do not make it
 
@@ -179,10 +179,10 @@ Refrigerants and SF₆ sit inside equipment, so the job is to stop leaks, recove
 
 ## Why it matters in Northern Ireland
 
-- **NI's footprint is unusually non-CO₂.** In 2024, methane was 29.5% and nitrous oxide 8.0% of NI's emissions (DAERA and NISRA). The choice of metric moves NI's numbers more than most of the UK's: on GWP-20, the methane share would nearly triple.
-- **The GWP\* debate is a farming debate.** Because NI agriculture is methane-heavy, how methane is counted affects how farm progress looks. Official NI inventories and carbon budgets under the Climate Change Act (Northern Ireland) 2022 use GWP-100 (AR5).
+- **NI's footprint is unusually non-CO₂.** In 2024, methane was 29.5% and nitrous oxide 8.0% of NI's emissions (DAERA and NISRA). The choice of metric moves NI's numbers more than most of the UK's: on GWP-20, methane's CO₂e would nearly triple and its share of the total would rise from under a third to over half (my arithmetic).
+- **The GWP\* debate is a farming debate.** Because NI agriculture is methane-heavy, how methane is counted affects how farm progress looks. The official NI inventory, against which progress on the Climate Change Act (Northern Ireland) 2022 targets is reported, uses GWP-100 (AR5).
 - **Methane is capturable here.** Landfill sites, anaerobic digesters and slurry stores are point sources; covering slurry stores and feeding digesters turns an emission into a fuel.
-- **CBAM counts nitrous oxide.** Both CBAMs count nitrous oxide in the embedded emissions of fertiliser, in CO₂e, so a supplier's catalyst decides part of the bill.
+- **CBAM counts nitrous oxide.** The EU CBAM (definitive period from 1 January 2026) and the UK CBAM (from 1 January 2027) both count nitrous oxide in the embedded emissions of nitric-acid-based fertilisers, in CO₂e, so a supplier's catalyst decides part of the bill.
 
 ## Examples
 
@@ -210,13 +210,13 @@ A 200-cow dairy farm stores slurry in an open lagoon. The slurry gives off metha
 
 A food factory's chiller holds 50 kg of HFC-134a and loses about 10% a year.
 
-| | HFC-134a | HFO-1234yf (or similar low-GWP option) |
+| | HFC-134a | HFO-1234ze(E), a common low-GWP chiller refrigerant |
 |---|---|---|
 | Annual leak | 5 kg | 5 kg |
-| GWP-100 | 1,300 (AR5) | under 1 |
-| CO₂e | 6.5 tonnes | under 0.005 tonnes |
+| GWP-100 (AR6) | 1,530 | 1.37 (lifetime 19 days) |
+| CO₂e | 7.65 tonnes | about 0.007 tonnes |
 
-**The lesson:** the same leak, nearly 1,300 times smaller in CO₂e, because the new gas lasts days, not years. Check safety, flammability and the PFAS question before switching: some HFOs fall within broad PFAS definitions and break down to persistent trifluoroacetic acid, an issue under active review.
+**The lesson:** the same leak, about 1,100 times smaller in CO₂e, because the new gas lasts days, not years. (Some low-GWP blends sit in the hundreds, so check the actual product.) Check safety, flammability and the PFAS question before switching: some HFOs fall within broad PFAS definitions and break down to persistent trifluoroacetic acid, an issue under active review.
 </div>
 
 <div class="example" markdown="1">
@@ -234,8 +234,8 @@ A council owns a closed landfill still producing gas.
 ## Common mistakes
 
 1. **“CO₂e means CO₂.”** It is all seven gases, converted.
-2. **“A low GWP means a harmless gas.”** CO₂ has the lowest GWP of all and causes most of the warming.
-3. **“A short-lived gas can have a huge GWP.”** A short life always pulls the number down; potency alone is not enough.
+2. **“A low GWP means a harmless gas.”** CO₂'s GWP is just 1, and it causes most of the warming.
+3. **“A gas that disappears in days can have a huge GWP.”** A short life always pulls the number down; potency alone is not enough. Gases lasting a few years, such as HFC-32, can still have high GWPs, especially over 20 years.
 4. **“GWP-20 is the true number.”** It answers a different question. Say which you used.
 5. **“Burning methane is just more emissions.”** It cuts warming by about 90%, and more if the methane is biogenic or the energy is used.
 6. **“We can capture nitrous oxide from fields.”** Only from chimneys; on fields, the answer is making less.
@@ -248,11 +248,11 @@ Checked 17 November 2026.
 
 - **GWPs, lifetimes and radiative efficiencies:** IPCC, [AR6 WG1 Chapter 7 Supplementary Material, Table 7.SM.7](https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter07_SM.pdf) (2021) · HFO-1234yf values (12 days; GWP-20 1.81; GWP-100 0.501) as tabulated from AR6 by [UNEP and ASHRAE via Project Drawdown](https://drawdown.org/explorer/deploy-alternative-refrigerants/figure-a1) and [Fluorocarbons.org](https://www.fluorocarbons.org/wp-content/uploads/2020/10/Fluorocarbon-Molecules-environmental-properties-and-main-applications-2021-September-FINAL.pdf) (industry body) · GHG Protocol, [Global Warming Potential Values (August 2024)](https://ghgprotocol.org/sites/default/files/2024-08/Global-Warming-Potential-Values%20%28August%202024%29.pdf) (AR5 and fossil/non-fossil methane; secondary).
 - **Concentrations and natural shares:** WMO, [Greenhouse Gas Bulletin No. 22](https://www.justsecurity.org/wp-content/uploads/2026/10/WMO-GHG-22.pdf) (October 2026; 2025 values and shares of 1750; via a third-party copy) and [WMO news release](https://wmo.int/node/39151) · NOAA Global Monitoring Laboratory, [AGGI](https://gml.noaa.gov/aggi/aggi.html) · Trudinger et al. 2016, *Atmos. Chem. Phys.* 16, 11733 (CF₄ natural background 34.1 ppt; C₂F₆ none) · AGAGE (CF₄ 82.7 ppt in 2016, as cited by [Mühle et al.](https://acp.copernicus.org/preprints/acp-2020-937/acp-2020-937.pdf)). The natural and added shares are my arithmetic.
-- **Carbon stores:** Deep Carbon Observatory findings published in *Elements*, October 2019 (via [EurekAlert](https://www.eurekalert.org/news-releases/736161) and [Eos](https://eos.org/?p=134727)) · IPCC AR6 WG1 [Figure 5.12](https://www.ipcc.ch/report/ar6/wg1/figures/chapter-5/figure-5-12) (ocean, land and atmosphere stocks; ranges as commonly summarised) · NOAA Arctic Report Card 2024 (permafrost) · USGS volcanic CO₂ estimate 180–440 million tonnes a year (as quoted by [Gigafact](https://gigafact.org/fact-briefs/do-volcanoes-emit-more-co2-than-humans); USGS page not opened). The 0.00005% figure is my arithmetic.
+- **Carbon stores:** Deep Carbon Observatory findings published in *Elements*, October 2019 (via [EurekAlert](https://www.eurekalert.org/news-releases/736161) and [Eos](https://eos.org/?p=134727)) · IPCC AR6 WG1 [Figure 5.12](https://www.ipcc.ch/report/ar6/wg1/figures/chapter-5/figure-5-12) (ocean, land and atmosphere stocks; ranges as commonly summarised) · NOAA Arctic Report Card 2024 (permafrost) · USGS, [Volcanoes can affect climate](https://www.usgs.gov/programs/vhp/volcanoes-can-affect-climate) (0.13–0.44 billion tonnes of CO₂ a year; humans 80–270 times more). The 0.00005% and 0.002% figures are my arithmetic from the DCO totals.
 - **CO₂ decay curve:** the impulse-response fit of Joos et al. (2013) used by IPCC AR5; drawn here for illustration.
 - **UK and NI basis:** DESNZ, [GHG conversion factors 2026 methodology](https://assets.publishing.service.gov.uk/media/6a2940543b15d05a7ce3202e/2026-GHG-conversion-factors-methodology-report.pdf) · DAERA and NISRA, [NI GHG inventory 1990–2024](https://datavis.nisra.gov.uk/daera/northern-ireland-greenhouse-gas-inventory-1990-2024-statistical-bulletin.html) (9 June 2026).
 - **GWP\*:** Lynch, Cain, Pierrehumbert and Allen 2020, [*Environmental Research Letters*](https://www.leap.ox.ac.uk/node/1051686), doi:10.1088/1748-9326/ab6d7e · Cain, [Carbon Brief guest post](https://www.carbonbrief.org/guest-post-a-new-way-to-assess-global-warming-potential-of-short-lived-pollutants) (7 June 2018). The critics' argument is summarised from the wider debate and not checked against a single source.
-- **Methane:** Regulation (EU) 2024/1787, in force 4 August 2024; routine venting and flaring ban from 5 February 2026 (as summarised by [White & Case](https://whitecase.com/insight-alert/are-you-ready-new-eu-rules-methane-emissions-energy-sector) and [Conventus Law](https://conventuslaw.com/?p=121809); EUR-Lex not reachable today) · Food Standards Agency, [3-NOP (Bovaer 10) authorisation background](https://www.food.gov.uk/our-work/annex-m-rp1059-3-nitrooxypropanol-as-a-feed-additive-for-ruminants-for-milk-production-and-for-reproduction) (safety assessment published 31 March 2023) · Ohio State University, [3-NOP meta-analyses](https://dairy.osu.edu/newsletter/buckeye-dairy-news/volume-26-issue-3/3-nop-bovaer%E2%84%A2-receives-fda-approval) (about 28–33% less enteric methane).
+- **Methane:** Regulation (EU) 2024/1787, in force 4 August 2024; routine venting and flaring ban from 5 February 2026 (as summarised by [White & Case](https://whitecase.com/insight-alert/are-you-ready-new-eu-rules-methane-emissions-energy-sector) and [Conventus Law](https://conventuslaw.com/?p=121809); EUR-Lex not reachable today) · Commission Implementing Regulation (EU) 2022/565 (3-NOP authorised in the EU; not re-checked on EUR-Lex today) · Food Standards Agency, [3-NOP (Bovaer 10) authorisation background](https://www.food.gov.uk/our-work/annex-m-rp1059-3-nitrooxypropanol-as-a-feed-additive-for-ruminants-for-milk-production-and-for-reproduction) (2023) · Ohio State University, [3-NOP meta-analyses](https://dairy.osu.edu/newsletter/buckeye-dairy-news/volume-26-issue-3/3-nop-bovaer%E2%84%A2-receives-fda-approval) (about 28–33% less enteric methane).
 - **Nitrous oxide abatement:** International Platinum Group Metals Association, [N₂O abatement](https://ipa-news.com/index/about-pgms/pgm-uses/pollution-control/n2o-abatement.html) (secondary catalysts up to 90%) · Topsoe, [tertiary catalyst](https://topsoe.com/hubfs/CAMPAIGNS/TertiNOx/TertiNOx%20details.pdf?hsLang=en) (up to 99%; manufacturer claim) · Nitric Acid Climate Action Group, nitrous oxide from nitric acid production (abatement cost).
 - **F-gases in NI:** see [Why is everything counted as “carbon”?]({{ '/learn/why-everything-is-carbon/' | relative_url }}).
 - **Not checked against a primary source:** the saturation explanation for CO₂'s low radiative efficiency (standard physics); that methane removal from open air is at the research stage; the PFAS and trifluoroacetic acid point on HFOs (under review by regulators). Per-molecule ratios are my arithmetic from the IPCC radiative efficiencies. The examples are illustrative.
