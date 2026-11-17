@@ -1,6 +1,6 @@
 ---
 title: "Lough Neagh and cyanobacteria"
-answer: "Cyanobacteria, often called blue-green algae, are ancient bacteria that made the oxygen we breathe. Fed too much phosphorus, in warm, still, clear water, they bloom, and some make toxins. Lough Neagh, which supplies about 40% of Northern Ireland's drinking water, has had serious blooms every summer since 2023. The main cure is less phosphorus from farms and sewage, but the lough will take years to recover."
+answer: "Cyanobacteria, often called blue-green algae, are ancient bacteria that made the oxygen we breathe. Fed too much phosphorus, in warm, still, clear water, they bloom, and some make toxins. Lough Neagh, which supplies about 40% of Northern Ireland's drinking water, had serious blooms in 2023, 2024 and 2025. The main cure is less phosphorus from farms and sewage, but the lough will take years to recover."
 description: "Lough Neagh's blue-green algae explained: what cyanobacteria are, their good and bad sides, the phosphorus cycle and why blooms happen, where the phosphorus comes from, the toxins, the action plan and rules, and what it means for farms, councils and food businesses."
 theme: "Land, food and water"
 order: 11
@@ -9,7 +9,7 @@ read_time: "14-minute"
 checked: 2026-11-17
 ---
 
-In the summer of 2023 Lough Neagh turned green. Thick scums of blue-green algae washed onto its shores and down the Lower Bann to the north coast, and they have returned every year since. For a lough that supplies about 40% of Northern Ireland's drinking water, supports Europe's largest wild eel fishery and covers 392 km², it became the country's most visible environmental problem.
+In the summer of 2023 Lough Neagh turned green. Thick scums of blue-green algae washed onto its shores and down the Lower Bann to the north coast, and they returned in 2024 and 2025 (no end-of-season report for 2026 had been published when this was checked). For a lough that supplies about 40% of Northern Ireland's drinking water, supports Europe's largest wild eel fishery and covers 392 km², it became the country's most visible environmental problem.
 
 The organisms behind it are not really algae. They are **cyanobacteria**, and their story goes back three billion years.
 
@@ -54,7 +54,7 @@ Plants and algae need nitrogen and phosphorus. In most fresh water, **phosphorus
 | Septic tanks | 1% |
 | Other (forestry, urban) | 12% |
 
-Estimates differ a little by model, and NI Water said in February 2026 that an earlier “70% from agriculture” figure it had given should not have been presented as definitive. The picture is consistent, though: farming first, sewage second. The farm phosphorus comes mostly from imported feed: the OEP estimates Northern Ireland imports about 18,300 tonnes of phosphorus a year, 11,700 tonnes of it in feed, leaving a surplus of about 10,300 tonnes.
+Estimates differ a little by model, and NI Water said in February 2026 that an earlier “70% from agriculture” figure it had given should not have been presented as definitive, and that it fully owns its own share of the load. The picture is consistent, though: farming first, sewage second. The farm phosphorus comes mostly from imported feed: the OEP estimates Northern Ireland imports about 18,300 tonnes of phosphorus a year, 11,700 tonnes of it in feed, leaving a surplus of about 10,300 tonnes. (The Nutrients Action Programme proposals use a different 2024 baseline of 8,729 tonnes; estimates differ by year and method.)
 
 ## The rules and the response
 
@@ -102,7 +102,7 @@ Estimates differ a little by model, and NI Water said in February 2026 that an e
 
 ### A dairy farm in the Blackwater catchment
 
-A dairy farm with high soil phosphorus indices still buys compound fertiliser containing phosphorus out of habit.
+A dairy farm with high soil phosphorus indices still buys compound fertiliser containing phosphorus.
 
 | Step | Why |
 |---|---|

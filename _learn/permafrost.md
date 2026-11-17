@@ -1,6 +1,6 @@
 ---
 title: "Permafrost: worse than the ice caps?"
-answer: "Permafrost is ground that stays frozen for at least two years, and in the Arctic it holds roughly twice as much carbon as the whole atmosphere. As it thaws, that old plant matter rots into CO₂ and methane, adding to warming. Melting ice sheets raise the sea; thawing permafrost raises the carbon in the air. On carbon, permafrost is the bigger worry."
+answer: "Permafrost is ground that stays frozen for at least two years, and the soils of the permafrost region hold up to almost twice as much carbon as the whole atmosphere. As it thaws, that old plant matter rots into CO₂ and methane, adding to warming. Melting ice sheets raise the sea; thawing permafrost raises the carbon in the air. On carbon, permafrost is the bigger worry."
 description: "Permafrost explained: what it is, how much carbon it holds, how thaw releases CO₂ and methane, abrupt thaw and Siberian craters, why it differs from melting ice caps, and what it means for carbon budgets and for Northern Ireland's own peat."
 theme: "Land, food and water"
 order: 10
@@ -27,7 +27,7 @@ The US National Snow and Ice Data Center defines permafrost as soil, sand, sedim
 
 <figure class="learn-figure"><a href="{{ '/assets/learn/permafrost-carbon-stock.svg' | relative_url }}" title="Open the chart full size"><img src="{{ '/assets/learn/permafrost-carbon-stock.svg' | relative_url }}" alt="Bars in billions of tonnes of carbon: permafrost-region soils 1,300 to 1,600, of which about 800 is permanently frozen; the whole atmosphere in 2024 about 900. The IPCC projects 3 to 41 billion tonnes of carbon released as CO2 per degree of warming by 2100, with low confidence." loading="lazy"></a><figcaption>The frozen north holds more carbon than the sky. Tap or click to open it full size.</figcaption></figure>
 
-In the IPCC's words, the Arctic stores about **twice as much carbon** in its frozen soils as is currently in the atmosphere.
+The IPCC puts it as about **twice as much carbon** as is currently in the atmosphere. That compares the whole permafrost-region soil store with the air; the part that is permanently frozen today, about 800 billion tonnes, is a little less than the atmosphere's.
 
 ## How thaw becomes greenhouse gas
 
@@ -37,7 +37,7 @@ Once the ice in the soil melts, microbes wake up and eat the old plant remains. 
 
 | Conditions | Microbes | Main gas | Simplified reaction |
 |---|---|---|---|
-| Dry, airy soil | Aerobic decomposers | Carbon dioxide | (CH₂O)ₙ + O₂ → CO₂ + H₂O |
+| Dry, airy soil | Aerobic decomposers | Carbon dioxide | (CH₂O)ₙ + nO₂ → nCO₂ + nH₂O |
 | Waterlogged soil, thaw lakes, wetlands | Methanogens | Methane (and some CO₂) | CH₃COOH → CH₄ + CO₂; CO₂ + 4H₂ → CH₄ + 2H₂O |
 
 Most of the extra carbon is expected to come out as CO₂; methane is a smaller share of the carbon but a much stronger greenhouse gas per tonne. The IPCC also reports emerging evidence of more nitrous oxide where thaw collapses the ground.

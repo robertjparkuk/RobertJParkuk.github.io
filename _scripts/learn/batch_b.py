@@ -52,7 +52,7 @@ def peat_wet_dry():
             b += arr(gx + 80, 110, gx + 80, surf - 10, 3, GREEN, 2.5) + text(gx + 92, 128, 'CO₂ taken in by Sphagnum moss', 12, GREEN, 'start', '700')
             b += arr(gx + 300, surf - 4, gx + 300, 110, 1, RED, 1.5) + text(gx + 312, 128, 'a little methane', 12, RED, 'start')
             b += lines(gx + 200, 250, ['No oxygen below the water:', 'dead moss barely rots'], 13)
-            b += lines(gx + 200, 300, ['Methane-making microbes, slowly:', 'CH₃COOH → CH₄ + CO₂'], 12.5, mono=False)
+            b += lines(gx + 200, 300, ['Methane-making microbes, slowly:', 'CO₂ + 4H₂ → CH₄ + 2H₂O'], 12.5, mono=False)
             b += lines(gx + 200, 360, ['Peat builds up about 1 mm a year'], 13, col=INK)
             b += text(x + 225, 455, 'Net result', 13, INK, weight='700')
             b += text(x + 225, 475, 'a slow, steady carbon store', 13, GREEN, weight='700')
@@ -61,15 +61,15 @@ def peat_wet_dry():
             b += arr(gx + 120, surf - 4, gx + 120, 100, 1, RED, 4) + text(gx + 134, 118, 'CO₂ from rotting peat', 12.5, RED, 'start', '700')
             b += arr(gx + 330, surf + 30, gx + 330, surf + 220, 1, BROWN, 3) + text(gx + 322, surf + 240, 'brown water (dissolved carbon)', 11.5, BROWN, 'end', '700')
             b += lines(gx + 170, 215, ['Air gets in above the water table:'], 13)
-            b += lines(gx + 170, 238, ['C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O'], 12.5, mono=True)
+            b += lines(gx + 170, 238, ['(CH₂O)ₙ + nO₂ → nCO₂ + nH₂O'], 12.5, mono=True)
             b += lines(gx + 170, 262, ['peat oxidises and the ground sinks'], 12.5, col=MUTED)
             b += lines(gx + 170, 330, ['Dry peat can burn'], 12.5, col=RED)
             b += text(x + 225, 455, 'Net result', 13, INK, weight='700')
             b += text(x + 225, 475, 'a carbon source, year after year', 13, RED, weight='700')
             b += text(x + 225, 500, 'until it is rewetted', 12, MUTED)
     svg('peat-wet-vs-drained.svg', w, h, 'Wet and drained peat compared',
-        'Two panels. A wet, intact bog: the water table sits at the surface, Sphagnum moss takes in CO2, dead moss barely rots without oxygen, a little methane is made (acetic acid gives methane and CO2), and peat builds up about a millimetre a year: a slow carbon store. '
-        'A drained bog: air gets in above a lowered water table, peat oxidises (glucose plus oxygen gives CO2 and water), the ground sinks, dissolved carbon leaves as brown water, and dry peat can burn: a carbon source until it is rewetted.', b)
+        'Two panels. A wet, intact bog: the water table sits at the surface, Sphagnum moss takes in CO2, dead moss barely rots without oxygen, a little methane is made (CO2 plus hydrogen gives methane and water), and peat builds up about a millimetre a year: a slow carbon store. '
+        'A drained bog: air gets in above a lowered water table, peat oxidises (carbohydrate plus oxygen gives CO2 and water), the ground sinks, dissolved carbon leaves as brown water, and dry peat can burn: a carbon source until it is rewetted.', b)
 
 
 def peat_cycle():
@@ -155,7 +155,7 @@ def phosphorus_cycle():
     b += arr(730, 255, 730, 330, 0, INK, 2) + text(742, 290, 'they die and sink', 12, MUTED, 'start')
     b += f'<rect x="540" y="340" width="380" height="100" rx="6" fill="#5a4636" opacity="0.25"/>'
     b += text(730, 362, 'Bed sediment', 13, INK, weight='700')
-    b += lines(730, 384, ['Rotting uses up the oxygen', 'Without oxygen, iron lets go of phosphate:', 'Fe-P → Fe²⁺ + PO₄³⁻ back into the water'], 12)
+    b += lines(730, 384, ['Rotting uses up the oxygen', 'Without oxygen, iron lets go of phosphate:', 'FePO₄ + e⁻ → Fe²⁺ + PO₄³⁻ (simplified)'], 12)
     b += f'<path d="M920 390 C 960 330, 960 210, 922 160" fill="none" stroke="{RED}" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#a1)"/>'
     b += text(944, 470, 'internal loading:', 11.5, RED, 'end', '700') + text(944, 486, 'the lough feeds itself', 11.5, RED, 'end')
     # bottom note
@@ -198,7 +198,7 @@ def carbonate_chem():
     w, h = 960, 520
     b = arrow_defs(INK, RED, BLUE)
     b += text(20, 30, 'What CO₂ does to seawater', 20, INK, 'start', '700')
-    b += text(20, 52, 'Each step releases hydrogen ions (H⁺). More H⁺ means lower pH and fewer carbonate ions for shells.', 13, MUTED, 'start')
+    b += text(20, 52, 'The second and third steps release hydrogen ions (H⁺). More H⁺ means lower pH and fewer carbonate ions for shells.', 13, MUTED, 'start')
     b += f'<rect x="20" y="70" width="920" height="70" rx="8" fill="#f1f4f7" stroke="{RULE}"/>'
     b += text(480, 112, 'CO₂ in the air  ⇌  CO₂ dissolved in the sea', 16, INK, weight='700')
     b += arr(480, 140, 480, 170, 0, INK, 2)
@@ -232,12 +232,12 @@ def ocean_feedbacks():
     nodes = [('More CO₂ and heat', 'from burning fossil', 'fuels', True),
              ('Ice melts', 'white ice reflects most', 'sunlight; dark sea absorbs it', False),
              ('Fresh water floods in', 'melting ice dilutes', 'the North Atlantic', False),
-             ('Circulation slows', 'less salty water sinks', 'less readily', True),
+             ('Circulation may slow', 'less salty water sinks', 'less readily', True),
              ('Seas warm and stratify', 'layers stop mixing;', 'blooms, less oxygen', False),
              ('Seas absorb less CO₂', 'warm water holds', 'less gas', True)]
-    cycle('ocean-feedbacks.svg', 'From melting ice to a slower ocean', 'Linked feedbacks in the North Atlantic. Each one is real; how far and how fast they go is still being studied.',
+    cycle('ocean-feedbacks.svg', 'From melting ice to a slower ocean', 'Linked feedbacks in the North Atlantic. Each is expected; how far and how fast they go is still being studied.',
           nodes, ['Ocean feedbacks', 'warming changes', 'the sea, which', 'changes warming'],
-          'A six-step loop. More CO2 and heat melt sea ice; white ice reflects most sunlight while dark sea absorbs it. Melting ice adds fresh water that dilutes the North Atlantic, and less salty water sinks less readily, so the overturning circulation slows. '
+          'A six-step loop. More CO2 and heat melt sea ice; white ice reflects most sunlight while dark sea absorbs it. Melting ice adds fresh water that dilutes the North Atlantic, and less salty water sinks less readily, so the overturning circulation is projected to slow. '
           'Seas warm and stratify, so layers stop mixing, with more blooms and less oxygen. Warmer water holds less gas, so the sea absorbs less CO2, adding to warming.',
           w=900, h=640, cx=450, cy=345, R=215)
 
@@ -295,16 +295,16 @@ def ni_peat_inventory():
     w, h = 900, 300
     L, W, mx = 330, 470, 3
     b = text(20, 30, 'Northern Ireland, 2024: peat against all land use', 20, INK, 'start', '700')
-    b += text(20, 52, 'Million tonnes CO₂e. NI greenhouse gas inventory, DAERA and NISRA, 9 June 2026.', 13, MUTED, 'start')
-    rows = [('Peatland emissions', 2.31, BROWN, '2.31'), ('All land use, net (LULUCF)', 2.1, GREY, '2.1')]
+    b += text(20, 52, 'Million tonnes CO₂e. NI inventory (DAERA and NISRA, 9 June 2026) and devolved inventory report: peat was 108% of net land use.', 13, MUTED, 'start')
+    rows = [('Peatland emissions', 2.27, BROWN, 'about 2.3'), ('All land use, net (LULUCF)', 2.1, GREY, '2.1')]
     for i, (lab, v, c, t) in enumerate(rows):
         y = 85 + i * 64
         b += text(L - 12, y + 26, lab, 14, INK, 'end', '700')
         b += f'<rect x="{L}" y="{y+6}" width="{W*v/mx:.1f}" height="32" rx="4" fill="{c}"/>' + text(L + W * v / mx + 10, y + 28, t, 14, INK, 'start', '700')
     b += text(20, 236, 'Peat emits more than the whole land-use sector nets out to: forests and grassland soils absorb some, peat gives more back.', 12.5, INK, 'start')
-    b += text(20, 258, 'That is about 12.6% of NI’s net emissions (my arithmetic: 2.31 of 18.4).', 12.5, RED, 'start', '700')
+    b += text(20, 258, 'That is about 12% of NI’s net emissions (my arithmetic: about 2.3 of 18.4).', 12.5, RED, 'start', '700')
     svg('ni-peat-inventory.svg', w, h, 'Northern Ireland peat emissions compared with the whole land-use sector',
-        'In 2024 Northern Ireland peatlands emitted 2.31 million tonnes of CO2 equivalent, more than the 2.1 million tonnes net for all land use, because forests and grassland soils absorb some carbon. Peat is about 12.6% of NI net emissions.', b)
+        'In 2024 Northern Ireland peatlands emitted about 2.3 million tonnes of CO2 equivalent, 108% of the 2.1 million tonnes net for all land use, because forests and grassland soils absorb some carbon. Peat is about 12% of NI net emissions.', b)
 
 
 def ln_sources():
