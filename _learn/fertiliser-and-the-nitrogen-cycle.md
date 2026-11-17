@@ -20,29 +20,29 @@ For most of history that was done by bacteria and lightning. Since 1913 it has a
 | Stage | What happens | Reaction | Who does it |
 |---|---|---|---|
 | **Fixation (industrial)** | Nitrogen and hydrogen joined into ammonia | N₂ + 3H₂ → 2NH₃ | Haber–Bosch plants, 400–500 °C, 150–250 bar, iron catalyst |
-| **Fixation (biological)** | Bacteria in root nodules make ammonia | N₂ → NH₃ (enzyme: nitrogenase) | Rhizobium bacteria in clover, peas and beans |
+| **Fixation (biological)** | Bacteria in root nodules make ammonia | N₂ + 8H⁺ + 8e⁻ → 2NH₃ + H₂ (enzyme: nitrogenase) | Rhizobium bacteria in clover, peas and beans |
 | **Fixation (lightning)** | Lightning joins nitrogen and oxygen | N₂ + O₂ → 2NO, washed down as nitrate | Thunderstorms |
 | **Ammonification** | Dead plants, dung and slurry break down | Organic N → NH₄⁺ (ammonium) | Soil microbes |
 | **Nitrification** | Ammonium turned into nitrate | NH₄⁺ → NO₂⁻ → NO₃⁻ | Nitrosomonas then Nitrobacter (and others) |
 | **Uptake** | Roots take up nitrate and ammonium | Built into protein | Grass and crops |
 | **Denitrification** | In wet, airless soil, nitrate is stripped back to gas | NO₃⁻ → NO₂⁻ → NO → N₂O → N₂ | Soil bacteria with no oxygen to breathe |
-| **Volatilisation** | Ammonia gas escapes | Urea + water → NH₃ + CO₂; slurry NH₄⁺ → NH₃ | Chemistry, helped by the enzyme urease |
+| **Volatilisation** | Ammonia gas escapes | CO(NH₂)₂ + H₂O → 2NH₃ + CO₂ (urea); slurry NH₄⁺ → NH₃ | Chemistry, helped by the enzyme urease |
 | **Leaching** | Nitrate washes out of the soil | Soluble NO₃⁻ drains away | Rain |
 
-**Where nitrous oxide comes from.** N₂O is a by-product of nitrification and an unfinished step in denitrification. When soil bacteria run short of oxygen (a wet, compacted, warm field with plenty of nitrate) they use nitrate instead, and if they stop half way, N₂O escapes. Soils are the largest source of N₂O on Earth. Northern Ireland's wet climate and heavy soils make it a hotspot.
+**Where nitrous oxide comes from.** N₂O is a by-product of nitrification and an unfinished step in denitrification. When soil bacteria run short of oxygen (a wet, compacted, warm field with plenty of nitrate) they use nitrate instead, and if they stop half way, N₂O escapes. Soils are the largest source of N₂O on Earth. Wet conditions favour it, which is why the IPCC gives a higher emission factor for synthetic fertiliser spread in wet climates such as Northern Ireland's.
 
-Nitrous oxide matters twice over: it traps 265 times as much heat as CO₂ over 100 years (the figure used in UK reporting), and in the stratosphere it is now the biggest ozone-depleting emission. See [Why is everything counted as “carbon”?]({{ '/learn/why-everything-is-carbon/' | relative_url }}).
+Nitrous oxide matters twice over: it traps 265 times as much heat as CO₂ over 100 years (the figure used in UK reporting), and it is now the largest ozone-depleting emission, destroying ozone once it reaches the stratosphere (Ravishankara and colleagues, *Science*, 2009). See [Why is everything counted as “carbon”?]({{ '/learn/why-everything-is-carbon/' | relative_url }}).
 
 ## The life cycle of a bag of fertiliser
 
-<figure class="learn-figure"><a href="{{ '/assets/learn/fertiliser-life-cycle.svg' | relative_url }}" title="Open the diagram full size"><img src="{{ '/assets/learn/fertiliser-life-cycle.svg' | relative_url }}" alt="Seven stages left to right: natural gas; hydrogen made by steam reforming, releasing the most CO2; ammonia made by Haber–Bosch, needing energy; nitric acid, which releases nitrous oxide unless abated; ammonium nitrate, CAN or urea, using electricity; shipping and haulage, using fuel; and the field, where nitrous oxide and ammonia are released. Both carbon border taxes count the first five stages, cradle to gate, for CO2 and nitrous oxide; a farm or food footprint should include all seven." loading="lazy"></a><figcaption>CBAM stops at the factory gate; the farm footprint carries on into the field. Tap or click to open it full size.</figcaption></figure>
+<figure class="learn-figure"><a href="{{ '/assets/learn/fertiliser-life-cycle.svg' | relative_url }}" title="Open the diagram full size"><img src="{{ '/assets/learn/fertiliser-life-cycle.svg' | relative_url }}" alt="Seven stages left to right: natural gas, with methane leaks in supply; hydrogen made by steam reforming, releasing the most CO2; ammonia made by Haber–Bosch, needing energy; nitric acid, which releases nitrous oxide unless abated; ammonium nitrate, CAN or urea, using electricity; shipping and haulage, using fuel; and the field, where nitrous oxide and ammonia are released. The carbon border taxes count the emissions at the production plants, from hydrogen to finished fertiliser, for CO2 and nitrous oxide; EU CBAM also counts electricity, UK CBAM direct emissions only. Neither counts methane leaks in gas supply or emissions on the field. A farm or food footprint should include all seven stages." loading="lazy"></a><figcaption>CBAM stops at the factory gate; the farm footprint carries on into the field. Tap or click to open it full size.</figcaption></figure>
 
 1. **Gas to hydrogen.** Natural gas and steam make hydrogen and CO₂ (see [Hydrogen by colour]({{ '/learn/hydrogen-by-colour/' | relative_url }})). This is the biggest source of CO₂.
 2. **Hydrogen to ammonia.** Haber–Bosch: N₂ + 3H₂ → 2NH₃. The reaction gives off heat, but the plant needs a lot of energy for pressure and gas. Ammonia production uses about 2% of the world's final energy and emits about 450 million tonnes of CO₂ a year directly; about 70% of ammonia goes into fertiliser.
 3. **Ammonia to nitric acid.** Ammonia is burned over a platinum gauze to make nitric acid, and the side reactions make **nitrous oxide**. Modern European plants destroy most of it; many plants elsewhere do not.
 4. **Into the bag.** Nitric acid and ammonia make ammonium nitrate (AN), which is blended into calcium ammonium nitrate (CAN). Urea is made from ammonia and CO₂ instead, which is why urea releases CO₂ on the field.
 5. **To the farm.** Shipped and hauled.
-6. **On the field.** Some nitrogen becomes nitrous oxide; some escapes as ammonia; some leaches as nitrate. The IPCC's refined default (2019) is that **1.6% of the nitrogen in synthetic fertiliser** spread in a wet climate is emitted directly as N₂O, up from the old 1% default.
+6. **On the field.** Some nitrogen becomes nitrous oxide; some escapes as ammonia; some leaches as nitrate. The IPCC's 2019 refinement gives **1.6% of the nitrogen in synthetic fertiliser** spread in a wet climate as emitted directly as N₂O. Its overall default is still 1%, and the UK inventory uses its own country-specific factors.
 
 <figure class="learn-figure"><a href="{{ '/assets/learn/fertiliser-by-region.svg' | relative_url }}" title="Open the chart full size"><img src="{{ '/assets/learn/fertiliser-by-region.svg' | relative_url }}" alt="Kilograms of CO2 equivalent per kilogram of nitrogen, cradle to gate, from an industry-published study using 2013–14 data: European average 3.32; North America 6.71; Russia and neighbouring states 7.11; Middle East 7.15; China, coal-based, 10.88. The main difference is that most European nitric acid plants abate their nitrous oxide." loading="lazy"></a><figcaption>Where the bag was made can double its footprint. Tap or click to open it full size.</figcaption></figure>
 
@@ -66,10 +66,10 @@ Both CBAMs count only the factory half. The field emissions, often as large or l
 
 - **Agriculture is NI's largest emitting sector:** 31.4% of the total in 2024, 5.8 million tonnes of CO₂e. Of that, 4.3 Mt was methane, 1.2 Mt nitrous oxide and 0.3 Mt CO₂.
 - **Fertiliser drove the latest rise.** DAERA and NISRA say the increase in farm emissions from 2023 to 2024 was largely driven by manufactured fertilisers, up 16.9%.
-- **Ammonia:** Northern Ireland produces **12% of the UK's ammonia emissions** with 3% of its population and 6% of its land. 97% comes from farming. Farm ammonia was 30.8 thousand tonnes in 2023, 7% higher than in 2005, when UK livestock ammonia fell by about 16% over the same period.
+- **Ammonia:** Northern Ireland produces **12% of the UK's ammonia emissions** with 3% of its population and 6% of its land. 97% comes from farming. Farm ammonia was 30.8 thousand tonnes in 2023, 7% higher than in 2005, while UK livestock ammonia fell by about 16% over the same period.
 - **Fertiliser use is falling.** DAERA's figures show chemical fertiliser nitrogen use down 44% since 2005, though urea use has risen; deliveries in the first half of 2026 were 22% lower than a year earlier.
 - **Phosphorus and Lough Neagh.** Nitrogen's partner nutrient is phosphorus. The national phosphorus surplus was about 8,729 tonnes in 2024, and about 40% of farmland has more soil phosphorus than crops need. That is the link to the algal blooms in Lough Neagh (a later explainer in this series).
-- **The CBAM point.** Most fertiliser used in NI is imported. From 2027 the UK CBAM adds a carbon cost to fertiliser imported from outside the UK, based on how it was made.
+- **The CBAM point.** I have found no official breakdown of where NI's fertiliser comes from. Whatever is imported from outside the UK will carry a UK CBAM cost from 2027, based on how it was made.
 
 ### Think of a leaky bucket
 
@@ -119,7 +119,7 @@ An NI agricultural merchant imports ammonium nitrate from outside the UK.
 | What the supplier must provide | Optional | Verified emissions data, or default values are used |
 | Effect of where it was made | Hidden | A plant without nitrous oxide abatement may carry twice the embedded emissions |
 
-**The lesson:** ask suppliers now whether their nitric acid plant abates nitrous oxide and for verified emissions per tonne. It will decide the CBAM bill and makes a selling point for low-carbon supply.
+**The lesson:** ask suppliers now whether their nitric acid plant abates nitrous oxide and for verified emissions per tonne. It will largely decide the CBAM bill and makes a selling point for low-carbon supply.
 </div>
 
 <div class="example" markdown="1">
@@ -139,10 +139,10 @@ A council receives a planning application for a new poultry or pig unit near a p
 ## Common mistakes
 
 1. **Counting only the factory.** CBAM stops at the gate; for most fertilisers the field emissions are as large or larger.
-2. **Using the old 1% factor.** The IPCC's 2019 refinement uses 1.6% for synthetic fertiliser in wet climates like Northern Ireland's.
-3. **Forgetting ammonia.** It is not a greenhouse gas, but it is NI's biggest air-quality problem from farming, and it turns into nitrous oxide later.
+2. **Using one factor for everything.** The IPCC's 2019 refinement keeps 1% overall but uses 1.6% for synthetic fertiliser in wet climates like Northern Ireland's.
+3. **Forgetting ammonia.** It is not a greenhouse gas, but it is NI's biggest air-quality problem from farming, and a small share of it becomes nitrous oxide after it settles on land.
 4. **Assuming all fertiliser is the same.** Where and how it was made can double its footprint.
-5. **Calling the 2025 urea ban law.** It was proposed and replaced; check the final 2027–2030 programme before acting.
+5. **Assuming the urea rules are settled.** A 2025 proposal to ban unprotected granular urea from 2027 was dropped and replaced by the 2027–2030 consultation. Check the final programme before acting.
 
 Previous: [Hydrogen by colour]({{ '/learn/hydrogen-by-colour/' | relative_url }}) · Next: [Carbon capture and carbon negative]({{ '/learn/carbon-capture-and-carbon-negative/' | relative_url }}) · Related: [Embodied carbon or embedded emissions?]({{ '/learn/embodied-vs-embedded-carbon/' | relative_url }}) (the fertiliser example) · [Farm Carbon Data Checker]({{ '/tools/farm-data-checker/' | relative_url }})
 
@@ -153,6 +153,7 @@ Checked 17 November 2026.
 - **Haber–Bosch conditions:** University of Wisconsin, [Chem 109: The Haber–Bosch process](https://wisc.pb.unizin.org/chem109fall2023/chapter/haber-bosch-process) (400–500 °C, 150–250 bar, iron catalyst).
 - **Ammonia's energy and CO₂:** IEA, [Ammonia Technology Roadmap](https://www.iea.org/reports/ammonia-technology-roadmap/executive-summary) (October 2021).
 - **Fertiliser footprints by region:** Hoxha and Christensen, [The carbon footprint of fertiliser production: regional reference values](https://www.fertilizerseurope.com/wp-content/uploads/2020/01/The-carbon-footprint-of-fertilizer-production_Regional-reference-values.pdf) (International Fertiliser Society, industry-published; 2013–14 data).
+- **Ozone:** Ravishankara, Daniel and Portmann, [*Science* 326, 123 (2009)](https://ozone.unep.org/sites/default/files/2019-08/Ravishankara%20et%20al_Science_N2O_10_2_09.pdf).
 - **Field N₂O factors:** Hergoualc'h et al. 2021, [Global Change Biology](https://www.cifor-icraf.org/publications/pdf_files/articles/AHergoualch2102.pdf) (the work behind the IPCC 2019 Refinement: 1.6% for synthetic fertiliser in wet climates; 1% old default) · Butterbach-Bahl et al. 2013, [Phil. Trans. R. Soc. B 368](https://www.ilri.org/knowledge/publications/nitrous-oxide-emissions-soils-how-well-do-we-understand-processes-and-their) (soils the dominant N₂O source).
 - **CBAM:** Regulation (EU) 2023/956, [Annex I](https://www.climateaction.gov.mt/wp-content/uploads/2024/12/CELEX_32023R0956_EN_TXT-39-45.pdf) (official copy) · European Commission, [CBAM](https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en) · HMRC, [UK CBAM policy summary](https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary) (updated 2 November 2026).
 - **Northern Ireland:** DAERA and NISRA, [NI GHG inventory 1990–2024](https://datavis.nisra.gov.uk/daera/northern-ireland-greenhouse-gas-inventory-1990-2024-statistical-bulletin.html) (9 June 2026) · DAERA, [Ammonia emissions in Northern Ireland](https://www.daera-ni.gov.uk/articles/ammonia-emissions-northern-ireland) · DAERA, [NI Environmental Statistics Report 2026](https://www.daera-ni.gov.uk/system/files/2026-05/NI%20Environmental%20Statistics%20Report%202026.pdf) · DAERA, [Fertiliser statistics Q2 2026](https://www.daera-ni.gov.uk/sites/default/files/2026-08/Northern%20Ireland%20Fertiliser%20Statistics%20for%20Q2%202026.pdf) · DAERA, [Nutrients Action Programme](https://www.daera-ni.gov.uk/articles/nutrients-action-programme) and [NAP 2027–2030 consultation](https://www.daera-ni.gov.uk/sites/default/files/2026-06/Consultation%20on%20the%20Nutrients%20Action%20Programme%20%28NAP%29%20-%202027-2030_2.PDF) · DAERA, [Ammonia Strategy consultation](https://www.daera-ni.gov.uk/consultations/consultation-sea-environmental-report-proposed-ammonia-strategy-and-revised-operational-protocol) · NAEI, [UK agriculture ammonia emission report 1990–2024](https://naei.energysecurity.gov.uk/sites/default/files/2026-08/UK_Agriculture_Ammonia_Emission_Report_1990-2024_08.07.2026.pdf) (protected urea 70%) · CAFRE, [White clover](https://cafre.ac.uk/?p=24488) (about 150 kg N/ha).

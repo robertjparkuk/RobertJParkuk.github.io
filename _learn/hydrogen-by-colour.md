@@ -9,9 +9,9 @@ read_time: "13-minute"
 checked: 2026-11-17
 ---
 
-Hydrogen is sold as the clean fuel of the future, and when it burns or runs a fuel cell the only product is water. But almost all hydrogen made today comes from natural gas, and making it releases more CO₂ than burning the gas would have done. So “is hydrogen green?” is the wrong question. The right one is: **how was this hydrogen made, and how much carbon came with each kilogram?**
+Hydrogen is sold as the clean fuel of the future, and when it burns or runs a fuel cell the only product is water. But under 1% of the world's hydrogen is made by low-emission routes. According to the IEA, about two-thirds comes from natural gas and about a fifth from coal, and for the same useful energy, making hydrogen from gas releases more CO₂ than simply burning the gas. So “is hydrogen green?” is the wrong question. The right one is: **how was this hydrogen made, and how much carbon came with each kilogram?**
 
-The colours are a shorthand for that. They are informal, they are not used in any UK or EU law, and the International Energy Agency has warned that they hide big differences. But you will meet them everywhere, so here is what they mean.
+The colours are a shorthand for that. They are informal, they are not used in the UK or EU hydrogen standards, and the International Energy Agency has warned that they hide big differences. But you will meet them everywhere, so here is what they mean.
 
 ## Seven colours, side by side
 
@@ -43,7 +43,7 @@ Add them up and every molecule of methane gives four of hydrogen and one of carb
 
 ### The chemistry of green
 
-Electrolysis runs reforming in reverse. Pass a current through water and it splits:
+Electrolysis is the reverse of burning hydrogen. Pass a current through water and it splits:
 
 **2H₂O → 2H₂ + O₂**
 
@@ -85,17 +85,17 @@ Hydrogen is not a greenhouse gas: it does not absorb infrared. But it is a tiny,
 
 **H₂ + OH → H₂O + H**
 
-Every OH radical used up by hydrogen is one not available to destroy methane, so methane lasts longer. The same chemistry adds ozone and water vapour high up. A 2023 multi-model study by Sand and colleagues put hydrogen's 100-year GWP at **11.6 ± 2.8**: each tonne leaked warms like about 12 tonnes of CO₂. Neither the UK nor the EU thresholds above count hydrogen leaks themselves, so a hydrogen system with high leakage can look cleaner on paper than it is.
+Every OH radical used up by hydrogen is one not available to destroy methane, so methane lasts longer. The same chemistry adds ozone and water vapour high up. A 2023 multi-model study by Sand and colleagues put hydrogen's 100-year GWP at **11.6 ± 2.8**: each tonne leaked warms like about 12 tonnes of CO₂. Neither the UK nor the EU thresholds above count hydrogen leaks as emissions, so a hydrogen system with high leakage can look cleaner on paper than it is. The UK standard does at least require producers to plan against leaks and report them each year.
 
 ## Why it matters in Northern Ireland
 
 **Policy.** The Department for the Economy consulted on a hydrogen policy from 25 September to 18 December 2025 and published its response on 27 May 2026; a hydrogen action plan is to follow. A law firm's summary of the response reports no targets for now, alignment with the UK standard and a preference for green hydrogen; I have not been able to check that against the department's own document. None of the UK's subsidised hydrogen projects is in Northern Ireland: 11 projects won the first allocation round in December 2023, ten had signed contracts by July 2025, and none of the 27 shortlisted for the second round, announced in April 2025, is in NI.
 
-**Buses.** Belfast was early. Three hydrogen fuel-cell double-deckers, built by Wrightbus in Ballymena, joined Translink's Metro fleet in December 2020, running on hydrogen made by electrolysis at a North Antrim wind farm using wind power that would otherwise have been curtailed.
+**Buses.** Belfast was early. Three hydrogen fuel-cell double-deckers, built by Wrightbus in Ballymena, arrived for Translink's Metro fleet in December 2020, to run on hydrogen made by electrolysis at a North Antrim wind farm using wind power that would otherwise have been curtailed.
 
 **Storage under Larne Lough.** The salt beds around Larne and Carrickfergus are, according to the Geological Survey of Northern Ireland, the only thick salt on the island of Ireland, which is why caverns there have been proposed for gas storage. The Islandmagee project was for **natural gas, not hydrogen**: seven caverns holding about 500 million cubic metres. DAERA granted its licences in November 2021; the Court of Appeal allowed a challenge on 17 June 2024; and DAERA's register now lists the marine licence application as withdrawn. GSNI notes the salt is thinner and less pure than elsewhere, which would also matter for any hydrogen storage idea. (Facts only; not legal advice.)
 
-**Fertiliser.** Most of the world's hydrogen goes into ammonia and methanol. Every bag of nitrogen fertiliser spread in Northern Ireland started as hydrogen, almost all of it grey. See [Fertiliser and the nitrogen cycle]({{ '/learn/fertiliser-and-the-nitrogen-cycle/' | relative_url }}).
+**Fertiliser.** About half of the world's hydrogen goes into ammonia and methanol. Every bag of nitrogen fertiliser spread in Northern Ireland started as hydrogen, almost all of it grey. See [Fertiliser and the nitrogen cycle]({{ '/learn/fertiliser-and-the-nitrogen-cycle/' | relative_url }}).
 
 ### Think of electricity tariffs, then add a meter
 
@@ -107,7 +107,7 @@ Buying hydrogen by colour is like buying a “green” electricity tariff withou
 | The supplier's actual fuel mix | The plant's actual route and capture rate |
 | Grams of CO₂ per kWh on your bill | kg of CO₂e per kg of hydrogen on the certificate |
 | Matching renewable certificates to when you use power | EU rules matching electrolysis to renewable generation in time and place |
-| A leaking meter nobody reads | Hydrogen leaks that no standard counts |
+| A leaking meter nobody bills you for | Hydrogen leaks the UK standard asks producers to report, but no threshold counts |
 
 Ask for the number, the method and who checked it, not the colour.
 
@@ -123,10 +123,10 @@ A County Antrim food processor is offered hydrogen-ready boilers and asks whethe
 | | Natural gas | Grey hydrogen | Green hydrogen |
 |---|---|---|---|
 | Energy delivered | 1 MWh | 1 MWh (30 kg H₂) | 1 MWh (30 kg H₂) |
-| Emissions (illustrative) | about 0.18 t CO₂ | about 0.30–0.36 t CO₂e | 0.08 t CO₂e or less |
+| Emissions (illustrative) | about 0.18 t CO₂ burned (about 0.21 t with gas supply) | about 0.30–0.36 t CO₂e | 0.08 t CO₂e or less |
 | Electricity to make it | none | none | about 1.5 MWh |
 
-The numbers are rounded and illustrative (30 kg of hydrogen at 10–12 kg CO₂e each for grey; up to 2.7 for green). **The lesson:** grey hydrogen is worse than the gas it replaces. Green hydrogen cuts emissions but needs one and a half times as much electricity as the heat it delivers; a heat pump or direct electric heating usually needs far less.
+The numbers are rounded and illustrative (30 kg of hydrogen at 10–12 kg CO₂e each for grey; up to 2.7 for green). **The lesson:** grey hydrogen is worse than the gas it replaces. Green hydrogen cuts emissions but needs one and a half times as much electricity as the energy in the hydrogen, and more once boiler losses are counted; a heat pump or direct electric heating usually needs far less.
 </div>
 
 <div class="example" markdown="1">
@@ -148,17 +148,17 @@ A council-backed transport scheme is offered both. The questions to ask: where w
 
 An NI merchant imports ammonium nitrate made from grey hydrogen. From 1 January 2027 the UK CBAM applies to fertilisers, and the EU CBAM already covers fertiliser entering the EU.
 
-**What happens:** the embedded emissions of the fertiliser start with the hydrogen. A supplier who switches to green or high-capture blue hydrogen for ammonia lowers the CBAM charge on every tonne. Ask suppliers which hydrogen route they use and for their verified emissions data.
+**What happens:** the embedded emissions of the fertiliser start with the hydrogen. A supplier who switches to green or high-capture blue hydrogen for ammonia can lower the CBAM charge on every tonne, provided it supplies verified actual emissions data; otherwise default values apply. Ask suppliers which hydrogen route they use and for their verified emissions data.
 
 **The lesson:** hydrogen's colour shows up on the farm invoice before it shows up in a fuel tank.
 </div>
 
 ## Common mistakes
 
-1. **Calling all hydrogen clean.** Almost all of it today is grey, and grey hydrogen emits more than the gas it was made from.
+1. **Calling all hydrogen clean.** Under 1% is made by low-emission routes; most is grey or brown, and grey hydrogen emits more than burning the gas it was made from.
 2. **Trusting the colour.** “Blue” covers both 0.8 and 8 kg of CO₂e per kg. Ask for the number.
 3. **Forgetting the electricity.** Green hydrogen needs about 50 kWh per kg; using the power directly is often better.
-4. **Ignoring leaks.** Hydrogen warms indirectly, about 12 times CO₂ over 100 years, and the standards do not count it.
+4. **Ignoring leaks.** Hydrogen warms indirectly, about 12 times CO₂ over 100 years. Neither the UK nor the EU threshold counts it, though the UK standard requires leaks to be reported.
 5. **Assuming Islandmagee was a hydrogen project.** It was for natural gas.
 
 Previous: [Was it the Sun?]({{ '/learn/was-it-the-sun/' | relative_url }}) · Next: [Fertiliser and the nitrogen cycle]({{ '/learn/fertiliser-and-the-nitrogen-cycle/' | relative_url }}) · Related: [Carbon capture and carbon negative]({{ '/learn/carbon-capture-and-carbon-negative/' | relative_url }})
@@ -167,7 +167,7 @@ Previous: [Was it the Sun?]({{ '/learn/was-it-the-sun/' | relative_url }}) · Ne
 
 Checked 17 November 2026.
 
-- **Emissions by route and efficiency:** IEA, [Global Hydrogen Review 2024: GHG emissions of hydrogen](https://www.iea.org/reports/global-hydrogen-review-2024/ghg-emissions-of-hydrogen-and-its-derivatives) (grey 10–12, blue 0.8–8, coal 22–26, renewable kit 0.4–2.7, grid break-even 200–240 g/kWh) · IEA, [Towards hydrogen definitions based on emissions intensity (2023)](https://www.iea.org/reports/towards-hydrogen-definitions-based-on-their-emissions-intensity/executive-summary) (warning on colour labels) · IEA, [GHR 2024 assumptions annex](https://iea.blob.core.windows.net/assets/36017d2f-747b-4993-b06d-33209fe143fa/GHR24AssumptionsAnnex.pdf) (66% electrolyser efficiency) · IEA, [Global Hydrogen Review 2026](https://www.iea.org/reports/global-hydrogen-review-2026/key-questions-about-hydrogen) (natural hydrogen; ammonia and methanol about half of use).
+- **Emissions by route and efficiency:** IEA, [Global Hydrogen Review 2024: GHG emissions of hydrogen](https://www.iea.org/reports/global-hydrogen-review-2024/ghg-emissions-of-hydrogen-and-its-derivatives) (grey 10–12, coal 22–26, renewable kit 0.4–2.7, grid break-even 200–240 g/kWh) · IEA, [Towards hydrogen definitions based on emissions intensity (2023)](https://www.iea.org/reports/towards-hydrogen-definitions-based-on-their-emissions-intensity/executive-summary) (blue 5–8 and 0.8–6; warning on colour labels; under 1% low-emission) · IEA, [GHR 2024 assumptions annex](https://iea.blob.core.windows.net/assets/36017d2f-747b-4993-b06d-33209fe143fa/GHR24AssumptionsAnnex.pdf) (66% electrolyser efficiency) · IEA, [Global Hydrogen Review 2026](https://www.iea.org/reports/global-hydrogen-review-2026/key-questions-about-hydrogen) (natural hydrogen; ammonia and methanol about half of use).
 - **Thresholds:** DESNZ, [UK Low Carbon Hydrogen Standard, version 4](https://www.gov.uk/government/publications/uk-low-carbon-hydrogen-standard-emissions-reporting-and-sustainability-criteria) (19 January 2026) · [Delegated Regulation (EU) 2023/1185](https://eur-lex.europa.eu/eli/reg_del/2023/1185/oj/eng) · [Delegated Regulation (EU) 2025/2359](https://eur-lex.europa.eu/eli/reg_del/2025/2359/oj/eng). Conversions to kg per kg are mine, using 120 MJ per kg.
 - **Hydrogen's GWP:** Sand et al. 2023, [Communications Earth & Environment 4, 203](https://doi.org/10.1038/s43247-023-00857-8).
 - **CBAM:** HMRC, [UK CBAM policy summary](https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary) (updated 2 November 2026) · Regulation (EU) 2023/956, Annexes I and II (from an official copy; EUR-Lex not reachable today, and later amendments to Annex II not re-checked).

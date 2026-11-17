@@ -162,7 +162,7 @@ def nitrogen_cycle():
     b += text(36, 452, 'Soil and water', 13, MUTED, 'start', '700')
     nodes = {
         'hb': (130, 230, 'Haber–Bosch', ['N₂ + 3H₂ → 2NH₃', '400–500 °C, iron catalyst']),
-        'clover': (330, 230, 'Clover and lightning', ['Bacteria in root nodules', 'about 150 kg N/ha a year']),
+        'clover': (330, 230, 'Clover', ['Bacteria in root nodules', 'about 150 kg N/ha a year']),
         'nh4': (230, 510, 'Ammonium NH₄⁺', ['from fertiliser, slurry,', 'rotting plants']),
         'no3': (520, 510, 'Nitrate NO₃⁻', ['the form most plants', 'take up']),
         'crop': (520, 230, 'Grass and crops', ['protein in silage,', 'grain, milk, meat']),
@@ -226,16 +226,17 @@ def fertiliser_chain():
     def br(x1, x2, yy, lab, sub, col):
         return (f'<path d="M{x1} {yy} v-8 H{x2} v8" fill="none" stroke="{col}" stroke-width="2.5"/>' + text((x1 + x2) / 2, yy - 16, lab, 13, col, weight='700')
                 + (text((x1 + x2) / 2, yy - 32, sub, 11.5, MUTED) if sub else ''))
+    xs = x0 + (bw + gap)
     xe = x0 + 5 * (bw + gap) - gap
-    b += br(x0, xe, 108, 'Cradle to gate: counted by both CBAMs (CO₂ and N₂O)', '', RED)
+    b += br(xs, xe, 108, 'Counted by CBAM: emissions at the plants (CO₂, N₂O); EU CBAM also counts electricity', '', RED)
     b += f'<path d="M{x0} 360 v8 H{x0 + 7*(bw+gap) - gap} v-8" fill="none" stroke="{INK}" stroke-width="2.5"/>'
     b += text(x0 + (7 * (bw + gap) - gap) / 2, 388, 'Cradle to field: what a farm or food carbon footprint should include', 13, INK, weight='700')
-    b += text(20, 430, 'In a typical life cycle study the field emissions are as large as, or larger than, the factory emissions; both CBAMs stop at the factory gate.', 12, MUTED, 'start')
+    b += text(20, 430, 'Neither CBAM counts methane leaks in gas supply or anything that happens on the field.', 12, MUTED, 'start')
     b += text(20, 448, 'EU CBAM also counts the electricity used (indirect emissions) for fertilisers; UK CBAM counts direct emissions only from 1 January 2027.', 12, MUTED, 'start')
     svg('fertiliser-life-cycle.svg', w, h, 'The life cycle of nitrogen fertiliser and what CBAM counts',
-        'Seven stages left to right: natural gas; hydrogen made by steam reforming, releasing the most CO2; ammonia made by Haber–Bosch, needing energy; nitric acid, which releases nitrous oxide unless abated; '
+        'Seven stages left to right: natural gas, with methane leaks in supply; hydrogen made by steam reforming, releasing the most CO2; ammonia made by Haber–Bosch, needing energy; nitric acid, which releases nitrous oxide unless abated; '
         'ammonium nitrate, CAN or urea, using electricity; shipping and haulage, using fuel; and the field, where nitrous oxide and ammonia are released. '
-        'Both carbon border taxes count the first five stages, cradle to gate, for CO2 and nitrous oxide; a farm or food footprint should include all seven. EU CBAM also counts electricity for fertilisers; UK CBAM counts direct emissions only.', b)
+        'The carbon border taxes count the emissions at the production plants, from hydrogen to finished fertiliser, for CO2 and nitrous oxide; EU CBAM also counts electricity, UK CBAM direct emissions only. Neither counts methane leaks in gas supply or emissions on the field. A farm or food footprint should include all seven stages.', b)
 
 
 def fertiliser_regions():
@@ -309,7 +310,7 @@ def ab_vs_ad():
     b += text(x0 + 225, 325, 'amine + CO₂ → carbamate', 12, MUTED)
     b += text(x0 + 225, 360, 'Heat to 100–120 °C and the CO₂ comes back out,', 12.5, INK)
     b += text(x0 + 225, 378, 'pure enough to compress and store.', 12.5, INK)
-    b += text(x0 + 225, 410, 'Used on power stations and cement kilns.', 12.5, MUTED)
+    b += text(x0 + 225, 410, 'Used in gas processing and power stations; now coming to cement.', 12.5, MUTED)
     b += text(x0 + 225, 428, 'The heat is the cost: a 10–40% energy penalty.', 12.5, RED, weight='600')
     # right panel: solid surface
     x1 = 490
@@ -334,19 +335,19 @@ def ab_vs_ad():
     b += text(940, 465, '* Typical of the most porous frameworks; varies widely.', 10.5, MUTED, 'end')
     svg('absorption-vs-adsorption.svg', w, h, 'Absorption and adsorption compared',
         'Left, absorption: carbon dioxide dissolves into a liquid amine solvent at about 40 °C and reacts, 2 RNH2 plus CO2 giving a carbamate; heating to 100 to 120 °C releases pure CO2 for storage. '
-        'Used on power stations and cement kilns, with a 10 to 40% energy penalty. Right, adsorption: carbon dioxide sticks to the inner surfaces of a porous solid such as a zeolite, a metal–organic framework or amine-coated silica, '
+        'Used in gas processing and power stations and now coming to cement, with a 10 to 40% energy penalty. Right, adsorption: carbon dioxide sticks to the inner surfaces of a porous solid such as a zeolite, a metal–organic framework or amine-coated silica, '
         'and is released by heat, vacuum or a pressure drop. Used in many direct air capture machines.', b)
 
 
 def carbonate_cycle():
     nodes = [('Limestone CaCO₃', 'shells and corals', 'turned to rock', False),
              ('Kiln: lime and cement', 'CaCO₃ → CaO + CO₂', '0.52 t CO₂ per t clinker', True),
-             ('Lime and concrete', 'slowly re-absorb CO₂', 'CaO + CO₂ → CaCO₃', False),
+             ('Mortar and concrete', 'slowly re-absorb CO₂', 'Ca(OH)₂ + CO₂ → CaCO₃', False),
              ('Captured CO₂ in rock', 'basalt + CO₂ + water', '→ carbonate in <2 years', True)]
     cycle('carbonate-cycle.svg', 'Turning carbon back into stone', 'The carbonate cycle links seashells, cement kilns, lime mortar and the newest way to store CO₂: mineralisation.',
-          nodes, ['Calcium carbonate', 'the same mineral', 'at every step'],
+          nodes, ['Carbonate minerals', 'made, broken and', 'made again'],
           'A four-step cycle. Limestone, calcium carbonate made from ancient shells and corals, is heated in a kiln to make lime and cement, releasing CO2: CaCO3 gives CaO plus CO2, about 0.52 tonnes of CO2 per tonne of clinker. '
-          'Lime mortar and concrete slowly re-absorb some CO2, CaO plus CO2 giving CaCO3 again. Captured CO2 pumped into basalt with water turns into carbonate rock in under two years, as at CarbFix in Iceland, and so back to stone.',
+          'Lime mortar and concrete slowly re-absorb some CO2 as calcium hydroxide turns back into calcium carbonate. Captured CO2 pumped into basalt with water turns into carbonate rock in under two years, as at CarbFix in Iceland, and so back to stone.',
           w=900, h=600, cx=450, cy=330, R=190)
 
 
@@ -372,7 +373,7 @@ def offset_ladder():
     b = text(20, 30, 'Offsets: the good, the ugly and the harmful', 20, INK, 'start', '700')
     b += text(20, 52, 'A quality ladder. Higher rungs are more likely to be real, extra and lasting. Evidence from the studies cited on the page.', 13, MUTED, 'start')
     rungs = [('Durable removals', 'Direct air capture, BECCS, mineralisation', 'Stored for 10,000+ years; expensive and scarce', GREEN, 'Good'),
-             ('Verified UK woodland and peat units', 'Woodland Carbon Code, Peatland Code', 'Measured on the ground; 20% buffer; lasts decades to centuries', GREEN, 'Good'),
+             ('Verified UK woodland and peat units', 'Woodland Carbon Code, Peatland Code', 'Checked on site by verifiers; 20% buffer; lasts decades to centuries', GREEN, 'Good'),
              ('Pending UK units', 'Promises of future carbon', 'Cannot yet be used to report emissions', '#B0A060', 'Ugly'),
              ('Renewable energy credits', 'Wind and solar abroad', 'Often built anyway; not eligible for the ICVCM quality label', '#C98B3A', 'Ugly'),
              ('Over-credited avoidance', 'Some forest protection (REDD+) and cookstove credits', 'Studies: about 6% of REDD+ credits real; cookstoves over-credited about 9 times', RED, 'Harmful')]
@@ -387,7 +388,7 @@ def offset_ladder():
         b += text(132 + inset, y + 64, ev, 12.5, INK, 'start')
     svg('offset-quality-ladder.svg', w, h, 'A quality ladder for carbon offsets',
         'Five rungs from best to worst. Good: durable removals such as direct air capture, bioenergy with carbon capture and mineralisation, stored for 10,000 years or more but expensive and scarce. '
-        'Good: verified UK woodland and peat units, measured on the ground with a 20% buffer, lasting decades to centuries. Ugly: pending UK units, promises of future carbon that cannot yet be used to report emissions. '
+        'Good: verified UK woodland and peat units, checked on site by independent verifiers with a 20% buffer, lasting decades to centuries. Ugly: pending UK units, promises of future carbon that cannot yet be used to report emissions. '
         'Ugly: renewable energy credits, often for projects that would have been built anyway and not eligible for the ICVCM quality label. '
         'Harmful: over-credited avoidance credits; studies found about 6% of REDD+ forest credits represented real reductions and cookstove credits were over-credited about nine times.', b)
 
