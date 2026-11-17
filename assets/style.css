@@ -262,9 +262,10 @@ h3 { font-size: 1.2rem; margin: 1.75rem 0 0.5rem; }
 .prose th { border-bottom: 2px solid var(--ink); }
 .learn-list { list-style: none; padding: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); max-width: 60rem; }
 .learn-list li { border: 1px solid var(--rule); border-top: 4px solid var(--red); padding: 1rem 1.25rem; background: var(--bg); }
-.learn-list h3 { margin: 0 0 0.4rem; font-size: 1.15rem; }
-.learn-list h3 a { color: var(--ink); text-decoration: none; }
-.learn-list h3 a:hover { color: var(--red); }
+.learn-list h3, .learn-list h4 { margin: 0 0 0.4rem; font-size: 1.15rem; }
+.learn-list h3 a, .learn-list h4 a { color: var(--ink); text-decoration: none; }
+.learn-list h3 a:hover, .learn-list h4 a:hover { color: var(--red); }
+.learn-theme { margin: 2rem 0 0.75rem; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--red); }
 .learn-list p { margin: 0; color: var(--muted); }
 .learn-next { max-width: 42rem; margin-top: 2.5rem; }
 .learn-next h2 { font-size: 1.3rem; }

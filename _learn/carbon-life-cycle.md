@@ -2,6 +2,7 @@
 title: "What is a carbon life cycle?"
 answer: "A carbon life cycle follows a product or building from its raw materials to the end of its life and counts the greenhouse gases released at each stage, so you can see where the carbon really is and be clear about which part of the journey a number covers."
 description: "The carbon life cycle explained: the stages from extraction to end of life, the A–D modules used for buildings and products, cradle to gate and cradle to grave, and three worked examples."
+theme: "Carbon basics"
 order: 2
 level: "Introductory"
 read_time: "9-minute"

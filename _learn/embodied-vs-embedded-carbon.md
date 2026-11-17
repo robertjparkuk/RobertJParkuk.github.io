@@ -2,6 +2,7 @@
 title: "Embodied carbon or embedded emissions: what is the difference?"
 answer: "Embodied carbon is the building world's term for all the carbon in making, building, maintaining and disposing of something, except the energy used to run it. Embedded emissions is the EU carbon border tax's term for a much narrower, legally defined slice: the emissions from producing a good. And the UK's own carbon border tax calls that narrow slice \"embodied\"."
 description: "Embodied carbon, embedded emissions and the UK CBAM's 'embodied emissions' explained: what each counts, who uses which term, and why mixing them up costs Northern Ireland firms money."
+theme: "Carbon basics"
 order: 1
 level: "Introductory"
 read_time: "10-minute"

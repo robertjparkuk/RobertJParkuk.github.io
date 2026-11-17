@@ -39,6 +39,7 @@ The Learn section lives at robertjpark.co.uk/learn/. Each explainer is one Markd
    title: "What is a carbon offset?"
    answer: "One plain sentence that answers the question. It appears in a box at the top and on the Learn page."
    description: "The summary search engines and LinkedIn show, under 160 characters."
+   theme: "Carbon basics"
    order: 3
    level: "Introductory"
    read_time: "6-minute"   # shows as "6-minute read"
@@ -46,8 +47,8 @@ The Learn section lives at robertjpark.co.uk/learn/. Each explainer is one Markd
    ---
    ```
 
-   `order` sets its place in the list on the Learn page. `level` can be Introductory, Intermediate or Technical.
-3. Write the explainer underneath. A good order is: the short answer in more detail; a diagram; "Why it matters in Northern Ireland"; `## Examples`; "Common mistakes"; `## Sources`.
+   `theme` sets which group it appears under on the Learn page: Carbon basics; Energy and industry; Land, food and water; Materials and buildings; Claims, credits and markets; or Is it true?. `order` sets its place within the list. `level` can be Introductory, Intermediate or Technical.
+3. Write the explainer underneath in the house style: the short answer in more detail; a side-by-side table; diagrams (at least a cycle, a reaction or process scheme, and a comparison); "The rules" with dates; "Why it matters in Northern Ireland"; a "Think of …" analogy table; `## Examples` with three sector boxes; "Common mistakes"; `## Sources` with the date checked.
 4. Commit it on a new branch and open a pull request. It appears on the Learn page automatically.
 
 ## Add a diagram

@@ -2,6 +2,7 @@
 title: "Why is everything counted as “carbon”?"
 answer: "“Carbon” is shorthand. Carbon accounts cover seven greenhouse gases, several of which contain no carbon at all, such as nitrous oxide, sulphur hexafluoride and nitrogen trifluoride. Each is converted into the amount of carbon dioxide that would trap the same heat over 100 years, so they can be added up in one currency: tonnes of CO₂ equivalent (CO₂e)."
 description: "Why nitrous oxide, SF₆, NF₃, PFCs and water vapour all end up in a “carbon” footprint: global warming potentials, molecule shapes, which infrared wavelengths each gas absorbs, and where in the atmosphere each one is finally destroyed."
+theme: "Carbon basics"
 order: 3
 level: "Intermediate"
 read_time: "15-minute"
