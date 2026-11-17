@@ -8,73 +8,88 @@
 <title>Site Report Reader</title>
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
 <style>
-/* Layout: header, upload strip, then a one-page summary: report card, risk table, results, then next steps and questions side by side. */
+/* Robert J. Park brand: mostly white and ink, one red accent. DejaVu Sans only. Light theme only (the logo is dark artwork). */
 :root{
-  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2; --field:#FFFFFF;
-  --red:#B3121B; --land:#7A5A2B; --ok:#1F6B45; --warn:#A86A00; --hi:#B3121B;
-  --display:'Fraunces',Georgia,'Times New Roman',serif;
-  --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+  --brand-red:#a61c1c; --ink:#1a1a1a; --ink-muted:#595959; --rule-red:#d9a0a0; --rule-grey:#d9d9d9;
+  --surface:#ffffff; --surface-alt:#f6f6f6; --surface-tint:#f8eded; --on-ink:#ffffff; --on-red:#ffffff;
+  --sans:"DejaVu Sans",Verdana,"Bitstream Vera Sans",sans-serif;
+  --s1:4px; --s2:8px; --s3:16px; --s4:24px; --s5:48px; --r-sm:4px; --r-md:6px;
+  color-scheme:light;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D; --field:#1E1A19;
-  --red:#E5484D; --land:#C9A46A; --ok:#4CC38A; --warn:#E0A84B; --hi:#E5484D; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D; --field:#1E1A19;
-  --red:#E5484D; --land:#C9A46A; --ok:#4CC38A; --warn:#E0A84B; --hi:#E5484D; color-scheme:dark}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
-  padding:24px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
-.wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
-.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
-.brand b{color:var(--red)}
-h1{font-family:var(--display);font-size:clamp(32px,5vw,50px);line-height:1.04;margin:0;text-wrap:balance}
-h2{font-family:var(--display);font-size:clamp(22px,3vw,30px);margin:0;line-height:1.15;text-wrap:balance}
-h3{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0}
-.lede{margin:0;color:var(--muted);max-width:68ch;font-size:18px}
-.btn{border:1px solid var(--rule);background:var(--tint);color:var(--ink);font:600 14px var(--body);padding:7px 12px;border-radius:6px;cursor:pointer}
-.btn:hover{border-color:var(--ink)}
-.btn.primary{background:var(--red);border-color:var(--red);color:#fff}
-button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--red);outline-offset:2px}
-.upl{border-top:3px solid var(--ink);border-bottom:1px solid var(--rule);padding:14px 0;display:flex;flex-direction:column;gap:10px}
-.upl p{margin:0;max-width:80ch}
-label.consent{display:flex;gap:8px;align-items:flex-start;font-size:14px;max-width:80ch}
-label.consent input{margin-top:3px}
-.small{font-size:13.5px;color:var(--muted)}
-.msg{font-size:14px;margin:0}.msg:empty{display:none}
-.chip{display:inline-block;font-size:12.5px;font-weight:700;border-radius:999px;padding:2px 9px;background:var(--land);color:#fff}
-.chip.ex{background:var(--warn)}
-.card{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
-.k{background:var(--tint);border-radius:6px;padding:10px 12px;min-width:0}
-.k .l{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
-.k .v{font-weight:600;overflow-wrap:anywhere}
-.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
-.box{display:flex;flex-direction:column;gap:8px;min-width:0}
-ul.list{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+html{background:var(--surface)}
+body{margin:0;background:var(--surface);color:var(--ink);font:15px/1.55 var(--sans);
+  padding:var(--s4) max(var(--s3),env(safe-area-inset-right,0px)) var(--s5) max(var(--s3),env(safe-area-inset-left,0px))}
+.wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:var(--s4)}
+.mast{display:flex;flex-direction:column;gap:var(--s3);border-bottom:1px solid var(--rule-red);padding-bottom:var(--s3)}
+.mast img{display:block;height:auto;max-width:100%}
+.mast .logo-full{width:300px}.mast .logo-compact{width:200px;display:none}
+@media (max-width:560px){.mast .logo-full{display:none}.mast .logo-compact{display:block}}
+h1{font-size:32px;line-height:1.2;font-weight:700;margin:0;text-wrap:balance}
+h2{font-size:22px;line-height:1.3;font-weight:700;margin:0;display:flex;align-items:baseline;gap:10px;text-wrap:balance}
+h2::before{content:"";flex:none;width:11px;height:11px;border-radius:50%;background:var(--brand-red);transform:translateY(-1px)}
+.label,h3{font-size:12px;line-height:1.3;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);margin:0}
+.lede{margin:0;color:var(--ink-muted);max-width:70ch}
+.small{font-size:13px;line-height:1.45;color:var(--ink-muted)}
+a{color:var(--ink)}
+.btn{border:.75pt solid var(--ink);background:var(--surface);color:var(--ink);font:700 13px var(--sans);padding:7px 12px;border-radius:var(--r-md);cursor:pointer;text-decoration:none;display:inline-block}
+.btn:hover{background:var(--surface-alt)}
+.btn.primary{background:var(--brand-red);border-color:var(--brand-red);color:var(--on-red)}
+.btn.primary:hover{background:#861616}
+button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--brand-red);outline-offset:2px}
+.box{border:.75pt solid var(--ink);border-radius:var(--r-md);padding:var(--s3);display:flex;flex-direction:column;gap:12px;min-width:0}
+.box p{margin:0}
+.hl{background:var(--surface-tint);border:1.5pt solid var(--brand-red);border-radius:var(--r-md);padding:var(--s3)}
+.key{color:var(--brand-red);font-weight:700}
+.badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:var(--r-sm);padding:2px 7px;background:var(--brand-red);color:var(--on-red)}
 .tablebox{overflow-x:auto}
-table{border-collapse:collapse;width:100%;min-width:640px;font-size:14.5px}
-th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
-th{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.risk{font-weight:700}.r-hi{color:var(--hi)}.r-mod{color:var(--warn)}.r-lo{color:var(--ok)}
-.flag{border-left:4px solid var(--land);background:var(--tint);padding:10px 12px;border-radius:0 6px 6px 0;font-size:15px}
-.flag b{display:block}
-.cta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center;background:var(--tint);border-radius:8px;padding:16px 18px}
-.cta .t{font-family:var(--display);font-size:22px;font-weight:600}
-.note{font-size:13px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;display:flex;flex-direction:column;gap:6px}
-.note a,.small a{color:inherit}
+table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.45}
+thead th{background:var(--ink);color:var(--on-ink);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-align:left;padding:8px 10px;vertical-align:bottom}
+tbody td{padding:8px 10px;border-bottom:1px solid var(--rule-grey);vertical-align:top}
+tbody tr:nth-child(even) td{background:var(--surface-alt)}
+.dots{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;counter-reset:d}
+.dots>li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;counter-increment:d}
+.dots>li::before{content:counter(d);width:24px;height:24px;border-radius:50%;background:var(--ink);color:var(--on-ink);font-size:12px;font-weight:700;display:grid;place-items:center}
+.dots>li.hot::before{background:var(--brand-red)}
+.dots b{display:block}
+.cta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center}
+.cta .t{font-size:16px;font-weight:700}
+.cta.box{flex-direction:row;align-items:center}
+.note{font-size:13px;color:var(--ink-muted);border-top:1px solid var(--rule-grey);padding-top:12px;display:flex;flex-direction:column;gap:6px}
+.note a{color:inherit}
+footer.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13px;color:var(--ink-muted);border-top:1px solid var(--rule-red);padding-top:10px}
+.msg{font-size:13px;margin:0}.msg:empty{display:none}
+label.consent{display:flex;gap:8px;align-items:flex-start;font-size:13px;max-width:80ch}
+label.consent input{margin-top:3px}
+.upl{display:flex;flex-direction:column;gap:10px}
+.upl p{margin:0;max-width:80ch}
+.card{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s2)}
+.k{border:.75pt solid var(--ink);border-radius:var(--r-md);padding:10px 12px;min-width:0}
+.k .v{font-weight:700;overflow-wrap:anywhere}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s4);align-items:start}
+.sec{display:flex;flex-direction:column;gap:8px;min-width:0}
+.sec p{margin:0}
+ul.list{margin:0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:4px}
+ul.list li{display:grid;grid-template-columns:14px minmax(0,1fr);gap:6px}
+ul.list li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ink);margin-top:.6em}
+table{min-width:640px}
+.risk{font-weight:400}.risk.high{color:var(--brand-red);font-weight:700}
 @media (max-width:860px){.cols{grid-template-columns:minmax(0,1fr)}.card{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media print{.upl,.cta,#copyBtn{display:none!important}body{padding:0}}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header style="display:flex;flex-direction:column;gap:12px">
-    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+  <header class="mast">
+    <a href="/" title="Back to the Robert J. Park website"><img class="logo-full" src="/assets/brand/logo.svg" width="300" height="82" alt="Robert J. Park: Environment · Carbon · Public Affairs, Northern Ireland"><img class="logo-compact" src="/assets/brand/logo-compact.svg" width="200" height="60" alt="Robert J. Park"></a>
+  </header>
+  <div style="display:flex;flex-direction:column;gap:12px">
     <h1>Site Report Reader</h1>
     <p class="lede">Turn a land contamination report into one page: what the site was used for, what was found, how serious the risks are and what has to happen next. For buyers, lenders, developers and councillors who need the gist of a long technical report.</p>
-  </header>
+  </div>
 
-  <section class="upl" aria-label="Upload a report">
+  <section class="upl box" aria-label="Upload a report">
     <div id="upload" hidden>
       <p><b>Upload a Phase 1 desk study, site investigation, risk assessment, remediation strategy or verification report</b> as a PDF (up to 20 MB). For a long report, upload the summary, conclusions and results chapters.</p>
       <label class="consent" for="ok"><input type="checkbox" id="ok"> <span>Send this report to be read. It goes through my server to Anthropic's Claude AI, which returns a summary. The report isn't stored or sent to me, and the summary leaves out names and street addresses. Only send reports you're entitled to share. <a href="/privacy/#readers">How the readers handle your file</a></span></label>
@@ -88,13 +103,14 @@ th{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted
 
   <main id="out" aria-live="polite"></main>
 
-  <div class="cta"><div><div class="t">Buying, lending on or developing land in Northern Ireland?</div><div>I lead land and contamination work with a multidisciplinary team, from reading the reports to agreeing remediation with the council.</div></div>
+  <div class="cta box"><div><div class="t">Buying, lending on or developing land in Northern Ireland?</div><div>I lead land and contamination work with a multidisciplinary team, from reading the reports to agreeing remediation with the council.</div></div>
     <a class="btn primary" href="/contact/" style="text-decoration:none">Talk to Robert</a></div>
 
   <div class="note">
     <div>The summary repeats what the report says. It doesn't check the report's methods or results, add screening values or rate risks itself, and it isn't a substitute for reading the report or for professional advice.</div>
     <div>Background: <a href="/blog/2026/10/contaminated-land-in-northern-ireland/">Contaminated land in Northern Ireland: the regime that never started</a> · <a href="/blog/2026/11/the-land-law-stormont-never-switched-on/">The land law Stormont never switched on</a> · <a href="/tools/land-repair-helix.html">The Land Repair Helix</a></div>
   </div>
+  <footer class="foot"><span>Robert J. Park · Larne, Northern Ireland</span><span><a href="/privacy/" style="color:inherit">Privacy</a></span></footer>
 </div>
 
 <script>
@@ -130,7 +146,7 @@ const EXAMPLE={is_site_report:true,report_type:"phase2_site_investigation",consu
  limitations:["The former workshop floor slab was not investigated"],notes:null};
 
 let last=null;
-const rcls=r=>/high/i.test(r||"")?"r-hi":/mod/i.test(r||"")?"r-mod":/low|neg/i.test(r||"")?"r-lo":"";
+const rcls=r=>/high|very|unacceptable/i.test(r||"")?"high":"";
 const list=a=>a&&a.length?`<ul class="list">${a.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:`<p class="small">Not stated.</p>`;
 
 function questions(x){
@@ -148,21 +164,21 @@ function questions(x){
 
 function render(x,isExample){
   last=x;
-  const tags=`<span class="chip">${esc(TYPES[x.report_type]||"Report")}</span>${isExample?' <span class="chip ex">Invented example</span>':""}`;
-  const k=(l,v)=>`<div class="k"><div class="l">${l}</div><div class="v">${esc(v||"Not stated")}</div></div>`;
+  const tags=`<span class="label">${esc(TYPES[x.report_type]||"Report")}</span>${isExample?' <span class="badge">Invented example</span>':""}`;
+  const k=(l,v)=>`<div class="k"><div class="label">${l}</div><div class="v">${esc(v||"Not stated")}</div></div>`;
   const links=(x.linkages||[]).map(r=>`<tr><td>${esc(r.source)}</td><td>${esc(r.pathway)}</td><td>${esc(r.receptor)}</td><td class="risk ${rcls(r.risk)}">${esc(r.risk||"Not rated")}</td></tr>`).join("");
   const exc=(x.exceedances||[]).map(e=>`<tr><td>${esc(MEDIA[e.medium]||e.medium)}</td><td>${esc(e.contaminant)}</td><td>${esc([e.max_value,e.unit].filter(Boolean).join(" "))}</td><td>${esc(e.criterion||"")}</td><td>${esc(e.samples||"")}</td></tr>`).join("");
   $("out").innerHTML=`<div style="display:flex;flex-direction:column;gap:20px">
-   <div style="display:flex;flex-direction:column;gap:8px"><div>${tags}</div><h2>${esc(x.location||"Site report summary")}</h2></div>
+   <div style="display:flex;flex-direction:column;gap:8px"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">${tags}</div><h2>${esc(x.location||"Site report summary")}</h2></div>
    <div class="card">${k("Report",[TYPES[x.report_type],x.report_date&&nice(x.report_date)].filter(Boolean).join(", "))}${k("By",x.consultant)}${k("Now",x.current_use)}${k("Proposed",x.proposed_use)}</div>
-   <div class="cols"><div class="box"><h3>Site history</h3>${list(x.site_history)}</div><div class="box"><h3>Contaminants of concern</h3>${list(x.contaminants_of_concern)}</div></div>
-   <div class="box"><h3>Risks the report identifies</h3>${links?`<div class="tablebox"><table><thead><tr><th scope="col">Source</th><th scope="col">Pathway</th><th scope="col">Receptor</th><th scope="col">Risk (report's rating)</th></tr></thead><tbody>${links}</tbody></table></div>`:'<p class="small">No pollutant linkages listed.</p>'}</div>
-   <div class="box"><h3>Investigation</h3><p style="margin:0">${esc(x.investigation||"Not stated.")}</p></div>
-   <div class="box"><h3>Results above screening values</h3>${exc?`<div class="tablebox"><table><thead><tr><th scope="col">Medium</th><th scope="col">Contaminant</th><th scope="col">Highest</th><th scope="col">Compared with</th><th scope="col">Samples</th></tr></thead><tbody>${exc}</tbody></table></div>`:'<p class="small">None stated in the pages read.</p>'}</div>
-   <div class="cols"><div class="box"><h3>Ground gas</h3><p style="margin:0">${esc(x.ground_gas||"Not stated.")}</p></div><div class="box"><h3>Groundwater</h3><p style="margin:0">${esc(x.groundwater||"Not stated.")}</p></div></div>
-   <div class="cols"><div class="box"><h3>Conclusions</h3>${list(x.conclusions)}<h3>Recommendations</h3>${list(x.recommendations)}<h3>Remediation</h3>${list(x.remediation)}<h3>Further work</h3>${list(x.further_work)}</div>
-    <div class="box"><h3>Questions to ask</h3>${questions(x).map(([h,t])=>`<div class="flag"><b>${esc(h)}</b>${esc(t)}</div>`).join("")}</div></div>
-   <div class="cols"><div class="box"><h3>Guidance cited</h3>${list(x.guidance_cited)}</div><div class="box"><h3>Limitations</h3>${list(x.limitations)}${x.notes?`<p class="small">Reader's note: ${esc(x.notes)}</p>`:""}</div></div>
+   <div class="cols"><div class="sec"><h3>Site history</h3>${list(x.site_history)}</div><div class="sec"><h3>Contaminants of concern</h3>${list(x.contaminants_of_concern)}</div></div>
+   <div class="sec"><h3>Risks the report identifies</h3>${links?`<div class="tablebox"><table><thead><tr><th scope="col">Source</th><th scope="col">Pathway</th><th scope="col">Receptor</th><th scope="col">Risk (report's rating)</th></tr></thead><tbody>${links}</tbody></table></div>`:'<p class="small">No pollutant linkages listed.</p>'}</div>
+   <div class="sec"><h3>Investigation</h3><p style="margin:0">${esc(x.investigation||"Not stated.")}</p></div>
+   <div class="sec"><h3>Results above screening values</h3>${exc?`<div class="tablebox"><table><thead><tr><th scope="col">Medium</th><th scope="col">Contaminant</th><th scope="col">Highest</th><th scope="col">Compared with</th><th scope="col">Samples</th></tr></thead><tbody>${exc}</tbody></table></div>`:'<p class="small">None stated in the pages read.</p>'}</div>
+   <div class="cols"><div class="sec"><h3>Ground gas</h3><p style="margin:0">${esc(x.ground_gas||"Not stated.")}</p></div><div class="sec"><h3>Groundwater</h3><p style="margin:0">${esc(x.groundwater||"Not stated.")}</p></div></div>
+   <div class="cols"><div class="sec"><h3>Conclusions</h3>${list(x.conclusions)}<h3>Recommendations</h3>${list(x.recommendations)}<h3>Remediation</h3>${list(x.remediation)}<h3>Further work</h3>${list(x.further_work)}</div>
+    <div class="sec hl"><h3>Questions to ask</h3><ol class="dots">${questions(x).map(([h,t],i)=>`<li class="${i===0?"hot":""}"><div><b${i===0?' class="key"':""}>${esc(h)}</b>${esc(t)}</div></li>`).join("")}</ol></div></div>
+   <div class="cols"><div class="sec"><h3>Guidance cited</h3>${list(x.guidance_cited)}</div><div class="sec"><h3>Limitations</h3>${list(x.limitations)}${x.notes?`<p class="small">Reader's note: ${esc(x.notes)}</p>`:""}</div></div>
   </div>`;
 }
 

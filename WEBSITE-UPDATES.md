@@ -43,6 +43,8 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 **Tools page**: entries for both new tools.
 
+**Brand** (Robert's instruction, 17 Nov 17:49: "use my brand"): both new tools follow the Robert J. Park Brand design system. Supplied logo files in the header (full lockup, compact on phones) over a rule-red hairline; DejaVu Sans throughout, now self-hosted as `assets/fonts/dejavu-sans.woff` and `dejavu-sans-bold.woff` (Latin subset, licence alongside, declared in `fonts.css`); brand-red, ink and ink-muted only, light theme only; section headings with the round red bullet; tables with ink header rows and zebra rows; one highlight panel per page; numbered dots for the site reader's questions; status shown in words (Listed / Not listed, risk ratings as written) with the key item in brand-red bold, so no greens, ambers or coloured pills; footer "Robert J. Park · Larne, Northern Ireland".
+
  — 17 November 2026: bill reader, weekly digest, privacy update
 
 *Robert's instruction, 17 Nov 05:15: "Update privacy policy. Do the bill scanner. Do the weekly regulatory digest." Builds on v0.37.0 (merge that first). Awaiting Robert's merge.*
