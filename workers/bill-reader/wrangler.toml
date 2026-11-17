@@ -8,9 +8,11 @@ enabled = false
 
 [vars]
 ALLOWED_ORIGINS = "https://robertjpark.co.uk,https://www.robertjpark.co.uk"
-MODEL = "claude-haiku-5-5"
-DAILY_LIMIT = "5"        # bills per visitor per day
-MONTHLY_LIMIT = "1000"   # bills per month for the whole site
+MODEL = "claude-haiku-5-5"        # bills and safety data sheets
+MODEL_SITE = "claude-sonnet-5-5"  # land and site reports (longer, harder reading)
+DAILY_LIMIT = "5"        # bills, and separately safety data sheets, per visitor per day
+DAILY_LIMIT_SITE = "3"   # site reports per visitor per day
+MONTHLY_LIMIT = "1000"   # documents per month across all readers
 
 # Create with: npx wrangler kv namespace create RL
 # then paste the id it prints below.
