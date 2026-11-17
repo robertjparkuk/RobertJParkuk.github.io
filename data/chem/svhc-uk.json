@@ -642,7 +642,7 @@
 "description": "",
 "ec": [],
 "cas": [],
-"reason": "Equivalent level of concern having probable serious effects to human health (Article 57(f) - human health)#Equivalent level of concern having probable serious effects to the environment (Article 57(f) - environment)",
+"reason": "Equivalent level of concern having probable serious effects to human health (Article 57(f) - human health); Equivalent level of concern having probable serious effects to the environment (Article 57(f) - environment)",
 "date": "2020-01-16"
 },
 {
@@ -750,7 +750,7 @@
 "description": "covering any of their individual isomers and combinations thereof",
 "ec": [],
 "cas": [],
-"reason": "Equivalent level of concern having probable serious effects to human health (Article 57(f) - human health)#Equivalent level of concern having probable serious effects to the environment (Article 57(f) - environment)",
+"reason": "Equivalent level of concern having probable serious effects to human health (Article 57(f) - human health); Equivalent level of concern having probable serious effects to the environment (Article 57(f) - environment)",
 "date": "2019-07-16"
 },
 {
@@ -762,7 +762,7 @@
 "cas": [
 "67118-55-2"
 ],
-"reason": "Equivalent level of concern having probable serious effects to human health (Article 57(f) - human health)#Equivalent level of concern having probable serious effects to the environment (Article 57(f) - environment)",
+"reason": "Equivalent level of concern having probable serious effects to human health (Article 57(f) - human health); Equivalent level of concern having probable serious effects to the environment (Article 57(f) - environment)",
 "date": "2019-07-16"
 },
 {
@@ -774,7 +774,7 @@
 "cas": [
 "13252-13-6"
 ],
-"reason": "Equivalent level of concern having probable serious effects to human health (Article 57(f) - human health)#Equivalent level of concern having probable serious effects to the environment (Article 57(f) - environment)",
+"reason": "Equivalent level of concern having probable serious effects to human health (Article 57(f) - human health); Equivalent level of concern having probable serious effects to the environment (Article 57(f) - environment)",
 "date": "2019-07-16"
 },
 {
@@ -786,7 +786,7 @@
 "cas": [
 "2062-98-8"
 ],
-"reason": "Equivalent level of concern having probable serious effects to human health (Article 57(f) - human health)#Equivalent level of concern having probable serious effects to the environment (Article 57(f) - environment)",
+"reason": "Equivalent level of concern having probable serious effects to human health (Article 57(f) - human health); Equivalent level of concern having probable serious effects to the environment (Article 57(f) - environment)",
 "date": "2019-07-16"
 },
 {
@@ -796,7 +796,7 @@
 "cas": [
 "62037-80-3"
 ],
-"reason": "Equivalent level of concern having probable serious effects to human health (Article 57(f) - human health)#Equivalent level of concern having probable serious effects to the environment (Article 57(f) - environment)",
+"reason": "Equivalent level of concern having probable serious effects to human health (Article 57(f) - human health); Equivalent level of concern having probable serious effects to the environment (Article 57(f) - environment)",
 "date": "2019-07-16"
 },
 {
@@ -808,7 +808,7 @@
 "cas": [
 "129-00-0"
 ],
-"reason": "PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "PBT (Article 57d); vPvB (Article 57e)",
 "date": "2019-01-15"
 },
 {
@@ -832,7 +832,7 @@
 "cas": [
 "206-44-0"
 ],
-"reason": "PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "PBT (Article 57d); vPvB (Article 57e)",
 "date": "2019-01-15"
 },
 {
@@ -844,7 +844,7 @@
 "cas": [
 "207-08-9"
 ],
-"reason": "Carcinogenic (Article 57a)#PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "Carcinogenic (Article 57a); PBT (Article 57d); vPvB (Article 57e)",
 "date": "2019-01-15"
 },
 {
@@ -892,7 +892,7 @@
 "cas": [
 "556-67-2"
 ],
-"reason": "PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "PBT (Article 57d); vPvB (Article 57e)",
 "date": "2018-06-27"
 },
 {
@@ -928,7 +928,7 @@
 "cas": [
 "540-97-6"
 ],
-"reason": "PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "PBT (Article 57d); vPvB (Article 57e)",
 "date": "2018-06-27"
 },
 {
@@ -952,7 +952,7 @@
 "cas": [
 "84-61-7"
 ],
-"reason": "Toxic for reproduction (Article 57c)#Endocrine disrupting properties (Article 57(f) - human health)",
+"reason": "Toxic for reproduction (Article 57c); Endocrine disrupting properties (Article 57(f) - human health)",
 "date": "2018-06-27"
 },
 {
@@ -964,7 +964,7 @@
 "cas": [
 "541-02-6"
 ],
-"reason": "PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "PBT (Article 57d); vPvB (Article 57e)",
 "date": "2018-06-27"
 },
 {
@@ -976,7 +976,7 @@
 "cas": [
 "191-24-2"
 ],
-"reason": "PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "PBT (Article 57d); vPvB (Article 57e)",
 "date": "2018-06-27"
 },
 {
@@ -1030,7 +1030,7 @@
 "cas": [
 "218-01-9"
 ],
-"reason": "Carcinogenic (Article 57a)#PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "Carcinogenic (Article 57a); PBT (Article 57d); vPvB (Article 57e)",
 "date": "2018-01-15"
 },
 {
@@ -1042,7 +1042,7 @@
 "cas": [
 "10325-94-7"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)#Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b); Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
 "date": "2018-01-15"
 },
 {
@@ -1054,7 +1054,7 @@
 "cas": [
 "21041-95-2"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)#Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b); Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
 "date": "2018-01-15"
 },
 {
@@ -1066,7 +1066,7 @@
 "cas": [
 "513-78-0"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)#Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b); Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
 "date": "2018-01-15"
 },
 {
@@ -1078,7 +1078,7 @@
 "cas": [
 "56-55-3"
 ],
-"reason": "Carcinogenic (Article 57a)#PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "Carcinogenic (Article 57a); PBT (Article 57d); vPvB (Article 57e)",
 "date": "2018-01-15"
 },
 {
@@ -1210,7 +1210,7 @@
 "description": "",
 "ec": [],
 "cas": [],
-"reason": "Toxic for reproduction (Article 57c)#PBT (Article 57d)",
+"reason": "Toxic for reproduction (Article 57c); PBT (Article 57d)",
 "date": "2017-01-12"
 },
 {
@@ -1220,7 +1220,7 @@
 "cas": [
 "3830-45-3"
 ],
-"reason": "Toxic for reproduction (Article 57c)#PBT (Article 57d)",
+"reason": "Toxic for reproduction (Article 57c); PBT (Article 57d)",
 "date": "2017-01-12"
 },
 {
@@ -1232,7 +1232,7 @@
 "cas": [
 "3108-42-7"
 ],
-"reason": "Toxic for reproduction (Article 57c)#PBT (Article 57d)",
+"reason": "Toxic for reproduction (Article 57c); PBT (Article 57d)",
 "date": "2017-01-12"
 },
 {
@@ -1244,7 +1244,7 @@
 "cas": [
 "335-76-2"
 ],
-"reason": "Toxic for reproduction (Article 57c)#PBT (Article 57d)",
+"reason": "Toxic for reproduction (Article 57c); PBT (Article 57d)",
 "date": "2017-01-12"
 },
 {
@@ -1288,7 +1288,7 @@
 "cas": [
 "80-05-7"
 ],
-"reason": "Toxic for reproduction (Article 57c)#Endocrine disrupting properties (Article 57(f) - environment)#Endocrine disrupting properties (Article 57(f) - human health)",
+"reason": "Toxic for reproduction (Article 57c); Endocrine disrupting properties (Article 57(f) - environment); Endocrine disrupting properties (Article 57(f) - human health)",
 "date": "2017-01-12"
 },
 {
@@ -1300,7 +1300,7 @@
 "cas": [
 "50-32-8"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)#Toxic for reproduction (Article 57c)#PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b); Toxic for reproduction (Article 57c); PBT (Article 57d); vPvB (Article 57e)",
 "date": "2016-06-20"
 },
 {
@@ -1308,7 +1308,7 @@
 "description": "",
 "ec": [],
 "cas": [],
-"reason": "Toxic for reproduction (Article 57c)#PBT (Article 57d)",
+"reason": "Toxic for reproduction (Article 57c); PBT (Article 57d)",
 "date": "2015-12-17"
 },
 {
@@ -1318,7 +1318,7 @@
 "cas": [
 "4149-60-4"
 ],
-"reason": "Toxic for reproduction (Article 57c)#PBT (Article 57d)",
+"reason": "Toxic for reproduction (Article 57c); PBT (Article 57d)",
 "date": "2015-12-17"
 },
 {
@@ -1330,7 +1330,7 @@
 "cas": [
 "375-95-1"
 ],
-"reason": "Toxic for reproduction (Article 57c)#PBT (Article 57d)",
+"reason": "Toxic for reproduction (Article 57c); PBT (Article 57d)",
 "date": "2015-12-17"
 },
 {
@@ -1340,7 +1340,7 @@
 "cas": [
 "21049-39-8"
 ],
-"reason": "Toxic for reproduction (Article 57c)#PBT (Article 57d)",
+"reason": "Toxic for reproduction (Article 57c); PBT (Article 57d)",
 "date": "2015-12-17"
 },
 {
@@ -1499,7 +1499,7 @@
 "10124-36-4",
 "31119-53-6"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)#Toxic for reproduction (Article 57c)#Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b); Toxic for reproduction (Article 57c); Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
 "date": "2014-12-17"
 },
 {
@@ -1511,7 +1511,7 @@
 "cas": [
 "7790-79-6"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)#Toxic for reproduction (Article 57c)#Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b); Toxic for reproduction (Article 57c); Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
 "date": "2014-12-17"
 },
 {
@@ -1535,7 +1535,7 @@
 "cas": [
 "3846-71-7"
 ],
-"reason": "PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "PBT (Article 57d); vPvB (Article 57e)",
 "date": "2014-12-17"
 },
 {
@@ -1547,7 +1547,7 @@
 "cas": [
 "25973-55-1"
 ],
-"reason": "PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "PBT (Article 57d); vPvB (Article 57e)",
 "date": "2014-12-17"
 },
 {
@@ -1603,7 +1603,7 @@
 "cas": [
 "10108-64-2"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)#Toxic for reproduction (Article 57c)#Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b); Toxic for reproduction (Article 57c); Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
 "date": "2014-06-16"
 },
 {
@@ -1699,7 +1699,7 @@
 "cas": [
 "1306-23-6"
 ],
-"reason": "Carcinogenic (Article 57a)#Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
+"reason": "Carcinogenic (Article 57a); Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
 "date": "2013-12-16"
 },
 {
@@ -1711,7 +1711,7 @@
 "cas": [
 "335-67-1"
 ],
-"reason": "Toxic for reproduction (Article 57c)#PBT (Article 57d)",
+"reason": "Toxic for reproduction (Article 57c); PBT (Article 57d)",
 "date": "2013-06-20"
 },
 {
@@ -1735,7 +1735,7 @@
 "cas": [
 "1306-19-0"
 ],
-"reason": "Carcinogenic (Article 57a)#Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
+"reason": "Carcinogenic (Article 57a); Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
 "date": "2013-06-20"
 },
 {
@@ -1747,7 +1747,7 @@
 "cas": [
 "7440-43-9"
 ],
-"reason": "Carcinogenic (Article 57a)#Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
+"reason": "Carcinogenic (Article 57a); Specific target organ toxicity after repeated exposure (Article 57(f) - human health)",
 "date": "2013-06-20"
 },
 {
@@ -1759,7 +1759,7 @@
 "cas": [
 "3825-26-1"
 ],
-"reason": "Toxic for reproduction (Article 57c)#PBT (Article 57d)",
+"reason": "Toxic for reproduction (Article 57c); PBT (Article 57d)",
 "date": "2013-06-20"
 },
 {
@@ -2227,7 +2227,7 @@
 "cas": [
 "75-56-9"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b)",
 "date": "2012-12-19"
 },
 {
@@ -2487,7 +2487,7 @@
 "cas": [
 "64-67-5"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b)",
 "date": "2012-12-19"
 },
 {
@@ -2567,7 +2567,7 @@
 "cas": [
 "1163-19-5"
 ],
-"reason": "PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "PBT (Article 57d); vPvB (Article 57e)",
 "date": "2012-12-19"
 },
 {
@@ -2871,7 +2871,7 @@
 "description": "",
 "ec": [],
 "cas": [],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b)",
 "date": "2012-12-19"
 },
 {
@@ -2883,7 +2883,7 @@
 "cas": [
 "101-80-4"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b)",
 "date": "2012-12-19"
 },
 {
@@ -3131,7 +3131,7 @@
 "cas": [
 "3687-31-8"
 ],
-"reason": "Carcinogenic (Article 57a)#Toxic for reproduction (Article 57c)",
+"reason": "Carcinogenic (Article 57a); Toxic for reproduction (Article 57c)",
 "date": "2011-12-19"
 },
 {
@@ -3428,7 +3428,7 @@
 "cas": [
 "96-18-4"
 ],
-"reason": "Carcinogenic (Article 57a)#Toxic for reproduction (Article 57c)",
+"reason": "Carcinogenic (Article 57a); Toxic for reproduction (Article 57c)",
 "date": "2011-06-20"
 },
 {
@@ -3440,7 +3440,7 @@
 "cas": [
 "10124-43-3"
 ],
-"reason": "Carcinogenic (Article 57a)#Toxic for reproduction (Article 57c)",
+"reason": "Carcinogenic (Article 57a); Toxic for reproduction (Article 57c)",
 "date": "2010-12-15"
 },
 {
@@ -3452,7 +3452,7 @@
 "cas": [
 "10141-05-6"
 ],
-"reason": "Carcinogenic (Article 57a)#Toxic for reproduction (Article 57c)",
+"reason": "Carcinogenic (Article 57a); Toxic for reproduction (Article 57c)",
 "date": "2010-12-15"
 },
 {
@@ -3464,7 +3464,7 @@
 "cas": [
 "71-48-7"
 ],
-"reason": "Carcinogenic (Article 57a)#Toxic for reproduction (Article 57c)",
+"reason": "Carcinogenic (Article 57a); Toxic for reproduction (Article 57c)",
 "date": "2010-12-15"
 },
 {
@@ -3476,7 +3476,7 @@
 "cas": [
 "513-79-1"
 ],
-"reason": "Carcinogenic (Article 57a)#Toxic for reproduction (Article 57c)",
+"reason": "Carcinogenic (Article 57a); Toxic for reproduction (Article 57c)",
 "date": "2010-12-15"
 },
 {
@@ -3488,7 +3488,7 @@
 "cas": [
 "1333-82-0"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b)",
 "date": "2010-12-15"
 },
 {
@@ -3588,7 +3588,7 @@
 "cas": [
 "7775-11-3"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)#Toxic for reproduction (Article 57c)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b); Toxic for reproduction (Article 57c)",
 "date": "2010-06-18"
 },
 {
@@ -3600,7 +3600,7 @@
 "cas": [
 "7778-50-9"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)#Toxic for reproduction (Article 57c)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b); Toxic for reproduction (Article 57c)",
 "date": "2010-06-18"
 },
 {
@@ -3612,7 +3612,7 @@
 "cas": [
 "7789-00-6"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b)",
 "date": "2010-06-18"
 },
 {
@@ -3670,7 +3670,7 @@
 "cas": [
 "7789-09-5"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)#Toxic for reproduction (Article 57c)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b); Toxic for reproduction (Article 57c)",
 "date": "2010-06-18"
 },
 {
@@ -3682,7 +3682,7 @@
 "cas": [
 "79-06-1"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b)",
 "date": "2010-03-30"
 },
 {
@@ -3706,7 +3706,7 @@
 "cas": [
 "65996-93-2"
 ],
-"reason": "Carcinogenic (Article 57a)#PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "Carcinogenic (Article 57a); PBT (Article 57d); vPvB (Article 57e)",
 "date": "2010-01-13"
 },
 {
@@ -3718,7 +3718,7 @@
 "cas": [
 "1344-37-2"
 ],
-"reason": "Carcinogenic (Article 57a)#Toxic for reproduction (Article 57c)",
+"reason": "Carcinogenic (Article 57a); Toxic for reproduction (Article 57c)",
 "date": "2010-01-13"
 },
 {
@@ -3730,7 +3730,7 @@
 "cas": [
 "12656-85-8"
 ],
-"reason": "Carcinogenic (Article 57a)#Toxic for reproduction (Article 57c)",
+"reason": "Carcinogenic (Article 57a); Toxic for reproduction (Article 57c)",
 "date": "2010-01-13"
 },
 {
@@ -3742,7 +3742,7 @@
 "cas": [
 "7758-97-6"
 ],
-"reason": "Carcinogenic (Article 57a)#Toxic for reproduction (Article 57c)",
+"reason": "Carcinogenic (Article 57a); Toxic for reproduction (Article 57c)",
 "date": "2010-01-13"
 },
 {
@@ -3754,7 +3754,7 @@
 "cas": [
 "84-69-5"
 ],
-"reason": "Toxic for reproduction (Article 57c)#Endocrine disrupting properties (Article 57(f) - human health)",
+"reason": "Toxic for reproduction (Article 57c); Endocrine disrupting properties (Article 57(f) - human health)",
 "date": "2010-01-13"
 },
 {
@@ -3766,7 +3766,7 @@
 "cas": [
 "90640-82-7"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)#PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b); PBT (Article 57d); vPvB (Article 57e)",
 "date": "2010-01-13"
 },
 {
@@ -3778,7 +3778,7 @@
 "cas": [
 "91995-17-4"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)#PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b); PBT (Article 57d); vPvB (Article 57e)",
 "date": "2010-01-13"
 },
 {
@@ -3790,7 +3790,7 @@
 "cas": [
 "91995-15-2"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)#PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b); PBT (Article 57d); vPvB (Article 57e)",
 "date": "2010-01-13"
 },
 {
@@ -3802,7 +3802,7 @@
 "cas": [
 "90640-81-6"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)#PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b); PBT (Article 57d); vPvB (Article 57e)",
 "date": "2010-01-13"
 },
 {
@@ -3814,7 +3814,7 @@
 "cas": [
 "90640-80-5"
 ],
-"reason": "Carcinogenic (Article 57a)#PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "Carcinogenic (Article 57a); PBT (Article 57d); vPvB (Article 57e)",
 "date": "2010-01-13"
 },
 {
@@ -3851,7 +3851,7 @@
 "10588-01-9",
 "7789-12-0"
 ],
-"reason": "Carcinogenic (Article 57a)#Mutagenic (Article 57b)#Toxic for reproduction (Article 57c)",
+"reason": "Carcinogenic (Article 57a); Mutagenic (Article 57b); Toxic for reproduction (Article 57c)",
 "date": "2008-10-28"
 },
 {
@@ -3863,7 +3863,7 @@
 "cas": [
 "7784-40-9"
 ],
-"reason": "Carcinogenic (Article 57a)#Toxic for reproduction (Article 57c)",
+"reason": "Carcinogenic (Article 57a); Toxic for reproduction (Article 57c)",
 "date": "2008-10-28"
 },
 {
@@ -3937,7 +3937,7 @@
 "cas": [
 "84-74-2"
 ],
-"reason": "Toxic for reproduction (Article 57c)#Endocrine disrupting properties (Article 57(f) - human health)",
+"reason": "Toxic for reproduction (Article 57c); Endocrine disrupting properties (Article 57(f) - human health)",
 "date": "2008-10-28"
 },
 {
@@ -3973,7 +3973,7 @@
 "cas": [
 "7646-79-9"
 ],
-"reason": "Carcinogenic (Article 57a)#Toxic for reproduction (Article 57c)",
+"reason": "Carcinogenic (Article 57a); Toxic for reproduction (Article 57c)",
 "date": "2008-10-28"
 },
 {
@@ -3997,7 +3997,7 @@
 "cas": [
 "117-81-7"
 ],
-"reason": "Toxic for reproduction (Article 57c)#Endocrine disrupting properties (Article 57(f) - environment)#Endocrine disrupting properties (Article 57(f) - human health)",
+"reason": "Toxic for reproduction (Article 57c); Endocrine disrupting properties (Article 57(f) - environment); Endocrine disrupting properties (Article 57(f) - human health)",
 "date": "2008-10-28"
 },
 {
@@ -4009,7 +4009,7 @@
 "cas": [
 "85-68-7"
 ],
-"reason": "Toxic for reproduction (Article 57c)#Endocrine disrupting properties (Article 57(f) - human health)",
+"reason": "Toxic for reproduction (Article 57c); Endocrine disrupting properties (Article 57(f) - human health)",
 "date": "2008-10-28"
 },
 {
@@ -4033,7 +4033,7 @@
 "cas": [
 "85535-84-8"
 ],
-"reason": "PBT (Article 57d)#vPvB (Article 57e)",
+"reason": "PBT (Article 57d); vPvB (Article 57e)",
 "date": "2008-10-28"
 },
 {
