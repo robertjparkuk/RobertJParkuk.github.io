@@ -4,7 +4,7 @@ answer: "A carbon life cycle follows a product or building from its raw material
 description: "The carbon life cycle explained: the stages from extraction to end of life, the A–D modules used for buildings and products, cradle to gate and cradle to grave, and three worked examples."
 order: 2
 level: "Introductory"
-read_time: "9 minutes"
+read_time: "9-minute"
 checked: 2026-11-17
 ---
 
@@ -116,7 +116,7 @@ For most dairy products, life cycle studies generally find that the farm stage a
 4. **Treating a future saving as already banked.** A product that pays back over ten years must last ten years.
 5. **Measuring the easy stage.** Packaging and transport are easy to see; the biggest stage is often extraction or manufacture.
 
-Previous: [Embodied carbon or embedded emissions?]({{ '/learn/embodied-vs-embedded-carbon/' | relative_url }}) · Related: [The Scopes Map]({{ '/tools/scopes-map.html' | relative_url }}) · [Farm Carbon Data Checker]({{ '/tools/farm-data-checker/' | relative_url }})
+Previous: [Embodied carbon or embedded emissions?]({{ '/learn/embodied-vs-embedded-carbon/' | relative_url }}) · Next: [Why is everything counted as “carbon”?]({{ '/learn/why-everything-is-carbon/' | relative_url }}) · Related: [The Scopes Map]({{ '/tools/scopes-map.html' | relative_url }}) · [Farm Carbon Data Checker]({{ '/tools/farm-data-checker/' | relative_url }})
 
 ## Sources
 
