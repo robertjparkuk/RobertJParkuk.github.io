@@ -240,7 +240,7 @@ A council owns a closed landfill still producing gas.
 5. **“Burning methane is just more emissions.”** It cuts warming by about 90%, and more if the methane is biogenic or the energy is used.
 6. **“We can capture nitrous oxide from fields.”** Only from chimneys; on fields, the answer is making less.
 
-Previous: [Why is everything counted as “carbon”?]({{ '/learn/why-everything-is-carbon/' | relative_url }}) · Related: [Carbon capture and carbon negative]({{ '/learn/carbon-capture-and-carbon-negative/' | relative_url }}) · [Fertiliser and the nitrogen cycle]({{ '/learn/fertiliser-and-the-nitrogen-cycle/' | relative_url }})
+Previous: [Why is everything counted as “carbon”?]({{ '/learn/why-everything-is-carbon/' | relative_url }}) · Next: [Block, lime, brick or prefab?]({{ '/learn/block-lime-brick-or-prefab/' | relative_url }}) · Related: [Carbon capture and carbon negative]({{ '/learn/carbon-capture-and-carbon-negative/' | relative_url }}) · [Fertiliser and the nitrogen cycle]({{ '/learn/fertiliser-and-the-nitrogen-cycle/' | relative_url }})
 
 ## Sources
 

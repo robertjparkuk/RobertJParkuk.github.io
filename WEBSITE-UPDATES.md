@@ -25,6 +25,17 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.38.0 — 17 November 2026: Learn Batch C (materials, circular economy, fish by-products, medicines)
+
+- Four new explainers in the house style, per-unit figures in kg CO₂e:
+  - `block-lime-brick-or-prefab.md` (Materials and buildings, order 14): cement, lime and brick chemistry, the lime cycle, kg CO₂e per kg factors, whole-house comparison, hempcrete, MMC, NI rules.
+  - `circular-economy-life-cycle.md` (Materials and buildings, order 15): loops, waste hierarchy in NI law, NI 2024/25 waste data, pEPR, DRS, PPWR/ESPR/repair rules and their NI status, carrier bags.
+  - `fish-guts-and-seashells.md` (Land, food and water, order 16): fillet yields, by-products, shell chemistry and the "carbon store" myth, chitosan, animal by-products rules, NI fleet.
+  - `medicines-and-fossil-fuels.md` (Energy and industry, order 17): petrochemical feedstocks, aspirin and paracetamol routes, process mass intensity, NHS footprint, inhalers and anaesthetic gases, EU F-gas rules in NI, NHS supplier roadmap. Clear "not medical advice" line.
+- 18 diagrams from `_scripts/learn/batch_c.py` (cycles, reaction schemes, comparisons, data charts).
+- GWP page now links forward to the new pages.
+- Independent fact-check before merge.
+
 ### v0.37.3 — 17 November 2026: CO₂e units in kg
 
 - One unit rule across the Learn pages, at Robert's request: every per-unit figure (per kg of product, per kg of gas, per m², per MWh) is in **kg CO₂e**, written with a subscript ₂. Totals for a site, company or country stay in tonnes (1 tonne = 1,000 kg), and the carbon-credit unit stays one tonne by definition.
