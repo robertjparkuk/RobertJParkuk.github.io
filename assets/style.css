@@ -269,3 +269,5 @@ h3 { font-size: 1.2rem; margin: 1.75rem 0 0.5rem; }
 .learn-next { max-width: 42rem; margin-top: 2.5rem; }
 .learn-next h2 { font-size: 1.3rem; }
 .explainer-checked { max-width: 42rem; margin-top: 2rem; }
+/* Ten menu items: tighten spacing on wide screens so the menu stays beside the logo (v0.34.0) */
+@media (min-width: 64rem) { .header-inner { column-gap: 1.5rem; } .site-nav { column-gap: 1rem; } }
