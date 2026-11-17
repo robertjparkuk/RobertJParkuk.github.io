@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="wrap page post">
+  <p class="meta"><a href="{{ '/digest/' | relative_url }}">← All weekly digests</a></p>
+  <h1 class="page-title">{{ page.title }}</h1>
+  <p class="meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B %Y' }}</time>
+    {%- if page.data_as_at %} · {{ page.data_as_at }}{% endif %}
+  </p>
+  <div class="prose">
+    {{ content }}
+    <hr>
+    <p><small>Drafted with the help of AI from the data in my <a href="{{ '/tools/dashboards/ni-regulatory-horizon.html' | relative_url }}">NI Regulatory Horizon</a> and <a href="{{ '/tools/dashboards/ni-consultations-monitor.html' | relative_url }}">NI Consultations Monitor</a>, and reviewed before publishing. Every date and source comes from those trackers. This is general information, not legal advice.</small></p>
+  </div>
+  <aside class="post-cta">
+    <p><strong>Get this every Friday.</strong>
+    {% if site.digest_signup_url and site.digest_signup_url != "" %}<a href="{{ site.digest_signup_url }}">Sign up by email</a> or follow the{% else %}Follow the{% endif %}
+    <a href="{{ '/digest/' | append: page.sector | append: '.xml' | relative_url }}">{{ page.sector_name }} feed</a> in any news reader.
+    Want to talk it through for your business? <a href="{{ '/contact/' | relative_url }}">Get in touch</a>.</p>
+  </aside>
+</article>

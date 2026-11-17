@@ -12,7 +12,7 @@ New to carbon? Start with the plain-English explainers in [Learn]({{ '/learn/' |
 
 <h2 class="tool-h"><img src="{{ '/assets/icons/carbon-jigsaw.svg' | relative_url }}" alt="" width="48" height="48">The Carbon Jigsaw</h2>
 
-A rough carbon checker for Northern Ireland businesses. Fill in each piece of the jigsaw from your bills and records: electricity, gas, oil, vehicles, refrigerants, water, waste, travel and commuting. You'll get a rough Scope 1, 2 and partial Scope 3 footprint, and the pieces you can't fill show what a full inventory would add. Your figures stay in your browser. Practise first with the sample bills.
+A rough carbon checker for Northern Ireland businesses. Fill in each piece of the jigsaw from your bills and records: electricity, gas, oil, vehicles, refrigerants, water, waste, travel and commuting. You'll get a rough Scope 1, 2 and partial Scope 3 footprint, with electricity shown both location-based and market-based (pick your NI supplier to use its fuel mix disclosure), and the pieces you can't fill show what a full inventory would add. Your figures stay in your browser. Practise first with the sample bills.
 
 [Open the Carbon Jigsaw →]({{ '/tools/carbon-jigsaw.html' | relative_url }})
 
@@ -34,11 +34,29 @@ For Northern Ireland businesses caught between UK and EU rules. Tick what you ma
 
 [Open Which EU rules apply to me? →]({{ '/tools/which-eu-rules-apply.html' | relative_url }})
 
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Weekly digest</h2>
+
+Every Friday, a short briefing for your sector on the Northern Ireland rule changes, deadlines and consultations coming up in the next four months, with what to do about each. Eight sectors, from manufacturers and importers to farming, councils and energy users. Follow your sector's feed in any news reader.
+
+[Open the weekly digest →]({{ '/digest/' | relative_url }})
+
 <h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Dashboards</h2>
 
 Northern Ireland data on one page, from official statistics, with every table downloadable as CSV. **CBAM Exposure Tracker**: where an NI business stands under the EU and UK carbon border charges, the EU certificate price and the rules side by side. **NI Agriculture and Land Carbon**: farm and land emissions from 1990 to 2024, nutrients, livestock, peatland, F-gases and the measures that cut them. **EU Law and the Windsor Framework**: which EU laws apply in NI, Stormont Brake cases, effects on GB and open EU and Irish consultations.
 
 [Open the CBAM Exposure Tracker →]({{ '/tools/dashboards/cbam-exposure-tracker.html' | relative_url }}) · [EU Law and the Windsor Framework →]({{ '/tools/dashboards/eu-law-windsor-framework.html' | relative_url }}) · [All dashboards →]({{ '/dashboards/' | relative_url }})
+
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Safety Data Sheet Checker</h2>
+
+For Northern Ireland firms that make, buy or sell chemicals and products containing them, including pharmaceutical, cleaning and coatings suppliers. Enter the CAS numbers from a safety data sheet and see which substances are on the EU REACH Candidate List (which applies in NI) and the UK REACH list (Great Britain), where the two differ, and which may be PFAS, F-gases or CBAM goods. The UK list is refreshed from HSE every month.
+
+[Open the Safety Data Sheet Checker →]({{ '/tools/sds-checker.html' | relative_url }})
+
+<h2 class="tool-h"><img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="48" height="48">Site Report Reader</h2>
+
+For anyone buying, lending on or developing land in Northern Ireland. Turns a desk study, site investigation, risk assessment or remediation report into one page: site history, the risks the report identifies, results above screening values, ground gas, next steps and the questions to ask. See it working on an invented example site.
+
+[Open the Site Report Reader →]({{ '/tools/site-report-reader.html' | relative_url }})
 
 <h2 class="tool-h"><img src="{{ '/assets/icons/land-repair-helix.svg' | relative_url }}" alt="" width="48" height="48">The Land Repair Helix</h2>
 

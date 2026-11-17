@@ -1,0 +1,155 @@
+{
+ "uk": {
+  "source": "HSE, UK REACH Candidate List (Excel)",
+  "page": "https://www.hse.gov.uk/reach/candidate-list.htm",
+  "built": "2026-11-17",
+  "entries": 357,
+  "latest_inclusion": "2026-10-19"
+ },
+ "cbam": [
+  {
+   "cas": "1333-74-0",
+   "name": "Hydrogen",
+   "cn": "2804 10"
+  },
+  {
+   "cas": "7697-37-2",
+   "name": "Nitric acid",
+   "cn": "2808"
+  },
+  {
+   "cas": "7664-41-7",
+   "name": "Ammonia",
+   "cn": "2814"
+  },
+  {
+   "cas": "1336-21-6",
+   "name": "Ammonia solution (ammonium hydroxide)",
+   "cn": "2814"
+  },
+  {
+   "cas": "7757-79-1",
+   "name": "Potassium nitrate",
+   "cn": "2834 21"
+  },
+  {
+   "cas": "6484-52-2",
+   "name": "Ammonium nitrate",
+   "cn": "3102"
+  },
+  {
+   "cas": "57-13-6",
+   "name": "Urea",
+   "cn": "3102"
+  },
+  {
+   "cas": "7783-20-2",
+   "name": "Ammonium sulphate",
+   "cn": "3102"
+  }
+ ],
+ "fgas": [
+  {
+   "cas": "75-46-7",
+   "name": "HFC-23"
+  },
+  {
+   "cas": "75-10-5",
+   "name": "HFC-32 (R32)"
+  },
+  {
+   "cas": "354-33-6",
+   "name": "HFC-125"
+  },
+  {
+   "cas": "811-97-2",
+   "name": "HFC-134a (R134a)"
+  },
+  {
+   "cas": "420-46-2",
+   "name": "HFC-143a"
+  },
+  {
+   "cas": "75-37-6",
+   "name": "HFC-152a"
+  },
+  {
+   "cas": "431-89-0",
+   "name": "HFC-227ea"
+  },
+  {
+   "cas": "460-73-1",
+   "name": "HFC-245fa"
+  },
+  {
+   "cas": "406-58-6",
+   "name": "HFC-365mfc"
+  },
+  {
+   "cas": "754-12-1",
+   "name": "HFO-1234yf"
+  },
+  {
+   "cas": "29118-24-9",
+   "name": "HFO-1234ze(E)"
+  },
+  {
+   "cas": "2551-62-4",
+   "name": "Sulphur hexafluoride (SF6)"
+  },
+  {
+   "cas": "7783-54-2",
+   "name": "Nitrogen trifluoride (NF3)"
+  }
+ ],
+ "pfas": [
+  {
+   "cas": "335-67-1",
+   "name": "PFOA"
+  },
+  {
+   "cas": "1763-23-1",
+   "name": "PFOS"
+  },
+  {
+   "cas": "307-24-4",
+   "name": "PFHxA"
+  },
+  {
+   "cas": "355-46-4",
+   "name": "PFHxS"
+  },
+  {
+   "cas": "375-95-1",
+   "name": "PFNA"
+  },
+  {
+   "cas": "13252-13-6",
+   "name": "HFPO-DA (GenX)"
+  },
+  {
+   "cas": "647-42-7",
+   "name": "6:2 fluorotelomer alcohol"
+  },
+  {
+   "cas": "9002-84-0",
+   "name": "PTFE"
+  },
+  {
+   "cas": "24937-79-9",
+   "name": "PVDF"
+  },
+  {
+   "cas": "25067-11-2",
+   "name": "FEP"
+  },
+  {
+   "cas": "26655-00-5",
+   "name": "PFA"
+  },
+  {
+   "cas": "9011-17-0",
+   "name": "FKM fluoroelastomer"
+  }
+ ]
+}

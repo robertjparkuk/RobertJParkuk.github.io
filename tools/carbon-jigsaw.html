@@ -72,6 +72,10 @@ main{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;
 .f.full{grid-column:1/-1}
 .f label{font-size:14px;font-weight:600}
 .f small{font-size:12px;color:var(--muted)}
+.scan{margin:0 0 12px;padding:10px 12px;border:1px dashed var(--rule);border-radius:6px}
+.scan .consent{display:flex;gap:8px;align-items:flex-start;font-size:13.5px;margin:10px 0 8px}.scan .consent input{width:auto;margin-top:3px}
+.scan input[type=file]{font-size:14px}.scanmsg{font-size:14px;margin:8px 0 0}.scanmsg:empty{display:none}
+.why{margin-top:10px}.why summary{cursor:pointer;font-weight:600;font-size:14px}
 input,select{font:16px var(--body);color:var(--ink);background:var(--field);border:1px solid var(--rule);border-radius:6px;padding:8px 10px;width:100%;min-width:0}
 input[type=checkbox],input[type=radio]{width:auto}
 .opts{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:15px}
@@ -121,7 +125,7 @@ section.results h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);m
     <button class="btn" id="exBtn" type="button">Load the worked example</button>
     <button class="btn" id="clrBtn" type="button">Start again</button>
     <button class="btn primary" id="printBtn" type="button" hidden>Print or save results</button>
-    <span class="privacy">Your figures stay in this browser. Nothing is sent or stored on a server.</span>
+    <span class="privacy" id="privLine">Your figures stay in this browser. Nothing is sent or stored on a server.</span>
   </div>
 
   <main>
@@ -151,7 +155,7 @@ section.results h2{font-family:var(--display);font-size:clamp(26px,3.4vw,38px);m
       <a href="sample-bills/sample-05-waste-collection.pdf">Waste collection</a>
       <a href="sample-bills/sample-06-business-rates.pdf">Business rates</a>
     </div>
-    <div>Emission factors come from the UK Government GHG Conversion Factors for Company Reporting 2026 (DESNZ, June 2026), using location-based UK grid electricity. This is a rough estimate for information only. It is not a verified carbon inventory or legal advice, and it does not include well-to-tank emissions or most Scope 3 categories.</div>
+    <div>Emission factors come from the UK Government GHG Conversion Factors for Company Reporting 2026 (DESNZ, June 2026), using location-based UK grid electricity. Market-based electricity uses each NI supplier's fuel mix disclosure (Utility Regulator, 2024 figures). This is a rough estimate for information only. It is not a verified carbon inventory or legal advice, and it does not include well-to-tank emissions or most Scope 3 categories.</div>
   </div>
 </div>
 
@@ -169,6 +173,16 @@ const F={
   fDom:0.22928, fShort:0.12786, fLong:0.15282,   // flights with RF, average passenger (passenger.km)
   hotel:10.4, home:0.32393                       // UK hotel room night; homeworking per FTE hour
 };
+// ---- Market-based Scope 2: NI supplier fuel mix disclosure (Utility Regulator / SEM Committee) ----
+// CO2 only, g per kWh, after renewable certificates (GOs/REGOs). Update this block when each year's report is published.
+const FMD={
+  year:2024, published:"November 2025",
+  url:"https://www.uregni.gov.uk/files/uregni/documents/2025-11/FMD%202024%20Publication%20.pdf",
+  allIsland:163,
+  suppliers:{"3T":0,"Budget Energy":0,"Click Energy":148,"Electric Ireland":161,"Flogas":0,"Go Power":205,"Power NI":256,"SSE Airtricity":0}
+};
+const OTHER_SUP="Other or don't know";
+function mktG(d){if(d.supplier in FMD.suppliers)return FMD.suppliers[d.supplier];if(d.supplier===OTHER_SUP)return FMD.allIsland;return null;}
 const GWP={R404A:3943,R410A:1924,R407C:1624,R134a:1300,R32:677,R290:0.06};
 const KM={dom:1040,short:2000,long:11000}; // assumed return-trip distances from Belfast
 const WEEKS=46, DAYH=7.5, MI=1.609344;
@@ -223,7 +237,7 @@ const ann=(v,m)=>{const mm=num(m)||12;return num(v)*12/Math.min(12,Math.max(1,mm
 function calc(id){
   const d=S[id]||{};
   switch(id){
-    case "elec":{const k=ann(d.kwh,d.months);return{s2:k*F.elec,s3:k*F.td,detail:`${fmt(k)} kWh a year`};}
+    case "elec":{const k=ann(d.kwh,d.months);const g=mktG(d);return{s2:k*F.elec,s3:k*F.td,mkt:g===null?null:k*g/1000,detail:`${fmt(k)} kWh a year`};}
     case "gas":{const k=ann(d.kwh,d.months);return{s1:k*F.gas,detail:`${fmt(k)} kWh a year`};}
     case "oil":return{s1:num(d.kero)*F.kero+num(d.gasoil)*F.gasoil+num(d.lpg)*F.lpg};
     case "veh":return{s1:num(d.diesel)*F.diesel+num(d.petrol)*F.petrol};
@@ -306,6 +320,74 @@ function radios(id,key,label,choices){
 }
 const Q=id=>radios(id,"q","How good is this figure?",[["act","Actual, from bills or records"],["est","Estimated"]]);
 const months=id=>fld(id,"months","Months covered",{ph:"12",help:"If you only have some bills, say how many months they cover. The checker scales the figure up to a year."});
+// ---- Bill reader (optional): set to the Worker's /read address to switch it on. See workers/bill-reader/README.md ----
+const BILL_API="";
+const SCAN_KINDS={elec:"electricity",gas:"gas",oil:"heating_oil",water:"water"};
+const KIND_PIECE={electricity:"Electricity",gas:"Natural gas",heating_oil:"Oil and LPG",water:"Water"};
+let scanMsg="";
+function scanBlock(id){
+  if(!BILL_API||!SCAN_KINDS[id])return"";
+  return `<div class="scan"><button class="btn" type="button" id="scanOpen" aria-expanded="false" aria-controls="scanBox">Read it from a photo or PDF of my bill</button>
+  <div id="scanBox" hidden><label class="consent" for="scanOk"><input type="checkbox" id="scanOk"> <span>Send this bill to be read. It goes through my server to Anthropic's Claude AI, which returns only the figures. It isn't stored or sent to me. You can cover your name and address first. <a href="/privacy/#readers">How the bill reader handles your bill</a></span></label>
+  <input type="file" id="scanFile" accept="image/*,application/pdf" disabled aria-label="Choose a photo or PDF of your bill"></div>
+  <p class="scanmsg" id="scanMsg" role="status">${scanMsg}</p></div>`;
+}
+function fileToPayload(file){
+  return new Promise((res,rej)=>{
+    if(file.type==="application/pdf"){
+      if(file.size>4*1024*1024)return rej(new Error("That PDF is over 4 MB. Try a photo of the page with the figures."));
+      const fr=new FileReader();fr.onload=()=>res({mediaType:"application/pdf",data:String(fr.result).split(",")[1]});fr.onerror=()=>rej(new Error("That file couldn't be opened."));fr.readAsDataURL(file);return;
+    }
+    if(!/^image\//.test(file.type))return rej(new Error("Please choose a photo or a PDF."));
+    const url=URL.createObjectURL(file),img=new Image();
+    img.onload=()=>{const k=Math.min(1,1600/Math.max(img.width,img.height));const c=document.createElement("canvas");c.width=Math.round(img.width*k);c.height=Math.round(img.height*k);
+      c.getContext("2d").drawImage(img,0,0,c.width,c.height);URL.revokeObjectURL(url);res({mediaType:"image/jpeg",data:c.toDataURL("image/jpeg",0.85).split(",")[1]});};
+    img.onerror=()=>{URL.revokeObjectURL(url);rej(new Error("That photo couldn't be opened. Try a JPEG or PNG."));};
+    img.src=url;
+  });
+}
+function matchSupplier(name){
+  if(!name)return null;const n=name.toLowerCase();
+  const rules=[["airtricity","SSE Airtricity"],["power ni","Power NI"],["electric ireland","Electric Ireland"],["click","Click Energy"],["budget","Budget Energy"],["flogas","Flogas"],["go power","Go Power"],["3t","3T"]];
+  for(const [k,v] of rules){if(k==="3t"?/\b3t\b/.test(n):n.includes(k))return v;}
+  return null;
+}
+function monthsBetween(a,b){if(!a||!b)return null;const d=(new Date(b)-new Date(a))/864e5+1;if(!(d>0))return null;return Math.min(12,Math.max(1,Math.round(d/30.44)));}
+function applyBill(id,r){
+  const f=n=>fmt(n,n%1?1:0);
+  if(!r.is_bill)return"That doesn't look like a bill I can read. Please type the figures in.";
+  if(r.bill_type!==SCAN_KINDS[id]&&r.bill_type!=="other")return`This looks like a ${r.bill_type.replace("_"," ")} bill. Open the ${KIND_PIECE[r.bill_type]} piece and try it there.`;
+  const d=S[id]=S[id]||{};delete d.na;const got=[];
+  const m=r.kwh_is_annual?12:monthsBetween(r.period_start,r.period_end);
+  if(id==="elec"||id==="gas"){
+    if(r.kwh===null)return"I couldn't find a kWh figure on that bill. Please type it in.";
+    d.kwh=String(r.kwh);got.push(`${f(r.kwh)} kWh`);if(m){d.months=String(m);got.push(`${m} month${m>1?"s":""}`);}
+    if(id==="elec"){const sp=matchSupplier(r.supplier);if(sp){d.supplier=sp;got.push(`supplier ${sp}`);}else if(r.supplier)got.push(`supplier "${r.supplier.replace(/[<>]/g,"")}" (not on the NI list, so choose it below)`);}
+  }else if(id==="oil"){
+    const add=(k,v,lab)=>{if(v){d[k]=String(num(d[k])+v);got.push(`${f(v)} litres of ${lab} added`);}};
+    add("kero",r.litres_kerosene,"kerosene");add("gasoil",r.litres_gas_oil,"gas oil");add("lpg",r.litres_lpg,"LPG");
+    if(!got.length)return"I couldn't find litres on that docket. Please type them in.";
+  }else if(id==="water"){
+    if(r.water_m3!==null){d.supply=String(r.water_m3);got.push(`${f(r.water_m3)} m³ supplied`);}
+    if(r.sewer_m3!==null){d.sewer=String(r.sewer_m3);got.push(`${f(r.sewer_m3)} m³ to sewer`);}
+    if(!got.length)return"I couldn't find water volumes on that bill. Please type them in.";
+    if(m){d.months=String(m);got.push(`${m} month${m>1?"s":""}`);}
+  }
+  d.q="act";save();
+  return`<b>Read from your bill:</b> ${got.join(", ")}.${r.notes?` ${r.notes.replace(/[<>]/g,"")}`:""} Check these against the bill before you rely on them.${id==="oil"?" Add each docket for the year in turn.":""}`;
+}
+async function readBill(file){
+  const id=sel,msg=document.getElementById("scanMsg"),inp=document.getElementById("scanFile");
+  msg.textContent="Reading your bill. This takes a few seconds…";inp.disabled=true;
+  try{
+    const p=await fileToPayload(file);
+    const r=await fetch(BILL_API,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({kind:id,...p})});
+    const j=await r.json().catch(()=>({}));
+    if(!r.ok)throw new Error(j.error||"The bill reader couldn't read that file. Please type the figures in.");
+    scanMsg=applyBill(id,j.result||{});
+  }catch(e){scanMsg=e.message||"Something went wrong. Please type the figures in.";}
+  if(sel===id){renderPanel();update();}
+}
 const FORMS={
  boundary:()=>`<p>Your boundary says what's in and what's out. Include every site and vehicle your business runs (the "operational control" approach). Without a boundary, Scope 1 is only a guess.</p>
   <div class="fields">${fld("boundary","name","Business name (optional)",{text:true,full:true})}
@@ -319,7 +401,10 @@ const FORMS={
   ${radios("boundary","asked","Has a customer, lender or tender asked for your carbon data?",[["no","No"],["yes","Yes"]])}</div>`,
  elec:()=>`<p class="find">On your electricity bill: the <b>total kWh</b> used. Many NI bills also show the last 12 months' total. <a href="sample-bills/sample-01-electricity.pdf">See the sample bill</a>.</p>
   <div class="fields">${fld("elec","kwh","Electricity used (kWh)",{ph:"221,640"})}${months("elec")}${Q("elec")}
-  ${radios("elec","green","Is your tariff backed by renewable certificates?",[["no","No or don't know"],["yes","Yes"]])}</div>`,
+  ${fld("elec","supplier","Who supplies your electricity?",{select:[...Object.keys(FMD.suppliers),OTHER_SUP],full:true,help:`Gives your market-based figure from your supplier's ${FMD.year} fuel mix, the figure printed on NI bills.`})}</div>
+  <details class="why"><summary>Why two electricity figures?</summary>
+  <p style="font-size:14px">The <b>location-based</b> figure uses the average UK grid, as SECR requires. The <b>market-based</b> figure uses what your supplier actually bought, including renewable certificates. Most frameworks now ask for both.</p>
+  <p style="font-size:14px">Northern Ireland is on the all-island grid with Ireland, not the GB grid, so NI suppliers report their own fuel mix to the Utility Regulator each year. The all-island average for ${FMD.year} was ${FMD.allIsland} g CO₂ per kWh. These figures count CO₂ only and rest on certificates rather than metered generation, so treat them as a guide. <a href="${FMD.url}" target="_blank" rel="noopener">Read the ${FMD.year} report (PDF)</a>.</p></details>`,
  gas:()=>`<p class="find">On your gas bill: the <b>kWh</b> figure, not the cubic metres. <a href="sample-bills/sample-02-natural-gas.pdf">See the sample bill</a>.</p>
   <div class="fields">${fld("gas","kwh","Gas used (kWh)",{ph:"42,333"})}${months("gas")}${Q("gas")}</div>`,
  oil:()=>`<p class="find">Add up the <b>litres</b> on every delivery docket for the year. <a href="sample-bills/sample-03-heating-oil.pdf">See the sample docket</a>.</p>
@@ -348,11 +433,11 @@ const FORMS={
  goods:()=>`<div class="lockbox"><p><b>This piece can't be filled from bills.</b> For most firms, purchased goods and services are the largest part of the footprint, often more than everything else put together. Measuring them takes your purchase ledger, supplier data and spend-based factors. The same goes for freight, capital goods and what happens to your products after sale.</p></div>
   <p>A full carbon inventory screens all 15 Scope 3 categories and puts numbers on the ones that matter. This checker covers five of them, partly.</p>`
 };
-function pick(id){sel=id;renderPanel();drawBoard();}
+function pick(id){if(id!==sel)scanMsg="";sel=id;renderPanel();drawBoard();}
 function renderPanel(){
   const p=P.find(x=>x.id===sel);const panel=document.getElementById("panel");
   const c=calc(sel);const tot=(c.s1||0)+(c.s2||0)+(c.s3||0);
-  panel.innerHTML=`<div class="eyebrow" style="color:var(--${p.sc==="bnd"?"ink":p.sc})">${p.scope}</div><h2>${p.name}</h2>${FORMS[sel]()}
+  panel.innerHTML=`<div class="eyebrow" style="color:var(--${p.sc==="bnd"?"ink":p.sc})">${p.scope}</div><h2>${p.name}</h2>${scanBlock(sel)}${FORMS[sel]()}
    ${!p.locked&&!["boundary","gen"].includes(sel)?`<div class="calc" id="calcOut"></div>`:""}
    <div class="piece-actions">${!p.locked&&sel!=="boundary"?`<button class="btn" type="button" id="naBtn">${(S[sel]||{}).na?"We do have this":"We don't have this source"}</button>`:""}
    <button class="btn primary" type="button" id="nextBtn">Next piece →</button></div>`;
@@ -360,6 +445,11 @@ function renderPanel(){
     const ev=el.tagName==="SELECT"||el.type==="radio"?"change":"input";
     el.addEventListener(ev,()=>{S[sel]=S[sel]||{};S[sel][el.dataset.k]=el.value;delete S[sel].na;save();update();});
   });
+  const so=document.getElementById("scanOpen");
+  if(so){const box=document.getElementById("scanBox"),ok=document.getElementById("scanOk"),fi=document.getElementById("scanFile");
+    so.onclick=()=>{box.hidden=!box.hidden;so.setAttribute("aria-expanded",String(!box.hidden));};
+    ok.onchange=()=>{fi.disabled=!ok.checked;};
+    fi.onchange=()=>{if(fi.files[0]&&ok.checked)readBill(fi.files[0]);};}
   const na=document.getElementById("naBtn");if(na)na.onclick=()=>{S[sel]=S[sel]||{};S[sel].na=!S[sel].na;save();renderPanel();update();};
   document.getElementById("nextBtn").onclick=()=>{const i=P.findIndex(x=>x.id===sel);pick(P[(i+1)%P.length].id);document.getElementById("board").scrollIntoView({behavior:"smooth",block:"nearest"});};
   updateCalc();
@@ -369,7 +459,13 @@ function updateCalc(){
   const c=calc(sel);const tot=(c.s1||0)+(c.s2||0)+(c.s3||0);
   if((S[sel]||{}).na){o.innerHTML="Marked as not applicable to your business.";return;}
   let extra="";
-  if(sel==="elec"&&(S.elec||{}).green==="yes")extra=`<br><small>A certificate-backed tariff can lower your market-based Scope 2 figure. This checker reports the location-based figure, which is the standard starting point.</small>`;
+  if(sel==="elec"){const d=S.elec||{};
+    if(c.mkt!==null&&c.mkt!==undefined){
+      const diff=c.mkt-c.s2;
+      extra=`<br><span style="font-weight:600">Market-based: ${fmt(t(c.mkt),2)} t CO₂</span> · ${d.supplier===OTHER_SUP?`all-island average, ${FMD.allIsland}`:`${d.supplier}, ${FMD.suppliers[d.supplier]}`} g/kWh (${FMD.year} fuel mix)`;
+      extra+=`<br><small>${Math.abs(diff)<c.s2*0.02?"About the same as":diff>0?`${fmt(t(diff),2)} t higher than`:`${fmt(t(-diff),2)} t lower than`} the location-based ${fmt(t(c.s2),2)} t. ${FMD.suppliers[d.supplier]===0?"A zero market-based figure comes from renewable certificates. It doesn't change the location-based figure, which most reports still lead with.":`A 100% renewable supplier would bring the market-based figure to zero; your location-based figure would stay at ${fmt(t(c.s2),2)} t.`}</small>`;
+    } else if(d.green==="yes")extra=`<br><small>Choose your supplier above to see your market-based figure.</small>`;
+  }
   if(sel==="water"){const w=S.water||{};
     if((w.src||"mains")!=="mains")extra+=`<br><small>Water you draw yourself has no water-company emissions. The energy to pump and treat it is already in your electricity or fuel. In NI, abstracting more than a small daily volume may need an NIEA abstraction licence.</small>`;
     if(w.ww==="onsite")extra+=`<br><small>An on-site treatment plant can release methane and nitrous oxide. Those are your Scope 1, and they need a specialist estimate, so this checker doesn't calculate them.</small>`;}
@@ -394,6 +490,7 @@ function renderMeter(){
 }
 function renderResults(){
   const T=totals();const b=S.boundary||{};const fte=num(b.fte),turn=num(b.turnover);
+  const ce=calc("elec");const mk=state("elec")==="na"||ce.mkt===undefined?null:ce.mkt;
   const max=T.by.length?T.by[0].kg:1;
   const miss=P.filter(p=>state(p.id)==="empty"||p.locked);
   const flags=[];
@@ -406,7 +503,7 @@ function renderResults(){
    <h2>Your rough footprint</h2>
    <div class="meter">
      <div class="m"><div class="k" style="color:var(--s1)">Scope 1</div><div class="v">${fmt(t(T.s1),1)} t</div><div class="s">fuel, vehicles, refrigerants</div></div>
-     <div class="m"><div class="k" style="color:var(--s2)">Scope 2</div><div class="v">${fmt(t(T.s2),1)} t</div><div class="s">electricity, location-based</div></div>
+     <div class="m"><div class="k" style="color:var(--s2)">Scope 2</div><div class="v">${fmt(t(T.s2),1)} t</div><div class="s">electricity, location-based${mk!==null?`<br>market-based: ${fmt(t(mk),1)} t`:""}</div></div>
      <div class="m"><div class="k" style="color:var(--s3)">Scope 3 (partial)</div><div class="v">${fmt(t(T.s3),1)} t</div><div class="s">only the pieces you filled</div></div>
    </div>
    <div class="rgrid">
@@ -427,7 +524,7 @@ function renderResults(){
 
 // ---- Worked example (matches the sample bills) ----
 const EX={boundary:{name:"Carnlough Precision Engineering Ltd (example)",sector:"Manufacturing: engineering and metals",sites:"1",fte:"25",turnover:"4500000",hours:"50",year:"Oct 2025 – Sep 2026",cbam:"yes",asked:"yes",q:"act"},
- elec:{kwh:"221640",months:"12",q:"act",green:"no"},gas:{kwh:"42333",months:"3",q:"act"},oil:{kero:"6750",gasoil:"0",lpg:"0",q:"est"},
+ elec:{kwh:"221640",months:"12",q:"act",supplier:"Power NI"},gas:{kwh:"42333",months:"3",q:"act"},oil:{kero:"6750",gasoil:"0",lpg:"0",q:"est"},
  veh:{diesel:"9800",petrol:"0",q:"act"},ref:{gas:"R410A",kg:"2.5",q:"act"},gen:{has:"no",q:"act"},water:{supply:"312",sewer:"296",months:"6",q:"act"},
  waste:{landfill:"0",efw:"0.94",recyc:"2.03",food:"0.18",months:"1",q:"act"},travel:{miles:"8000",railkm:"0",dom:"6",short:"2",long:"0",nights:"10",q:"est"}};
 document.getElementById("exBtn").onclick=()=>{S=JSON.parse(JSON.stringify(EX));save();pick("boundary");update();};
@@ -436,6 +533,7 @@ clr.onclick=()=>{if(!armed){armed=true;clr.textContent="Tap again to clear every
   clearTimeout(tm);armed=false;clr.textContent="Start again";S={};save();pick("boundary");update();};
 try{if(window.self===window.top){const pb=document.getElementById("printBtn");pb.hidden=false;pb.onclick=()=>window.print();}}catch(e){}
 
+if(BILL_API){const pl=document.getElementById("privLine");if(pl)pl.innerHTML='Your figures stay in this browser. Bills you choose to have read are not stored. <a href="/privacy/#readers">Privacy</a>';}
 // First visit opens on the worked example so the board shows what it does
 if(!Object.keys(S).length){S=JSON.parse(JSON.stringify(EX));}
 renderPanel();update();

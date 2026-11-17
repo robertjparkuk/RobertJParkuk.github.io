@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Site Report Reader: turn a Phase 1 desk study, site investigation or remediation report into a one-page summary of the risks, results and next steps, with questions to ask. For Northern Ireland land. Free, by Robert J. Park.">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<title>Site Report Reader</title>
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+/* Layout: header, upload strip, then a one-page summary: report card, risk table, results, then next steps and questions side by side. */
+:root{
+  --paper:#FFFFFF; --ink:#1B1817; --muted:#5F5856; --rule:#DDD6D2; --tint:#F6F4F2; --field:#FFFFFF;
+  --red:#B3121B; --land:#7A5A2B; --ok:#1F6B45; --warn:#A86A00; --hi:#B3121B;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D; --field:#1E1A19;
+  --red:#E5484D; --land:#C9A46A; --ok:#4CC38A; --warn:#E0A84B; --hi:#E5484D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#171413; --ink:#F1ECE9; --muted:#B3AAA6; --rule:#3A3332; --tint:#221E1D; --field:#1E1A19;
+  --red:#E5484D; --land:#C9A46A; --ok:#4CC38A; --warn:#E0A84B; --hi:#E5484D; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;
+  padding:24px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+.wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.brand b{color:var(--red)}
+h1{font-family:var(--display);font-size:clamp(32px,5vw,50px);line-height:1.04;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-size:clamp(22px,3vw,30px);margin:0;line-height:1.15;text-wrap:balance}
+h3{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0}
+.lede{margin:0;color:var(--muted);max-width:68ch;font-size:18px}
+.btn{border:1px solid var(--rule);background:var(--tint);color:var(--ink);font:600 14px var(--body);padding:7px 12px;border-radius:6px;cursor:pointer}
+.btn:hover{border-color:var(--ink)}
+.btn.primary{background:var(--red);border-color:var(--red);color:#fff}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.upl{border-top:3px solid var(--ink);border-bottom:1px solid var(--rule);padding:14px 0;display:flex;flex-direction:column;gap:10px}
+.upl p{margin:0;max-width:80ch}
+label.consent{display:flex;gap:8px;align-items:flex-start;font-size:14px;max-width:80ch}
+label.consent input{margin-top:3px}
+.small{font-size:13.5px;color:var(--muted)}
+.msg{font-size:14px;margin:0}.msg:empty{display:none}
+.chip{display:inline-block;font-size:12.5px;font-weight:700;border-radius:999px;padding:2px 9px;background:var(--land);color:#fff}
+.chip.ex{background:var(--warn)}
+.card{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.k{background:var(--tint);border-radius:6px;padding:10px 12px;min-width:0}
+.k .l{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.k .v{font-weight:600;overflow-wrap:anywhere}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:start}
+.box{display:flex;flex-direction:column;gap:8px;min-width:0}
+ul.list{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+.tablebox{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14.5px}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.risk{font-weight:700}.r-hi{color:var(--hi)}.r-mod{color:var(--warn)}.r-lo{color:var(--ok)}
+.flag{border-left:4px solid var(--land);background:var(--tint);padding:10px 12px;border-radius:0 6px 6px 0;font-size:15px}
+.flag b{display:block}
+.cta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center;background:var(--tint);border-radius:8px;padding:16px 18px}
+.cta .t{font-family:var(--display);font-size:22px;font-weight:600}
+.note{font-size:13px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;display:flex;flex-direction:column;gap:6px}
+.note a,.small a{color:inherit}
+@media (max-width:860px){.cols{grid-template-columns:minmax(0,1fr)}.card{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media print{.upl,.cta,#copyBtn{display:none!important}body{padding:0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:12px">
+    <a class="brand" href="/" title="Back to the Robert J. Park website"><svg width="26" height="26" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 2a20 20 0 0 0 0 40z" fill="currentColor"/><path d="M22 2a20 20 0 0 1 0 40z" fill="#B3121B"/></svg><span>Robert J. <b>Park</b> · Environment · Carbon · Public Affairs</span></a>
+    <h1>Site Report Reader</h1>
+    <p class="lede">Turn a land contamination report into one page: what the site was used for, what was found, how serious the risks are and what has to happen next. For buyers, lenders, developers and councillors who need the gist of a long technical report.</p>
+  </header>
+
+  <section class="upl" aria-label="Upload a report">
+    <div id="upload" hidden>
+      <p><b>Upload a Phase 1 desk study, site investigation, risk assessment, remediation strategy or verification report</b> as a PDF (up to 20 MB). For a long report, upload the summary, conclusions and results chapters.</p>
+      <label class="consent" for="ok"><input type="checkbox" id="ok"> <span>Send this report to be read. It goes through my server to Anthropic's Claude AI, which returns a summary. The report isn't stored or sent to me, and the summary leaves out names and street addresses. Only send reports you're entitled to share. <a href="/privacy/#readers">How the readers handle your file</a></span></label>
+      <input type="file" id="file" accept="application/pdf" disabled aria-label="Choose a report PDF">
+      <p class="msg" id="upMsg" role="status"></p>
+    </div>
+    <p id="noUpload" class="small">Uploads open soon. Meanwhile, here's the summary for an invented example site.</p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" type="button" id="exBtn">Show the example</button><button class="btn" type="button" id="copyBtn">Copy summary</button></div>
+    <p class="small" id="copyMsg" role="status"></p>
+  </section>
+
+  <main id="out" aria-live="polite"></main>
+
+  <div class="cta"><div><div class="t">Buying, lending on or developing land in Northern Ireland?</div><div>I lead land and contamination work with a multidisciplinary team, from reading the reports to agreeing remediation with the council.</div></div>
+    <a class="btn primary" href="/contact/" style="text-decoration:none">Talk to Robert</a></div>
+
+  <div class="note">
+    <div>The summary repeats what the report says. It doesn't check the report's methods or results, add screening values or rate risks itself, and it isn't a substitute for reading the report or for professional advice.</div>
+    <div>Background: <a href="/blog/2026/10/contaminated-land-in-northern-ireland/">Contaminated land in Northern Ireland: the regime that never started</a> · <a href="/blog/2026/11/the-land-law-stormont-never-switched-on/">The land law Stormont never switched on</a> · <a href="/tools/land-repair-helix.html">The Land Repair Helix</a></div>
+  </div>
+</div>
+
+<script>
+(function(){
+// Set to the Worker's base address to switch on uploads, e.g. "https://rjp-bill-reader.example.workers.dev". See workers/bill-reader/README.md
+const READER_BASE="";
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const nice=d=>{if(!d)return"";const t=new Date(d+"T12:00:00Z");return isNaN(t)?d:t.toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"});};
+const TYPES={phase1_desk_study:"Phase 1 desk study",phase2_site_investigation:"Phase 2 site investigation",generic_quantitative_risk_assessment:"Generic quantitative risk assessment",detailed_risk_assessment:"Detailed quantitative risk assessment",remediation_strategy:"Remediation strategy",verification_report:"Verification report",ground_gas_assessment:"Ground gas assessment",other:"Other report"};
+const MEDIA={soil:"Soil",groundwater:"Groundwater",surface_water:"Surface water",leachate:"Leachate",ground_gas:"Ground gas",vapour:"Vapour",other:"Other"};
+
+// An invented report, so the page shows what the reader produces.
+const EXAMPLE={is_site_report:true,report_type:"phase2_site_investigation",consultant:"Example Geo-Environmental Ltd (invented)",report_date:"2026-09-14",location:"Invented site, Mid and East Antrim",
+ current_use:"Vacant former vehicle depot",proposed_use:"Residential with private gardens",
+ site_history:["Agricultural land until about 1960","Bus and lorry depot with fuel tanks and a workshop, about 1962 to 2009","Vacant and partly demolished since 2010"],
+ contaminants_of_concern:["Petroleum hydrocarbons","PAHs","Heavy metals (lead, arsenic)","Asbestos in made ground","Ground gas from made ground"],
+ linkages:[{source:"Hydrocarbons and PAHs in made ground",pathway:"Ingestion, skin contact and dust",receptor:"Future residents",risk:"Moderate"},
+  {source:"Former fuel tanks",pathway:"Leaching to groundwater",receptor:"Groundwater in the sand and gravel",risk:"Low to moderate"},
+  {source:"Ground gas from made ground",pathway:"Migration into buildings",receptor:"Future residents",risk:"Moderate"},
+  {source:"Asbestos fibres in made ground",pathway:"Inhalation",receptor:"Construction workers and residents",risk:"Moderate"}],
+ investigation:"8 window sample holes to 4 m, 4 trial pits, 3 gas and groundwater monitoring wells, 6 gas monitoring visits",
+ exceedances:[{medium:"soil",contaminant:"Benzo(a)pyrene",max_value:"9.2",unit:"mg/kg",criterion:"C4SL, residential with home-grown produce",samples:"3 of 14"},
+  {medium:"soil",contaminant:"Lead",max_value:"410",unit:"mg/kg",criterion:"C4SL, residential with home-grown produce",samples:"2 of 14"},
+  {medium:"soil",contaminant:"Asbestos (chrysotile)",max_value:"Detected",unit:null,criterion:"Presence in made ground",samples:"2 of 10"}],
+ ground_gas:"Characteristic Situation 2 (low risk). Gas protection measures to BS 8485 recommended for new homes.",
+ groundwater:"Groundwater at 3.5 to 4.2 m, flowing north-east. No significant hydrocarbons detected.",
+ conclusions:["Made ground across the former depot poses an unacceptable risk to residents with gardens","No significant risk to groundwater identified"],
+ recommendations:["Remove or cap made ground in gardens and soft landscaping","Install gas protection measures in new homes","Prepare a remediation strategy for agreement with the council","Watching brief for asbestos and hydrocarbons during groundworks"],
+ remediation:["600 mm clean cover system in gardens over a marker layer","Gas membrane and ventilated sub-floor void to BS 8485"],
+ further_work:["Remediation strategy","Verification report once works are complete"],
+ guidance_cited:["LCRM","BS 10175","BS 8485","CIRIA C665","C4SLs"],
+ limitations:["The former workshop floor slab was not investigated"],notes:null};
+
+let last=null;
+const rcls=r=>/high/i.test(r||"")?"r-hi":/mod/i.test(r||"")?"r-mod":/low|neg/i.test(r||"")?"r-lo":"";
+const list=a=>a&&a.length?`<ul class="list">${a.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:`<p class="small">Not stated.</p>`;
+
+function questions(x){
+  const Q=[],t=x.report_type,ex=x.exceedances||[],has=s=>JSON.stringify(x).toLowerCase().includes(s);
+  if(t==="phase1_desk_study")Q.push(["A desk study is the first step","It identifies possible pollutant linkages from records and a site walkover, without sampling. If it finds any, the council will usually ask for an intrusive site investigation (Phase 2) before planning conditions can be discharged."]);
+  if(ex.length&&!(x.remediation||[]).length)Q.push(["Results above screening values, no remediation set out yet","Ask how each exceedance will be dealt with: further assessment, removal, capping or treatment, and who will agree it with the council."]);
+  if(/residential|housing|homes|garden/i.test(x.proposed_use||"")&&ex.some(e=>/commercial|industrial/i.test(e.criterion||"")))Q.push(["Check the screening values match the end use","The proposed use is residential, but some results are compared with commercial or industrial values. Ask why."]);
+  if(/cs ?[2-6]|characteristic situation [2-6]/i.test(x.ground_gas||""))Q.push(["Gas protection will be needed","Ask which measures are proposed under BS 8485, who will install them and how they will be verified. Verification is usually a planning condition."]);
+  if(t==="remediation_strategy"||(x.remediation||[]).length)Q.push(["Plan for verification","The council will normally want a verification report showing the remediation was done as agreed before it discharges the planning condition. Ask who will produce it and when."]);
+  if(has("asbestos"))Q.push(["Asbestos in soil","Asbestos in made ground needs specialist handling and air monitoring during groundworks. Ask whether a licensed contractor is needed and how waste will be classified."]);
+  if((x.limitations||[]).length)Q.push(["Read the limitations","The report lists areas or questions it didn't cover. Ask whether they matter for your plans."]);
+  Q.push(["Northern Ireland has no statutory contaminated land regime yet","Part III of the Waste and Contaminated Land (Northern Ireland) Order 1997 has never been commenced. Contamination is dealt with mainly through planning conditions, lenders and buyers' enquiries, so make sure responsibility for any remaining risk is clear in the sale, lease or loan documents."]);
+  return Q;
+}
+
+function render(x,isExample){
+  last=x;
+  const tags=`<span class="chip">${esc(TYPES[x.report_type]||"Report")}</span>${isExample?' <span class="chip ex">Invented example</span>':""}`;
+  const k=(l,v)=>`<div class="k"><div class="l">${l}</div><div class="v">${esc(v||"Not stated")}</div></div>`;
+  const links=(x.linkages||[]).map(r=>`<tr><td>${esc(r.source)}</td><td>${esc(r.pathway)}</td><td>${esc(r.receptor)}</td><td class="risk ${rcls(r.risk)}">${esc(r.risk||"Not rated")}</td></tr>`).join("");
+  const exc=(x.exceedances||[]).map(e=>`<tr><td>${esc(MEDIA[e.medium]||e.medium)}</td><td>${esc(e.contaminant)}</td><td>${esc([e.max_value,e.unit].filter(Boolean).join(" "))}</td><td>${esc(e.criterion||"")}</td><td>${esc(e.samples||"")}</td></tr>`).join("");
+  $("out").innerHTML=`<div style="display:flex;flex-direction:column;gap:20px">
+   <div style="display:flex;flex-direction:column;gap:8px"><div>${tags}</div><h2>${esc(x.location||"Site report summary")}</h2></div>
+   <div class="card">${k("Report",[TYPES[x.report_type],x.report_date&&nice(x.report_date)].filter(Boolean).join(", "))}${k("By",x.consultant)}${k("Now",x.current_use)}${k("Proposed",x.proposed_use)}</div>
+   <div class="cols"><div class="box"><h3>Site history</h3>${list(x.site_history)}</div><div class="box"><h3>Contaminants of concern</h3>${list(x.contaminants_of_concern)}</div></div>
+   <div class="box"><h3>Risks the report identifies</h3>${links?`<div class="tablebox"><table><thead><tr><th scope="col">Source</th><th scope="col">Pathway</th><th scope="col">Receptor</th><th scope="col">Risk (report's rating)</th></tr></thead><tbody>${links}</tbody></table></div>`:'<p class="small">No pollutant linkages listed.</p>'}</div>
+   <div class="box"><h3>Investigation</h3><p style="margin:0">${esc(x.investigation||"Not stated.")}</p></div>
+   <div class="box"><h3>Results above screening values</h3>${exc?`<div class="tablebox"><table><thead><tr><th scope="col">Medium</th><th scope="col">Contaminant</th><th scope="col">Highest</th><th scope="col">Compared with</th><th scope="col">Samples</th></tr></thead><tbody>${exc}</tbody></table></div>`:'<p class="small">None stated in the pages read.</p>'}</div>
+   <div class="cols"><div class="box"><h3>Ground gas</h3><p style="margin:0">${esc(x.ground_gas||"Not stated.")}</p></div><div class="box"><h3>Groundwater</h3><p style="margin:0">${esc(x.groundwater||"Not stated.")}</p></div></div>
+   <div class="cols"><div class="box"><h3>Conclusions</h3>${list(x.conclusions)}<h3>Recommendations</h3>${list(x.recommendations)}<h3>Remediation</h3>${list(x.remediation)}<h3>Further work</h3>${list(x.further_work)}</div>
+    <div class="box"><h3>Questions to ask</h3>${questions(x).map(([h,t])=>`<div class="flag"><b>${esc(h)}</b>${esc(t)}</div>`).join("")}</div></div>
+   <div class="cols"><div class="box"><h3>Guidance cited</h3>${list(x.guidance_cited)}</div><div class="box"><h3>Limitations</h3>${list(x.limitations)}${x.notes?`<p class="small">Reader's note: ${esc(x.notes)}</p>`:""}</div></div>
+  </div>`;
+}
+
+function summaryText(x){
+  const L=[`Site report summary (robertjpark.co.uk Site Report Reader)`,`${TYPES[x.report_type]||"Report"}${x.report_date?`, ${nice(x.report_date)}`:""}${x.consultant?`, ${x.consultant}`:""}`,x.location?`Location: ${x.location}`:"",`Now: ${x.current_use||"not stated"}. Proposed: ${x.proposed_use||"not stated"}.`,""];
+  const sec=(h,a)=>{if(a&&a.length){L.push(h);a.forEach(i=>L.push(`- ${i}`));L.push("");}};
+  sec("Site history",x.site_history);sec("Contaminants of concern",x.contaminants_of_concern);
+  sec("Risks",(x.linkages||[]).map(r=>`${r.source} > ${r.pathway} > ${r.receptor}: ${r.risk||"not rated"}`));
+  sec("Results above screening values",(x.exceedances||[]).map(e=>`${MEDIA[e.medium]||e.medium}: ${e.contaminant} ${[e.max_value,e.unit].filter(Boolean).join(" ")} (${e.criterion||""}${e.samples?`, ${e.samples}`:""})`));
+  if(x.ground_gas)L.push(`Ground gas: ${x.ground_gas}`);if(x.groundwater)L.push(`Groundwater: ${x.groundwater}`);L.push("");
+  sec("Recommendations",x.recommendations);sec("Remediation",x.remediation);sec("Further work",x.further_work);
+  L.push("This summary repeats the report; it is not a review of it.");return L.filter((l,i,a)=>!(l===""&&a[i-1]==="")).join("\n");
+}
+
+$("exBtn").onclick=()=>render(EXAMPLE,true);
+$("copyBtn").onclick=async()=>{if(!last)return;try{await navigator.clipboard.writeText(summaryText(last));$("copyMsg").textContent="Copied.";}catch(e){$("copyMsg").textContent="Your browser blocked copying.";}};
+
+if(READER_BASE){
+  $("upload").hidden=false;$("noUpload").hidden=true;
+  $("ok").onchange=()=>{$("file").disabled=!$("ok").checked;};
+  $("file").onchange=()=>{const f=$("file").files[0];if(!f||!$("ok").checked)return;
+    if(f.type!=="application/pdf"){$("upMsg").textContent="Please choose a PDF.";return;}
+    if(f.size>20*1048576){$("upMsg").textContent="That PDF is over 20 MB. Upload the summary, conclusions and results chapters only.";return;}
+    $("upMsg").textContent="Reading the report. A long report can take a minute or two…";$("file").disabled=true;
+    const fr=new FileReader();fr.onload=async()=>{
+      try{const r=await fetch(READER_BASE+"/site",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({kind:"site",mediaType:"application/pdf",data:String(fr.result).split(",")[1]})});
+        const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.error||"The reader couldn't read that report.");
+        const x=j.result||{};if(!x.is_site_report)throw new Error("That doesn't look like a land or ground report.");
+        render(x,false);$("upMsg").textContent="Done. Check the summary against the report before you rely on it.";
+      }catch(e){$("upMsg").textContent=e.message;}
+      $("file").disabled=!$("ok").checked;};
+    fr.readAsDataURL(f);};
+}
+render(EXAMPLE,true);
+})();
+</script>
+</body>
+</html>
