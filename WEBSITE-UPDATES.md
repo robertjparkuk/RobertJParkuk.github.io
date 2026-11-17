@@ -25,6 +25,10 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.37.1 — 17 November 2026: Offsets, NI position
+
+- `offsets.md`: replaced "not confirmed" with the reasoned position: the EU offset-claims ban applies by where the consumer is (ROI via S.I. 124/2026), not by customs lane; NI and GB consumer sales follow UK law (DMCC Act 2024 extends UK-wide). Flagged as inference.
+
 ### v0.37.0 — 17 November 2026: Learn Batch B
 
 - Four new explainers (theme: Land, food and water): `peat-bogs.md` (order 9), `permafrost.md` (10), `lough-neagh-and-cyanobacteria.md` (11), `acid-rain-to-acid-seas.md` (12).
