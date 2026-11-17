@@ -1,0 +1,46 @@
+# Rebuilds the chemical lists for the Safety Data Sheet Checker.
+# - On the 1st of each month (and on demand): downloads the UK REACH Candidate List from HSE
+#   and opens a pull request if anything changed.
+# - On a pull request that changes the ECHA source file or the builder: rebuilds and
+#   commits the result to that pull request's branch.
+
+name: Chemical lists
+
+on:
+  schedule:
+    - cron: "17 6 1 * *"
+  workflow_dispatch:
+  pull_request:
+    paths: ["data/chem/sources/**", "_scripts/chem/**", ".github/workflows/chem-lists.yml"]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || '' }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q openpyxl && python3 _scripts/chem/build_lists.py
+      - name: Save the result
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -z "$(git status --porcelain data/chem)" ]; then echo "No change"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git add data/chem && git commit -m "Rebuild chemical lists" && git push
+          else
+            b="chem-lists/$(date -u +%Y-%m-%d)"
+            git checkout -b "$b" && git add data/chem && git commit -m "Update chemical lists" && git push -u origin "$b"
+            gh pr create --base main --head "$b" --title "Chemical lists update $(date -u +%Y-%m-%d)" \
+              --body "Monthly rebuild of the UK REACH Candidate List from HSE for the Safety Data Sheet Checker. Merge to publish." \
+              || echo "::warning::Branch $b pushed; open the pull request yourself."
+          fi
