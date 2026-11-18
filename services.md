@@ -18,7 +18,7 @@ Northern Ireland manufacturers often trade into both the UK and EU markets, whic
 - what emissions and supply-chain data you'll need, and where to get it
 - how to prepare without building a reporting burden you don't need
 
-{% if site.cbam_advice_open %}For fixed-price help, from a £1,685 Two-Regime Readiness Review to a monthly desk, see the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}).{% else %}For fixed-price CBAM help, see the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}), where you can book a free first call.{% endif %}
+{% if site.aml_supervised and site.pi_cover %}For fixed-price help, from a £1,685 Two-Regime Readiness Review to a monthly desk, see the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}).{% else %}For fixed-price CBAM help, see the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}), where you can book a free first call.{% endif %}
 
 See where an NI business stands under both regimes, and the latest EU certificate price, on the free [CBAM Exposure Tracker]({{ '/tools/dashboards/cbam-exposure-tracker.html' | relative_url }}).
 

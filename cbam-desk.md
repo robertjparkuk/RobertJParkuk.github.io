@@ -41,7 +41,7 @@ Check your exact code on the [Is it a CBAM good?]({{ '/cbam-desk/is-it-a-cbam-go
 
 Invest NI publishes a free CBAM toolkit, and HMRC has a free registration checker: use them. What I add is a written, product-by-product answer for both the UK and EU regimes, written for your MD, customer or accountant, including the cases the free tools miss, such as goods from Ireland and the EU and movements from NI to Great Britain.
 
-{% unless site.cbam_advice_open %}
+{% unless site.aml_supervised and site.pi_cover %}
 > **Opening for booking shortly.** The Readiness Review, the short written answers, Importer Readiness, first-return preparation and the CBAM Desk subscription open once my registration with HMRC for this kind of advice is complete. You can book the free first call and the Supplier Data Pack now, and I'll let you know the day the rest opens. The prices below are the prices that will apply.
 {% endunless %}
 
@@ -86,7 +86,7 @@ The quarterly desk, at £495 a quarter, suits smaller importers: the quarterly l
 
 ### Prices and terms
 
-Prices are fixed and quoted in writing before any work starts. VAT is added if it applies. If the Readiness Review shows you need more help, up to £350 of its fee comes off the next service you book within three months. Work is done under a one-page letter of engagement setting the scope and the information you supply. Prices are reviewed each January. Urgent work, wanted sooner than the times shown, may carry an additional fee of no more than 50%, agreed in writing first.
+Prices are fixed and quoted in writing before any work starts. {% if site.vat_registered %}All prices exclude VAT, which is charged at the prevailing rate.{% else %}VAT is added if it applies.{% endif %} If the Readiness Review shows you need more help, up to £350 of its fee comes off the next service you book within three months. Work is done under a one-page letter of engagement setting the scope and the information you supply. Prices are reviewed each January. Urgent work, wanted sooner than the times shown, may carry an additional fee of no more than 50%, agreed in writing first.
 
 If a UK–EU agreement exempts your goods from either CBAM, I will tell you in writing what still applies: goods from other countries, records, and your customers' data requests. You can end the monthly desk on one month's notice.
 
