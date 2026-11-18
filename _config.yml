@@ -40,3 +40,10 @@ exclude:
   - README.md
   - HOW-TO-POST.md
   - WEBSITE-UPDATES.md
+
+# CBAM Desk advice products (Readiness Review, short written answers, Importer Readiness,
+# first return, CBAM Desk subscription) are held until HMRC anti-money-laundering
+# supervision is in place. Set to true once registered: buttons and prices come back site-wide.
+# Static pages that do not read this switch (Regulatory Horizon dashboard, UK CBAM Countdown,
+# Metals briefing) are listed in WEBSITE-UPDATES.md v0.40.0 and need their offer text restored by hand.
+cbam_advice_open: false

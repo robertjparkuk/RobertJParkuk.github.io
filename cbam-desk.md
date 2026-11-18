@@ -25,7 +25,7 @@ Start with the free [CBAM Exposure Tracker]({{ '/tools/dashboards/cbam-exposure-
 
 ## Is your product in scope?
 
-**Already in scope, in both regimes:** steel structures and parts (7308); tanks, drums, casks and gas cylinders (7309–7311); bolts, nuts, screws and washers (7318); other steel articles (7326); iron and steel in chapter 72, including wire; aluminium foil, including blister foil (7607); aluminium structures (7610); aluminium cans, tubes, aerosol and other containers (7612, 7613); other aluminium articles (7616); cement; nitrogen fertilisers, nitric acid and ammonia; hydrogen. All of these count together towards the UK's single £50,000 test.
+**Already in scope, in both regimes:** tube and pipe fittings (7307); steel structures and parts (7308); tanks, drums, casks and gas cylinders (7309–7311); bolts, nuts, screws and washers (7318); other steel articles (7326); iron and steel in chapter 72, including wire; aluminium foil, including blister foil (7607); aluminium structures (7610); aluminium cans, tubes, aerosol and other containers (7612, 7613); other aluminium articles (7616); cement; nitrogen fertilisers, nitric acid and ammonia; hydrogen. All of these count together towards the UK's single £50,000 test.
 
 **Not in scope today:** your finished food, drink or medicines; machinery; vehicle parts; plastics; lids, can ends and crown corks (8309).
 
@@ -39,7 +39,11 @@ Check your exact code on the [Is it a CBAM good?]({{ '/cbam-desk/is-it-a-cbam-go
 
 ## Fixed-price services
 
-Invest NI publishes a free CBAM toolkit, and HMRC has a free registration checker: use them. What I add is a written, product-by-product answer for both the UK and EU regimes that your MD, customer or accountant can rely on, including the cases the free tools miss, such as goods from Ireland and the EU and movements from NI to Great Britain.
+Invest NI publishes a free CBAM toolkit, and HMRC has a free registration checker: use them. What I add is a written, product-by-product answer for both the UK and EU regimes, written for your MD, customer or accountant, including the cases the free tools miss, such as goods from Ireland and the EU and movements from NI to Great Britain.
+
+{% unless site.cbam_advice_open %}
+> **Opening for booking shortly.** The Readiness Review, the short written answers, Importer Readiness, first-return preparation and the CBAM Desk subscription open once my registration with HMRC for this kind of advice is complete. You can book the free first call and the Supplier Data Pack now, and I'll let you know the day the rest opens. The prices below are the prices that will apply.
+{% endunless %}
 
 ### First call: free
 

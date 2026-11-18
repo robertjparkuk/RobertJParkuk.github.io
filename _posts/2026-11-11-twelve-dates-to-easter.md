@@ -8,6 +8,7 @@ hero_title: "Twelve dates to Easter <em>for NI firms</em>."
 hero_lead: "From the UK–EU summit on 20 November to EU CBAM certificates in February: the twelve dates before April 2027 that matter to Northern Ireland manufacturers, importers and food firms, and what to do before each."
 hero_until: 2026-11-25
 description: "From the UK–EU summit on 20 November to EU CBAM certificates and NI-only F-gas and deforestation rules: the twelve dates between now and April 2027 that matter most to Northern Ireland manufacturers, importers and food firms, and what to do before each."
+last_modified_at: 2026-11-18
 ---
 
 Between now and Easter, Northern Ireland firms face a UK carbon border levy, a UK–EU summit that may change it, EU rules that apply here but not in Great Britain, and an energy-audit cut-off for larger businesses. These are the twelve dates that matter most, what each one means, and what to do first. Every date is checked against the official source on my [NI Regulatory Horizon]({{ '/tools/dashboards/ni-regulatory-horizon.html' | relative_url }}) dashboard, which lists all 62.
@@ -46,6 +47,6 @@ Between now and Easter, Northern Ireland firms face a UK carbon border levy, a U
 
 ## Where to start
 
-If you import steel, aluminium, cement or fertiliser, or sell to EU customers who are asking for carbon data, start with the two CBAM dates. The £1,685 [Two-Regime Readiness Review]({{ '/cbam-desk/' | relative_url }}) tells you in ten working days whether you are liable under each regime, roughly what 2027 will cost, and what to ask your suppliers.
+If you import steel, aluminium, cement or fertiliser, or sell to EU customers who are asking for carbon data, start with the two CBAM dates. {% if site.cbam_advice_open %}The £1,685 [Two-Regime Readiness Review]({{ '/cbam-desk/' | relative_url }}) tells you in ten working days whether you are liable under each regime, roughly what 2027 will cost, and what to ask your suppliers.{% else %}A free first call on the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}) is the place to start.{% endif %}
 
 *Dates checked against the official sources linked on the [NI Regulatory Horizon]({{ '/tools/dashboards/ni-regulatory-horizon.html' | relative_url }}) as at 9 November 2026. General information, not legal, tax or financial advice.*
