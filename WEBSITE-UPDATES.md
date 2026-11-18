@@ -25,6 +25,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.39.1 — 18 November 2026: Fracking page sources
+
+- `fracking.md`:
+  - England row corrected from the Energy Independence Bill as introduced (Bill 176): it does not name fracking, and works through licensing ("transitional energy certificates" in the English onshore area only where petroleum is incidental to CO₂ storage, gas storage or geothermal).
+  - NI row: Bill number, no amendments at Further Consideration Stage, and the Act's future short title.
+  - Sources: the Official Report of 17 November 2026, the Bill as introduced and Bill 176.
+
 ### v0.39.0 — 17 November 2026: Learn Batch D (fracking; contrails and "chemtrails")
 
 - `fracking.md` (Energy and industry, order 18):
