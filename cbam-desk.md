@@ -41,7 +41,7 @@ Check your exact code on the [Is it a CBAM good?]({{ '/cbam-desk/is-it-a-cbam-go
 
 Invest NI publishes a free CBAM toolkit, and HMRC has a free registration checker: use them. What I add is a written, product-by-product answer for both the UK and EU regimes, written for your MD, customer or accountant, including the cases the free tools miss, such as goods from Ireland and the EU and movements from NI to Great Britain.
 
-{% unless site.cbam_advice_open %}
+{% unless site.aml_supervised and site.pi_cover %}
 > **Opening for booking shortly.** The Readiness Review, the short written answers, Importer Readiness, first-return preparation and the CBAM Desk subscription open once my registration with HMRC for this kind of advice is complete. You can book the free first call and the Supplier Data Pack now, and I'll let you know the day the rest opens. The prices below are the prices that will apply.
 {% endunless %}
 

@@ -41,9 +41,9 @@ exclude:
   - HOW-TO-POST.md
   - WEBSITE-UPDATES.md
 
-# CBAM Desk advice products (Readiness Review, short written answers, Importer Readiness,
-# first return, CBAM Desk subscription) are held until HMRC anti-money-laundering
-# supervision is in place. Set to true once registered: buttons and prices come back site-wide.
-# Static pages that do not read this switch (Regulatory Horizon dashboard, UK CBAM Countdown,
-# Metals briefing) are listed in WEBSITE-UPDATES.md v0.40.0 and need their offer text restored by hand.
-cbam_advice_open: false
+# LAUNCH GATES (see LAUNCH-GATES.md). Set a switch to true when the condition is met, then run
+#   python3 _scripts/launch_gates.py
+# to update the pages that cannot read these switches. Everything else updates on the next build.
+pi_cover: false        # professional indemnity cover bound and certificate in hand
+aml_supervised: false  # HMRC anti-money-laundering supervision in place (or confirmed not needed)
+vat_registered: false  # HMRC VAT registration confirmed
