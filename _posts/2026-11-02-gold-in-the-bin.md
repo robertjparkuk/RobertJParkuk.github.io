@@ -1,7 +1,7 @@
 ---
 title: "Gold in the bin"
 date: 2026-11-02 00:05:00 +0000
-last_modified_at: 2026-11-16
+last_modified_at: 2026-11-18
 tags: ["Waste", "Councils", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Waste and resources"
@@ -21,7 +21,7 @@ hero_until: 2026-11-09T07:30:00Z
 
 ## The argument in brief
 
-On 1 October 2026 the Irish News reported that three large fires since 2021 at a Belfast harbour scrapyard had cost the Fire and Rescue Service £171,887. The service named a lithium battery as the probable cause of the latest, in September. The same yard appears on DAERA's register as one of Northern Ireland's three approved WEEE exporters. Three months earlier, on 8 July 2026, a Commons committee approved the rules that let EU battery law be enforced in Northern Ireland. The DUP and TUV opposed them, on cost and on sovereignty.
+On 1 October 2026 the Irish News reported that three large fires since 2021 at a Belfast harbour scrapyard had cost the Fire and Rescue Service £171,887. The service named a lithium battery as the probable cause of the latest, in September. Three months earlier, on 8 July 2026, a Commons committee approved the rules that let EU battery law be enforced in Northern Ireland. The DUP and TUV opposed them, on cost and on sovereignty.
 
 Together, those two stories show the problem. Electrical waste holds real value: gold, palladium, copper, cobalt, lithium and rare earths. It also holds real hazards, from lithium cells to refrigerant gases. The paperwork meant to follow it from producer to refiner breaks where the value is highest. Northern Ireland sits under two rulebooks. The EU Batteries Regulation applies here under the Windsor Framework, while the UK WEEE Regulations also apply. Reform in GB has stalled.
 
@@ -144,7 +144,7 @@ Most rules are set in London or Brussels. NI's position depends on whether the E
 
 ## Practical examples
 
-- **A battery fire at a Belfast WEEE exporter.** The fire service said a lithium battery was the probable cause of the September 2026 fire at the Clearway Disposals yard, which cost £75,455 to fight. NIEA said it is considering extra lithium-ion requirements for waste operators ([Irish News, 1 Oct 2026](https://www.irishnews.com/news/northern-ireland/repeated-fires-at-belfast-scrapyard-cost-fire-and-rescue-service-significant-sum-4WSQIQOTURAKRLRI2AWESFX7QY/)).
+- **A battery fire at a Belfast WEEE exporter.** The fire service said a lithium battery was the probable cause of the September 2026 fire at a Belfast harbour scrapyard, which cost £75,455 to fight. Nothing here suggests any wrongdoing by the operator. NIEA said it is considering extra lithium-ion requirements for waste operators ([Irish News, 1 Oct 2026](https://www.irishnews.com/news/northern-ireland/repeated-fires-at-belfast-scrapyard-cost-fire-and-rescue-service-significant-sum-4WSQIQOTURAKRLRI2AWESFX7QY/)).
 
 - **Battery enforcement now live in NI.** SI 2026/1053 switches off the GB-derived 2008 battery rules in NI and adds penalties for breaching the EU Batteries Regulation. Passports follow for EV, light-transport and large industrial batteries from 18 Feb 2027 ([OPSS guidance, 17 Oct 2026](https://www.gov.uk/guidance/eu-batteries-regulations-in-northern-ireland)).
 

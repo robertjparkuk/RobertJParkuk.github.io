@@ -29,7 +29,7 @@ Three tools remember your progress so you don't lose it if you close the page:
 | The Carbon Crossword | Your filled-in letters and difficulty setting | Your browser's local storage, on your device only |
 | The Farm Carbon Data Checker | Your enterprises, record statuses and notes | Your browser's local storage, on your device only |
 
-This is not a cookie, and it is never sent to me or anyone else. I cannot see it. To delete it, use **Start again** (Carbon Jigsaw), **Clear** (Crossword) or **Start my own farm** (Farm Carbon Data Checker), or clear this site's data in your browser settings. A private or incognito window keeps nothing after you close it.
+Local storage is covered by the same rules as cookies (the Privacy and Electronic Communications Regulations 2003), but it needs no consent here because it only keeps what you ask the tool to save. It is never sent to me or anyone else. I cannot see it. To delete it, use **Start again** (Carbon Jigsaw), **Clear** (Crossword) or **Start my own farm** (Farm Carbon Data Checker), or clear this site's data in your browser settings. A private or incognito window keeps nothing after you close it.
 
 The other tools and guides don't save anything.
 

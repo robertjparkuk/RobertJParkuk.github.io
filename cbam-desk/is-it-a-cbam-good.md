@@ -1,5 +1,5 @@
 ---
-rules_checked: 11 November 2026
+rules_checked: 18 November 2026
 layout: page
 title: "Is my part or chemical a CBAM good?"
 permalink: /cbam-desk/is-it-a-cbam-good/
@@ -7,14 +7,16 @@ description: "Look up whether common steel, aluminium, chemical, fertiliser and 
 lead: The headings that most often catch engineering, pharmaceutical, food and drink firms, and the ones that don't. Check your exact code before you rely on it.
 ---
 
-Match the first four digits of the commodity code on your invoice or customs entry. "EU now" means the EU CBAM applies to imports into the EU today. "UK 2027" means the UK CBAM applies to imports into the UK, including Northern Ireland, from 1 January 2027. Some eight- and ten-digit codes within a heading are excepted, so always confirm the exact code on GOV.UK or EUR-Lex.
+Match the commodity code on your invoice or customs entry: most rows are four-digit headings, but some (2601 12, 2804 10, 2834 21, 2507 00 80) apply only at six or eight digits. "EU now" means the EU CBAM applies to imports into the EU today. "UK 2027" means the UK CBAM applies to imports into the UK, including Northern Ireland, from 1 January 2027. Some eight- and ten-digit codes within a heading are excepted, so always confirm the exact code on GOV.UK or EUR-Lex.
 
 ## Iron and steel
 
 | Heading | What it covers | EU now | UK 2027 |
 | --- | --- | --- | --- |
-| Chapter 72 | Iron and steel, including bar, sheet, coil and wire (some ferro-alloys excepted; UK excepts 7202 29 from 2027) | Yes | Yes |
+| Chapter 72 | Iron and steel, including bar, sheet, coil and wire. Not ferrous scrap (7204). Most ferro-alloys (7202) are excluded, and the excluded codes differ between the EU and UK lists: check yours | Yes | Yes |
+| 2601 12 | Agglomerated iron ores and concentrates (pellets, sinter) | Yes | Yes |
 | 7301–7306 | Sheet piling, rail material, tubes and pipes | Yes | Yes |
+| 7307 | Tube and pipe fittings (flanges, elbows, couplings, sleeves) | Yes | Yes |
 | 7308 | Structures and parts of structures (gates, frames, some racking parts) | Yes | Yes |
 | 7309 | Tanks and vats over 300 litres, without mechanical or thermal equipment | Yes | Yes |
 | 7310 | Tanks, casks, drums, cans and boxes up to 300 litres (empty cans, kegs, drums) | Yes | Yes |
@@ -30,8 +32,10 @@ Match the first four digits of the commodity code on your invoice or customs ent
 | 7607 | Aluminium foil up to 0.2 mm, including backed blister foil | Yes | Yes |
 | 7608–7609 | Tubes, pipes and fittings | Yes | Yes |
 | 7610 | Structures and parts of structures | Yes | Yes |
+| 7611 | Reservoirs, tanks and vats over 300 litres | Yes | Yes |
 | 7612 | Casks, drums, cans, boxes, collapsible tubes and aerosol cans up to 300 litres | Yes | Yes |
 | 7613 | Containers for compressed or liquefied gas | Yes | Yes |
+| 7614 | Stranded wire, cables and plaited bands, not electrically insulated | Yes | Yes |
 | 7616 | Other articles of aluminium | Yes | Yes |
 
 ## Chemicals, fertilisers, cement and hydrogen
@@ -45,12 +49,14 @@ Match the first four digits of the commodity code on your invoice or customs ent
 | 3102 | Nitrogen fertilisers, including ammonium nitrate and CAN | Yes | Yes |
 | 3105 | Mixed fertilisers containing nitrogen (some codes excepted) | Yes | Yes |
 | 2523 | Cement and clinker | Yes | Yes |
+| 2507 00 80 | Calcined kaolinic clays (other than kaolin) | Yes | Yes |
 | 2716 | Electricity | Yes | No |
 
 ## Not CBAM goods today
 
 | Heading | What it covers |
 | --- | --- |
+| 7204 | Ferrous waste and scrap |
 | 8309 | Lids, can ends, crown corks, caps and closures |
 | 7615 | Aluminium kitchen and household articles (some foil trays may fall here; check the classification) |
 | 9403 | Furniture, which may include some racking (other racking falls under 7308; check the classification) |
@@ -69,6 +75,6 @@ The European Commission has proposed adding about 180 steel- and aluminium-heavy
 - GOV.UK: [iron and steel](https://www.gov.uk/government/publications/check-which-goods-are-in-scope-of-carbon-border-adjustment-mechanism-cbam/goods-within-the-iron-and-steel-sector), [aluminium](https://www.gov.uk/government/publications/check-which-goods-are-in-scope-of-carbon-border-adjustment-mechanism-cbam/goods-within-the-aluminium-sector), [fertilisers](https://www.gov.uk/government/publications/check-which-goods-are-in-scope-of-carbon-border-adjustment-mechanism-cbam/goods-within-the-fertiliser-sector), [hydrogen](https://www.gov.uk/government/publications/check-which-goods-are-in-scope-of-carbon-border-adjustment-mechanism-cbam/goods-within-the-hydrogen-sector)
 - EUR-Lex: [Regulation (EU) 2023/956, Annex I, consolidated](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A02023R0956-20251020)
 
-Not sure about one product? A written answer for one product costs £195 and comes within a week. See the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}).
+Not sure about one product? {% if site.cbam_advice_open %}A written answer for one product costs £195 and comes within a week. See the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}).{% else %}Book a free first call on the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}) and I'll tell you where to look.{% endif %}
 
-*General information, not legal or tax advice. Classification is a customs matter: where a heading is marked "check", ask your customs agent. Checked on 11 November 2026.*
+*General information, not legal or tax advice. Classification is a customs matter: where a heading is marked "check", ask your customs agent. Checked on 18 November 2026 against Regulation (EU) 2023/956, Annex I, and GOV.UK's iron and steel, aluminium and cement lists (16 July 2026).*

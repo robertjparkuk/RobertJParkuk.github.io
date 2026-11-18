@@ -44,7 +44,7 @@ title: Environment · Carbon · Public Affairs
           <p class="lead">Whatever the summit agrees on linking the UK and EU emissions trading systems, nothing changes in law on the day. Any CBAM relief between the two needs regulations made in London and a legal act in Brussels. Until then, UK CBAM still applies to goods imported from 1 January 2027.</p>
           <div class="actions">
             <a class="btn" href="{{ '/cbam-desk/is-it-a-cbam-good/' | relative_url }}">Is it a CBAM good?</a>
-            <a class="btn btn-ghost" href="{{ '/cbam-desk/' | relative_url }}">Two-Regime Readiness Review, £1,685</a>
+            <a class="btn btn-ghost" href="{{ '/cbam-desk/' | relative_url }}">{% if site.cbam_advice_open %}Two-Regime Readiness Review, £1,685{% else %}CBAM Desk: free first call{% endif %}</a>
           </div>
         </div>
 {%- endif -%}
@@ -53,10 +53,10 @@ title: Environment · Carbon · Public Affairs
 {%- if now_s >= c_from and now_s < c_until %}
         <div class="hero-slide" role="group" aria-roledescription="slide" data-from="2026-11-27T23:59:00Z" data-until="2027-01-01T00:00:00Z" hidden>
           <p class="eyebrow">UK CBAM starts 1 January 2027</p>
-          <p class="hero-h">Steel, aluminium or fertiliser from the Republic? <em>It's in the UK carbon levy.</em></p>
-          <p class="lead">Goods made in the EU and brought into Northern Ireland count as UK CBAM imports. Find out whether you're the importer, whether you pass the £50,000 test, and roughly what 2027 will cost.</p>
+          <p class="hero-h">Steel, aluminium or fertiliser from the Republic? <em>It's likely in the UK carbon levy.</em></p>
+          <p class="lead">On my reading of the Finance Act 2026 (section 144(5)(a)), goods made in the EU and brought into Northern Ireland count as UK CBAM imports; HMRC's guidance does not yet cover this case. Find out whether you're the importer, whether you pass the £50,000 test, and roughly what 2027 will cost.</p>
           <div class="actions">
-            <a class="btn" href="{{ '/cbam-desk/' | relative_url }}">Two-Regime Readiness Review, £1,685</a>
+            <a class="btn" href="{{ '/cbam-desk/' | relative_url }}">{% if site.cbam_advice_open %}Two-Regime Readiness Review, £1,685{% else %}CBAM Desk: free first call{% endif %}</a>
             <a class="btn btn-ghost" href="{{ '/cbam-desk/is-it-a-cbam-good/' | relative_url }}">Is it a CBAM good?</a>
           </div>
         </div>
@@ -96,7 +96,7 @@ title: Environment · Carbon · Public Affairs
           <div class="actions">
             <a class="btn" href="{{ p.link | default: p.url | relative_url }}">Read the piece</a>
             {%- if is_cbam %}
-            <a class="btn btn-ghost" href="{{ '/cbam-desk/' | relative_url }}">Two-Regime Readiness Review, £1,685</a>
+            <a class="btn btn-ghost" href="{{ '/cbam-desk/' | relative_url }}">{% if site.cbam_advice_open %}Two-Regime Readiness Review, £1,685{% else %}CBAM Desk: free first call{% endif %}</a>
             {%- endif %}
           </div>
         </div>

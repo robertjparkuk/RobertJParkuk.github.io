@@ -54,10 +54,11 @@ The firm's gates are made in Northern Ireland, so its Irish customers make no CB
 | When | Action |
 | --- | --- |
 | November 2026 | Confirm the commodity codes on recent invoices; ask a customs adviser to confirm the importer for the fertiliser line |
+| After 20 November 2026 | Check whether any UK–EU agreement changes the fertiliser line. Relief for EU-made goods would need its own legal acts on both sides first. |
 | December 2026 | Update the estimate when HMRC publishes the Q1 2027 rates; ask the steel mill whether it has verified emissions data |
 | January 2027 | Start CBAM records for every consignment: code, value, origin, net mass |
-| After 20 November 2026 | Check whether any UK–EU agreement changes the fertiliser line. EU-made goods could be exempted later, but only once both sides have passed their own legal acts. |
-| April–May 2028 | Register (by 31 January 2028), then prepare and submit the first return by 31 May 2028 |
+| By 31 January 2028 | Register for UK CBAM with HMRC |
+| April–May 2028 | Prepare and submit the first return and payment, due by 31 May 2028 |
 
 ## What the full review adds
 

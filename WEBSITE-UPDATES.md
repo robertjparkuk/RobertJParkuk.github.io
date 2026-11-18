@@ -25,6 +25,19 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.40.0 — 18 November 2026: website review panel fixes (urgent set)
+
+From the 12-reviewer panel of 18 November 2026 (WORK doc `Website/website-panel-review-2026-11-18.md`).
+
+- **CBAM advice products held** until HMRC anti-money-laundering supervision is in place. New switch `cbam_advice_open: false` in `_config.yml`. While false:
+  - `cbam-desk.md` shows an "Opening for booking shortly" note above the services (prices stay listed); "can rely on" changed to "written for".
+  - Home slides, Services, "Is it a CBAM good?", "Twelve dates to Easter" and the Catholic Church post offer the free first call instead of the £1,685 Review.
+  - Pages that cannot read the switch were edited by hand and must be restored by hand when it flips: `tools/dashboards/ni-regulatory-horizon.html` (and `_scripts/dashboards/horizon_build.py`), `tools/uk-cbam-countdown.html`, `tools/dashboards/cbam-exposure-tracker.html`, `blog/focus-on-metals-manufacturing-november-2026/index.html` (which now also shows email and phone).
+- **"Is it a CBAM good?"**: added 7307 tube and pipe fittings, 2601 12 agglomerated iron ore, aluminium 7611 and 7614, calcined clay 2507 00 80; 7204 scrap listed as out of scope; the incorrect "UK excepts 7202 29" note replaced; six- and eight-digit codes explained. Checked against Regulation (EU) 2023/956 Annex I and GOV.UK's sector lists (16 July 2026) on 18 November 2026. CBAM Desk scope list gains 7307.
+- **Home slide (UK CBAM start)**: the EU-goods-into-NI position now reads as Robert's reading of Finance Act 2026 s.144(5)(a), noting HMRC's guidance does not yet cover it.
+- **Stale facts**: GB zero VAT on household electricity now ends 30 June 2027 (Budget 2026, para 6.210) on the EU law dashboard and "Which EU rules apply to me?" (rebuilt from `eu_build.py`); Green Book discount rate cut to 3% now reflected in "We don't fund the drains" (HM Treasury response, October 2026); "Stormont Brake pulled once" softened to "first pulled in December 2024" with a pointer to the dashboard; sample review plan now registers by 31 January 2028 and files by 31 May 2028.
+- **Legal**: "Gold in the bin" no longer names the scrapyard or links it to the approved-exporter register, and says no wrongdoing is suggested; internal sales note removed from the Agriculture dashboard; Privacy page now says local storage falls under PECR but needs no consent here; Services adds the Register of Consultant Lobbyists line.
+
 ### v0.39.1 — 18 November 2026: Fracking page sources
 
 - `fracking.md`:
