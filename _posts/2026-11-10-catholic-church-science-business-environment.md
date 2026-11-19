@@ -4,6 +4,7 @@ date: 2026-11-10 07:30:00 +0000
 tags: [Science, Business, Environment, Carbon, Net zero, Institutions]
 image: /assets/briefings/catholic-church/share-church-in-numbers.png
 description: "The Catholic Church's record in science, business and the environment, with the evidence: its global footprint in schools and health care, the Vatican offices that do this work, and Vatican City State's own carbon footprint and targets."
+last_modified_at: 2026-11-18
 ---
 
 
@@ -73,6 +74,6 @@ No official figure exists for the Church's land holdings or global carbon footpr
 
 The world's smallest state measures its emissions, sets a base year and publishes dated targets. Most Northern Ireland manufacturers are bigger emitters than the Vatican and publish nothing. Their EU customers will increasingly ask for these numbers under CBAM and CSRD. The Vatican's biggest source turned out to be its vehicles, not its buildings, which is a reminder to measure before you assume. For farms and food processors with land and large power bills, agrivoltaics is worth a serious look.
 
-If your customers are asking for carbon numbers, the £1,685 [Two-Regime Readiness Review]({{ '/cbam-desk/' | relative_url }}) tells you in ten working days what applies to you under the UK and EU rules and what to do first.
+If your customers are asking for carbon numbers, {% if site.aml_supervised and site.pi_cover %}the £2,200 [Two-Regime Readiness Review]({{ '/cbam-desk/' | relative_url }}) tells you what applies to you under the UK and EU rules and what to do first.{% else %}a free first call on the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}) is the place to start.{% endif %}
 
 *Figures checked against the sources in the briefing as at 9 November 2026. This post is general information, not legal, financial or investment advice. Full sources are in the [PDF]({{ '/assets/briefings/2026-11-catholic-church-science-business-environment-briefing.pdf' | relative_url }}).*

@@ -25,6 +25,27 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.41.0 — 19 November 2026: New prices, launch gates, VAT wording (replaces PRs 67 and 69)
+
+Robert's pricing decisions of 19 November 2026: one unit, X = £550; day rate 2X; two subscriptions.
+- Combines PR 67 (prices exclude VAT) and PR 69 (panel fixes and launch gates), replayed onto the current site.
+- `cbam-desk.md`: services rebuilt on one ladder. Answer £550 (one line), Check £1,100 (five lines or one topic), Two-Regime Readiness Review £2,200 (fifteen lines; Importer Readiness merged in), Project £5,500 (Supplier Data Pack), CBAM Desk £550 a month. The NI status letter template is free. The first UK return is priced from 2028. Scope is counted in lines, with complex lines double; a hard deadline moves a job up one level; a £550 credit applies within three months; quotes hold 90 days; one price change a year, in January. Published turnaround times are removed (the date goes in the letter of engagement). The quarterly desk and the "£495 a month, or £495 a quarter" contradiction are gone. The passed 13 November HMRC window is removed. The NI-from-EU line is now labelled as Robert's reading of the Act, unconfirmed, with HMRC asked on 16 November 2026. The booking note now says Projects also wait for PI cover.
+- `services.md`: public affairs £1,100 a day (£550 a half day). Carbon inventory as a £5,500 Project, or the Carbon Journey at £1,100 a month for 12 months (shown only when `pi_cover` is true).
+- Gated "open" texts (home slides, two posts, the lookup, the registry) updated to the new prices, so flipping a switch shows the right figures.
+
+### v0.40.0 — 18 November 2026: website review panel fixes (urgent set)
+
+From the 12-reviewer panel of 18 November 2026 (WORK doc `Website/website-panel-review-2026-11-18.md`).
+
+- **CBAM advice products held** until HMRC anti-money-laundering supervision is in place. Three launch switches in `_config.yml` (`pi_cover`, `aml_supervised`, `vat_registered`), all false; see `LAUNCH-GATES.md`. The advice products return when both `pi_cover` and `aml_supervised` are true. While held:
+  - `cbam-desk.md` shows an "Opening for booking shortly" note above the services (prices stay listed); "can rely on" changed to "written for".
+  - Home slides, Services, "Is it a CBAM good?", "Twelve dates to Easter" and the Catholic Church post offer the free first call instead of the £1,685 Review.
+  - Pages that cannot read the switches are flipped by `python3 _scripts/launch_gates.py` (tested both ways): `tools/dashboards/ni-regulatory-horizon.html` (and `_scripts/dashboards/horizon_build.py`), `tools/uk-cbam-countdown.html`, `tools/dashboards/cbam-exposure-tracker.html`, `blog/focus-on-metals-manufacturing-november-2026/index.html` (which now also shows email and phone).
+- **"Is it a CBAM good?"**: added 7307 tube and pipe fittings, 2601 12 agglomerated iron ore, aluminium 7611 and 7614, calcined clay 2507 00 80; 7204 scrap listed as out of scope; the incorrect "UK excepts 7202 29" note replaced; six- and eight-digit codes explained. Checked against Regulation (EU) 2023/956 Annex I and GOV.UK's sector lists (16 July 2026) on 18 November 2026. CBAM Desk scope list gains 7307.
+- **Home slide (UK CBAM start)**: the EU-goods-into-NI position now reads as Robert's reading of Finance Act 2026 s.144(5)(a), noting HMRC's guidance does not yet cover it.
+- **Stale facts**: GB zero VAT on household electricity now ends 30 June 2027 (Budget 2026, para 6.210) on the EU law dashboard and "Which EU rules apply to me?" (rebuilt from `eu_build.py`); Green Book discount rate cut to 3% now reflected in "We don't fund the drains" (HM Treasury response, October 2026); "Stormont Brake pulled once" softened to "first pulled in December 2024" with a pointer to the dashboard; sample review plan now registers by 31 January 2028 and files by 31 May 2028.
+- **Legal**: "Gold in the bin" no longer names the scrapyard or links it to the approved-exporter register, and says no wrongdoing is suggested; internal sales note removed from the Agriculture dashboard; Privacy page now says local storage falls under PECR but needs no consent here; Services adds the Register of Consultant Lobbyists line.
+
 ### v0.39.1 — 18 November 2026: Fracking page sources
 
 - `fracking.md`:
@@ -47,6 +68,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
   - verdict table. A private EIR requester is not named or linked.
 - 8 diagrams from `_scripts/learn/batch_d.py`. Medicines page now links forward.
 - Independent fact-check: 3 must-fix items (EU reporting scope; UK statement qualifier "for climate modification"; Shearer respondents) and several should-fix items, all applied.
+
+### v0.38.3 — 17 November 2026: Prices exclude VAT
+
+At Robert's request, after his VAT registration application (17 November 2026; registration dated from 1 October 2026):
+
+- Footer, every page using the site layout: new line "All prices exclude VAT, which is charged at the prevailing rate."
+- `cbam-desk.md`, Prices and terms: "VAT is added if it applies" replaced with the same sentence.
+- `services.md`, public affairs guide rate: "£1,000 a day, excluding VAT, plus disbursements".
+- No VAT number shown anywhere until HMRC confirms the registration.
 
 ### v0.38.2 — 17 November 2026: Cyanobacteria, carbon, nitrogen, warmth and dogs
 

@@ -9,6 +9,7 @@ hero_title: "We don't fund the drains. <em>Then we pay for the flood.</em>"
 hero_lead: "Around 100 places in Northern Ireland can't take new homes because the sewers are full, and our roads get a quarter of what they need. A duty to maintain is only half the answer. The other half is who pays."
 hero_button: "Read the piece"
 hero_button2: ["Read: Largs flooded", "/blog/2026/10/largs-flooded-nobody-to-blame/"]
+last_modified_at: 2026-11-18
 ---
 
 *Northern Ireland's sewers, roads, rivers and flood defences are failing for the same reason: we treat looking after them as optional, then pay many times over when they break. A duty to maintain them is half the answer. This piece is about the other half: who pays.*
@@ -41,7 +42,7 @@ In October 2023, floods went through Newry, Downpatrick and Portadown. The Execu
 
 UK public investment ran at about 4% of GDP up to the 1970s and has averaged about 1% this century, on the Office for Budget Responsibility's measure. IPPR found UK total investment the lowest in the G7 in 24 of the 30 years to 2022. Spending is now rising again, to around 2.5% of GDP, but the Institute for Fiscal Studies notes that the extra money leans heavily to defence and net zero, and transport does poorly.
 
-The Treasury's own review of the Green Book, its appraisal rulebook, didn't find conclusive proof that its method is biased against regions. But it did find too little weight on place, over-reliance on benefit-cost ratios and arbitrary thresholds, and weak handling of change that transforms a place. A new, shorter Green Book followed in February 2026. A recommendation to lower the discount rate, which would give more weight to long-lived assets like drains and flood defences, is still waiting for a Treasury answer. None of the four place-based pilots is in Northern Ireland.
+The Treasury's own review of the Green Book, its appraisal rulebook, didn't find conclusive proof that its method is biased against regions. But it did find too little weight on place, over-reliance on benefit-cost ratios and arbitrary thresholds, and weak handling of change that transforms a place. A new, shorter Green Book followed in February 2026. The Treasury has since cut the Green Book discount rate from 3.5% to 3% for the first 30 years of an appraisal, which gives more weight to long-lived assets like drains and flood defences ([HM Treasury response, October 2026](https://assets.publishing.service.gov.uk/media/6ae0b3a97cf9b2248904678e/Green_Book_Discount_Rate_Review_2026_-_HM_Treasury_response.pdf)). None of the four place-based pilots is in Northern Ireland.
 
 ## Three scenarios
 

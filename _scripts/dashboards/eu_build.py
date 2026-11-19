@@ -125,7 +125,7 @@ GB = [
  (('REACH', 'https://www.hse.gov.uk/reach/northern-ireland.htm'), 'Two regimes', 'EU REACH applies in NI, UK REACH in GB. A GB firm cannot hold an EU REACH registration itself: it needs an EU- or NI-based registrant or only representative', 'Ongoing'),
  (('F-gas', 'https://www.daera-ni.gov.uk/articles/fluorinated-greenhouse-gases'), 'Two regimes', 'GB and NI quotas diverge; GB suppliers to NI must meet EU bans', 'Gap widens 1 Jan 2027'),
  (('Machinery and tumble dryers', 'https://commonsbusiness.parliament.uk/Document/106373/Pdf'), 'Two regimes', 'GB continues to recognise CE marking for machinery, so EU-compliant machinery can still be sold in GB. New GB ecodesign rules ban vented and convector tumble dryers from January 2027', 'NI applies the EU Machinery Regulation from 20 Jan 2027'),
- (('Electricity VAT', 'https://www.gov.uk/government/publications/temporary-zero-rate-of-vat-for-domestic-electricity-in-great-britain/temporary-zero-rate-of-vat-in-great-britain-for-domestic-electricity'), 'Two regimes', 'A temporary zero rate of VAT on GB household electricity does not apply in NI, where EU VAT rules on goods apply. The UK is funding NI households instead this winter', '1 Oct 2026 to 31 Mar 2027'),
+ (('Electricity VAT', 'https://www.gov.uk/government/publications/temporary-zero-rate-of-vat-for-domestic-electricity-in-great-britain/temporary-zero-rate-of-vat-in-great-britain-for-domestic-electricity'), 'Two regimes', 'A temporary zero rate of VAT on GB household electricity does not apply in NI, where EU VAT rules on goods apply. The UK is funding NI households instead this winter', '1 Oct 2026 to 30 Jun 2027 (extended by Budget 2026, para 6.210)'),
  (('Parcel and low-value customs duty', 'https://www.niassembly.gov.uk/assembly-business/brexit-beyond-newsletters/issue-221--01-september-2026/'), 'Two regimes', 'A new EU customs duty on low-value parcels applies in NI, but GB-to-NI goods that are not at risk of entering the EU are exempt', 'From 1 Jul 2026'),
 ]
 
@@ -154,13 +154,14 @@ NEXT = [  # date, jurisdiction, what
  ('1 Jan 2027', 'UK', 'UK CBAM starts, covering the whole UK including NI'),
  ('20 Jan 2027', 'NI', 'EU Machinery Regulation applies'),
  ('18 Feb 2027', 'NI', 'Battery passport, QR code and removability rules'),
- ('31 Mar 2027', 'GB', 'Temporary zero rate of VAT on household electricity ends'),
+ ('30 Jun 2027', 'GB', 'Temporary zero rate of VAT on household electricity ends (extended from 31 March by Budget 2026)'),
  ('30 Jun 2027', 'NI', 'EU deforestation rules apply to micro and small firms'),
  ('14 Dec 2027', 'NI', 'EU Forced Labour Regulation applies (Joint Committee Decision 4/2026)'),
  ('1 Jan 2028', 'NI', 'New CLP label format, advertising and online-sales rules apply'),
 ]
 
 CHANGES = [  # newest first: date, what changed
+ ('18 Nov 2026', 'Correction: the GB zero rate of VAT on household electricity now ends on 30 June 2027, not 31 March, after Budget 2026 (para 6.210) extended it to 1 July 2027.'),
  ('13 Nov 2026', 'Review corrections of 11 November merged with this week\'s check. HMRC\'s request for feedback on its CBAM monitoring, reporting and verification guidance closes today, 13 November, so it is not in the open list; the refinery products consultation (closes 20 Jan 2027) is.'),
  ('13 Nov 2026', 'Reviewed changes: added the 10 November Joint Committee, which adopted decisions adding the EU Forced Labour Regulation and limited AI Act provisions to the Windsor Framework and agreed a declaration on parcel handling fees. Forced labour row updated from pending to adopted; its NI start date, 14 December 2027, added to Coming up. Added the European Commission consultation on ecodesign repairability requirements (closes 9 Feb 2027).'),
  ('13 Nov 2026', 'Weekly check. Removed three European Commission consultations that closed on 10 and 11 November or close today, 13 November (gas transmission capacity network code, animal disease contingency plans, nitrates RENURE for liquid digestates). Removed the passed 10 November Joint Committee meeting from Coming up. "As at" date updated.'),

@@ -40,3 +40,10 @@ exclude:
   - README.md
   - HOW-TO-POST.md
   - WEBSITE-UPDATES.md
+
+# LAUNCH GATES (see LAUNCH-GATES.md). Set a switch to true when the condition is met, then run
+#   python3 _scripts/launch_gates.py
+# to update the pages that cannot read these switches. Everything else updates on the next build.
+pi_cover: false        # professional indemnity cover bound and certificate in hand
+aml_supervised: false  # HMRC anti-money-laundering supervision in place (or confirmed not needed)
+vat_registered: false  # HMRC VAT registration confirmed

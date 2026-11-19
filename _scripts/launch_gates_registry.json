@@ -1,0 +1,32 @@
+[
+ {
+  "file": "tools/uk-cbam-countdown.html",
+  "gate": "advice",
+  "open": "<p>More detail: the <a href=\"/tools/dashboards/cbam-exposure-tracker.html\">CBAM Exposure Tracker</a> sets the EU and UK rules side by side, and <a href=\"/blog/2026/10/cbam-and-csrd-for-ni-manufacturers/\">CBAM and CSRD: what NI manufacturers actually need to know</a> explains the background. <a href=\"/cbam-desk/\">Book a Two-Regime Readiness Review (£2,200)</a>: a written review of your liability under your own commodity codes, with a 12-month plan.</p>",
+  "held": "<p>More detail: the <a href=\"/tools/dashboards/cbam-exposure-tracker.html\">CBAM Exposure Tracker</a> sets the EU and UK rules side by side, and <a href=\"/blog/2026/10/cbam-and-csrd-for-ni-manufacturers/\">CBAM and CSRD: what NI manufacturers actually need to know</a> explains the background. <a href=\"/cbam-desk/\">Book a free first call on the CBAM Desk</a> to talk through your products and suppliers.</p>"
+ },
+ {
+  "file": "tools/dashboards/cbam-exposure-tracker.html",
+  "gate": "advice",
+  "open": "<p>I help Northern Ireland manufacturers and importers work out their CBAM position under both regimes, gather supplier emissions data and get ready for the first UK return. <a href=\"/cbam-desk/\">Two-Regime Readiness Review, £2,200</a> · <a href=\"/cbam-desk/\">All CBAM Desk services and prices</a> · <a href=\"/contact/\">Get in touch</a> · <a href=\"/tools/incoterms.html\">Incoterms Chooser</a> · <a href=\"/blog/2026/10/cbam-and-csrd-for-ni-manufacturers/\">CBAM and CSRD: what NI manufacturers need to know</a></p>",
+  "held": "<p>I help Northern Ireland manufacturers and importers work out their CBAM position under both regimes, gather supplier emissions data and get ready for the first UK return. <a href=\"/cbam-desk/\">Free first call</a> · <a href=\"/cbam-desk/\">All CBAM Desk services and prices</a> · <a href=\"/contact/\">Get in touch</a> · <a href=\"/tools/incoterms.html\">Incoterms Chooser</a> · <a href=\"/blog/2026/10/cbam-and-csrd-for-ni-manufacturers/\">CBAM and CSRD: what NI manufacturers need to know</a></p>"
+ },
+ {
+  "file": "blog/focus-on-metals-manufacturing-november-2026/index.html",
+  "gate": "advice",
+  "open": "<p><strong>Want your own number?</strong> The <a href=\"/cbam-desk/\">Two-Regime Readiness Review</a> is a fixed-price (£2,200) written review of what the UK and EU carbon rules mean for you, with an estimate of your liability under your own commodity codes, a data checklist for your suppliers and a 12-month plan. Or get in touch on <a href=\"https://uk.linkedin.com/in/robertparkuk\" rel=\"noopener\">LinkedIn</a> or WhatsApp <strong>@robertjpark</strong>.</p>",
+  "held": "<p><strong>Want your own number?</strong> Start with a free first call on the <a href=\"/cbam-desk/\">CBAM Desk</a>. Email <a href=\"mailto:robert@robertjpark.co.uk\">robert@robertjpark.co.uk</a>, ring 07450 349480, or get in touch on <a href=\"https://uk.linkedin.com/in/robertparkuk\" rel=\"noopener\">LinkedIn</a> or WhatsApp <strong>@robertjpark</strong>.</p>"
+ },
+ {
+  "file": "tools/dashboards/ni-regulatory-horizon.html",
+  "gate": "advice",
+  "open": "<p>The <strong>Two-Regime Readiness Review</strong> turns this page into your own plan. For a fixed £2,200:</p>\n<ul><li>a short questionnaire, then a 90-minute call</li><li>your products and trade mapped against the UK and EU carbon border rules (CBAM) by commodity code, and against the other UK and EU rules that reach you in Northern Ireland</li><li>a 6–8 page written review with a 12-month plan: what applies, from when, and roughly what it could cost</li><li>a 30-minute follow-up call</li></ul>\n<a class=\"h-btn\" href=\"/cbam-desk/\">Book a Two-Regime Readiness Review, £2,200</a><a href=\"/contact/\">Or ask a question first</a>\n<small>Price fixed and quoted in writing before work starts; VAT added if it applies. The fee comes off the next service you book within three months.</small>",
+  "held": "<p>A free 30-minute first call is the place to start: we go through your products and trade, and which of these dates reach you under the UK and EU rules. The fixed-price Two-Regime Readiness Review, which turns this page into your own written 12-month plan, opens for booking shortly.</p>\n<a class=\"h-btn\" href=\"/cbam-desk/\">Book a free first call</a><a href=\"/contact/\">Or ask a question first</a>"
+ },
+ {
+  "file": "_scripts/dashboards/horizon_build.py",
+  "gate": "advice",
+  "open": "<p>The <strong>Two-Regime Readiness Review</strong> turns this page into your own plan. For a fixed £2,200:</p>\n<ul><li>a short questionnaire, then a 90-minute call</li><li>your products and trade mapped against the UK and EU carbon border rules (CBAM) by commodity code, and against the other UK and EU rules that reach you in Northern Ireland</li><li>a 6–8 page written review with a 12-month plan: what applies, from when, and roughly what it could cost</li><li>a 30-minute follow-up call</li></ul>\n<a class=\"h-btn\" href=\"/cbam-desk/\">Book a Two-Regime Readiness Review, £2,200</a><a href=\"/contact/\">Or ask a question first</a>\n<small>Price fixed and quoted in writing before work starts; VAT added if it applies. The fee comes off the next service you book within three months.</small>",
+  "held": "<p>A free 30-minute first call is the place to start: we go through your products and trade, and which of these dates reach you under the UK and EU rules. The fixed-price Two-Regime Readiness Review, which turns this page into your own written 12-month plan, opens for booking shortly.</p>\n<a class=\"h-btn\" href=\"/cbam-desk/\">Book a free first call</a><a href=\"/contact/\">Or ask a question first</a>"
+ }
+]

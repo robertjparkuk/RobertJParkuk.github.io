@@ -9,6 +9,7 @@ hero_title: "When did you last have your voice on a Stormont or EU consultation 
 hero_lead: "A climate plan that shapes the whole economy drew 224 responses. Around 300 EU laws apply here, and the Assembly has run 15 inquiries into them. If you don't respond, the rules get written without you."
 hero_button: "Read the piece"
 hero_button2: ["See my consultation responses", "/public-sector/consultation-responses/"]
+last_modified_at: 2026-11-18
 ---
 
 *Northern Ireland's rules are written in two places, and most of the people who live under them never take part in either. That isn't apathy. It's a system that asks for your views and rarely tells you what it did with them.*
@@ -32,7 +33,7 @@ On the EU side, the picture is starker. Around 300 EU laws apply in Northern Ire
 
 I'm not suggesting bad faith. Officials work hard on these, often with thin teams and an Executive that didn't sit for two of the last four years. But the loop between "tell us what you think" and "here's what we did" is long, and nothing enforces it.
 
-**At the Assembly.** The Windsor Framework Democratic Scrutiny Committee first met in February 2024. It has published 15 inquiry reports so far, on subjects from toy safety to the Union Customs Code. But it has five working days to decide whether to hold an inquiry on a new EU act, and the legal test for action is high: a significant, lasting impact on everyday life. In its first session it found seven acts significantly different from what they replaced, and none that met the test. The Stormont Brake has been pulled once, in December 2024, on chemical labelling rules. The Secretary of State declined to act.
+**At the Assembly.** The Windsor Framework Democratic Scrutiny Committee first met in February 2024. It has published 15 inquiry reports so far, on subjects from toy safety to the Union Customs Code. But it has five working days to decide whether to hold an inquiry on a new EU act, and the legal test for action is high: a significant, lasting impact on everyday life. In its first session it found seven acts significantly different from what they replaced, and none that met the test. The Stormont Brake was first pulled in December 2024, on chemical labelling rules, and the Secretary of State declined to act. The [EU law dashboard](/tools/dashboards/eu-law-windsor-framework.html) tracks any later notifications.
 
 **In Brussels.** Anyone can respond to a European Commission consultation through its *Have Your Say* portal, including NI businesses. Most people here don't know that. Even when they do, the feedback is slow: the European Court of Auditors found in 2019 that the Commission's summaries of consultation responses took nine months on average, and only a third of respondents believed their views were taken into account.
 
