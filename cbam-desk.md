@@ -3,7 +3,7 @@ rules_checked: 11 November 2026
 layout: page
 title: CBAM Desk
 permalink: /cbam-desk/
-description: "Fixed-price help for NI and UK manufacturers, suppliers and importers caught between the UK and EU carbon rules: a £1,685 Two-Regime Readiness Review, short written answers from £135, UK CBAM readiness, supplier data packs, first-return preparation and a monthly desk."
+description: "Fixed-price help for NI and UK manufacturers, suppliers and importers caught between the UK and EU carbon rules: written Answers from £550, a £2,200 Two-Regime Readiness Review, supplier data packs and a monthly desk."
 lead: Fixed-price help with the EU and UK carbon border rules, for firms too small for a big consultancy and too exposed to ignore it.
 ---
 
@@ -21,7 +21,7 @@ Start with the free [CBAM Exposure Tracker]({{ '/tools/dashboards/cbam-exposure-
 
 **Make goods in Northern Ireland and sell them into the EU?** The European Commission says "Goods produced and/or released for free circulation in Northern Ireland are not subject to CBAM" ([CBAM Q&A](https://taxation-customs.ec.europa.eu/document/download/013fa763-5dce-4726-a204-69fec04d5ce2_en?filename=CBAM_Questions+and+Answers.pdf), Q 7.14, updated 15 October 2026). Your EU customer has no CBAM declaration to make on them. It may still ask for figures for its own carbon reporting, and the [NI CBAM status letter](#ni-cbam-status-letter) answers that.
 
-**Bring CBAM goods into NI from Ireland or the EU?** Finance Act 2026, section 144(5)(a), treats "a Union good that is imported into the United Kingdom as a result of its entry into Northern Ireland" as an import, and no regulations exclude it. With no customs declaration, the importer is "the person on whose behalf the good is imported" (section 146(4)), which is usually you. HMRC's guidance does not yet cover this case, and some Invest NI material describes it differently. Plan on the basis that the UK CBAM applies, count these purchases from your invoices towards the £50,000, and take customs advice before January. I am asking HMRC and will publish the answer here.
+**Bring CBAM goods into NI from Ireland or the EU?** Finance Act 2026, section 144(5)(a), treats "a Union good that is imported into the United Kingdom as a result of its entry into Northern Ireland" as an import, and no regulations exclude it. With no customs declaration, the importer is "the person on whose behalf the good is imported" (section 146(4)), which is usually you. This is my reading of the Act. HMRC's guidance does not yet cover this case, and some Invest NI material describes it differently, so the position is **unconfirmed**. I asked HMRC's CBAM policy team on 16 November 2026 and will publish the answer here. Until then, the prudent course is to count these purchases from your invoices towards the £50,000 and take customs advice before January.
 
 ## Is your product in scope?
 
@@ -42,51 +42,57 @@ Check your exact code on the [Is it a CBAM good?]({{ '/cbam-desk/is-it-a-cbam-go
 Invest NI publishes a free CBAM toolkit, and HMRC has a free registration checker: use them. What I add is a written, product-by-product answer for both the UK and EU regimes, written for your MD, customer or accountant, including the cases the free tools miss, such as goods from Ireland and the EU and movements from NI to Great Britain.
 
 {% unless site.aml_supervised and site.pi_cover %}
-> **Opening for booking shortly.** The Readiness Review, the short written answers, Importer Readiness, first-return preparation and the CBAM Desk subscription open once my registration with HMRC for this kind of advice is complete. You can book the free first call and the Supplier Data Pack now, and I'll let you know the day the rest opens. The prices below are the prices that will apply.
+> **Opening for booking shortly.** Answers, Checks, the Readiness Review, Projects and the CBAM Desk subscription open once my HMRC registration for this kind of advice is complete and my professional indemnity cover is in place. You can book the free first call now, and I'll let you know the day the rest opens. The prices below are the prices that will apply.
 {% endunless %}
+
+Every price comes from one unit, so you can see how they relate: an Answer is one unit, a Check is two, a Review four and a Project ten.
 
 ### First call: free
 
 30 minutes to talk through your products and trade, and whether you need anything at all.
 
-### Two-Regime Readiness Review: £1,685
+### Answer: £550
 
-It starts with one question: who is the importer, you, your supplier or your customer? Then a short questionnaire and a 90-minute call. Your products and trade are mapped against the UK and EU carbon border rules by commodity code, including what is proposed for 2028, and against the other UK and EU rules that reach you in Northern Ireland. You get a 6–8 page written review with a 12-month plan: what applies, from when, and roughly what it could cost under current law and under the Commission's July 2026 proposal to slow the EU phase-in. It also says whether chasing your suppliers' actual emissions is worth it. A 30-minute follow-up call is included. **Delivered within ten working days.** See a [fictional sample review]({{ '/cbam-desk/sample-review/' | relative_url }}).
+One written answer on one line. A line is one four-digit commodity heading from one supplier or one supply route. Typical Answers:
 
-### Short written answers
+- **Is this product a CBAM good?** Under either regime, and what that means for you.
+- **Default or actual?** Tell me the tonnes, commodity code, origin and destination. You get one page comparing the bill on default values (with the mark-up) against a plausible actual value, the saving, and what verification would cost, so you know whether to chase supplier data at all.
+- <span id="ni-cbam-status-letter"></span>**NI CBAM status letter, bespoke.** Send me the CBAM questionnaire your EU customer sent you. You get a one-page reply to send on. It quotes the Commission's Q&A, says your goods are produced in NI and not subject to CBAM, and lists the customs-status evidence to attach. If your customer wants a figure for its own carbon reporting, the letter gives one. Any origin question is flagged for a customs adviser. **The template version is free.**
 
-- <span id="ni-cbam-status-letter"></span>**NI CBAM status letter: £135 (template) or £250 (bespoke).** Send me the CBAM questionnaire your EU customer sent you. You get a one-page reply to send on. It quotes the Commission's Q&A, says your goods are produced in NI and not subject to CBAM, and lists the customs-status evidence to attach. If your customer wants a figure for its own carbon reporting, the letter gives one. Any origin question is flagged for a customs adviser. **Within a week.**
-- **One product, one written answer: £195.** Is this product a CBAM good under either regime, and what does that mean for you? **Within a week.**
-- **Default or actual? £395.** Tell me the tonnes, commodity code, origin and destination. You get one page comparing the bill on default values (with the mark-up) against a plausible actual value, the saving, and what verification would cost, so you know whether to chase supplier data at all. **Within a week.**
-- **Fertiliser and Packaging CBAM Check: £415.** For merchants, co-ops, drinks firms and food processors. Your fertiliser, can, keg, drum and foil purchases are mapped to the UK and EU lists (in, out, or ask your customs agent). It covers who is the importer on your supply routes, including from Ireland, a £50,000 test on last year's invoices, a liability estimate from HMRC's default values, and a paragraph to send suppliers asking for origin and emissions data. **Five working days.**
+### Check: £1,100
 
-### UK CBAM Importer Readiness: £1,750
+Up to five lines, or one topic. The usual one is the **Fertiliser and Packaging CBAM Check**, for merchants, co-ops, drinks firms and food processors. Your fertiliser, can, keg, drum and foil purchases are mapped to the UK and EU lists (in, out, or ask your customs agent). It covers who is the importer on your supply routes, including from Ireland, a £50,000 test on last year's invoices, a liability estimate from HMRC's default values, and a paragraph to send suppliers asking for origin and emissions data.
 
-A threshold and registration check, and data requests written for up to five non-UK suppliers (each extra supplier £275). You get a carbon price relief check: whether each supplier's carbon pricing scheme qualifies, requests for the verifier-completed form HMRC needs from each producing installation, and a supplier-by-supplier view of whether claiming is worth the paperwork. It is unlikely to be worth it for goods bought through stockholders or from plants that get most of their allowances free, because free allowances count as zero price. Also included: a default-or-actual comparison per product and a 2027 liability estimate under central and high carbon prices. I will not structure your imports to stay under the £50,000 threshold. **Delivered within ten working days.**
+### Two-Regime Readiness Review: £2,200
 
-### Supplier Data Pack (verification-ready): £2,450 for a simple site
+Up to 15 lines. It starts with one question: who is the importer, you, your supplier or your customer? Then a short questionnaire and a 90-minute call. Your products and trade are mapped against the UK and EU carbon border rules by commodity code, including what is proposed for 2028, and against the other UK and EU rules that reach you in Northern Ireland. You get a 6–8 page written review with a 12-month plan: what applies, from when, and roughly what it could cost under current law and under the Commission's July 2026 proposal to slow the EU phase-in. A 30-minute follow-up call is included. See a [fictional sample review]({{ '/cbam-desk/sample-review/' | relative_url }}).
 
-For GB and non-UK producers whose EU or UK customers want actual embedded-emissions data. You get a monitoring plan in English, calendar-year emissions attributed to up to three CBAM goods at one site, the Commission's operator template (and the HMRC equivalent) completed, and a method statement, ready for the accredited verifier you appoint. I get quotes for you. £2,450 covers one site with one product line; larger or more complex sites are quoted in writing after a free scoping call. One verified 2026 dataset can serve your EU customers' 2026 declarations, due by 30 September 2027, and your UK customers' 2027 returns.
+If you import into the UK, the Review also covers the £50,000 threshold and registration, data requests written for up to five non-UK suppliers, and a carbon price relief check: whether each supplier's carbon pricing scheme qualifies, requests for the verifier-completed form HMRC needs from each producing installation, and a supplier-by-supplier view of whether claiming is worth the paperwork. It is unlikely to be worth it for goods bought through stockholders or from plants that get most of their allowances free, because free allowances count as zero price. You also get a 2027 liability estimate under central and high carbon prices. I will not structure your imports to stay under the £50,000 threshold.
+
+### Project: £5,500
+
+One site or one programme. The usual one is the **Supplier Data Pack (verification-ready)**, for GB and non-UK producers whose EU or UK customers want actual embedded-emissions data. You get a monitoring plan in English, calendar-year emissions attributed to up to three CBAM goods at one site, the Commission's operator template (and the HMRC equivalent) completed, and a method statement, ready for the accredited verifier you appoint. I get quotes for you; the verifier's fee is passed on at cost and named. One verified 2026 dataset can serve your EU customers' 2026 declarations, due by 30 September 2027, and your UK customers' 2027 returns.
 
 **Using EU-made steel or aluminium?** Under the Commission's CBAM Q&A, EU-produced precursors count as zero emissions. Verified data can then cut your EU customer's CBAM cost to a fraction of the default. Keep the mill certificates that prove EU origin.
 
-Without verification, your customer must use default values plus the mark-up. The price covers secondary processing sites (fabrication, forming, coating) that use bought-in steel or aluminium; primary producers are quoted after a scoping call. Verifier queries up to four hours are included. Because the data covers a calendar year, 2026 packs are delivered from February 2027, **within 15 working days of receiving your data**.
+Without verification, your customer must use default values plus the mark-up. The price covers secondary processing sites (fabrication, forming, coating) that use bought-in steel or aluminium; primary producers are quoted after a scoping call. Verifier queries up to four hours are included. Because the data covers a calendar year, 2026 packs are delivered from February 2027.
 
 Made in Northern Ireland? You don't need this pack for EU customers. The [NI CBAM status letter](#ni-cbam-status-letter) is the right product.
 
-### First UK CBAM return: £695 or £1,050
+### First UK CBAM return
 
-Prepared for you to check and submit. £695 covers up to three commodity codes and two suppliers. £1,050 covers up to ten commodity codes and five suppliers; more are quoted separately. It is done in April and May 2028 for the return due by 31 May 2028, and can be booked at any time. Registration and the return are in your name, and you remain the liable person: a tax agent can submit returns but cannot register for you and carries no liability.
+The first returns are due by 31 May 2028. Preparing them is offered from 2028, priced on the same scale. Registration and the return are in your name, and you remain the liable person: a tax agent can submit returns but cannot register for you and carries no liability.
 
-### CBAM Desk: £495 a month, or £495 a quarter
+### CBAM Desk: £550 a month
 
-Customer data requests answered as they arrive. Each quarter you get a liability update as carbon prices move, plus one page on what would move your bill: precursor sourcing, fuel, and whether actual data now beats the default. It suits suppliers fielding EU questionnaires and importers through 2027. The monthly desk includes up to four hours of my time a month, with more by agreement, and questions are answered within two working days. **Cancel on one month's notice.**
+Customer data requests answered as they arrive. Each quarter you get a liability update as carbon prices move, plus one page on what would move your bill: precursor sourcing, fuel, and whether actual data now beats the default. It suits suppliers fielding EU questionnaires and importers through 2027. Up to four hours of my time a month, with more by agreement. **Cancel on one month's notice.**
 
-The quarterly desk, at £495 a quarter, suits smaller importers: the quarterly liability update, and questions answered within two working days.
+### How scope and price work
 
-### Prices and terms
-
-Prices are fixed and quoted in writing before any work starts. All prices exclude VAT, which is charged at the prevailing rate. If the Readiness Review shows you need more help, up to £350 of its fee comes off the next service you book within three months. Work is done under a one-page letter of engagement setting the scope and the information you supply. Prices are reviewed each January. Urgent work, wanted sooner than the times shown, may carry an additional fee of no more than 50%, agreed in writing first.
+- **Scope is counted in lines, not by material.** Alloy or stainless steel, NPK blends, mixed-material goods and special customs procedures count as two lines. If a job is too big for its level, it moves up one level.
+- **A hard deadline moves the job up one level.** There is no percentage surcharge.
+- **Credit:** £550 comes off the next level you book within three months.
+- Prices are fixed and quoted in writing before any work starts, and a quote holds for 90 days. All prices exclude VAT, which is charged at the prevailing rate. The delivery date goes in a one-page letter of engagement setting the scope and the information you supply. Prices change once a year, in January.
 
 If a UK–EU agreement exempts your goods from either CBAM, I will tell you in writing what still applies: goods from other countries, records, and your customers' data requests. You can end the monthly desk on one month's notice.
 
@@ -107,7 +113,7 @@ So verified actual data usually pays for EU customers, because EU defaults carry
 
 - **UK–EU emissions trading link.** The UK–EU summit in Brussels on 20 November 2026 may announce a link between the two emissions trading systems. That would start, not finish, the process: each side then needs its own legal act before any CBAM exemption applies, a UK regulation approved by Parliament and an EU delegated act. Plan for both charges in 2027. A link would exempt EU-made goods, not goods made elsewhere and sold through an EU merchant, so check the origin on the invoice.
 - **EU phase-in.** The Commission's July 2026 proposal would slow the end of free allocation for CBAM sectors to 2038, so any cost figure for 2028 onwards is a range.
-- **UK scope.** HM Treasury is consulting until 20 January 2027 on adding refinery products to the UK CBAM. HMRC's technical feedback window on its monitoring, reporting and verification guidance closes on 13 November 2026.
+- **UK scope.** HM Treasury is consulting until 20 January 2027 on adding refinery products to the UK CBAM.
 
 ## Who this is for
 

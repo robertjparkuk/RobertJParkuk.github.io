@@ -18,7 +18,7 @@ Northern Ireland manufacturers often trade into both the UK and EU markets, whic
 - what emissions and supply-chain data you'll need, and where to get it
 - how to prepare without building a reporting burden you don't need
 
-{% if site.aml_supervised and site.pi_cover %}For fixed-price help, from a £1,685 Two-Regime Readiness Review to a monthly desk, see the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}).{% else %}For fixed-price CBAM help, see the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}), where you can book a free first call.{% endif %}
+{% if site.aml_supervised and site.pi_cover %}For fixed-price help, from a £550 written Answer to a monthly desk, see the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}).{% else %}For fixed-price CBAM help, see the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}), where you can book a free first call.{% endif %}
 
 See where an NI business stands under both regimes, and the latest EU certificate price, on the free [CBAM Exposure Tracker]({{ '/tools/dashboards/cbam-exposure-tracker.html' | relative_url }}).
 
@@ -31,6 +31,8 @@ A carbon inventory measures your organisation's greenhouse gas emissions across 
 - a credible baseline for customers, lenders and tender requirements
 - better conversations with suppliers and customers about where emissions really sit
 - non-financial management information your board can use
+
+{% if site.pi_cover %}A carbon inventory for one site or organisation is a fixed-price Project at £5,500. Or take it as the **Carbon Journey**: £1,100 a month for 12 months, with the scope agreed in writing at the start. Both work alongside the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}) subscription.{% endif %}
 
 ## ESOS
 
@@ -53,7 +55,7 @@ As a member of the Chartered Institute of Public Relations, I support organisati
 - communicating environmental commitments credibly — without greenwash
 - lobbying, where the job needs it
 
-Where the law requires it, I will be on the Register of Consultant Lobbyists before any paid contact with UK Ministers or permanent secretaries on a client's behalf (the register applies to VAT-registered consultants). Policy and public affairs work, including lobbying, is priced per job and quoted case by case. As a guide, it is £1,000 a day plus disbursements and out-of-pocket expenses, including travel and subscriptions.
+Where the law requires it, I will be on the Register of Consultant Lobbyists before any paid contact with UK Ministers or permanent secretaries on a client's behalf (the register applies to VAT-registered consultants). Policy and public affairs work, including lobbying, is priced per job and quoted case by case. As a guide, it is £1,100 a day (£550 a half day), plus disbursements and out-of-pocket expenses, including travel and subscriptions.
 
 ## Councils, public bodies and trade bodies
 

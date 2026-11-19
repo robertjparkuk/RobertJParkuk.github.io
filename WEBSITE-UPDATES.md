@@ -25,6 +25,14 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.41.0 — 19 November 2026: New prices, launch gates, VAT wording (replaces PRs 67 and 69)
+
+Robert's pricing decisions of 19 November 2026: one unit, X = £550; day rate 2X; two subscriptions.
+- Combines PR 67 (prices exclude VAT) and PR 69 (panel fixes and launch gates), replayed onto the current site.
+- `cbam-desk.md`: services rebuilt on one ladder. Answer £550 (one line), Check £1,100 (five lines or one topic), Two-Regime Readiness Review £2,200 (fifteen lines; Importer Readiness merged in), Project £5,500 (Supplier Data Pack), CBAM Desk £550 a month. The NI status letter template is free. The first UK return is priced from 2028. Scope is counted in lines, with complex lines double; a hard deadline moves a job up one level; a £550 credit applies within three months; quotes hold 90 days; one price change a year, in January. Published turnaround times are removed (the date goes in the letter of engagement). The quarterly desk and the "£495 a month, or £495 a quarter" contradiction are gone. The passed 13 November HMRC window is removed. The NI-from-EU line is now labelled as Robert's reading of the Act, unconfirmed, with HMRC asked on 16 November 2026. The booking note now says Projects also wait for PI cover.
+- `services.md`: public affairs £1,100 a day (£550 a half day). Carbon inventory as a £5,500 Project, or the Carbon Journey at £1,100 a month for 12 months (shown only when `pi_cover` is true).
+- Gated "open" texts (home slides, two posts, the lookup, the registry) updated to the new prices, so flipping a switch shows the right figures.
+
 ### v0.40.0 — 18 November 2026: website review panel fixes (urgent set)
 
 From the 12-reviewer panel of 18 November 2026 (WORK doc `Website/website-panel-review-2026-11-18.md`).

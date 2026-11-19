@@ -47,6 +47,6 @@ Between now and Easter, Northern Ireland firms face a UK carbon border levy, a U
 
 ## Where to start
 
-If you import steel, aluminium, cement or fertiliser, or sell to EU customers who are asking for carbon data, start with the two CBAM dates. {% if site.aml_supervised and site.pi_cover %}The £1,685 [Two-Regime Readiness Review]({{ '/cbam-desk/' | relative_url }}) tells you in ten working days whether you are liable under each regime, roughly what 2027 will cost, and what to ask your suppliers.{% else %}A free first call on the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}) is the place to start.{% endif %}
+If you import steel, aluminium, cement or fertiliser, or sell to EU customers who are asking for carbon data, start with the two CBAM dates. {% if site.aml_supervised and site.pi_cover %}The £2,200 [Two-Regime Readiness Review]({{ '/cbam-desk/' | relative_url }}) tells you whether you are liable under each regime, roughly what 2027 will cost, and what to ask your suppliers.{% else %}A free first call on the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}) is the place to start.{% endif %}
 
 *Dates checked against the official sources linked on the [NI Regulatory Horizon]({{ '/tools/dashboards/ni-regulatory-horizon.html' | relative_url }}) as at 9 November 2026. General information, not legal, tax or financial advice.*
