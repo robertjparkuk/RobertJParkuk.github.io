@@ -4,7 +4,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 src = open(os.path.join(HERE, 'build.py'), encoding='utf-8').read()
 exec(src[:src.index('\nD = {}')])  # helpers and CSS only
 
-AS_AT = '13 November 2026'
+AS_AT = '20 November 2026'
 NIA = 'https://www.niassembly.gov.uk/assembly-business/brexit-and-beyond/eu-law-scrutiny-tracker/'
 
 def cell(c):
@@ -132,9 +132,6 @@ GB = [
 # 4. Open consultations --------------------------------------------------------------
 HYS = 'https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/'
 CONS = [
- ('16 Nov 2026', ('Battery passport access rights', HYS + '16473_en'), 'European Commission', 'Yes', 'Batteries Regulation applies in NI'),
- ('19 Nov 2026', ('Electricity network tariff structure review, phase 1', 'https://consult.cru.ie/en/consultation/electricity-network-tariff-structure-review-phase-1-consultation-objectives-principles-scope-and'), 'Ireland: CRU', 'No', 'Feeds the all-island electricity market'),
- ('20 Nov 2026', ('EirGrid draft Transmission Development Plan 2026–2035', 'https://consult.cru.ie/en/consultation/draft-transmission-development-plan-2026-2035'), 'Ireland: CRU', 'No', 'Grid on the Irish side of the all-island system'),
  ('23 Nov 2026', ('New EU hydrogen strategy: call for evidence', HYS + '18695-Clean-energy-new-EU-hydrogen-strategy_en'), 'European Commission', 'No', 'EU energy policy, not in the annexes; relevant to all-island energy planning and NI hydrogen projects'),
  ('9 Dec 2026', ('Gas Networks Ireland Network Development Plan 2025', 'https://consult.cru.ie/en/consultation/consultation-gas-networks-ireland-network-development-plan-2025'), 'Ireland: CRU', 'No', 'Gas network planning for the island, including supply through the interconnectors that serve NI'),
  ('14 Dec 2026', ('Data centres: minimum performance standards', HYS + '19293-Data-centres-in-Europe-minimum-performance-standards_en'), 'European Commission', 'No', "Ireland's data-centre load on the shared grid"),
@@ -146,10 +143,9 @@ CONS = [
 
 # 5. Coming up -------------------------------------------------------------------------
 NEXT = [  # date, jurisdiction, what
- ('20 Nov 2026', 'UK–EU', 'Summit: agri-food (SPS), emissions trading and electricity on the agenda. An emissions trading agreement would not by itself remove either CBAM: each side needs its own legal act first'),
- ('11 Dec 2026', 'EU', 'Environment Council: the Irish Presidency aims for a general approach on the EU ETS review, which would slow the CBAM phase-in to 2038'),
  ('21 Nov 2026', 'NI', 'Plastic waste exports to non-OECD countries banned (Waste Shipments Regulation)'),
  ('9 Dec 2026', 'NI', 'Product Liability Directive transposition date'),
+ ('11 Dec 2026', 'EU', 'Environment Council: the Irish Presidency aims for a general approach on the EU ETS review, which would slow the CBAM phase-in to 2038'),
  ('30 Dec 2026', 'NI', 'EU deforestation rules apply to large and medium firms, and to wood products from all firms'),
  ('1 Jan 2027', 'UK', 'UK CBAM starts, covering the whole UK including NI'),
  ('20 Jan 2027', 'NI', 'EU Machinery Regulation applies'),
@@ -161,6 +157,7 @@ NEXT = [  # date, jurisdiction, what
 ]
 
 CHANGES = [  # newest first: date, what changed
+ ('20 Nov 2026', 'Weekly check. Removed three consultations that closed on 16, 19 and 20 November (European Commission battery passport access rights; CRU electricity network tariff structure review, phase 1; CRU draft Transmission Development Plan 2026–2035). Removed today\'s UK–EU summit from Coming up; its outcome will be added once the official joint statement has been checked. The summit countdown tile now counts down to the EU Machinery Regulation on 20 January 2027. "As at" date updated.'),
  ('18 Nov 2026', 'Correction: the GB zero rate of VAT on household electricity now ends on 30 June 2027, not 31 March, after Budget 2026 (para 6.210) extended it to 1 July 2027.'),
  ('13 Nov 2026', 'Review corrections of 11 November merged with this week\'s check. HMRC\'s request for feedback on its CBAM monitoring, reporting and verification guidance closes today, 13 November, so it is not in the open list; the refinery products consultation (closes 20 Jan 2027) is.'),
  ('13 Nov 2026', 'Reviewed changes: added the 10 November Joint Committee, which adopted decisions adding the EU Forced Labour Regulation and limited AI Act provisions to the Windsor Framework and agreed a declaration on parcel handling fees. Forced labour row updated from pending to adopted; its NI start date, 14 December 2027, added to Coming up. Added the European Commission consultation on ecodesign repairability requirements (closes 9 Feb 2027).'),
@@ -236,7 +233,7 @@ def page_eu(tiles, cards):
 <section class="k-card" id="glossary"><dl class="k-glos">{''.join(f'<dt>{esc(a)}</dt><dd>{esc(b)}</dd>' for a, b in GLOSSARY)}</dl><p class="k-src">Sources: <a href="https://www.niassembly.gov.uk/assembly-business/committees/2022-2027/windsor-framework-democratic-scrutiny-committee/useful-resources/the-stormont-brake/" rel="noopener">The Stormont Brake (NI Assembly)</a>; <a href="https://www.economy-ni.gov.uk/articles/uk-internal-market-scheme" rel="noopener">UK Internal Market Scheme (Department for the Economy)</a>; <a href="https://www.gov.uk/government/publications/retail-movement-scheme-how-the-scheme-will-work/retail-movement-scheme-how-the-scheme-will-work" rel="noopener">Retail Movement Scheme (GOV.UK)</a>; <a href="https://irish-presidency.consilium.europa.eu/en/" rel="noopener">Irish Presidency of the Council of the EU</a>.</p></section>
 <section class="k-cta"><p><strong>Caught between the two rulebooks?</strong></p><p>I help Northern Ireland businesses work out which rules apply to what they make and where it goes, respond to consultations, and build a compliance register from pages like this one. <a href="/contact/">Get in touch</a> or see <a href="/services/">what I do</a>.</p></section>
 <h2 class="k-h2">About this page</h2>
-<section class="k-card"><p class="k-note">A dated snapshot, checked on 13 November 2026 against the NI Assembly's EU law scrutiny tracker and Brexit and Beyond newsletters, GOV.UK, DAERA, the Council of the EU, the European Commission and gov.ie. "Not in the annexes" rows are my reading of the Windsor Framework annexes, not legal advice. Every link is to an official source except where a row says "as reported by"; the NI Assembly's Brexit and Beyond newsletter is used where a GOV.UK page could not be opened. Commission close dates are usually midnight Brussels time; check the consultation page before you rely on one. Nothing on this page is fetched or sent, and every table can be downloaded as CSV.</p></section>
+<section class="k-card"><p class="k-note">A dated snapshot, checked on 20 November 2026 against the NI Assembly's EU law scrutiny tracker and Brexit and Beyond newsletters, GOV.UK, DAERA, the Council of the EU, the European Commission and gov.ie. "Not in the annexes" rows are my reading of the Windsor Framework annexes, not legal advice. Every link is to an official source except where a row says "as reported by"; the NI Assembly's Brexit and Beyond newsletter is used where a GOV.UK page could not be opened. Commission close dates are usually midnight Brussels time; check the consultation page before you rely on one. Nothing on this page is fetched or sent, and every table can be downloaded as CSV.</p></section>
 <p class="k-foot">More dashboards: <a href="/dashboards/">all dashboards</a>. Related: <a href="/tools/which-eu-rules-apply.html">Which EU rules apply to me?</a> · <a href="/tools/dashboards/cbam-exposure-tracker.html">CBAM Exposure Tracker</a>.</p>
 </div>
 </main>
@@ -252,7 +249,7 @@ _days = lambda d: (_dt.datetime.strptime(d, '%d %b %Y') - _asat).days
 _open_ni = sum(1 for c in CONS if plain(c[3]).split(':')[0] in ('Yes', 'Partly', 'Likely'))
 tiles = [
  tile('Days to the deforestation rules', str(_days('30 Dec 2026')), '30 Dec 2026: large and medium firms, and all wood products', 'k-bad'),
- tile('Days to the UK–EU summit', str(_days('20 Nov 2026')), '20 Nov 2026: agri-food (SPS), emissions trading and electricity on the agenda'),
+ tile('Days to the EU Machinery Regulation', str(_days('20 Jan 2027')), '20 Jan 2027: new EU machinery rules apply in NI'),
  tile('Days to UK CBAM', str(_days('1 Jan 2027')), '1 Jan 2027: UK carbon border levy starts, covering NI too'),
  tile('Consultations you can act on', f'{_open_ni} of {len(CONS)}', 'Open now, where the EU law applies in NI'),
 ]
@@ -268,7 +265,7 @@ cards = [
  lcard('Often assumed, but not applying in NI', 'These are not in the Windsor Framework annexes, though NI firms can still be caught through EU customers.', ltable(c2, NOT_NI, tag_col=1), c2, NOT_NI, 'eu-law-not-applying-in-ni', 'Sources: House of Commons Library; NI Human Rights Commission; Windsor Framework annexes.'),
  lcard('Stormont Brake and new EU acts', 'Every Brake case, every Joint Committee decision adding a new EU act under Article 13(4), and the main oversight events, oldest first.', ltable(c3, BRAKE), c3, BRAKE, 'stormont-brake-and-new-acts', 'Sources: NI Assembly; GOV.UK; Council of the EU.'),
  lcard('How NI rules reach Great Britain', 'Four kinds of effect: GB firms must meet EU rules to sell into NI; GB rules are moved towards the EU to keep goods flowing; the UK and EU agree to align in a field; or GB and NI run two regimes and firms carry both.', ltable(c4, GB, tag_col=1), c4, GB, 'gb-effects-of-windsor-framework', 'Sources: NI Assembly Brexit and Beyond; GOV.UK; HSE; Welsh Government; Council of the EU; NI Business Info.'),
- lcard('Open consultations: European Commission, Ireland and UK CBAM', 'Open on 13 November 2026, soonest first. "Yes" means the EU law in question applies in NI, so NI businesses have a direct stake. The UK CBAM consultation is UK law, which covers NI.', ltable(c5, CONS, tag_col=3), c5, CONS, 'open-consultations-eu-ireland', 'Sources: European Commission Have your say; gov.ie; CRU; Uisce Éireann; GOV.UK. The NI Assembly scrutiny committee had no open calls for evidence. The EU ETS and Market Stability Reserve review closed on 3 November.'),
+ lcard('Open consultations: European Commission, Ireland and UK CBAM', 'Open on 20 November 2026, soonest first. "Yes" means the EU law in question applies in NI, so NI businesses have a direct stake. The UK CBAM consultation is UK law, which covers NI.', ltable(c5, CONS, tag_col=3), c5, CONS, 'open-consultations-eu-ireland', 'Sources: European Commission Have your say; gov.ie; CRU; Uisce Éireann; GOV.UK. The NI Assembly scrutiny committee had no open calls for evidence. The EU ETS and Market Stability Reserve review closed on 3 November.'),
 ]
 out = page_eu(tiles, cards)
 open(os.path.join(ROOT, 'tools/dashboards/eu-law-windsor-framework.html'), 'w', encoding='utf-8').write(out)
