@@ -25,6 +25,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.41.1 — 21 November 2026: UK–EU summit outcome post
+
+- New post `_posts/2026-11-21-the-carbon-deal-what-changes-for-northern-ireland-and-great-britain.md`: what the 20 November 2026 summit agreed on linking the UK and EU emissions trading schemes, the then / now / 2027 / 2028 position for NI and GB, impacts by type of business, the case for and against, and five actions. No prices or offers (launch gates unchanged).
+- Key source: DESNZ linking explainer (20 November 2026): the UK "intends to exempt goods originating in the EU" from the UK CBAM from 1 January 2027; the EU exemption for UK goods is expected from 1 January 2028. Neither is law; the post says so throughout.
+- Removed the two pre-written summit drafts (`...-cbam-bill-agreed.md` and `...-cbam-bill-no-deal.md`, both `published: false`). Both are superseded, and the "agreed" draft said section 156 regulations need both Houses (the Act says the Commons only) and that EU goods stay charged in 2027.
+- Not changed in this release, and now out of date until updated: the home-page hero, CBAM Desk line 114, the CBAM Exposure Tracker and UK CBAM Countdown callouts, the ESG tracker ETS rows, the Regulatory Horizon, Twelve dates, the fertiliser piece and the two held policy posts.
+
 ### v0.41.0 — 19 November 2026: New prices, launch gates, VAT wording (replaces PRs 67 and 69)
 
 Robert's pricing decisions of 19 November 2026: one unit, X = £550; day rate 2X; two subscriptions.
