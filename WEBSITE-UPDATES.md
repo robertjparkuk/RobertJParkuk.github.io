@@ -25,6 +25,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.49.2 — 21 November 2026: the elements on the Learn page
+
+*Robert, 21 November 2026: "add it to learn as well".*
+
+- New "The elements" section at the top of `/learn/`: the full periodic table graphic (linking to the tool), a short guide to the interactive table, and the eight element briefing PDFs. The existing "Go further" link stays.
+
 ### v0.49.1 — 21 November 2026: new hover lines for every element
 
 *Robert, 21 November 2026: "Add them to the dynamic periodic table", after reviewing the doc "Elements of the land: a short description for every element".*
