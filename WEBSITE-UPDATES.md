@@ -25,6 +25,14 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.49.1 — 21 November 2026: new hover lines for every element
+
+*Robert, 21 November 2026: "Add them to the dynamic periodic table", after reviewing the doc "Elements of the land: a short description for every element".*
+
+- Every element's hover line (and the line under its name in the click panel) now says what it means for climate, greenhouse gases, the atmosphere, land, soil, water and health. Text in `_scripts/elements/hover.py`; rebuild with `python3 _scripts/elements/build_table.py .`.
+- The table graphics in the posts and PDFs are unchanged.
+- Still to confirm against primary sources: the Chernobyl, Sellafield and Sperrins references; superheavy lifetimes are approximate.
+
 ### v0.49.0 — 21 November 2026: a briefing for every element
 
 *Robert, 21 November 2026: "a briefing on every element and how it is in nature, climate, pollution, manufacturing, health etc. Even the most unstable ones."*
