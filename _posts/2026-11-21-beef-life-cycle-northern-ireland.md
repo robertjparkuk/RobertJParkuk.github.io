@@ -1,9 +1,9 @@
 ---
-title: "The beef life cycle: Northern Ireland, from calf to plate"
+title: "What’s the beef with Northern Ireland?"
 date: 2026-11-21 15:00:00 +0000
 image: /assets/beef/2026-11/beef-life-cycle-card.png
 tags: [Beef, Dairy, Agriculture, Food, Carbon, Lough Neagh, Windsor Framework, Northern Ireland]
-description: "Northern Ireland beef from calf to plate: two herds, prices, methane, feed and soy, phosphorus, schemes, the whole animal, dairy, and what changes under UK–EU rules. As at 21 Nov 2026."
+description: "The beef life cycle in Northern Ireland, calf to plate: two herds, prices, methane, feed and soy, phosphorus, schemes, the whole animal, dairy, raw milk and UK–EU rules. As at 21 Nov 2026."
 ---
 
 Northern Ireland's beef supply is moving from the suckler herd to the dairy herd. Price, retail specification and public money all reward cattle that finish faster. Phosphorus, not only carbon, is the limit that bites first. And for NI the carbon question is speed and system, not grass against grain. This piece follows beef from the calf to the plate and on to the hide, the offal and the slurry, with the dairy herd that now breeds almost half of it.
@@ -70,6 +70,18 @@ NI produced a record 2.8 billion litres of milk in 2025, up 8%, at an average fa
 
 Most of it becomes cheddar, butter and milk powder. Roughly 10 litres make a kilo of cheddar; about 20 make a kilo of butter. *NI's artisan makers include Young Buck, a raw-milk blue first made in Newtownards in 2013, Kearney Blue, Dart Mountain's Sperrin Blue, Fivemiletown's Causeway Cheddar, Ballylisk Triple Rose and Abernethy butter.* More dairy cows mean more slurry and phosphorus in the same catchment beef farms share.
 
+## Raw milk at the farm gate
+
+Raw, unpasteurised cows’ milk for drinking is legal in NI, but only from a registered producer, direct to the consumer: at the farm gate, in farmhouse catering, at a farmers’ market by the farmer, by pre-arranged delivery or collection, from a milk-round vehicle, or in a farm shop on the holding. Shops off the farm have been barred since 1985 ([Food Hygiene Regulations (NI) 2006, Schedule 6](https://www.legislation.gov.uk/nisr/2006/3/schedule/6/paragraph/3/made); [FSA guide to the law in NI, November 2025](https://www.food.gov.uk/sites/default/files/media/document/Raw%20Drinking%20Milk%20-%20A%20Guide%20to%20the%20law%20in%20Northern%20Ireland%20.pdf)). Scotland has banned all raw milk sales since 1983.
+
+- **Who checks.** DAERA’s Agri-food Inspection Branch registers and inspects for the FSA, normally twice a year. A new seller must give DAERA and the council 28 days’ notice and cannot sell before an inspection.
+- **TB is the catch.** The milk must come from a herd that is officially TB free and brucellosis free. Lose that status and sales stop. With herd TB incidence around 10%, that is a real risk in NI.
+- **Strict standards and a warning label.** No Salmonella, Campylobacter or STEC in 25 ml, low bacterial counts, and a label saying the milk has not been heat-treated and that children, pregnant women, older people and anyone unwell should not drink it.
+- **Hard to find.** About 135 producers were registered across England, Wales and NI in 2023 ([safefood](https://www.safefood.net/professional/food-safety/food-safety-news-(1)/2023/raw-drinking-milk-state-of-play)). *I found no current count for NI.*
+- **The benefits, honestly.** Buyers value the taste, the cream line and a direct link to the farm; the farmer gets a far better price per litre. *Some European studies of farm children link unboiled farm milk with less asthma and allergy, but they do not show cause.* The FSA treats raw milk as a high-risk food and says no health benefit is established; its scientific advisers rate raw cows’ drinking milk as medium risk per portion.
+
+For a dairy farmer it is a niche: a small, TB-free, very clean herd near a town can sell at a premium, but testing, labelling and the TB risk make it a side line, not a market for 2.8 billion litres.
+
 ## UK and EU: now and later
 
 <figure class="page-photo chart"><img src="{{ '/assets/beef/2026-11/chart_timeline.png' | relative_url }}" alt="Timeline: beef on the bone banned 1997 and allowed 1999; BVD testing 2016; NI negligible BSE risk 2017; Irish Grass Fed Beef PGI 2023; beef carbon scheme 2024; lower nitrite limits October 2025; SPS deal November 2026; EU Deforestation Regulation December 2026; age limit 26 months 2027; SPS rules March 2028." loading="lazy"><figcaption>Sources: legislation.gov.uk; DAERA; European Commission; GOV.UK.</figcaption></figure>
@@ -92,6 +104,6 @@ These points are my analysis, not official statistics. For the argument that cut
 
 ## The full briefing
 
-The [13-page PDF]({{ '/assets/beef/2026-11/beef-life-cycle-ni-briefing.pdf' | relative_url }}) adds markets and specification, the grass-or-grain evidence table, methane and Bovaer, vaccines, breeds, offal, ears and tongue curing, beef on the bone, menus, leftovers, the dairy herd, structural issues, opportunities and risks, and a list of what is not yet verified. It was reviewed by two panels: a fact-check against primary sources and a practitioner panel.
+The [13-page PDF]({{ '/assets/beef/2026-11/beef-life-cycle-ni-briefing.pdf' | relative_url }}) adds markets and specification, the grass-or-grain evidence table, methane and Bovaer, vaccines, breeds, offal, ears and tongue curing, beef on the bone, menus, leftovers, the dairy herd, raw milk at the farm gate, structural issues, opportunities and risks, and a list of what is not yet verified. It was reviewed by two panels: a fact-check against primary sources and a practitioner panel.
 
 *This is general information as at 21 November 2026, not legal or financial advice. Created with assistive technology including AI and re-checked against the official sources listed.*
