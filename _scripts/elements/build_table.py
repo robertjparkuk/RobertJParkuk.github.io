@@ -13,6 +13,28 @@ sys.path.insert(0, os.path.dirname(__file__))
 from base import ELEMENTS, CATEGORY_LABEL, position, period_group
 from contexts import C
 from featured import F, CHECKED
+from briefings_a import B as BA
+from briefings_b import B as BB
+from briefings_c import B as BC
+from briefings_d import B as BD
+BRIEF = {**BA, **BB, **BC, **BD}
+SHORT_SUPERHEAVY = {
+ 'Rf':'Superheavy element named after Rutherford; the longest-lived atoms last about an hour.',
+ 'Db':'Superheavy element named after Dubna; its longest-lived isotope lasts about a day.',
+ 'Sg':'Superheavy element named after Glenn Seaborg; lasts minutes.',
+ 'Bh':'Superheavy element named after Niels Bohr; lasts about a minute.',
+ 'Hs':'Superheavy element named after Hesse; lasts seconds.',
+ 'Mt':'Superheavy element named after Lise Meitner; lasts seconds.',
+ 'Ds':'Superheavy element named after Darmstadt; lasts seconds.',
+ 'Rg':'Superheavy element named after Röntgen; a heavier relative of gold.',
+ 'Cn':'Superheavy element named after Copernicus; may be volatile like mercury.',
+ 'Nh':'Superheavy element named after Japan; the first discovered in Asia.',
+ 'Fl':'Superheavy element named after the Flerov Laboratory; lasts seconds.',
+ 'Mc':'Superheavy element named after the Moscow region; lasts under a second.',
+ 'Lv':'Superheavy element named after Livermore; lasts a fraction of a second.',
+ 'Ts':'Superheavy element named after Tennessee; lasts hundredths of a second.',
+ 'Og':'Heaviest known element; only a handful of atoms ever made, each lasting under a millisecond.',
+}
 
 ROOT = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else '.')
 FEATURED = ['P', 'N', 'S', 'F', 'Sb', 'Mg', 'C', 'Rn']
@@ -28,15 +50,17 @@ def data():
     for z, sym, name, wt, cat in ELEMENTS:
         r, c = position(z); per, grp = period_group(z)
         s, env, eng, geo, chem, land = C[sym]
+        s = SHORT_SUPERHEAVY.get(sym, s)
         e = dict(z=z, symbol=sym, name=name, weight=wt, category=cat, category_label=CATEGORY_LABEL[cat],
                  row=r, col=c, period=per, group=grp, short=s,
-                 contexts=dict(environmental=env, engineering=eng, geological=geo, chemical=chem, land=land))
+                 contexts=dict(environmental=env, engineering=eng, geological=geo, chemical=chem, land=land),
+                 briefing_text=BRIEF[sym])
         if sym in F:
             f = F[sym]
             e['featured'] = True
             e['contexts'] = dict(environmental=f['env'], engineering=f['eng'], geological=f['geo'], chemical=f['chem'], land=f['land'])
             e['safety'] = f['safety']; e['compounds'] = f['compounds']
-            e['briefing'] = f['post']; e['pdf'] = f['pdf']
+            e['briefing_url'] = f['post']; e['pdf'] = f['pdf']
         out.append(e)
     return out
 
