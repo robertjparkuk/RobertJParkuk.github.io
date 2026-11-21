@@ -187,7 +187,7 @@ I will respond to the strategy consultation by 15 December. My position is suppo
 
 The deal is presented as a gain for Northern Ireland, and on inputs it is. These are the costs.
 
-- **Dearer carbon, same power bill.** NI's larger industrial sites are in the UK ETS and would pay roughly £9 to £11 a tonne more at today's prices. NI power stations already pay the EU price, so there is no matching fall in electricity costs.
+- **Dearer carbon, same power bill.** NI's larger industrial sites are in the UK ETS. If the UK price rises to the EU level, they would pay about £9 a tonne of CO2 more at 20 November prices (UK about £60, EU about €82, at £0.84 to the euro). The linked price could settle between the two. NI power stations already pay the EU price, so there is no matching fall in electricity costs.
 - **The edge over Great Britain goes.** NI is the one part of the UK whose goods are outside the EU's border charge. From 2028 GB goods are due to join them.
 - **The food advantage narrows too.** The food and farm-goods agreement would give GB producers much of the access to the EU that NI has now.
 - **Freight costs rise.** The 50% carbon reduction on sailings between NI and GB is removed, in a region that ships almost everything.
@@ -209,11 +209,11 @@ A larger, more liquid carbon market. No border charge or data burden on UK–EU 
 <div class="card" markdown="1">
 ### Against
 
-The UK follows EU carbon-market rules without a vote and gives up its own price floor. UK sites in the ETS are likely to pay roughly £9 to £11 a tonne more at today's prices, depending on the exchange rate. NI industry pays more for carbon with no matching fall in power costs, because NI generators already pay the EU price. And NI loses its niche as the one part of the UK outside the EU CBAM.
+The UK follows EU carbon-market rules without a vote and gives up its own price floor. If the UK price rises to the EU level, UK sites in the ETS pay about £9 a tonne of CO2 more at 20 November prices, more if sterling weakens. NI industry pays more for carbon with no matching fall in power costs, because NI generators already pay the EU price. And NI loses its niche as the one part of the UK outside the EU CBAM.
 </div>
 </div>
 
-It is also contested. Labour would keep the UK ETS and CBAM. The Conservatives and Reform UK have pledged to abolish them (press reports). Ending the UK ETS would lift a cost from every UK site, and would also put GB-made goods back into the EU's border charge. Firms should plan for either outcome.
+It is also contested. Labour would keep the UK ETS and CBAM. The Conservatives pledged on 1 April 2026 to abolish the UK carbon market, Carbon Price Support and the UK CBAM (press reports). Reform UK would abolish the UK ETS and stop the UK CBAM (press reports, 26 October 2026). The government is itself ending Carbon Price Support from April 2028 (written statement HCWS1519, 16 April 2026). Ending the UK ETS would lift a cost from every UK site, and would also put GB-made goods back into the EU's border charge. Firms should plan for either outcome.
 
 ## It will not fix Northern Ireland's carbon budget
 
@@ -234,6 +234,8 @@ Agriculture is 31.4% of NI emissions and 10% above its 1990 level. Transport is 
 
 The summit's wider package, from youth mobility to fishing, is in [The second UK–EU summit: what was agreed and what it will take]({{ '/go/summit/' | relative_url }}). I'll update this piece when the regulations and the treaty text are published.
 
+*Correction, 21 November 2026: an earlier version gave the carbon price gap as £9 to £11 a tonne; at the 20 November exchange rate it is about £9. The party positions now give dates and sources.*
+
 *How this was checked: drafted with AI assistance and tested against role-played reviews from trade and professional standpoints. Facts were checked against the official sources below on 20 November 2026. The reviews were role-played by software; nobody professionally qualified has reviewed it.*
 
 ## Sources
@@ -246,4 +248,4 @@ The summit's wider package, from youth mobility to fishing, is in [The second UK
 - Scope: HM Treasury and HMRC, [response to the UK CBAM consultation](https://www.gov.uk/government/consultations/consultation-on-the-introduction-of-a-uk-carbon-border-adjustment-mechanism), October 2024; European Commission, CBAM review report COM(2025) 783 and proposal COM(2025) 989, December 2025
 - Electricity: DESNZ written answer HL12132, 3 December 2025; [Regulation (EU) 2023/956](https://eur-lex.europa.eu/eli/reg/2023/956/oj/eng), Annex IV; Joint Statement, paragraph 52
 - Biomethane: [Implementing Regulation (EU) 2018/2066](https://eur-lex.europa.eu/eli/reg_impl/2018/2066/oj/eng), Article 39, as amended; [Implementing Regulation (EU) 2025/2547](https://eur-lex.europa.eu/eli/reg_impl/2025/2547/oj/eng), Annex II; DfE and DAERA, Biomethane Strategy and Policy Framework consultation, October 2026
-- Carbon prices: Reuters, 20 November 2026. Party positions: press reports.
+- Carbon prices: Reuters, 20 November 2026; exchange rate: ECB reference rate, 20 November 2026 (£0.83735 to the euro). Carbon Price Support: HM Treasury written statement [HCWS1519](https://hansard.parliament.uk/html/Commons/2026-04-16/WrittenStatements), 16 April 2026. Party positions: press reports (Conservatives: LBC, 1 April 2026).
