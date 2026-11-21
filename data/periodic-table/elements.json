@@ -12,7 +12,7 @@
    "col": 1,
    "period": 1,
    "group": 1,
-   "short": "Lightest element; makes water with oxygen and is promoted as a fuel.",
+   "short": "Low-carbon fuel and feedstock for fertiliser and steel. Not a greenhouse gas itself, but leaks extend methane's life in the air.",
    "contexts": {
     "environmental": "Hydrogen itself is not a greenhouse gas, but leaked hydrogen slows the breakdown of methane, so it warms indirectly.",
     "engineering": "Made mostly from natural gas today; electrolysis of water with renewable power is the low-carbon route. Storage and pipe embrittlement are the engineering problems.",
@@ -41,7 +41,7 @@
    "col": 18,
    "period": 1,
    "group": 18,
-   "short": "Inert gas used in cryogenics, MRI and leak testing.",
+   "short": "Inert, finite gas from natural gas fields. No climate or soil role; escapes to space once released.",
    "contexts": {
     "environmental": "Escapes to space once released, so supply is finite; no direct climate effect.",
     "engineering": "Liquid helium cools MRI magnets; used in welding shields and leak detection.",
@@ -70,7 +70,7 @@
    "col": 1,
    "period": 2,
    "group": 1,
-   "short": "Light metal at the heart of rechargeable batteries.",
+   "short": "Battery metal of the energy transition. Brine and rock mining strain water and land; spent batteries are a fire risk at waste sites.",
    "contexts": {
     "environmental": "Brine and hard-rock mining use water and energy; battery recycling recovers lithium.",
     "engineering": "Lithium-ion batteries for vehicles and grid storage; also glass, ceramics and greases.",
@@ -99,7 +99,7 @@
    "col": 2,
    "period": 2,
    "group": 2,
-   "short": "Light, stiff metal; its dust is highly toxic.",
+   "short": "Rare aerospace metal. No soil or climate role of note; its dust causes chronic lung disease and cancer.",
    "contexts": {
     "environmental": "Rare in the environment; airborne dust from processing is the concern.",
     "engineering": "Copper-beryllium alloys for non-sparking tools and springs; aerospace and X-ray windows.",
@@ -128,7 +128,7 @@
    "col": 13,
    "period": 2,
    "group": 13,
-   "short": "Metalloid used in glass, detergents and as a plant micronutrient.",
+   "short": "Plant micronutrient needed by brassicas and beet. Used in insulation glass fibre and wind-turbine magnets; boric acid harms fertility.",
    "contexts": {
     "environmental": "Plants need trace boron; too much in irrigation water is toxic.",
     "engineering": "Borosilicate glass, fibreglass insulation, neodymium magnets and nuclear control rods.",
@@ -157,7 +157,7 @@
    "col": 14,
    "period": 2,
    "group": 14,
-   "short": "The element of life and of climate change.",
+   "short": "The element we count: CO₂ and methane drive warming. Soils and peat store more carbon than the air; soot and carbon monoxide harm health.",
    "contexts": {
     "environmental": "Carbon dioxide and methane are the two largest causes of human-made warming. In Northern Ireland in 2023, carbon dioxide made up 61.5% of greenhouse gas emissions and methane 30.2%. Soils, peat and forests hold far more carbon than the air, and can lose it fast when drained or ploughed.",
     "engineering": "Carbon is the backbone of fuels, plastics, steel (as the reducing agent and alloying element), cement chemistry (limestone) and carbon fibre. Graphite is a battery anode material and is on the UK critical minerals list. Carbon capture aims to keep CO₂ from industrial sources out of the air.",
@@ -331,7 +331,7 @@
    "col": 15,
    "period": 2,
    "group": 15,
-   "short": "Makes up 78% of air; the nutrient that drives farm yields and pollution.",
+   "short": "Grass's main nutrient and Northern Ireland's main air and water pollutant from farming: ammonia, nitrate and the greenhouse gas nitrous oxide.",
    "contexts": {
     "environmental": "Nitrogen gas is harmless, but reactive nitrogen is not. Ammonia from slurry and fertiliser damages peat bogs, woodland and lichens; nitrate leaches into water; nitrous oxide is a powerful greenhouse gas; and nitrogen oxides from engines harm lungs. DAERA reports that 97% of Northern Ireland's ammonia comes from agriculture.",
     "engineering": "The Haber–Bosch process turns nitrogen from air and hydrogen from natural gas into ammonia, which becomes most of the world's fertiliser. It is energy intensive; fertilisers are covered by EU CBAM and will be covered by UK CBAM. Ammonia is also proposed as a shipping fuel and hydrogen carrier.",
@@ -488,7 +488,7 @@
    "col": 16,
    "period": 2,
    "group": 16,
-   "short": "Makes up 21% of air; needed for respiration and combustion.",
+   "short": "Makes up 21% of the air. Ozone shields us high up but is a pollutant and greenhouse gas near the ground; low oxygen kills fish in rivers.",
    "contexts": {
     "environmental": "Ozone (O₃) shields the Earth from UV high up but is a pollutant and greenhouse gas at ground level.",
     "engineering": "Used in steelmaking, medicine, water treatment and oxy-fuel combustion.",
@@ -517,7 +517,7 @@
    "col": 17,
    "period": 2,
    "group": 17,
-   "short": "Most reactive element; source of fluoride, F-gases and PFAS.",
+   "short": "Source of F-gas refrigerants (powerful greenhouse gases) and PFAS 'forever chemicals'. Fluoride reaches soil in phosphate fertiliser.",
    "contexts": {
     "environmental": "Fluorine's carbon compounds are the problem: hydrofluorocarbons (HFCs) and other F-gases are powerful greenhouse gases, and PFAS ('forever chemicals') persist in water, soil and blood. Fluoride also enters soils as an impurity in phosphate fertiliser.",
     "engineering": "Fluorspar (calcium fluoride) is turned into hydrogen fluoride, the starting point for refrigerants, PTFE, lithium battery salts, uranium enrichment and aluminium smelting. Northern Ireland follows the EU F-gas Regulation (EU) 2024/573 under the Windsor Framework; Great Britain still applies its retained 2014-based regime.",
@@ -657,7 +657,7 @@
    "col": 18,
    "period": 2,
    "group": 18,
-   "short": "Inert gas known for red signs.",
+   "short": "Inert trace gas in the air. No climate, soil or health effect beyond asphyxiation in confined spaces.",
    "contexts": {
     "environmental": "No environmental effect of note.",
     "engineering": "Lighting, lasers and cryogenics; a by-product of air separation.",
@@ -686,7 +686,7 @@
    "col": 1,
    "period": 3,
    "group": 1,
-   "short": "Soft reactive metal; best known as salt (sodium chloride).",
+   "short": "Salt. Road salt raises chloride in streams and damages verges; too much in the diet raises blood pressure. Sodium-ion batteries are emerging.",
    "contexts": {
     "environmental": "Road salt raises chloride in streams; sodium in soils damages structure.",
     "engineering": "Sodium-ion batteries are emerging; sodium hydroxide and carbonate are bulk chemicals.",
@@ -715,7 +715,7 @@
    "col": 2,
    "period": 3,
    "group": 2,
-   "short": "Light metal at the centre of chlorophyll.",
+   "short": "At the heart of chlorophyll. Low magnesium in spring grass causes grass tetany in cattle and sheep; magnesium-rich basalt can draw down CO₂.",
    "contexts": {
     "environmental": "Every chlorophyll molecule holds a magnesium atom, so no magnesium means no photosynthesis. Magnesium-rich rocks such as basalt and olivine absorb CO₂ slowly as they weather, which is the basis of 'enhanced rock weathering' as a carbon removal method, still at the research and trial stage.",
     "engineering": "Magnesium metal is a third lighter than aluminium and is alloyed for car parts, laptops and aircraft. Most is made in China by the Pidgeon process, which is energy and carbon intensive. Magnesium oxide is used in refractories, animal feed, cements and water treatment. Magnesium and magnesite are on the UK 2024 critical minerals list.",
@@ -844,7 +844,7 @@
    "col": 13,
    "period": 3,
    "group": 13,
-   "short": "Light metal; the most used non-ferrous metal and a CBAM good.",
+   "short": "Energy-hungry metal covered by CBAM. In acid soils and water it turns toxic to roots and fish; liming locks it up.",
    "contexts": {
     "environmental": "Primary smelting uses huge amounts of electricity; recycling uses a small fraction of that energy.",
     "engineering": "Cans, window frames, vehicles and power lines. Aluminium is covered by EU and UK CBAM.",
@@ -873,7 +873,7 @@
    "col": 14,
    "period": 3,
    "group": 14,
-   "short": "Metalloid of sand, glass, solar cells and chips.",
+   "short": "Solar panels and chips. Respirable silica dust from cutting stone and concrete causes silicosis.",
    "contexts": {
     "environmental": "Respirable crystalline silica dust causes silicosis; a workplace, not a field, problem.",
     "engineering": "Solar panels, semiconductors, silicones and concrete aggregate.",
@@ -902,7 +902,7 @@
    "col": 15,
    "period": 3,
    "group": 15,
-   "short": "Essential nutrient; the main cause of Lough Neagh's algal blooms.",
+   "short": "Essential crop nutrient and the main cause of Lough Neagh's algal blooms. Northern Ireland's farms run a phosphorus surplus.",
    "contexts": {
     "environmental": "Phosphorus is the nutrient that limits plant and algal growth in most fresh water. Too much of it, washed or leached from farmland, slurry and sewage, feeds the algal blooms that have covered Lough Neagh. DAERA describes excess phosphorus as the main cause of poor water quality in Northern Ireland.",
     "engineering": "Mined phosphate rock is turned into fertiliser with sulfuric acid, making phosphoric acid and phosphogypsum waste. Phosphorus is also recovered from wastewater as struvite, and lithium iron phosphate (LFP) is now a leading battery chemistry.",
@@ -1045,7 +1045,7 @@
    "col": 16,
    "period": 3,
    "group": 16,
-   "short": "Yellow non-metal behind acid rain, slurry gas and crop nutrition.",
+   "short": "Once acid rain, now a fertiliser crops lack. Hydrogen sulfide from slurry kills; SF₆ in switchgear is the strongest greenhouse gas in common use.",
    "contexts": {
     "environmental": "Sulfur dioxide from coal and oil caused acid rain and smog. UK emissions fell by 98% between 1970 and 2022, mainly because coal use in power stations ended. Sulfate particles in the air reflect sunlight and cool the climate, so cleaner air has removed some masking of warming. Hydrogen sulfide from slurry is the gas that kills farmers.",
     "engineering": "Most sulfur now comes from cleaning oil and gas, not mining. It is turned into sulfuric acid, the most produced industrial chemical, used for fertilisers, batteries and metal processing. Sulfur hexafluoride (SF₆), an insulating gas in electrical switchgear, is the most potent greenhouse gas regulated under the UNFCCC.",
@@ -1193,7 +1193,7 @@
    "col": 17,
    "period": 3,
    "group": 17,
-   "short": "Reactive halogen used to disinfect water and make PVC.",
+   "short": "Disinfects drinking water. Chlorine from CFCs thinned the ozone layer; persistent organochlorines (PCBs, dioxins) build up in food chains.",
    "contexts": {
     "environmental": "Chlorine from CFCs damaged the ozone layer; chloride from road salt and effluent raises river salinity.",
     "engineering": "Water disinfection, PVC, solvents and pharmaceuticals.",
@@ -1222,7 +1222,7 @@
    "col": 18,
    "period": 3,
    "group": 18,
-   "short": "Inert gas that makes up nearly 1% of air.",
+   "short": "Nearly 1% of air; fills double glazing and shields welds. No climate effect; asphyxiant in pits.",
    "contexts": {
     "environmental": "No climate effect.",
     "engineering": "Shielding gas for welding; filling for double glazing; a by-product of air separation.",
@@ -1251,7 +1251,7 @@
    "col": 1,
    "period": 4,
    "group": 1,
-   "short": "Major plant nutrient (potash).",
+   "short": "Major crop nutrient (potash) and plentiful in slurry. Too much in grass blocks magnesium uptake in livestock.",
    "contexts": {
     "environmental": "Excess potassium in grass can lock out magnesium in livestock.",
     "engineering": "Potash fertiliser; potassium hydroxide for soaps and batteries.",
@@ -1280,7 +1280,7 @@
    "col": 2,
    "period": 4,
    "group": 2,
-   "short": "Metal of limestone, bones and lime.",
+   "short": "Limestone, chalk and lime. Liming fixes acid soils; cement and lime making release CO₂ and are covered by CBAM.",
    "contexts": {
     "environmental": "Liming soils and quarrying limestone release CO₂ from carbonate.",
     "engineering": "Cement and lime (CBAM good: cement), plaster, flue-gas desulfurisation.",
@@ -1309,7 +1309,7 @@
    "col": 3,
    "period": 4,
    "group": 3,
-   "short": "Rare metal that strengthens aluminium.",
+   "short": "Rare metal in light aluminium alloys and fuel cells. No soil, climate or health role of note.",
    "contexts": {
     "environmental": "Little environmental data.",
     "engineering": "Aluminium-scandium alloys for aerospace; solid oxide fuel cells.",
@@ -1338,7 +1338,7 @@
    "col": 4,
    "period": 4,
    "group": 4,
-   "short": "Strong, light, corrosion-resistant metal; its oxide whitens paint.",
+   "short": "Light, strong metal; its oxide whitens paint. Titanium dioxide was banned as a food additive in the EU in 2022.",
    "contexts": {
     "environmental": "Titanium dioxide pigment production generates acidic wastes.",
     "engineering": "Aircraft, implants and desalination plant; TiO₂ is in paints, plastics and sunscreens.",
@@ -1367,7 +1367,7 @@
    "col": 5,
    "period": 4,
    "group": 5,
-   "short": "Steel-strengthening metal used in flow batteries.",
+   "short": "Strengthens steel and stores renewable power in flow batteries. Released by burning heavy oil; its pentoxide is a suspected carcinogen.",
    "contexts": {
     "environmental": "Released from burning heavy fuel oil.",
     "engineering": "High-strength steel; vanadium redox flow batteries for grid storage.",
@@ -1396,7 +1396,7 @@
    "col": 6,
    "period": 4,
    "group": 6,
-   "short": "Hard metal that makes steel stainless.",
+   "short": "Makes steel stainless. Hexavalent chromium from plating and tanning is a carcinogen and a contaminated-land priority.",
    "contexts": {
     "environmental": "Hexavalent chromium (Cr(VI)) is carcinogenic and a contaminated-land priority.",
     "engineering": "Stainless steel, plating and tanning.",
@@ -1425,7 +1425,7 @@
    "col": 7,
    "period": 4,
    "group": 7,
-   "short": "Metal essential to steel and a plant micronutrient.",
+   "short": "Steel and battery metal and a plant micronutrient. Dissolves in waterlogged and peaty ground, staining water supplies.",
    "contexts": {
     "environmental": "Manganese dissolves in waterlogged soils and peaty water, staining supplies.",
     "engineering": "Steel deoxidiser; battery cathodes.",
@@ -1454,7 +1454,7 @@
    "col": 8,
    "period": 4,
    "group": 8,
-   "short": "Metal of steel; the most used metal by mass and a CBAM good.",
+   "short": "Steel: a major CO₂ source and a CBAM good. Iron binds phosphate in soil; ochre from old mines smothers streams.",
    "contexts": {
     "environmental": "Blast-furnace steelmaking is a major CO₂ source; scrap and hydrogen routes cut it.",
     "engineering": "Structural steel, reinforcement, machinery. Iron and steel are covered by EU and UK CBAM.",
@@ -1483,7 +1483,7 @@
    "col": 9,
    "period": 4,
    "group": 9,
-   "short": "Battery and superalloy metal; supply heavily concentrated.",
+   "short": "Battery and turbine metal with hard supply chains. Trace nutrient for sheep (cobalt 'pine'); some compounds are carcinogens.",
    "contexts": {
     "environmental": "Mining in some regions raises human-rights and pollution concerns.",
     "engineering": "Lithium-ion cathodes, jet-engine superalloys, magnets.",
@@ -1512,7 +1512,7 @@
    "col": 10,
    "period": 4,
    "group": 10,
-   "short": "Corrosion-resistant metal for stainless steel and batteries.",
+   "short": "Stainless steel and battery metal. A common skin allergen; smelting releases sulfur dioxide.",
    "contexts": {
     "environmental": "Nickel refining emits sulfur dioxide; nickel is a common contact allergen.",
     "engineering": "Stainless steel, plating, battery cathodes.",
@@ -1541,7 +1541,7 @@
    "col": 11,
    "period": 4,
    "group": 11,
-   "short": "Conductive metal for wiring and plumbing.",
+   "short": "Wiring for electrification. Toxic to aquatic life; builds up in soils from pig slurry and fungicides; too much poisons sheep.",
    "contexts": {
     "environmental": "Toxic to aquatic life; copper fungicides and antifouling build up in soils and sediments.",
     "engineering": "Electrical cables, motors, heat exchangers. Demand rises with electrification.",
@@ -1570,7 +1570,7 @@
    "col": 12,
    "period": 4,
    "group": 12,
-   "short": "Metal that galvanises steel against rust.",
+   "short": "Galvanises steel. Washes off roofs and roads into drains, harming aquatic life; an essential nutrient for people and stock.",
    "contexts": {
     "environmental": "Washes off galvanised and roofing surfaces into drains; toxic to aquatic life.",
     "engineering": "Galvanising, die-casting, brass, batteries.",
@@ -1599,7 +1599,7 @@
    "col": 13,
    "period": 4,
    "group": 13,
-   "short": "Metal that melts in the hand; key to LEDs and chips.",
+   "short": "Makes efficient LEDs and power electronics. A critical mineral with exports controlled by China; no soil or climate role.",
    "contexts": {
     "environmental": "Little environmental concern at current use.",
     "engineering": "Gallium nitride LEDs and power electronics; gallium arsenide chips.",
@@ -1628,7 +1628,7 @@
    "col": 14,
    "period": 4,
    "group": 14,
-   "short": "Metalloid for fibre optics and infrared optics.",
+   "short": "Fibre optics and satellite solar cells. Little environmental concern; supply controlled by China.",
    "contexts": {
     "environmental": "Little environmental concern.",
     "engineering": "Fibre optics, infrared lenses, solar cells for satellites.",
@@ -1657,7 +1657,7 @@
    "col": 15,
    "period": 4,
    "group": 15,
-   "short": "Toxic metalloid found naturally in some groundwater.",
+   "short": "Natural in some groundwater and a legacy of sheep dip and timber treatment. A carcinogen in drinking water and a contaminated-land priority.",
    "contexts": {
     "environmental": "Arsenic in groundwater is a major global health problem; also from old pesticides and timber treatment.",
     "engineering": "Semiconductors (gallium arsenide); historic wood preservative (CCA).",
@@ -1686,7 +1686,7 @@
    "col": 16,
    "period": 4,
    "group": 16,
-   "short": "Trace nutrient with a narrow line between need and toxicity.",
+   "short": "Trace nutrient many UK and Irish soils lack, so livestock are supplemented. Toxic in excess to birds and fish.",
    "contexts": {
     "environmental": "Selenium-poor soils give low-selenium grass; excess is toxic to birds and fish.",
     "engineering": "Glass decolouriser, electronics, photovoltaics.",
@@ -1715,7 +1715,7 @@
    "col": 17,
    "period": 4,
    "group": 17,
-   "short": "Liquid halogen used in flame retardants.",
+   "short": "Halons and methyl bromide destroyed ozone; some brominated flame retardants persist in the environment.",
    "contexts": {
     "environmental": "Bromine from halons and methyl bromide depletes ozone; some brominated flame retardants are persistent pollutants.",
     "engineering": "Flame retardants, drilling fluids, water treatment.",
@@ -1744,7 +1744,7 @@
    "col": 18,
    "period": 4,
    "group": 18,
-   "short": "Inert gas used in insulating glazing.",
+   "short": "Inert gas filling high-performance glazing. No climate or soil effect.",
    "contexts": {
     "environmental": "No climate effect.",
     "engineering": "Fills high-performance double and triple glazing; lighting.",
@@ -1773,7 +1773,7 @@
    "col": 1,
    "period": 5,
    "group": 1,
-   "short": "Reactive metal used in atomic clocks.",
+   "short": "Used in atomic clocks. No environmental role of note.",
    "contexts": {
     "environmental": "No significant environmental role.",
     "engineering": "Atomic clocks and research.",
@@ -1802,7 +1802,7 @@
    "col": 2,
    "period": 5,
    "group": 2,
-   "short": "Metal that gives fireworks their red colour.",
+   "short": "Follows calcium into bone. Radioactive strontium-90 from fallout is the concern; stable strontium is low risk.",
    "contexts": {
     "environmental": "Strontium-90 from nuclear fallout is a radiological concern; stable strontium is low risk.",
     "engineering": "Fireworks, flares, ferrite magnets.",
@@ -1831,7 +1831,7 @@
    "col": 3,
    "period": 5,
    "group": 3,
-   "short": "Rare-earth-like metal used in phosphors and lasers.",
+   "short": "Phosphors for efficient lighting and fuel-cell ceramics. Comes with rare earth mining impacts.",
    "contexts": {
     "environmental": "Little environmental data.",
     "engineering": "LED phosphors, lasers, superconductors, zirconia ceramics.",
@@ -1860,7 +1860,7 @@
    "col": 4,
    "period": 5,
    "group": 4,
-   "short": "Corrosion-resistant metal used in nuclear fuel cladding.",
+   "short": "Holds nuclear fuel and makes ceramics. Mineral sand mining; zircon carries natural radioactivity.",
    "contexts": {
     "environmental": "Low toxicity.",
     "engineering": "Nuclear fuel cladding, ceramics, dental crowns.",
@@ -1889,7 +1889,7 @@
    "col": 5,
    "period": 5,
    "group": 5,
-   "short": "Metal that strengthens steel and makes superconducting magnets.",
+   "short": "Makes lighter, stronger steel for vehicles and pipelines. Top of the UK's 2024 criticality list.",
    "contexts": {
     "environmental": "Little environmental concern.",
     "engineering": "High-strength low-alloy steel, superconducting magnets (MRI).",
@@ -1918,7 +1918,7 @@
    "col": 6,
    "period": 5,
    "group": 6,
-   "short": "Steel alloy metal and a plant micronutrient.",
+   "short": "Steel alloy and trace nutrient for clover. Too much in pasture causes copper deficiency in stock.",
    "contexts": {
     "environmental": "Excess molybdenum in pasture induces copper deficiency in cattle and sheep.",
     "engineering": "Stainless and tool steels, catalysts, lubricants.",
@@ -1947,7 +1947,7 @@
    "col": 7,
    "period": 5,
    "group": 7,
-   "short": "Radioactive metal used in medical scans.",
+   "short": "The first man-made element; vital for medical scans. Traces from Sellafield have been found in Irish Sea seaweed.",
    "contexts": {
     "environmental": "Technetium-99 from reprocessing is found in Irish Sea seaweed and shellfish at very low levels.",
     "engineering": "Technetium-99m is the most used medical imaging isotope.",
@@ -1976,7 +1976,7 @@
    "col": 8,
    "period": 5,
    "group": 8,
-   "short": "Platinum-group metal used in electronics and catalysts.",
+   "short": "Electronics and catalysts for hydrogen and ammonia research. Little environmental data.",
    "contexts": {
     "environmental": "Little environmental data.",
     "engineering": "Hard-disk coatings, electrical contacts, catalysts.",
@@ -2005,7 +2005,7 @@
    "col": 9,
    "period": 5,
    "group": 9,
-   "short": "Rare platinum-group metal in catalytic converters.",
+   "short": "Catalytic converters cut nitrogen oxides from car exhausts; converter metals collect in roadside dust.",
    "contexts": {
     "environmental": "Converters cut nitrogen oxides from car exhausts; some metal is lost in road dust.",
     "engineering": "Three-way catalytic converters, glass-fibre bushings.",
@@ -2034,7 +2034,7 @@
    "col": 10,
    "period": 5,
    "group": 10,
-   "short": "Platinum-group metal for catalysts and hydrogen.",
+   "short": "Catalytic converters and hydrogen purification. Builds up in roadside soils.",
    "contexts": {
     "environmental": "Catalytic converter metal; lost to road dust.",
     "engineering": "Petrol-engine catalysts, electronics, dental alloys; absorbs hydrogen.",
@@ -2063,7 +2063,7 @@
    "col": 11,
    "period": 5,
    "group": 11,
-   "short": "Precious metal with the highest electrical conductivity.",
+   "short": "Contacts on solar cells. Silver ions and nanosilver are toxic to aquatic life.",
    "contexts": {
     "environmental": "Silver ions are toxic to aquatic life; nanosilver in products is a concern.",
     "engineering": "Solar cell contacts, electronics, mirrors, antimicrobials.",
@@ -2092,7 +2092,7 @@
    "col": 12,
    "period": 5,
    "group": 12,
-   "short": "Toxic metal found as an impurity in phosphate fertiliser.",
+   "short": "Impurity in phosphate fertiliser that builds up in soil and crops. Carcinogen; damages kidneys and bones.",
    "contexts": {
     "environmental": "Builds up in soils from phosphate fertiliser and sludge; taken up by crops.",
     "engineering": "Nickel-cadmium batteries and pigments, now restricted; cadmium telluride solar panels.",
@@ -2121,7 +2121,7 @@
    "col": 13,
    "period": 5,
    "group": 13,
-   "short": "Soft metal behind touchscreen coatings.",
+   "short": "Touchscreens and some solar cells. A critical mineral; dust causes lung disease in workers.",
    "contexts": {
     "environmental": "Little environmental concern.",
     "engineering": "Indium tin oxide for touchscreens and displays; solders.",
@@ -2150,7 +2150,7 @@
    "col": 14,
    "period": 5,
    "group": 14,
-   "short": "Metal of solder and tin plate.",
+   "short": "Solder in every circuit. Banned TBT antifouling paint once caused sex changes in sea snails.",
    "contexts": {
     "environmental": "Organotin antifouling paints (TBT) caused sex changes in sea snails and are banned.",
     "engineering": "Solder for electronics, tin plate for cans, bronze.",
@@ -2179,7 +2179,7 @@
    "col": 15,
    "period": 5,
    "group": 15,
-   "short": "Metalloid for flame retardants and batteries; a critical mineral.",
+   "short": "Critical mineral for flame retardants, batteries and solar glass. Found at shooting ranges and in roadside brake dust.",
    "contexts": {
     "environmental": "Antimony reaches soil from shooting ranges, brake-pad wear on busy roads, smelting and landfill. It is toxic in a similar way to arsenic, its neighbour in the table, though less potent. Small amounts migrate from PET plastic, which is made with an antimony catalyst.",
     "engineering": "Most antimony goes into flame retardants (antimony trioxide boosts brominated retardants in plastics and textiles), lead-acid battery grids, PET catalysts, solar-panel glass and ammunition. It is on the UK critical minerals list. China dominates refining and has controlled exports since September 2024.",
@@ -2301,7 +2301,7 @@
    "col": 16,
    "period": 5,
    "group": 16,
-   "short": "Rare metalloid used in solar panels.",
+   "short": "Thin-film solar panels. Very rare; little environmental data.",
    "contexts": {
     "environmental": "Little environmental data; low natural abundance.",
     "engineering": "Cadmium telluride thin-film solar panels, thermoelectrics.",
@@ -2330,7 +2330,7 @@
    "col": 17,
    "period": 5,
    "group": 17,
-   "short": "Halogen essential for the thyroid.",
+   "short": "Essential for the thyroid. Radioactive iodine-131 after nuclear accidents; ocean iodine affects ozone low in the atmosphere.",
    "contexts": {
     "environmental": "Iodine-131 from nuclear accidents is a short-lived radiological hazard.",
     "engineering": "Disinfectants, X-ray contrast agents, iodised salt.",
@@ -2359,7 +2359,7 @@
    "col": 18,
    "period": 5,
    "group": 18,
-   "short": "Heavy inert gas used in lamps and anaesthesia.",
+   "short": "Inert gas for lamps, satellite thrusters and anaesthesia. No climate effect.",
    "contexts": {
     "environmental": "No climate effect.",
     "engineering": "High-intensity lamps, ion thrusters, anaesthetic.",
@@ -2388,7 +2388,7 @@
    "col": 1,
    "period": 6,
    "group": 1,
-   "short": "Very reactive metal; its radioactive isotope lingers after accidents.",
+   "short": "Defines the second in atomic clocks. Caesium-137 from Chernobyl lingered in upland soils and sheep for decades.",
    "contexts": {
     "environmental": "Caesium-137 from Chernobyl fallout persisted in upland soils and sheep.",
     "engineering": "Atomic clocks, drilling fluids.",
@@ -2417,7 +2417,7 @@
    "col": 2,
    "period": 6,
    "group": 2,
-   "short": "Heavy metal used in drilling muds and X-ray meals.",
+   "short": "Barite weights drilling mud. Soluble barium salts are toxic; barium sulfate is safe.",
    "contexts": {
     "environmental": "Barite is inert; soluble barium salts are toxic.",
     "engineering": "Barite drilling mud, X-ray contrast, glass.",
@@ -2446,7 +2446,7 @@
    "col": 3,
    "period": 6,
    "group": null,
-   "short": "First of the rare earths; used in catalysts and lenses.",
+   "short": "Hybrid-car batteries and refinery catalysts. Lanthanum clay is used to lock up phosphorus in lakes.",
    "contexts": {
     "environmental": "Lanthanum clays are used to lock up phosphate in lakes.",
     "engineering": "Oil-refining catalysts, camera lenses, nickel-metal-hydride batteries.",
@@ -2475,7 +2475,7 @@
    "col": 4,
    "period": 6,
    "group": null,
-   "short": "Most abundant rare earth; polishes glass.",
+   "short": "Most common rare earth; catalysts and glass polishing. Nanoparticles from fuel additives are studied as pollutants.",
    "contexts": {
     "environmental": "Cerium oxide nanoparticles from diesel additives are studied as pollutants.",
     "engineering": "Glass polishing, catalytic converters, self-cleaning ovens.",
@@ -2504,7 +2504,7 @@
    "col": 5,
    "period": 6,
    "group": null,
-   "short": "Rare earth used in strong magnets.",
+   "short": "Magnet metal for EV motors and wind turbines. Rare earth processing leaves acidic and radioactive waste.",
    "contexts": {
     "environmental": "Rare earth mining produces radioactive and acidic wastes.",
     "engineering": "Neodymium-praseodymium magnets for motors and wind turbines.",
@@ -2533,7 +2533,7 @@
    "col": 6,
    "period": 6,
    "group": null,
-   "short": "Rare earth in the strongest permanent magnets.",
+   "short": "The strongest magnets, in most wind turbines and EV motors. Supply and processing are concentrated in China.",
    "contexts": {
     "environmental": "Mining and processing are concentrated and polluting; recycling is small.",
     "engineering": "NdFeB magnets for EV motors, wind turbines, headphones.",
@@ -2562,7 +2562,7 @@
    "col": 7,
    "period": 6,
    "group": null,
-   "short": "Radioactive rare earth, almost absent from nature.",
+   "short": "Radioactive rare earth almost absent from nature. No environmental role.",
    "contexts": {
     "environmental": "No environmental presence of note.",
     "engineering": "Formerly used in luminous paint and nuclear batteries.",
@@ -2591,7 +2591,7 @@
    "col": 8,
    "period": 6,
    "group": null,
-   "short": "Rare earth for heat-resistant magnets.",
+   "short": "Heat-resistant magnets and a cancer-treatment isotope. Comes with rare earth mining impacts.",
    "contexts": {
     "environmental": "Little environmental data.",
     "engineering": "Samarium-cobalt magnets, cancer treatment isotope.",
@@ -2620,7 +2620,7 @@
    "col": 9,
    "period": 6,
    "group": null,
-   "short": "Rare earth that makes red and blue phosphors.",
+   "short": "Phosphors for efficient lighting and screens, and anti-forgery marks on euro notes. Little environmental data.",
    "contexts": {
     "environmental": "Little environmental data.",
     "engineering": "Phosphors in screens and LEDs; anti-forgery marks on euro notes.",
@@ -2649,7 +2649,7 @@
    "col": 10,
    "period": 6,
    "group": null,
-   "short": "Rare earth used in MRI contrast agents.",
+   "short": "MRI contrast agent that passes through sewage works into rivers; studied for refrigeration without F-gases.",
    "contexts": {
     "environmental": "Gadolinium from MRI contrast passes through sewage works into rivers.",
     "engineering": "MRI contrast agents, neutron absorbers.",
@@ -2678,7 +2678,7 @@
    "col": 11,
    "period": 6,
    "group": null,
-   "short": "Rare earth for green phosphors and magnets.",
+   "short": "Keeps magnets working in EV motors and wind turbines. Mined mainly from clays in southern China.",
    "contexts": {
     "environmental": "Little environmental data.",
     "engineering": "Green phosphors; added to NdFeB magnets for heat resistance.",
@@ -2707,7 +2707,7 @@
    "col": 12,
    "period": 6,
    "group": null,
-   "short": "Heavy rare earth that keeps magnets working when hot.",
+   "short": "Essential for hot-running EV motor magnets. Supply concentrated in China.",
    "contexts": {
     "environmental": "Supply concentrated; mining impacts in source regions.",
     "engineering": "Added to EV motor and wind turbine magnets.",
@@ -2736,7 +2736,7 @@
    "col": 13,
    "period": 6,
    "group": null,
-   "short": "Rare earth with the strongest magnetic moment.",
+   "short": "Surgical lasers and magnets. No environmental role of note.",
    "contexts": {
     "environmental": "Little environmental data.",
     "engineering": "Lasers, magnetic pole pieces.",
@@ -2765,7 +2765,7 @@
    "col": 14,
    "period": 6,
    "group": null,
-   "short": "Rare earth that amplifies signals in fibre optics.",
+   "short": "Amplifies signals in fibre-optic cables. No environmental role of note.",
    "contexts": {
     "environmental": "Little environmental data.",
     "engineering": "Erbium-doped fibre amplifiers, pink glass.",
@@ -2794,7 +2794,7 @@
    "col": 15,
    "period": 6,
    "group": null,
-   "short": "One of the rarest rare earths.",
+   "short": "One of the rarest rare earths; portable X-ray sources. No environmental role of note.",
    "contexts": {
     "environmental": "Little environmental data.",
     "engineering": "Portable X-ray sources, lasers.",
@@ -2823,7 +2823,7 @@
    "col": 16,
    "period": 6,
    "group": null,
-   "short": "Rare earth used in lasers and atomic clocks.",
+   "short": "Fibre lasers and atomic clocks. No environmental role of note.",
    "contexts": {
     "environmental": "Little environmental data.",
     "engineering": "Fibre lasers, atomic clocks, stress gauges.",
@@ -2852,7 +2852,7 @@
    "col": 17,
    "period": 6,
    "group": null,
-   "short": "Last and densest of the lanthanides.",
+   "short": "PET scanner crystals and a cancer-therapy isotope. No environmental role of note.",
    "contexts": {
     "environmental": "Little environmental data.",
     "engineering": "PET scanner crystals, catalysts, cancer therapy isotope.",
@@ -2881,7 +2881,7 @@
    "col": 4,
    "period": 6,
    "group": 4,
-   "short": "Metal that absorbs neutrons and survives heat.",
+   "short": "Nuclear control rods and efficient gas-turbine alloys. Little environmental concern.",
    "contexts": {
     "environmental": "Low toxicity.",
     "engineering": "Nuclear control rods, superalloys, chip gate insulators.",
@@ -2910,7 +2910,7 @@
    "col": 5,
    "period": 6,
    "group": 5,
-   "short": "Corrosion-proof metal for capacitors; a conflict mineral.",
+   "short": "Capacitors in phones and power electronics. A conflict mineral linked to mining in central Africa.",
    "contexts": {
     "environmental": "Coltan mining is linked to conflict in central Africa.",
     "engineering": "Capacitors in phones and laptops, implants.",
@@ -2939,7 +2939,7 @@
    "col": 6,
    "period": 6,
    "group": 6,
-   "short": "Metal with the highest melting point.",
+   "short": "Hardest-wearing tools and fusion reactor walls. Ammunition tungsten can move in some soils.",
    "contexts": {
     "environmental": "Tungsten in ammunition can be mobile in some soils.",
     "engineering": "Cutting tools (tungsten carbide), filaments, armour.",
@@ -2968,7 +2968,7 @@
    "col": 7,
    "period": 6,
    "group": 7,
-   "short": "Rare metal used in jet-engine superalloys.",
+   "short": "Jet-engine alloys and refinery catalysts. The last stable element discovered, in 1925.",
    "contexts": {
     "environmental": "Little environmental data.",
     "engineering": "Superalloys for turbine blades, refinery catalysts.",
@@ -2997,7 +2997,7 @@
    "col": 8,
    "period": 6,
    "group": 8,
-   "short": "Densest naturally occurring element.",
+   "short": "Densest natural element. Its volatile tetroxide is highly toxic.",
    "contexts": {
     "environmental": "Osmium tetroxide is highly toxic.",
     "engineering": "Hard alloys for pen nibs and contacts.",
@@ -3026,7 +3026,7 @@
    "col": 9,
    "period": 6,
    "group": 9,
-   "short": "Very corrosion-resistant metal; key to electrolysers.",
+   "short": "Scarce catalyst for green-hydrogen electrolysers. Marks the asteroid impact layer 66 million years ago.",
    "contexts": {
     "environmental": "Little environmental data; extremely scarce.",
     "engineering": "Catalyst in PEM electrolysers for hydrogen, spark plugs.",
@@ -3055,7 +3055,7 @@
    "col": 10,
    "period": 6,
    "group": 10,
-   "short": "Precious metal for catalysts and fuel cells.",
+   "short": "Catalysts and fuel cells. Collects in roadside soils; its salts cause asthma in workers.",
    "contexts": {
     "environmental": "Platinum from catalytic converters accumulates on roadsides.",
     "engineering": "Diesel catalysts, fuel cells, electrodes, jewellery.",
@@ -3084,7 +3084,7 @@
    "col": 11,
    "period": 6,
    "group": 11,
-   "short": "Precious metal; inert and highly conductive.",
+   "short": "Electronics and reserves. Mining moves vast rock and can use mercury or cyanide; gold prospects in the Sperrins remain a planning issue.",
    "contexts": {
     "environmental": "Small-scale mining uses mercury; large mines move huge volumes of rock.",
     "engineering": "Electronics contacts, dentistry, reserves.",
@@ -3113,7 +3113,7 @@
    "col": 12,
    "period": 6,
    "group": 12,
-   "short": "Liquid metal; a global pollutant.",
+   "short": "Global pollutant from coal and mining that builds up in fish. Being phased out under the Minamata Convention.",
    "contexts": {
     "environmental": "Mercury from coal burning and mining becomes methylmercury and builds up in fish.",
     "engineering": "Being phased out under the Minamata Convention: thermometers, lamps, dental amalgam.",
@@ -3142,7 +3142,7 @@
    "col": 13,
    "period": 6,
    "group": 13,
-   "short": "Highly toxic metal once used as rat poison.",
+   "short": "Highly toxic metal released by smelting and coal. Once used as rat poison.",
    "contexts": {
     "environmental": "Released from smelting and coal combustion.",
     "engineering": "Specialised optics and electronics.",
@@ -3171,7 +3171,7 @@
    "col": 14,
    "period": 6,
    "group": 14,
-   "short": "Dense toxic metal of batteries and old pipes.",
+   "short": "Lead-acid batteries. Legacy of petrol, paint, pipes and shot in soils; no safe level for children.",
    "contexts": {
     "environmental": "Lead from petrol, paint and shot built up in soils; no safe level for children.",
     "engineering": "Lead-acid batteries, radiation shielding, roofing.",
@@ -3200,7 +3200,7 @@
    "col": 15,
    "period": 6,
    "group": 15,
-   "short": "Heavy metal with low toxicity; replaces lead.",
+   "short": "Low-toxicity replacement for lead in shot, solder and plumbing.",
    "contexts": {
     "environmental": "Much less toxic than lead.",
     "engineering": "Lead-free solders, pharmaceuticals, fire sprinkler alloys.",
@@ -3229,7 +3229,7 @@
    "col": 16,
    "period": 6,
    "group": 16,
-   "short": "Intensely radioactive element; part of the radon decay chain.",
+   "short": "Intensely radioactive. Forms from radon decay and delivers much of radon's lung dose; present in tobacco smoke.",
    "contexts": {
     "environmental": "Polonium-210 forms from radon decay and contributes to radon's lung dose.",
     "engineering": "Static eliminators; historically neutron sources.",
@@ -3258,7 +3258,7 @@
    "col": 17,
    "period": 6,
    "group": 17,
-   "short": "Rarest naturally occurring element.",
+   "short": "Rarest natural element, lasting hours. Studied for targeted cancer therapy.",
    "contexts": {
     "environmental": "No environmental presence of note.",
     "engineering": "Studied for targeted cancer therapy.",
@@ -3287,7 +3287,7 @@
    "col": 18,
    "period": 6,
    "group": 18,
-   "short": "Radioactive gas from the ground; the main source of radiation dose in UK homes.",
+   "short": "Radioactive gas from the ground; the main radiation dose in UK homes and a cause of lung cancer. Airtight retrofits can trap it.",
    "contexts": {
     "environmental": "Radon is a radioactive gas that seeps from the ground into buildings. Breathing its decay products over years raises the risk of lung cancer, especially for smokers. Outdoors it disperses harmlessly; indoors it can build up.",
     "engineering": "Radon protection in new buildings uses a gas-resistant membrane, with a sump or ventilated sub-floor in higher-risk areas. Existing buildings are fixed with a radon sump and fan or better under-floor ventilation. Making buildings more airtight to save energy can raise indoor radon unless ventilation is designed in.",
@@ -3394,7 +3394,7 @@
    "col": 1,
    "period": 7,
    "group": 1,
-   "short": "Extremely rare, unstable alkali metal.",
+   "short": "So unstable that only about 30 grams exist in the crust at any moment. No environmental role.",
    "contexts": {
     "environmental": "No environmental presence of note.",
     "engineering": "Research only.",
@@ -3423,7 +3423,7 @@
    "col": 2,
    "period": 7,
    "group": 2,
-   "short": "Radioactive metal; the parent of radon.",
+   "short": "Parent of radon in rocks and soil. Old luminous-dial works left contaminated land.",
    "contexts": {
     "environmental": "Radium in rocks and soil decays to radon gas.",
     "engineering": "Historic luminous paint; medical isotopes.",
@@ -3452,7 +3452,7 @@
    "col": 3,
    "period": 7,
    "group": null,
-   "short": "Radioactive metal at the head of the actinides.",
+   "short": "Radioactive; used in targeted cancer therapy. No environmental role of note.",
    "contexts": {
     "environmental": "No environmental presence of note.",
     "engineering": "Actinium-225 for targeted cancer therapy.",
@@ -3481,7 +3481,7 @@
    "col": 4,
    "period": 7,
    "group": null,
-   "short": "Weakly radioactive metal; a possible nuclear fuel.",
+   "short": "Weakly radioactive, more common than uranium; possible future nuclear fuel. Gives off thoron gas.",
    "contexts": {
     "environmental": "Thorium in rocks contributes to background radiation and thoron gas.",
     "engineering": "Proposed thorium reactors; heat-resistant ceramics.",
@@ -3510,7 +3510,7 @@
    "col": 5,
    "period": 7,
    "group": null,
-   "short": "Rare, highly toxic radioactive metal.",
+   "short": "Rare and highly toxic. Used to date ocean sediments.",
    "contexts": {
     "environmental": "No environmental presence of note.",
     "engineering": "Research only.",
@@ -3539,7 +3539,7 @@
    "col": 6,
    "period": 7,
    "group": null,
-   "short": "Radioactive metal that fuels nuclear power and makes radon.",
+   "short": "Fuel for low-carbon nuclear power and the source of radon in granite and shale. Toxic to kidneys.",
    "contexts": {
     "environmental": "Uranium in granite and shale is the source of radon gas.",
     "engineering": "Nuclear fuel; depleted uranium in armour.",
@@ -3568,7 +3568,7 @@
    "col": 7,
    "period": 7,
    "group": null,
-   "short": "First synthetic actinide.",
+   "short": "First element beyond uranium. A long-lived part of nuclear waste that matters for deep disposal.",
    "contexts": {
     "environmental": "A long-lived component of nuclear waste.",
     "engineering": "By-product in reactors.",
@@ -3597,7 +3597,7 @@
    "col": 8,
    "period": 7,
    "group": null,
-   "short": "Synthetic actinide used in weapons and reactors.",
+   "short": "Nuclear fuel and weapons material. Sellafield discharges left traces in Irish Sea sediments.",
    "contexts": {
     "environmental": "Plutonium from Sellafield discharges is measurable in Irish Sea sediments.",
     "engineering": "Nuclear fuel (MOX), space power sources.",
@@ -3626,7 +3626,7 @@
    "col": 9,
    "period": 7,
    "group": null,
-   "short": "Synthetic element in smoke detectors.",
+   "short": "In household smoke detectors, which need proper disposal; also soil-moisture gauges.",
    "contexts": {
     "environmental": "Small amounts in waste; long-lived.",
     "engineering": "Ionisation smoke detectors.",
@@ -3655,7 +3655,7 @@
    "col": 10,
    "period": 7,
    "group": null,
-   "short": "Synthetic radioactive element.",
+   "short": "Alpha source on Mars rovers. Part of long-lived nuclear waste.",
    "contexts": {
     "environmental": "No environmental presence of note.",
     "engineering": "Space power and research.",
@@ -3684,7 +3684,7 @@
    "col": 11,
    "period": 7,
    "group": null,
-   "short": "Synthetic radioactive element.",
+   "short": "Made in milligram amounts to build heavier elements. No environmental role.",
    "contexts": {
     "environmental": "No environmental presence of note.",
     "engineering": "Research only.",
@@ -3713,7 +3713,7 @@
    "col": 12,
    "period": 7,
    "group": null,
-   "short": "Synthetic element that emits neutrons.",
+   "short": "Neutron sources for borehole logging and reactor start-up. Sealed sources must be controlled.",
    "contexts": {
     "environmental": "No environmental presence of note.",
     "engineering": "Neutron sources for reactor start-up and moisture gauges.",
@@ -3742,7 +3742,7 @@
    "col": 13,
    "period": 7,
    "group": null,
-   "short": "Synthetic element first found in H-bomb debris.",
+   "short": "Found in the debris of the first hydrogen bomb in 1952. Research only.",
    "contexts": {
     "environmental": "No environmental presence of note.",
     "engineering": "Research only.",
@@ -3771,7 +3771,7 @@
    "col": 14,
    "period": 7,
    "group": null,
-   "short": "Synthetic element.",
+   "short": "Also from that 1952 bomb debris; the heaviest element reactors can make. Research only.",
    "contexts": {
     "environmental": "No environmental presence of note.",
     "engineering": "Research only.",
@@ -3800,7 +3800,7 @@
    "col": 15,
    "period": 7,
    "group": null,
-   "short": "Synthetic element named after Mendeleev.",
+   "short": "Named after the table's creator; first made 17 atoms at a time. Research only.",
    "contexts": {
     "environmental": "No environmental presence of note.",
     "engineering": "Research only.",
@@ -3829,7 +3829,7 @@
    "col": 16,
    "period": 7,
    "group": null,
-   "short": "Synthetic element.",
+   "short": "Named after Alfred Nobel; lasts about an hour. Research only.",
    "contexts": {
     "environmental": "No environmental presence of note.",
     "engineering": "Research only.",
@@ -3858,7 +3858,7 @@
    "col": 17,
    "period": 7,
    "group": null,
-   "short": "Synthetic element; last of the actinides.",
+   "short": "Last of the actinides, named after the inventor of the cyclotron. Research only.",
    "contexts": {
     "environmental": "No environmental presence of note.",
     "engineering": "Research only.",
@@ -3887,7 +3887,7 @@
    "col": 4,
    "period": 7,
    "group": 4,
-   "short": "Superheavy element named after Rutherford; the longest-lived atoms last about an hour.",
+   "short": "First superheavy element; its atoms last about an hour at most. Research only.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
@@ -3916,7 +3916,7 @@
    "col": 5,
    "period": 7,
    "group": 5,
-   "short": "Superheavy element named after Dubna; its longest-lived isotope lasts about a day.",
+   "short": "Named after Dubna in Russia; its longest-lived form lasts about a day. Research only.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
@@ -3945,7 +3945,7 @@
    "col": 6,
    "period": 7,
    "group": 6,
-   "short": "Superheavy element named after Glenn Seaborg; lasts minutes.",
+   "short": "Named after Glenn Seaborg while he was alive; lasts minutes. Research only.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
@@ -3974,7 +3974,7 @@
    "col": 7,
    "period": 7,
    "group": 7,
-   "short": "Superheavy element named after Niels Bohr; lasts about a minute.",
+   "short": "Named after Niels Bohr; lasts about a minute. Research only.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
@@ -4003,7 +4003,7 @@
    "col": 8,
    "period": 7,
    "group": 8,
-   "short": "Superheavy element named after Hesse; lasts seconds.",
+   "short": "Named after the German state of Hesse; lasts seconds. Research only.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
@@ -4032,7 +4032,7 @@
    "col": 9,
    "period": 7,
    "group": 9,
-   "short": "Superheavy element named after Lise Meitner; lasts seconds.",
+   "short": "Named after Lise Meitner, co-discoverer of fission; lasts seconds. Research only.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
@@ -4061,7 +4061,7 @@
    "col": 10,
    "period": 7,
    "group": 10,
-   "short": "Superheavy element named after Darmstadt; lasts seconds.",
+   "short": "Named after Darmstadt; lasts seconds. Research only.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
@@ -4090,7 +4090,7 @@
    "col": 11,
    "period": 7,
    "group": 11,
-   "short": "Superheavy element named after Röntgen; a heavier relative of gold.",
+   "short": "Named after the discoverer of X-rays; a heavier relative of gold. Research only.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
@@ -4119,7 +4119,7 @@
    "col": 12,
    "period": 7,
    "group": 12,
-   "short": "Superheavy element named after Copernicus; may be volatile like mercury.",
+   "short": "Named after Copernicus; may be as volatile as mercury. Research only.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
@@ -4148,7 +4148,7 @@
    "col": 13,
    "period": 7,
    "group": 13,
-   "short": "Superheavy element named after Japan; the first discovered in Asia.",
+   "short": "First element discovered in Asia, named after Japan. Lasts seconds.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
@@ -4177,7 +4177,7 @@
    "col": 14,
    "period": 7,
    "group": 14,
-   "short": "Superheavy element named after the Flerov Laboratory; lasts seconds.",
+   "short": "Named after a Russian laboratory; lasts seconds. Research only.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
@@ -4206,7 +4206,7 @@
    "col": 15,
    "period": 7,
    "group": 15,
-   "short": "Superheavy element named after the Moscow region; lasts under a second.",
+   "short": "Named after the Moscow region; lasts under a second. Research only.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
@@ -4235,7 +4235,7 @@
    "col": 16,
    "period": 7,
    "group": 16,
-   "short": "Superheavy element named after Livermore; lasts a fraction of a second.",
+   "short": "Named after a Californian laboratory; lasts a fraction of a second. Research only.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
@@ -4264,7 +4264,7 @@
    "col": 17,
    "period": 7,
    "group": 17,
-   "short": "Superheavy element named after Tennessee; lasts hundredths of a second.",
+   "short": "Named after Tennessee, where its target material was made; lasts hundredths of a second.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",

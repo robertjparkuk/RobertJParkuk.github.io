@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from base import ELEMENTS, CATEGORY_LABEL, position, period_group
 from contexts import C
 from featured import F, CHECKED
+from hover import H as HOVER
 from briefings_a import B as BA
 from briefings_b import B as BB
 from briefings_c import B as BC
@@ -50,7 +51,7 @@ def data():
     for z, sym, name, wt, cat in ELEMENTS:
         r, c = position(z); per, grp = period_group(z)
         s, env, eng, geo, chem, land = C[sym]
-        s = SHORT_SUPERHEAVY.get(sym, s)
+        s = HOVER[sym]  # hover line agreed in Robert's review doc, 21 Nov 2026
         e = dict(z=z, symbol=sym, name=name, weight=wt, category=cat, category_label=CATEGORY_LABEL[cat],
                  row=r, col=c, period=per, group=grp, short=s,
                  contexts=dict(environmental=env, engineering=eng, geological=geo, chemical=chem, land=land),
