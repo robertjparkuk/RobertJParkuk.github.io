@@ -3,15 +3,16 @@ title: "If we want to save local agriculture, stop the regulations that offshore
 date: 2026-11-02 12:00:00 +0000
 tags: [Agriculture, Regulation, Trade, Windsor Framework, Carbon, Northern Ireland, Thought piece]
 image: /assets/photos/farm-panorama.jpg
+last_modified_at: 2026-11-21 12:00:00 +0000
 description: "Four sets of rules land on Northern Ireland farms within about a year, none assessed together, and none applied to the food that replaces ours. Three scenarios and five fixes."
 hero_eyebrow: "Farming · Trade · Regulation"
 hero_title: "To save local farming, stop the rules that <em>offshore our food</em>."
-hero_lead: "NI farms face EU rules on inputs, UK rules on carbon, and trade deals that never ask imports to match either. Regulate the border as hard as the farm, or we just move the pollution somewhere we can't see it."
+hero_lead: "The SPS deal is agreed for 2028 and EU fertiliser looks set to escape the UK carbon levy. Neither asks imported food to meet our rules. Regulate the border as hard as the farm, or we just move the pollution somewhere we can't see it."
 hero_button: "Read the piece"
 hero_button2: ["Focus on Agriculture", "/blog/focus-on-agriculture-october-2026/"]
 ---
 
-*Update, 21 November 2026: the food and farm-goods (SPS) agreement was concluded at the UK–EU summit on 20 November and is aimed at 1 March 2028, not 2027. It is not yet law. This piece is as published; see [what the summit agreed]({% post_url 2026-11-21-the-second-uk-eu-summit-what-was-agreed-and-what-it-will-take %}).*
+*Updated 21 November 2026, after the UK–EU summit. The food and farm-goods (SPS) agreement was concluded on 20 November and is aimed at 1 March 2028, not 2027. The UK says it intends to stop charging its carbon border levy on EU-made fertiliser from 1 January 2027, and the UK and EU carbon markets are due to link from 2028. None of this is law yet. DAERA has confirmed the EU Deforestation Regulation applies in full in Northern Ireland from 30 December 2026. The Nutrients Action Programme and the ammonia strategy are both now timetabled for Executive approval by 31 March 2027, and neither has been published. The argument stands; the dates and the carbon paragraph have been corrected below. See also [what the summit agreed]({% post_url 2026-11-21-the-second-uk-eu-summit-what-was-agreed-and-what-it-will-take %}), [the SPS deal for NI]({% post_url 2026-11-21-the-sps-deal-what-it-means-for-northern-ireland %}) and [the carbon deal]({% post_url 2026-11-21-the-carbon-deal-what-changes-for-northern-ireland-and-great-britain %}).*
 
 *Good environmental rules are worth having. Rules that only bite on the farm next door, and never on the food that replaces it, aren't environmental policy. They're an import strategy.*
 
@@ -21,14 +22,14 @@ In 2025 the UK produced 60% of the food it ate, down from 65% a year earlier. Fo
 
 A fortnight ago I wrote about [herd targets and Brazilian beef]({{ '/blog/2026/10/fewer-cows-in-antrim-more-beef-from-brazil/' | relative_url }}). This piece is about the rulebook. My argument is simple: Northern Ireland regulates the farm hard and the border hardly at all, and the gap between the two is where our food production is going.
 
-## Four rulebooks, one farm, about twelve months
+## Four rulebooks, one farm, about eighteen months
 
-Between now and the end of 2027, a typical NI livestock or mixed farm faces:
+Between now and the spring of 2028, a typical NI livestock or mixed farm faces:
 
 - **A new Nutrients Action Programme for 2027–2030.** DAERA's proposals, consulted on until 7 September, set farm phosphorus balance limits of 10 kg per hectare a year from 2027 and 8 kg from 2029 for the more intensive farms, restrict chemical phosphorus fertiliser on grassland, and bring low-emission slurry spreading down to farms of 50 livestock units by 2030. DAERA's own impact assessment counts 2,391 farms at the intensity threshold, plus 594 pig and poultry units below the permitting threshold.
-- **The UK carbon border levy from 1 January 2027.** Fertiliser is in scope. The levy is charged on fertiliser imported into NI, including from the EU. It is not charged on imported food grown with that same fertiliser elsewhere.
-- **The EU Deforestation Regulation from 30 December 2026** for larger firms and mid-2027 for small ones. It reaches NI through the Windsor Framework, and cattle are in scope. In December last year DAERA told the Assembly it was still waiting for confirmation of how far it applies here.
-- **The UK–EU agrifood (SPS) deal.** Talks are advanced and the next UK–EU summit is on 20 November. If agreed, Great Britain will move onto EU food and farming rules, with implementation aimed at 2027.
+- **The UK carbon border levy from 1 January 2027.** Fertiliser is in scope. The levy is charged on fertiliser imported into NI from outside the EU. Since the summit, the UK government says it intends to exempt EU-, EEA- and Swiss-made goods from the same date, though the regulations are not yet made, and the two carbon markets are due to link from 2028. Either way, the levy is not charged on imported food grown with that same fertiliser elsewhere.
+- **The EU Deforestation Regulation from 30 December 2026** for larger firms and mid-2027 for small ones. It reaches NI through the Windsor Framework, and cattle are in scope. DAERA now says it applies in full here from 30 December 2026, with DAERA enforcing it for cattle, soy, palm oil, cocoa and coffee, and it has yet to set out its approach to compliance.
+- **The UK–EU agrifood (SPS) deal.** Concluded at the UK–EU summit on 20 November and aimed at 1 March 2028. Great Britain will move onto EU food and farming rules as they change, in return for most certificates and checks being dropped. The text is not published and it still has to be signed and ratified on both sides.
 
 Each of these has a case. I have read the impact assessments that exist. What I could not find is anyone who has added them up for a single farm. Nobody has published the combined cost, and nobody has asked what happens to output when they all land in the same year.
 
@@ -36,7 +37,7 @@ Each of these has a case. I have read the impact assessments that exist. What I 
 
 Under the Windsor Framework, EU law on pesticides and veterinary medicines applies in Northern Ireland. When Brussels withdraws an active substance, NI farmers lose it. The herbicide flufenacet, a mainstay against grass weeds in winter cereals, was not renewed by the EU in 2025; in Ireland its last permitted use is 10 December this year. EU veterinary medicines law has applied in full in NI since 1 January.
 
-To be fair, the feared shortage of animal medicines hasn't happened. The Veterinary Medicines Directorate told MPs in June that supply was stable. And the SPS deal should close the inputs gap by lifting GB to EU standards, not by lowering ours.
+To be fair, the feared shortage of animal medicines hasn't happened. The Veterinary Medicines Directorate told MPs in June that supply was stable. And the SPS deal, now agreed for 2028, should close the inputs gap by lifting GB to EU standards, not by lowering ours. Until then, GB-only approvals for pesticides, feed additives and the like are living on borrowed time, and suppliers should be asked now what they plan to do.
 
 But that only fixes one side. On imports, the UK's trade deals with Australia and New Zealand phase out tariffs on beef and lamb within 10 to 15 years. Hormone-treated beef stays banned. What isn't covered is how the food was produced: the pesticides used on the feed, the land cleared for the pasture, the fertiliser that paid no carbon levy. An NI farmer must meet EU input rules and UK carbon rules. The food that undercuts him meets neither.
 
@@ -44,7 +45,7 @@ But that only fixes one side. On imports, the UK's trade deals with Australia an
 
 Ammonia is a real problem here. Agriculture produces 97% of Northern Ireland's ammonia, and we emit 12% of the UK's total from 6% of its land. Most of our sensitive habitats are over their limits. The Office for Environmental Protection found in October 2024 that DAERA had failed to comply with environmental law in how it assessed farm planning applications.
 
-But the result has been almost three years without a settled approach. In March 2025 the Agriculture Minister acknowledged that new capital investment on NI farms had nearly come to a halt. In January he said the rule that blocks like-for-like replacement of sheds needs to be addressed. England sorted that out in October 2025: Natural England's standing advice allows a replacement building where ammonia doesn't rise. A Strategic Ammonia Reduction Programme for NI was expected this autumn. I haven't found it published.
+But the result has been almost three years without a settled approach. In March 2025 the Agriculture Minister acknowledged that new capital investment on NI farms had nearly come to a halt. In January he said the rule that blocks like-for-like replacement of sheds needs to be addressed. England sorted that out in October 2025: Natural England's standing advice allows a replacement building where ammonia doesn't rise. An updated ammonia strategy for NI was expected this autumn. As of 21 November it is not published; DAERA's business plan now puts it to the Executive by 31 March 2027.
 
 Think about what that means on the ground. A farmer who wants to replace a leaking 1970s slurry store with a covered, low-emission one can't get a clear answer. The rule meant to cut ammonia is stopping the investment that would cut ammonia. The one thing that is certain is that the milk and meat will be produced somewhere.
 
@@ -60,8 +61,8 @@ I've run three scenarios for NI farming to 2030. They're illustrative, drawn fro
 
 ## Five fixes
 
-1. **One cumulative impact assessment.** Before the Executive signs off the new Nutrients Action Programme, DAERA should publish what NAP, CBAM, EUDR and SPS alignment cost a typical dairy, beef, pig and poultry farm together, and what that does to output. The Executive has until the Assembly's last sitting day, 16 March 2027, to approve the NAP. There is time.
-2. **Let the replacement sheds through.** Adopt an approach like England's: where a new building doesn't increase ammonia, it shouldn't be refused on ammonia grounds. Put the Strategic Ammonia Reduction Programme out now.
+1. **One cumulative impact assessment.** Before the Executive signs off the new Nutrients Action Programme, DAERA should publish what NAP, CBAM, EUDR and SPS alignment cost a typical dairy, beef, pig and poultry farm together, and what that does to output. The consultation closed on 7 September and no summary of responses has been published. DAERA's own business plan now commits to bringing the NAP to the Executive by 31 March 2027, after the Assembly's last sitting day. That is tight, but there is still time to publish the numbers first.
+2. **Let the replacement sheds through.** Adopt an approach like England's: where a new building doesn't increase ammonia, it shouldn't be refused on ammonia grounds. Put the ammonia strategy out now. DAERA's business plan promises an updated Ammonia Strategy for Executive approval by 31 March 2027; as of 21 November nothing has been published.
 3. **Core standards for imports.** The CCC's Food and Trade Advisory Group warned in February 2025 that raising domestic standards alone may just shift people onto cheaper imports. Every future trade deal, and the review clauses in existing ones, should apply the production standards we ask of our own farms.
 4. **Count imported emissions.** Publish NI's consumption-based food footprint beside the production inventory, so that a fall here matched by a rise abroad shows up as what it is.
 5. **Pay for the fix, not just the rule.** Low-emission slurry kit, covered stores and better nutrient management cost money. Tie support to the measures the rules require, and front-load it before the deadlines bite.
@@ -82,6 +83,12 @@ Northern Ireland's food and drink processors turned over £6.5 billion in 2022 a
 
 ## Sources
 
+- [UK/EU Summit 2026: key documents, including the Joint Statement and SPS explainer (Cabinet Office, 20 November 2026)](https://www.gov.uk/government/publications/ukeu-summit-2026-key-documents)
+- [UK–EU carbon market linking explainer (DESNZ, 20 November 2026)](https://www.gov.uk/government/publications/ukeu-summit-2026-key-documents)
+- [EU Deforestation Regulation (EUDR) in Northern Ireland (DAERA, updated 12 November 2026)](https://www.daera-ni.gov.uk/articles/eu-deforestation-regulation-eudr)
+- [Public consultation on the proposed NAP 2027–2030, closed 7 September 2026 (DAERA)](https://www.daera-ni.gov.uk/consultations/public-consultation-proposed-nutrients-action-programme-2027-2030)
+- [OEP advice to DAERA on the NAP 2027–2030 proposals (Office for Environmental Protection, 9 September 2026)](https://www.theoep.org.uk/report/oep-gives-daera-advice-latest-nutrient-action-programme-proposals)
+- [DAERA Interim Business Plan 2026–27: NAP and updated Ammonia Strategy to the Executive by 31 March 2027 (DAERA, June 2026)](https://www.daera-ni.gov.uk/sites/default/files/2026-06/DAERA%20Interim%20Business%20Plan%202026-27.PDF)
 - [Agriculture in the United Kingdom 2025 (Defra, 9 July 2026)](https://www.gov.uk/government/statistics/agriculture-in-the-united-kingdom-2025/summary)
 - [NAP 2027–2030 webinar slides (DAERA, 6 August 2026)](https://www.daera-ni.gov.uk/sites/default/files/2026-08/Slides%20for%20NAP%20Webinar%2006%20August%202026.pdf)
 - [Regulatory Impact Assessment, NAP 2027–2030 (DAERA, June 2026)](https://www.daera-ni.gov.uk/sites/default/files/2026-06/Regulatory%20Impact%20Assessment%20%28RIA%29%20%E2%80%93%20NAP%202027-2030.PDF)
