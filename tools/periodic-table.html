@@ -104,7 +104,7 @@ footer a{color:var(--red)}
     <div class="grid" id="grid" role="list" aria-label="Periodic table">
       <div class="intro" id="intro">
         <h2>Elements of the land</h2>
-        <p>Eight briefings on the elements that shape Northern Ireland's climate, soil, land, food and air.</p>
+        <p>Eight briefings on the elements that shape Northern Ireland's climate, soil, land, food and air. <a href="/blog/2026/11/a-briefing-on-every-element/">About this table</a>.</p>
         <ul class="series" id="series"></ul>
       </div>
     </div>
@@ -113,7 +113,7 @@ footer a{color:var(--red)}
   <footer>
     <p><strong>How to use this:</strong> every element's briefing is general reference, checked against standard sources; hazard notes give headline classifications only. The eight featured elements carry full safety tables (CLP, EH40 limits, UN numbers), each dated and sourced in its own briefing. Half-lives are rounded; for the superheavy elements they are approximate and change as new isotopes are made. Always work from the supplier's current safety data sheet and your own COSHH assessment.</p>
     <p>Sources: IUPAC standard atomic weights; Royal Society of Chemistry; British Geological Survey; HSE EH40/2005 (4th edition, 2020); CLP Regulation (EC) No 1272/2008, Annex VI; UNECE ADR 2025; and the official sources listed in each briefing. Data checked <span id="checked"></span>.</p>
-    <p>Created with assistive technology including AI and re-checked against the official sources listed. General information, not legal, safety or agronomic advice. · <a href="/learn/">Learn</a> · <a href="/tools/">All tools</a> · <a href="/contact/">Contact</a></p>
+    <p>Created with assistive technology including AI and re-checked against the official sources listed. General information, not legal, safety or agronomic advice. · <a href="/learn/">Learn</a> · <a href="/dashboards/">Dashboards</a> · <a href="/tools/">All tools</a> · <a href="/contact/">Contact</a></p>
   </footer>
 </div>
 
@@ -165,7 +165,7 @@ footer a{color:var(--red)}
     $('legend').addEventListener('click', ev => { const b = ev.target.closest('button'); if(!b) return;
       catFilter = catFilter === b.dataset.cat ? null : b.dataset.cat;
       document.querySelectorAll('#legend button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.cat === catFilter))); filter(); });
-    $('series').innerHTML = DATA.filter(e => e.featured).map(e => `<li><a href="${e.briefing_url}">${esc(e.name)}</a></li>`).join(' · ');
+    $('series').innerHTML = DATA.filter(e => e.featured).map(e => `<li><a href="${e.post_live ? e.briefing_url : e.pdf}">${esc(e.name)}</a></li>`).join(' · ');
     $('q').addEventListener('input', filter); $('onlyFeatured').addEventListener('change', filter);
     filter();
     const h = decodeURIComponent(location.hash.slice(1)).toLowerCase();
@@ -223,7 +223,7 @@ footer a{color:var(--red)}
     const tabs = [['briefing','Briefing'], ['all','Five contexts'], ...TABS]; if (e.featured) tabs.push(['safety','Safety, COSHH and UN'], ['compounds','Compounds']);
     $('tabs').innerHTML = tabs.map(([k,l]) => `<button type="button" role="tab" data-tab="${k}">${l}</button>`).join('');
     $('tabs').onclick = ev => { const t = ev.target.closest('button'); if (t) render(e, t.dataset.tab); };
-    $('links').innerHTML = e.featured ? `<a href="${e.briefing_url}">Read the ${esc(e.name.toLowerCase())} briefing</a><a class="ghost" href="${e.pdf}">Download the PDF</a>` : '';
+    $('links').innerHTML = e.featured ? (e.post_live ? `<a href="${e.briefing_url}">Read the ${esc(e.name.toLowerCase())} briefing</a><a class="ghost" href="${e.pdf}">Download the PDF</a>` : `<a href="${e.pdf}">Read the ${esc(e.name.toLowerCase())} briefing (PDF)</a>`) : '';
     render(e, 'briefing');
     $('panel').hidden = false; $('scrim').hidden = false;
     history.replaceState(null, '', '#' + e.symbol.toLowerCase());
