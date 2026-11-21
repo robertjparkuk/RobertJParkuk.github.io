@@ -1,0 +1,28 @@
+year,group,gbp_m
+1990,Cattle,277.2
+2015,Cattle,402.4
+2024,Cattle,656.7
+1990,Milk,223.9
+2015,Milk,480.1
+2024,Milk,1085.0
+1990,Sheep,68.0
+2015,Sheep,63.3
+2024,Sheep,127.4
+1990,Pigs,98.8
+2015,Pigs,114.3
+2024,Pigs,295.1
+1990,Poultry,57.4
+2015,Poultry,274.8
+2024,Poultry,349.5
+1990,Eggs,30.0
+2015,Eggs,88.6
+2024,Eggs,269.8
+1990,Field crops,63.7
+2015,Field crops,57.3
+2024,Field crops,88.8
+1990,Horticulture,34.4
+2015,Horticulture,119.5
+2024,Horticulture,93.5
+1990,Other output,78.1
+2015,Other output,180.9
+2024,Other output,249.0

@@ -31,7 +31,9 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 - "Who cuts the hedge?" post time moved from noon to 06:30 so it publishes on merge instead of waiting for the noon rebuild.
 
-### v0.44.1 — 21 November 2026: SPS post layout fix
+### v0.45.0 — 21 November 2026: SPS dashboard and post layout fix
+
+- New dashboard `tools/dashboards/ni-sps-food-trade.html` (built by `_scripts/dashboards/build_sps.py`; CSVs in `assets/dashboards/sps-deal/`; thumbnail `assets/dashboards/ni-sps-food-trade.jpg`), listed on /dashboards/ and linked from the SPS post.
 
 - SPS deal post: the "Gains" and "Losses and risks" cards were not closed (indented closing tags), so the rest of the article rendered in a narrow right-hand column. Closing tags unindented, with a blank line after each list.
 
