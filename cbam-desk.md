@@ -107,6 +107,8 @@ These figures use HMRC's illustrative 2027 rates and published default values; t
 - **UK, 2027:** 500 t × 2.722 (HMRC default, including the 10% mark-up) × £9.69 = **£13,188**. A mill 20% better than the default would save about £2,638, which is probably less than one verification.
 - **EU, goods imported in Q3 2026:** on default values the EU importer owes about **€54,588** after the free-allocation adjustment. Verified data from a mill 20% below the default saves about €29,900, and about €39,800 for 2027 imports.
 
+- **EU-origin coil into NI, 2027:** the UK sum above applies until exempting regulations are made. The government said on 20 November 2026 that it intends to exempt goods of EU origin from 1 January 2027.
+
 So verified actual data usually pays for EU customers, because EU defaults carry a 10–30% mark-up, but often does not for UK imports at today's illustrative rates. If a plant is dirtier than the default, it should not verify at all. I run that sum for you.
 
 ## What's changing
