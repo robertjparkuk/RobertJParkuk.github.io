@@ -25,6 +25,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.44.0 — 21 November 2026: who cuts the hedge?
+
+*Requested by Robert, 21 November 2026 ("I'm happy go ahead").*
+
+- New post: "Who cuts the hedge? Roads, verges and ditches in Northern Ireland" (`_posts/2026-11-21-who-cuts-the-hedge-northern-ireland.md`). Who is responsible for roadside hedges, verges and ditches, who pays, who regulates, and where the law is silent. General information, not legal advice.
+- New briefing: `assets/briefings/2026-11-who-cuts-the-hedge-briefing.pdf` (3 pages, house briefing layout, hyperlinked sources).
+- New photo: `assets/photos/boundary-hedge-east-antrim.jpg`, Robert's own, cropped, web-sized (1600 px) and saved without location data.
+- Goes live when this branch is merged: the post is dated 21 November at noon and carries no `published: false`.
+
 ### v0.43.0 — 21 November 2026: biomethane response on the public sector pages
 
 - New consultation response page: "Will Northern Ireland's manufacturers buy biomethane? Only if it counts where they report" (response to DfE's Biomethane Business Case request for information, sent 19 November 2026), with the response as a branded PDF.
