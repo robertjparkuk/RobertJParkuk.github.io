@@ -25,6 +25,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.43.0 — 21 November 2026: biomethane response on the public sector pages
+
+- New consultation response page: "Will Northern Ireland's manufacturers buy biomethane? Only if it counts where they report" (response to DfE's Biomethane Business Case request for information, sent 19 November 2026), with the response as a branded PDF.
+- The page carries an update dated 21 November 2026: a correction on the UK ETS Authority's consideration of grid biomethane, and the effect of the UK–EU summit.
+- Consultation responses index: entries can now show "closes" for a consultation that is still open; lead sentence amended to match.
+
 ### v0.42.3 — 21 November 2026: biomethane response in the carbon deal post
 
 - Carbon deal post: new subsection "What I have said to Stormont about it", summarising Robert's response to DfE's biomethane business case request for information (19 November 2026) and his position for the strategy consultation (closes 15 December 2026).
