@@ -38,6 +38,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 - "Who cuts the hedge?" post time moved from noon to 06:30 so it publishes on merge instead of waiting for the noon rebuild.
 
+### v0.46.1 — 21 November 2026: CBAM horizon on the home page
+
+*Robert, 21 November 2026: "put it on the front page".*
+
+- Home-page headline slide for `the-2027-cbam-horizon` (slot 4, newest piece), expiring 5 December 2026 07:30 UTC; CBAM Desk button from site settings.
+
 ### v0.46.0 — 21 November 2026: the 2027 CBAM horizon briefing
 
 *Robert, 21 November 2026: panel-reviewed briefing on NI's two carbon borders.*

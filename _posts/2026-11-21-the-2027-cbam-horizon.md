@@ -4,6 +4,10 @@ date: 2026-11-21 10:00:00 +0000
 tags: ["Carbon", "CBAM", "Trade", "Northern Ireland", "Briefing"]
 description: "From 1 January 2027 UK CBAM charges steel, aluminium, cement, fertiliser and hydrogen entering Northern Ireland, including from Ireland. Eight cases, a switch to GB supply, a flow chart and a route checklist."
 image: /assets/briefings/cbam-2027/flow-ni-import.svg
+hero_eyebrow: "CBAM · Two carbon borders · From 1 January 2027"
+hero_title: "The 2027 CBAM horizon: <em>which routes pay twice</em>?"
+hero_lead: "From 1 January 2027 UK CBAM charges steel, aluminium, cement, fertiliser and hydrogen entering Northern Ireland, including from Ireland. Eight cases, a flow chart and a route checklist."
+hero_until: 2026-12-05T07:30:00Z
 ---
 
 <div class="answer-box" markdown="1">
