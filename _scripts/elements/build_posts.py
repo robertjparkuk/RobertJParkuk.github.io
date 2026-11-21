@@ -54,7 +54,7 @@ def footer(sym):
 
 if __name__ == '__main__':
     for sym, date in ORDER:
-        t = open(os.path.join(os.path.dirname(__file__), 'posts', f'{sym.lower()}.md'), encoding='utf-8').read()
+        t = open(os.path.join(os.path.dirname(__file__), 'posts', f'{sym.lower()}.md.tmpl'), encoding='utf-8').read()
         slug = F[sym]['post'].rstrip('/').split('/')[-1]
         t = t.replace('{{DATE}}', f'{date} 07:30:00 +0000')
         t = t.replace('{{FIGURE}}', figure(sym)).replace('{{SAFETY}}', safety(sym))
