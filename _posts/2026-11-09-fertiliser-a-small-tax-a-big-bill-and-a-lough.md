@@ -15,6 +15,8 @@ hero_button2: ["All policy pieces", "/policy-series/"]
 hero_until: 2026-11-23T12:00:00Z
 ---
 
+*Update, 21 November 2026: the UK–EU summit of 20 November concluded an agreement to link the UK and EU carbon markets. The UK government says it intends to exempt goods of EU origin from UK CBAM from 1 January 2027; that is not yet law. This piece is as published; see [what changes, and when]({% post_url 2026-11-21-the-carbon-deal-what-changes-for-northern-ireland-and-great-britain %}) and [what the summit agreed]({% post_url 2026-11-21-the-second-uk-eu-summit-what-was-agreed-and-what-it-will-take %}).*
+
 <figure class="page-photo"><img src="{{ '/assets/photos/farm-panorama.jpg' | relative_url }}" alt="Green grassland at sunrise with a feed mill and grain silos behind a line of trees" loading="lazy"><figcaption>The carbon charge on a tonne of fertiliser is small. The nutrient rules are what will shape how much NI farms buy and spread.</figcaption></figure>
 
 *Part of the [Policy series]({{ '/policy-series/' | relative_url }}): where the rules stand in Northern Ireland, who decides them, and what to do about it. Updated as the rules change.*

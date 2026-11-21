@@ -5,6 +5,8 @@ tags: [CBAM, CSRD, Northern Ireland]
 description: "What the EU and UK carbon border rules and the slimmed-down CSRD mean for Northern Ireland manufacturers, and what to do before January 2027."
 ---
 
+*Update, 21 November 2026: the UK–EU summit of 20 November concluded an agreement to link the UK and EU carbon markets. The UK government says it intends to exempt goods of EU origin from UK CBAM from 1 January 2027; that is not yet law. This piece is as published; see [what changes, and when]({% post_url 2026-11-21-the-carbon-deal-what-changes-for-northern-ireland-and-great-britain %}) and [what the summit agreed]({% post_url 2026-11-21-the-second-uk-eu-summit-what-was-agreed-and-what-it-will-take %}).*
+
 <div class="update-box" role="note" markdown="1">
 <p class="update-date">Update, 11 November 2026</p>
 

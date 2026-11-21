@@ -111,7 +111,7 @@ So verified actual data usually pays for EU customers, because EU defaults carry
 
 ## What's changing
 
-- **UK–EU emissions trading link.** The UK–EU summit in Brussels on 20 November 2026 may announce a link between the two emissions trading systems. That would start, not finish, the process: each side then needs its own legal act before any CBAM exemption applies, a UK regulation approved by Parliament and an EU delegated act. Plan for both charges in 2027. A link would exempt EU-made goods, not goods made elsewhere and sold through an EU merchant, so check the origin on the invoice.
+- **UK–EU emissions trading link (updated 21 November 2026).** On 20 November 2026 the UK and the EU agreed to link their emissions trading systems, aiming for 1 January 2028. The UK government says it intends to exempt goods originating in the EU, the EEA and Switzerland from UK CBAM from 1 January 2027; the EU exemption for UK goods is expected from 1 January 2028. Neither is law yet: each needs its own legal act. Origin is the test, so goods made elsewhere and sold through an EU merchant stay charged. Check the origin on the invoice. [What changes, and when]({% post_url 2026-11-21-the-carbon-deal-what-changes-for-northern-ireland-and-great-britain %}).
 - **EU phase-in.** The Commission's July 2026 proposal would slow the end of free allocation for CBAM sectors to 2038, so any cost figure for 2028 onwards is a range.
 - **UK scope.** HM Treasury is consulting until 20 January 2027 on adding refinery products to the UK CBAM.
 
