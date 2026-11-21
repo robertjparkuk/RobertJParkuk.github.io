@@ -1,0 +1,92 @@
+---
+title: "Magnesium: the metal in every leaf and the cause of grass staggers"
+date: {{DATE}}
+published: false   # draft for Robert's review, 21 Nov 2026; one of eight element briefings
+tags: ["Elements", "Learn", "Magnesium", "Livestock", "Soil", "Critical minerals", "Northern Ireland"]
+image: /assets/learn/periodic-table-mg.png
+description: "Magnesium in climate, soil, land, agri-food and the air: chlorophyll, grass tetany, Antrim basalt and rock weathering, light metals, fire safety and critical-mineral supply."
+---
+
+*Element 12 sits at the centre of every chlorophyll molecule. A cow short of it on lush spring grass can be dead by morning.*
+
+{{FIGURE}}
+
+Look at a field of grass and you are looking at magnesium. Each molecule of chlorophyll, the green pigment that captures sunlight, is built around a single magnesium atom. Without magnesium there is no photosynthesis, and no farming.
+
+Magnesium is also a light, strong metal, a fire hazard as powder or swarf, a soil conditioner as dolomitic lime, and a possible tool for removing carbon dioxide from the air.
+
+## The element in one minute
+
+- **Number 12**, group 2, period 3. An alkaline earth metal.
+- **Abundant:** the eighth most common element in the Earth's crust, and dissolved in seawater at about 1.3 grams per litre.
+- **Critical:** magnesium and magnesite are on the [UK's 2024 critical minerals list](https://www.bgs.ac.uk/news/uk-2024-criticality-assessment/). Most magnesium metal is made in China.
+
+## Climate
+
+- **Making the metal is carbon intensive.** Most magnesium is made by the Pidgeon process, which uses a lot of heat, often from coal.
+- **Calcining magnesite releases CO₂**, just as limestone does in cement.
+- **Rock weathering can draw CO₂ down.** Magnesium-rich rocks such as basalt and olivine react slowly with carbon dioxide in rainwater. Spreading crushed rock on farmland to speed this up, "enhanced rock weathering", is being trialled as a carbon removal method. It is still at the research stage, and measuring how much carbon it actually removes is hard.
+- **Light-weighting:** magnesium alloys make vehicles lighter, so they use less energy.
+
+## Soil and land
+
+Magnesium comes from weathered rock, especially basalt and dolomite. Northern Ireland's Antrim Plateau is built of basalt lava flows, rich in magnesium-bearing minerals.
+
+Soils are tested for magnesium alongside phosphorus and potassium. Where magnesium is low and lime is needed, dolomitic (magnesian) limestone supplies both. Heavy potassium dressings make it harder for grass, and the animals eating it, to take up magnesium.
+
+## Agri-food
+
+Grass tetany, also called grass staggers or hypomagnesaemia, is the reason magnesium matters to every livestock farmer.
+
+- **Cattle and sheep cannot store magnesium.** They need a steady daily supply.
+- **Lush spring grass is low in it**, especially where nitrogen and potassium have been applied heavily, and passes through the gut fast.
+- **Bad weather triggers it.** A cold, wet spell stops animals grazing. [AFBI's guidance](https://www.afbini.gov.uk/sites/afbini.gov.uk/files/publications/%5Bcurrent-domain%3Amachine-name%5D/Grass%20tetany.pdf) notes that a sudden turn in the weather can cause severe outbreaks, and that lactating cows on spring and autumn grass are most at risk.
+- **Prevention** is by supplementing magnesium (in feed, licks, water or boluses) through the risk period. Any animal with signs of tetany is a veterinary emergency.
+
+## Atmosphere
+
+Magnesium has no direct role in the atmosphere. Sea spray carries magnesium salts inland, which is one reason coastal pastures differ from inland ones.
+
+## Why it matters in Northern Ireland
+
+Spring-calving suckler and dairy herds on fast-growing ryegrass are exactly the setting for grass tetany. And with basalt quarries across Antrim, Northern Ireland has a ready source of magnesium-rich rock dust, which is why enhanced rock weathering attracts local interest. Claims of carbon removal from it should be treated with care until measurement standards settle.
+
+## The rules (as at 21 November 2026)
+
+- **Workplace:** COSHH applies to magnesium oxide dust and fume. Magnesium powder and swarf need fire and dust-explosion controls (DSEAR).
+- **Classification:** magnesium powder has harmonised CLP classifications for fire and reaction with water (see table).
+- **Carbon removal:** no UK or EU certification methodology for enhanced rock weathering was in force at the date of checking. *Check the EU Carbon Removals and Carbon Farming Regulation methodologies before quoting.*
+- **Critical minerals:** magnesium is on the UK critical minerals list.
+
+## Safety and handling
+
+{{SAFETY}}
+
+## Compounds you will meet
+
+{{COMPOUNDS}}
+
+## What this means
+
+- **For livestock farmers:** plan magnesium supplementation before turnout and before forecast cold snaps, not after the first case.
+- **For engineering firms:** keep magnesium swarf dry, separate and away from water-based extinguishers.
+- **For anyone offered rock-dust carbon credits:** ask how removal is measured, by whom, and over what period.
+
+## Further reading on this site
+
+- [Carbon capture and carbon negative]({{ '/learn/carbon-capture-and-carbon-negative/' | relative_url }})
+- [Offsets]({{ '/learn/offsets/' | relative_url }})
+
+## Sources
+
+- AFBI (Veterinary Sciences Division), [Grass tetany (hypomagnesaemia) in cattle](https://www.afbini.gov.uk/sites/afbini.gov.uk/files/publications/%5Bcurrent-domain%3Amachine-name%5D/Grass%20tetany.pdf) (accessed 21 November 2026).
+- British Geological Survey, [UK 2024 Criticality Assessment](https://www.bgs.ac.uk/news/uk-2024-criticality-assessment/) (28 November 2024) and GOV.UK, [Critical minerals technical annex](https://www.gov.uk/government/publications/uk-critical-minerals-strategy/critical-minerals-technical-annex) (November 2025).
+- HSE, [EH40/2005 Workplace exposure limits](https://www.hse.gov.uk/pubns/books/eh40.htm) (4th edition, January 2020).
+- [Regulation (EC) No 1272/2008 (CLP), Annex VI](https://eur-lex.europa.eu/eli/reg/2008/1272/oj).
+- UNECE, [ADR 2025](https://unece.org/transport/standards/transport/dangerous-goods/adr-2025-agreement-concerning-international-carriage).
+
+All sources checked 21 November 2026.
+
+---
+
+{{FOOTER}}

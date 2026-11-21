@@ -16,6 +16,12 @@ A rough carbon checker for Northern Ireland businesses. Fill in each piece of th
 
 [Open the Carbon Jigsaw →]({{ '/tools/carbon-jigsaw.html' | relative_url }})
 
+<h2 class="tool-h"><img src="{{ '/assets/brand/mark.svg' | relative_url }}" alt="" width="48" height="48">The interactive periodic table</h2>
+
+All 118 elements. Hover for a one-line description; click for the environmental, engineering, geological, chemical and land context. The eight elements in the *Elements of the land* series (phosphorus, nitrogen, sulfur, fluorine, antimony, magnesium, carbon and radon) also carry COSHH, exposure limits, UN numbers and the compounds you meet in nature, manufacturing and the climate.
+
+[Open the periodic table →]({{ '/tools/periodic-table.html' | relative_url }})
+
 <h2 class="tool-h"><img src="{{ '/assets/icons/scopes-map.svg' | relative_url }}" alt="" width="48" height="48">The Scopes Map</h2>
 
 Scope 1, 2 and 3 on one diagram, with all fifteen Scope 3 categories and their technical definitions. It also covers the grey zones clients ask about: gas that leaks before or after the meter, LPG that isn't a counted gas, water from a borehole, grey-fleet mileage, landlord-supplied energy, and which gases count at all.
