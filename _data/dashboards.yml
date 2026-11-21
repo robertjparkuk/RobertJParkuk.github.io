@@ -97,6 +97,14 @@
       related_title: "Northern Ireland Screen: how do we grow it?"
       related: /blog/2026/11/northern-ireland-screen-how-do-we-grow-it/
 
+    - title: "NI food, farming and the SPS deal"
+      page: /tools/dashboards/ni-sps-food-trade.html
+      thumb: /assets/dashboards/ni-sps-food-trade.jpg
+      summary: "Where NI food and drink processors sell and buy, GB against the EU, what NI farms produce and emit, carbon intensity by industry, EU intervention stores in 1990, and the processing trend to 2035."
+      as_at: "Figures as at 21 November 2026"
+      related_title: "The SPS deal: what Northern Ireland gains, what it gives away"
+      related: /blog/2026/11/the-sps-deal-what-it-means-for-northern-ireland/
+
 - group: "Features"
   intro: "Dashboards that go with one-off briefings."
   items:
