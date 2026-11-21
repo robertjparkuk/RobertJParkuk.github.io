@@ -25,6 +25,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.44.1 — 21 November 2026: hedge post published at once
+
+*Robert, 21 November 2026: "merge and publish".*
+
+- "Who cuts the hedge?" post time moved from noon to 06:30 so it publishes on merge instead of waiting for the noon rebuild.
+
 ### v0.44.0 — 21 November 2026: who cuts the hedge?
 
 *Requested by Robert, 21 November 2026 ("I'm happy go ahead").*

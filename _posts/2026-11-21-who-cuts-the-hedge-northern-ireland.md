@@ -1,6 +1,6 @@
 ---
 title: "Who cuts the hedge? Roads, verges and ditches in Northern Ireland"
-date: 2026-11-21 12:00:00 +0000
+date: 2026-11-21 06:30:00 +0000
 tags: ["Public realm", "Roads", "Land", "Hedges", "Drainage", "Northern Ireland"]
 image: /assets/photos/boundary-hedge-east-antrim.jpg
 description: "Who is responsible for roadside hedges, verges and ditches in Northern Ireland, who pays, and where the rules leave a gap. A plain guide for landowners, councils and farmers."
