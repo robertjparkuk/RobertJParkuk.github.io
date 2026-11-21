@@ -1,0 +1,239 @@
+[
+ {
+  "fn": "flow-ni-ets.svg",
+  "H": 1010,
+  "title": "Which carbon scheme touches you, and what changes in 2028?",
+  "sub": "NI firms, councils and operators. UK–EU link agreed 20 November 2026, aiming for 2028; not yet law.",
+  "note": "NI generators stay in the EU ETS under the Windsor Framework; other NI installations are in the UK ETS. NI energy-from-waste treatment is unclear in the government explainer. Status 21 November 2026. Not legal or tax advice.",
+  "nodes": [
+   [
+    190,
+    82,
+    340,
+    56,
+    "Your NI business, council or operation",
+    "start"
+   ],
+   [
+    190,
+    170,
+    340,
+    70,
+    "Do you generate electricity for the all-island market?",
+    "q"
+   ],
+   [
+    600,
+    165,
+    270,
+    80,
+    "EU ETS stays. From 2028 UK and EU allowances count in both.",
+    "out"
+   ],
+   [
+    190,
+    280,
+    340,
+    80,
+    "Do you run a UK ETS installation (combustion over 20 MW or a listed activity)?",
+    "q"
+   ],
+   [
+    600,
+    280,
+    270,
+    80,
+    "No price floor, EU free-allocation rules, prices converge.",
+    "warn"
+   ],
+   [
+    190,
+    400,
+    340,
+    70,
+    "Do you run ships of 5,000 GT or more on UK routes?",
+    "q"
+   ],
+   [
+    600,
+    395,
+    270,
+    80,
+    "GB–NI 50% discount ends; half of international voyages covered.",
+    "pay"
+   ],
+   [
+    190,
+    510,
+    340,
+    70,
+    "Do you operate flights from the UK?",
+    "q"
+   ],
+   [
+    600,
+    505,
+    270,
+    80,
+    "One-stop shop for airlines in both schemes; no CORSIA on flights to the EEA.",
+    "out"
+   ],
+   [
+    190,
+    620,
+    340,
+    70,
+    "Do you run or pay for energy-from-waste?",
+    "q"
+   ],
+   [
+    600,
+    615,
+    270,
+    80,
+    "Monitoring from 2028 in GB; paying later. NI unclear.",
+    "warn"
+   ],
+   [
+    190,
+    730,
+    340,
+    70,
+    "Do you trade CBAM goods with the EU?",
+    "q"
+   ],
+   [
+    600,
+    725,
+    270,
+    80,
+    "UK exempts EU goods (intended 2027); EU exempts UK goods (expected 2028).",
+    "out"
+   ],
+   [
+    190,
+    840,
+    340,
+    70,
+    "Indirect effects only: freight, power and supplier prices.",
+    "warn"
+   ]
+  ],
+  "edges": [
+   [
+    360,
+    138,
+    360,
+    168
+   ],
+   [
+    530,
+    205,
+    598,
+    205,
+    "Yes",
+    548,
+    197
+   ],
+   [
+    360,
+    240,
+    360,
+    278,
+    "No",
+    368,
+    264
+   ],
+   [
+    530,
+    320,
+    598,
+    320,
+    "Yes",
+    548,
+    312
+   ],
+   [
+    360,
+    360,
+    360,
+    398,
+    "No",
+    368,
+    384
+   ],
+   [
+    530,
+    435,
+    598,
+    435,
+    "Yes",
+    548,
+    427
+   ],
+   [
+    360,
+    470,
+    360,
+    508,
+    "No",
+    368,
+    494
+   ],
+   [
+    530,
+    545,
+    598,
+    545,
+    "Yes",
+    548,
+    537
+   ],
+   [
+    360,
+    580,
+    360,
+    618,
+    "No",
+    368,
+    604
+   ],
+   [
+    530,
+    655,
+    598,
+    655,
+    "Yes",
+    548,
+    647
+   ],
+   [
+    360,
+    690,
+    360,
+    728,
+    "No",
+    368,
+    714
+   ],
+   [
+    530,
+    765,
+    598,
+    765,
+    "Yes",
+    548,
+    757
+   ],
+   [
+    360,
+    800,
+    360,
+    838,
+    "No",
+    368,
+    824
+   ]
+  ]
+ }
+]
