@@ -8,7 +8,7 @@ description: "Northern Ireland's breeding flock has fallen 13% in three years wh
 
 *Northern Ireland's breeding flock has fallen 13% in three years while lamb is scarce across Europe. The money is there. Northern Ireland is not set up to catch it.*
 
-*General information as at 21 November 2026, not legal, veterinary or financial advice.* The full briefing covers sheep and lamb, the cost of shearing and the end of the overseas shearer visa route, and Northern Ireland's goats, with every chart, table and source: [download the full briefing (PDF, 18 pages)]({{ '/assets/sheep/2026-11/sheep-lamb-shearing-goats-ni-briefing.pdf' | relative_url }}).
+*General information as at 21 November 2026, not legal, veterinary or financial advice.* The full briefing covers sheep and lamb, the cost of shearing and the end of the overseas shearer visa route, and Northern Ireland's goats, with every chart, table and source: [download the full briefing (PDF, 19 pages)]({{ '/assets/sheep/2026-11/sheep-lamb-shearing-goats-ni-briefing.pdf' | relative_url }}).
 
 In June 2025 there were 864,522 breeding ewes in Northern Ireland. That is 7% fewer than a year earlier, and about 13% fewer than in 2022, according to [DAERA's census](https://www.daera-ni.gov.uk/news/results-june-agricultural-census-2025). In Scotland and Wales, total sheep numbers rose slightly over the same year. Ours fell.
 
@@ -36,11 +36,11 @@ Agriculture produced 31.4% of Northern Ireland's emissions in 2024 ([NISRA](http
 
 ## Wool is worth something again
 
-For years wool barely paid for the shearing. That has turned. Ulster Wool paid an average of 68p/kg for the 2025 clip, a ten-year high, and many core grades are expected to pass £1/kg for 2026. Shearing costs about £1.93 a ewe. For the first time in a long while, the fleece can pay its way.
+For years wool barely paid for the shearing. That has turned. Ulster Wool paid an average of 68p/kg for the 2025 clip, a ten-year high, and many core grades are expected to pass £1/kg for 2026. Shearing costs about £1.93 a ewe. On the 2026 forecast, the fleece could pay for the shearing for the first time in years, though not for crutching as well.
 
 ## Who shears them now
 
-The UK concession that let up to about 75 overseas shearers a year, mostly New Zealanders, work the British season closed for the last time on 30 June 2026. Only 16 used it in its final year, according to Home Office figures reported by Farmers Weekly. From 2027 the only route is the Youth Mobility Scheme, open to New Zealanders aged 18 to 35. Experienced shearers over 35 have no route at all. Northern Ireland has its own contractors and many farmers shear their own, but a wet year with too few hands leaves hill flocks unshorn into the flystrike season.
+The UK concession that let up to about 75 overseas shearers a year, mostly New Zealanders, work the British season closed for the last time on 30 June 2026. Only 16 used it in its final year, a government spokesperson told Farmers Weekly. From 2027 the only route is the Youth Mobility Scheme, open to New Zealanders aged 18 to 35. Experienced shearers over 35 have no route at all. Northern Ireland has its own contractors and many farmers shear their own, but a wet year with too few hands leaves hill flocks unshorn into the flystrike season.
 
 ## The goats nobody counts
 
@@ -53,9 +53,9 @@ Welsh Lamb, Scotch Lamb, Shetland Lamb, Orkney Lamb, Lakeland Herdwick, Cambrian
 ## Six ways to get more from fewer sheep
 
 1. **Named mutton and hogget.** Cull ewes mostly leave Northern Ireland as a commodity. Our dry-ageing specialists could build a named line that keeps more of the value here.
-2. **A protected hill lamb name.** Mourne, Sperrin or Antrim Glens lamb, registered through the EU scheme that applies here.
+2. **A protected hill lamb name.** Mourne, Sperrin or Antrim Glens lamb, registered through the UK or EU scheme, wherever producers want one.
 3. **Wool kept at home.** With prices near £1/kg, test local scouring, yarn or insulation.
-4. **Paid peat grazing.** Pay hill farmers for managed grazing under the Peatland Strategy.
+4. **Paid peat grazing.** The Peatland Strategy Delivery Plan promises a Farming with Nature scheme with options for peatland, but no grazing payment yet. Pay hill farmers for managed grazing.
 5. **Native-breed support.** A small payment for rare sheep and conservation grazing.
 6. **A Northern Ireland cure.** A salted and smoked lamb or mutton, made to the EU nitrite limits that have applied here since October 2025.
 
