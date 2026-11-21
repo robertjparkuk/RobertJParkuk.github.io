@@ -25,6 +25,10 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.45.1 — 21 November 2026: Larne post time corrected
+
+- The post was dated 20:15 and the merge built at 20:11, so the page was held back as a future post. Time moved to 20:00 so it publishes at once.
+
 ### v0.45.0 — 21 November 2026: Larne direct air capture piece
 
 *Robert, 21 November 2026: "publish on the website, the blog, add into learn too".*

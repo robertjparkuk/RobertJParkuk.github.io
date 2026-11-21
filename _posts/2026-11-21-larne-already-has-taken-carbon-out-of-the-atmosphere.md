@@ -1,6 +1,6 @@
 ---
 title: "Larne already has taken carbon out of the atmosphere"
-date: 2026-11-21 20:15:00 +0000
+date: 2026-11-21 20:00:00 +0000
 tags: [Carbon, Direct air capture, Larne, Innovation, Energy, Northern Ireland, Thought piece]
 description: "A wind-driven direct air capture trial ran above the Port of Larne from 2023 to 2025. What it did, what it cost, what it did not do, and who decides what comes next."
 ---
