@@ -40,6 +40,14 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - New photo: `assets/photos/boundary-hedge-east-antrim.jpg`, Robert's own, cropped, web-sized (1600 px) and saved without location data.
 - Goes live when this branch is merged: the post is dated 21 November at noon and carries no `published: false`.
 
+### v0.44.0 — 21 November 2026: SPS deal post and full briefing
+
+- New post, *The SPS deal: what Northern Ireland gains, what it gives away* (`_posts/2026-11-21-the-sps-deal-what-it-means-for-northern-ireland.md`), dated 07:00 so it publishes on merge. Covers the 20 November UK–EU SPS agreement for NI, with DAERA and NAEI figures on farm output, food processing, emissions, carbon intensity, sales by destination and inputs by origin, and an explainer on 1990 EU intervention stores.
+- Full briefing PDF (19 pages, A4): `assets/briefings/2026-11-the-sps-deal-ni-briefing.pdf`, built by `_scripts/briefings/sps-deal/build_pdf.py` from `briefing.md` (the Claude Doc export).
+- Five charts in `assets/briefings/sps-deal/`, built by `_scripts/briefings/sps-deal/charts.py` from `data.json`.
+- Short link `/go/sps/` (LinkedIn UTM tags).
+- Corrected after two role-played review panels (21 November): NI v UK economy shares now like for like (DAERA Statistical Review 2024); 2024 farm output revised to DAERA's August 2026 figures; GB described as losing most SPS checks but still facing customs; pigmeat claim removed; carbon intensity caveats on beef/dairy split and prices; projection given as a range; intervention-stores history tightened; legal points corrected (applicability motion, not Stormont Brake; CBAM exemption as planned, not law; GB–NI pork under the UK Internal Market Scheme); the 'vassal state' wording made neutral. Acronyms spelt out at first use, with a 'Terms used' box in the post and the briefing.
+
 ### v0.43.2 — 21 November 2026: carbon deal post, price gap and party positions corrected
 
 - Carbon deal post: the carbon price gap corrected from "£9 to £11 a tonne" to about £9 a tonne of CO2 at the 20 November exchange rate, stated as conditional on the UK price rising to the EU level. Party positions now dated and sourced (Conservatives, 1 April 2026; government ending Carbon Price Support from April 2028, HCWS1519). Correction note added.
