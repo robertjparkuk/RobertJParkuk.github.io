@@ -76,22 +76,24 @@ If processing kept its 2015 to 2022 real growth, NI food processing would reach 
 ## Who gains and who loses in NI
 
 <div class="cards">
-  <div class="card" markdown="1">
+<div class="card" markdown="1">
 **Gains**
 
 - Shops and wholesalers: one supply chain from GB depots, fewer labels and certificates
 - Farms, growers and nurseries: cheaper GB seed, plants and used machinery
 - Hauliers: fewer documents and checks at Belfast, Larne and Warrenpoint
 - Processors buying GB inputs (less so for live animals, which are still checked)
-  </div>
-  <div class="card" markdown="1">
+
+</div>
+<div class="card" markdown="1">
 **Losses and risks**
 
 - Exporters to Ireland and the EU: GB rivals lose most SPS checks from 2028, though they still face customs
 - Beef and dairy processors most of all
 - Stricter enforcement of the current rules until 2028
 - A long tail of transitions, some to 2031
-  </div>
+
+</div>
 </div>
 
 **The case for**, as the government makes it: up to £5.1 billion a year for the UK by 2040, an end to most Irish Sea food checks without moving NI out of the EU's food rules, and shared biosecurity. **The case against**: GB takes EU rules it cannot vote on, with the EU Court as the final word on EU law in disputes; there is less room for agricultural deals with the US and others; and the £5.1 billion rests on an unpublished study that leaves the costs out. No one has published an NI figure.

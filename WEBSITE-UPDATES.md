@@ -31,6 +31,10 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 - "Who cuts the hedge?" post time moved from noon to 06:30 so it publishes on merge instead of waiting for the noon rebuild.
 
+### v0.44.1 — 21 November 2026: SPS post layout fix
+
+- SPS deal post: the "Gains" and "Losses and risks" cards were not closed (indented closing tags), so the rest of the article rendered in a narrow right-hand column. Closing tags unindented, with a blank line after each list.
+
 ### v0.44.0 — 21 November 2026: who cuts the hedge?
 
 *Requested by Robert, 21 November 2026 ("I'm happy go ahead").*
