@@ -56,6 +56,23 @@ Northern Ireland is consulting on a biomethane strategy until 15 December 2026, 
 
 Biomethane is not itself a CBAM good. It matters as the fuel behind one: the EU CBAM counts biogas as zero only with sustainability evidence, and HMRC's draft guidance for the UK CBAM is silent on gas taken from the grid. So a site in the UK ETS should not pay a premium for certified grid biomethane expecting a lower carbon bill until the rule exists. Stormont's proposal is a limited support scheme for biomethane used in industrial heat, aimed at 2028 to 2035: a preferred position, not an approved scheme. For digester operators, today's income is the renewables obligation for electricity; income from biomethane depends on that scheme. A farmer asked to supply slurry should ask who takes the digestate back, and on what terms.
 
+### What I have said to Stormont about it
+
+My response to DfE's request for information on the biomethane business case, dated 19 November 2026, was written as an adviser to NI manufacturers, not as a producer or buyer. Its argument is that demand will follow recognition, not only price. A manufacturer will sign a long contract for certified gas only if the gas counts where the firm reports. On 19 November it counted partly in company energy and carbon reports, not at all in the UK ETS, and was unsettled in customers' Scope 3 requests. The summit papers confirm that gap and show how it would close.
+
+The response makes six design points:
+
+1. One certificate for each supported kWh, cancellable once, usable with Ireland's scheme and with an EU proof of sustainability.
+2. A UK ETS decision on certified grid biomethane, which DAERA can seek as a member of the UK ETS Authority.
+3. NI injection data supplied to the greenhouse gas inventory, so that NI production counts towards NI's carbon budgets.
+4. Measured methane leakage at plants and in the networks.
+5. Digestate treated as a co-product, and kept off peat soils.
+6. A short buyer's guide to reporting supported gas.
+
+It raises two risks. Support ends in 2035, and if supported firms then leave the gas network its fixed costs fall on fewer users, households included. And, after the Renewable Heat Incentive, support should never exceed the gap between biomethane and natural gas, with caps and audited costs set before the scheme opens. On scale, about £13m a year buys roughly 260 to 433 GWh, at 5p to 3p a kWh (my arithmetic).
+
+I will respond to the strategy consultation by 15 December. My position is support, with conditions. Biomethane is strongest where it does two things at once: replaces fossil gas in heat that is hard to electrify, and takes nutrients out of overloaded catchments such as Lough Neagh. Those aims can conflict, because the cheapest gas comes from crops and the strongest nutrient case from slurry. The strategy should say which wins.
+
 ## What is bad for Northern Ireland
 
 The deal is presented as a gain for Northern Ireland, and on inputs it is. These are the costs.

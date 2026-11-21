@@ -25,6 +25,10 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.42.3 — 21 November 2026: biomethane response in the carbon deal post
+
+- Carbon deal post: new subsection "What I have said to Stormont about it", summarising Robert's response to DfE's biomethane business case request for information (19 November 2026) and his position for the strategy consultation (closes 15 December 2026).
+
 ### v0.42.2 — 21 November 2026: what is bad for Northern Ireland
 
 - Carbon deal post: new section "What is bad for Northern Ireland" (carbon cost without a fall in power cost, loss of the edge over GB on the EU border charge and on food, ferry costs, a year of charge and paperwork, rule-taking, the GB-only electricity relief, and what is left unsolved).
