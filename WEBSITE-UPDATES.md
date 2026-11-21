@@ -110,6 +110,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - New short link `/go/deal/` to the post, for LinkedIn.
 - Removed the two pre-written summit drafts (`...-cbam-bill-agreed.md` and `...-cbam-bill-no-deal.md`, both `published: false`). Both are superseded, and the "agreed" draft said section 156 regulations need both Houses (the Act says the Commons only) and that EU goods stay charged in 2027.
 - Not changed in this release, and now out of date until updated: the home-page hero, CBAM Desk line 114, the CBAM Exposure Tracker and UK CBAM Countdown callouts, the ESG tracker ETS rows, the Regulatory Horizon, Twelve dates, the fertiliser piece and the two held policy posts.
+### v0.41.1 — 20 November 2026: Consultations Monitor weekly refresh
+
+- `data/dashboards/ni-consultations/consultations.json`: 17 consultations added (C441–C457; 455 in all). Four are high relevance (DfI abandonment of footway at Tobar Fold, Cullybackey, and of part of Railway Road car park, Derry, both close 1 Jan; DfI loading bays in Magherafelt and Omagh, closes 14 Dec; DfI Derry parking and waiting restrictions, closes 11 Dec), seven medium (DfI Derry taxi stand; DAERA invasive species pathway action plans; DfC local government legislation call for evidence; Utility Regulator firm access, now closing 22 Jan, and Heron Storage licence; Derry & Strabane HOU 13 HMO policy, not yet open; DfT maritime fuel regulation), six low.
+- Status roll-forward: 11 records closed and awaiting a response (C023–C031, C371, C440); C388 Black Paths engagement now open. Responses recorded for 3 (C158 MHCLG construction products General Safety Requirement, 18 Nov; C069 and C070 Translink EQIAs, final reports dated October 2026). 98 open, 2 announced but not yet open (C356, C454), 17 closing within 14 days.
+- Notes: C413 DWP guided retirement keeps the GOV.UK closing date of 21 Dec (DfC's republished page says 22 Nov).
+- `_scripts/dashboards/consultations_build.py`: AS_AT 20 November 2026 and a new CHANGES line; page and CSV rebuilt.
 
 ### v0.41.0 — 19 November 2026: New prices, launch gates, VAT wording (replaces PRs 67 and 69)
 
