@@ -1,6 +1,6 @@
 ---
 title: "Fewer sheep, dearer lamb: what Northern Ireland is missing"
-date: 2026-11-24 07:30:00 +0000
+date: 2026-11-21 17:00:00 +0000
 image: /assets/sheep/2026-11/sheep-lamb-goats-card.png
 tags: [Agriculture, Sheep, Trade, Carbon, Northern Ireland, Thought piece]
 description: "Northern Ireland's breeding flock has fallen 13% in three years while lamb is scarce across Europe. Where the lambs now go, why hill farms earn least, and six ways to get more from fewer sheep."
