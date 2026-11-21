@@ -318,7 +318,8 @@
     ]
    },
    "briefing_url": "/blog/2026/11/carbon-the-element-we-count/",
-   "pdf": "/assets/briefings/elements/carbon-briefing.pdf"
+   "pdf": "/assets/briefings/elements/carbon-briefing.pdf",
+   "post_live": false
   },
   {
    "z": 7,
@@ -475,7 +476,8 @@
     ]
    },
    "briefing_url": "/blog/2026/11/nitrogen-from-the-air-through-the-cow-into-the-lough-and-the-sky/",
-   "pdf": "/assets/briefings/elements/nitrogen-briefing.pdf"
+   "pdf": "/assets/briefings/elements/nitrogen-briefing.pdf",
+   "post_live": false
   },
   {
    "z": 8,
@@ -644,7 +646,8 @@
     ]
    },
    "briefing_url": "/blog/2026/11/fluorine-in-your-fridge-your-frying-pan-and-your-teeth/",
-   "pdf": "/assets/briefings/elements/fluorine-briefing.pdf"
+   "pdf": "/assets/briefings/elements/fluorine-briefing.pdf",
+   "post_live": false
   },
   {
    "z": 10,
@@ -831,7 +834,8 @@
     ]
    },
    "briefing_url": "/blog/2026/11/magnesium-the-metal-in-every-leaf-and-the-cause-of-grass-staggers/",
-   "pdf": "/assets/briefings/elements/magnesium-briefing.pdf"
+   "pdf": "/assets/briefings/elements/magnesium-briefing.pdf",
+   "post_live": false
   },
   {
    "z": 13,
@@ -1032,7 +1036,8 @@
     ]
    },
    "briefing_url": "/blog/2026/11/phosphorus-the-nutrient-that-fed-the-farms-and-fouled-the-lough/",
-   "pdf": "/assets/briefings/elements/phosphorus-briefing.pdf"
+   "pdf": "/assets/briefings/elements/phosphorus-briefing.pdf",
+   "post_live": false
   },
   {
    "z": 16,
@@ -1180,7 +1185,8 @@
     ]
    },
    "briefing_url": "/blog/2026/11/sulfur-acid-rains-ingredient-now-a-fertiliser-we-buy/",
-   "pdf": "/assets/briefings/elements/sulfur-briefing.pdf"
+   "pdf": "/assets/briefings/elements/sulfur-briefing.pdf",
+   "post_live": false
   },
   {
    "z": 17,
@@ -2288,7 +2294,8 @@
     ]
    },
    "briefing_url": "/blog/2026/11/antimony-the-critical-mineral-nobody-has-heard-of/",
-   "pdf": "/assets/briefings/elements/antimony-briefing.pdf"
+   "pdf": "/assets/briefings/elements/antimony-briefing.pdf",
+   "post_live": false
   },
   {
    "z": 52,
@@ -3381,7 +3388,8 @@
     ]
    },
    "briefing_url": "/blog/2026/11/radon-the-gas-from-the-ground-a-tighter-house-can-trap/",
-   "pdf": "/assets/briefings/elements/radon-briefing.pdf"
+   "pdf": "/assets/briefings/elements/radon-briefing.pdf",
+   "post_live": false
   },
   {
    "z": 87,

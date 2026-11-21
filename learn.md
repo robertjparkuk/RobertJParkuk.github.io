@@ -12,6 +12,8 @@ description: "Plain-English carbon explainers for Northern Ireland businesses, c
 
 The [interactive periodic table]({{ '/tools/periodic-table.html' | relative_url }}) has a short briefing on all 118 elements, from hydrogen to oganesson. Hover over an element for what it means for climate, greenhouse gases, the air, land, soil, water and health. Click it for where it occurs in nature, its part in pollution, how it is made and used, its health effects and hazards, and how it was discovered.
 
+Read [why I built it]({{ '/blog/2026/11/a-briefing-on-every-element/' | relative_url }}), or find it with the other [dashboards]({{ '/dashboards/' | relative_url }}).
+
 Eight elements have a full briefing of their own, with safety and COSHH notes, UN numbers and the compounds you meet in nature, manufacturing and the climate. Download them as PDFs:
 
 - [Phosphorus]({{ '/assets/briefings/elements/phosphorus-briefing.pdf' | relative_url }}): the nutrient behind Lough Neagh's algal blooms

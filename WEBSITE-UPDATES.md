@@ -25,6 +25,14 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.49.3 — 21 November 2026: the periodic table as a dashboard, announced on the blog
+
+*Robert, 21 November 2026: "it should be a dashboard, announced on the blog in learn too".*
+
+- New "Learn and reference" group on `/dashboards/` with the periodic table card (thumbnail `assets/dashboards/periodic-table.jpg`).
+- Announcement post "A briefing on every element" (live on merge), linked from the tool, the dashboard card and the Learn page.
+- Fix: the tool linked the eight series names to held posts, which returned 404. It now links to the PDFs until each post is published. When a post is released, rerun `python3 _scripts/elements/build_table.py .` so its `post_live` flag turns on.
+
 ### v0.49.2 — 21 November 2026: the elements on the Learn page
 
 *Robert, 21 November 2026: "add it to learn as well".*

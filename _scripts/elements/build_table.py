@@ -8,7 +8,7 @@ Writes
   assets/learn/periodic-table-<symbol>.svg   full table with one featured element picked out
 Fonts: Source Sans 3 (OFL) embedded so the SVG renders in brand type as an <img>.
 """
-import sys, os, json, base64, html
+import sys, os, json, base64, html, re
 sys.path.insert(0, os.path.dirname(__file__))
 from base import ELEMENTS, CATEGORY_LABEL, position, period_group
 from contexts import C
@@ -62,6 +62,10 @@ def data():
             e['contexts'] = dict(environmental=f['env'], engineering=f['eng'], geological=f['geo'], chemical=f['chem'], land=f['land'])
             e['safety'] = f['safety']; e['compounds'] = f['compounds']
             e['briefing_url'] = f['post']; e['pdf'] = f['pdf']
+            slug = f['post'].rstrip('/').split('/')[-1]
+            import glob
+            src = glob.glob(os.path.join(ROOT, '_posts', f'*-{slug}.md'))
+            e['post_live'] = bool(src) and not re.search(r'^published:\s*false', open(src[0], encoding='utf-8').read(3000), re.M)
         out.append(e)
     return out
 

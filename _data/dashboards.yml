@@ -136,3 +136,14 @@
       as_at: "As at 9 November 2026"
       related_title: "Faith, reason and the common home"
       related: /blog/2026/11/catholic-church-science-business-environment/
+
+- group: "Learn and reference"
+  intro: "Reference dashboards that explain the science behind the rules: what things are made of and why it matters for climate, land and health."
+  items:
+    - title: "The interactive periodic table"
+      page: /tools/periodic-table.html
+      thumb: /assets/dashboards/periodic-table.jpg
+      summary: "All 118 elements, from hydrogen to oganesson. Hover for what each means for climate, greenhouse gases, air, land, soil, water and health; click for its briefing. Eight featured elements carry COSHH notes, UN numbers and compounds."
+      as_at: "Checked 21 November 2026"
+      related_title: "A briefing on every element"
+      related: /blog/2026/11/a-briefing-on-every-element/
