@@ -38,6 +38,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 - "Who cuts the hedge?" post time moved from noon to 06:30 so it publishes on merge instead of waiting for the noon rebuild.
 
+### v0.45.1 — 21 November 2026: provenance line
+
+*Robert, 21 November 2026: global replacement.*
+
+- The "drafted with AI assistance … nobody professionally qualified has reviewed it" lines now read "Created with assistive technology including AI and re-checked against the official sources listed." Changed in the SPS deal, carbon deal and UK–EU summit posts, the SPS PDF builder, and both PDFs (rebuilt). The summit post and PDF keep their note that official pages were read through a summarising tool.
+
 ### v0.45.0 — 21 November 2026: SPS dashboard and post layout fix
 
 - New dashboard `tools/dashboards/ni-sps-food-trade.html` (built by `_scripts/dashboards/build_sps.py`; CSVs in `assets/dashboards/sps-deal/`; thumbnail `assets/dashboards/ni-sps-food-trade.jpg`), listed on /dashboards/ and linked from the SPS post.
