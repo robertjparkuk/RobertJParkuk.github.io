@@ -32,7 +32,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - New tool `tools/periodic-table.html`: all 118 elements, hover description, click panel with environmental, engineering, geological, chemical and land context; safety (CLP, EH40 WELs, UN numbers) and compounds tabs for the eight featured elements; deep links by symbol (e.g. `#rn`). Data in `data/periodic-table/elements.json`.
 - Eight posts dated 24 November to 1 December 2026 (held), each with the full-table graphic (`assets/learn/periodic-table-*.svg`, PNG for sharing) and a 4-page PDF in `assets/briefings/elements/`.
 - Build scripts in `_scripts/elements/` (`build_table.py`, `build_posts.py`, `build_pdfs.py`): edit `featured.py` or `contexts.py`, then rerun all three so the tool, posts and PDFs agree.
-- Linked from Tools and from Learn ("Go further").
+- Linked from Tools and from Learn ("Go further"). Short links for LinkedIn: `/go/phosphorus/`, `/go/nitrogen/`, `/go/sulfur/`, `/go/fluorine/`, `/go/antimony/`, `/go/magnesium/`, `/go/carbon/`, `/go/radon/` and `/go/elements/` (the tool).
 - Values marked "(check)" in the safety tables, the SF₆ switchgear dates, the enhanced-weathering methodology line and the China antimony announcement links must be confirmed before any post is published.
 
 ### v0.45.1 — 21 November 2026: Larne post time corrected
