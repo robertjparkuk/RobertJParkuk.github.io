@@ -25,6 +25,14 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.48.0 — 21 November 2026: the poultry life cycle briefing
+
+*Robert, 21 November 2026: "publish it on the website with a blog". Post dated 25 November 2026 07:30, so it appears at the noon rebuild that day unless the date is changed.*
+
+- New post "Low-carbon meat, high-phosphorus problem: the poultry life cycle in Northern Ireland" (`_posts/2026-11-25-low-carbon-meat-high-phosphorus-problem-ni-poultry.md`), the accessible version of the briefing.
+- New folder `assets/poultry/2026-11/`: the 9-page branded briefing PDF, the social card and seven chart images.
+- The briefing was checked by two review panels on 21 November 2026 (fact-check and practitioners); open checks are listed on page 9 of the PDF and claims not yet checked are in italics in the post.
+
 ### v0.44.2 — 21 November 2026: summit lines in the two held policy posts
 
 *Scheduled run, 21 November 2026. Both posts stay `published: false` until Robert says go in chat.*
