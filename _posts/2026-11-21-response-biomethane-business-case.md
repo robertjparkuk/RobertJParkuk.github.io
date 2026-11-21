@@ -1,6 +1,6 @@
 ---
 title: "Response: will Northern Ireland's manufacturers buy biomethane? Only if it counts where they report"
-date: 2026-11-21 09:00:00 +0000
+date: 2026-11-21 02:30:00 +0000
 categories: [consultation-responses]
 permalink: /public-sector/consultation-responses/biomethane-business-case/
 tags: [Consultation response, Energy, Biomethane, Gas, Carbon accounting, UK ETS]
