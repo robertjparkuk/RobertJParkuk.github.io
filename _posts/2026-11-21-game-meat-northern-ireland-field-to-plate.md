@@ -1,6 +1,6 @@
 ---
 title: "Who’s a pheasant plucker? Game meat in Northern Ireland, from field to plate"
-date: 2026-11-22 12:00:00 +0000
+date: 2026-11-21 13:00:00 +0000
 image: /assets/game/2026-11/whos-a-pheasant-plucker-card.png
 tags: [Game, Venison, Food, Wildlife law, Carbon, Windsor Framework, Northern Ireland]
 description: "Game meat in Northern Ireland, field to plate: deer culls, licensing, lead shot, carbon, curing and the case against. As at 21 Nov 2026."
