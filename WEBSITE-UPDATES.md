@@ -25,6 +25,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.45.2 — 21 November 2026: agriculture post updated after the UK–EU summit
+
+*Scheduled run, 21 November 2026. On a branch for Robert's sign-off; not merged until he says so in chat.*
+
+- `_posts/2026-11-02-save-local-agriculture-stop-offshoring-our-food.md`: five-point check against official sources and body corrected. (1) SPS agreement concluded 20 November, aimed at 1 March 2028, not law yet (GOV.UK key documents). (2) UK intends to exempt EU/EEA/Swiss-origin goods, including fertiliser, from the UK CBAM from 1 January 2027, regulations not yet made; carbon markets due to link from 2028 (DESNZ explainer). (3) Ammonia strategy still unpublished; DAERA business plan commits an updated Ammonia Strategy to the Executive by 31 March 2027. (4) NAP 2027–2030 consultation closed 7 September, no outcome published; Executive approval targeted by 31 March 2027. (5) EUDR applies in full in NI from 30 December 2026, DAERA page updated 12 November. Fuller update note at the top replaces the short one, `last_modified_at` set, section heading changed to "about eighteen months", hero_lead rewritten, six official sources added. Dropped the "Strategic Ammonia Reduction Programme" name, which I could not find in any DAERA document; now "updated ammonia strategy", DAERA's own wording.
+
 ### v0.44.2 — 21 November 2026: summit lines in the two held policy posts
 
 *Scheduled run, 21 November 2026. Both posts stay `published: false` until Robert says go in chat.*
