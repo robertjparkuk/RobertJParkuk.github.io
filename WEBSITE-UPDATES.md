@@ -40,6 +40,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - New photo: `assets/photos/boundary-hedge-east-antrim.jpg`, Robert's own, cropped, web-sized (1600 px) and saved without location data.
 - Goes live when this branch is merged: the post is dated 21 November at noon and carries no `published: false`.
 
+### v0.43.1 — 21 November 2026: carbon deal post made easier to read
+
+- Carbon deal post: new title ("who pays, who gains, and what Northern Ireland loses"), a short-version box, four tool tiles, a dated timeline, two new charts (charge per tonne; share of NI emissions the deal touches), six photos from the site library, one card per type of business each with a link to the matching tool or dashboard, For and Against cards, and buttons to the CBAM Exposure Tracker and CBAM Desk.
+- The biomethane subsection now links to the full response page and is shorter. No facts or figures changed.
+- Timeline styles added to the stylesheet.
+
 ### v0.43.0 — 21 November 2026: biomethane response on the public sector pages
 
 - New consultation response page: "Will Northern Ireland's manufacturers buy biomethane? Only if it counts where they report" (response to DfE's Biomethane Business Case request for information, sent 19 November 2026), with the response as a branded PDF.
