@@ -56,6 +56,19 @@ Northern Ireland is consulting on a biomethane strategy until 15 December 2026, 
 
 Biomethane is not itself a CBAM good. It matters as the fuel behind one: the EU CBAM counts biogas as zero only with sustainability evidence, and HMRC's draft guidance for the UK CBAM is silent on gas taken from the grid. So a site in the UK ETS should not pay a premium for certified grid biomethane expecting a lower carbon bill until the rule exists. Stormont's proposal is a limited support scheme for biomethane used in industrial heat, aimed at 2028 to 2035: a preferred position, not an approved scheme. For digester operators, today's income is the renewables obligation for electricity; income from biomethane depends on that scheme. A farmer asked to supply slurry should ask who takes the digestate back, and on what terms.
 
+## What is bad for Northern Ireland
+
+The deal is presented as a gain for Northern Ireland, and on inputs it is. These are the costs.
+
+- **Dearer carbon, same power bill.** NI's larger industrial sites are in the UK ETS and would pay roughly £9 to £11 a tonne more at today's prices. NI power stations already pay the EU price, so there is no matching fall in electricity costs.
+- **The edge over Great Britain goes.** NI is the one part of the UK whose goods are outside the EU's border charge. From 2028 GB goods are due to join them.
+- **The food advantage narrows too.** The food and farm-goods agreement would give GB producers much of the access to the EU that NI has now.
+- **Freight costs rise.** The 50% carbon reduction on sailings between NI and GB is removed, in a region that ships almost everything.
+- **A year of charge and paperwork first.** Until regulations are made, NI firms buying across the border are importers for UK CBAM, with no customs declaration behind them. Goods of non-EU origin bought through Irish stockholders stay charged, and can meet both charges.
+- **Rules without a vote.** The UK follows EU carbon-market rules as they change. Stormont co-owns the UK ETS through DAERA, the Assembly has had to approve past changes, and this one falls in an election year.
+- **GB gets help that NI does not.** The GB electricity levy relief from April 2027 does not cover NI. The Executive is funded to design its own and has not yet done so. That comes from the Budget, not the deal, but it lands at the same time.
+- **Left unsolved.** Steel supply to NI is still to be negotiated. Biomethane from the grid still does not count. Farming, 31.4% of NI's emissions, is untouched, so the carbon budget gap stays.
+
 ## The case for and against
 
 **For.** A larger, more liquid carbon market. No border charge or data burden on UK–EU trade once both exemptions apply. For NI, the oddity of a UK tax on goods from across the border should go, and NI power and NI industry face the same carbon price.
