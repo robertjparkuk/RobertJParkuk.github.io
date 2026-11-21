@@ -42,7 +42,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 *Robert, 21 November 2026: panel-reviewed briefing on NI's two carbon borders.*
 
-- New post `the-2027-cbam-horizon`: where UK and EU CBAM stand, eight NI cases (including electricity), switching to GB supply 2027 onwards, a flow chart and a 12-question route checklist.
+- New post `the-2027-cbam-horizon`: where UK and EU CBAM stand, eight NI cases (including electricity), switching to GB supply 2027 onwards, a flow chart and a 12-question route checklist, and a note on biomethane and digestate.
 - New flow chart `assets/briefings/cbam-2027/flow-ni-import.svg` (builder `_scripts/briefings/cbam-2027/flow.py`, spec `flow.json`).
 - New PDF `assets/briefings/2026-11-the-2027-cbam-horizon-briefing.pdf` (6 pages; builder `build_pdf.py`).
 - Reviewed by a legal and sources panel and a trade-routes panel; corrections applied (exemption described as intended, not agreed; electricity wording per the SoS letter of 5 March 2026; downstream extension marked as a proposal).

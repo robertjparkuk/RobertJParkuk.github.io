@@ -65,6 +65,13 @@ Returned goods relief only covers Union goods reimported within three years in t
 ### 8. Electricity between GB, Northern Ireland and Ireland
 Electricity is not in UK CBAM. Power from GB into Ireland over the direct links (EWIC and Greenlink) is an EU CBAM import, with no threshold. GB to Northern Ireland over the Moyle interconnector is internal to the UK. The Commission's December 2025 package clarified that UK electricity exports to the EU "should not face a CBAM charge" at current carbon prices. The Government had left this out of a reply to the Lords and later said it regretted that ([Secretary of State's letter, 5 March 2026](https://committees.parliament.uk/publications/52219/documents/290167/default/)). So, for now, the route a GB unit takes into the all-island market makes little difference to its carbon charge. That depends on the carbon price gap staying small, and the ETS link should settle it from 2028.
 
+## Biomethane and digestate
+
+Biomethane is not a CBAM good in either regime. It matters in two ways.
+
+- **Digestate competes with imported fertiliser.** Anaerobic digestion leaves digestate, which replaces some mineral nitrogen. Any UK CBAM cost on imported fertiliser from 2027 improves the case for using digestate, and so for NI anaerobic digestion and biomethane. That case should be made in responses to the DfE and DAERA biomethane strategy consultation, which closes on 15 December 2026.
+- **Biomethane can lower embedded emissions.** In the EU ETS, biomass fuels that meet the sustainability criteria count as zero emissions. A plant making ammonia, steel or cement with biomethane could therefore report lower embedded emissions, and its customers would pay less CBAM. Whether grid-injected biomethane bought with certificates qualifies depends on the monitoring rules. **Not re-checked against the regulation.**
+
 ## Switching to GB supply, 2027 and after
 
 GB-made goods are UK origin and out of scope, so switching is the simplest way to avoid UK CBAM. Three things limit it: what GB actually makes, freight, and how long the advantage lasts.
