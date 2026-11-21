@@ -25,6 +25,91 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.44.2 — 21 November 2026: summit lines in the two held policy posts
+
+*Scheduled run, 21 November 2026. Both posts stay `published: false` until Robert says go in chat.*
+
+- "The Irish Sea carbon bill": summit lines checked against the Joint Statement of 20 November 2026 (Council ST 16174/26, paras 48–50) and the DESNZ linking explainer; facts-checked date, permanence bullet and recommendation 3 updated; Lovguiden mirror replaced with the Council and GOV.UK copies; ETS2 wording no longer implies Ireland has an exemption.
+- "Carbon borders as industrial policy": linking lines updated (argument in brief, checked date, then-and-now intro and row, Government linking cell, who-decides row, EU member states row, NI bullet); "Both CBAMs apply as planned until each side legislates" added; "exempt" wording removed where no regulations are made; summit sources added. Body about 5,070 words (over 4,000, as Robert asked).
+
+### v0.44.1 — 21 November 2026: hedge post published at once
+
+*Robert, 21 November 2026: "merge and publish".*
+
+- "Who cuts the hedge?" post time moved from noon to 06:30 so it publishes on merge instead of waiting for the noon rebuild.
+
+### v0.45.0 — 21 November 2026: SPS dashboard and post layout fix
+
+- New dashboard `tools/dashboards/ni-sps-food-trade.html` (built by `_scripts/dashboards/build_sps.py`; CSVs in `assets/dashboards/sps-deal/`; thumbnail `assets/dashboards/ni-sps-food-trade.jpg`), listed on /dashboards/ and linked from the SPS post.
+
+- SPS deal post: the "Gains" and "Losses and risks" cards were not closed (indented closing tags), so the rest of the article rendered in a narrow right-hand column. Closing tags unindented, with a blank line after each list.
+
+### v0.44.0 — 21 November 2026: who cuts the hedge?
+
+*Requested by Robert, 21 November 2026 ("I'm happy go ahead").*
+
+- New post: "Who cuts the hedge? Roads, verges and ditches in Northern Ireland" (`_posts/2026-11-21-who-cuts-the-hedge-northern-ireland.md`). Who is responsible for roadside hedges, verges and ditches, who pays, who regulates, and where the law is silent. General information, not legal advice.
+- New briefing: `assets/briefings/2026-11-who-cuts-the-hedge-briefing.pdf` (3 pages, house briefing layout, hyperlinked sources).
+- New photo: `assets/photos/boundary-hedge-east-antrim.jpg`, Robert's own, cropped, web-sized (1600 px) and saved without location data.
+- Goes live when this branch is merged: the post is dated 21 November at noon and carries no `published: false`.
+
+### v0.44.0 — 21 November 2026: SPS deal post and full briefing
+
+- New post, *The SPS deal: what Northern Ireland gains, what it gives away* (`_posts/2026-11-21-the-sps-deal-what-it-means-for-northern-ireland.md`), dated 07:00 so it publishes on merge. Covers the 20 November UK–EU SPS agreement for NI, with DAERA and NAEI figures on farm output, food processing, emissions, carbon intensity, sales by destination and inputs by origin, and an explainer on 1990 EU intervention stores.
+- Full briefing PDF (19 pages, A4): `assets/briefings/2026-11-the-sps-deal-ni-briefing.pdf`, built by `_scripts/briefings/sps-deal/build_pdf.py` from `briefing.md` (the Claude Doc export).
+- Five charts in `assets/briefings/sps-deal/`, built by `_scripts/briefings/sps-deal/charts.py` from `data.json`.
+- Short link `/go/sps/` (LinkedIn UTM tags).
+- Corrected after two role-played review panels (21 November): NI v UK economy shares now like for like (DAERA Statistical Review 2024); 2024 farm output revised to DAERA's August 2026 figures; GB described as losing most SPS checks but still facing customs; pigmeat claim removed; carbon intensity caveats on beef/dairy split and prices; projection given as a range; intervention-stores history tightened; legal points corrected (applicability motion, not Stormont Brake; CBAM exemption as planned, not law; GB–NI pork under the UK Internal Market Scheme); the 'vassal state' wording made neutral. Acronyms spelt out at first use, with a 'Terms used' box in the post and the briefing.
+
+### v0.43.2 — 21 November 2026: carbon deal post, price gap and party positions corrected
+
+- Carbon deal post: the carbon price gap corrected from "£9 to £11 a tonne" to about £9 a tonne of CO2 at the 20 November exchange rate, stated as conditional on the UK price rising to the EU level. Party positions now dated and sourced (Conservatives, 1 April 2026; government ending Carbon Price Support from April 2028, HCWS1519). Correction note added.
+
+### v0.43.1 — 21 November 2026: carbon deal post made easier to read
+
+- Carbon deal post: new title ("who pays, who gains, and what Northern Ireland loses"), a short-version box, four tool tiles, a dated timeline, two new charts (charge per tonne; share of NI emissions the deal touches), six photos from the site library, one card per type of business each with a link to the matching tool or dashboard, For and Against cards, and buttons to the CBAM Exposure Tracker and CBAM Desk.
+- The biomethane subsection now links to the full response page and is shorter. No facts or figures changed.
+- Timeline styles added to the stylesheet.
+
+### v0.43.0 — 21 November 2026: biomethane response on the public sector pages
+
+- New consultation response page: "Will Northern Ireland's manufacturers buy biomethane? Only if it counts where they report" (response to DfE's Biomethane Business Case request for information, sent 19 November 2026), with the response as a branded PDF.
+- The page carries an update dated 21 November 2026: a correction on the UK ETS Authority's consideration of grid biomethane, and the effect of the UK–EU summit.
+- Consultation responses index: entries can now show "closes" for a consultation that is still open; lead sentence amended to match.
+
+### v0.42.3 — 21 November 2026: biomethane response in the carbon deal post
+
+- Carbon deal post: new subsection "What I have said to Stormont about it", summarising Robert's response to DfE's biomethane business case request for information (19 November 2026) and his position for the strategy consultation (closes 15 December 2026).
+
+### v0.42.2 — 21 November 2026: what is bad for Northern Ireland
+
+- Carbon deal post: new section "What is bad for Northern Ireland" (carbon cost without a fall in power cost, loss of the edge over GB on the EU border charge and on food, ferry costs, a year of charge and paperwork, rule-taking, the GB-only electricity relief, and what is left unsolved).
+- Summit post: new paragraph "Where Northern Ireland loses", linking to it. The PDF is unchanged.
+
+### v0.42.1 — 21 November 2026: summit sweep, second pass
+
+- CBAM Exposure Tracker: both comparison tables now give the post-summit position (intended UK exemption for EU, EEA and Swiss-origin goods from 1 January 2027; EU exemption expected 1 January 2028; neither is law). Corrects "approved by both Houses".
+- CBAM Desk: worked example notes the position for EU-origin coil in 2027.
+- ESG regime tracker: ETS linking and NI electricity rows updated; the secondary source replaced with the DESNZ explainer.
+- NI Regulatory Horizon: summit row closed as held; four rows added (H069 to H072) for the intended UK exemption, the link, the SPS date and the first joint surrender. Page and CSV rebuilt.
+- EU law and Windsor Framework dashboard: summit tile, timeline entry and the agri-food and emissions trading rows updated in the page and in `_scripts/dashboards/eu_build.py`.
+- `/go/summit/` now points to the summit post.
+- The two held posts (Irish Sea carbon bill; carbon borders as industrial policy) have their summit lines updated and stay unpublished.
+
+### v0.42.0 — 21 November 2026: UK–EU summit briefing post and site sweep
+
+- New post `_posts/2026-11-21-the-second-uk-eu-summit-what-was-agreed-and-what-it-will-take.md` with briefing PDF `assets/briefings/2026-11-the-second-uk-eu-summit-briefing.pdf` (4 pages): the summit outcome in technical and political terms. Political statements are from press reports and labelled as such.
+- Carbon deal post extended (biomethane, electricity and the EU CBAM, chemicals, glass, ceramics and pharmaceuticals) and corrected after four rounds of AI-assisted review; dated to publish on merge.
+- Sweep of pre-summit wording: home-page slides, CBAM Desk, UK CBAM countdown, CBAM Exposure Tracker, ESG regime tracker, NI Regulatory Horizon (JSON, CSV and page), policy series page, and dated update notes on seven earlier posts and two Focus On pages. Earlier posts are otherwise left as published.
+- Not changed: the two held posts (Irish Sea carbon bill, carbon borders as industrial policy) still carry pre-summit lines and stay unpublished.
+
+### v0.41.1 — 21 November 2026: UK–EU summit outcome post
+
+- New post `_posts/2026-11-21-the-carbon-deal-what-changes-for-northern-ireland-and-great-britain.md`: what the 20 November 2026 summit agreed on linking the UK and EU emissions trading schemes, the then / now / 2027 / 2028 position for NI and GB, impacts by type of business, the case for and against, and five actions. No prices or offers (launch gates unchanged).
+- Key source: DESNZ linking explainer (20 November 2026): the UK "intends to exempt goods originating in the EU" from the UK CBAM from 1 January 2027; the EU exemption for UK goods is expected from 1 January 2028. Neither is law; the post says so throughout.
+- New short link `/go/deal/` to the post, for LinkedIn.
+- Removed the two pre-written summit drafts (`...-cbam-bill-agreed.md` and `...-cbam-bill-no-deal.md`, both `published: false`). Both are superseded, and the "agreed" draft said section 156 regulations need both Houses (the Act says the Commons only) and that EU goods stay charged in 2027.
+- Not changed in this release, and now out of date until updated: the home-page hero, CBAM Desk line 114, the CBAM Exposure Tracker and UK CBAM Countdown callouts, the ESG tracker ETS rows, the Regulatory Horizon, Twelve dates, the fertiliser piece and the two held policy posts.
 ### v0.41.1 — 20 November 2026: Consultations Monitor weekly refresh
 
 - `data/dashboards/ni-consultations/consultations.json`: 17 consultations added (C441–C457; 455 in all). Four are high relevance (DfI abandonment of footway at Tobar Fold, Cullybackey, and of part of Railway Road car park, Derry, both close 1 Jan; DfI loading bays in Magherafelt and Omagh, closes 14 Dec; DfI Derry parking and waiting restrictions, closes 11 Dec), seven medium (DfI Derry taxi stand; DAERA invasive species pathway action plans; DfC local government legislation call for evidence; Utility Regulator firm access, now closing 22 Jan, and Heron Storage licence; Derry & Strabane HOU 13 HMO policy, not yet open; DfT maritime fuel regulation), six low.

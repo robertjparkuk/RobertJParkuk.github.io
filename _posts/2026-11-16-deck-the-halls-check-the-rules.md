@@ -10,6 +10,8 @@ hero_lead: "Loose plastic glitter is restricted in Larne and legal in Stranraer.
 hero_until: 2026-12-24
 ---
 
+*Update, 21 November 2026: the food and farm-goods (SPS) agreement was concluded at the UK–EU summit on 20 November and is aimed at 1 March 2028, not 2027. It is not yet law. This piece is as published; see [what the summit agreed]({% post_url 2026-11-21-the-second-uk-eu-summit-what-was-agreed-and-what-it-will-take %}).*
+
 <figure class="page-photo garland"><img src="{{ '/assets/briefings/christmas-decorations/bunting.svg' | relative_url }}" alt="A garland of red and black baubles, each bearing the Robert J. Park split-circle mark, with sprigs of holly" loading="lazy"></figure>
 
 *Status as at 16 November 2026. Every regulatory claim carries a date and a source, listed at the end. Where I could not check something against an official source, or where a good story turned out to be a legend, I say so. Not legal, tax or customs advice.*

@@ -2,7 +2,7 @@
 layout: page
 title: Policy series
 permalink: /policy-series/
-description: Seventeen pieces on where environmental, carbon, energy and waste rules stand in Northern Ireland, who decides them, where the parties stand, and what firms and councils should do. Fifteen published; two more to follow after the 20 November UK–EU summit.
+description: Seventeen pieces on where environmental, carbon, energy and waste rules stand in Northern Ireland, who decides them, where the parties stand, and what firms and councils should do. Fifteen published; two more to follow shortly, now that the 20 November UK–EU summit has concluded.
 lead: Where the rules stand in Northern Ireland, who decides them, where the parties stand, and what to do about it. Fifteen pieces are live; two more follow once their facts are rechecked.
 ---
 
@@ -29,12 +29,12 @@ The pieces set out the arguments on each side. The recommendations are mine. The
 </ul>
 {% endfor %}
 {% else %}
-<p>Thirteen pieces published on 2 November 2026 and two more on 9 November; the last two follow after the 20 November UK–EU summit.</p>
+<p>Thirteen pieces published on 2 November 2026 and two more on 9 November; the last two follow shortly, now that the 20 November UK–EU summit has concluded.</p>
 {% endif %}
 
 ## What is coming
 
-Six themes, seventeen pieces, fifteen of them live and two to follow after the 20 November UK–EU summit: reporting and finance; energy; carbon pricing and trade; waste and resources; chemicals, land and water; and climate law. Each piece is checked against its sources in the week before it publishes, and updated afterwards when the rules move.
+Six themes, seventeen pieces, fifteen of them live and two to follow shortly, now that the 20 November UK–EU summit has concluded: reporting and finance; energy; carbon pricing and trade; waste and resources; chemicals, land and water; and climate law. Each piece is checked against its sources in the week before it publishes, and updated afterwards when the rules move.
 
 ## Use them
 

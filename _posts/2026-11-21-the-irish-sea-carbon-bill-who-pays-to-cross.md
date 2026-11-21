@@ -1,7 +1,7 @@
 ---
 title: "The Irish Sea carbon bill: who pays to cross"
 date: 2026-11-21 12:00:00 +0000
-published: false   # held by Robert, 1 Nov 2026 sign-off; Robert 16 Nov 2026: publish 21-23 Nov once the 20 Nov summit lines are updated
+published: false   # held by Robert, 1 Nov 2026 sign-off; Robert 16 Nov 2026: publish 21-23 Nov once the 20 Nov summit lines are updated; summit lines updated 21 Nov 2026 from the Joint Statement and DESNZ explainer, awaiting Robert's go-ahead
 tags: ["Carbon", "CBAM", "Trade", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Carbon pricing and trade"
@@ -23,11 +23,11 @@ hero_until: 2026-12-02T07:30:00Z
 
 On 10 March 2026 the Northern Ireland Assembly voted 49 to 30 to approve the order putting domestic shipping into the UK Emissions Trading Scheme (UK ETS). DAERA Minister Andrew Muir moved the motion. Two days later the Lords rejected a fatal motion by 134 votes to 26. In that debate Lord Empey (UUP) said NI parties had been misled, and Lord Dodds (DUP) asked why Scottish island ferries are exempt and Northern Ireland is not. The order came into force on 1 July 2026 as SI 2026/392.
 
-Freight carbon costs fall hardest on a region that depends on sea links. Northern Ireland moves almost everything by ferry and HGV, and it sits across two carbon regimes. The 50% discount on GB–NI voyages is temporary by design. The UK ETS Authority says it lasts only while Irish Sea carbon pricing differs, and GB–NI voyages move to full surrender if international voyages join the UK ETS (Nov 2025). The UK and EU aim to agree ETS linking at a summit on 20 November 2026.
+Freight carbon costs fall hardest on a region that depends on sea links. Northern Ireland moves almost everything by ferry and HGV, and it sits across two carbon regimes. The 50% discount on GB–NI voyages is temporary by design. The UK ETS Authority says it lasts only while Irish Sea carbon pricing differs, and GB–NI voyages move to full surrender if international voyages join the UK ETS (Nov 2025). The UK and EU agreed on 20 November 2026 to link their emissions trading schemes, aiming for 1 January 2028; under the linking terms the UK ETS takes in half of international voyages from that date and the 50% reduction for GB–NI voyages is removed ([DESNZ explainer, 20 November 2026](https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer)). Both sides say they aim to apply the agreement from 2028 ([Joint Statement, para 49](https://data.consilium.europa.eu/doc/document/ST-16174-2026-INIT/en/pdf)). The treaty is not yet concluded and the legal text is not published, so none of this is law yet.
 
 The real choice for firms is whether to treat today's small surcharge as the start of a rising cost line. The author argues they should, and that the money raised should come back to NI ports and fleets.
 
-*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026.*
+*This piece sets out the arguments on each side; the recommendations are the author's. Facts checked to 30 October 2026; summit lines updated on 21 November 2026 from the joint statement of 20 November 2026.*
 
 ## The lifecycle at a glance
 
@@ -40,13 +40,13 @@ A trailer from GB to Larne pays full carbon price while its ferry sits at either
 | Rule or instrument               | 2023                                          | Now (with date)                                                                                                                                                                                                                                                                                              | What changed and why                                                                                                                         |
 |----------------------------------|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | UK ETS maritime                  | Under consultation; shipping not covered      | In force 1 Jul 2026 for ships of 5,000 GT and over; covers CO₂, methane and N₂O. GB–NI voyages get a 50% deduction; berth time counts in full. 2026 emissions reported by 31 Mar 2027 and surrendered by 30 Apr 2028                                                                                         | Brought in to match the EU ETS and keep NI goods clear of EU CBAM. Scottish island ferries exempt. Threshold and exemptions reviewed in 2028 |
-| UK ETS international voyages     | Not proposed                                  | Proposed from 2028, subject to EU talks (Nov 2025). ETS linking targeted for the UK–EU summit on 20 Nov 2026 (20 Oct 2026)                                                                                                                                                                                   | If international voyages join, GB–NI voyages face full surrender (Authority, Nov 2025)                                                       |
+| UK ETS international voyages     | Not proposed                                  | Agreed in the linking terms of 20 Nov 2026: half of international voyages from 1 January 2028, subject to the treaty being concluded and UK ETS legislation (DESNZ explainer)                                                                                                                                                                                   | The 50% reduction for GB–NI voyages is removed under the linking terms (DESNZ explainer, 20 Nov 2026)                                                       |
 | EU ETS maritime                  | Agreed; due 2024                              | 70% of 2025 emissions surrendered in 2026, 100% from 2027. Methane and N₂O covered from 2026. EU–UK voyages count at 50%                                                                                                                                                                                     | Fit for 55 phase-in. Already applies to Ireland–GB routes                                                                                    |
 | FuelEU Maritime                  | Adopted                                       | In force since 1 Jan 2025: 2% cut in GHG intensity, 6% by 2030, measured well-to-wake                                                                                                                                                                                                                        | Pushes operators to cleaner fuels; shore power at major EU ports from 2030                                                                   |
 | Zero-emission HGV phase-out      | 2035 (up to 26t) and 2040 (all), set May 2022 | Same dates. DfT consulted on how to regulate them (6 Jan–17 Mar 2026). Conservatives pledged to scrap them (27 Aug 2026)                                                                                                                                                                                     | Policy now depends on who governs                                                                                                            |
 | EU ETS2 (road and heating fuels) | Due 2027                                      | Delayed to 2028. Ireland seeks an exemption because it has a carbon tax (Sep 2026)                                                                                                                                                                                                                           | Cost-of-living pressure. Does not apply in NI                                                                                                |
 | Fuel duty and HGV VED            | Duty frozen with 5p cut                       | September rise postponed; 52.95p a litre held to end of 2026 (20 May 2026). HGV VED £1 for renewals 1 Jul 2026 to 30 Jun 2027 (17 Jun 2026). Budget (28 Oct 2026): 5p cut extended to 30 Jun 2027; pre-March 2022 rates from 1 Jul 2027, then RPI uprating. HGV VED and HGV levy rise by RPI from 1 Apr 2027 | Response to fuel price spikes. The Budget (28 Oct 2026) set an end date for the 2022 cut                                                     |
-| UK–EU SPS agreement              | Not on the table                              | SPS and ETS linking targeted for the 20 Nov 2026 summit (Commission, 20 Oct 2026)                                                                                                                                                                                                                            | Agreed at the May 2025 reset. NI already follows EU SPS rules                                                                                |
+| UK–EU SPS agreement              | Not on the table                              | Negotiations concluded at the 20 Nov 2026 summit; aimed at 1 March 2028 (Joint Statement, para 48). Not yet law                                                                                                                                                                                                                            | Agreed at the May 2025 reset. NI already follows EU SPS rules                                                                                |
 
 ## Where the parties and governments stand (October 2026)
 
@@ -71,7 +71,7 @@ The split is between those who see maritime carbon pricing as protection against
 
 - **Equal treatment.** Unionists compare NI with Scottish islands. The government compares NI with Ireland–GB routes, which pay EU ETS at 50%.
 
-- **Permanence.** Labour and the Lib Dems accept a path to full pricing. The Conservatives and Reform would scrap the whole scheme.
+- **Permanence.** The linking terms agreed on 20 November 2026 would end the 50% deduction from 1 January 2028, if the treaty and the UK ETS changes are made in time. Labour and the Lib Dems accept a path to full pricing. The Conservatives and Reform would scrap the whole scheme.
 
 - **Revenue.** No proceeds are earmarked, and nobody has committed money to NI ports.
 
@@ -100,7 +100,7 @@ The UK ETS is run jointly by four governments. EU rules reach NI through the Win
 
 - **Port growth against local air (E against S).** Belfast Harbour is completing a £90m cruise terminal (19 May 2026). Berth time is charged in full under the UK ETS, so shore power helps both the carbon bill and local air.
 
-- **Cross-border fuel prices (S against E).** ETS2 will raise road fuel costs in Ireland from 2028 unless Dublin's exemption holds. NI is outside ETS2, which may shift where fleets refuel.
+- **Cross-border fuel prices (S against E).** ETS2 will raise road fuel costs in Ireland from 2028 unless Dublin wins the exemption it is seeking. NI is outside ETS2, which may shift where fleets refuel.
 
 ## What it means for Northern Ireland firms and councils
 
@@ -138,7 +138,7 @@ The UK ETS is run jointly by four governments. EU rules reach NI through the Win
 
 2.  **DESNZ and NIO: publish route-level cost estimates for GB–NI freight before the 2028 review.** The 1% and 6% figures cannot both be right, and ministers have also said ticket prices would rise by a "low single digit" percentage (written answer HL15805, 7 Apr 2026).
 
-3.  **UK Government: set out how and when the NI deduction ends under any EU link.** Firms need a known date.
+3.  **UK Government: put the end date of the NI deduction into law, and say early if it slips.** The linking terms of 20 November 2026 remove it from 1 January 2028, but the legal text is not published and the treaty is not concluded. Firms need a known date.
 
 4.  **UK ETS Authority: tighten default methane-slip values for LNG ferries.** Measured slip runs about twice the assumed rate.
 
@@ -172,7 +172,9 @@ The UK ETS is run jointly by four governments. EU rules reach NI through the Win
 
 - [European Commission: maritime in EU ETS FAQ](https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-shipping-sector/faq-maritime-transport-eu-emissions-trading-system-ets_en)
 
-- [European Commission statement on the 20 Nov 2026 summit package, via Lovguiden (20 Oct 2026)](https://www.lovguiden.dk/en/det-offentlige/europa-kommissionen-press-corner/2026-10-20-efovi-eu-og-uk-sigter-mod-pakke-om-sps-kvotehandel-og-ungdom)
+- [Council of the EU: Joint Statement, EU–UK Summit, 20 November 2026 (ST 16174/26)](https://data.consilium.europa.eu/doc/document/ST-16174-2026-INIT/en/pdf); [GOV.UK copy](https://assets.publishing.service.gov.uk/media/6b003dbde43662b58d107613/EU-UK_Summit_Joint_Statement_2026.docx.pdf)
+
+- [DESNZ: UK–EU ETS linking agreement explainer (20 November 2026)](https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer)
 
 - [Stena Line Freight: UK ETS surcharge notice (Jul 2026)](https://stenalinefreight.com/app/uploads/2026/06/uk-ets-july-2026-7.pdf)
 

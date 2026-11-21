@@ -6,6 +6,8 @@ image: /assets/briefings/friends-with-benefits/friends-with-benefits-card.png
 description: "Voice, but no vote. Ahead of Friday's UK–EU summit: why mutual recognition beats dynamic alignment, what the trade data shows, and what it means for Northern Ireland."
 ---
 
+*Update, 21 November 2026: the food and farm-goods (SPS) agreement was concluded at the UK–EU summit on 20 November and is aimed at 1 March 2028, not 2027. It is not yet law. This piece is as published; see [what the summit agreed]({% post_url 2026-11-21-the-second-uk-eu-summit-what-was-agreed-and-what-it-will-take %}).*
+
 <figure class="page-photo"><img src="{{ '/assets/photos/customs-declaration.jpg' | relative_url }}" alt="A customs declaration form being filled in by hand" loading="lazy"><figcaption>Some food consignments have been refused for the wrong colour of ink. The deal ends that paperwork, and hands the EU the pen on the rules.</figcaption></figure>
 
 *Status as at 16 November 2026. Friday's summit has not happened yet, and no agreement text has been published. Not legal, tax or customs advice.*

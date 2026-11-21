@@ -120,8 +120,8 @@ GB = [
  (('Plant health import rules', 'https://www.niassembly.gov.uk/assembly-business/brexit-beyond-newsletters/issue-222--07-september-2026/'), 'GB follows the EU', 'GB rules on tomatoes, peppers and ginger aligned with the EU so goods can still go to NI (SI 2026/458)', 'Debated 2 Sep 2026'),
  (('Chemical labelling (CLP)', 'https://consultations.hse.gov.uk/hse/chemicals-legislative-reform-proposals/results/responsereport-chemicalslegislativereformproposals.pdf'), 'GB follows the EU', 'HSE to change GB CLP so one label works UK-wide, in effect following EU changes', 'Response Feb 2026; law to follow'),
  (('Batteries', 'https://www.niassembly.gov.uk/assembly-business/brexit-beyond-newsletters/issue-224--21-september-2026/'), 'GB follows the EU', 'EU rules in NI; UK to consult on an aligned UK-wide regime', 'NI enforcement approved 15 Sep 2026'),
- (('Agri-food (SPS) agreement', 'https://www.niassembly.gov.uk/assembly-business/brexit-beyond-newsletters/issue-216--01-june-2026/'), 'UK–EU agreement', 'GB would follow EU food and plant-health rules as they change, removing most GB-to-NI checks', 'Not yet agreed. Draft agreement before the Council\'s UK working party on 6 Nov and expected at the 20 Nov summit; negotiations reported as completed on 3 Nov, with implementation reported for early 2028 (as reported in the NI Assembly\'s Brexit and Beyond, 9 Nov)'),
- (('Emissions trading link', 'https://www.consilium.europa.eu/en/press/press-releases/2025/11/13/eu-uk-relations-council-greenlights-negotiations-on-agri-food-deal-and-linking-emissions-trading-systems/'), 'UK–EU agreement', 'Linking UK and EU ETS, with each side exempt from the other\'s CBAM. A draft agreement was before the Council\'s UK working party on 6 Nov; conclusion is expected to be announced at the summit (as reported by Euronews, 6 Nov). Not yet confirmed. An agreement would start, not finish, the process: the UK needs regulations approved by Parliament and the EU a delegated act adding the UK to Annex III of Regulation (EU) 2023/956 before either CBAM exemption applies. Plan for both charges in 2027', 'UK–EU summit 20 Nov 2026'),
+ (('Agri-food (SPS) agreement', 'https://www.niassembly.gov.uk/assembly-business/brexit-beyond-newsletters/issue-216--01-june-2026/'), 'UK–EU agreement', 'GB would follow EU food and plant-health rules as they change, removing most GB-to-NI checks', 'Negotiations concluded at the summit of 20 Nov 2026; aimed at 1 March 2028 (Joint Statement, paragraph 48). Text not published; needs signature, ratification and legislation'),
+ (('Emissions trading link', 'https://www.consilium.europa.eu/en/press/press-releases/2025/11/13/eu-uk-relations-council-greenlights-negotiations-on-agri-food-deal-and-linking-emissions-trading-systems/'), 'UK–EU agreement', 'Linking UK and EU ETS, with each side exempt from the other\'s CBAM. Negotiations concluded at the summit of 20 Nov 2026, aimed at 1 January 2028. The UK says it intends to exempt goods of EU, EEA and Swiss origin from UK CBAM from 1 January 2027; the EU exemption for UK goods is expected from 1 January 2028. Each needs its own legal act, so plan on UK CBAM applying until regulations are made', 'Aimed at 1 Jan 2028'),
  (('REACH', 'https://www.hse.gov.uk/reach/northern-ireland.htm'), 'Two regimes', 'EU REACH applies in NI, UK REACH in GB. A GB firm cannot hold an EU REACH registration itself: it needs an EU- or NI-based registrant or only representative', 'Ongoing'),
  (('F-gas', 'https://www.daera-ni.gov.uk/articles/fluorinated-greenhouse-gases'), 'Two regimes', 'GB and NI quotas diverge; GB suppliers to NI must meet EU bans', 'Gap widens 1 Jan 2027'),
  (('Machinery and tumble dryers', 'https://commonsbusiness.parliament.uk/Document/106373/Pdf'), 'Two regimes', 'GB continues to recognise CE marking for machinery, so EU-compliant machinery can still be sold in GB. New GB ecodesign rules ban vented and convector tumble dryers from January 2027', 'NI applies the EU Machinery Regulation from 20 Jan 2027'),
@@ -146,7 +146,7 @@ CONS = [
 
 # 5. Coming up -------------------------------------------------------------------------
 NEXT = [  # date, jurisdiction, what
- ('20 Nov 2026', 'UK–EU', 'Summit: agri-food (SPS), emissions trading and electricity on the agenda. An emissions trading agreement would not by itself remove either CBAM: each side needs its own legal act first'),
+ ('20 Nov 2026', 'UK–EU', 'Summit held: food and farm-goods (SPS) and carbon-market agreements concluded, aimed at 1 March 2028 and 1 January 2028. Neither is law, and neither CBAM changes until each side makes its own legal act'),
  ('11 Dec 2026', 'EU', 'Environment Council: the Irish Presidency aims for a general approach on the EU ETS review, which would slow the CBAM phase-in to 2038'),
  ('21 Nov 2026', 'NI', 'Plastic waste exports to non-OECD countries banned (Waste Shipments Regulation)'),
  ('9 Dec 2026', 'NI', 'Product Liability Directive transposition date'),
@@ -161,6 +161,7 @@ NEXT = [  # date, jurisdiction, what
 ]
 
 CHANGES = [  # newest first: date, what changed
+ ('21 Nov 2026', 'Updated for the UK–EU summit of 20 November 2026: the agri-food and emissions trading rows, the summit tile and the timeline now give the outcome. Neither agreement is law yet.'),
  ('18 Nov 2026', 'Correction: the GB zero rate of VAT on household electricity now ends on 30 June 2027, not 31 March, after Budget 2026 (para 6.210) extended it to 1 July 2027.'),
  ('13 Nov 2026', 'Review corrections of 11 November merged with this week\'s check. HMRC\'s request for feedback on its CBAM monitoring, reporting and verification guidance closes today, 13 November, so it is not in the open list; the refinery products consultation (closes 20 Jan 2027) is.'),
  ('13 Nov 2026', 'Reviewed changes: added the 10 November Joint Committee, which adopted decisions adding the EU Forced Labour Regulation and limited AI Act provisions to the Windsor Framework and agreed a declaration on parcel handling fees. Forced labour row updated from pending to adopted; its NI start date, 14 December 2027, added to Coming up. Added the European Commission consultation on ecodesign repairability requirements (closes 9 Feb 2027).'),
@@ -252,7 +253,7 @@ _days = lambda d: (_dt.datetime.strptime(d, '%d %b %Y') - _asat).days
 _open_ni = sum(1 for c in CONS if plain(c[3]).split(':')[0] in ('Yes', 'Partly', 'Likely'))
 tiles = [
  tile('Days to the deforestation rules', str(_days('30 Dec 2026')), '30 Dec 2026: large and medium firms, and all wood products', 'k-bad'),
- tile('Days to the UK–EU summit', str(_days('20 Nov 2026')), '20 Nov 2026: agri-food (SPS), emissions trading and electricity on the agenda'),
+ tile('UK–EU summit held', '20 Nov', 'Food and farm-goods and carbon-market agreements concluded; neither is law yet'),
  tile('Days to UK CBAM', str(_days('1 Jan 2027')), '1 Jan 2027: UK carbon border levy starts, covering NI too'),
  tile('Consultations you can act on', f'{_open_ni} of {len(CONS)}', 'Open now, where the EU law applies in NI'),
 ]
