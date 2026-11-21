@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NI food, farming and the SPS deal: the numbers</title>
+<meta name="description" content="Where Northern Ireland food and drink processors sell and buy, what NI farms produce and emit, carbon intensity by industry, and the trend to 2035, for the UK–EU SPS deal of 20 November 2026. By Robert J. Park.">
+<link rel="canonical" href="https://robertjpark.co.uk/tools/dashboards/ni-sps-food-trade.html">
+<meta property="og:title" content="NI food, farming and the SPS deal: the numbers">
+<meta property="og:description" content="Where Northern Ireland food and drink processors sell and buy, what NI farms produce and emit, carbon intensity by industry, and the trend to 2035, for the UK–EU SPS deal of 20 November 2026. By Robert J. Park.">
+<meta property="og:url" content="https://robertjpark.co.uk/tools/dashboards/ni-sps-food-trade.html">
+<meta property="og:image" content="https://robertjpark.co.uk/assets/dashboards/ni-sps-food-trade.jpg">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+/* Site wrapper and tokens. The dashboard body below keeps its original classes; these tokens map them to the Robert J. Park brand. */
+:root{
+  --color-bg:#FFFFFF; --color-fg:#1B1817; --color-fg-muted:#5F5856; --color-panel:#F6F4F2; --color-border-line:#DDD6D2;
+  --color-ok:#2F7A3B; --color-warn:#B5650F; --color-bad:#B3121B;
+  --cds-chart-grid:#ECE7E4; --cds-chart-muted:#5E6E80; --cds-chart-reference:#8A817D; --cds-chart-status-critical:#B3121B;
+  --font-anthropic-serif:'Fraunces',Georgia,'Times New Roman',serif; --font-anthropic-sans:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+  --cds-font-size-caption:14px; --cds-font-size-body:17px; --cds-font-size-heading:20px; --cds-font-size-title:clamp(28px,4vw,40px); --cds-font-weight-medium:600;
+  --cds-gap-xs:4px; --cds-gap-sm:8px; --cds-gap-md:14px; --cds-gap-lg:20px; --cds-gap-xl:36px;
+  --cds-pad-xs:5px; --cds-pad-sm:8px; --cds-pad-md:12px; --cds-pad-lg:16px; --cds-radius:8px; --cds-dur-slow:.3s;
+  --red:#B3121B; color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --color-bg:#171413; --color-fg:#F1ECE9; --color-fg-muted:#B3AAA6; --color-panel:#221E1D; --color-border-line:#3A3332;
+  --color-ok:#7FC48A; --color-warn:#E9A55A; --color-bad:#F0787C;
+  --cds-chart-grid:#2E2827; --cds-chart-muted:#93A6BA; --cds-chart-reference:#8A817D; --cds-chart-status-critical:#F0787C; --red:#E5484D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --color-bg:#171413; --color-fg:#F1ECE9; --color-fg-muted:#B3AAA6; --color-panel:#221E1D; --color-border-line:#3A3332;
+  --color-ok:#7FC48A; --color-warn:#E9A55A; --color-bad:#F0787C;
+  --cds-chart-grid:#2E2827; --cds-chart-muted:#93A6BA; --cds-chart-reference:#8A817D; --cds-chart-status-critical:#F0787C; --red:#E5484D; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-anthropic-sans);font-size:16px;line-height:1.45;
+  padding:24px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+.site-top{max-width:72rem;margin:0 auto 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-fg-muted);text-decoration:none}
+.brand b{color:var(--red)}
+.site-top nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+.site-top nav a{color:var(--color-fg-muted);text-decoration:none}.site-top nav a:hover{color:var(--red)}
+a{color:var(--red)}
+.k-h2{font-family:var(--font-anthropic-serif);font-weight:600}
+.dash-skeleton{color:var(--color-fg-muted)}
+.src-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:var(--cds-gap-md)}
+.src-list .k-card p{margin:var(--cds-gap-xs) 0;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.src-list ul{margin:var(--cds-gap-xs) 0 var(--cds-gap-sm);padding-left:1.1em;font-size:var(--cds-font-size-caption)}
+.src-list button{font:inherit;font-size:13px;padding:5px 10px;border-radius:6px;border:1px solid var(--color-border-line);background:var(--color-bg);color:var(--color-fg);cursor:pointer}
+.src-list button:hover{border-color:var(--red)}
+.site-foot{max-width:72rem;margin:var(--cds-gap-xl) auto 0;border-top:1px solid var(--color-border-line);padding-top:14px;font-size:14px;color:var(--color-fg-muted)}
+@media print{.site-top nav,.src-list button{display:none}}
+</style>
+<style>.k-wrap { max-width: 72rem; margin-inline: auto; font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+.k-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0 0 var(--cds-gap-xs); }
+.k-head p { color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-lg); font-size: var(--cds-font-size-body); max-width: 60rem; }
+.k-h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: var(--cds-gap-xl) 0 var(--cds-gap-sm); }
+.k-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: var(--cds-gap-md); }
+.k-tile, .k-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); }
+.k-tile .k-lab { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.k-tile .k-big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin: var(--cds-gap-xs) 0; min-height: 1.3em; }
+.k-tile .k-sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.k-good { color: var(--color-ok); } .k-bad { color: var(--color-bad); }
+.k-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.k-card h3 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.k-card .k-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); }
+.k-bars { display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-height: 4rem; }
+.k-bar-row { display: grid; grid-template-columns: minmax(6rem, 38%) 1fr auto; align-items: center; gap: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); }
+.k-bar-label { color: var(--color-fg); overflow-wrap: anywhere; }
+.k-bar-track { height: 14px; background: var(--cds-chart-grid); border-radius: 7px; overflow: hidden; }
+.k-bar { display: block; height: 100%; background: var(--cds-chart-muted); border-radius: 7px; }
+.k-bar.k-accent { background: var(--cds-chart-status-critical); }
+.k-bars.k-blue .k-bar { background: var(--cds-chart-muted); }
+.k-bar-val { font-variant-numeric: tabular-nums; min-width: 4.5rem; text-align: right; color: var(--color-fg); }
+.k-tablebox { max-height: 34rem; overflow: auto; }
+.k-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); }
+.k-table th { position: sticky; top: 0; background: var(--color-panel); text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.k-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.k-table td.k-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.k-fail { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); min-height: 4rem; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.k-dot { width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+.k-callout { border-left: 3px solid var(--cds-chart-reference); padding: var(--cds-pad-sm) var(--cds-pad-md); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin-top: var(--cds-gap-md); }
+.k-foot { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin-top: var(--cds-gap-xl); }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+
+
+.k-bar-row.k-hi .k-bar-label{font-weight:600}
+.k-div{position:relative;height:14px;background:var(--cds-chart-grid);border-radius:7px}
+.k-div .k-mid{position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--color-fg-muted)}
+.k-div .k-bar{position:absolute;top:0;height:100%}
+.k-bar.k-pos{background:var(--color-bad)} .k-bar.k-neg{background:var(--color-ok)}
+.k-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:var(--cds-gap-md);font-size:13px}
+.k-src{font-size:13px;color:var(--color-fg-muted);margin-top:var(--cds-gap-sm)}
+.k-wide{grid-column:1/-1}
+.k-tiles{grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr))}
+.k-pill{display:inline-block;font-size:12px;padding:1px 8px;border-radius:10px;border:1px solid var(--color-border-line);color:var(--color-fg-muted)}
+</style>
+<style>.k-chart img{width:100%;height:auto;display:block;background:#fff;border-radius:6px}.k-chart{padding:var(--cds-pad-md)}.k-dl{font-size:13px}.k-terms{font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}</style>
+</head>
+<body>
+<header class="site-top">
+  <a class="brand" href="/" aria-label="Robert J. Park home"><img src="/assets/tools-mark.svg" alt="" width="30" height="30">Robert J. <b>Park</b> · Dashboards</a>
+  <nav aria-label="Main"><a href="/">Home</a><a href="/services/">Services</a><a href="/tools/">Tools</a><a href="/dashboards/">Dashboards</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></nav>
+</header>
+<main id="dash-root">
+<div class="k-wrap">
+<header class="k-head"><h1>NI food, farming and the SPS deal: the numbers</h1>
+<p>Northern Ireland (NI) food and drink processors sell <b>49%</b> of their output to Great Britain (GB) and <b>26%</b> to the European Union (EU). The UK–EU sanitary and phytosanitary (SPS) deal on food, animal and plant health, due to apply from 1 March 2028, removes most food checks on GB processors selling into the EU, though, unlike NI firms, they still face customs. Status as at 21 November 2026. General information, not legal advice.</p></header>
+<div class="k-tiles">
+<div class="k-tile"><div class="k-lab">Sold to GB, 2022</div><div class="k-big">£3,162m</div><div class="k-sub">NI food and drink processors</div></div>
+<div class="k-tile"><div class="k-lab">Sold to Ireland and rest of EU, 2022</div><div class="k-big">£1,710m</div><div class="k-sub">NI food and drink processors</div></div>
+<div class="k-tile"><div class="k-lab">Inputs bought from GB, 2022</div><div class="k-big">£886m</div><div class="k-sub">Livestock, milk, packaging and other goods</div></div>
+<div class="k-tile"><div class="k-lab">Inputs bought from the EU, 2022</div><div class="k-big">£969m</div><div class="k-sub">Ireland and rest of EU</div></div>
+<div class="k-tile"><div class="k-lab">NI farm emissions, 2024</div><div class="k-big">5,762 kt</div><div class="k-sub">Kilotonnes of carbon dioxide equivalent (CO2e); +10% since 1990</div></div>
+</div>
+<h2 class="k-h2">Where NI food goes, and where its inputs come from</h2>
+<div class="k-grid">
+<section class="k-card k-wide" aria-label="Half of NI processed food goes to GB, a quarter to the EU"><h3>Half of NI processed food goes to GB, a quarter to the EU</h3><p class="k-note">Share of sales by value, 1990, 2015 and 2022; centre figure is total sales, current prices.</p><div class="k-chart"><img src="/assets/briefings/sps-deal/sales-destination.svg" alt="Donut charts: 1990 NI 44%, GB 33%, Ireland 7%, rest of EU 6%, EU intervention stores 7%; 2015 GB 48%, NI 26%, Ireland 14%, rest of EU 9%; 2022 GB 49%, NI 22%, Ireland 17%, rest of EU 10%." loading="lazy" width="900"></div><p class="k-dl"><a href="/assets/dashboards/sps-deal/sales_destination.csv" download>Download the data (CSV)</a></p></section>
+<section class="k-card k-wide" aria-label="EU intervention stores"><h3>What were "EU intervention stores"?</h3>
+<p>Under the old Common Agricultural Policy (CAP) of the European Community, when market prices fell below a set floor, each member state's intervention agency had to buy beef, butter, skimmed milk powder and cereals at a guaranteed price and keep them in cold store until prices recovered. The agencies were national and the Community paid; the EU did not exist until 1993. In the UK the buyer was the Intervention Board for Agricultural Produce, with the Department of Agriculture for Northern Ireland, and from August 1990 the Livestock Marketing Commission for Northern Ireland, supervising work here.</p>
+<p>In 1990 NI processors sold <b>£128m</b> to intervention, 7% of their sales and more than they sold to Ireland (£122m) or the rest of the EU (£100m). Beef was the main product. By June 1991 the Community held about 760,000 tonnes of beef, 235,000 tonnes of it in Ireland. The 1992 MacSharry reforms cut support prices and limited buying; by 2015 DAERA records no NI processing sales to intervention. It survives in EU law as a safety net, mainly for butter and skimmed milk powder.</p>
+<p class="k-src">Sources: Hansard written answers of 26 April 1985, 16 March 1990, 22 October 1990, 6 June 1991 and 3 April 1996; Dáil Éireann, 4 July 1991; Commission Regulations (EEC) No 1166/90 and 2722/90.</p></section>
+<section class="k-card k-wide" aria-label="Bought in from GB and the EU, made in NI, sold back to both"><h3>Bought in from GB and the EU, made in NI, sold back to both</h3><p class="k-note">2022, £m. Purchases are Department of Agriculture, Environment and Rural Affairs (DAERA) experimental statistics.</p><div class="k-chart"><img src="/assets/briefings/sps-deal/bought-and-sold.svg" alt="Bars: GB, bought £886m, sold £3,162m; Ireland and rest of EU, bought £969m, sold £1,710m." loading="lazy" width="900"></div><p class="k-dl"><a href="/assets/dashboards/sps-deal/purchases_origin_2022.csv" download>Download the data (CSV)</a></p></section>
+</div>
+<h2 class="k-h2">What NI farms and food firms produce</h2>
+<div class="k-grid">
+<section class="k-card k-wide" aria-label="Milk has overtaken cattle as the biggest earner on NI farms"><h3>Milk has overtaken cattle as the biggest earner on NI farms</h3><p class="k-note">Share of gross agricultural output, current prices; 2024 as revised by DAERA in August 2026. In 2025 (provisional) cattle output rose 37% on higher prices.</p><div class="k-chart"><img src="/assets/briefings/sps-deal/farm-output.svg" alt="Donut charts: 1990 total £931m, cattle 30%, milk 24%; 2015 £1,781m, milk 27%, cattle 23%; 2024 £3,215m, milk 34%, cattle 20%." loading="lazy" width="900"></div><p class="k-dl"><a href="/assets/dashboards/sps-deal/farm_output.csv" download>Download the data (CSV)</a></p></section>
+<section class="k-card k-wide" aria-label="Beef and dairy are half of NI food processing, as in 1990"><h3>Beef and dairy are half of NI food processing, as in 1990</h3><p class="k-note">Share of food and drink processing turnover, current prices; firms over £250,000 turnover.</p><div class="k-chart"><img src="/assets/briefings/sps-deal/processing-mix.svg" alt="Donut charts: 1990 £1,745m, milk 26%, beef and sheepmeat 24%; 2015 £4,417m, beef 28%, milk 20%; 2022 £6,516m, beef 26%, milk 24%." loading="lazy" width="900"></div><p class="k-dl"><a href="/assets/dashboards/sps-deal/processing.csv" download>Download the data (CSV)</a></p></section>
+</div>
+<h2 class="k-h2">Emissions and carbon intensity</h2>
+<div class="k-grid">
+<section class="k-card k-wide" aria-label="Cattle make two thirds of NI farm emissions; dairy is the part still growing"><h3>Cattle make two thirds of NI farm emissions; dairy is the part still growing</h3><p class="k-note">Agricultural greenhouse gas emissions by source, kt CO2e. Livestock is enteric fermentation plus manure management. Source: National Atmospheric Emissions Inventory (NAEI).</p><div class="k-chart"><img src="/assets/briefings/sps-deal/farm-emissions.svg" alt="Donut charts: 1990 5,238 kt, beef and other cattle 43%, dairy 18%; 2015 5,694 kt, beef 43%, dairy 24%; 2024 5,762 kt, beef 42%, dairy 26%." loading="lazy" width="900"></div><p class="k-dl"><a href="/assets/dashboards/sps-deal/farm_emissions.csv" download>Download the data (CSV)</a></p></section>
+<section class="k-card k-wide" aria-label="Carbon intensity by industry"><h3>Carbon intensity by industry</h3><p class="k-note">Direct emissions from the animals and their manure, and kilograms of CO2e per £ of farm output, current prices. Beef and other cattle includes dairy replacement heifers, and cattle output includes dairy culls and calves, so the beef and dairy split is approximate. On 2025 prices beef falls to about 2.7 because cattle prices rose, not because emissions fell. Pigs and poultry look low mainly because they produce little methane.</p><div class="k-tablebox"><table class="k-table"><thead><tr><th scope="col">Industry</th><th scope="col">kt CO2e 1990</th><th scope="col">2015</th><th scope="col">2024</th><th scope="col">kg per £, 2024 prices</th><th scope="col">2024 emissions on 2025 prices</th></tr></thead><tbody><tr><td class="">Beef and other cattle</td><td class="k-num">2,267</td><td class="k-num">2,432</td><td class="k-num">2,435</td><td class="k-num">3.71</td><td class="k-num">2.71</td></tr><tr><td class="">Sheep</td><td class="k-num">444</td><td class="k-num">326</td><td class="k-num">312</td><td class="k-num">2.45</td><td class="k-num">2.60</td></tr><tr><td class="">Dairy</td><td class="k-num">955</td><td class="k-num">1,361</td><td class="k-num">1,505</td><td class="k-num">1.39</td><td class="k-num">1.25</td></tr><tr><td class="">Pigs</td><td class="k-num">132</td><td class="k-num">109</td><td class="k-num">129</td><td class="k-num">0.44</td><td class="k-num">0.44</td></tr><tr><td class="">Poultry (meat and eggs)</td><td class="k-num">22</td><td class="k-num">30</td><td class="k-num">37</td><td class="k-num">0.06</td><td class="k-num">0.06</td></tr></tbody></table></div><p class="k-dl"><a href="/assets/dashboards/sps-deal/intensity.csv" download>Download the data (CSV)</a></p></section>
+</div>
+<h2 class="k-h2">Where the trend points</h2>
+<div class="k-grid">
+<section class="k-card k-wide" aria-label="Up to £8.7bn by 2035, in 2015 prices"><h3>Up to £8.7bn by 2035, in 2015 prices</h3><p class="k-note">If each subsector keeps its 2015–22 real growth rate, food processing turnover rises from £5,442m in 2022 to £7,198m by 2030 and £8,741m by 2035. Growing the total at its own 3.0% a year gives about £6.9bn and £8.0bn instead. A trend, not a forecast, and probably an overstatement: 2022 was a milk price spike and the gross domestic product (GDP) deflator lagged food prices; GB competition in the EU from 2028 bears hardest on beef and dairy; NI carbon budgets may cap cattle numbers.</p><div class="k-tablebox"><table class="k-table"><thead><tr><th scope="col">Subsector</th><th scope="col">2015</th><th scope="col">2022</th><th scope="col">Real growth a year, %</th><th scope="col">2030 trend</th><th scope="col">2035 trend</th></tr></thead><tbody><tr><td class="">Beef and sheepmeat</td><td class="k-num">1,255</td><td class="k-num">1,429</td><td class="k-num">+1.9</td><td class="k-num">1,656</td><td class="k-num">1,817</td></tr><tr><td class="">Milk and milk products</td><td class="k-num">903</td><td class="k-num">1,310</td><td class="k-num">+5.4</td><td class="k-num">2,002</td><td class="k-num">2,610</td></tr><tr><td class="">Poultrymeat</td><td class="k-num">701</td><td class="k-num">618</td><td class="k-num">-1.8</td><td class="k-num">535</td><td class="k-num">489</td></tr><tr><td class="">Pigmeat</td><td class="k-num">302</td><td class="k-num">441</td><td class="k-num">+5.6</td><td class="k-num">680</td><td class="k-num">891</td></tr><tr><td class="">Eggs</td><td class="k-num">143</td><td class="k-num">206</td><td class="k-num">+5.4</td><td class="k-num">315</td><td class="k-num">410</td></tr><tr><td class="">Fish</td><td class="k-num">77</td><td class="k-num">58</td><td class="k-num">-3.9</td><td class="k-num">42</td><td class="k-num">35</td></tr><tr><td class="">Fruit and vegetables</td><td class="k-num">309</td><td class="k-num">398</td><td class="k-num">+3.7</td><td class="k-num">532</td><td class="k-num">638</td></tr><tr><td class="">Bakeries</td><td class="k-num">283</td><td class="k-num">455</td><td class="k-num">+7.0</td><td class="k-num">780</td><td class="k-num">1,094</td></tr><tr><td class="">Drinks</td><td class="k-num">386</td><td class="k-num">482</td><td class="k-num">+3.2</td><td class="k-num">621</td><td class="k-num">727</td></tr><tr><td class="">Animal by-products</td><td class="k-num">57</td><td class="k-num">45</td><td class="k-num">-3.1</td><td class="k-num">35</td><td class="k-num">30</td></tr></tbody></table></div><p class="k-dl"><a href="/assets/dashboards/sps-deal/projection.csv" download>Download the data (CSV)</a></p></section>
+</div>
+<h2 class="k-h2">Sources</h2>
+<section class="k-card"><p class="k-note">Every figure comes from these official sources, checked on 21 November 2026. Derived figures (shares, intensities, projections) are Robert J. Park's arithmetic. This is a dated snapshot: nothing is fetched or sent.</p><ul>
+<li>DAERA, <a href="https://www.daera-ni.gov.uk/sites/default/files/2026-08/Account%20Summary%20for%20Press%20Release%202025.pdf">2025 agricultural account summary</a>, 19 August 2026, and Aggregate Agricultural Account (Table 2.1), January 2026</li>
+<li>DAERA, <a href="https://www.daera-ni.gov.uk/news/report-northern-ireland-food-and-drinks-processing-report-2022">NI Food and Drinks Processing Report 2022</a> and time series 1989–2022, April 2025</li>
+<li>DAERA, <a href="https://www.daera-ni.gov.uk/sites/default/files/2025-11/25.26.108%20Stats%20Review%202024_1.pdf">Statistical Review of NI Agriculture 2024</a>, November 2025</li>
+<li>Department for Energy Security and Net Zero, <a href="https://naei.energysecurity.gov.uk/">NAEI</a>, devolved administration greenhouse gas inventories 1990–2024, June 2026</li>
+<li>Cabinet Office, <a href="https://www.gov.uk/government/publications/ukeu-summit-2026-key-documents/uk-eu-summit-2026-explainer-sps-html">UK-EU Summit 2026 Explainer: SPS</a>, 20 November 2026</li>
+</ul><p class="k-terms">Terms: CAP, Common Agricultural Policy; CO2e, carbon dioxide equivalent; DAERA, Department of Agriculture, Environment and Rural Affairs; EU, European Union; GB, Great Britain; GDP, gross domestic product; kt, kilotonnes; NAEI, National Atmospheric Emissions Inventory; NI, Northern Ireland; SPS, sanitary and phytosanitary (food safety, animal health and plant health).</p></section>
+<p class="k-foot">Read the piece: <a href="/blog/2026/11/the-sps-deal-what-it-means-for-northern-ireland/">The SPS deal: what Northern Ireland gains, what it gives away</a>, and <a href="/assets/briefings/2026-11-the-sps-deal-ni-briefing.pdf">the full briefing (PDF)</a>. More dashboards: <a href="/dashboards/">all dashboards</a>.</p>
+</div>
+</main>
+<footer class="site-foot">Robert J. Park · Environment · Carbon · Public Affairs · Northern Ireland. Figures as at 21 November 2026. <a href="/contact/">Contact</a> · <a href="/privacy/">Privacy</a></footer>
+</body>
+</html>

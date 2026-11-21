@@ -23,7 +23,7 @@ description: "The UK–EU food and farming (SPS) deal of 20 November 2026, read 
 **CBAM**: carbon border adjustment mechanism, a charge on the carbon in imported goods. **CO2e**: carbon dioxide equivalent; kt is kilotonnes. **CPTPP**: the Comprehensive and Progressive Agreement for Trans-Pacific Partnership. **DAERA**: Department of Agriculture, Environment and Rural Affairs. **EU Court**: the Court of Justice of the European Union. **GB**: Great Britain. **GDP**: gross domestic product. **NAEI**: National Atmospheric Emissions Inventory. **NI**: Northern Ireland. **SPS**: sanitary and phytosanitary, meaning food safety, animal health and plant health. **TCA**: the UK–EU Trade and Cooperation Agreement.
 </div>
 
-[Download the full briefing (PDF)]({{ '/assets/briefings/2026-11-the-sps-deal-ni-briefing.pdf' | relative_url }}) covers the detail: fisheries, pork and the GB land bridge, the EU Court, the carbon market exit clause, the carbon border adjustment mechanism (CBAM), and the Trans-Pacific trade bloc (CPTPP), the US and Mercosur.
+[Open the dashboard]({{ '/tools/dashboards/ni-sps-food-trade.html' | relative_url }}) for every figure and chart, with the data to download. [Download the full briefing (PDF)]({{ '/assets/briefings/2026-11-the-sps-deal-ni-briefing.pdf' | relative_url }}) covers the detail: fisheries, pork and the GB land bridge, the EU Court, the carbon market exit clause, the carbon border adjustment mechanism (CBAM), and the Trans-Pacific trade bloc (CPTPP), the US and Mercosur.
 
 ## What NI makes, and where it goes
 
@@ -76,22 +76,24 @@ If processing kept its 2015 to 2022 real growth, NI food processing would reach 
 ## Who gains and who loses in NI
 
 <div class="cards">
-  <div class="card" markdown="1">
+<div class="card" markdown="1">
 **Gains**
 
 - Shops and wholesalers: one supply chain from GB depots, fewer labels and certificates
 - Farms, growers and nurseries: cheaper GB seed, plants and used machinery
 - Hauliers: fewer documents and checks at Belfast, Larne and Warrenpoint
 - Processors buying GB inputs (less so for live animals, which are still checked)
-  </div>
-  <div class="card" markdown="1">
+
+</div>
+<div class="card" markdown="1">
 **Losses and risks**
 
 - Exporters to Ireland and the EU: GB rivals lose most SPS checks from 2028, though they still face customs
 - Beef and dairy processors most of all
 - Stricter enforcement of the current rules until 2028
 - A long tail of transitions, some to 2031
-  </div>
+
+</div>
 </div>
 
 **The case for**, as the government makes it: up to £5.1 billion a year for the UK by 2040, an end to most Irish Sea food checks without moving NI out of the EU's food rules, and shared biosecurity. **The case against**: GB takes EU rules it cannot vote on, with the EU Court as the final word on EU law in disputes; there is less room for agricultural deals with the US and others; and the £5.1 billion rests on an unpublished study that leaves the costs out. No one has published an NI figure.
@@ -104,7 +106,7 @@ If processing kept its 2015 to 2022 real growth, NI food processing would reach 
 4. **Watch the competition.** If you sell into Ireland or the EU, plan for GB rivals with lower costs from 2028.
 5. **Price the carbon side too.** The food deal and the carbon market link come into force together. See [The carbon deal: who pays, who gains, and what Northern Ireland loses]({{ '/go/deal/' | relative_url }}).
 
-<p class="actions"><a class="btn" href="{{ '/assets/briefings/2026-11-the-sps-deal-ni-briefing.pdf' | relative_url }}">Download the full briefing (PDF)</a> <a class="btn-ghost" href="{{ '/contact/' | relative_url }}">Talk to me about your supply chain</a></p>
+<p class="actions"><a class="btn" href="{{ '/assets/briefings/2026-11-the-sps-deal-ni-briefing.pdf' | relative_url }}">Download the full briefing (PDF)</a> <a class="btn-ghost" href="{{ '/tools/dashboards/ni-sps-food-trade.html' | relative_url }}">Open the dashboard</a> <a class="btn-ghost" href="{{ '/contact/' | relative_url }}">Talk to me about your supply chain</a></p>
 
 The wider summit package is in [The second UK–EU summit: what was agreed and what it will take]({{ '/go/summit/' | relative_url }}). I'll update this piece when the treaty text is published.
 
