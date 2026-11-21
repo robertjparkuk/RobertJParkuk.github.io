@@ -1,7 +1,6 @@
 ---
 title: "Phosphorus: the nutrient that fed the farms and fouled the lough"
 date: 2026-11-24 07:30:00 +0000
-published: false   # draft for Robert's review, 21 Nov 2026; one of eight element briefings
 tags: ["Elements", "Learn", "Phosphorus", "Water", "Soil", "Agriculture", "Northern Ireland"]
 image: /assets/learn/periodic-table-p.png
 description: "Phosphorus in climate, soil, land, agri-food and the air: why it drives Lough Neagh's algal blooms, where it comes from, how to handle it safely and the rules that apply in Northern Ireland."
@@ -69,9 +68,9 @@ COSHH applies to phosphorus and its compounds. White phosphorus is one of the mo
 
 | Substance | Workplace exposure limit (EH40/2005) |
 |---|---|
-| Phosphine | 0.1 ppm LTEL; 0.2 ppm STEL (check) |
-| Orthophosphoric acid | 1 mg/m³ LTEL; 2 mg/m³ STEL (check) |
-| Yellow phosphorus | 0.1 mg/m³ LTEL; 0.3 mg/m³ STEL (check) |
+| Phosphine | 0.1 ppm LTEL; 0.2 ppm STEL |
+| Orthophosphoric acid | 1 mg/m³ LTEL; 2 mg/m³ STEL |
+| Yellow phosphorus | 0.1 mg/m³ LTEL; 0.3 mg/m³ STEL |
 
 | UN number | Proper shipping name | Class |
 |---|---|---|

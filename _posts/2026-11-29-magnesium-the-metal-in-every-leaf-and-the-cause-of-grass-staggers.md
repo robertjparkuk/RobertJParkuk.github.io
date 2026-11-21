@@ -1,7 +1,6 @@
 ---
 title: "Magnesium: the metal in every leaf and the cause of grass staggers"
 date: 2026-11-29 07:30:00 +0000
-published: false   # draft for Robert's review, 21 Nov 2026; one of eight element briefings
 tags: ["Elements", "Learn", "Magnesium", "Livestock", "Soil", "Critical minerals", "Northern Ireland"]
 image: /assets/learn/periodic-table-mg.png
 description: "Magnesium in climate, soil, land, agri-food and the air: chlorophyll, grass tetany, Antrim basalt and rock weathering, light metals, fire safety and critical-mineral supply."
@@ -55,7 +54,7 @@ Spring-calving suckler and dairy herds on fast-growing ryegrass are exactly the 
 
 - **Workplace:** COSHH applies to magnesium oxide dust and fume. Magnesium powder and swarf need fire and dust-explosion controls (DSEAR).
 - **Classification:** magnesium powder has harmonised CLP classifications for fire and reaction with water (see table).
-- **Carbon removal:** no UK or EU certification methodology for enhanced rock weathering was in force at the date of checking. *Check the EU Carbon Removals and Carbon Farming Regulation methodologies before quoting.*
+- **Carbon removal:** the EU's Carbon Removals and Carbon Farming certification framework adopted its first methodologies in Delegated Regulation (EU) 2026/285 (in force 7 May 2026). The Commission lists enhanced rock weathering separately; its review was published in December 2025 ([European Commission](https://climate.ec.europa.eu/areas-action/carbon-removals-and-carbon-farming/certification-methodologies_en)). No UK scheme certifies it.
 - **Critical minerals:** magnesium is on the UK critical minerals list.
 
 ## Safety and handling
@@ -70,7 +69,7 @@ COSHH applies to magnesium dust and fume and to magnesium oxide. The bigger risk
 
 | Substance | Workplace exposure limit (EH40/2005) |
 |---|---|
-| Magnesium oxide (as Mg) | 10 mg/m³ LTEL inhalable dust; 4 mg/m³ respirable dust and fume (check) |
+| Magnesium oxide (as Mg) | 10 mg/m³ LTEL inhalable dust; 4 mg/m³ LTEL respirable dust |
 
 | UN number | Proper shipping name | Class |
 |---|---|---|
