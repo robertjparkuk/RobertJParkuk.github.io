@@ -40,6 +40,7 @@ Test yourself once you have read the explainers. All of these run in your browse
 
 ## Go further
 
+- [The interactive periodic table]({{ '/tools/periodic-table.html' | relative_url }}): every element, with its environmental, engineering, geological, chemical and land context.
 - [The Scopes Map]({{ '/tools/scopes-map.html' | relative_url }}): Scope 1, 2 and 3 on one diagram, with all fifteen Scope 3 categories.
 - [Is my part or chemical a CBAM good?]({{ '/cbam-desk/is-it-a-cbam-good/' | relative_url }}): the commodity codes that most often catch NI manufacturers.
 - [All tools]({{ '/tools/' | relative_url }}) and [dashboards]({{ '/dashboards/' | relative_url }}).

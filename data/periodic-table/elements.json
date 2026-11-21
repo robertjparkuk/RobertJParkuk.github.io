@@ -1,0 +1,3253 @@
+{
+ "checked": "21 November 2026",
+ "elements": [
+  {
+   "z": 1,
+   "symbol": "H",
+   "name": "Hydrogen",
+   "weight": "1.008",
+   "category": "nonmetal",
+   "category_label": "Reactive non-metal",
+   "row": 1,
+   "col": 1,
+   "period": 1,
+   "group": 1,
+   "short": "Lightest element; makes water with oxygen and is promoted as a fuel.",
+   "contexts": {
+    "environmental": "Hydrogen itself is not a greenhouse gas, but leaked hydrogen slows the breakdown of methane, so it warms indirectly.",
+    "engineering": "Made mostly from natural gas today; electrolysis of water with renewable power is the low-carbon route. Storage and pipe embrittlement are the engineering problems.",
+    "geological": "Bound in water, hydrocarbons and clay minerals; natural free hydrogen deposits are being explored.",
+    "chemical": "Forms covalent bonds with almost everything; H⁺ sets pH. Flammable in air from about 4% to 75% by volume.",
+    "land": "Land is needed for the wind and solar that make electrolytic hydrogen; storage salt caverns and pipelines bring planning questions."
+   }
+  },
+  {
+   "z": 2,
+   "symbol": "He",
+   "name": "Helium",
+   "weight": "4.0026",
+   "category": "noble-gas",
+   "category_label": "Noble gas",
+   "row": 1,
+   "col": 18,
+   "period": 1,
+   "group": 18,
+   "short": "Inert gas used in cryogenics, MRI and leak testing.",
+   "contexts": {
+    "environmental": "Escapes to space once released, so supply is finite; no direct climate effect.",
+    "engineering": "Liquid helium cools MRI magnets; used in welding shields and leak detection.",
+    "geological": "Produced by radioactive decay of uranium and thorium and trapped in natural gas fields.",
+    "chemical": "A noble gas: no stable compounds. Asphyxiant in confined spaces.",
+    "land": "Little land footprint; extraction is tied to gas fields."
+   }
+  },
+  {
+   "z": 3,
+   "symbol": "Li",
+   "name": "Lithium",
+   "weight": "6.94",
+   "category": "alkali",
+   "category_label": "Alkali metal",
+   "row": 2,
+   "col": 1,
+   "period": 2,
+   "group": 1,
+   "short": "Light metal at the heart of rechargeable batteries.",
+   "contexts": {
+    "environmental": "Brine and hard-rock mining use water and energy; battery recycling recovers lithium.",
+    "engineering": "Lithium-ion batteries for vehicles and grid storage; also glass, ceramics and greases.",
+    "geological": "Found in pegmatites (spodumene) and salt-lake brines; on the UK critical minerals list.",
+    "chemical": "Reactive alkali metal; reacts with water to give hydrogen. Lithium salts are used in medicine.",
+    "land": "Mine sites and evaporation ponds take large areas; battery fires are a waste-site risk."
+   }
+  },
+  {
+   "z": 4,
+   "symbol": "Be",
+   "name": "Beryllium",
+   "weight": "9.0122",
+   "category": "alkaline-earth",
+   "category_label": "Alkaline earth metal",
+   "row": 2,
+   "col": 2,
+   "period": 2,
+   "group": 2,
+   "short": "Light, stiff metal; its dust is highly toxic.",
+   "contexts": {
+    "environmental": "Rare in the environment; airborne dust from processing is the concern.",
+    "engineering": "Copper-beryllium alloys for non-sparking tools and springs; aerospace and X-ray windows.",
+    "geological": "Found in beryl and bertrandite; emerald and aquamarine are beryl.",
+    "chemical": "Beryllium compounds cause chronic beryllium disease and are carcinogens; tight exposure limits apply.",
+    "land": "Contaminated land is possible at old aerospace and electronics sites."
+   }
+  },
+  {
+   "z": 5,
+   "symbol": "B",
+   "name": "Boron",
+   "weight": "10.81",
+   "category": "metalloid",
+   "category_label": "Metalloid",
+   "row": 2,
+   "col": 13,
+   "period": 2,
+   "group": 13,
+   "short": "Metalloid used in glass, detergents and as a plant micronutrient.",
+   "contexts": {
+    "environmental": "Plants need trace boron; too much in irrigation water is toxic.",
+    "engineering": "Borosilicate glass, fibreglass insulation, neodymium magnets and nuclear control rods.",
+    "geological": "Mined as borates (borax) from evaporite deposits.",
+    "chemical": "Forms covalent boron–oxygen compounds; boric acid is a reproductive toxicant.",
+    "land": "Boron deficiency shows in brassicas and beet; fertiliser trace element."
+   }
+  },
+  {
+   "z": 6,
+   "symbol": "C",
+   "name": "Carbon",
+   "weight": "12.011",
+   "category": "nonmetal",
+   "category_label": "Reactive non-metal",
+   "row": 2,
+   "col": 14,
+   "period": 2,
+   "group": 14,
+   "short": "The element of life and of climate change.",
+   "contexts": {
+    "environmental": "Carbon dioxide and methane are the two largest causes of human-made warming. In Northern Ireland in 2023, carbon dioxide made up 61.5% of greenhouse gas emissions and methane 30.2%. Soils, peat and forests hold far more carbon than the air, and can lose it fast when drained or ploughed.",
+    "engineering": "Carbon is the backbone of fuels, plastics, steel (as the reducing agent and alloying element), cement chemistry (limestone) and carbon fibre. Graphite is a battery anode material and is on the UK critical minerals list. Carbon capture aims to keep CO₂ from industrial sources out of the air.",
+    "geological": "Carbon is stored in limestone and chalk (the largest store), coal, oil, gas, peat and diamonds. Northern Ireland has chalk and limestone, lignite near Lough Neagh, and extensive blanket and raised bogs.",
+    "chemical": "Group 14, period 2. Carbon forms four bonds and long chains and rings with itself, giving millions of organic compounds. Forms include graphite, diamond, graphene and fullerenes. Carbon-14 dating uses its radioactive isotope.",
+    "land": "Agriculture produced 31.4% of Northern Ireland's emissions in 2024, mostly methane from cattle and sheep. Peat soils store a large share of Northern Ireland's land carbon; drained peat is a net source of CO₂. Soil carbon is measured slowly and is easy to lose."
+   },
+   "featured": true,
+   "safety": {
+    "coshh": "COSHH applies to carbon dusts (carbon black, graphite, coal) and to carbon monoxide and carbon dioxide. Most deaths come from carbon monoxide (combustion in poorly ventilated spaces) and from CO₂ build-up in cellars, silos and slurry stores.",
+    "classes": [
+     [
+      "Carbon: graphite, diamond",
+      "Not classified."
+     ],
+     [
+      "Carbon black",
+      "No harmonised CLP classification; IARC Group 2B. Combustible dust."
+     ],
+     [
+      "Activated carbon and charcoal",
+      "May be self-heating (class 4.2 for transport) depending on test results."
+     ]
+    ],
+    "wels": [
+     [
+      "Carbon black",
+      "3.5 mg/m³ LTEL; 7 mg/m³ STEL"
+     ],
+     [
+      "Carbon dioxide",
+      "5,000 ppm LTEL; 15,000 ppm STEL"
+     ],
+     [
+      "Carbon monoxide",
+      "20 ppm LTEL; 100 ppm STEL (from 2018; check)"
+     ],
+     [
+      "Graphite",
+      "10 mg/m³ inhalable; 4 mg/m³ respirable (check)"
+     ]
+    ],
+    "un": [
+     [
+      "UN1361",
+      "Carbon, animal or vegetable origin (e.g. charcoal)",
+      "4.2"
+     ],
+     [
+      "UN1362",
+      "Carbon, activated",
+      "4.2"
+     ],
+     [
+      "UN1013",
+      "Carbon dioxide",
+      "2.2"
+     ],
+     [
+      "UN2187",
+      "Carbon dioxide, refrigerated liquid",
+      "2.2"
+     ],
+     [
+      "UN1845",
+      "Carbon dioxide, solid (dry ice)",
+      "9"
+     ],
+     [
+      "UN1016",
+      "Carbon monoxide, compressed",
+      "2.3 (2.1)"
+     ],
+     [
+      "UN1971",
+      "Methane, compressed (or natural gas)",
+      "2.1"
+     ],
+     [
+      "UN1972",
+      "Methane, refrigerated liquid (LNG)",
+      "2.1"
+     ]
+    ],
+    "risks": "Elemental carbon is low in toxicity, but its dusts can explode and charcoal can self-heat in storage. Carbon monoxide gives no warning. Carbon dioxide is heavier than air and collects in pits and slurry tanks; dry ice in a vehicle or cold room can reach dangerous levels."
+   },
+   "compounds": {
+    "nature": [
+     [
+      "Carbon dioxide (CO₂)",
+      "about 0.04% of air and rising"
+     ],
+     [
+      "Methane (CH₄)",
+      "from wetlands, ruminants and landfill"
+     ],
+     [
+      "Calcium carbonate (CaCO₃)",
+      "limestone, chalk, shells"
+     ],
+     [
+      "Soil organic matter and peat",
+      "the land carbon store"
+     ]
+    ],
+    "manufacturing": [
+     [
+      "Coke and coal",
+      "reducing agent in blast-furnace steel"
+     ],
+     [
+      "Clinker (from limestone)",
+      "cement; covered by EU and UK CBAM"
+     ],
+     [
+      "Carbon black",
+      "tyres, inks, plastics"
+     ],
+     [
+      "Graphite",
+      "battery anodes, electrodes, lubricants"
+     ],
+     [
+      "Plastics and fuels",
+      "almost all made from fossil carbon"
+     ],
+     [
+      "Biochar",
+      "charcoal made for soils"
+     ]
+    ],
+    "climate": [
+     [
+      "Carbon dioxide",
+      "GWP 1 by definition; lasts centuries to millennia"
+     ],
+     [
+      "Methane",
+      "100-year GWP 28 (AR5, as used in the UK inventory); lasts about 12 years"
+     ],
+     [
+      "Black carbon (soot)",
+      "warms by absorbing sunlight and darkening snow"
+     ],
+     [
+      "Carbon monoxide",
+      "not a direct greenhouse gas, but extends methane's life"
+     ]
+    ]
+   },
+   "briefing": "/blog/2026/11/carbon-the-element-we-count/",
+   "pdf": "/assets/briefings/elements/carbon-briefing.pdf"
+  },
+  {
+   "z": 7,
+   "symbol": "N",
+   "name": "Nitrogen",
+   "weight": "14.007",
+   "category": "nonmetal",
+   "category_label": "Reactive non-metal",
+   "row": 2,
+   "col": 15,
+   "period": 2,
+   "group": 15,
+   "short": "Makes up 78% of air; the nutrient that drives farm yields and pollution.",
+   "contexts": {
+    "environmental": "Nitrogen gas is harmless, but reactive nitrogen is not. Ammonia from slurry and fertiliser damages peat bogs, woodland and lichens; nitrate leaches into water; nitrous oxide is a powerful greenhouse gas; and nitrogen oxides from engines harm lungs. DAERA reports that 97% of Northern Ireland's ammonia comes from agriculture.",
+    "engineering": "The Haber–Bosch process turns nitrogen from air and hydrogen from natural gas into ammonia, which becomes most of the world's fertiliser. It is energy intensive; fertilisers are covered by EU CBAM and will be covered by UK CBAM. Ammonia is also proposed as a shipping fuel and hydrogen carrier.",
+    "geological": "Most of the Earth's nitrogen is in the atmosphere as N₂. Rocks hold little. Natural nitrate deposits exist in deserts such as Chile's Atacama.",
+    "chemical": "Group 15, period 2. The triple bond in N₂ makes it very unreactive, which is why fixing nitrogen takes either lightning, bacteria in clover roots, or an industrial plant. Reactive forms include ammonia (NH₃), ammonium (NH₄⁺), nitrate (NO₃⁻), nitrous oxide (N₂O) and nitrogen oxides (NOₓ).",
+    "land": "Grassland in Northern Ireland runs on nitrogen from slurry, fertiliser and clover. The Nutrients Action Programme limits how much manure nitrogen can be applied and when. Ammonia drifts from farms onto designated sites, which is why planning applications for livestock housing are assessed for ammonia."
+   },
+   "featured": true,
+   "safety": {
+    "coshh": "Nitrogen gas is not toxic, but it is a simple asphyxiant: in a confined space it displaces oxygen without warning. COSHH applies to the nitrogen compounds below, and confined-space rules apply to nitrogen gas.",
+    "classes": [
+     [
+      "Nitrogen, compressed gas",
+      "Press. Gas H280 (contains gas under pressure; may explode if heated). No harmonised CLP entry; this is the supplier classification."
+     ],
+     [
+      "Nitrogen, refrigerated liquid",
+      "Press. Gas H281 (contains refrigerated gas; may cause cryogenic burns)."
+     ]
+    ],
+    "wels": [
+     [
+      "Nitrogen",
+      "No WEL: an asphyxiant. Control is by keeping oxygen above safe levels."
+     ],
+     [
+      "Ammonia, anhydrous",
+      "25 ppm LTEL; 35 ppm STEL"
+     ],
+     [
+      "Nitrogen dioxide",
+      "0.5 ppm LTEL; 1 ppm STEL (from 2018)"
+     ],
+     [
+      "Nitrogen monoxide",
+      "2 ppm LTEL (from 2018; check)"
+     ],
+     [
+      "Nitrous oxide",
+      "100 ppm LTEL (check)"
+     ]
+    ],
+    "un": [
+     [
+      "UN1066",
+      "Nitrogen, compressed",
+      "2.2"
+     ],
+     [
+      "UN1977",
+      "Nitrogen, refrigerated liquid",
+      "2.2"
+     ],
+     [
+      "UN1005",
+      "Ammonia, anhydrous",
+      "2.3 (8)"
+     ],
+     [
+      "UN1942",
+      "Ammonium nitrate (≤0.2% combustible)",
+      "5.1"
+     ],
+     [
+      "UN2067",
+      "Ammonium nitrate based fertiliser",
+      "5.1"
+     ],
+     [
+      "UN1070",
+      "Nitrous oxide",
+      "2.2 (5.1)"
+     ],
+     [
+      "UN2031",
+      "Nitric acid",
+      "8 (5.1 above certain strengths)"
+     ]
+    ],
+    "risks": "Nitrogen gas causes asphyxiation in tanks, silos and cold rooms; liquid nitrogen causes cold burns and expands about 700 times as it boils. Ammonium nitrate fertiliser is an oxidiser and must be stored away from fuel and organic matter."
+   },
+   "compounds": {
+    "nature": [
+     [
+      "Dinitrogen (N₂)",
+      "78% of air"
+     ],
+     [
+      "Ammonium and nitrate",
+      "plant-available nitrogen in soil"
+     ],
+     [
+      "Organic nitrogen",
+      "proteins in grass, manure and soil organic matter"
+     ]
+    ],
+    "manufacturing": [
+     [
+      "Ammonia (NH₃)",
+      "made by Haber–Bosch; the root of nearly all nitrogen fertiliser"
+     ],
+     [
+      "Urea and protected urea",
+      "solid fertiliser; protected urea cuts ammonia loss"
+     ],
+     [
+      "Ammonium nitrate and calcium ammonium nitrate (CAN)",
+      "the main straight nitrogen fertilisers in the UK and Ireland"
+     ],
+     [
+      "Nitric acid (HNO₃)",
+      "made from ammonia; its production emits nitrous oxide"
+     ],
+     [
+      "Adipic acid and nylon",
+      "another industrial source of nitrous oxide"
+     ]
+    ],
+    "climate": [
+     [
+      "Nitrous oxide (N₂O)",
+      "a greenhouse gas with a 100-year global warming potential of 265 (AR5, as used in the UK inventory)"
+     ],
+     [
+      "Ammonia",
+      "not a greenhouse gas, but it re-deposits and part of it is later emitted as N₂O"
+     ],
+     [
+      "Nitrogen oxides (NOₓ)",
+      "form ground-level ozone, itself a greenhouse gas"
+     ]
+    ]
+   },
+   "briefing": "/blog/2026/11/nitrogen-from-the-air-through-the-cow-into-the-lough-and-the-sky/",
+   "pdf": "/assets/briefings/elements/nitrogen-briefing.pdf"
+  },
+  {
+   "z": 8,
+   "symbol": "O",
+   "name": "Oxygen",
+   "weight": "15.999",
+   "category": "nonmetal",
+   "category_label": "Reactive non-metal",
+   "row": 2,
+   "col": 16,
+   "period": 2,
+   "group": 16,
+   "short": "Makes up 21% of air; needed for respiration and combustion.",
+   "contexts": {
+    "environmental": "Ozone (O₃) shields the Earth from UV high up but is a pollutant and greenhouse gas at ground level.",
+    "engineering": "Used in steelmaking, medicine, water treatment and oxy-fuel combustion.",
+    "geological": "The most abundant element in the Earth's crust, bound in silicates and oxides.",
+    "chemical": "Highly reactive oxidiser; most elements form oxides. Oxygen-enriched air raises fire risk.",
+    "land": "Dissolved oxygen in rivers falls when nutrients cause algal blooms, killing fish."
+   }
+  },
+  {
+   "z": 9,
+   "symbol": "F",
+   "name": "Fluorine",
+   "weight": "18.998",
+   "category": "halogen",
+   "category_label": "Halogen",
+   "row": 2,
+   "col": 17,
+   "period": 2,
+   "group": 17,
+   "short": "Most reactive element; source of fluoride, F-gases and PFAS.",
+   "contexts": {
+    "environmental": "Fluorine's carbon compounds are the problem: hydrofluorocarbons (HFCs) and other F-gases are powerful greenhouse gases, and PFAS ('forever chemicals') persist in water, soil and blood. Fluoride also enters soils as an impurity in phosphate fertiliser.",
+    "engineering": "Fluorspar (calcium fluoride) is turned into hydrogen fluoride, the starting point for refrigerants, PTFE, lithium battery salts, uranium enrichment and aluminium smelting. Northern Ireland follows the EU F-gas Regulation (EU) 2024/573 under the Windsor Framework; Great Britain still applies its retained 2014-based regime.",
+    "geological": "Fluorine occurs as fluorspar (fluorite), in cryolite and in fluoroapatite, the main mineral of phosphate rock. Natural fluoride in groundwater varies with geology.",
+    "chemical": "Group 17, period 2. The most electronegative and most reactive element; it reacts with almost everything, including glass. The carbon–fluorine bond is the strongest single bond in organic chemistry, which is why PFAS do not break down.",
+    "land": "Northern Ireland's public water supply is not artificially fluoridated (NI Water, January 2025); Ireland's has been since 1964. Land contaminated by firefighting foam at airports, fire-training grounds and some industrial sites is the main PFAS land issue."
+   },
+   "featured": true,
+   "safety": {
+    "coshh": "COSHH applies. Fluorine gas and hydrogen fluoride are among the most hazardous industrial chemicals; hydrofluoric acid burns may not hurt at first but can be fatal. Anyone handling them needs specific first aid (calcium gluconate) on site.",
+    "classes": [
+     [
+      "Fluorine (gas)",
+      "Ox. Gas 1 H270 (may cause or intensify fire); Press. Gas H280; Acute Tox. 2 H330 (fatal if inhaled); Skin Corr. 1A H314. Harmonised (CLP Annex VI)."
+     ]
+    ],
+    "wels": [
+     [
+      "Fluorine",
+      "Listed in EH40 (check value before use)"
+     ],
+     [
+      "Hydrogen fluoride (as F)",
+      "1.8 ppm LTEL; 3 ppm STEL"
+     ],
+     [
+      "Fluorides (as F)",
+      "2.5 mg/m³ LTEL (check)"
+     ]
+    ],
+    "un": [
+     [
+      "UN1045",
+      "Fluorine, compressed",
+      "2.3 (5.1, 8)"
+     ],
+     [
+      "UN1052",
+      "Hydrogen fluoride, anhydrous",
+      "8 (6.1)"
+     ],
+     [
+      "UN1790",
+      "Hydrofluoric acid",
+      "8 (6.1)"
+     ],
+     [
+      "UN1778",
+      "Fluorosilicic acid",
+      "8"
+     ],
+     [
+      "UN3159",
+      "1,1,1,2-Tetrafluoroethane (R-134a)",
+      "2.2"
+     ],
+     [
+      "UN3163",
+      "Liquefied gas, n.o.s. (e.g. R-410A blends)",
+      "2.2"
+     ]
+    ],
+    "risks": "Elemental fluorine is a pale yellow gas that is toxic, corrosive and ignites many materials on contact. It is handled only in specialist plant. Refrigerant gases are not toxic in normal use but displace oxygen in enclosed spaces and some are flammable (for example R-32 and the hydrocarbon alternatives)."
+   },
+   "compounds": {
+    "nature": [
+     [
+      "Fluorite / fluorspar (CaF₂)",
+      "the main ore"
+     ],
+     [
+      "Fluoroapatite",
+      "in phosphate rock; carries fluoride into fertilisers"
+     ],
+     [
+      "Fluoride ion (F⁻)",
+      "in groundwater, tea and toothpaste"
+     ]
+    ],
+    "manufacturing": [
+     [
+      "Hydrogen fluoride (HF)",
+      "feedstock for almost all fluorochemicals"
+     ],
+     [
+      "HFC refrigerants (R-134a, R-32, R-410A, R-404A)",
+      "fridges, heat pumps, air conditioning"
+     ],
+     [
+      "PTFE and fluoropolymers",
+      "non-stick coatings, seals, membranes"
+     ],
+     [
+      "PFAS (PFOS, PFOA and thousands more)",
+      "firefighting foam, textiles, food packaging"
+     ],
+     [
+      "Lithium hexafluorophosphate (LiPF₆)",
+      "electrolyte salt in lithium-ion batteries"
+     ]
+    ],
+    "climate": [
+     [
+      "HFCs",
+      "e.g. HFC-134a, 100-year GWP 1,300 (AR5)"
+     ],
+     [
+      "Sulfur hexafluoride (SF₆) and nitrogen trifluoride (NF₃)",
+      "very high GWP, very long-lived"
+     ],
+     [
+      "Trifluoroacetic acid (TFA)",
+      "a breakdown product of some newer refrigerants, building up in water"
+     ]
+    ]
+   },
+   "briefing": "/blog/2026/11/fluorine-in-your-fridge-your-frying-pan-and-your-teeth/",
+   "pdf": "/assets/briefings/elements/fluorine-briefing.pdf"
+  },
+  {
+   "z": 10,
+   "symbol": "Ne",
+   "name": "Neon",
+   "weight": "20.180",
+   "category": "noble-gas",
+   "category_label": "Noble gas",
+   "row": 2,
+   "col": 18,
+   "period": 2,
+   "group": 18,
+   "short": "Inert gas known for red signs.",
+   "contexts": {
+    "environmental": "No environmental effect of note.",
+    "engineering": "Lighting, lasers and cryogenics; a by-product of air separation.",
+    "geological": "A trace gas in the atmosphere.",
+    "chemical": "A noble gas: no stable compounds.",
+    "land": "No land use of note."
+   }
+  },
+  {
+   "z": 11,
+   "symbol": "Na",
+   "name": "Sodium",
+   "weight": "22.990",
+   "category": "alkali",
+   "category_label": "Alkali metal",
+   "row": 3,
+   "col": 1,
+   "period": 3,
+   "group": 1,
+   "short": "Soft reactive metal; best known as salt (sodium chloride).",
+   "contexts": {
+    "environmental": "Road salt raises chloride in streams; sodium in soils damages structure.",
+    "engineering": "Sodium-ion batteries are emerging; sodium hydroxide and carbonate are bulk chemicals.",
+    "geological": "Rock salt deposits, including those mined at Kilroot near Carrickfergus.",
+    "chemical": "Metal reacts violently with water. Sodium salts are mostly soluble.",
+    "land": "Salt on roads and spray near coasts affects verges and hedges."
+   }
+  },
+  {
+   "z": 12,
+   "symbol": "Mg",
+   "name": "Magnesium",
+   "weight": "24.305",
+   "category": "alkaline-earth",
+   "category_label": "Alkaline earth metal",
+   "row": 3,
+   "col": 2,
+   "period": 3,
+   "group": 2,
+   "short": "Light metal at the centre of chlorophyll.",
+   "contexts": {
+    "environmental": "Every chlorophyll molecule holds a magnesium atom, so no magnesium means no photosynthesis. Magnesium-rich rocks such as basalt and olivine absorb CO₂ slowly as they weather, which is the basis of 'enhanced rock weathering' as a carbon removal method, still at the research and trial stage.",
+    "engineering": "Magnesium metal is a third lighter than aluminium and is alloyed for car parts, laptops and aircraft. Most is made in China by the Pidgeon process, which is energy and carbon intensive. Magnesium oxide is used in refractories, animal feed, cements and water treatment. Magnesium and magnesite are on the UK 2024 critical minerals list.",
+    "geological": "Magnesium is the eighth most abundant element in the crust. It is found in dolomite, magnesite, olivine, serpentine and the basalts of the Antrim Plateau, and in seawater as magnesium chloride and sulfate.",
+    "chemical": "Group 2, period 3; an alkaline earth metal. Burns with a dazzling white flame and keeps burning in carbon dioxide and steam, so water makes a magnesium fire worse. Forms Mg²⁺ ions in water.",
+    "land": "Cattle and sheep cannot store magnesium. Fast-growing spring grass, high potassium and heavy nitrogen lower the magnesium cows take in, causing grass tetany (staggers), which can kill within hours. Magnesian (dolomitic) lime supplies magnesium as well as raising pH."
+   },
+   "featured": true,
+   "safety": {
+    "coshh": "COSHH applies to magnesium dust and fume and to magnesium oxide. The bigger risk is fire: magnesium powder and swarf are flammable and react with water to release hydrogen.",
+    "classes": [
+     [
+      "Magnesium powder (pyrophoric)",
+      "Pyr. Sol. 1 H250; Water-react. 1 H260 (releases flammable gas with water). Harmonised (CLP Annex VI)."
+     ],
+     [
+      "Magnesium powder or turnings (stabilised)",
+      "Flam. Sol. 1 H228; Water-react. 2 H261. Harmonised (CLP Annex VI)."
+     ],
+     [
+      "Magnesium (massive metal)",
+      "Not classified in solid form, but it burns once alight."
+     ]
+    ],
+    "wels": [
+     [
+      "Magnesium oxide (as Mg)",
+      "10 mg/m³ LTEL inhalable dust; 4 mg/m³ respirable dust and fume (check)"
+     ]
+    ],
+    "un": [
+     [
+      "UN1418",
+      "Magnesium powder or magnesium alloys powder",
+      "4.3 (4.2)"
+     ],
+     [
+      "UN1869",
+      "Magnesium or magnesium alloys (>50% Mg) in pellets, turnings or ribbons",
+      "4.1"
+     ],
+     [
+      "UN1474",
+      "Magnesium nitrate",
+      "5.1"
+     ]
+    ],
+    "risks": "Never use water or a CO₂ extinguisher on burning magnesium; use dry sand or a Class D powder. Machining swarf and fine powder are the main fire risks in workshops. Magnesium compounds in fertiliser and feed are of low hazard."
+   },
+   "compounds": {
+    "nature": [
+     [
+      "Chlorophyll",
+      "the green pigment in every leaf"
+     ],
+     [
+      "Dolomite (CaMg(CO₃)₂) and magnesite (MgCO₃)",
+      "carbonate rocks"
+     ],
+     [
+      "Olivine and serpentine",
+      "magnesium silicates in basalts and ultramafic rocks"
+     ],
+     [
+      "Magnesium in seawater",
+      "about 1.3 g per litre"
+     ]
+    ],
+    "manufacturing": [
+     [
+      "Magnesium oxide (MgO)",
+      "refractories, feed supplements, cements"
+     ],
+     [
+      "Magnesium sulfate (kieserite, Epsom salt)",
+      "fertiliser and medicine"
+     ],
+     [
+      "Magnesium hydroxide",
+      "flame retardant and wastewater treatment"
+     ],
+     [
+      "Magnesium chloride",
+      "de-icing and dust suppression"
+     ],
+     [
+      "Magnesium alloys",
+      "light-weighting of vehicles and electronics"
+     ]
+    ],
+    "climate": [
+     [
+      "Calcining magnesite",
+      "releases process CO₂, as with limestone for cement"
+     ],
+     [
+      "Enhanced rock weathering",
+      "spreading crushed basalt or olivine on land to draw down CO₂; research stage"
+     ],
+     [
+      "Light-weighting",
+      "lighter vehicles use less energy"
+     ]
+    ]
+   },
+   "briefing": "/blog/2026/11/magnesium-the-metal-in-every-leaf-and-the-cause-of-grass-staggers/",
+   "pdf": "/assets/briefings/elements/magnesium-briefing.pdf"
+  },
+  {
+   "z": 13,
+   "symbol": "Al",
+   "name": "Aluminium",
+   "weight": "26.982",
+   "category": "post-transition",
+   "category_label": "Post-transition metal",
+   "row": 3,
+   "col": 13,
+   "period": 3,
+   "group": 13,
+   "short": "Light metal; the most used non-ferrous metal and a CBAM good.",
+   "contexts": {
+    "environmental": "Primary smelting uses huge amounts of electricity; recycling uses a small fraction of that energy.",
+    "engineering": "Cans, window frames, vehicles and power lines. Aluminium is covered by EU and UK CBAM.",
+    "geological": "Most abundant metal in the crust; bauxite is the ore.",
+    "chemical": "Forms a protective oxide layer. Soluble aluminium is toxic to fish and roots in acid water.",
+    "land": "In acid soils, aluminium becomes soluble and limits root growth; liming locks it up."
+   }
+  },
+  {
+   "z": 14,
+   "symbol": "Si",
+   "name": "Silicon",
+   "weight": "28.085",
+   "category": "metalloid",
+   "category_label": "Metalloid",
+   "row": 3,
+   "col": 14,
+   "period": 3,
+   "group": 14,
+   "short": "Metalloid of sand, glass, solar cells and chips.",
+   "contexts": {
+    "environmental": "Respirable crystalline silica dust causes silicosis; a workplace, not a field, problem.",
+    "engineering": "Solar panels, semiconductors, silicones and concrete aggregate.",
+    "geological": "Second most abundant crustal element; quartz and silicate minerals.",
+    "chemical": "Forms silicon–oxygen networks; silicones are silicon–oxygen polymers.",
+    "land": "Quarrying for sand and gravel; silica in soils from weathered rock."
+   }
+  },
+  {
+   "z": 15,
+   "symbol": "P",
+   "name": "Phosphorus",
+   "weight": "30.974",
+   "category": "nonmetal",
+   "category_label": "Reactive non-metal",
+   "row": 3,
+   "col": 15,
+   "period": 3,
+   "group": 15,
+   "short": "Essential nutrient; the main cause of Lough Neagh's algal blooms.",
+   "contexts": {
+    "environmental": "Phosphorus is the nutrient that limits plant and algal growth in most fresh water. Too much of it, washed or leached from farmland, slurry and sewage, feeds the algal blooms that have covered Lough Neagh. DAERA describes excess phosphorus as the main cause of poor water quality in Northern Ireland.",
+    "engineering": "Mined phosphate rock is turned into fertiliser with sulfuric acid, making phosphoric acid and phosphogypsum waste. Phosphorus is also recovered from wastewater as struvite, and lithium iron phosphate (LFP) is now a leading battery chemistry.",
+    "geological": "Phosphorus is not found free in nature. It is mined as phosphate rock (apatite), much of it from Morocco and Western Sahara. Phosphate rock carries cadmium, uranium and fluoride as impurities. Phosphorus is on the UK 2024 critical minerals list.",
+    "chemical": "Group 15, period 3. White phosphorus is a waxy solid that catches fire on its own in air and is very toxic; red phosphorus is stable and is used on match strikers. In soils and water it is almost always present as phosphate (PO₄³⁻), which binds tightly to iron, aluminium and calcium.",
+    "land": "Northern Ireland's farm system brings in more phosphorus, in feed and fertiliser, than it sends out in food. The surplus builds up in soil. The Soil Nutrient Health Scheme has found many fields above the agronomic target index. Fields above the target need no more phosphorus for years, and run-off from them reaches streams."
+   },
+   "featured": true,
+   "safety": {
+    "coshh": "COSHH applies to phosphorus and its compounds. White phosphorus is one of the most dangerous elements to handle; it is not something a farm or general workshop should ever hold.",
+    "classes": [
+     [
+      "White (yellow) phosphorus",
+      "Pyr. Sol. 1 H250 (catches fire spontaneously in air); Acute Tox. 2 H300 + H330 (fatal if swallowed or inhaled); Skin Corr. 1A H314; Aquatic Acute 1 H400. Harmonised (CLP Annex VI)."
+     ],
+     [
+      "Red phosphorus",
+      "Flam. Sol. 1 H228 (flammable solid); Aquatic Chronic 3 H412. Harmonised (CLP Annex VI)."
+     ]
+    ],
+    "wels": [
+     [
+      "Phosphine",
+      "0.1 ppm LTEL; 0.2 ppm STEL (check)"
+     ],
+     [
+      "Orthophosphoric acid",
+      "1 mg/m³ LTEL; 2 mg/m³ STEL (check)"
+     ],
+     [
+      "Yellow phosphorus",
+      "0.1 mg/m³ LTEL; 0.3 mg/m³ STEL (check)"
+     ]
+    ],
+    "un": [
+     [
+      "UN1381",
+      "Phosphorus, white or yellow, dry or under water or in solution",
+      "4.2 (6.1)"
+     ],
+     [
+      "UN2447",
+      "Phosphorus, white, molten",
+      "4.2 (6.1)"
+     ],
+     [
+      "UN1338",
+      "Phosphorus, amorphous (red phosphorus)",
+      "4.1"
+     ],
+     [
+      "UN1805",
+      "Phosphoric acid, solution",
+      "8"
+     ],
+     [
+      "UN2199",
+      "Phosphine",
+      "2.3 (2.1)"
+     ]
+    ],
+    "risks": "White phosphorus ignites in air at around 30 °C, burns deep into skin and is fatal in small doses; it is kept under water. Red phosphorus is far safer but burns easily and can release phosphine if contaminated. Phosphate fertilisers themselves are low hazard to people; the harm is to water."
+   },
+   "compounds": {
+    "nature": [
+     [
+      "Apatite (calcium phosphate)",
+      "the mineral in phosphate rock, bones and teeth"
+     ],
+     [
+      "Orthophosphate (PO₄³⁻)",
+      "the form plants take up and the form that feeds algae"
+     ],
+     [
+      "Organic phosphorus",
+      "in manure, soil organic matter, DNA and ATP"
+     ]
+    ],
+    "manufacturing": [
+     [
+      "Phosphoric acid (H₃PO₄)",
+      "made from rock and sulfuric acid; fertilisers, food, metal treatment"
+     ],
+     [
+      "MAP, DAP and triple superphosphate",
+      "the main phosphate fertilisers"
+     ],
+     [
+      "Struvite (MgNH₄PO₄·6H₂O)",
+      "recovered from wastewater and digestate as a slow-release fertiliser"
+     ],
+     [
+      "Lithium iron phosphate (LiFePO₄)",
+      "battery cathode material"
+     ],
+     [
+      "Organophosphates",
+      "pesticides such as glyphosate and historic sheep dips"
+     ],
+     [
+      "Aluminium phosphide",
+      "grain fumigant that releases toxic phosphine gas (UN1397)"
+     ]
+    ],
+    "climate": [
+     [
+      "No phosphorus greenhouse gas",
+      "phosphorus acts on climate indirectly"
+     ],
+     [
+      "Algal blooms",
+      "nutrient-rich lakes emit more methane"
+     ],
+     [
+      "Fertiliser manufacture",
+      "energy for mining, acid production and transport"
+     ]
+    ]
+   },
+   "briefing": "/blog/2026/11/phosphorus-the-nutrient-that-fed-the-farms-and-fouled-the-lough/",
+   "pdf": "/assets/briefings/elements/phosphorus-briefing.pdf"
+  },
+  {
+   "z": 16,
+   "symbol": "S",
+   "name": "Sulfur",
+   "weight": "32.06",
+   "category": "nonmetal",
+   "category_label": "Reactive non-metal",
+   "row": 3,
+   "col": 16,
+   "period": 3,
+   "group": 16,
+   "short": "Yellow non-metal behind acid rain, slurry gas and crop nutrition.",
+   "contexts": {
+    "environmental": "Sulfur dioxide from coal and oil caused acid rain and smog. UK emissions fell by 98% between 1970 and 2022, mainly because coal use in power stations ended. Sulfate particles in the air reflect sunlight and cool the climate, so cleaner air has removed some masking of warming. Hydrogen sulfide from slurry is the gas that kills farmers.",
+    "engineering": "Most sulfur now comes from cleaning oil and gas, not mining. It is turned into sulfuric acid, the most produced industrial chemical, used for fertilisers, batteries and metal processing. Sulfur hexafluoride (SF₆), an insulating gas in electrical switchgear, is the most potent greenhouse gas regulated under the UNFCCC.",
+    "geological": "Sulfur occurs as native sulfur near volcanoes, as sulfides such as pyrite (fool's gold) and galena, and as sulfates such as gypsum. Pyrite exposed to air and water makes acid mine drainage.",
+    "chemical": "Group 16, period 3. Spelled 'sulfur' by IUPAC and the Royal Society of Chemistry; 'sulphur' remains common in UK law and HSE guidance. Oxidation states run from −2 (sulfide, H₂S) to +6 (sulfate, sulfuric acid).",
+    "land": "With less sulfur falling in rain, many crops and grass silage now need sulfur fertiliser. Sulfur is one of the nutrients reported under Northern Ireland's Soil Nutrient Health Scheme. Gypsum and other sulfates in soil, plasterboard waste and landfill can produce hydrogen sulfide."
+   },
+   "featured": true,
+   "safety": {
+    "coshh": "COSHH applies to sulfur and its compounds. On farms, the controlling risk is hydrogen sulfide from slurry: HSENI warns that one breath at high concentration can kill.",
+    "classes": [
+     [
+      "Sulfur (element)",
+      "Skin Irrit. 2 H315 (causes skin irritation). Harmonised (CLP Annex VI). Sulfur dust is also combustible and can explode."
+     ]
+    ],
+    "wels": [
+     [
+      "Sulfur",
+      "No specific WEL; general dust limits apply (10 mg/m³ inhalable, 4 mg/m³ respirable)"
+     ],
+     [
+      "Hydrogen sulfide",
+      "5 ppm LTEL; 10 ppm STEL"
+     ],
+     [
+      "Sulfur dioxide",
+      "0.5 ppm LTEL; 1 ppm STEL (from 2018)"
+     ],
+     [
+      "Sulfuric acid (mist)",
+      "0.05 mg/m³ LTEL, thoracic fraction (check)"
+     ],
+     [
+      "Sulfur hexafluoride",
+      "1,000 ppm LTEL (check)"
+     ]
+    ],
+    "un": [
+     [
+      "UN1350",
+      "Sulphur (some formed sulphur such as prills or granules may be exempt; check ADR special provision 242)",
+      "4.1"
+     ],
+     [
+      "UN2448",
+      "Sulphur, molten",
+      "4.1"
+     ],
+     [
+      "UN1053",
+      "Hydrogen sulphide",
+      "2.3 (2.1)"
+     ],
+     [
+      "UN1079",
+      "Sulphur dioxide",
+      "2.3 (8)"
+     ],
+     [
+      "UN1830",
+      "Sulphuric acid",
+      "8"
+     ],
+     [
+      "UN1080",
+      "Sulphur hexafluoride",
+      "2.2"
+     ]
+    ],
+    "risks": "Solid sulfur is low in toxicity but burns with a blue flame to give choking sulfur dioxide, and its dust can explode. Molten sulfur releases hydrogen sulfide. Hydrogen sulfide deadens the sense of smell at high concentration, so the 'rotten eggs' warning disappears just when it matters."
+   },
+   "compounds": {
+    "nature": [
+     [
+      "Hydrogen sulfide (H₂S)",
+      "from slurry, bogs, sewers and volcanoes"
+     ],
+     [
+      "Dimethyl sulfide (DMS)",
+      "released by marine plankton; seeds clouds over the sea"
+     ],
+     [
+      "Pyrite (FeS₂) and gypsum (CaSO₄·2H₂O)",
+      "common sulfur minerals"
+     ],
+     [
+      "Sulfate (SO₄²⁻)",
+      "the form plants take up"
+     ]
+    ],
+    "manufacturing": [
+     [
+      "Sulfuric acid (H₂SO₄)",
+      "fertiliser production, batteries, metal pickling"
+     ],
+     [
+      "Ammonium sulfate and sulfur-containing fertilisers",
+      "supply sulfur to grass and crops"
+     ],
+     [
+      "Gypsum and plasterboard",
+      "building material; must be kept separate from biodegradable waste in landfill"
+     ],
+     [
+      "Sulfur hexafluoride (SF₆)",
+      "insulating gas in electrical switchgear"
+     ]
+    ],
+    "climate": [
+     [
+      "Sulfate aerosols",
+      "cool the climate by reflecting sunlight; their decline has unmasked some warming"
+     ],
+     [
+      "Sulfur hexafluoride (SF₆)",
+      "100-year global warming potential of 23,500 (AR5) and a lifetime of thousands of years"
+     ],
+     [
+      "Shipping fuel",
+      "the global 0.50% sulfur cap from 2020 cut ship SO₂ and some cooling with it"
+     ]
+    ]
+   },
+   "briefing": "/blog/2026/11/sulfur-acid-rains-ingredient-now-a-fertiliser-we-buy/",
+   "pdf": "/assets/briefings/elements/sulfur-briefing.pdf"
+  },
+  {
+   "z": 17,
+   "symbol": "Cl",
+   "name": "Chlorine",
+   "weight": "35.45",
+   "category": "halogen",
+   "category_label": "Halogen",
+   "row": 3,
+   "col": 17,
+   "period": 3,
+   "group": 17,
+   "short": "Reactive halogen used to disinfect water and make PVC.",
+   "contexts": {
+    "environmental": "Chlorine from CFCs damaged the ozone layer; chloride from road salt and effluent raises river salinity.",
+    "engineering": "Water disinfection, PVC, solvents and pharmaceuticals.",
+    "geological": "Found as chloride in seawater and salt deposits.",
+    "chemical": "Toxic yellow-green gas; strong oxidiser. Mixing bleach and acid releases it.",
+    "land": "Saline soils near coasts; chloride runoff from salted roads."
+   }
+  },
+  {
+   "z": 18,
+   "symbol": "Ar",
+   "name": "Argon",
+   "weight": "39.95",
+   "category": "noble-gas",
+   "category_label": "Noble gas",
+   "row": 3,
+   "col": 18,
+   "period": 3,
+   "group": 18,
+   "short": "Inert gas that makes up nearly 1% of air.",
+   "contexts": {
+    "environmental": "No climate effect.",
+    "engineering": "Shielding gas for welding; filling for double glazing; a by-product of air separation.",
+    "geological": "Produced by decay of potassium-40 in rocks.",
+    "chemical": "A noble gas: no stable compounds. Asphyxiant in confined spaces.",
+    "land": "No land use of note."
+   }
+  },
+  {
+   "z": 19,
+   "symbol": "K",
+   "name": "Potassium",
+   "weight": "39.098",
+   "category": "alkali",
+   "category_label": "Alkali metal",
+   "row": 4,
+   "col": 1,
+   "period": 4,
+   "group": 1,
+   "short": "Major plant nutrient (potash).",
+   "contexts": {
+    "environmental": "Excess potassium in grass can lock out magnesium in livestock.",
+    "engineering": "Potash fertiliser; potassium hydroxide for soaps and batteries.",
+    "geological": "Mined as potash from evaporites (for example under North Yorkshire).",
+    "chemical": "Very reactive metal; potassium salts are soluble.",
+    "land": "Soil K indices guide fertiliser; slurry is rich in potassium."
+   }
+  },
+  {
+   "z": 20,
+   "symbol": "Ca",
+   "name": "Calcium",
+   "weight": "40.078",
+   "category": "alkaline-earth",
+   "category_label": "Alkaline earth metal",
+   "row": 4,
+   "col": 2,
+   "period": 4,
+   "group": 2,
+   "short": "Metal of limestone, bones and lime.",
+   "contexts": {
+    "environmental": "Liming soils and quarrying limestone release CO₂ from carbonate.",
+    "engineering": "Cement and lime (CBAM good: cement), plaster, flue-gas desulfurisation.",
+    "geological": "Limestone, chalk (the white cliffs of Antrim) and gypsum.",
+    "chemical": "Reactive metal; calcium carbonate dissolves in acid.",
+    "land": "Lime raises soil pH; most NI grassland soils need lime."
+   }
+  },
+  {
+   "z": 21,
+   "symbol": "Sc",
+   "name": "Scandium",
+   "weight": "44.956",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 4,
+   "col": 3,
+   "period": 4,
+   "group": 3,
+   "short": "Rare metal that strengthens aluminium.",
+   "contexts": {
+    "environmental": "Little environmental data.",
+    "engineering": "Aluminium-scandium alloys for aerospace; solid oxide fuel cells.",
+    "geological": "Dispersed in many ores; recovered as a by-product.",
+    "chemical": "Behaves like the rare earths.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 22,
+   "symbol": "Ti",
+   "name": "Titanium",
+   "weight": "47.867",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 4,
+   "col": 4,
+   "period": 4,
+   "group": 4,
+   "short": "Strong, light, corrosion-resistant metal; its oxide whitens paint.",
+   "contexts": {
+    "environmental": "Titanium dioxide pigment production generates acidic wastes.",
+    "engineering": "Aircraft, implants and desalination plant; TiO₂ is in paints, plastics and sunscreens.",
+    "geological": "Ores are ilmenite and rutile, from beach sands and igneous rocks.",
+    "chemical": "Protective oxide layer; metal powder is flammable.",
+    "land": "Mineral sand mining in coastal areas."
+   }
+  },
+  {
+   "z": 23,
+   "symbol": "V",
+   "name": "Vanadium",
+   "weight": "50.942",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 4,
+   "col": 5,
+   "period": 4,
+   "group": 5,
+   "short": "Steel-strengthening metal used in flow batteries.",
+   "contexts": {
+    "environmental": "Released from burning heavy fuel oil.",
+    "engineering": "High-strength steel; vanadium redox flow batteries for grid storage.",
+    "geological": "In magnetite ores and some oil residues; on the 2022 UK critical minerals list.",
+    "chemical": "Several oxidation states; vanadium pentoxide is toxic.",
+    "land": "Little land issue."
+   }
+  },
+  {
+   "z": 24,
+   "symbol": "Cr",
+   "name": "Chromium",
+   "weight": "51.996",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 4,
+   "col": 6,
+   "period": 4,
+   "group": 6,
+   "short": "Hard metal that makes steel stainless.",
+   "contexts": {
+    "environmental": "Hexavalent chromium (Cr(VI)) is carcinogenic and a contaminated-land priority.",
+    "engineering": "Stainless steel, plating and tanning.",
+    "geological": "Ore is chromite.",
+    "chemical": "Cr(III) is a trace nutrient; Cr(VI) is toxic and mobile in water.",
+    "land": "Old tanneries, plating works and chromite-ore residues leave contaminated sites."
+   }
+  },
+  {
+   "z": 25,
+   "symbol": "Mn",
+   "name": "Manganese",
+   "weight": "54.938",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 4,
+   "col": 7,
+   "period": 4,
+   "group": 7,
+   "short": "Metal essential to steel and a plant micronutrient.",
+   "contexts": {
+    "environmental": "Manganese dissolves in waterlogged soils and peaty water, staining supplies.",
+    "engineering": "Steel deoxidiser; battery cathodes.",
+    "geological": "Manganese oxides and nodules on the ocean floor.",
+    "chemical": "Many oxidation states; permanganate is a strong oxidiser.",
+    "land": "Deficiency in limed, high-organic soils; toxicity in acid wet soils."
+   }
+  },
+  {
+   "z": 26,
+   "symbol": "Fe",
+   "name": "Iron",
+   "weight": "55.845",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 4,
+   "col": 8,
+   "period": 4,
+   "group": 8,
+   "short": "Metal of steel; the most used metal by mass and a CBAM good.",
+   "contexts": {
+    "environmental": "Blast-furnace steelmaking is a major CO₂ source; scrap and hydrogen routes cut it.",
+    "engineering": "Structural steel, reinforcement, machinery. Iron and steel are covered by EU and UK CBAM.",
+    "geological": "Haematite and magnetite ores; laterite iron ores formed between the Antrim lavas.",
+    "chemical": "Rusts in air and water; iron binds phosphate in soils.",
+    "land": "Ochre in drains and streams from iron-rich groundwater and old mines."
+   }
+  },
+  {
+   "z": 27,
+   "symbol": "Co",
+   "name": "Cobalt",
+   "weight": "58.933",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 4,
+   "col": 9,
+   "period": 4,
+   "group": 9,
+   "short": "Battery and superalloy metal; supply heavily concentrated.",
+   "contexts": {
+    "environmental": "Mining in some regions raises human-rights and pollution concerns.",
+    "engineering": "Lithium-ion cathodes, jet-engine superalloys, magnets.",
+    "geological": "Mostly a by-product of copper and nickel mining; on the UK critical minerals list.",
+    "chemical": "Vitamin B12 contains cobalt; some cobalt compounds are carcinogens.",
+    "land": "Cobalt-deficient pasture causes 'pine' in sheep; supplemented in minerals."
+   }
+  },
+  {
+   "z": 28,
+   "symbol": "Ni",
+   "name": "Nickel",
+   "weight": "58.693",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 4,
+   "col": 10,
+   "period": 4,
+   "group": 10,
+   "short": "Corrosion-resistant metal for stainless steel and batteries.",
+   "contexts": {
+    "environmental": "Nickel refining emits sulfur dioxide; nickel is a common contact allergen.",
+    "engineering": "Stainless steel, plating, battery cathodes.",
+    "geological": "Laterite and sulfide ores.",
+    "chemical": "Some nickel compounds are carcinogens.",
+    "land": "Ultramafic soils are naturally rich in nickel."
+   }
+  },
+  {
+   "z": 29,
+   "symbol": "Cu",
+   "name": "Copper",
+   "weight": "63.546",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 4,
+   "col": 11,
+   "period": 4,
+   "group": 11,
+   "short": "Conductive metal for wiring and plumbing.",
+   "contexts": {
+    "environmental": "Toxic to aquatic life; copper fungicides and antifouling build up in soils and sediments.",
+    "engineering": "Electrical cables, motors, heat exchangers. Demand rises with electrification.",
+    "geological": "Porphyry and sulfide ores; historic mining in Ireland, including Avoca.",
+    "chemical": "Good conductor; copper salts are toxic to fungi and algae.",
+    "land": "Trace nutrient for livestock; pig slurry can raise soil copper."
+   }
+  },
+  {
+   "z": 30,
+   "symbol": "Zn",
+   "name": "Zinc",
+   "weight": "65.38",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 4,
+   "col": 12,
+   "period": 4,
+   "group": 12,
+   "short": "Metal that galvanises steel against rust.",
+   "contexts": {
+    "environmental": "Washes off galvanised and roofing surfaces into drains; toxic to aquatic life.",
+    "engineering": "Galvanising, die-casting, brass, batteries.",
+    "geological": "Sphalerite ore; Ireland's Tara mine is one of Europe's largest zinc mines.",
+    "chemical": "Essential trace nutrient; zinc oxide is used in creams and rubber.",
+    "land": "Pig slurry and sewage sludge can raise soil zinc."
+   }
+  },
+  {
+   "z": 31,
+   "symbol": "Ga",
+   "name": "Gallium",
+   "weight": "69.723",
+   "category": "post-transition",
+   "category_label": "Post-transition metal",
+   "row": 4,
+   "col": 13,
+   "period": 4,
+   "group": 13,
+   "short": "Metal that melts in the hand; key to LEDs and chips.",
+   "contexts": {
+    "environmental": "Little environmental concern at current use.",
+    "engineering": "Gallium nitride LEDs and power electronics; gallium arsenide chips.",
+    "geological": "By-product of aluminium and zinc refining; on the UK critical minerals list.",
+    "chemical": "Liquid just above room temperature; attacks aluminium.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 32,
+   "symbol": "Ge",
+   "name": "Germanium",
+   "weight": "72.630",
+   "category": "metalloid",
+   "category_label": "Metalloid",
+   "row": 4,
+   "col": 14,
+   "period": 4,
+   "group": 14,
+   "short": "Metalloid for fibre optics and infrared optics.",
+   "contexts": {
+    "environmental": "Little environmental concern.",
+    "engineering": "Fibre optics, infrared lenses, solar cells for satellites.",
+    "geological": "By-product of zinc and coal; supply concentrated.",
+    "chemical": "Semiconductor like silicon.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 33,
+   "symbol": "As",
+   "name": "Arsenic",
+   "weight": "74.922",
+   "category": "metalloid",
+   "category_label": "Metalloid",
+   "row": 4,
+   "col": 15,
+   "period": 4,
+   "group": 15,
+   "short": "Toxic metalloid found naturally in some groundwater.",
+   "contexts": {
+    "environmental": "Arsenic in groundwater is a major global health problem; also from old pesticides and timber treatment.",
+    "engineering": "Semiconductors (gallium arsenide); historic wood preservative (CCA).",
+    "geological": "In sulfide ores and some sedimentary rocks.",
+    "chemical": "Inorganic arsenic is a carcinogen.",
+    "land": "Old sheep-dip, timber-treatment and mine sites can be contaminated."
+   }
+  },
+  {
+   "z": 34,
+   "symbol": "Se",
+   "name": "Selenium",
+   "weight": "78.971",
+   "category": "nonmetal",
+   "category_label": "Reactive non-metal",
+   "row": 4,
+   "col": 16,
+   "period": 4,
+   "group": 16,
+   "short": "Trace nutrient with a narrow line between need and toxicity.",
+   "contexts": {
+    "environmental": "Selenium-poor soils give low-selenium grass; excess is toxic to birds and fish.",
+    "engineering": "Glass decolouriser, electronics, photovoltaics.",
+    "geological": "Associated with sulfide minerals and some shales.",
+    "chemical": "Chemically similar to sulfur.",
+    "land": "Many UK and Irish soils are low in selenium; livestock are supplemented."
+   }
+  },
+  {
+   "z": 35,
+   "symbol": "Br",
+   "name": "Bromine",
+   "weight": "79.904",
+   "category": "halogen",
+   "category_label": "Halogen",
+   "row": 4,
+   "col": 17,
+   "period": 4,
+   "group": 17,
+   "short": "Liquid halogen used in flame retardants.",
+   "contexts": {
+    "environmental": "Bromine from halons and methyl bromide depletes ozone; some brominated flame retardants are persistent pollutants.",
+    "engineering": "Flame retardants, drilling fluids, water treatment.",
+    "geological": "Extracted from brines and seawater.",
+    "chemical": "Corrosive, toxic red-brown liquid.",
+    "land": "Methyl bromide soil fumigation is now banned in the UK and EU."
+   }
+  },
+  {
+   "z": 36,
+   "symbol": "Kr",
+   "name": "Krypton",
+   "weight": "83.798",
+   "category": "noble-gas",
+   "category_label": "Noble gas",
+   "row": 4,
+   "col": 18,
+   "period": 4,
+   "group": 18,
+   "short": "Inert gas used in insulating glazing.",
+   "contexts": {
+    "environmental": "No climate effect.",
+    "engineering": "Fills high-performance double and triple glazing; lighting.",
+    "geological": "Trace gas in air.",
+    "chemical": "A noble gas; forms very few compounds.",
+    "land": "No land use of note."
+   }
+  },
+  {
+   "z": 37,
+   "symbol": "Rb",
+   "name": "Rubidium",
+   "weight": "85.468",
+   "category": "alkali",
+   "category_label": "Alkali metal",
+   "row": 5,
+   "col": 1,
+   "period": 5,
+   "group": 1,
+   "short": "Reactive metal used in atomic clocks.",
+   "contexts": {
+    "environmental": "No significant environmental role.",
+    "engineering": "Atomic clocks and research.",
+    "geological": "Trace in potassium minerals; rubidium–strontium dating of rocks.",
+    "chemical": "Very reactive alkali metal.",
+    "land": "No land issue."
+   }
+  },
+  {
+   "z": 38,
+   "symbol": "Sr",
+   "name": "Strontium",
+   "weight": "87.62",
+   "category": "alkaline-earth",
+   "category_label": "Alkaline earth metal",
+   "row": 5,
+   "col": 2,
+   "period": 5,
+   "group": 2,
+   "short": "Metal that gives fireworks their red colour.",
+   "contexts": {
+    "environmental": "Strontium-90 from nuclear fallout is a radiological concern; stable strontium is low risk.",
+    "engineering": "Fireworks, flares, ferrite magnets.",
+    "geological": "Celestine and strontianite (named after Strontian, Scotland).",
+    "chemical": "Behaves like calcium in bone.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 39,
+   "symbol": "Y",
+   "name": "Yttrium",
+   "weight": "88.906",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 5,
+   "col": 3,
+   "period": 5,
+   "group": 3,
+   "short": "Rare-earth-like metal used in phosphors and lasers.",
+   "contexts": {
+    "environmental": "Little environmental data.",
+    "engineering": "LED phosphors, lasers, superconductors, zirconia ceramics.",
+    "geological": "Found with the rare earth elements.",
+    "chemical": "Behaves like the heavy lanthanides.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 40,
+   "symbol": "Zr",
+   "name": "Zirconium",
+   "weight": "91.224",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 5,
+   "col": 4,
+   "period": 5,
+   "group": 4,
+   "short": "Corrosion-resistant metal used in nuclear fuel cladding.",
+   "contexts": {
+    "environmental": "Low toxicity.",
+    "engineering": "Nuclear fuel cladding, ceramics, dental crowns.",
+    "geological": "Zircon sand; zircon crystals date the oldest rocks.",
+    "chemical": "Metal powder is flammable.",
+    "land": "Mineral sand mining."
+   }
+  },
+  {
+   "z": 41,
+   "symbol": "Nb",
+   "name": "Niobium",
+   "weight": "92.906",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 5,
+   "col": 5,
+   "period": 5,
+   "group": 5,
+   "short": "Metal that strengthens steel and makes superconducting magnets.",
+   "contexts": {
+    "environmental": "Little environmental concern.",
+    "engineering": "High-strength low-alloy steel, superconducting magnets (MRI).",
+    "geological": "Mostly from Brazilian pyrochlore deposits; top of the UK 2024 criticality list.",
+    "chemical": "Forms a protective oxide.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 42,
+   "symbol": "Mo",
+   "name": "Molybdenum",
+   "weight": "95.95",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 5,
+   "col": 6,
+   "period": 5,
+   "group": 6,
+   "short": "Steel alloy metal and a plant micronutrient.",
+   "contexts": {
+    "environmental": "Excess molybdenum in pasture induces copper deficiency in cattle and sheep.",
+    "engineering": "Stainless and tool steels, catalysts, lubricants.",
+    "geological": "Molybdenite ore.",
+    "chemical": "Needed by the enzymes that fix nitrogen in clover.",
+    "land": "Molybdenum-rich 'teart' pastures cause scouring in stock."
+   }
+  },
+  {
+   "z": 43,
+   "symbol": "Tc",
+   "name": "Technetium",
+   "weight": "[98]",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 5,
+   "col": 7,
+   "period": 5,
+   "group": 7,
+   "short": "Radioactive metal used in medical scans.",
+   "contexts": {
+    "environmental": "Technetium-99 from reprocessing is found in Irish Sea seaweed and shellfish at very low levels.",
+    "engineering": "Technetium-99m is the most used medical imaging isotope.",
+    "geological": "Essentially absent from nature; made in reactors.",
+    "chemical": "All isotopes are radioactive.",
+    "land": "No land use of note."
+   }
+  },
+  {
+   "z": 44,
+   "symbol": "Ru",
+   "name": "Ruthenium",
+   "weight": "101.07",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 5,
+   "col": 8,
+   "period": 5,
+   "group": 8,
+   "short": "Platinum-group metal used in electronics and catalysts.",
+   "contexts": {
+    "environmental": "Little environmental data.",
+    "engineering": "Hard-disk coatings, electrical contacts, catalysts.",
+    "geological": "With platinum ores.",
+    "chemical": "Ruthenium tetroxide is toxic and volatile.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 45,
+   "symbol": "Rh",
+   "name": "Rhodium",
+   "weight": "102.91",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 5,
+   "col": 9,
+   "period": 5,
+   "group": 9,
+   "short": "Rare platinum-group metal in catalytic converters.",
+   "contexts": {
+    "environmental": "Converters cut nitrogen oxides from car exhausts; some metal is lost in road dust.",
+    "engineering": "Three-way catalytic converters, glass-fibre bushings.",
+    "geological": "With platinum ores, mainly South Africa.",
+    "chemical": "Very unreactive metal.",
+    "land": "Platinum-group metals build up in roadside soil."
+   }
+  },
+  {
+   "z": 46,
+   "symbol": "Pd",
+   "name": "Palladium",
+   "weight": "106.42",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 5,
+   "col": 10,
+   "period": 5,
+   "group": 10,
+   "short": "Platinum-group metal for catalysts and hydrogen.",
+   "contexts": {
+    "environmental": "Catalytic converter metal; lost to road dust.",
+    "engineering": "Petrol-engine catalysts, electronics, dental alloys; absorbs hydrogen.",
+    "geological": "Russia and South Africa dominate supply.",
+    "chemical": "Excellent hydrogenation catalyst.",
+    "land": "Accumulates in roadside soils."
+   }
+  },
+  {
+   "z": 47,
+   "symbol": "Ag",
+   "name": "Silver",
+   "weight": "107.87",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 5,
+   "col": 11,
+   "period": 5,
+   "group": 11,
+   "short": "Precious metal with the highest electrical conductivity.",
+   "contexts": {
+    "environmental": "Silver ions are toxic to aquatic life; nanosilver in products is a concern.",
+    "engineering": "Solar cell contacts, electronics, mirrors, antimicrobials.",
+    "geological": "By-product of lead, zinc and copper mining.",
+    "chemical": "Tarnishes with sulfur compounds.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 48,
+   "symbol": "Cd",
+   "name": "Cadmium",
+   "weight": "112.41",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 5,
+   "col": 12,
+   "period": 5,
+   "group": 12,
+   "short": "Toxic metal found as an impurity in phosphate fertiliser.",
+   "contexts": {
+    "environmental": "Builds up in soils from phosphate fertiliser and sludge; taken up by crops.",
+    "engineering": "Nickel-cadmium batteries and pigments, now restricted; cadmium telluride solar panels.",
+    "geological": "Impurity in zinc ores and phosphate rock.",
+    "chemical": "Carcinogen; damages kidneys.",
+    "land": "EU fertiliser rules limit cadmium in phosphate fertilisers."
+   }
+  },
+  {
+   "z": 49,
+   "symbol": "In",
+   "name": "Indium",
+   "weight": "114.82",
+   "category": "post-transition",
+   "category_label": "Post-transition metal",
+   "row": 5,
+   "col": 13,
+   "period": 5,
+   "group": 13,
+   "short": "Soft metal behind touchscreen coatings.",
+   "contexts": {
+    "environmental": "Little environmental concern.",
+    "engineering": "Indium tin oxide for touchscreens and displays; solders.",
+    "geological": "By-product of zinc mining; on the UK critical minerals list.",
+    "chemical": "Soft, low-melting metal.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 50,
+   "symbol": "Sn",
+   "name": "Tin",
+   "weight": "118.71",
+   "category": "post-transition",
+   "category_label": "Post-transition metal",
+   "row": 5,
+   "col": 14,
+   "period": 5,
+   "group": 14,
+   "short": "Metal of solder and tin plate.",
+   "contexts": {
+    "environmental": "Organotin antifouling paints (TBT) caused sex changes in sea snails and are banned.",
+    "engineering": "Solder for electronics, tin plate for cans, bronze.",
+    "geological": "Cassiterite ore; Cornish tin mining history.",
+    "chemical": "Inorganic tin is low toxicity; organotins are toxic.",
+    "land": "Old boatyard sediments can hold TBT."
+   }
+  },
+  {
+   "z": 51,
+   "symbol": "Sb",
+   "name": "Antimony",
+   "weight": "121.76",
+   "category": "metalloid",
+   "category_label": "Metalloid",
+   "row": 5,
+   "col": 15,
+   "period": 5,
+   "group": 15,
+   "short": "Metalloid for flame retardants and batteries; a critical mineral.",
+   "contexts": {
+    "environmental": "Antimony reaches soil from shooting ranges, brake-pad wear on busy roads, smelting and landfill. It is toxic in a similar way to arsenic, its neighbour in the table, though less potent. Small amounts migrate from PET plastic, which is made with an antimony catalyst.",
+    "engineering": "Most antimony goes into flame retardants (antimony trioxide boosts brominated retardants in plastics and textiles), lead-acid battery grids, PET catalysts, solar-panel glass and ammunition. It is on the UK critical minerals list. China dominates refining and has controlled exports since September 2024.",
+    "geological": "The main ore is stibnite (antimony sulfide), found with gold, lead and silver deposits. Supply is concentrated in China, Russia and Tajikistan.",
+    "chemical": "Group 15, period 5; a metalloid. Brittle, silvery and a poor conductor. Common states are +3 and +5. Stibine (SbH₃) is a very toxic gas that can form when antimony alloys meet acid, as in battery charging.",
+    "land": "Antimony is a contaminant to look for at shooting grounds, battery recycling and scrap yards, smelters and old landfill. Roadside soils and drain sediments on busy routes carry antimony from brake dust."
+   },
+   "featured": true,
+   "safety": {
+    "coshh": "COSHH applies to antimony and its compounds. The main workplace risks are dust and fume (from smelting, battery and alloy work) and stibine gas.",
+    "classes": [
+     [
+      "Antimony (metal)",
+      "No harmonised CLP entry for the massive metal; suppliers classify powder by its hazards (check the safety data sheet)."
+     ],
+     [
+      "Antimony compounds (group entry, with listed exceptions)",
+      "Acute Tox. 4 H302 + H332 (harmful if swallowed or inhaled); Aquatic Chronic 2 H411. Harmonised (CLP Annex VI)."
+     ],
+     [
+      "Diantimony trioxide (Sb₂O₃)",
+      "Carc. 2 H351 (suspected of causing cancer). Harmonised (CLP Annex VI)."
+     ]
+    ],
+    "wels": [
+     [
+      "Antimony and compounds except stibine (as Sb)",
+      "0.5 mg/m³ LTEL"
+     ],
+     [
+      "Stibine",
+      "0.1 ppm LTEL (check)"
+     ]
+    ],
+    "un": [
+     [
+      "UN2871",
+      "Antimony powder",
+      "6.1"
+     ],
+     [
+      "UN2676",
+      "Stibine",
+      "2.3 (2.1)"
+     ],
+     [
+      "UN1733",
+      "Antimony trichloride",
+      "8"
+     ],
+     [
+      "UN1730",
+      "Antimony pentachloride, liquid",
+      "8"
+     ]
+    ],
+    "risks": "Solid antimony is of low hazard to handle. Its dust and fume irritate the lungs and skin ('antimony spots'), and long exposure to the trioxide dust is a suspected cause of lung cancer. Stibine gas is acutely toxic."
+   },
+   "compounds": {
+    "nature": [
+     [
+      "Stibnite (Sb₂S₃)",
+      "the main ore"
+     ],
+     [
+      "Antimonate and antimonite ions",
+      "the mobile forms in soil water"
+     ]
+    ],
+    "manufacturing": [
+     [
+      "Antimony trioxide (Sb₂O₃)",
+      "flame-retardant synergist; PET catalyst; glass fining"
+     ],
+     [
+      "Lead–antimony alloys",
+      "battery grids, cable sheathing, shot"
+     ],
+     [
+      "Antimony sulfide",
+      "friction modifier in brake pads; match heads"
+     ],
+     [
+      "Sodium antimonate",
+      "clarifying agent in glass, including solar glass"
+     ]
+    ],
+    "climate": [
+     [
+      "No antimony greenhouse gas",
+      "its climate link is supply: solar glass, storage batteries and grid equipment"
+     ],
+     [
+      "Flame retardants in insulation and cables",
+      "part of the building and electrification supply chain"
+     ]
+    ]
+   },
+   "briefing": "/blog/2026/11/antimony-the-critical-mineral-nobody-has-heard-of/",
+   "pdf": "/assets/briefings/elements/antimony-briefing.pdf"
+  },
+  {
+   "z": 52,
+   "symbol": "Te",
+   "name": "Tellurium",
+   "weight": "127.60",
+   "category": "metalloid",
+   "category_label": "Metalloid",
+   "row": 5,
+   "col": 16,
+   "period": 5,
+   "group": 16,
+   "short": "Rare metalloid used in solar panels.",
+   "contexts": {
+    "environmental": "Little environmental data; low natural abundance.",
+    "engineering": "Cadmium telluride thin-film solar panels, thermoelectrics.",
+    "geological": "By-product of copper refining.",
+    "chemical": "Chemically like selenium.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 53,
+   "symbol": "I",
+   "name": "Iodine",
+   "weight": "126.90",
+   "category": "halogen",
+   "category_label": "Halogen",
+   "row": 5,
+   "col": 17,
+   "period": 5,
+   "group": 17,
+   "short": "Halogen essential for the thyroid.",
+   "contexts": {
+    "environmental": "Iodine-131 from nuclear accidents is a short-lived radiological hazard.",
+    "engineering": "Disinfectants, X-ray contrast agents, iodised salt.",
+    "geological": "From brines and Chilean nitrate deposits; seaweed was once a source.",
+    "chemical": "Least reactive stable halogen.",
+    "land": "Seaweed-fed coastal soils are higher in iodine."
+   }
+  },
+  {
+   "z": 54,
+   "symbol": "Xe",
+   "name": "Xenon",
+   "weight": "131.29",
+   "category": "noble-gas",
+   "category_label": "Noble gas",
+   "row": 5,
+   "col": 18,
+   "period": 5,
+   "group": 18,
+   "short": "Heavy inert gas used in lamps and anaesthesia.",
+   "contexts": {
+    "environmental": "No climate effect.",
+    "engineering": "High-intensity lamps, ion thrusters, anaesthetic.",
+    "geological": "Trace in air.",
+    "chemical": "Noble gas that forms a few compounds with fluorine.",
+    "land": "No land use of note."
+   }
+  },
+  {
+   "z": 55,
+   "symbol": "Cs",
+   "name": "Caesium",
+   "weight": "132.91",
+   "category": "alkali",
+   "category_label": "Alkali metal",
+   "row": 6,
+   "col": 1,
+   "period": 6,
+   "group": 1,
+   "short": "Very reactive metal; its radioactive isotope lingers after accidents.",
+   "contexts": {
+    "environmental": "Caesium-137 from Chernobyl fallout persisted in upland soils and sheep.",
+    "engineering": "Atomic clocks, drilling fluids.",
+    "geological": "Pollucite ore.",
+    "chemical": "Most reactive stable alkali metal.",
+    "land": "Post-Chernobyl sheep restrictions applied in parts of the UK until 2012."
+   }
+  },
+  {
+   "z": 56,
+   "symbol": "Ba",
+   "name": "Barium",
+   "weight": "137.33",
+   "category": "alkaline-earth",
+   "category_label": "Alkaline earth metal",
+   "row": 6,
+   "col": 2,
+   "period": 6,
+   "group": 2,
+   "short": "Heavy metal used in drilling muds and X-ray meals.",
+   "contexts": {
+    "environmental": "Barite is inert; soluble barium salts are toxic.",
+    "engineering": "Barite drilling mud, X-ray contrast, glass.",
+    "geological": "Barite veins.",
+    "chemical": "Soluble barium compounds are poisonous.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 57,
+   "symbol": "La",
+   "name": "Lanthanum",
+   "weight": "138.91",
+   "category": "lanthanide",
+   "category_label": "Lanthanide",
+   "row": 8,
+   "col": 3,
+   "period": 6,
+   "group": null,
+   "short": "First of the rare earths; used in catalysts and lenses.",
+   "contexts": {
+    "environmental": "Lanthanum clays are used to lock up phosphate in lakes.",
+    "engineering": "Oil-refining catalysts, camera lenses, nickel-metal-hydride batteries.",
+    "geological": "Bastnäsite and monazite with other rare earths.",
+    "chemical": "Typical lanthanide, +3 ions.",
+    "land": "Lanthanum-modified clay has been trialled to treat phosphorus in lakes."
+   }
+  },
+  {
+   "z": 58,
+   "symbol": "Ce",
+   "name": "Cerium",
+   "weight": "140.12",
+   "category": "lanthanide",
+   "category_label": "Lanthanide",
+   "row": 8,
+   "col": 4,
+   "period": 6,
+   "group": null,
+   "short": "Most abundant rare earth; polishes glass.",
+   "contexts": {
+    "environmental": "Cerium oxide nanoparticles from diesel additives are studied as pollutants.",
+    "engineering": "Glass polishing, catalytic converters, self-cleaning ovens.",
+    "geological": "Bastnäsite and monazite.",
+    "chemical": "Has a stable +4 state as well as +3.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 59,
+   "symbol": "Pr",
+   "name": "Praseodymium",
+   "weight": "140.91",
+   "category": "lanthanide",
+   "category_label": "Lanthanide",
+   "row": 8,
+   "col": 5,
+   "period": 6,
+   "group": null,
+   "short": "Rare earth used in strong magnets.",
+   "contexts": {
+    "environmental": "Rare earth mining produces radioactive and acidic wastes.",
+    "engineering": "Neodymium-praseodymium magnets for motors and wind turbines.",
+    "geological": "With other rare earths.",
+    "chemical": "Typical lanthanide.",
+    "land": "No significant land issue in the UK."
+   }
+  },
+  {
+   "z": 60,
+   "symbol": "Nd",
+   "name": "Neodymium",
+   "weight": "144.24",
+   "category": "lanthanide",
+   "category_label": "Lanthanide",
+   "row": 8,
+   "col": 6,
+   "period": 6,
+   "group": null,
+   "short": "Rare earth in the strongest permanent magnets.",
+   "contexts": {
+    "environmental": "Mining and processing are concentrated and polluting; recycling is small.",
+    "engineering": "NdFeB magnets for EV motors, wind turbines, headphones.",
+    "geological": "Bastnäsite, monazite and ionic clays; rare earths are on the UK critical minerals list.",
+    "chemical": "Typical lanthanide.",
+    "land": "No significant land issue in the UK."
+   }
+  },
+  {
+   "z": 61,
+   "symbol": "Pm",
+   "name": "Promethium",
+   "weight": "[145]",
+   "category": "lanthanide",
+   "category_label": "Lanthanide",
+   "row": 8,
+   "col": 7,
+   "period": 6,
+   "group": null,
+   "short": "Radioactive rare earth, almost absent from nature.",
+   "contexts": {
+    "environmental": "No environmental presence of note.",
+    "engineering": "Formerly used in luminous paint and nuclear batteries.",
+    "geological": "Traces from uranium fission.",
+    "chemical": "All isotopes radioactive.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 62,
+   "symbol": "Sm",
+   "name": "Samarium",
+   "weight": "150.36",
+   "category": "lanthanide",
+   "category_label": "Lanthanide",
+   "row": 8,
+   "col": 8,
+   "period": 6,
+   "group": null,
+   "short": "Rare earth for heat-resistant magnets.",
+   "contexts": {
+    "environmental": "Little environmental data.",
+    "engineering": "Samarium-cobalt magnets, cancer treatment isotope.",
+    "geological": "With other rare earths.",
+    "chemical": "Typical lanthanide.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 63,
+   "symbol": "Eu",
+   "name": "Europium",
+   "weight": "151.96",
+   "category": "lanthanide",
+   "category_label": "Lanthanide",
+   "row": 8,
+   "col": 9,
+   "period": 6,
+   "group": null,
+   "short": "Rare earth that makes red and blue phosphors.",
+   "contexts": {
+    "environmental": "Little environmental data.",
+    "engineering": "Phosphors in screens and LEDs; anti-forgery marks on euro notes.",
+    "geological": "With other rare earths.",
+    "chemical": "Has a stable +2 state.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 64,
+   "symbol": "Gd",
+   "name": "Gadolinium",
+   "weight": "157.25",
+   "category": "lanthanide",
+   "category_label": "Lanthanide",
+   "row": 8,
+   "col": 10,
+   "period": 6,
+   "group": null,
+   "short": "Rare earth used in MRI contrast agents.",
+   "contexts": {
+    "environmental": "Gadolinium from MRI contrast passes through sewage works into rivers.",
+    "engineering": "MRI contrast agents, neutron absorbers.",
+    "geological": "With other rare earths.",
+    "chemical": "Strongly magnetic ion.",
+    "land": "Elevated gadolinium is a tracer for treated wastewater."
+   }
+  },
+  {
+   "z": 65,
+   "symbol": "Tb",
+   "name": "Terbium",
+   "weight": "158.93",
+   "category": "lanthanide",
+   "category_label": "Lanthanide",
+   "row": 8,
+   "col": 11,
+   "period": 6,
+   "group": null,
+   "short": "Rare earth for green phosphors and magnets.",
+   "contexts": {
+    "environmental": "Little environmental data.",
+    "engineering": "Green phosphors; added to NdFeB magnets for heat resistance.",
+    "geological": "Ionic clay deposits, mainly China.",
+    "chemical": "Typical lanthanide.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 66,
+   "symbol": "Dy",
+   "name": "Dysprosium",
+   "weight": "162.50",
+   "category": "lanthanide",
+   "category_label": "Lanthanide",
+   "row": 8,
+   "col": 12,
+   "period": 6,
+   "group": null,
+   "short": "Heavy rare earth that keeps magnets working when hot.",
+   "contexts": {
+    "environmental": "Supply concentrated; mining impacts in source regions.",
+    "engineering": "Added to EV motor and wind turbine magnets.",
+    "geological": "Ionic clays.",
+    "chemical": "Typical lanthanide.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 67,
+   "symbol": "Ho",
+   "name": "Holmium",
+   "weight": "164.93",
+   "category": "lanthanide",
+   "category_label": "Lanthanide",
+   "row": 8,
+   "col": 13,
+   "period": 6,
+   "group": null,
+   "short": "Rare earth with the strongest magnetic moment.",
+   "contexts": {
+    "environmental": "Little environmental data.",
+    "engineering": "Lasers, magnetic pole pieces.",
+    "geological": "With other rare earths.",
+    "chemical": "Typical lanthanide.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 68,
+   "symbol": "Er",
+   "name": "Erbium",
+   "weight": "167.26",
+   "category": "lanthanide",
+   "category_label": "Lanthanide",
+   "row": 8,
+   "col": 14,
+   "period": 6,
+   "group": null,
+   "short": "Rare earth that amplifies signals in fibre optics.",
+   "contexts": {
+    "environmental": "Little environmental data.",
+    "engineering": "Erbium-doped fibre amplifiers, pink glass.",
+    "geological": "With other rare earths.",
+    "chemical": "Typical lanthanide.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 69,
+   "symbol": "Tm",
+   "name": "Thulium",
+   "weight": "168.93",
+   "category": "lanthanide",
+   "category_label": "Lanthanide",
+   "row": 8,
+   "col": 15,
+   "period": 6,
+   "group": null,
+   "short": "One of the rarest rare earths.",
+   "contexts": {
+    "environmental": "Little environmental data.",
+    "engineering": "Portable X-ray sources, lasers.",
+    "geological": "With other rare earths.",
+    "chemical": "Typical lanthanide.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 70,
+   "symbol": "Yb",
+   "name": "Ytterbium",
+   "weight": "173.05",
+   "category": "lanthanide",
+   "category_label": "Lanthanide",
+   "row": 8,
+   "col": 16,
+   "period": 6,
+   "group": null,
+   "short": "Rare earth used in lasers and atomic clocks.",
+   "contexts": {
+    "environmental": "Little environmental data.",
+    "engineering": "Fibre lasers, atomic clocks, stress gauges.",
+    "geological": "With other rare earths.",
+    "chemical": "Has a stable +2 state.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 71,
+   "symbol": "Lu",
+   "name": "Lutetium",
+   "weight": "174.97",
+   "category": "lanthanide",
+   "category_label": "Lanthanide",
+   "row": 8,
+   "col": 17,
+   "period": 6,
+   "group": null,
+   "short": "Last and densest of the lanthanides.",
+   "contexts": {
+    "environmental": "Little environmental data.",
+    "engineering": "PET scanner crystals, catalysts, cancer therapy isotope.",
+    "geological": "With other rare earths.",
+    "chemical": "Typical lanthanide.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 72,
+   "symbol": "Hf",
+   "name": "Hafnium",
+   "weight": "178.49",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 6,
+   "col": 4,
+   "period": 6,
+   "group": 4,
+   "short": "Metal that absorbs neutrons and survives heat.",
+   "contexts": {
+    "environmental": "Low toxicity.",
+    "engineering": "Nuclear control rods, superalloys, chip gate insulators.",
+    "geological": "Separated from zirconium.",
+    "chemical": "Chemically almost identical to zirconium.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 73,
+   "symbol": "Ta",
+   "name": "Tantalum",
+   "weight": "180.95",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 6,
+   "col": 5,
+   "period": 6,
+   "group": 5,
+   "short": "Corrosion-proof metal for capacitors; a conflict mineral.",
+   "contexts": {
+    "environmental": "Coltan mining is linked to conflict in central Africa.",
+    "engineering": "Capacitors in phones and laptops, implants.",
+    "geological": "Coltan and tantalite ores.",
+    "chemical": "Highly corrosion resistant.",
+    "land": "No significant land issue in the UK."
+   }
+  },
+  {
+   "z": 74,
+   "symbol": "W",
+   "name": "Tungsten",
+   "weight": "183.84",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 6,
+   "col": 6,
+   "period": 6,
+   "group": 6,
+   "short": "Metal with the highest melting point.",
+   "contexts": {
+    "environmental": "Tungsten in ammunition can be mobile in some soils.",
+    "engineering": "Cutting tools (tungsten carbide), filaments, armour.",
+    "geological": "Wolframite and scheelite; Hemerdon mine in Devon.",
+    "chemical": "Very dense, very hard carbides.",
+    "land": "Military ranges may hold tungsten."
+   }
+  },
+  {
+   "z": 75,
+   "symbol": "Re",
+   "name": "Rhenium",
+   "weight": "186.21",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 6,
+   "col": 7,
+   "period": 6,
+   "group": 7,
+   "short": "Rare metal used in jet-engine superalloys.",
+   "contexts": {
+    "environmental": "Little environmental data.",
+    "engineering": "Superalloys for turbine blades, refinery catalysts.",
+    "geological": "By-product of molybdenum.",
+    "chemical": "Very high melting point.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 76,
+   "symbol": "Os",
+   "name": "Osmium",
+   "weight": "190.23",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 6,
+   "col": 8,
+   "period": 6,
+   "group": 8,
+   "short": "Densest naturally occurring element.",
+   "contexts": {
+    "environmental": "Osmium tetroxide is highly toxic.",
+    "engineering": "Hard alloys for pen nibs and contacts.",
+    "geological": "With platinum ores.",
+    "chemical": "Forms volatile toxic tetroxide.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 77,
+   "symbol": "Ir",
+   "name": "Iridium",
+   "weight": "192.22",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 6,
+   "col": 9,
+   "period": 6,
+   "group": 9,
+   "short": "Very corrosion-resistant metal; key to electrolysers.",
+   "contexts": {
+    "environmental": "Little environmental data; extremely scarce.",
+    "engineering": "Catalyst in PEM electrolysers for hydrogen, spark plugs.",
+    "geological": "With platinum ores; an iridium layer marks the dinosaur-killing impact.",
+    "chemical": "Very unreactive.",
+    "land": "No significant land issue."
+   }
+  },
+  {
+   "z": 78,
+   "symbol": "Pt",
+   "name": "Platinum",
+   "weight": "195.08",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 6,
+   "col": 10,
+   "period": 6,
+   "group": 10,
+   "short": "Precious metal for catalysts and fuel cells.",
+   "contexts": {
+    "environmental": "Platinum from catalytic converters accumulates on roadsides.",
+    "engineering": "Diesel catalysts, fuel cells, electrodes, jewellery.",
+    "geological": "South Africa's Bushveld complex dominates.",
+    "chemical": "Excellent catalyst; very unreactive.",
+    "land": "Roadside soils show platinum-group enrichment."
+   }
+  },
+  {
+   "z": 79,
+   "symbol": "Au",
+   "name": "Gold",
+   "weight": "196.97",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 6,
+   "col": 11,
+   "period": 6,
+   "group": 11,
+   "short": "Precious metal; inert and highly conductive.",
+   "contexts": {
+    "environmental": "Small-scale mining uses mercury; large mines move huge volumes of rock.",
+    "engineering": "Electronics contacts, dentistry, reserves.",
+    "geological": "Veins and placers; gold prospects in the Sperrins (Curraghinalt, Co. Tyrone).",
+    "chemical": "Very unreactive; dissolves in aqua regia and cyanide.",
+    "land": "Proposed gold mining in the Sperrins has been a long-running planning issue."
+   }
+  },
+  {
+   "z": 80,
+   "symbol": "Hg",
+   "name": "Mercury",
+   "weight": "200.59",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 6,
+   "col": 12,
+   "period": 6,
+   "group": 12,
+   "short": "Liquid metal; a global pollutant.",
+   "contexts": {
+    "environmental": "Mercury from coal burning and mining becomes methylmercury and builds up in fish.",
+    "engineering": "Being phased out under the Minamata Convention: thermometers, lamps, dental amalgam.",
+    "geological": "Cinnabar ore.",
+    "chemical": "Vapour is toxic; methylmercury is a neurotoxin.",
+    "land": "Old chlor-alkali plants and instrument works can leave contamination."
+   }
+  },
+  {
+   "z": 81,
+   "symbol": "Tl",
+   "name": "Thallium",
+   "weight": "204.38",
+   "category": "post-transition",
+   "category_label": "Post-transition metal",
+   "row": 6,
+   "col": 13,
+   "period": 6,
+   "group": 13,
+   "short": "Highly toxic metal once used as rat poison.",
+   "contexts": {
+    "environmental": "Released from smelting and coal combustion.",
+    "engineering": "Specialised optics and electronics.",
+    "geological": "In sulfide ores.",
+    "chemical": "Very toxic; mimics potassium in the body.",
+    "land": "No significant land issue in NI."
+   }
+  },
+  {
+   "z": 82,
+   "symbol": "Pb",
+   "name": "Lead",
+   "weight": "207.2",
+   "category": "post-transition",
+   "category_label": "Post-transition metal",
+   "row": 6,
+   "col": 14,
+   "period": 6,
+   "group": 14,
+   "short": "Dense toxic metal of batteries and old pipes.",
+   "contexts": {
+    "environmental": "Lead from petrol, paint and shot built up in soils; no safe level for children.",
+    "engineering": "Lead-acid batteries, radiation shielding, roofing.",
+    "geological": "Galena ore; historic lead mining in Ireland and the UK.",
+    "chemical": "Neurotoxin; lead pipes still exist in older housing.",
+    "land": "Shooting grounds, old orchards and urban soils can be lead-contaminated."
+   }
+  },
+  {
+   "z": 83,
+   "symbol": "Bi",
+   "name": "Bismuth",
+   "weight": "208.98",
+   "category": "post-transition",
+   "category_label": "Post-transition metal",
+   "row": 6,
+   "col": 15,
+   "period": 6,
+   "group": 15,
+   "short": "Heavy metal with low toxicity; replaces lead.",
+   "contexts": {
+    "environmental": "Much less toxic than lead.",
+    "engineering": "Lead-free solders, pharmaceuticals, fire sprinkler alloys.",
+    "geological": "By-product of lead and copper refining; on the UK critical minerals list.",
+    "chemical": "Least toxic heavy metal.",
+    "land": "Used in lead-free shot."
+   }
+  },
+  {
+   "z": 84,
+   "symbol": "Po",
+   "name": "Polonium",
+   "weight": "[209]",
+   "category": "post-transition",
+   "category_label": "Post-transition metal",
+   "row": 6,
+   "col": 16,
+   "period": 6,
+   "group": 16,
+   "short": "Intensely radioactive element; part of the radon decay chain.",
+   "contexts": {
+    "environmental": "Polonium-210 forms from radon decay and contributes to radon's lung dose.",
+    "engineering": "Static eliminators; historically neutron sources.",
+    "geological": "Trace in uranium ores.",
+    "chemical": "Alpha emitter; extremely toxic if taken in.",
+    "land": "Present wherever radon decays."
+   }
+  },
+  {
+   "z": 85,
+   "symbol": "At",
+   "name": "Astatine",
+   "weight": "[210]",
+   "category": "halogen",
+   "category_label": "Halogen",
+   "row": 6,
+   "col": 17,
+   "period": 6,
+   "group": 17,
+   "short": "Rarest naturally occurring element.",
+   "contexts": {
+    "environmental": "No environmental presence of note.",
+    "engineering": "Studied for targeted cancer therapy.",
+    "geological": "Fleeting traces in uranium and thorium decay.",
+    "chemical": "Highly radioactive halogen.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 86,
+   "symbol": "Rn",
+   "name": "Radon",
+   "weight": "[222]",
+   "category": "noble-gas",
+   "category_label": "Noble gas",
+   "row": 6,
+   "col": 18,
+   "period": 6,
+   "group": 18,
+   "short": "Radioactive gas from the ground; the main source of radiation dose in UK homes.",
+   "contexts": {
+    "environmental": "Radon is a radioactive gas that seeps from the ground into buildings. Breathing its decay products over years raises the risk of lung cancer, especially for smokers. Outdoors it disperses harmlessly; indoors it can build up.",
+    "engineering": "Radon protection in new buildings uses a gas-resistant membrane, with a sump or ventilated sub-floor in higher-risk areas. Existing buildings are fixed with a radon sump and fan or better under-floor ventilation. Making buildings more airtight to save energy can raise indoor radon unless ventilation is designed in.",
+    "geological": "Radon-222 comes from the decay of uranium in rocks and soils, via radium. Levels follow geology; Northern Ireland's radon potential map (UKHSA, GSNI and BGS) shows the areas affected. Radon also dissolves in groundwater, so private wells can carry it.",
+    "chemical": "Group 18, period 6; the heaviest naturally occurring noble gas. Chemically almost inert. Radon-222 has a half-life of 3.8 days and decays through short-lived polonium, lead and bismuth isotopes that stick to dust and lodge in the lungs.",
+    "land": "Whether a site is in a radon affected area decides what protection a new building needs under the Building Regulations (Northern Ireland). Workplaces in affected areas should test, and employers must act where annual averages exceed 300 Bq/m³ under the Ionising Radiations Regulations (Northern Ireland) 2017."
+   },
+   "featured": true,
+   "safety": {
+    "coshh": "COSHH does not cover the radiation hazard of radon; the Ionising Radiations Regulations (Northern Ireland) 2017 do. Radioactive substances also fall outside CLP classification.",
+    "classes": [
+     [
+      "Radon",
+      "No CLP classification (radioactive substances are outside CLP). Regulated as a source of ionising radiation."
+     ]
+    ],
+    "wels": [
+     [
+      "Workplaces (IRR NI 2017)",
+      "Reference level 300 Bq/m³ annual average; employers must act above it"
+     ],
+     [
+      "Homes (UKHSA)",
+      "Action level 200 Bq/m³; target level 100 Bq/m³"
+     ],
+     [
+      "UK average in homes",
+      "about 20 Bq/m³ (UKHSA)"
+     ]
+    ],
+    "un": [
+     [
+      "No specific UN number",
+      "Radon is not consigned as a substance. Any radioactive material in transport is Class 7, e.g. UN2910 (excepted package). Passive radon test detectors are not dangerous goods.",
+      "7 (if any)"
+     ]
+    ],
+    "risks": "Radon is colourless, odourless and tasteless: only a test shows the level. The risk is long-term lung cancer, not acute poisoning. Smokers exposed to radon face a much higher risk than non-smokers."
+   },
+   "compounds": {
+    "nature": [
+     [
+      "Uranium-238 and radium-226",
+      "the parents of radon in rocks and soil"
+     ],
+     [
+      "Radon progeny: polonium-218, lead-214, bismuth-214, polonium-214",
+      "the short-lived decay products that deliver the lung dose"
+     ],
+     [
+      "Lead-210 and polonium-210",
+      "longer-lived decay products in soils and dust"
+     ],
+     [
+      "Thoron (radon-220)",
+      "a short-lived radon isotope from thorium"
+     ]
+    ],
+    "manufacturing": [
+     [
+      "Radon has no industrial compounds",
+      "it is almost chemically inert"
+     ],
+     [
+      "Building materials",
+      "some stone and phosphogypsum carry radium; most UK materials are low"
+     ]
+    ],
+    "climate": [
+     [
+      "No climate effect",
+      "radon is not a greenhouse gas"
+     ],
+     [
+      "Atmospheric tracer",
+      "because it comes only from land, radon is used by scientists to track air masses and check greenhouse gas estimates"
+     ],
+     [
+      "Energy retrofits",
+      "sealing homes without ventilation can raise indoor radon"
+     ]
+    ]
+   },
+   "briefing": "/blog/2026/11/radon-the-gas-from-the-ground-a-tighter-house-can-trap/",
+   "pdf": "/assets/briefings/elements/radon-briefing.pdf"
+  },
+  {
+   "z": 87,
+   "symbol": "Fr",
+   "name": "Francium",
+   "weight": "[223]",
+   "category": "alkali",
+   "category_label": "Alkali metal",
+   "row": 7,
+   "col": 1,
+   "period": 7,
+   "group": 1,
+   "short": "Extremely rare, unstable alkali metal.",
+   "contexts": {
+    "environmental": "No environmental presence of note.",
+    "engineering": "Research only.",
+    "geological": "Fleeting traces in uranium ores.",
+    "chemical": "Half-life of minutes.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 88,
+   "symbol": "Ra",
+   "name": "Radium",
+   "weight": "[226]",
+   "category": "alkaline-earth",
+   "category_label": "Alkaline earth metal",
+   "row": 7,
+   "col": 2,
+   "period": 7,
+   "group": 2,
+   "short": "Radioactive metal; the parent of radon.",
+   "contexts": {
+    "environmental": "Radium in rocks and soil decays to radon gas.",
+    "engineering": "Historic luminous paint; medical isotopes.",
+    "geological": "In uranium-bearing rocks such as granite.",
+    "chemical": "Behaves like barium; radioactive.",
+    "land": "Old luminous-dial works left radium contamination at some sites."
+   }
+  },
+  {
+   "z": 89,
+   "symbol": "Ac",
+   "name": "Actinium",
+   "weight": "[227]",
+   "category": "actinide",
+   "category_label": "Actinide",
+   "row": 9,
+   "col": 3,
+   "period": 7,
+   "group": null,
+   "short": "Radioactive metal at the head of the actinides.",
+   "contexts": {
+    "environmental": "No environmental presence of note.",
+    "engineering": "Actinium-225 for targeted cancer therapy.",
+    "geological": "Traces in uranium ores.",
+    "chemical": "Highly radioactive.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 90,
+   "symbol": "Th",
+   "name": "Thorium",
+   "weight": "232.04",
+   "category": "actinide",
+   "category_label": "Actinide",
+   "row": 9,
+   "col": 4,
+   "period": 7,
+   "group": null,
+   "short": "Weakly radioactive metal; a possible nuclear fuel.",
+   "contexts": {
+    "environmental": "Thorium in rocks contributes to background radiation and thoron gas.",
+    "engineering": "Proposed thorium reactors; heat-resistant ceramics.",
+    "geological": "Monazite sands; more abundant than uranium.",
+    "chemical": "Radioactive; long half-life.",
+    "land": "Monazite processing leaves radioactive residues."
+   }
+  },
+  {
+   "z": 91,
+   "symbol": "Pa",
+   "name": "Protactinium",
+   "weight": "231.04",
+   "category": "actinide",
+   "category_label": "Actinide",
+   "row": 9,
+   "col": 5,
+   "period": 7,
+   "group": null,
+   "short": "Rare, highly toxic radioactive metal.",
+   "contexts": {
+    "environmental": "No environmental presence of note.",
+    "engineering": "Research only.",
+    "geological": "Traces in uranium ores.",
+    "chemical": "Radioactive.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 92,
+   "symbol": "U",
+   "name": "Uranium",
+   "weight": "238.03",
+   "category": "actinide",
+   "category_label": "Actinide",
+   "row": 9,
+   "col": 6,
+   "period": 7,
+   "group": null,
+   "short": "Radioactive metal that fuels nuclear power and makes radon.",
+   "contexts": {
+    "environmental": "Uranium in granite and shale is the source of radon gas.",
+    "engineering": "Nuclear fuel; depleted uranium in armour.",
+    "geological": "Uraninite; enriched in granites.",
+    "chemical": "Weakly radioactive; chemically toxic to kidneys.",
+    "land": "Radon-affected areas follow uranium-bearing geology."
+   }
+  },
+  {
+   "z": 93,
+   "symbol": "Np",
+   "name": "Neptunium",
+   "weight": "[237]",
+   "category": "actinide",
+   "category_label": "Actinide",
+   "row": 9,
+   "col": 7,
+   "period": 7,
+   "group": null,
+   "short": "First synthetic actinide.",
+   "contexts": {
+    "environmental": "A long-lived component of nuclear waste.",
+    "engineering": "By-product in reactors.",
+    "geological": "Trace in uranium ores.",
+    "chemical": "Radioactive.",
+    "land": "Relevant to deep disposal of waste."
+   }
+  },
+  {
+   "z": 94,
+   "symbol": "Pu",
+   "name": "Plutonium",
+   "weight": "[244]",
+   "category": "actinide",
+   "category_label": "Actinide",
+   "row": 9,
+   "col": 8,
+   "period": 7,
+   "group": null,
+   "short": "Synthetic actinide used in weapons and reactors.",
+   "contexts": {
+    "environmental": "Plutonium from Sellafield discharges is measurable in Irish Sea sediments.",
+    "engineering": "Nuclear fuel (MOX), space power sources.",
+    "geological": "Made in reactors.",
+    "chemical": "Radioactive and toxic.",
+    "land": "Long-term waste disposal question."
+   }
+  },
+  {
+   "z": 95,
+   "symbol": "Am",
+   "name": "Americium",
+   "weight": "[243]",
+   "category": "actinide",
+   "category_label": "Actinide",
+   "row": 9,
+   "col": 9,
+   "period": 7,
+   "group": null,
+   "short": "Synthetic element in smoke detectors.",
+   "contexts": {
+    "environmental": "Small amounts in waste; long-lived.",
+    "engineering": "Ionisation smoke detectors.",
+    "geological": "Made in reactors.",
+    "chemical": "Alpha emitter.",
+    "land": "Smoke-detector disposal rules."
+   }
+  },
+  {
+   "z": 96,
+   "symbol": "Cm",
+   "name": "Curium",
+   "weight": "[247]",
+   "category": "actinide",
+   "category_label": "Actinide",
+   "row": 9,
+   "col": 10,
+   "period": 7,
+   "group": null,
+   "short": "Synthetic radioactive element.",
+   "contexts": {
+    "environmental": "No environmental presence of note.",
+    "engineering": "Space power and research.",
+    "geological": "Made in reactors.",
+    "chemical": "Highly radioactive.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 97,
+   "symbol": "Bk",
+   "name": "Berkelium",
+   "weight": "[247]",
+   "category": "actinide",
+   "category_label": "Actinide",
+   "row": 9,
+   "col": 11,
+   "period": 7,
+   "group": null,
+   "short": "Synthetic radioactive element.",
+   "contexts": {
+    "environmental": "No environmental presence of note.",
+    "engineering": "Research only.",
+    "geological": "Made in reactors.",
+    "chemical": "Highly radioactive.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 98,
+   "symbol": "Cf",
+   "name": "Californium",
+   "weight": "[251]",
+   "category": "actinide",
+   "category_label": "Actinide",
+   "row": 9,
+   "col": 12,
+   "period": 7,
+   "group": null,
+   "short": "Synthetic element that emits neutrons.",
+   "contexts": {
+    "environmental": "No environmental presence of note.",
+    "engineering": "Neutron sources for reactor start-up and moisture gauges.",
+    "geological": "Made in reactors.",
+    "chemical": "Strong neutron emitter.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 99,
+   "symbol": "Es",
+   "name": "Einsteinium",
+   "weight": "[252]",
+   "category": "actinide",
+   "category_label": "Actinide",
+   "row": 9,
+   "col": 13,
+   "period": 7,
+   "group": null,
+   "short": "Synthetic element first found in H-bomb debris.",
+   "contexts": {
+    "environmental": "No environmental presence of note.",
+    "engineering": "Research only.",
+    "geological": "Made in reactors.",
+    "chemical": "Highly radioactive.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 100,
+   "symbol": "Fm",
+   "name": "Fermium",
+   "weight": "[257]",
+   "category": "actinide",
+   "category_label": "Actinide",
+   "row": 9,
+   "col": 14,
+   "period": 7,
+   "group": null,
+   "short": "Synthetic element.",
+   "contexts": {
+    "environmental": "No environmental presence of note.",
+    "engineering": "Research only.",
+    "geological": "Made in reactors.",
+    "chemical": "Highly radioactive.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 101,
+   "symbol": "Md",
+   "name": "Mendelevium",
+   "weight": "[258]",
+   "category": "actinide",
+   "category_label": "Actinide",
+   "row": 9,
+   "col": 15,
+   "period": 7,
+   "group": null,
+   "short": "Synthetic element named after Mendeleev.",
+   "contexts": {
+    "environmental": "No environmental presence of note.",
+    "engineering": "Research only.",
+    "geological": "Made in accelerators.",
+    "chemical": "Highly radioactive.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 102,
+   "symbol": "No",
+   "name": "Nobelium",
+   "weight": "[259]",
+   "category": "actinide",
+   "category_label": "Actinide",
+   "row": 9,
+   "col": 16,
+   "period": 7,
+   "group": null,
+   "short": "Synthetic element.",
+   "contexts": {
+    "environmental": "No environmental presence of note.",
+    "engineering": "Research only.",
+    "geological": "Made in accelerators.",
+    "chemical": "Highly radioactive.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 103,
+   "symbol": "Lr",
+   "name": "Lawrencium",
+   "weight": "[262]",
+   "category": "actinide",
+   "category_label": "Actinide",
+   "row": 9,
+   "col": 17,
+   "period": 7,
+   "group": null,
+   "short": "Synthetic element; last of the actinides.",
+   "contexts": {
+    "environmental": "No environmental presence of note.",
+    "engineering": "Research only.",
+    "geological": "Made in accelerators.",
+    "chemical": "Highly radioactive.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 104,
+   "symbol": "Rf",
+   "name": "Rutherfordium",
+   "weight": "[267]",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 7,
+   "col": 4,
+   "period": 7,
+   "group": 4,
+   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "contexts": {
+    "environmental": "No environmental presence: atoms exist for seconds or less.",
+    "engineering": "No engineering use; research into the limits of the periodic table.",
+    "geological": "Does not occur in nature.",
+    "chemical": "Chemistry predicted rather than measured for most of these elements.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 105,
+   "symbol": "Db",
+   "name": "Dubnium",
+   "weight": "[268]",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 7,
+   "col": 5,
+   "period": 7,
+   "group": 5,
+   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "contexts": {
+    "environmental": "No environmental presence: atoms exist for seconds or less.",
+    "engineering": "No engineering use; research into the limits of the periodic table.",
+    "geological": "Does not occur in nature.",
+    "chemical": "Chemistry predicted rather than measured for most of these elements.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 106,
+   "symbol": "Sg",
+   "name": "Seaborgium",
+   "weight": "[269]",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 7,
+   "col": 6,
+   "period": 7,
+   "group": 6,
+   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "contexts": {
+    "environmental": "No environmental presence: atoms exist for seconds or less.",
+    "engineering": "No engineering use; research into the limits of the periodic table.",
+    "geological": "Does not occur in nature.",
+    "chemical": "Chemistry predicted rather than measured for most of these elements.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 107,
+   "symbol": "Bh",
+   "name": "Bohrium",
+   "weight": "[270]",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 7,
+   "col": 7,
+   "period": 7,
+   "group": 7,
+   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "contexts": {
+    "environmental": "No environmental presence: atoms exist for seconds or less.",
+    "engineering": "No engineering use; research into the limits of the periodic table.",
+    "geological": "Does not occur in nature.",
+    "chemical": "Chemistry predicted rather than measured for most of these elements.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 108,
+   "symbol": "Hs",
+   "name": "Hassium",
+   "weight": "[269]",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 7,
+   "col": 8,
+   "period": 7,
+   "group": 8,
+   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "contexts": {
+    "environmental": "No environmental presence: atoms exist for seconds or less.",
+    "engineering": "No engineering use; research into the limits of the periodic table.",
+    "geological": "Does not occur in nature.",
+    "chemical": "Chemistry predicted rather than measured for most of these elements.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 109,
+   "symbol": "Mt",
+   "name": "Meitnerium",
+   "weight": "[278]",
+   "category": "unknown",
+   "category_label": "Properties not yet known",
+   "row": 7,
+   "col": 9,
+   "period": 7,
+   "group": 9,
+   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "contexts": {
+    "environmental": "No environmental presence: atoms exist for seconds or less.",
+    "engineering": "No engineering use; research into the limits of the periodic table.",
+    "geological": "Does not occur in nature.",
+    "chemical": "Chemistry predicted rather than measured for most of these elements.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 110,
+   "symbol": "Ds",
+   "name": "Darmstadtium",
+   "weight": "[281]",
+   "category": "unknown",
+   "category_label": "Properties not yet known",
+   "row": 7,
+   "col": 10,
+   "period": 7,
+   "group": 10,
+   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "contexts": {
+    "environmental": "No environmental presence: atoms exist for seconds or less.",
+    "engineering": "No engineering use; research into the limits of the periodic table.",
+    "geological": "Does not occur in nature.",
+    "chemical": "Chemistry predicted rather than measured for most of these elements.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 111,
+   "symbol": "Rg",
+   "name": "Roentgenium",
+   "weight": "[282]",
+   "category": "unknown",
+   "category_label": "Properties not yet known",
+   "row": 7,
+   "col": 11,
+   "period": 7,
+   "group": 11,
+   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "contexts": {
+    "environmental": "No environmental presence: atoms exist for seconds or less.",
+    "engineering": "No engineering use; research into the limits of the periodic table.",
+    "geological": "Does not occur in nature.",
+    "chemical": "Chemistry predicted rather than measured for most of these elements.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 112,
+   "symbol": "Cn",
+   "name": "Copernicium",
+   "weight": "[285]",
+   "category": "transition",
+   "category_label": "Transition metal",
+   "row": 7,
+   "col": 12,
+   "period": 7,
+   "group": 12,
+   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "contexts": {
+    "environmental": "No environmental presence: atoms exist for seconds or less.",
+    "engineering": "No engineering use; research into the limits of the periodic table.",
+    "geological": "Does not occur in nature.",
+    "chemical": "Chemistry predicted rather than measured for most of these elements.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 113,
+   "symbol": "Nh",
+   "name": "Nihonium",
+   "weight": "[286]",
+   "category": "unknown",
+   "category_label": "Properties not yet known",
+   "row": 7,
+   "col": 13,
+   "period": 7,
+   "group": 13,
+   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "contexts": {
+    "environmental": "No environmental presence: atoms exist for seconds or less.",
+    "engineering": "No engineering use; research into the limits of the periodic table.",
+    "geological": "Does not occur in nature.",
+    "chemical": "Chemistry predicted rather than measured for most of these elements.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 114,
+   "symbol": "Fl",
+   "name": "Flerovium",
+   "weight": "[289]",
+   "category": "unknown",
+   "category_label": "Properties not yet known",
+   "row": 7,
+   "col": 14,
+   "period": 7,
+   "group": 14,
+   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "contexts": {
+    "environmental": "No environmental presence: atoms exist for seconds or less.",
+    "engineering": "No engineering use; research into the limits of the periodic table.",
+    "geological": "Does not occur in nature.",
+    "chemical": "Chemistry predicted rather than measured for most of these elements.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 115,
+   "symbol": "Mc",
+   "name": "Moscovium",
+   "weight": "[290]",
+   "category": "unknown",
+   "category_label": "Properties not yet known",
+   "row": 7,
+   "col": 15,
+   "period": 7,
+   "group": 15,
+   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "contexts": {
+    "environmental": "No environmental presence: atoms exist for seconds or less.",
+    "engineering": "No engineering use; research into the limits of the periodic table.",
+    "geological": "Does not occur in nature.",
+    "chemical": "Chemistry predicted rather than measured for most of these elements.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 116,
+   "symbol": "Lv",
+   "name": "Livermorium",
+   "weight": "[293]",
+   "category": "unknown",
+   "category_label": "Properties not yet known",
+   "row": 7,
+   "col": 16,
+   "period": 7,
+   "group": 16,
+   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "contexts": {
+    "environmental": "No environmental presence: atoms exist for seconds or less.",
+    "engineering": "No engineering use; research into the limits of the periodic table.",
+    "geological": "Does not occur in nature.",
+    "chemical": "Chemistry predicted rather than measured for most of these elements.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 117,
+   "symbol": "Ts",
+   "name": "Tennessine",
+   "weight": "[294]",
+   "category": "unknown",
+   "category_label": "Properties not yet known",
+   "row": 7,
+   "col": 17,
+   "period": 7,
+   "group": 17,
+   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "contexts": {
+    "environmental": "No environmental presence: atoms exist for seconds or less.",
+    "engineering": "No engineering use; research into the limits of the periodic table.",
+    "geological": "Does not occur in nature.",
+    "chemical": "Chemistry predicted rather than measured for most of these elements.",
+    "land": "No land use."
+   }
+  },
+  {
+   "z": 118,
+   "symbol": "Og",
+   "name": "Oganesson",
+   "weight": "[294]",
+   "category": "unknown",
+   "category_label": "Properties not yet known",
+   "row": 7,
+   "col": 18,
+   "period": 7,
+   "group": 18,
+   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "contexts": {
+    "environmental": "No environmental presence: atoms exist for seconds or less.",
+    "engineering": "No engineering use; research into the limits of the periodic table.",
+    "geological": "Does not occur in nature.",
+    "chemical": "Chemistry predicted rather than measured for most of these elements.",
+    "land": "No land use."
+   }
+  }
+ ]
+}

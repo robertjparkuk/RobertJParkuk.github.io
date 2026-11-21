@@ -1,0 +1,111 @@
+---
+title: "Radon: the gas from the ground a tighter house can trap"
+date: 2026-12-01 07:30:00 +0000
+published: false   # draft for Robert's review, 21 Nov 2026; one of eight element briefings
+tags: ["Elements", "Learn", "Radon", "Buildings", "Health", "Geology", "Northern Ireland"]
+image: /assets/learn/periodic-table-rn.png
+description: "Radon in climate, soil, land and the air: where it comes from, why energy retrofits can raise it, the action levels and building rules in Northern Ireland, and how it is regulated at work."
+---
+
+*Element 86 seeps out of the rocks under our feet. It cannot be seen, smelt or tasted, and the only way to know the level in a building is to measure it.*
+
+<figure class="learn-figure"><img src="{{ '/assets/learn/periodic-table-rn.svg' | relative_url }}" alt="The full periodic table of 118 elements, coloured by type. Radon is picked out in red with its atomic number, symbol, atomic weight and a one-line description. The other seven elements in this series (phosphorus, nitrogen, sulfur, fluorine, antimony, magnesium, carbon and radon) are outlined in red." loading="lazy"><figcaption>Radon in the full periodic table. <a href="{{ '/tools/periodic-table.html' | relative_url }}">Open the interactive table</a> to explore every element.</figcaption></figure>
+
+Radon is a radioactive gas made in the ground as uranium in rocks and soil slowly decays. Outdoors it thins out harmlessly. Indoors it can build up, and breathing its decay products for years raises the risk of lung cancer. In the UK, radon is the largest source of radiation dose most people receive.
+
+It is in this series because it sits where geology, buildings and climate policy meet. The push to make buildings airtight to save energy can trap more of it.
+
+## The element in one minute
+
+- **Number 86**, group 18 (the noble gases), period 6. The heaviest natural noble gas.
+- **Radioactive:** radon-222 has a half-life of 3.8 days. It decays to polonium, lead and bismuth isotopes that cling to dust and lodge in the lungs.
+- **Chemically almost inert.** It forms no compounds you will meet.
+
+## Climate
+
+Radon is not a greenhouse gas. It matters to climate in two ways:
+
+- **Energy retrofits.** Sealing gaps, adding insulation and fitting airtight windows cut heat loss, and can raise indoor radon unless ventilation is designed in. In radon areas, retrofit plans should include a test before and after.
+- **A scientific tracer.** Radon comes only from land, so atmospheric scientists use it to tell land air from ocean air and to check greenhouse gas estimates.
+
+## Soil and land
+
+Radon levels follow geology. Uranium-bearing granites, some shales and limestones, and permeable ground give the highest potential. In Northern Ireland the [radon potential map](https://www.bgs.ac.uk/datasets/radon-data-radon-potential-dataset/), produced by UKHSA with the Geological Survey of Northern Ireland and BGS, sets out where homes are more likely to be affected. Even in a high area, one house can be high and its neighbour low.
+
+Radon also dissolves in groundwater, so homes on private wells in radon areas may want their water tested too.
+
+## Agri-food
+
+Radon has no role in food. Farm buildings in radon areas, including offices and workshops, are workplaces and may need testing like any other.
+
+## Atmosphere
+
+Outdoor radon in the UK averages only a few becquerels per cubic metre. The UK average in homes is about 20 Bq/m³ ([UKHSA](https://www.gov.uk/guidance/about-radon)); the population-weighted average in Northern Ireland homes was 19 Bq/m³ in the [2009 radon atlas](https://www.daera-ni.gov.uk/sites/default/files/publications/doe/pollution-report-ni-radon-dwellings-review-atlas-2009.pdf). Individual homes can be many times higher.
+
+## Why it matters in Northern Ireland
+
+Northern Ireland has large areas where more than one home in a hundred is expected to exceed the action level. Those "radon affected areas" decide what protection new buildings must have, and where employers should test. As retrofit programmes scale up, radon needs to be part of the specification, not an afterthought.
+
+## The rules (as at 21 November 2026)
+
+- **Homes:** UKHSA's action level is 200 Bq/m³ (annual average), with a target level of 100 Bq/m³ for remediation ([nidirect](https://www.nidirect.gov.uk/articles/radon-gas-your-home); [UKHSA](https://www.gov.uk/guidance/about-radon)).
+- **New buildings:** in areas with a 1% or greater probability of exceeding the action level, new buildings, extensions, conversions and refurbishments must include radon protection under the Building Regulations (Northern Ireland). The [2000 Regulations' map](https://www.legislation.gov.uk/nisr/2000/389/schedule/3/made) set Zone 1 (1–10%) and Zone 2 (over 10%); *check current Technical Booklet C for the latest zoning and measures.*
+- **Workplaces:** the Ionising Radiations Regulations (Northern Ireland) 2017 apply where the annual average exceeds 300 Bq/m³, and employers must act to restrict exposure ([HSENI](https://www.hseni.gov.uk/sites/hseni.gov.uk/files/radon-information-leaflet_0.pdf)).
+- **COSHH** does not cover the radiation hazard; IRR does.
+
+## Safety and handling
+
+COSHH does not cover the radiation hazard of radon; the Ionising Radiations Regulations (Northern Ireland) 2017 do. Radioactive substances also fall outside CLP classification.
+
+| Form | Classification (CLP) |
+|---|---|
+| Radon | No CLP classification (radioactive substances are outside CLP). Regulated as a source of ionising radiation. |
+
+| Substance | Workplace exposure limit (EH40/2005) |
+|---|---|
+| Workplaces (IRR NI 2017) | Reference level 300 Bq/m³ annual average; employers must act above it |
+| Homes (UKHSA) | Action level 200 Bq/m³; target level 100 Bq/m³ |
+| UK average in homes | about 20 Bq/m³ (UKHSA) |
+
+| UN number | Proper shipping name | Class |
+|---|---|---|
+| No specific UN number | Radon is not consigned as a substance. Any radioactive material in transport is Class 7, e.g. UN2910 (excepted package). Passive radon test detectors are not dangerous goods. | 7 (if any) |
+
+**Risks of the element itself.** Radon is colourless, odourless and tasteless: only a test shows the level. The risk is long-term lung cancer, not acute poisoning. Smokers exposed to radon face a much higher risk than non-smokers.
+
+*Classification and limits change. Always work from the supplier's current safety data sheet and your own COSHH assessment.*
+
+## Compounds you will meet
+
+| Where you meet it | Compound | Why it matters |
+|---|---|---|
+| Nature | Uranium-238 and radium-226 | the parents of radon in rocks and soil |
+|  | Radon progeny: polonium-218, lead-214, bismuth-214, polonium-214 | the short-lived decay products that deliver the lung dose |
+|  | Lead-210 and polonium-210 | longer-lived decay products in soils and dust |
+|  | Thoron (radon-220) | a short-lived radon isotope from thorium |
+| Manufacturing | Radon has no industrial compounds | it is almost chemically inert |
+|  | Building materials | some stone and phosphogypsum carry radium; most UK materials are low |
+| Climate | No climate effect | radon is not a greenhouse gas |
+|  | Atmospheric tracer | because it comes only from land, radon is used by scientists to track air masses and check greenhouse gas estimates |
+|  | Energy retrofits | sealing homes without ventilation can raise indoor radon |
+
+## What this means
+
+- **For householders:** if you are in a radon affected area, test. A three-month test is cheap; a sump and fan usually fixes a high result.
+- **For employers:** basement and ground-floor workplaces in affected areas should be tested; above 300 Bq/m³ the law requires action.
+- **For retrofit and housing programmes:** build radon into the specification. Airtightness without ventilation trades one risk for another.
+
+## Sources
+
+- nidirect, [Radon gas in your home](https://www.nidirect.gov.uk/articles/radon-gas-your-home) (accessed 21 November 2026).
+- UKHSA, [About radon](https://www.gov.uk/guidance/about-radon) (accessed 21 November 2026).
+- HSENI, [Radon information leaflet](https://www.hseni.gov.uk/sites/hseni.gov.uk/files/radon-information-leaflet_0.pdf) (accessed 21 November 2026).
+- British Geological Survey, [Radon potential dataset](https://www.bgs.ac.uk/datasets/radon-data-radon-potential-dataset/) (accessed 21 November 2026).
+- DoE/NIEA, [Radon in dwellings in Northern Ireland: 2009 review and atlas](https://www.daera-ni.gov.uk/sites/default/files/publications/doe/pollution-report-ni-radon-dwellings-review-atlas-2009.pdf).
+- [Building Regulations (Northern Ireland) 2000, Schedule 3](https://www.legislation.gov.uk/nisr/2000/389/schedule/3/made).
+
+All sources checked 21 November 2026.
+
+---
+
+*Robert J. Park is an environment, carbon and public affairs consultant based in Larne, Northern Ireland. Download the briefing, [*Radon* (PDF)]({{ '/assets/briefings/elements/radon-briefing.pdf' | relative_url }}), with the full periodic table, the safety panel and the sources. This is one of eight learning briefings on the elements that shape climate, soil, land, agri-food and the atmosphere; the others are linked from the [interactive periodic table]({{ '/tools/periodic-table.html' | relative_url }}). This is general information as at 21 November 2026, not legal, safety or agronomic advice. Created with assistive technology including AI and re-checked against the official sources listed.*
