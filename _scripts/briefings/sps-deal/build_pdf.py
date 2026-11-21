@@ -24,7 +24,7 @@ h = markdown.markdown(md, extensions=['tables'])
 h = h.replace('<h2>Sources</h2>', '<h2 id="sources">Sources</h2>')
 nums = [('1 Mar 2028', 'date the SPS deal is aimed to apply; not yet law'), ('49%', 'of NI processed food sales went to GB in 2022 (£3.16bn)'),
         ('26%', 'went to Ireland and the rest of the EU (£1.71bn)'), ('£886m', 'of inputs NI processors bought from GB; £969m from the EU'),
-        ('⅔', 'of NI farm emissions come from cattle, beef and dairy'), ('3.6%', 'of NI GVA from farming and food processing; UK agriculture ≈0.6%')]
+        ('⅔', 'of NI farm emissions come from cattle, beef and dairy (2024)'), ('2.0%', 'of NI GVA from farming (2024), against 0.6% for the UK; processing adds 2.2%')]
 numh = ''.join(f'<div><b>{html.escape(a)}</b><span>{html.escape(b)}</span></div>' for a, b in nums)
 extra = 'figure.ch{margin:8px 0 12px;break-inside:avoid}figure.ch img{width:100%}table{border-collapse:collapse;width:100%;font-size:8.6pt;margin:4px 0 10px;break-inside:avoid}th,td{border-bottom:1px solid #e3dedb;padding:3px 5px;text-align:left;vertical-align:top}th{font-weight:700;color:#1a1a1a;background:#faf6f5}h4{font-size:10pt;margin:10px 0 4px;color:#a61c1c}'
 doc = f"""<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><title>{html.escape(title)}</title><style>{CSS % {'f': FONT}}{extra}</style></head><body>

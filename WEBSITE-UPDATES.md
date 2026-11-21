@@ -46,6 +46,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - Full briefing PDF (19 pages, A4): `assets/briefings/2026-11-the-sps-deal-ni-briefing.pdf`, built by `_scripts/briefings/sps-deal/build_pdf.py` from `briefing.md` (the Claude Doc export).
 - Five charts in `assets/briefings/sps-deal/`, built by `_scripts/briefings/sps-deal/charts.py` from `data.json`.
 - Short link `/go/sps/` (LinkedIn UTM tags).
+- Corrected after two role-played review panels (21 November): NI v UK economy shares now like for like (DAERA Statistical Review 2024); 2024 farm output revised to DAERA's August 2026 figures; GB described as losing most SPS checks but still facing customs; pigmeat claim removed; carbon intensity caveats on beef/dairy split and prices; projection given as a range; intervention-stores history tightened; legal points corrected (applicability motion, not Stormont Brake; CBAM exemption as planned, not law; GB–NI pork under the UK Internal Market Scheme); the 'vassal state' wording made neutral. Acronyms spelt out at first use, with a 'Terms used' box in the post and the briefing.
 
 ### v0.43.2 — 21 November 2026: carbon deal post, price gap and party positions corrected
 

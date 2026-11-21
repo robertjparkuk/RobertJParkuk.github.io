@@ -49,8 +49,8 @@ for k, v in A['farm'].items():
     for i, y in enumerate(farm): farm[y][k] = v[i]
 for i, y in enumerate(farm): farm[y]['Other'] = A['gross'][i] - sum(v[i] for v in A['farm'].values())
 donuts('farm-output.svg', 'Milk has overtaken cattle as the biggest earner on NI farms',
-       'Share of NI gross agricultural output; centre = total, current prices; 2024 provisional',
-       list(farm), farm, gbm, 'Source: DAERA, Aggregate Agricultural Account (Table 2.1), January 2026. Robert J. Park, robertjpark.co.uk')
+       'Share of NI gross agricultural output; centre = total, current prices; 2024 as revised August 2026',
+       list(farm), farm, gbm, 'Source: DAERA, Aggregate Agricultural Account (Table 2.1), January 2026; 2024 revised in the 2025 account, August 2026.')
 proc = {y: {} for y in ['1990', '2015', '2022']}
 for k, v in A['proc'].items():
     for i, y in enumerate(proc): proc[y][k.replace('&', 'and')] = v[i]
