@@ -54,6 +54,8 @@ Paragraph numbers refer to the Joint Statement, as summarised from the GOV.UK te
 
 **Northern Ireland.** The food agreement's benefits are extended to movements from Great Britain to NI through its interplay with the Windsor Framework; customs formalities are a separate matter and the papers read do not say they change. NI power stations stay in the EU carbon market. The UK's intended border-charge exemption for EU goods matters most here, because NI firms buy across a land border. The carbon link also removes the 50% reduction for ferry voyages between NI and Great Britain.
 
+**Where Northern Ireland loses.** Four things. NI's larger industrial sites would pay more for carbon after the link, with no matching fall in power costs, because NI generators already pay the EU price. NI's two present advantages over Great Britain narrow: its goods are outside the EU's border carbon charge and its food already moves under EU rules, and from 2028 GB producers are due to get much the same. Ferry costs rise as the 50% reduction for sailings between NI and Great Britain is removed. And two NI problems are left open: steel supply (paragraph 72) and a carbon budget that depends on farming, which no part of the package touches. The detail is in [the carbon deal: what changes, and when]({% post_url 2026-11-21-the-carbon-deal-what-changes-for-northern-ireland-and-great-britain %}).
+
 ### Not yet published
 
 The legal texts of all three agreements. The dispute and governance provisions. Exit and termination terms beyond what the carbon explainer gives. Impact assessments. The UK regulations for the border-charge exemption. The labour-market terms of the youth scheme.
