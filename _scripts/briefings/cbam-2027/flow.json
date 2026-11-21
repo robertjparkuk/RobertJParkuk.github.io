@@ -1,0 +1,33 @@
+[
+ {"fn": "flow-ni-import.svg", "H": 900,
+  "title": "Is UK CBAM due on this consignment into Northern Ireland?",
+  "sub": "For iron and steel, aluminium, cement, fertiliser and hydrogen arriving from 1 January 2027. Status 21 November 2026.",
+  "note": "Electricity is not in UK CBAM. Who counts as the importer for goods arriving from Ireland with no customs declaration is not settled in HMRC guidance: ask HMRC in writing. General information, not legal, tax or customs advice.",
+  "nodes": [
+   [190, 80, 340, 62, "A covered good arrives in NI from outside the UK", "start"],
+   [190, 180, 340, 70, "Is it UK origin (last substantial processing in the UK)?", "q"],
+   [600, 183, 270, 64, "Out of scope. Keep the origin evidence.", "out"],
+   [190, 290, 340, 80, "Is it EU, EEA or Swiss origin, and is the UK exemption law on the import date?", "q"],
+   [600, 298, 270, 64, "No UK CBAM once the exemption is law. Keep the evidence.", "out"],
+   [190, 410, 340, 80, "Are the importer's CBAM goods £50,000 or more (next 30 days or last 12 months)?", "q"],
+   [600, 418, 270, 64, "Below threshold. Keep checking both tests.", "warn"],
+   [190, 530, 340, 70, "Was it released into the EU first, with EU CBAM paid?", "q"],
+   [600, 524, 270, 82, "Likely double charge: no EU refund, relief doubtful. Re-route.", "pay"],
+   [190, 640, 340, 80, "Can the producer give verified installation emissions and the carbon price paid?", "q"],
+   [600, 648, 270, 64, "UK CBAM due, less carbon price relief.", "warn"],
+   [190, 760, 340, 70, "UK CBAM due on default values. Look for a UK or NI source.", "pay"]
+  ],
+  "edges": [
+   [360, 142, 360, 178],
+   [530, 215, 598, 215, "Yes", 548, 207],
+   [360, 250, 360, 288, "No", 368, 274],
+   [530, 330, 598, 330, "Yes", 548, 322],
+   [360, 370, 360, 408, "No", 368, 394],
+   [530, 450, 598, 450, "No", 548, 442],
+   [360, 490, 360, 528, "Yes", 368, 514],
+   [530, 565, 598, 565, "Yes", 548, 557],
+   [360, 600, 360, 638, "No", 368, 624],
+   [530, 680, 598, 680, "Yes", 548, 672],
+   [360, 720, 360, 758, "No", 368, 744]
+  ]}
+]

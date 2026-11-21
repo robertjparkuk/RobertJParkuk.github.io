@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-label="Is UK CBAM due on this consignment into Northern Ireland?" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5a5a5a"/></marker></defs>
+<rect width="900" height="900" fill="#fff"/>
+<text x="24" y="34" font-size="21" font-weight="700" fill="#1a1a1a">Is UK CBAM due on this consignment into Northern Ireland?</text>
+<text x="24" y="58" font-size="14" fill="#5a5a5a">For iron and steel, aluminium, cement, fertiliser and hydrogen arriving from 1 January 2027. Status 21 November 2026.</text>
+<line x1="360" y1="142" x2="360" y2="178" stroke="#5a5a5a" stroke-width="2" marker-end="url(#a)"/>
+<line x1="530" y1="215" x2="598" y2="215" stroke="#5a5a5a" stroke-width="2" marker-end="url(#a)"/>
+<text x="548" y="207" font-size="13" font-weight="700" fill="#a61c1c">Yes</text>
+<line x1="360" y1="250" x2="360" y2="288" stroke="#5a5a5a" stroke-width="2" marker-end="url(#a)"/>
+<text x="368" y="274" font-size="13" font-weight="700" fill="#a61c1c">No</text>
+<line x1="530" y1="330" x2="598" y2="330" stroke="#5a5a5a" stroke-width="2" marker-end="url(#a)"/>
+<text x="548" y="322" font-size="13" font-weight="700" fill="#a61c1c">Yes</text>
+<line x1="360" y1="370" x2="360" y2="408" stroke="#5a5a5a" stroke-width="2" marker-end="url(#a)"/>
+<text x="368" y="394" font-size="13" font-weight="700" fill="#a61c1c">No</text>
+<line x1="530" y1="450" x2="598" y2="450" stroke="#5a5a5a" stroke-width="2" marker-end="url(#a)"/>
+<text x="548" y="442" font-size="13" font-weight="700" fill="#a61c1c">No</text>
+<line x1="360" y1="490" x2="360" y2="528" stroke="#5a5a5a" stroke-width="2" marker-end="url(#a)"/>
+<text x="368" y="514" font-size="13" font-weight="700" fill="#a61c1c">Yes</text>
+<line x1="530" y1="565" x2="598" y2="565" stroke="#5a5a5a" stroke-width="2" marker-end="url(#a)"/>
+<text x="548" y="557" font-size="13" font-weight="700" fill="#a61c1c">Yes</text>
+<line x1="360" y1="600" x2="360" y2="638" stroke="#5a5a5a" stroke-width="2" marker-end="url(#a)"/>
+<text x="368" y="624" font-size="13" font-weight="700" fill="#a61c1c">No</text>
+<line x1="530" y1="680" x2="598" y2="680" stroke="#5a5a5a" stroke-width="2" marker-end="url(#a)"/>
+<text x="548" y="672" font-size="13" font-weight="700" fill="#a61c1c">Yes</text>
+<line x1="360" y1="720" x2="360" y2="758" stroke="#5a5a5a" stroke-width="2" marker-end="url(#a)"/>
+<text x="368" y="744" font-size="13" font-weight="700" fill="#a61c1c">No</text>
+<rect x="190" y="80" width="340" height="62" rx="6" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+<text x="360.0" y="107.0" font-size="14.5" text-anchor="middle" fill="#fff" font-weight="700">A covered good arrives in NI from outside</text>
+<text x="360.0" y="125.0" font-size="14.5" text-anchor="middle" fill="#fff" font-weight="700">the UK</text>
+<rect x="190" y="180" width="340" height="70" rx="22" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="360.0" y="211.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="700">Is it UK origin (last substantial processing</text>
+<text x="360.0" y="229.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="700">in the UK)?</text>
+<rect x="600" y="183" width="270" height="64" rx="6" fill="#eef5f0" stroke="#3b7a57" stroke-width="2"/>
+<text x="735.0" y="211.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="400">Out of scope. Keep the origin</text>
+<text x="735.0" y="229.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="400">evidence.</text>
+<rect x="190" y="290" width="340" height="80" rx="22" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="360.0" y="326.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="700">Is it EU, EEA or Swiss origin, and is the UK</text>
+<text x="360.0" y="344.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="700">exemption law on the import date?</text>
+<rect x="600" y="298" width="270" height="64" rx="6" fill="#eef5f0" stroke="#3b7a57" stroke-width="2"/>
+<text x="735.0" y="326.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="400">No UK CBAM once the exemption is</text>
+<text x="735.0" y="344.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="400">law. Keep the evidence.</text>
+<rect x="190" y="410" width="340" height="80" rx="22" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="360.0" y="446.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="700">Are the importer&#x27;s CBAM goods £50,000 or</text>
+<text x="360.0" y="464.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="700">more (next 30 days or last 12 months)?</text>
+<rect x="600" y="418" width="270" height="64" rx="6" fill="#fdf1e4" stroke="#d9822b" stroke-width="2"/>
+<text x="735.0" y="446.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="400">Below threshold. Keep checking both</text>
+<text x="735.0" y="464.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="400">tests.</text>
+<rect x="190" y="530" width="340" height="70" rx="22" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="360.0" y="561.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="700">Was it released into the EU first, with EU</text>
+<text x="360.0" y="579.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="700">CBAM paid?</text>
+<rect x="600" y="524" width="270" height="82" rx="6" fill="#fbeaea" stroke="#a61c1c" stroke-width="2"/>
+<text x="735.0" y="561.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="400">Likely double charge: no EU refund,</text>
+<text x="735.0" y="579.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="400">relief doubtful. Re-route.</text>
+<rect x="190" y="640" width="340" height="80" rx="22" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="360.0" y="676.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="700">Can the producer give verified installation</text>
+<text x="360.0" y="694.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="700">emissions and the carbon price paid?</text>
+<rect x="600" y="648" width="270" height="64" rx="6" fill="#fdf1e4" stroke="#d9822b" stroke-width="2"/>
+<text x="735.0" y="676.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="400">UK CBAM due, less carbon price</text>
+<text x="735.0" y="694.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="400">relief.</text>
+<rect x="190" y="760" width="340" height="70" rx="6" fill="#fbeaea" stroke="#a61c1c" stroke-width="2"/>
+<text x="360.0" y="791.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="400">UK CBAM due on default values. Look for a UK</text>
+<text x="360.0" y="809.0" font-size="14.5" text-anchor="middle" fill="#1a1a1a" font-weight="400">or NI source.</text>
+<text x="24" y="866" font-size="12" fill="#5a5a5a">Electricity is not in UK CBAM. Who counts as the importer for goods arriving from Ireland with no customs declaration</text>
+<text x="24" y="882" font-size="12" fill="#5a5a5a">is not settled in HMRC guidance: ask HMRC in writing. General information, not legal, tax or customs advice.</text>
+</svg>
