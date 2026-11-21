@@ -11,6 +11,8 @@ hero_button: "Read the piece"
 hero_button2: ["Focus on Agriculture", "/blog/focus-on-agriculture-october-2026/"]
 ---
 
+*Update, 21 November 2026: the food and farm-goods (SPS) agreement was concluded at the UK–EU summit on 20 November and is aimed at 1 March 2028, not 2027. It is not yet law. This piece is as published; see [what the summit agreed]({% post_url 2026-11-21-the-second-uk-eu-summit-what-was-agreed-and-what-it-will-take %}).*
+
 *Good environmental rules are worth having. Rules that only bite on the farm next door, and never on the food that replaces it, aren't environmental policy. They're an import strategy.*
 
 <figure class="page-photo"><img src="{{ '/assets/photos/farm-panorama.jpg' | relative_url }}" alt="Green grassland at sunrise with a feed mill and grain silos behind a line of trees" loading="lazy"><figcaption>Northern Ireland's grass is a climate asset. Our rulebook doesn't always treat it like one.</figcaption></figure>

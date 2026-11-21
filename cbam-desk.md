@@ -107,11 +107,13 @@ These figures use HMRC's illustrative 2027 rates and published default values; t
 - **UK, 2027:** 500 t × 2.722 (HMRC default, including the 10% mark-up) × £9.69 = **£13,188**. A mill 20% better than the default would save about £2,638, which is probably less than one verification.
 - **EU, goods imported in Q3 2026:** on default values the EU importer owes about **€54,588** after the free-allocation adjustment. Verified data from a mill 20% below the default saves about €29,900, and about €39,800 for 2027 imports.
 
+- **EU-origin coil into NI, 2027:** the UK sum above applies until exempting regulations are made. The government said on 20 November 2026 that it intends to exempt goods of EU origin from 1 January 2027.
+
 So verified actual data usually pays for EU customers, because EU defaults carry a 10–30% mark-up, but often does not for UK imports at today's illustrative rates. If a plant is dirtier than the default, it should not verify at all. I run that sum for you.
 
 ## What's changing
 
-- **UK–EU emissions trading link.** The UK–EU summit in Brussels on 20 November 2026 may announce a link between the two emissions trading systems. That would start, not finish, the process: each side then needs its own legal act before any CBAM exemption applies, a UK regulation approved by Parliament and an EU delegated act. Plan for both charges in 2027. A link would exempt EU-made goods, not goods made elsewhere and sold through an EU merchant, so check the origin on the invoice.
+- **UK–EU emissions trading link (updated 21 November 2026).** On 20 November 2026 the UK and the EU agreed to link their emissions trading systems, aiming for 1 January 2028. The UK government says it intends to exempt goods originating in the EU, the EEA and Switzerland from UK CBAM from 1 January 2027; the EU exemption for UK goods is expected from 1 January 2028. Neither is law yet: each needs its own legal act. Origin is the test, so goods made elsewhere and sold through an EU merchant stay charged. Check the origin on the invoice. [What changes, and when]({% post_url 2026-11-21-the-carbon-deal-what-changes-for-northern-ireland-and-great-britain %}).
 - **EU phase-in.** The Commission's July 2026 proposal would slow the end of free allocation for CBAM sectors to 2038, so any cost figure for 2028 onwards is a range.
 - **UK scope.** HM Treasury is consulting until 20 January 2027 on adding refinery products to the UK CBAM.
 
