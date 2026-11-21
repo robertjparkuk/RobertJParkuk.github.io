@@ -25,6 +25,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.42.0 — 21 November 2026: UK–EU summit briefing post and site sweep
+
+- New post `_posts/2026-11-21-the-second-uk-eu-summit-what-was-agreed-and-what-it-will-take.md` with briefing PDF `assets/briefings/2026-11-the-second-uk-eu-summit-briefing.pdf` (4 pages): the summit outcome in technical and political terms. Political statements are from press reports and labelled as such.
+- Carbon deal post extended (biomethane, electricity and the EU CBAM, chemicals, glass, ceramics and pharmaceuticals) and corrected after four rounds of AI-assisted review; dated to publish on merge.
+- Sweep of pre-summit wording: home-page slides, CBAM Desk, UK CBAM countdown, CBAM Exposure Tracker, ESG regime tracker, NI Regulatory Horizon (JSON, CSV and page), policy series page, and dated update notes on seven earlier posts and two Focus On pages. Earlier posts are otherwise left as published.
+- Not changed: the two held posts (Irish Sea carbon bill, carbon borders as industrial policy) still carry pre-summit lines and stay unpublished.
+
 ### v0.41.1 — 21 November 2026: UK–EU summit outcome post
 
 - New post `_posts/2026-11-21-the-carbon-deal-what-changes-for-northern-ireland-and-great-britain.md`: what the 20 November 2026 summit agreed on linking the UK and EU emissions trading schemes, the then / now / 2027 / 2028 position for NI and GB, impacts by type of business, the case for and against, and five actions. No prices or offers (launch gates unchanged).

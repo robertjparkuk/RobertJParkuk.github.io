@@ -1,6 +1,6 @@
 ---
 title: "The carbon deal: what changes for Northern Ireland and Great Britain, and when"
-date: 2026-11-21 07:30:00 +0000
+date: 2026-11-21 01:30:00 +0000
 image: /assets/photos/customs-declaration.jpg
 tags: [CBAM, Carbon, Trade, UK-EU summit, Northern Ireland, Manufacturing, Agriculture, Biomethane]
 description: "The UK and EU agreed on 20 November 2026 to link their carbon markets from 2028. What it means for carbon border charges in Northern Ireland and Great Britain in 2027 and 2028, by type of business."

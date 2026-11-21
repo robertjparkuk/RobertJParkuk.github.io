@@ -11,6 +11,8 @@ description: "From the UK–EU summit on 20 November to EU CBAM certificates and
 last_modified_at: 2026-11-18
 ---
 
+*Update, 21 November 2026: the UK–EU summit of 20 November concluded an agreement to link the UK and EU carbon markets. The UK government says it intends to exempt goods of EU origin from UK CBAM from 1 January 2027; that is not yet law. This piece is as published; see [what changes, and when]({% post_url 2026-11-21-the-carbon-deal-what-changes-for-northern-ireland-and-great-britain %}) and [what the summit agreed]({% post_url 2026-11-21-the-second-uk-eu-summit-what-was-agreed-and-what-it-will-take %}).*
+
 Between now and Easter, Northern Ireland firms face a UK carbon border levy, a UK–EU summit that may change it, EU rules that apply here but not in Great Britain, and an energy-audit cut-off for larger businesses. These are the twelve dates that matter most, what each one means, and what to do first. Every date is checked against the official source on my [NI Regulatory Horizon]({{ '/tools/dashboards/ni-regulatory-horizon.html' | relative_url }}) dashboard, which lists all 62.
 
 <figure class="page-photo"><img src="{{ '/assets/briefings/twelve-dates/twelve-dates-to-easter.png' | relative_url }}" alt="Timeline of twelve dates from 20 November 2026 to 1 April 2027: UK–EU summit; EU product liability rules in NI; EU deforestation rules in NI; ESOS phase 4 qualification date; UK CBAM starts; EU F-gas bans in NI; first UK CBAM rates; EU Machinery Regulation in NI; EU CBAM certificates on sale; battery passports in NI; EU importers hold CBAM certificates at quarter end; GB electricity levy exemption." loading="lazy"></figure>

@@ -57,7 +57,7 @@
   "jurisdiction": "UK–EU",
   "status": "expected",
   "kind": "Decision",
-  "action": "Plan on both CBAMs applying as they stand. Read the summit statement for any link start date and for how goods moving GB to NI would be treated.",
+  "action": "Held on 20 November 2026: carbon-market link agreed, aimed at 1 January 2028; food and farm-goods agreement aimed at 1 March 2028. Plan on UK CBAM applying from 1 January 2027 until exempting regulations are made.",
   "source_title": "Prime Minister to attend UK–EU summit in Brussels on 20 November (GOV.UK, 12 October 2026)",
   "source_url": "https://www.gov.uk/government/news/prime-minister-to-attend-uk-eu-summit-in-brussels-on-20-november",
   "related": "/tools/dashboards/cbam-exposure-tracker.html",
@@ -194,7 +194,7 @@
   "id": "H010",
   "date": "2027-01-01",
   "title": "UK CBAM starts",
-  "detail": "The UK carbon border levy applies across the UK, NI included, to imported aluminium, cement, fertiliser, hydrogen, iron and steel of any non-UK origin, EU included: HMRC says no jurisdiction is currently exempt. Liability starts once covered imports pass £50,000: looking back over the last 12 months (tested on the first of each month) or forward over the next 30 days (tested on any day). Union goods entering NI from Ireland or the EU count as imports under Finance Act 2026 s.144(5)(a); HMRC guidance does not yet cover this case. Charged on direct emissions, using global default values in 2027 and 2028 where supplier data is missing.",
+  "detail": "The UK carbon border levy applies across the UK, NI included, to imported aluminium, cement, fertiliser, hydrogen, iron and steel of any non-UK origin, EU included: HMRC's guidance says no jurisdiction is exempt; on 20 November 2026 the government said it intends to exempt goods of EU, EEA and Swiss origin from 1 January 2027, which needs regulations. Liability starts once covered imports pass £50,000: looking back over the last 12 months (tested on the first of each month) or forward over the next 30 days (tested on any day). Union goods entering NI from Ireland or the EU count as imports under Finance Act 2026 s.144(5)(a); HMRC guidance does not yet cover this case. Charged on direct emissions, using global default values in 2027 and 2028 where supplier data is missing.",
   "topic": "Trade, customs and CBAM",
   "sectors": [
    "Importers",
