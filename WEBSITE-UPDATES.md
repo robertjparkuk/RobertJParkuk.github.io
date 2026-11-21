@@ -25,6 +25,16 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.32.1 — 21 November 2026: Christmas decorations post updated after the UK–EU summit (PATCH)
+
+*Scheduled run, 21 November 2026. Branch `v0.32.1-christmas-summit-update`; Robert merges.*
+
+- `_posts/2026-11-16-deck-the-halls-check-the-rules.md`: dated "Updated 21 November 2026 after the UK–EU summit" line under the status note; tree-movement table gains a "Planned from 1 March 2028, if ratified" column (SPS explainer and horticulture guidance); "Next." paragraph rewritten (SPS concluded 20 Nov, aimed at 1 March 2028, not law; rules stand for Christmas 2026 and 2027; enforcement tightening agreed 10 Nov; earlier "tree species restrictions will disappear" line not repeated in the summit papers); CBAM paragraph adds the UK's stated intention to exempt EU-origin goods from 1 Jan 2027 (DESNZ explainer; not law) and the expected EU exemption for UK goods from 2028; Forced Labour sentence now cites Joint Committee Decision No 4/2026 of 10 Nov 2026 (applies in NI from 14 Dec 2027); rules-table rows for trees and foil; carol verses 5 and 6; new "UK–EU summit" source line.
+- `_scripts/briefings/christmas-decorations/build.py`: matching matrix rows and KPIs (new 1 Mar 2028 tile); "updated 21 November 2026" on cover, footer and dashboard; PDF footer and dashboard page now print the /go/christmas short link instead of a long URL, with the dashboard as hyperlinked text; `{% post_url %}` links now resolve in the PDF. Rebuilt charts (unchanged), dashboard, rules-matrix CSV and PDF (21 pages).
+- `go/christmas/index.html`: new short link to the post (`utm_source=linkedin&utm_medium=post&utm_campaign=christmas-summit-update`), same pattern as the other /go/ pages.
+- Not changed: product safety, glitter/REACH, packaging and green-claims rows (the summit papers as read on this site did not touch them). S.I. 2026/816 (England fixed penalties £5,000 and £750 from 1 Sep 2026) still not confirmed on legislation.gov.uk: the page could not be opened in this run, so figures and the "in-force date to be confirmed" source note stand.
+- Verification note: the GOV.UK summit pages could not be re-opened in this unattended run; the summit facts follow this site's own reading of them on 20–21 November (summit, SPS and carbon-deal posts and the SPS briefing).
+
 ### v0.44.2 — 21 November 2026: summit lines in the two held policy posts
 
 *Scheduled run, 21 November 2026. Both posts stay `published: false` until Robert says go in chat.*
