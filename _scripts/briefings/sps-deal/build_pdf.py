@@ -35,7 +35,7 @@ doc = f"""<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><title>{
 <div class="lab">In numbers</div><div class="nums">{numh}</div>
 <div class="dash">Read online: <b>robertjpark.co.uk/go/sps/</b></div>
 {h}
-<p class="end">Robert J. Park is an independent environment, carbon and public affairs consultant based in Larne, Northern Ireland. robert@robertjpark.co.uk · 07450 349480 · robertjpark.co.uk · Status as at 21 November 2026. General information, not legal advice. Drafted with AI assistance and checked against the official sources listed; nobody professionally qualified has reviewed it.</p>
+<p class="end">Robert J. Park is an independent environment, carbon and public affairs consultant based in Larne, Northern Ireland. robert@robertjpark.co.uk · 07450 349480 · robertjpark.co.uk · Status as at 21 November 2026. General information, not legal advice. Created with assistive technology including AI and re-checked against the official sources listed.</p>
 </body></html>"""
 async def main():
     async with async_playwright() as pw:
