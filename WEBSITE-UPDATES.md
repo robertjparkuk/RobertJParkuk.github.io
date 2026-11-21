@@ -25,6 +25,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.44.2 — 21 November 2026: summit lines in the two held policy posts
+
+*Scheduled run, 21 November 2026. Both posts stay `published: false` until Robert says go in chat.*
+
+- "The Irish Sea carbon bill": summit lines checked against the Joint Statement of 20 November 2026 (Council ST 16174/26, paras 48–50) and the DESNZ linking explainer; facts-checked date, permanence bullet and recommendation 3 updated; Lovguiden mirror replaced with the Council and GOV.UK copies; ETS2 wording no longer implies Ireland has an exemption.
+- "Carbon borders as industrial policy": linking lines updated (argument in brief, checked date, then-and-now intro and row, Government linking cell, who-decides row, EU member states row, NI bullet); "Both CBAMs apply as planned until each side legislates" added; "exempt" wording removed where no regulations are made; summit sources added. Body about 5,070 words (over 4,000, as Robert asked).
+
 ### v0.44.1 — 21 November 2026: hedge post published at once
 
 *Robert, 21 November 2026: "merge and publish".*
