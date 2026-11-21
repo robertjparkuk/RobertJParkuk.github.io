@@ -25,6 +25,14 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.45.0 — 21 November 2026: Larne direct air capture piece
+
+*Robert, 21 November 2026: "publish on the website, the blog, add into learn too".*
+
+- New post "Larne already has taken carbon out of the atmosphere", with the three-page branded PDF in `assets/briefings/` and two diagrams (how it works; what went in and what came out).
+- Learn, "Carbon capture and carbon negative": one bullet under "Why it matters in Northern Ireland" on the Larne trial, linking to the post, and its source added. The page's `checked` date is unchanged because the rest was not rechecked.
+- Figures are the developer's own, from its report of 27 June 2025 on GOV.UK. Not confirmed: whether the plant has since moved to Belfast.
+
 ### v0.44.2 — 21 November 2026: summit lines in the two held policy posts
 
 *Scheduled run, 21 November 2026. Both posts stay `published: false` until Robert says go in chat.*
