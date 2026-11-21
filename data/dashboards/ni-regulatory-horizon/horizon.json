@@ -44,8 +44,8 @@
  {
   "id": "H003",
   "date": "2026-11-20",
-  "title": "UK–EU summit in Brussels",
-  "detail": "The second UK–EU summit. Draft texts reported by the press would conclude talks on linking the UK and EU emissions trading systems, with each side's goods exempt from the other's carbon border levy, and on an agri-food (SPS) agreement. None of this is confirmed, and nothing changes for either CBAM until both sides legislate.",
+  "title": "UK–EU summit in Brussels (held)",
+  "detail": "The second UK–EU summit concluded negotiations on linking the UK and EU emissions trading systems, a food and farm-goods (SPS) agreement and a Youth Experience Scheme. None is law yet: each needs signature, ratification and legislation. Nothing changes for either CBAM until each side makes its own legal act.",
   "topic": "Trade, customs and CBAM",
   "sectors": [
    "Manufacturers",
@@ -55,14 +55,14 @@
    "Farmers"
   ],
   "jurisdiction": "UK–EU",
-  "status": "expected",
+  "status": "confirmed",
   "kind": "Decision",
-  "action": "Held on 20 November 2026: carbon-market link agreed, aimed at 1 January 2028; food and farm-goods agreement aimed at 1 March 2028. Plan on UK CBAM applying from 1 January 2027 until exempting regulations are made.",
-  "source_title": "Prime Minister to attend UK–EU summit in Brussels on 20 November (GOV.UK, 12 October 2026)",
-  "source_url": "https://www.gov.uk/government/news/prime-minister-to-attend-uk-eu-summit-in-brussels-on-20-november",
-  "related": "/tools/dashboards/cbam-exposure-tracker.html",
-  "related_title": "CBAM Exposure Tracker",
-  "note": "The summit date is confirmed by GOV.UK. The ETS link and SPS outcomes are reported from draft texts (Euronews, 6 November 2026), not confirmed. On 10 November 2026 the Council’s Working Party on the United Kingdom discussed a draft agreement linking the two emissions trading systems (Council document CM 4531/26). Any CBAM exemption then needs UK regulations approved by both Houses (Finance Act 2026 s.156) and an EU delegated act adding the UK to Annex III of Regulation (EU) 2023/956."
+  "action": "Plan on UK CBAM applying from 1 January 2027 until exempting regulations are made. Get the origin of every CBAM good in writing.",
+  "source_title": "UK/EU Summit 2026: Key documents (Cabinet Office, 20 November 2026)",
+  "source_url": "https://www.gov.uk/government/publications/ukeu-summit-2026-key-documents",
+  "related": "/go/deal/",
+  "related_title": "The carbon deal: what changes, and when",
+  "note": "The Joint Statement is a political declaration and the explainers are government guides. The legal texts were not published on 20 November 2026."
  },
  {
   "id": "H004",
@@ -1407,5 +1407,87 @@
   "related": "/tools/dashboards/cbam-exposure-tracker.html",
   "related_title": "CBAM Exposure Tracker",
   "note": ""
+ },
+ {
+  "id": "H069",
+  "date": "2027-01-01",
+  "title": "UK CBAM: intended exemption for EU, EEA and Swiss-origin goods",
+  "detail": "The government said on 20 November 2026 that it intends to exempt goods originating in the EU, the EEA and Switzerland from UK CBAM from the day it starts. That needs Treasury regulations under the Finance Act 2026, which had not been made or published by 21 November 2026. Until they are, EU-origin goods entering NI are in scope.",
+  "topic": "Trade, customs and CBAM",
+  "sectors": [
+   "Importers",
+   "Manufacturers",
+   "Farmers"
+  ],
+  "jurisdiction": "UK–EU",
+  "status": "proposed",
+  "kind": "Rule change",
+  "action": "Treat the exemption as likely, not as law. Keep origin evidence for every line, because goods of other origins stay charged.",
+  "source_title": "UK-EU linking agreement: explainer (DESNZ, 20 November 2026)",
+  "source_url": "https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer",
+  "related": "/go/deal/",
+  "related_title": "The carbon deal: what changes, and when",
+  "note": "Origin means non-preferential origin under UK customs rules. The exempting regulations may set their own test."
+ },
+ {
+  "id": "H070",
+  "date": "2028-01-01",
+  "title": "UK–EU carbon market link intended to operate; EU CBAM exemption for UK goods expected",
+  "detail": "UK and EU allowances become usable in either scheme. The EU exemption for UK-origin goods is expected from the same date and needs an EU act adding the UK to Annex III of Regulation (EU) 2023/956. NI electricity generators stay in the EU ETS. The temporary 50% reduction for NI–GB voyages is removed under the linking terms.",
+  "topic": "Trade, customs and CBAM",
+  "sectors": [
+   "Manufacturers",
+   "Exporters to the EU",
+   "Importers"
+  ],
+  "jurisdiction": "UK–EU",
+  "status": "expected",
+  "kind": "Rule change",
+  "action": "UK ETS sites: plan on the linked price and EU benchmarks for free allocation. Exporters: keep supplying CBAM data for 2026 and 2027 goods.",
+  "source_title": "UK-EU linking agreement: explainer (DESNZ, 20 November 2026)",
+  "source_url": "https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer",
+  "related": "/go/deal/",
+  "related_title": "The carbon deal: what changes, and when",
+  "note": "Subject to signature, ratification and legislation on both sides. The Joint Statement says from 2028; 1 January is the aim given in the explainer."
+ },
+ {
+  "id": "H071",
+  "date": "2028-03-01",
+  "title": "UK–EU food and farm-goods (SPS) agreement intended to apply",
+  "detail": "A common sanitary and phytosanitary area between Great Britain and the EU, removing most certificates and checks, with the benefits extended to movements from Great Britain to NI through the Windsor Framework. NI already follows EU rules in this area.",
+  "topic": "Trade, customs and CBAM",
+  "sectors": [
+   "Food and drink",
+   "Farmers",
+   "Importers"
+  ],
+  "jurisdiction": "UK–EU",
+  "status": "expected",
+  "kind": "Rule change",
+  "action": "Food firms: plan 2027 on the rules as they stand. Watch for the legal text and for what customs formalities remain.",
+  "source_title": "UK/EU Summit 2026: Key documents, Joint Statement paragraph 48 (Cabinet Office, 20 November 2026)",
+  "source_url": "https://www.gov.uk/government/publications/ukeu-summit-2026-key-documents",
+  "related": "",
+  "related_title": "",
+  "note": "Subject to signature, ratification and legislation. The legal text was not published on 20 November 2026."
+ },
+ {
+  "id": "H072",
+  "date": "2028-09-30",
+  "title": "First surrender deadline accepting both UK and EU allowances",
+  "detail": "The first compliance deadline under the linked schemes, covering 2027 emissions.",
+  "topic": "Carbon",
+  "sectors": [
+   "Manufacturers"
+  ],
+  "jurisdiction": "UK–EU",
+  "status": "expected",
+  "kind": "Deadline",
+  "action": "UK ETS operators: check registry changes and guidance from the UK ETS Authority during 2027.",
+  "source_title": "UK-EU linking agreement: explainer (DESNZ, 20 November 2026)",
+  "source_url": "https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer",
+  "related": "/go/deal/",
+  "related_title": "The carbon deal: what changes, and when",
+  "note": "Depends on the link operating from 1 January 2028."
  }
 ]

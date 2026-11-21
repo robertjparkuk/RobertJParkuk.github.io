@@ -25,6 +25,16 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.42.1 — 21 November 2026: summit sweep, second pass
+
+- CBAM Exposure Tracker: both comparison tables now give the post-summit position (intended UK exemption for EU, EEA and Swiss-origin goods from 1 January 2027; EU exemption expected 1 January 2028; neither is law). Corrects "approved by both Houses".
+- CBAM Desk: worked example notes the position for EU-origin coil in 2027.
+- ESG regime tracker: ETS linking and NI electricity rows updated; the secondary source replaced with the DESNZ explainer.
+- NI Regulatory Horizon: summit row closed as held; four rows added (H069 to H072) for the intended UK exemption, the link, the SPS date and the first joint surrender. Page and CSV rebuilt.
+- EU law and Windsor Framework dashboard: summit tile, timeline entry and the agri-food and emissions trading rows updated in the page and in `_scripts/dashboards/eu_build.py`.
+- `/go/summit/` now points to the summit post.
+- The two held posts (Irish Sea carbon bill; carbon borders as industrial policy) have their summit lines updated and stay unpublished.
+
 ### v0.42.0 — 21 November 2026: UK–EU summit briefing post and site sweep
 
 - New post `_posts/2026-11-21-the-second-uk-eu-summit-what-was-agreed-and-what-it-will-take.md` with briefing PDF `assets/briefings/2026-11-the-second-uk-eu-summit-briefing.pdf` (4 pages): the summit outcome in technical and political terms. Political statements are from press reports and labelled as such.
