@@ -19,6 +19,15 @@
     "geological": "Bound in water, hydrocarbons and clay minerals; natural free hydrogen deposits are being explored.",
     "chemical": "Forms covalent bonds with almost everything; H⁺ sets pH. Flammable in air from about 4% to 75% by volume.",
     "land": "Land is needed for the wind and solar that make electrolytic hydrogen; storage salt caverns and pipelines bring planning questions."
+   },
+   "briefing_text": {
+    "nature": "The most abundant element in the universe; on Earth mostly bound in water and organic matter. Free hydrogen is rare, though natural underground deposits exist.",
+    "climate": "Not a greenhouse gas, but leaked hydrogen slows the breakdown of methane in the air, so it warms indirectly. Low-carbon hydrogen is promoted for steel, fertiliser, shipping and heavy transport.",
+    "pollution": "Burning hydrogen gives water, but high-temperature combustion still forms nitrogen oxides. Making it from gas without carbon capture emits CO₂.",
+    "manufacturing": "Used to make ammonia, refine oil and hydrogenate fats; produced mostly by steam reforming of natural gas, increasingly by electrolysis. Hydrogen is covered by EU CBAM.",
+    "health": "Non-toxic; an asphyxiant only in enclosed spaces.",
+    "hazards": "Extremely flammable (H220), burns with an almost invisible flame, leaks easily and embrittles some steels. UN1049 (compressed), UN1966 (refrigerated liquid).",
+    "discovery": "Identified as an element by Henry Cavendish in 1766; named by Lavoisier from Greek for 'water-former'. Stable."
    }
   },
   {
@@ -39,6 +48,15 @@
     "geological": "Produced by radioactive decay of uranium and thorium and trapped in natural gas fields.",
     "chemical": "A noble gas: no stable compounds. Asphyxiant in confined spaces.",
     "land": "Little land footprint; extraction is tied to gas fields."
+   },
+   "briefing_text": {
+    "nature": "Second most abundant element in the universe but rare on Earth; made by radioactive decay underground and trapped in some natural gas fields.",
+    "climate": "No climate effect. Released helium escapes to space, so supply is finite.",
+    "pollution": "None of note.",
+    "manufacturing": "Cooling for MRI scanners and research magnets, leak testing, welding shield gas, semiconductor making and balloons.",
+    "health": "Non-toxic; breathing pure helium causes asphyxiation.",
+    "hazards": "Gas under pressure; liquid helium causes cold burns and expands violently. UN1046 (compressed), UN1963 (refrigerated liquid).",
+    "discovery": "Seen in the Sun's spectrum in 1868 (Janssen, Lockyer) before it was found on Earth in 1895 (Ramsay). Named from Greek 'helios', the Sun. Stable."
    }
   },
   {
@@ -59,6 +77,15 @@
     "geological": "Found in pegmatites (spodumene) and salt-lake brines; on the UK critical minerals list.",
     "chemical": "Reactive alkali metal; reacts with water to give hydrogen. Lithium salts are used in medicine.",
     "land": "Mine sites and evaporation ponds take large areas; battery fires are a waste-site risk."
+   },
+   "briefing_text": {
+    "nature": "Present in pegmatite rocks, clays and salt-lake brines; traces in seawater and some mineral springs.",
+    "climate": "Central to lithium-ion batteries for electric vehicles and grid storage. Hard-rock lithium refining is energy intensive.",
+    "pollution": "Brine extraction draws down water in arid regions; mine wastes and battery fires at waste sites are growing concerns.",
+    "manufacturing": "Batteries, ceramics and glass, lubricating greases, aluminium alloys. On the UK critical minerals list.",
+    "health": "Lithium salts are a medicine for bipolar disorder, with a narrow safe dose range.",
+    "hazards": "The metal reacts with water to release hydrogen (H260) and burns fiercely. Lithium batteries are dangerous goods (UN3480, UN3481, UN3090, UN3091).",
+    "discovery": "Discovered in 1817 by Johan Arfwedson; named from Greek 'lithos', stone. Stable."
    }
   },
   {
@@ -79,6 +106,15 @@
     "geological": "Found in beryl and bertrandite; emerald and aquamarine are beryl.",
     "chemical": "Beryllium compounds cause chronic beryllium disease and are carcinogens; tight exposure limits apply.",
     "land": "Contaminated land is possible at old aerospace and electronics sites."
+   },
+   "briefing_text": {
+    "nature": "Rare; found in beryl (emerald, aquamarine) and bertrandite.",
+    "climate": "Minor; used in some aerospace and nuclear components.",
+    "pollution": "Dust from machining and processing is the concern; little enters the wider environment.",
+    "manufacturing": "Copper-beryllium alloys for springs and non-sparking tools, X-ray windows, aerospace and defence parts.",
+    "health": "Beryllium dust causes chronic beryllium disease and is a human carcinogen. Strict workplace controls apply.",
+    "hazards": "Carc. 1B; acutely toxic by inhalation. UN1567 (beryllium powder).",
+    "discovery": "Discovered in beryl by Louis-Nicolas Vauquelin in 1798; isolated in 1828. Stable."
    }
   },
   {
@@ -99,6 +135,15 @@
     "geological": "Mined as borates (borax) from evaporite deposits.",
     "chemical": "Forms covalent boron–oxygen compounds; boric acid is a reproductive toxicant.",
     "land": "Boron deficiency shows in brassicas and beet; fertiliser trace element."
+   },
+   "briefing_text": {
+    "nature": "Found as borates in evaporite deposits; plants need small amounts.",
+    "climate": "Used in glass-fibre insulation and in NdFeB magnets for wind turbines and motors.",
+    "pollution": "Boron in some effluents and irrigation water can harm crops.",
+    "manufacturing": "Borosilicate glass, fibreglass, detergents, ceramics, magnets and nuclear control rods.",
+    "health": "Boric acid and borax are classed as toxic to reproduction.",
+    "hazards": "Boric acid and borates: Repr. 1B. Boron powder is flammable.",
+    "discovery": "Isolated in 1808 by Gay-Lussac and Thénard, and by Humphry Davy; name from borax. Stable."
    }
   },
   {
@@ -119,6 +164,15 @@
     "geological": "Carbon is stored in limestone and chalk (the largest store), coal, oil, gas, peat and diamonds. Northern Ireland has chalk and limestone, lignite near Lough Neagh, and extensive blanket and raised bogs.",
     "chemical": "Group 14, period 2. Carbon forms four bonds and long chains and rings with itself, giving millions of organic compounds. Forms include graphite, diamond, graphene and fullerenes. Carbon-14 dating uses its radioactive isotope.",
     "land": "Agriculture produced 31.4% of Northern Ireland's emissions in 2024, mostly methane from cattle and sheep. Peat soils store a large share of Northern Ireland's land carbon; drained peat is a net source of CO₂. Soil carbon is measured slowly and is easy to lose."
+   },
+   "briefing_text": {
+    "nature": "In every living thing, in limestone and chalk, coal, oil, gas, peat and diamonds, and as CO₂ and methane in the air.",
+    "climate": "Carbon dioxide and methane are the two largest causes of human-made warming. Soils and peat hold more carbon than the air.",
+    "pollution": "Soot (black carbon), carbon monoxide and volatile organic compounds harm health; plastics are carbon-based pollution.",
+    "manufacturing": "Fuels, plastics, steel (as reducer and alloy), cement chemistry, carbon black, graphite, carbon fibre.",
+    "health": "Elemental carbon is low in toxicity; carbon monoxide poisons, and fine soot damages lungs and heart.",
+    "hazards": "See the carbon briefing safety tab: CO₂, CO, methane, carbon dusts and self-heating charcoal.",
+    "discovery": "Known since prehistory as charcoal and soot; recognised as an element by Lavoisier in the 1780s; name from Latin 'carbo', charcoal. Stable (carbon-14 is radioactive, half-life 5,730 years)."
    },
    "featured": true,
    "safety": {
@@ -263,7 +317,7 @@
      ]
     ]
    },
-   "briefing": "/blog/2026/11/carbon-the-element-we-count/",
+   "briefing_url": "/blog/2026/11/carbon-the-element-we-count/",
    "pdf": "/assets/briefings/elements/carbon-briefing.pdf"
   },
   {
@@ -284,6 +338,15 @@
     "geological": "Most of the Earth's nitrogen is in the atmosphere as N₂. Rocks hold little. Natural nitrate deposits exist in deserts such as Chile's Atacama.",
     "chemical": "Group 15, period 2. The triple bond in N₂ makes it very unreactive, which is why fixing nitrogen takes either lightning, bacteria in clover roots, or an industrial plant. Reactive forms include ammonia (NH₃), ammonium (NH₄⁺), nitrate (NO₃⁻), nitrous oxide (N₂O) and nitrogen oxides (NOₓ).",
     "land": "Grassland in Northern Ireland runs on nitrogen from slurry, fertiliser and clover. The Nutrients Action Programme limits how much manure nitrogen can be applied and when. Ammonia drifts from farms onto designated sites, which is why planning applications for livestock housing are assessed for ammonia."
+   },
+   "briefing_text": {
+    "nature": "78% of the air as N₂; fixed into soil by lightning and by bacteria in clover and other legumes.",
+    "climate": "Nitrous oxide is a powerful, long-lived greenhouse gas; ammonia and nitrogen oxides affect air quality and ozone.",
+    "pollution": "Ammonia damages habitats; nitrate pollutes water; nitrogen oxides harm lungs.",
+    "manufacturing": "Ammonia and nitrogen fertilisers, nitric acid, explosives, nylon, and nitrogen gas for food packaging and inerting.",
+    "health": "Nitrogen gas is inert but asphyxiates in confined spaces; nitrogen dioxide and ammonia irritate lungs.",
+    "hazards": "See the nitrogen briefing safety tab.",
+    "discovery": "Isolated in 1772 by Daniel Rutherford; named from Greek for 'nitre-former'. Stable."
    },
    "featured": true,
    "safety": {
@@ -411,7 +474,7 @@
      ]
     ]
    },
-   "briefing": "/blog/2026/11/nitrogen-from-the-air-through-the-cow-into-the-lough-and-the-sky/",
+   "briefing_url": "/blog/2026/11/nitrogen-from-the-air-through-the-cow-into-the-lough-and-the-sky/",
    "pdf": "/assets/briefings/elements/nitrogen-briefing.pdf"
   },
   {
@@ -432,6 +495,15 @@
     "geological": "The most abundant element in the Earth's crust, bound in silicates and oxides.",
     "chemical": "Highly reactive oxidiser; most elements form oxides. Oxygen-enriched air raises fire risk.",
     "land": "Dissolved oxygen in rivers falls when nutrients cause algal blooms, killing fish."
+   },
+   "briefing_text": {
+    "nature": "21% of the air and nearly half the Earth's crust by mass, bound in water, silicates and oxides.",
+    "climate": "Ozone (O₃) protects from UV in the stratosphere but is a greenhouse gas and pollutant near the ground.",
+    "pollution": "Ground-level ozone forms from traffic and industrial emissions in sunlight; low oxygen in rivers kills fish.",
+    "manufacturing": "Steelmaking, medicine, water treatment, welding and cutting, oxy-fuel combustion; separated from air.",
+    "health": "Essential for breathing; high concentrations over long periods can damage lungs.",
+    "hazards": "Oxidiser: oxygen-enriched air makes fires burn fiercely. UN1072 (compressed), UN1073 (refrigerated liquid).",
+    "discovery": "Discovered by Carl Scheele (about 1772) and Joseph Priestley (1774); named by Lavoisier. Stable."
    }
   },
   {
@@ -452,6 +524,15 @@
     "geological": "Fluorine occurs as fluorspar (fluorite), in cryolite and in fluoroapatite, the main mineral of phosphate rock. Natural fluoride in groundwater varies with geology.",
     "chemical": "Group 17, period 2. The most electronegative and most reactive element; it reacts with almost everything, including glass. The carbon–fluorine bond is the strongest single bond in organic chemistry, which is why PFAS do not break down.",
     "land": "Northern Ireland's public water supply is not artificially fluoridated (NI Water, January 2025); Ireland's has been since 1964. Land contaminated by firefighting foam at airports, fire-training grounds and some industrial sites is the main PFAS land issue."
+   },
+   "briefing_text": {
+    "nature": "Fluorspar, cryolite and the fluoroapatite in phosphate rock; fluoride in some groundwater.",
+    "climate": "F-gases (HFCs, SF₆, NF₃) are powerful, long-lived greenhouse gases.",
+    "pollution": "PFAS 'forever chemicals' persist in water, soil and blood; fluoride enters soil with phosphate fertiliser.",
+    "manufacturing": "Refrigerants, fluoropolymers such as PTFE, battery salts, aluminium smelting, uranium enrichment.",
+    "health": "Fluoride protects teeth in small amounts and harms teeth and bone in excess; some PFAS are linked to health effects.",
+    "hazards": "See the fluorine briefing safety tab.",
+    "discovery": "Isolated by Henri Moissan in 1886, after attempts that injured or killed several chemists; name from fluorspar. Stable."
    },
    "featured": true,
    "safety": {
@@ -562,7 +643,7 @@
      ]
     ]
    },
-   "briefing": "/blog/2026/11/fluorine-in-your-fridge-your-frying-pan-and-your-teeth/",
+   "briefing_url": "/blog/2026/11/fluorine-in-your-fridge-your-frying-pan-and-your-teeth/",
    "pdf": "/assets/briefings/elements/fluorine-briefing.pdf"
   },
   {
@@ -583,6 +664,15 @@
     "geological": "A trace gas in the atmosphere.",
     "chemical": "A noble gas: no stable compounds.",
     "land": "No land use of note."
+   },
+   "briefing_text": {
+    "nature": "A trace gas in air (about 18 parts per million).",
+    "climate": "No effect.",
+    "pollution": "None.",
+    "manufacturing": "Neon signs, lasers (including for chip lithography), cryogenics; a by-product of air separation.",
+    "health": "Non-toxic; asphyxiant in confined spaces.",
+    "hazards": "Gas under pressure. UN1065 (compressed), UN1913 (refrigerated liquid).",
+    "discovery": "Discovered by Ramsay and Travers in 1898; from Greek 'neos', new. Stable."
    }
   },
   {
@@ -603,6 +693,15 @@
     "geological": "Rock salt deposits, including those mined at Kilroot near Carrickfergus.",
     "chemical": "Metal reacts violently with water. Sodium salts are mostly soluble.",
     "land": "Salt on roads and spray near coasts affects verges and hedges."
+   },
+   "briefing_text": {
+    "nature": "Seawater salt, rock salt and many minerals; the sixth most abundant element in the crust.",
+    "climate": "Sodium-ion batteries are emerging as a lower-cost storage option; soda ash making emits CO₂.",
+    "pollution": "Road salt raises chloride and sodium in streams and damages verges; salty soils lose structure.",
+    "manufacturing": "Salt, caustic soda, soda ash for glass, sodium bicarbonate, de-icing; rock salt mined at Kilroot near Carrickfergus.",
+    "health": "An essential nutrient; too much dietary salt raises blood pressure.",
+    "hazards": "The metal reacts violently with water (H260). UN1428 (sodium).",
+    "discovery": "Isolated by Humphry Davy in 1807 by electrolysis of caustic soda; symbol Na from Latin 'natrium'. Stable."
    }
   },
   {
@@ -623,6 +722,15 @@
     "geological": "Magnesium is the eighth most abundant element in the crust. It is found in dolomite, magnesite, olivine, serpentine and the basalts of the Antrim Plateau, and in seawater as magnesium chloride and sulfate.",
     "chemical": "Group 2, period 3; an alkaline earth metal. Burns with a dazzling white flame and keeps burning in carbon dioxide and steam, so water makes a magnesium fire worse. Forms Mg²⁺ ions in water.",
     "land": "Cattle and sheep cannot store magnesium. Fast-growing spring grass, high potassium and heavy nitrogen lower the magnesium cows take in, causing grass tetany (staggers), which can kill within hours. Magnesian (dolomitic) lime supplies magnesium as well as raising pH."
+   },
+   "briefing_text": {
+    "nature": "Dolomite, magnesite, olivine, basalt and seawater; at the centre of every chlorophyll molecule.",
+    "climate": "Magnesium-rich rocks absorb CO₂ as they weather; making the metal is carbon intensive.",
+    "pollution": "Little pollution concern; dust and fume at work.",
+    "manufacturing": "Light alloys, refractories, animal feed, fertiliser, de-icing salts and cements.",
+    "health": "An essential nutrient; low magnesium in grazing cattle and sheep causes grass tetany.",
+    "hazards": "See the magnesium briefing safety tab: powder and swarf are fire risks.",
+    "discovery": "Isolated by Humphry Davy in 1808; named from Magnesia, a district in Greece. Stable."
    },
    "featured": true,
    "safety": {
@@ -722,7 +830,7 @@
      ]
     ]
    },
-   "briefing": "/blog/2026/11/magnesium-the-metal-in-every-leaf-and-the-cause-of-grass-staggers/",
+   "briefing_url": "/blog/2026/11/magnesium-the-metal-in-every-leaf-and-the-cause-of-grass-staggers/",
    "pdf": "/assets/briefings/elements/magnesium-briefing.pdf"
   },
   {
@@ -743,6 +851,15 @@
     "geological": "Most abundant metal in the crust; bauxite is the ore.",
     "chemical": "Forms a protective oxide layer. Soluble aluminium is toxic to fish and roots in acid water.",
     "land": "In acid soils, aluminium becomes soluble and limits root growth; liming locks it up."
+   },
+   "briefing_text": {
+    "nature": "The most abundant metal in the crust, in clays, feldspars and bauxite. Soluble only in acid conditions.",
+    "climate": "Primary aluminium smelting uses large amounts of electricity and releases perfluorocarbons; recycling uses a small fraction of the energy. Covered by EU and UK CBAM.",
+    "pollution": "Bauxite residue ('red mud') is a large waste stream; acid rain mobilises aluminium that kills fish.",
+    "manufacturing": "Packaging, building frames, vehicles, power lines, cookware.",
+    "health": "Low toxicity at normal exposure; aluminium in dialysis fluid once caused harm.",
+    "hazards": "Powder is flammable and reacts with water (UN1396 uncoated, UN1309 coated). Massive metal is not classified.",
+    "discovery": "Isolated by Hans Christian Ørsted in 1825 and Friedrich Wöhler in 1827; 'aluminium' is the IUPAC spelling. Stable."
    }
   },
   {
@@ -763,6 +880,15 @@
     "geological": "Second most abundant crustal element; quartz and silicate minerals.",
     "chemical": "Forms silicon–oxygen networks; silicones are silicon–oxygen polymers.",
     "land": "Quarrying for sand and gravel; silica in soils from weathered rock."
+   },
+   "briefing_text": {
+    "nature": "Second most abundant element in the crust, in quartz, sand and silicate rocks.",
+    "climate": "The base of solar panels; making metallurgical silicon is electricity and carbon intensive.",
+    "pollution": "Respirable crystalline silica from cutting stone and concrete causes silicosis and lung cancer.",
+    "manufacturing": "Solar cells, microchips, silicones, glass, concrete and aggregates, aluminium alloys.",
+    "health": "Silicon itself is low in toxicity; respirable silica dust is the hazard.",
+    "hazards": "Respirable crystalline silica WEL 0.1 mg/m³ (EH40). Silicon powder is flammable.",
+    "discovery": "Isolated by Jöns Jacob Berzelius in 1824; from Latin 'silex', flint. Stable."
    }
   },
   {
@@ -783,6 +909,15 @@
     "geological": "Phosphorus is not found free in nature. It is mined as phosphate rock (apatite), much of it from Morocco and Western Sahara. Phosphate rock carries cadmium, uranium and fluoride as impurities. Phosphorus is on the UK 2024 critical minerals list.",
     "chemical": "Group 15, period 3. White phosphorus is a waxy solid that catches fire on its own in air and is very toxic; red phosphorus is stable and is used on match strikers. In soils and water it is almost always present as phosphate (PO₄³⁻), which binds tightly to iron, aluminium and calcium.",
     "land": "Northern Ireland's farm system brings in more phosphorus, in feed and fertiliser, than it sends out in food. The surplus builds up in soil. The Soil Nutrient Health Scheme has found many fields above the agronomic target index. Fields above the target need no more phosphorus for years, and run-off from them reaches streams."
+   },
+   "briefing_text": {
+    "nature": "Phosphate rock (apatite), bones and teeth, soil and manure; never free in nature.",
+    "climate": "Indirect: fertiliser making uses energy, and phosphorus-rich lakes emit more methane.",
+    "pollution": "Excess phosphorus causes algal blooms, including in Lough Neagh.",
+    "manufacturing": "Fertilisers, phosphoric acid, food additives, LFP batteries, flame retardants, pesticides.",
+    "health": "Essential nutrient; white phosphorus is highly toxic.",
+    "hazards": "See the phosphorus briefing safety tab.",
+    "discovery": "Discovered by Hennig Brand in 1669 by boiling down urine, the first element found by a known person; from Greek for 'light-bearer'. Stable."
    },
    "featured": true,
    "safety": {
@@ -896,7 +1031,7 @@
      ]
     ]
    },
-   "briefing": "/blog/2026/11/phosphorus-the-nutrient-that-fed-the-farms-and-fouled-the-lough/",
+   "briefing_url": "/blog/2026/11/phosphorus-the-nutrient-that-fed-the-farms-and-fouled-the-lough/",
    "pdf": "/assets/briefings/elements/phosphorus-briefing.pdf"
   },
   {
@@ -917,6 +1052,15 @@
     "geological": "Sulfur occurs as native sulfur near volcanoes, as sulfides such as pyrite (fool's gold) and galena, and as sulfates such as gypsum. Pyrite exposed to air and water makes acid mine drainage.",
     "chemical": "Group 16, period 3. Spelled 'sulfur' by IUPAC and the Royal Society of Chemistry; 'sulphur' remains common in UK law and HSE guidance. Oxidation states run from −2 (sulfide, H₂S) to +6 (sulfate, sulfuric acid).",
     "land": "With less sulfur falling in rain, many crops and grass silage now need sulfur fertiliser. Sulfur is one of the nutrients reported under Northern Ireland's Soil Nutrient Health Scheme. Gypsum and other sulfates in soil, plasterboard waste and landfill can produce hydrogen sulfide."
+   },
+   "briefing_text": {
+    "nature": "Volcanic sulfur, sulfide and sulfate minerals, hydrogen sulfide from bogs and slurry, and dimethyl sulfide from the sea.",
+    "climate": "Sulfate particles cool the climate; SF₆ is the most potent greenhouse gas in common use.",
+    "pollution": "Sulfur dioxide caused acid rain; hydrogen sulfide from slurry kills.",
+    "manufacturing": "Sulfuric acid, fertilisers, vulcanised rubber, gypsum board, batteries.",
+    "health": "Essential in proteins; SO₂ and H₂S are toxic.",
+    "hazards": "See the sulfur briefing safety tab.",
+    "discovery": "Known since antiquity as brimstone; recognised as an element by Lavoisier in 1777. Stable."
    },
    "featured": true,
    "safety": {
@@ -1035,7 +1179,7 @@
      ]
     ]
    },
-   "briefing": "/blog/2026/11/sulfur-acid-rains-ingredient-now-a-fertiliser-we-buy/",
+   "briefing_url": "/blog/2026/11/sulfur-acid-rains-ingredient-now-a-fertiliser-we-buy/",
    "pdf": "/assets/briefings/elements/sulfur-briefing.pdf"
   },
   {
@@ -1056,6 +1200,15 @@
     "geological": "Found as chloride in seawater and salt deposits.",
     "chemical": "Toxic yellow-green gas; strong oxidiser. Mixing bleach and acid releases it.",
     "land": "Saline soils near coasts; chloride runoff from salted roads."
+   },
+   "briefing_text": {
+    "nature": "Chloride in seawater and salt deposits; natural organochlorines are made by some seaweeds and fungi.",
+    "climate": "Chlorine from CFCs destroyed stratospheric ozone; CFCs are also strong greenhouse gases, now phased out under the Montreal Protocol.",
+    "pollution": "Persistent organochlorines (DDT, PCBs, dioxins) build up in food chains; chloride from road salt raises river salinity.",
+    "manufacturing": "Water disinfection, PVC, solvents, pharmaceuticals, bleach; made by electrolysis of brine.",
+    "health": "Chloride is essential; chlorine gas damages the lungs.",
+    "hazards": "Chlorine: Press. Gas, Acute Tox. 3 H331, Aquatic Acute 1. Never mix bleach with acid. UN1017.",
+    "discovery": "Prepared by Carl Scheele in 1774; shown to be an element by Humphry Davy in 1810; from Greek 'chloros', pale green. Stable."
    }
   },
   {
@@ -1076,6 +1229,15 @@
     "geological": "Produced by decay of potassium-40 in rocks.",
     "chemical": "A noble gas: no stable compounds. Asphyxiant in confined spaces.",
     "land": "No land use of note."
+   },
+   "briefing_text": {
+    "nature": "Nearly 1% of air, made by decay of potassium-40 in rocks over geological time.",
+    "climate": "No effect.",
+    "pollution": "None.",
+    "manufacturing": "Welding shield gas, double-glazing fill, steelmaking, light bulbs.",
+    "health": "Non-toxic; asphyxiant in confined spaces such as welding pits.",
+    "hazards": "Heavier than air; collects in low spaces. UN1006 (compressed), UN1951 (refrigerated liquid).",
+    "discovery": "Discovered by Lord Rayleigh and William Ramsay in 1894; from Greek 'argos', idle. Stable."
    }
   },
   {
@@ -1096,6 +1258,15 @@
     "geological": "Mined as potash from evaporites (for example under North Yorkshire).",
     "chemical": "Very reactive metal; potassium salts are soluble.",
     "land": "Soil K indices guide fertiliser; slurry is rich in potassium."
+   },
+   "briefing_text": {
+    "nature": "Feldspars, micas and clays; potash deposits; a major plant nutrient.",
+    "climate": "Potash mining and fertiliser transport carry energy costs; potassium-40 gives a small natural radioactivity.",
+    "pollution": "Excess potassium in grass can induce magnesium deficiency in livestock.",
+    "manufacturing": "Potash fertiliser, potassium hydroxide, soaps, glass.",
+    "health": "Essential for nerves and muscles; too much or too little affects the heart.",
+    "hazards": "The metal reacts violently with water (H260). UN2257.",
+    "discovery": "Isolated by Humphry Davy in 1807, his first metal by electrolysis; symbol K from Latin 'kalium'. Stable (potassium-40 is a natural radioactive isotope)."
    }
   },
   {
@@ -1116,6 +1287,15 @@
     "geological": "Limestone, chalk (the white cliffs of Antrim) and gypsum.",
     "chemical": "Reactive metal; calcium carbonate dissolves in acid.",
     "land": "Lime raises soil pH; most NI grassland soils need lime."
+   },
+   "briefing_text": {
+    "nature": "Limestone, chalk, gypsum and shells; bones and teeth. The white cliffs of the Antrim coast are chalk.",
+    "climate": "Cement and lime making release CO₂ from limestone as well as from fuel; covered by EU and UK CBAM (cement).",
+    "pollution": "Liming acid soils and lakes reduces aluminium toxicity; quarry dust is a local nuisance.",
+    "manufacturing": "Cement, lime, plaster, steelmaking flux, flue-gas desulfurisation.",
+    "health": "Essential for bones; quicklime burns skin and eyes.",
+    "hazards": "Calcium metal reacts with water (UN1401); quicklime is Skin Irrit. and Eye Dam. 1.",
+    "discovery": "Isolated by Humphry Davy in 1808; from Latin 'calx', lime. Stable."
    }
   },
   {
@@ -1136,6 +1316,15 @@
     "geological": "Dispersed in many ores; recovered as a by-product.",
     "chemical": "Behaves like the rare earths.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "Widely dispersed at low levels; rarely concentrated.",
+    "climate": "Used in solid oxide fuel cells and light aluminium alloys.",
+    "pollution": "Little data.",
+    "manufacturing": "Aluminium-scandium alloys, stadium lighting, fuel cells.",
+    "health": "Low toxicity data; treated with care as a fine dust.",
+    "hazards": "Metal powder is flammable.",
+    "discovery": "Discovered by Lars Nilson in 1879, filling a gap Mendeleev had predicted; named after Scandinavia. Stable."
    }
   },
   {
@@ -1156,6 +1345,15 @@
     "geological": "Ores are ilmenite and rutile, from beach sands and igneous rocks.",
     "chemical": "Protective oxide layer; metal powder is flammable.",
     "land": "Mineral sand mining in coastal areas."
+   },
+   "briefing_text": {
+    "nature": "Ilmenite and rutile in igneous rocks and beach sands.",
+    "climate": "Titanium is light and durable; titanium dioxide production is energy intensive.",
+    "pollution": "TiO₂ production produces acidic wastes; TiO₂ nanoparticles are studied for effects in water.",
+    "manufacturing": "Aircraft, implants, desalination plant; TiO₂ whitens paint, plastics, paper and sunscreen.",
+    "health": "Metal is biocompatible; TiO₂ as a food additive (E171) was banned in the EU in 2022.",
+    "hazards": "Powder is flammable (UN2546, UN1352).",
+    "discovery": "Found by William Gregor in Cornwall in 1791; named by Martin Klaproth after the Titans. Stable."
    }
   },
   {
@@ -1176,6 +1374,15 @@
     "geological": "In magnetite ores and some oil residues; on the 2022 UK critical minerals list.",
     "chemical": "Several oxidation states; vanadium pentoxide is toxic.",
     "land": "Little land issue."
+   },
+   "briefing_text": {
+    "nature": "In magnetite ores, some shales, crude oil and coal.",
+    "climate": "Vanadium redox flow batteries store renewable power; vanadium strengthens steel.",
+    "pollution": "Released by burning heavy fuel oil and coal.",
+    "manufacturing": "High-strength steel, flow batteries, catalysts for sulfuric acid.",
+    "health": "Vanadium pentoxide is toxic and a suspected carcinogen.",
+    "hazards": "Vanadium pentoxide: Muta. 2, Carc. 1B, Repr. 2 (harmonised). UN2862.",
+    "discovery": "Found in 1801 by Andrés Manuel del Río, rediscovered in 1830 by Nils Sefström; named after Vanadís (Freyja). Stable."
    }
   },
   {
@@ -1196,6 +1403,15 @@
     "geological": "Ore is chromite.",
     "chemical": "Cr(III) is a trace nutrient; Cr(VI) is toxic and mobile in water.",
     "land": "Old tanneries, plating works and chromite-ore residues leave contaminated sites."
+   },
+   "briefing_text": {
+    "nature": "Chromite ore; small amounts in most soils.",
+    "climate": "Essential to stainless steel used in energy plant.",
+    "pollution": "Hexavalent chromium from plating, tanning and pigments is a priority contaminant in water and land.",
+    "manufacturing": "Stainless steel, plating, leather tanning, pigments.",
+    "health": "Chromium(III) is a trace nutrient; chromium(VI) causes lung cancer and skin ulcers.",
+    "hazards": "Chromium(VI) compounds: Carc. 1B, skin sensitiser; strict WELs.",
+    "discovery": "Discovered by Louis-Nicolas Vauquelin in 1797; from Greek 'chroma', colour. Stable."
    }
   },
   {
@@ -1216,6 +1432,15 @@
     "geological": "Manganese oxides and nodules on the ocean floor.",
     "chemical": "Many oxidation states; permanganate is a strong oxidiser.",
     "land": "Deficiency in limed, high-organic soils; toxicity in acid wet soils."
+   },
+   "briefing_text": {
+    "nature": "Manganese oxides in rocks and soils; nodules on the ocean floor.",
+    "climate": "Used in steel and in battery cathodes.",
+    "pollution": "Dissolves in waterlogged soils and peaty water, staining supplies and blocking pipes.",
+    "manufacturing": "Steelmaking, aluminium cans, batteries, fertiliser micronutrient.",
+    "health": "Essential trace nutrient; chronic exposure to fume (welding, mining) affects the nervous system.",
+    "hazards": "Manganese and inorganic compounds WEL 0.2 mg/m³ inhalable, 0.05 mg/m³ respirable (EH40).",
+    "discovery": "Isolated by Johan Gottlieb Gahn in 1774; name from magnesia nigra. Stable."
    }
   },
   {
@@ -1236,6 +1461,15 @@
     "geological": "Haematite and magnetite ores; laterite iron ores formed between the Antrim lavas.",
     "chemical": "Rusts in air and water; iron binds phosphate in soils.",
     "land": "Ochre in drains and streams from iron-rich groundwater and old mines."
+   },
+   "briefing_text": {
+    "nature": "Fourth most abundant element in the crust; haematite and magnetite ores, and the Earth's core.",
+    "climate": "Blast-furnace steel is a major CO₂ source; scrap-based and hydrogen routes cut it. Iron and steel are covered by EU and UK CBAM.",
+    "pollution": "Iron ochre from old mines and iron-rich drains smothers stream beds.",
+    "manufacturing": "Steel for construction, vehicles and machinery; cast iron.",
+    "health": "Essential for blood; iron overdose is dangerous to children.",
+    "hazards": "Iron powder can be flammable; metal is not classified.",
+    "discovery": "Used since about 1200 BC (the Iron Age); symbol Fe from Latin 'ferrum'. Stable."
    }
   },
   {
@@ -1256,6 +1490,15 @@
     "geological": "Mostly a by-product of copper and nickel mining; on the UK critical minerals list.",
     "chemical": "Vitamin B12 contains cobalt; some cobalt compounds are carcinogens.",
     "land": "Cobalt-deficient pasture causes 'pine' in sheep; supplemented in minerals."
+   },
+   "briefing_text": {
+    "nature": "With copper and nickel ores; traces in soils.",
+    "climate": "Used in battery cathodes and superalloys for turbines.",
+    "pollution": "Mining in some regions brings serious human-rights and pollution concerns.",
+    "manufacturing": "Batteries, jet-engine superalloys, magnets, catalysts, blue pigments.",
+    "health": "Part of vitamin B12; some cobalt compounds are carcinogens.",
+    "hazards": "Cobalt metal: Carc. 1B, Repr. 1B, sensitiser (harmonised).",
+    "discovery": "Isolated by Georg Brandt in about 1735; from German 'Kobold', a goblin of the mines. Stable."
    }
   },
   {
@@ -1276,6 +1519,15 @@
     "geological": "Laterite and sulfide ores.",
     "chemical": "Some nickel compounds are carcinogens.",
     "land": "Ultramafic soils are naturally rich in nickel."
+   },
+   "briefing_text": {
+    "nature": "Laterite and sulfide ores; ultramafic soils.",
+    "climate": "Nickel-rich cathodes give batteries more range; nickel mining can clear forest.",
+    "pollution": "Smelting releases sulfur dioxide and metal dust.",
+    "manufacturing": "Stainless steel, batteries, plating, coins.",
+    "health": "A common skin allergen; some nickel compounds are carcinogens.",
+    "hazards": "Nickel metal: Carc. 2, skin sensitiser (harmonised).",
+    "discovery": "Isolated by Axel Cronstedt in 1751; from German 'Kupfernickel', devil's copper. Stable."
    }
   },
   {
@@ -1296,6 +1548,15 @@
     "geological": "Porphyry and sulfide ores; historic mining in Ireland, including Avoca.",
     "chemical": "Good conductor; copper salts are toxic to fungi and algae.",
     "land": "Trace nutrient for livestock; pig slurry can raise soil copper."
+   },
+   "briefing_text": {
+    "nature": "Copper sulfide and oxide ores; traces in soil and food.",
+    "climate": "Demand rises with electrification: cables, motors, renewables.",
+    "pollution": "Toxic to aquatic life; copper fungicides and antifouling paint build up in soils and sediments.",
+    "manufacturing": "Wiring, plumbing, motors, heat exchangers, brass and bronze.",
+    "health": "Essential trace nutrient; too much is toxic, especially to sheep.",
+    "hazards": "Copper powder: Aquatic hazards. Massive metal not classified.",
+    "discovery": "Used since about 9000 BC; symbol Cu from Latin 'cuprum', from Cyprus. Stable."
    }
   },
   {
@@ -1316,6 +1577,15 @@
     "geological": "Sphalerite ore; Ireland's Tara mine is one of Europe's largest zinc mines.",
     "chemical": "Essential trace nutrient; zinc oxide is used in creams and rubber.",
     "land": "Pig slurry and sewage sludge can raise soil zinc."
+   },
+   "briefing_text": {
+    "nature": "Sphalerite ore; Ireland's Tara mine is among Europe's largest.",
+    "climate": "Galvanising extends the life of steel; zinc batteries are researched for storage.",
+    "pollution": "Runoff from galvanised roofs and roads; toxic to aquatic life.",
+    "manufacturing": "Galvanising, die-casting, brass, rubber, sunscreen.",
+    "health": "Essential trace nutrient; zinc fume causes 'metal fume fever'.",
+    "hazards": "Zinc powder (stabilised): Aquatic Acute/Chronic 1 (harmonised); powder reacts with water (UN1436).",
+    "discovery": "Used in brass since antiquity; isolated in Europe by Andreas Marggraf in 1746. Stable."
    }
   },
   {
@@ -1336,6 +1606,15 @@
     "geological": "By-product of aluminium and zinc refining; on the UK critical minerals list.",
     "chemical": "Liquid just above room temperature; attacks aluminium.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "Very dispersed; recovered as a by-product of bauxite and zinc processing.",
+    "climate": "Gallium nitride makes efficient LEDs and power electronics for chargers, inverters and EVs.",
+    "pollution": "Little environmental concern at present use.",
+    "manufacturing": "LEDs, radio-frequency chips, power electronics, solar cells. On the UK critical minerals list; China dominates supply and controls exports.",
+    "health": "Low toxicity; some compounds used in medicine.",
+    "hazards": "Liquid just above room temperature; corrodes aluminium (UN2803). Metal is Skin Corr./Eye Dam. by many suppliers.",
+    "discovery": "Discovered by Paul-Émile Lecoq de Boisbaudran in 1875, as Mendeleev predicted; named after Gallia (France). Stable."
    }
   },
   {
@@ -1356,6 +1635,15 @@
     "geological": "By-product of zinc and coal; supply concentrated.",
     "chemical": "Semiconductor like silicon.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "Traces in zinc ores and some coals.",
+    "climate": "Used in high-efficiency solar cells for satellites and in infrared optics.",
+    "pollution": "Little concern.",
+    "manufacturing": "Fibre-optic glass, infrared lenses, PET catalyst in some regions, semiconductors. Export controls apply in China.",
+    "health": "Low toxicity; some 'germanium supplements' have caused kidney damage.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Discovered by Clemens Winkler in 1886; named after Germany. Stable."
    }
   },
   {
@@ -1376,6 +1664,15 @@
     "geological": "In sulfide ores and some sedimentary rocks.",
     "chemical": "Inorganic arsenic is a carcinogen.",
     "land": "Old sheep-dip, timber-treatment and mine sites can be contaminated."
+   },
+   "briefing_text": {
+    "nature": "In sulfide ores, some shales and groundwater; naturally high in groundwater in parts of South Asia.",
+    "climate": "No direct role; gallium arsenide is used in some solar cells.",
+    "pollution": "Arsenic in drinking water is a major global health problem; also from old pesticides, wood preservative (CCA), mining and smelting.",
+    "manufacturing": "Semiconductors, historic pesticides and timber treatment, lead alloys.",
+    "health": "Inorganic arsenic causes cancers and skin lesions; drinking-water limit 10 µg/l.",
+    "hazards": "Arsenic compounds: Acute Tox. 3, Carc. 1A. Arsine gas is extremely toxic (UN2188). UN1558 (arsenic).",
+    "discovery": "Known in antiquity; isolated by Albertus Magnus in about 1250. Stable."
    }
   },
   {
@@ -1396,6 +1693,15 @@
     "geological": "Associated with sulfide minerals and some shales.",
     "chemical": "Chemically similar to sulfur.",
     "land": "Many UK and Irish soils are low in selenium; livestock are supplemented."
+   },
+   "briefing_text": {
+    "nature": "With sulfide minerals; soils vary widely; many UK and Irish soils are low.",
+    "climate": "Used in some thin-film solar cells (CIGS).",
+    "pollution": "Selenium from coal ash and irrigation drainage has poisoned birds and fish.",
+    "manufacturing": "Glass decolouriser, electronics, pigments, feed supplements.",
+    "health": "Essential trace nutrient with a narrow line between deficiency and toxicity.",
+    "hazards": "Selenium and compounds: Acute Tox. 3, STOT RE 2. UN2658 (selenium powder).",
+    "discovery": "Discovered by Berzelius in 1817; named after Selene, the Moon. Stable."
    }
   },
   {
@@ -1416,6 +1722,15 @@
     "geological": "Extracted from brines and seawater.",
     "chemical": "Corrosive, toxic red-brown liquid.",
     "land": "Methyl bromide soil fumigation is now banned in the UK and EU."
+   },
+   "briefing_text": {
+    "nature": "Bromide in seawater and brines; seaweeds make natural organobromines.",
+    "climate": "Bromine from halons and methyl bromide destroys stratospheric ozone more efficiently than chlorine.",
+    "pollution": "Some brominated flame retardants are persistent organic pollutants; bromate forms when bromide-rich water is ozonated.",
+    "manufacturing": "Flame retardants, drilling fluids, water treatment, pharmaceuticals.",
+    "health": "Bromine liquid and vapour burn skin and lungs.",
+    "hazards": "Bromine: Acute Tox. 2 H330, Skin Corr. 1A. UN1744.",
+    "discovery": "Discovered independently by Antoine Balard (1826) and Carl Löwig (1825); from Greek 'bromos', stench. Stable."
    }
   },
   {
@@ -1436,6 +1751,15 @@
     "geological": "Trace gas in air.",
     "chemical": "A noble gas; forms very few compounds.",
     "land": "No land use of note."
+   },
+   "briefing_text": {
+    "nature": "Trace gas in air (about 1 part per million).",
+    "climate": "Fills high-performance glazing to cut heat loss.",
+    "pollution": "Krypton-85 from nuclear reprocessing is released at low levels.",
+    "manufacturing": "Insulating glass units, lighting, lasers; by-product of air separation.",
+    "health": "Non-toxic; asphyxiant.",
+    "hazards": "Gas under pressure. UN1056.",
+    "discovery": "Discovered by Ramsay and Travers in 1898; from Greek 'kryptos', hidden. Stable."
    }
   },
   {
@@ -1456,6 +1780,15 @@
     "geological": "Trace in potassium minerals; rubidium–strontium dating of rocks.",
     "chemical": "Very reactive alkali metal.",
     "land": "No land issue."
+   },
+   "briefing_text": {
+    "nature": "Traces in potassium minerals and seawater.",
+    "climate": "No significant role.",
+    "pollution": "None of note.",
+    "manufacturing": "Atomic clocks (used in GPS), research, specialist glass.",
+    "health": "Low toxicity; behaves like potassium in the body.",
+    "hazards": "Metal ignites in air and reacts violently with water (UN1423).",
+    "discovery": "Discovered by Bunsen and Kirchhoff in 1861 by spectroscopy; from Latin 'rubidus', deep red. Stable (rubidium-87 is weakly radioactive)."
    }
   },
   {
@@ -1476,6 +1809,15 @@
     "geological": "Celestine and strontianite (named after Strontian, Scotland).",
     "chemical": "Behaves like calcium in bone.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "Celestine and strontianite; follows calcium in shells and bones.",
+    "climate": "No direct role.",
+    "pollution": "Strontium-90 from fallout and nuclear accidents is a radiological concern; stable strontium is low risk.",
+    "manufacturing": "Red fireworks and flares, ferrite magnets, toothpaste for sensitive teeth.",
+    "health": "Stable strontium is low toxicity; strontium ranelate was a bone drug.",
+    "hazards": "Metal reacts with water. Strontium nitrate is an oxidiser (UN1507).",
+    "discovery": "Identified from a mineral found at Strontian, Scotland, in 1790; isolated by Davy in 1808. Stable."
    }
   },
   {
@@ -1496,6 +1838,15 @@
     "geological": "Found with the rare earth elements.",
     "chemical": "Behaves like the heavy lanthanides.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "With rare earth minerals.",
+    "climate": "Used in phosphors for efficient lighting and in zirconia for fuel cells.",
+    "pollution": "Rare earth mining impacts apply.",
+    "manufacturing": "LED and display phosphors, lasers, superconductors, ceramics.",
+    "health": "Low toxicity data; avoid dust.",
+    "hazards": "Powder is flammable.",
+    "discovery": "From a mineral found at Ytterby, Sweden; identified by Johan Gadolin in 1794. Stable."
    }
   },
   {
@@ -1516,6 +1867,15 @@
     "geological": "Zircon sand; zircon crystals date the oldest rocks.",
     "chemical": "Metal powder is flammable.",
     "land": "Mineral sand mining."
+   },
+   "briefing_text": {
+    "nature": "Zircon in sands and igneous rocks; zircon crystals are the oldest dated minerals on Earth.",
+    "climate": "Zirconium alloy cladding holds nuclear fuel.",
+    "pollution": "Mineral sand mining; zircon carries natural radioactivity.",
+    "manufacturing": "Nuclear fuel cladding, ceramics, foundry sand, dental crowns.",
+    "health": "Low toxicity.",
+    "hazards": "Powder is pyrophoric (UN2008, UN1358).",
+    "discovery": "Identified by Klaproth in 1789; isolated by Berzelius in 1824. Stable."
    }
   },
   {
@@ -1536,6 +1896,15 @@
     "geological": "Mostly from Brazilian pyrochlore deposits; top of the UK 2024 criticality list.",
     "chemical": "Forms a protective oxide.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "Pyrochlore and columbite; Brazil dominates supply.",
+    "climate": "Lighter, stronger steel for vehicles and pipelines; superconducting magnets.",
+    "pollution": "Little concern.",
+    "manufacturing": "High-strength low-alloy steel, superconducting wire for MRI and fusion research, jet engines.",
+    "health": "Low toxicity.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Discovered by Charles Hatchett in 1801 as 'columbium'; named niobium after Niobe. Stable."
    }
   },
   {
@@ -1556,6 +1925,15 @@
     "geological": "Molybdenite ore.",
     "chemical": "Needed by the enzymes that fix nitrogen in clover.",
     "land": "Molybdenum-rich 'teart' pastures cause scouring in stock."
+   },
+   "briefing_text": {
+    "nature": "Molybdenite ore; trace nutrient in soils.",
+    "climate": "Strengthens steel for wind turbines and pipelines; molybdenum catalysts remove sulfur from fuel.",
+    "pollution": "Excess molybdenum in pasture induces copper deficiency in livestock.",
+    "manufacturing": "Stainless and tool steels, catalysts, lubricants (molybdenum disulfide).",
+    "health": "Essential trace nutrient.",
+    "hazards": "Molybdenum trioxide: Carc. 2.",
+    "discovery": "Identified by Carl Scheele in 1778; isolated by Peter Hjelm in 1781. Stable."
    }
   },
   {
@@ -1576,6 +1954,15 @@
     "geological": "Essentially absent from nature; made in reactors.",
     "chemical": "All isotopes are radioactive.",
     "land": "No land use of note."
+   },
+   "briefing_text": {
+    "nature": "Almost absent from nature; tiny traces from uranium fission.",
+    "climate": "No role.",
+    "pollution": "Technetium-99 from Sellafield reprocessing has been measured in Irish Sea seaweed and lobsters.",
+    "manufacturing": "Technetium-99m is the most widely used medical imaging isotope, made from molybdenum-99.",
+    "health": "Radioactive; medical doses are short-lived and small.",
+    "hazards": "Radioactive; IRR applies. Class 7 in transport.",
+    "discovery": "The first artificially made element, by Perrier and Segrè in 1937; from Greek 'technetos', artificial. No stable isotope; technetium-97 and -98 last about 4 million years."
    }
   },
   {
@@ -1596,6 +1983,15 @@
     "geological": "With platinum ores.",
     "chemical": "Ruthenium tetroxide is toxic and volatile.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "With platinum ores.",
+    "climate": "Catalysts for ammonia and hydrogen research.",
+    "pollution": "Ruthenium-106 releases have been detected after nuclear incidents.",
+    "manufacturing": "Hard-disk coatings, electrical contacts, chip-making, catalysts.",
+    "health": "Ruthenium tetroxide is toxic.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Isolated by Karl Klaus in 1844; named after Ruthenia (Russia). Stable."
    }
   },
   {
@@ -1616,6 +2012,15 @@
     "geological": "With platinum ores, mainly South Africa.",
     "chemical": "Very unreactive metal.",
     "land": "Platinum-group metals build up in roadside soil."
+   },
+   "briefing_text": {
+    "nature": "Rare; with platinum ores, mainly in South Africa.",
+    "climate": "Catalytic converters cut nitrogen oxides from petrol engines.",
+    "pollution": "Converter metals accumulate in roadside dust and soil.",
+    "manufacturing": "Three-way catalysts, glass-fibre bushings, jewellery plating.",
+    "health": "Low toxicity as metal.",
+    "hazards": "Some compounds are sensitisers.",
+    "discovery": "Discovered by William Hyde Wollaston in 1803; from Greek 'rhodon', rose. Stable."
    }
   },
   {
@@ -1636,6 +2041,15 @@
     "geological": "Russia and South Africa dominate supply.",
     "chemical": "Excellent hydrogenation catalyst.",
     "land": "Accumulates in roadside soils."
+   },
+   "briefing_text": {
+    "nature": "With platinum and nickel ores; Russia and South Africa supply most.",
+    "climate": "Catalytic converters; absorbs hydrogen and is studied for hydrogen purification.",
+    "pollution": "Converter metals accumulate on roadsides.",
+    "manufacturing": "Petrol-engine catalysts, electronics, dental alloys, hydrogenation catalysts.",
+    "health": "Can cause allergy.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Discovered by Wollaston in 1802; named after the asteroid Pallas. Stable."
    }
   },
   {
@@ -1656,6 +2070,15 @@
     "geological": "By-product of lead, zinc and copper mining.",
     "chemical": "Tarnishes with sulfur compounds.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "Native silver and in lead, zinc and copper ores.",
+    "climate": "Silver paste makes the contacts on most solar cells; demand rises with solar.",
+    "pollution": "Silver ions and nanosilver are toxic to aquatic life.",
+    "manufacturing": "Solar cells, electronics, mirrors, brazing, antimicrobial dressings, jewellery.",
+    "health": "Low toxicity; long exposure can turn skin grey (argyria).",
+    "hazards": "Silver nitrate: oxidiser, corrosive (UN1493).",
+    "discovery": "Used since prehistory; symbol Ag from Latin 'argentum'. Stable."
    }
   },
   {
@@ -1676,6 +2099,15 @@
     "geological": "Impurity in zinc ores and phosphate rock.",
     "chemical": "Carcinogen; damages kidneys.",
     "land": "EU fertiliser rules limit cadmium in phosphate fertilisers."
+   },
+   "briefing_text": {
+    "nature": "Impurity in zinc ores and phosphate rock.",
+    "climate": "Cadmium telluride thin-film solar panels.",
+    "pollution": "Builds up in soils from phosphate fertiliser and sewage sludge; taken up by crops.",
+    "manufacturing": "Now restricted: batteries, pigments, plating; still in CdTe solar panels.",
+    "health": "Carcinogen; damages kidneys and bones (itai-itai disease in Japan).",
+    "hazards": "Cadmium: Carc. 1B, Muta. 2, Repr. 2, Acute Tox. 2 (inhalation).",
+    "discovery": "Discovered by Friedrich Stromeyer in 1817; from Latin 'cadmia', zinc ore. Stable."
    }
   },
   {
@@ -1696,6 +2128,15 @@
     "geological": "By-product of zinc mining; on the UK critical minerals list.",
     "chemical": "Soft, low-melting metal.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "By-product of zinc mining.",
+    "climate": "Indium tin oxide is used in some solar cells and displays.",
+    "pollution": "Little concern.",
+    "manufacturing": "Touchscreens and displays, solders, LEDs. On the UK critical minerals list.",
+    "health": "Indium tin oxide dust causes lung disease in workers.",
+    "hazards": "Indium compounds: dust controls.",
+    "discovery": "Discovered by Reich and Richter in 1863 by its indigo spectral line. Stable."
    }
   },
   {
@@ -1716,6 +2157,15 @@
     "geological": "Cassiterite ore; Cornish tin mining history.",
     "chemical": "Inorganic tin is low toxicity; organotins are toxic.",
     "land": "Old boatyard sediments can hold TBT."
+   },
+   "briefing_text": {
+    "nature": "Cassiterite ore; Cornwall once led world supply.",
+    "climate": "Solder for every electronic circuit, including solar inverters.",
+    "pollution": "Organotin antifouling paint (TBT) caused sex changes in dog-whelks and is banned.",
+    "manufacturing": "Solder, tin plate for cans, bronze, glass (float process).",
+    "health": "Inorganic tin is low toxicity; organotins are toxic.",
+    "hazards": "Organotins: acutely toxic, Aquatic Chronic 1.",
+    "discovery": "Used since the Bronze Age; symbol Sn from Latin 'stannum'. Stable."
    }
   },
   {
@@ -1736,6 +2186,15 @@
     "geological": "The main ore is stibnite (antimony sulfide), found with gold, lead and silver deposits. Supply is concentrated in China, Russia and Tajikistan.",
     "chemical": "Group 15, period 5; a metalloid. Brittle, silvery and a poor conductor. Common states are +3 and +5. Stibine (SbH₃) is a very toxic gas that can form when antimony alloys meet acid, as in battery charging.",
     "land": "Antimony is a contaminant to look for at shooting grounds, battery recycling and scrap yards, smelters and old landfill. Roadside soils and drain sediments on busy routes carry antimony from brake dust."
+   },
+   "briefing_text": {
+    "nature": "Stibnite ore, often with gold.",
+    "climate": "Used in solar glass, lead-acid batteries and flame retardants for cables and insulation.",
+    "pollution": "Shooting ranges, brake dust, smelting and landfill.",
+    "manufacturing": "Flame retardants, battery grids, PET catalyst, glass fining.",
+    "health": "Dust irritates lungs and skin; antimony trioxide is a suspected carcinogen.",
+    "hazards": "See the antimony briefing safety tab.",
+    "discovery": "Known in antiquity (kohl eye make-up); symbol Sb from Latin 'stibium'. Stable."
    },
    "featured": true,
    "safety": {
@@ -1828,7 +2287,7 @@
      ]
     ]
    },
-   "briefing": "/blog/2026/11/antimony-the-critical-mineral-nobody-has-heard-of/",
+   "briefing_url": "/blog/2026/11/antimony-the-critical-mineral-nobody-has-heard-of/",
    "pdf": "/assets/briefings/elements/antimony-briefing.pdf"
   },
   {
@@ -1849,6 +2308,15 @@
     "geological": "By-product of copper refining.",
     "chemical": "Chemically like selenium.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "Very rare; by-product of copper refining.",
+    "climate": "Cadmium telluride solar panels; thermoelectric generators.",
+    "pollution": "Little data.",
+    "manufacturing": "Thin-film solar, thermoelectrics, alloys.",
+    "health": "Exposure gives a garlic smell on the breath.",
+    "hazards": "Tellurium compounds: Acute Tox.",
+    "discovery": "Discovered by Franz-Joseph Müller von Reichenstein in 1782; from Latin 'tellus', earth. Stable (tellurium-128 decays so slowly it counts as stable)."
    }
   },
   {
@@ -1869,6 +2337,15 @@
     "geological": "From brines and Chilean nitrate deposits; seaweed was once a source.",
     "chemical": "Least reactive stable halogen.",
     "land": "Seaweed-fed coastal soils are higher in iodine."
+   },
+   "briefing_text": {
+    "nature": "In seawater and seaweed; coastal soils are richer in iodine.",
+    "climate": "Iodine from the ocean affects ozone in the lower atmosphere.",
+    "pollution": "Iodine-131 from nuclear accidents is short-lived but concentrates in the thyroid.",
+    "manufacturing": "Disinfectants, X-ray contrast agents, iodised salt, LCD polarisers.",
+    "health": "Essential for thyroid hormones; deficiency causes goitre. Potassium iodide tablets protect after nuclear releases.",
+    "hazards": "Iodine: Acute Tox. 4, STOT RE 1 (thyroid), Aquatic Acute 1.",
+    "discovery": "Discovered by Bernard Courtois in 1811 in seaweed ash; from Greek 'iodes', violet. Stable."
    }
   },
   {
@@ -1889,6 +2366,15 @@
     "geological": "Trace in air.",
     "chemical": "Noble gas that forms a few compounds with fluorine.",
     "land": "No land use of note."
+   },
+   "briefing_text": {
+    "nature": "Trace gas in air (about 0.09 parts per million).",
+    "climate": "No effect.",
+    "pollution": "Radioactive xenon isotopes are monitored to detect nuclear tests.",
+    "manufacturing": "High-intensity lamps, ion thrusters for satellites, anaesthesia, imaging.",
+    "health": "Non-toxic; acts as an anaesthetic at high concentration.",
+    "hazards": "Gas under pressure. UN2036.",
+    "discovery": "Discovered by Ramsay and Travers in 1898; from Greek 'xenos', stranger. Stable."
    }
   },
   {
@@ -1909,6 +2395,15 @@
     "geological": "Pollucite ore.",
     "chemical": "Most reactive stable alkali metal.",
     "land": "Post-Chernobyl sheep restrictions applied in parts of the UK until 2012."
+   },
+   "briefing_text": {
+    "nature": "Pollucite ore; traces in rocks.",
+    "climate": "No direct role.",
+    "pollution": "Caesium-137 (half-life 30 years) from Chernobyl and Fukushima contaminated soils, upland grazing and fish.",
+    "manufacturing": "Atomic clocks (the second is defined by caesium), drilling fluids, research.",
+    "health": "Stable caesium is low toxicity; caesium-137 is a radiation hazard.",
+    "hazards": "Metal ignites in air, reacts explosively with water (UN1407).",
+    "discovery": "Discovered by Bunsen and Kirchhoff in 1860 by spectroscopy; from Latin 'caesius', sky blue. Stable (caesium-133)."
    }
   },
   {
@@ -1929,6 +2424,15 @@
     "geological": "Barite veins.",
     "chemical": "Soluble barium compounds are poisonous.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "Barite (barium sulfate) veins.",
+    "climate": "Barite weights drilling mud for oil and gas wells.",
+    "pollution": "Barite is inert; soluble barium salts are toxic.",
+    "manufacturing": "Drilling mud, X-ray contrast meals, glass, ceramics, fireworks (green).",
+    "health": "Soluble barium compounds poison; barium sulfate is safe because it does not dissolve.",
+    "hazards": "Soluble barium compounds: Acute Tox. 4. UN1564.",
+    "discovery": "Isolated by Humphry Davy in 1808; from Greek 'barys', heavy. Stable."
    }
   },
   {
@@ -1949,6 +2453,15 @@
     "geological": "Bastnäsite and monazite with other rare earths.",
     "chemical": "Typical lanthanide, +3 ions.",
     "land": "Lanthanum-modified clay has been trialled to treat phosphorus in lakes."
+   },
+   "briefing_text": {
+    "nature": "Bastnäsite and monazite with other rare earths.",
+    "climate": "Nickel-metal hydride batteries in hybrid cars; oil-refining catalysts.",
+    "pollution": "Lanthanum clays are used to lock up phosphate in lakes; rare earth mining leaves radioactive tailings.",
+    "manufacturing": "Catalysts, camera lenses, batteries, phosphate binders.",
+    "health": "Low toxicity; lanthanum carbonate is a kidney medicine.",
+    "hazards": "Metal powder is flammable and reacts with water.",
+    "discovery": "Discovered by Carl Mosander in 1839; from Greek 'lanthanein', to lie hidden. Stable."
    }
   },
   {
@@ -1969,6 +2482,15 @@
     "geological": "Bastnäsite and monazite.",
     "chemical": "Has a stable +4 state as well as +3.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "The most abundant rare earth.",
+    "climate": "Used in catalytic converters and diesel additives.",
+    "pollution": "Cerium oxide nanoparticles from fuel additives are studied as pollutants.",
+    "manufacturing": "Glass polishing, catalysts, self-cleaning ovens, lighter flints.",
+    "health": "Low toxicity.",
+    "hazards": "Metal sparks when scraped; powder is pyrophoric.",
+    "discovery": "Discovered in 1803 by Berzelius and Hisinger, and by Klaproth; named after the asteroid Ceres. Stable."
    }
   },
   {
@@ -1989,6 +2511,15 @@
     "geological": "With other rare earths.",
     "chemical": "Typical lanthanide.",
     "land": "No significant land issue in the UK."
+   },
+   "briefing_text": {
+    "nature": "With other rare earths.",
+    "climate": "Neodymium-praseodymium magnets drive EV motors and wind turbines.",
+    "pollution": "Rare earth processing creates acidic and radioactive wastes.",
+    "manufacturing": "Magnets, yellow glass and ceramics, aircraft alloys.",
+    "health": "Low toxicity data.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Separated by Carl Auer von Welsbach in 1885; 'green twin'. Stable."
    }
   },
   {
@@ -2009,6 +2540,15 @@
     "geological": "Bastnäsite, monazite and ionic clays; rare earths are on the UK critical minerals list.",
     "chemical": "Typical lanthanide.",
     "land": "No significant land issue in the UK."
+   },
+   "briefing_text": {
+    "nature": "With other rare earths; ionic clays in southern China.",
+    "climate": "NdFeB magnets are essential to most wind turbine generators and EV motors.",
+    "pollution": "Mining and separation are polluting; recycling is small.",
+    "manufacturing": "Permanent magnets, lasers, glass.",
+    "health": "Low toxicity; strong magnets can injure if swallowed.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Separated by Carl Auer von Welsbach in 1885; 'new twin'. Stable."
    }
   },
   {
@@ -2029,6 +2569,15 @@
     "geological": "Traces from uranium fission.",
     "chemical": "All isotopes radioactive.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Almost absent from nature; traces from uranium fission.",
+    "climate": "No role.",
+    "pollution": "None of note.",
+    "manufacturing": "Formerly luminous paint and nuclear batteries for pacemakers.",
+    "health": "Radioactive.",
+    "hazards": "Radioactive; IRR applies.",
+    "discovery": "Identified at Oak Ridge in 1945 in fission products; named after Prometheus. No stable isotope; longest-lived, promethium-145, half-life about 18 years."
    }
   },
   {
@@ -2049,6 +2598,15 @@
     "geological": "With other rare earths.",
     "chemical": "Typical lanthanide.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "With other rare earths.",
+    "climate": "Samarium-cobalt magnets work at high temperature in motors and aerospace.",
+    "pollution": "Rare earth mining impacts.",
+    "manufacturing": "Magnets, nuclear control materials, cancer treatment (samarium-153).",
+    "health": "Low toxicity.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Discovered by Lecoq de Boisbaudran in 1879 in samarskite, named after a Russian mining official. Stable."
    }
   },
   {
@@ -2069,6 +2627,15 @@
     "geological": "With other rare earths.",
     "chemical": "Has a stable +2 state.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "With other rare earths.",
+    "climate": "Phosphors in energy-efficient lighting and screens.",
+    "pollution": "Rare earth mining impacts.",
+    "manufacturing": "Red and blue phosphors; anti-forgery marks on euro banknotes.",
+    "health": "Low toxicity data.",
+    "hazards": "Metal reacts with water; powder is flammable.",
+    "discovery": "Isolated by Eugène-Anatole Demarçay in 1901; named after Europe. Stable."
    }
   },
   {
@@ -2089,6 +2656,15 @@
     "geological": "With other rare earths.",
     "chemical": "Strongly magnetic ion.",
     "land": "Elevated gadolinium is a tracer for treated wastewater."
+   },
+   "briefing_text": {
+    "nature": "With other rare earths.",
+    "climate": "Studied for magnetic refrigeration without F-gases.",
+    "pollution": "Gadolinium from MRI contrast agents passes through sewage works into rivers and tap water at trace levels.",
+    "manufacturing": "MRI contrast agents, neutron shielding, magnets.",
+    "health": "Free gadolinium is toxic; contrast agents bind it, with rare kidney-related reactions.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Discovered by Jean Charles Galissard de Marignac in 1880; named after Johan Gadolin. Stable."
    }
   },
   {
@@ -2109,6 +2685,15 @@
     "geological": "Ionic clay deposits, mainly China.",
     "chemical": "Typical lanthanide.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "Rare; mainly from ionic clays in China.",
+    "climate": "Added to magnets for heat resistance in EV motors and wind turbines.",
+    "pollution": "Mining impacts in source regions.",
+    "manufacturing": "Green phosphors, magnets, magnetostrictive alloys.",
+    "health": "Low toxicity data.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Discovered by Carl Mosander in 1843; named after Ytterby. Stable."
    }
   },
   {
@@ -2129,6 +2714,15 @@
     "geological": "Ionic clays.",
     "chemical": "Typical lanthanide.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "Ionic clays and rare earth minerals.",
+    "climate": "Keeps NdFeB magnets working when hot; key to EV motors.",
+    "pollution": "Mining impacts; supply concentrated in China.",
+    "manufacturing": "Magnets, data storage, lasers.",
+    "health": "Low toxicity data.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Identified by Lecoq de Boisbaudran in 1886; from Greek 'dysprositos', hard to get. Stable."
    }
   },
   {
@@ -2149,6 +2743,15 @@
     "geological": "With other rare earths.",
     "chemical": "Typical lanthanide.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "With other rare earths.",
+    "climate": "No significant role.",
+    "pollution": "Little data.",
+    "manufacturing": "Lasers for surgery, magnetic pole pieces.",
+    "health": "Low toxicity data.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Discovered by Per Teodor Cleve in 1878; named after Stockholm (Holmia). Stable."
    }
   },
   {
@@ -2169,6 +2772,15 @@
     "geological": "With other rare earths.",
     "chemical": "Typical lanthanide.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "With other rare earths.",
+    "climate": "Erbium-doped fibre amplifiers carry internet traffic efficiently.",
+    "pollution": "Little data.",
+    "manufacturing": "Fibre-optic amplifiers, lasers, pink glass.",
+    "health": "Low toxicity data.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Discovered by Carl Mosander in 1843; named after Ytterby. Stable."
    }
   },
   {
@@ -2189,6 +2801,15 @@
     "geological": "With other rare earths.",
     "chemical": "Typical lanthanide.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "One of the rarest rare earths.",
+    "climate": "No significant role.",
+    "pollution": "Little data.",
+    "manufacturing": "Portable X-ray sources, lasers.",
+    "health": "Low toxicity data.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Discovered by Per Teodor Cleve in 1879; named after Thule. Stable."
    }
   },
   {
@@ -2209,6 +2830,15 @@
     "geological": "With other rare earths.",
     "chemical": "Has a stable +2 state.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "With other rare earths.",
+    "climate": "No significant role.",
+    "pollution": "Little data.",
+    "manufacturing": "Fibre lasers, atomic clocks, stress gauges, stainless steel additive.",
+    "health": "Low toxicity data.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Discovered by Marignac in 1878; named after Ytterby. Stable."
    }
   },
   {
@@ -2229,6 +2859,15 @@
     "geological": "With other rare earths.",
     "chemical": "Typical lanthanide.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "With other rare earths; the rarest stable lanthanide by some measures.",
+    "climate": "Catalysts in oil refining.",
+    "pollution": "Little data.",
+    "manufacturing": "PET scanner crystals, catalysts; lutetium-177 for cancer therapy.",
+    "health": "Low toxicity data.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Discovered in 1907 by Georges Urbain and others; named after Lutetia (Paris). Stable."
    }
   },
   {
@@ -2249,6 +2888,15 @@
     "geological": "Separated from zirconium.",
     "chemical": "Chemically almost identical to zirconium.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "Always with zirconium in zircon.",
+    "climate": "Superalloys for efficient gas turbines; nuclear control rods.",
+    "pollution": "Little concern.",
+    "manufacturing": "Control rods, superalloys, insulating layers in microchips.",
+    "health": "Low toxicity.",
+    "hazards": "Powder is pyrophoric (UN1326).",
+    "discovery": "Discovered by Coster and de Hevesy in 1923 in Copenhagen; from Hafnia (Copenhagen). Stable."
    }
   },
   {
@@ -2269,6 +2917,15 @@
     "geological": "Coltan and tantalite ores.",
     "chemical": "Highly corrosion resistant.",
     "land": "No significant land issue in the UK."
+   },
+   "briefing_text": {
+    "nature": "Coltan and tantalite ores.",
+    "climate": "Capacitors in power electronics.",
+    "pollution": "Coltan mining in central Africa is linked to conflict; it is a regulated 'conflict mineral'.",
+    "manufacturing": "Capacitors, surgical implants, chemical plant, superalloys.",
+    "health": "Very low toxicity; biocompatible.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Discovered by Anders Ekeberg in 1802; named after Tantalus. Stable."
    }
   },
   {
@@ -2289,6 +2946,15 @@
     "geological": "Wolframite and scheelite; Hemerdon mine in Devon.",
     "chemical": "Very dense, very hard carbides.",
     "land": "Military ranges may hold tungsten."
+   },
+   "briefing_text": {
+    "nature": "Wolframite and scheelite; mined at Hemerdon, Devon.",
+    "climate": "Tungsten tooling, and tungsten in fusion reactor walls.",
+    "pollution": "Tungsten from ammunition can be mobile in some soils.",
+    "manufacturing": "Tungsten carbide cutting tools, filaments, armour, heavy alloys.",
+    "health": "Low toxicity; hard-metal dust (with cobalt) causes lung disease.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Isolated by the Elhuyar brothers in 1783; symbol W from 'wolfram'. Stable."
    }
   },
   {
@@ -2309,6 +2975,15 @@
     "geological": "By-product of molybdenum.",
     "chemical": "Very high melting point.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "By-product of molybdenum and copper mining.",
+    "climate": "Superalloys for efficient jet engines; refinery catalysts.",
+    "pollution": "Little data.",
+    "manufacturing": "Turbine blades, catalysts, thermocouples.",
+    "health": "Low toxicity data.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Discovered by Noddack, Tacke and Berg in 1925, the last stable element found; named after the Rhine. Stable (rhenium-187 is very weakly radioactive)."
    }
   },
   {
@@ -2329,6 +3004,15 @@
     "geological": "With platinum ores.",
     "chemical": "Forms volatile toxic tetroxide.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "With platinum ores; the densest natural element.",
+    "climate": "No role.",
+    "pollution": "Osmium tetroxide is volatile and very toxic.",
+    "manufacturing": "Hard alloys for pen nibs and contacts; staining in microscopy.",
+    "health": "Osmium tetroxide damages eyes and lungs.",
+    "hazards": "Osmium tetroxide: Acute Tox. 1 (inhalation), Skin Corr. 1B (UN2471).",
+    "discovery": "Discovered by Smithson Tennant in 1803; from Greek 'osme', smell. Stable."
    }
   },
   {
@@ -2349,6 +3033,15 @@
     "geological": "With platinum ores; an iridium layer marks the dinosaur-killing impact.",
     "chemical": "Very unreactive.",
     "land": "No significant land issue."
+   },
+   "briefing_text": {
+    "nature": "With platinum ores; an iridium-rich layer marks the asteroid impact 66 million years ago.",
+    "climate": "Catalyst in PEM electrolysers for green hydrogen; supply is very small.",
+    "pollution": "Little data.",
+    "manufacturing": "Electrolysers, spark plugs, crucibles; iridium-192 for industrial radiography.",
+    "health": "Low toxicity; iridium-192 sources are a radiation hazard.",
+    "hazards": "Powder is flammable.",
+    "discovery": "Discovered by Smithson Tennant in 1803; from Greek 'iris', rainbow. Stable."
    }
   },
   {
@@ -2369,6 +3062,15 @@
     "geological": "South Africa's Bushveld complex dominates.",
     "chemical": "Excellent catalyst; very unreactive.",
     "land": "Roadside soils show platinum-group enrichment."
+   },
+   "briefing_text": {
+    "nature": "South Africa's Bushveld complex dominates; also Russia.",
+    "climate": "Diesel catalysts and fuel cells.",
+    "pollution": "Platinum-group metals build up in roadside dust and soils.",
+    "manufacturing": "Catalysts, fuel cells, electrodes, jewellery, cancer drugs (cisplatin).",
+    "health": "Platinum salts cause asthma in workers.",
+    "hazards": "Soluble platinum salts are respiratory sensitisers; WEL 0.002 mg/m³ (EH40).",
+    "discovery": "Used in pre-Columbian South America; described in Europe by Antonio de Ulloa in 1748; from Spanish 'platina', little silver. Stable."
    }
   },
   {
@@ -2389,6 +3091,15 @@
     "geological": "Veins and placers; gold prospects in the Sperrins (Curraghinalt, Co. Tyrone).",
     "chemical": "Very unreactive; dissolves in aqua regia and cyanide.",
     "land": "Proposed gold mining in the Sperrins has been a long-running planning issue."
+   },
+   "briefing_text": {
+    "nature": "Native gold in veins and placers; prospects in the Sperrins, Co. Tyrone.",
+    "climate": "Electronics; little direct role.",
+    "pollution": "Small-scale mining uses mercury; cyanide leaching and large waste volumes at big mines.",
+    "manufacturing": "Electronics contacts, dentistry, jewellery, reserves.",
+    "health": "Low toxicity; gold compounds once treated arthritis.",
+    "hazards": "Not classified as metal.",
+    "discovery": "Known since prehistory; symbol Au from Latin 'aurum'. Stable."
    }
   },
   {
@@ -2409,6 +3120,15 @@
     "geological": "Cinnabar ore.",
     "chemical": "Vapour is toxic; methylmercury is a neurotoxin.",
     "land": "Old chlor-alkali plants and instrument works can leave contamination."
+   },
+   "briefing_text": {
+    "nature": "Cinnabar ore; released naturally by volcanoes.",
+    "climate": "Coal burning is a main source of mercury emissions.",
+    "pollution": "Mercury turns to methylmercury in water and builds up in fish; a global pollutant under the Minamata Convention.",
+    "manufacturing": "Being phased out: thermometers, lamps, dental amalgam, chlor-alkali cells.",
+    "health": "Vapour and methylmercury damage the nervous system, especially in unborn children.",
+    "hazards": "Mercury: Repr. 1B, Acute Tox. 2 (inhalation), STOT RE 1. UN2809.",
+    "discovery": "Known in antiquity; symbol Hg from Greek 'hydrargyrum', liquid silver. Stable."
    }
   },
   {
@@ -2429,6 +3149,15 @@
     "geological": "In sulfide ores.",
     "chemical": "Very toxic; mimics potassium in the body.",
     "land": "No significant land issue in NI."
+   },
+   "briefing_text": {
+    "nature": "In sulfide ores and some coals.",
+    "climate": "No role.",
+    "pollution": "Released by smelting and coal burning.",
+    "manufacturing": "Specialised optics and electronics; formerly rat poison.",
+    "health": "Very toxic; causes hair loss and nerve damage.",
+    "hazards": "Thallium compounds: Acute Tox. 2. UN1707.",
+    "discovery": "Discovered by William Crookes in 1861 by its green spectral line; from Greek 'thallos', green shoot. Stable."
    }
   },
   {
@@ -2449,6 +3178,15 @@
     "geological": "Galena ore; historic lead mining in Ireland and the UK.",
     "chemical": "Neurotoxin; lead pipes still exist in older housing.",
     "land": "Shooting grounds, old orchards and urban soils can be lead-contaminated."
+   },
+   "briefing_text": {
+    "nature": "Galena ore; historic mining in Ireland and Britain.",
+    "climate": "Lead-acid batteries for vehicles and back-up power.",
+    "pollution": "Lead from petrol, paint, pipes and shot built up in soils and dust; there is no safe level for children.",
+    "manufacturing": "Batteries, radiation shielding, roofing, cable sheathing.",
+    "health": "Neurotoxin; lowers IQ in children; raises blood pressure.",
+    "hazards": "Lead: Repr. 1A; lead compounds Repr. 1A, STOT RE 2. Control of Lead at Work Regulations apply.",
+    "discovery": "Used since about 7000 BC; symbol Pb from Latin 'plumbum' (hence plumber). Stable."
    }
   },
   {
@@ -2469,6 +3207,15 @@
     "geological": "By-product of lead and copper refining; on the UK critical minerals list.",
     "chemical": "Least toxic heavy metal.",
     "land": "Used in lead-free shot."
+   },
+   "briefing_text": {
+    "nature": "By-product of lead and copper refining.",
+    "climate": "No significant role.",
+    "pollution": "Low toxicity makes it a replacement for lead in shot, solder and plumbing.",
+    "manufacturing": "Lead-free solder, medicines (indigestion remedies), cosmetics, fire sprinkler alloys.",
+    "health": "Low toxicity for a heavy metal.",
+    "hazards": "Not usually classified.",
+    "discovery": "Known in the 1400s; recognised as an element by Claude Geoffroy in 1753. Effectively stable (bismuth-209 half-life about 2 × 10¹⁹ years)."
    }
   },
   {
@@ -2489,6 +3236,15 @@
     "geological": "Trace in uranium ores.",
     "chemical": "Alpha emitter; extremely toxic if taken in.",
     "land": "Present wherever radon decays."
+   },
+   "briefing_text": {
+    "nature": "Traces in uranium ores; polonium-210 forms from radon decay and is in tobacco smoke.",
+    "climate": "No role.",
+    "pollution": "Polonium-210 from radon decay contributes to radon's lung dose.",
+    "manufacturing": "Static eliminators; formerly neutron triggers.",
+    "health": "Extremely toxic if swallowed or inhaled, because of its intense alpha radiation.",
+    "hazards": "Radioactive; IRR applies.",
+    "discovery": "Discovered by Marie and Pierre Curie in 1898; named after Poland. No stable isotope; polonium-209 half-life about 125 years, polonium-210 138 days."
    }
   },
   {
@@ -2509,6 +3265,15 @@
     "geological": "Fleeting traces in uranium and thorium decay.",
     "chemical": "Highly radioactive halogen.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "The rarest naturally occurring element: well under a gram in the Earth's crust at any time.",
+    "climate": "No role.",
+    "pollution": "None.",
+    "manufacturing": "Astatine-211 is studied for targeted alpha cancer therapy.",
+    "health": "Radioactive; concentrates in the thyroid like iodine.",
+    "hazards": "Radioactive.",
+    "discovery": "Made at Berkeley in 1940 by Corson, MacKenzie and Segrè; from Greek 'astatos', unstable. Longest-lived isotope, astatine-210, half-life about 8 hours."
    }
   },
   {
@@ -2529,6 +3294,15 @@
     "geological": "Radon-222 comes from the decay of uranium in rocks and soils, via radium. Levels follow geology; Northern Ireland's radon potential map (UKHSA, GSNI and BGS) shows the areas affected. Radon also dissolves in groundwater, so private wells can carry it.",
     "chemical": "Group 18, period 6; the heaviest naturally occurring noble gas. Chemically almost inert. Radon-222 has a half-life of 3.8 days and decays through short-lived polonium, lead and bismuth isotopes that stick to dust and lodge in the lungs.",
     "land": "Whether a site is in a radon affected area decides what protection a new building needs under the Building Regulations (Northern Ireland). Workplaces in affected areas should test, and employers must act where annual averages exceed 300 Bq/m³ under the Ionising Radiations Regulations (Northern Ireland) 2017."
+   },
+   "briefing_text": {
+    "nature": "Seeps from uranium-bearing rocks and soil; dissolves in groundwater.",
+    "climate": "Not a greenhouse gas; used as a tracer of land air; airtight retrofits can raise indoor levels.",
+    "pollution": "Indoor radon is the main source of radiation dose to most people in the UK.",
+    "manufacturing": "No industrial use of note.",
+    "health": "Long-term exposure causes lung cancer, especially in smokers.",
+    "hazards": "See the radon briefing safety tab.",
+    "discovery": "Discovered by Friedrich Ernst Dorn in 1900. No stable isotope; radon-222 half-life 3.8 days."
    },
    "featured": true,
    "safety": {
@@ -2606,7 +3380,7 @@
      ]
     ]
    },
-   "briefing": "/blog/2026/11/radon-the-gas-from-the-ground-a-tighter-house-can-trap/",
+   "briefing_url": "/blog/2026/11/radon-the-gas-from-the-ground-a-tighter-house-can-trap/",
    "pdf": "/assets/briefings/elements/radon-briefing.pdf"
   },
   {
@@ -2627,6 +3401,15 @@
     "geological": "Fleeting traces in uranium ores.",
     "chemical": "Half-life of minutes.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Fleeting traces in uranium ores; perhaps 30 grams in the whole crust at any moment.",
+    "climate": "No role.",
+    "pollution": "None.",
+    "manufacturing": "Research only; never seen in visible amounts.",
+    "health": "Radioactive.",
+    "hazards": "Radioactive.",
+    "discovery": "Discovered by Marguerite Perey at the Curie Institute in 1939; named after France. Longest-lived isotope, francium-223, half-life 22 minutes."
    }
   },
   {
@@ -2647,6 +3430,15 @@
     "geological": "In uranium-bearing rocks such as granite.",
     "chemical": "Behaves like barium; radioactive.",
     "land": "Old luminous-dial works left radium contamination at some sites."
+   },
+   "briefing_text": {
+    "nature": "In uranium-bearing rocks; the parent of radon.",
+    "climate": "No role.",
+    "pollution": "Old luminous-dial works and some industrial sites have radium contamination.",
+    "manufacturing": "Formerly luminous paint and cancer treatment; radium-223 is used for prostate cancer.",
+    "health": "Radioactive; deposits in bone. The 'Radium Girls' who painted dials suffered bone cancers.",
+    "hazards": "Radioactive; IRR applies.",
+    "discovery": "Discovered by Marie and Pierre Curie in 1898; from Latin 'radius', ray. Radium-226 half-life 1,600 years."
    }
   },
   {
@@ -2667,6 +3459,15 @@
     "geological": "Traces in uranium ores.",
     "chemical": "Highly radioactive.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Traces in uranium ores.",
+    "climate": "No role.",
+    "pollution": "None of note.",
+    "manufacturing": "Actinium-225 for targeted alpha cancer therapy.",
+    "health": "Radioactive.",
+    "hazards": "Radioactive.",
+    "discovery": "Discovered by André-Louis Debierne in 1899; from Greek 'aktis', ray. Actinium-227 half-life about 22 years."
    }
   },
   {
@@ -2687,6 +3488,15 @@
     "geological": "Monazite sands; more abundant than uranium.",
     "chemical": "Radioactive; long half-life.",
     "land": "Monazite processing leaves radioactive residues."
+   },
+   "briefing_text": {
+    "nature": "Monazite sand and granites; about three times as common as uranium.",
+    "climate": "Proposed fuel for thorium reactors.",
+    "pollution": "Monazite processing leaves radioactive residues; thorium decay gives thoron gas.",
+    "manufacturing": "Gas mantles (formerly), heat-resistant ceramics, research reactors.",
+    "health": "Weakly radioactive; dust in lungs raises cancer risk.",
+    "hazards": "Radioactive; IRR applies.",
+    "discovery": "Discovered by Berzelius in 1829; named after Thor. Thorium-232 half-life 14 billion years."
    }
   },
   {
@@ -2707,6 +3517,15 @@
     "geological": "Traces in uranium ores.",
     "chemical": "Radioactive.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Traces in uranium ores.",
+    "climate": "No role.",
+    "pollution": "None of note.",
+    "manufacturing": "Research; used in dating ocean sediments.",
+    "health": "Highly toxic and radioactive.",
+    "hazards": "Radioactive.",
+    "discovery": "Identified by Fajans and Göhring in 1913; protactinium-231 isolated by Hahn and Meitner in 1917. Protactinium-231 half-life about 33,000 years."
    }
   },
   {
@@ -2727,6 +3546,15 @@
     "geological": "Uraninite; enriched in granites.",
     "chemical": "Weakly radioactive; chemically toxic to kidneys.",
     "land": "Radon-affected areas follow uranium-bearing geology."
+   },
+   "briefing_text": {
+    "nature": "Uraninite; enriched in granites and some shales; source of radon.",
+    "climate": "Nuclear power is low-carbon electricity.",
+    "pollution": "Mining waste, depleted uranium and long-lived nuclear waste.",
+    "manufacturing": "Nuclear fuel; depleted uranium in armour and counterweights.",
+    "health": "Chemically toxic to kidneys; weakly radioactive.",
+    "hazards": "Radioactive; Acute Tox. 2 (inhalation, ingestion); Class 7 in transport.",
+    "discovery": "Identified by Martin Klaproth in 1789; named after Uranus. Radioactivity found by Becquerel in 1896. Uranium-238 half-life 4.5 billion years."
    }
   },
   {
@@ -2747,6 +3575,15 @@
     "geological": "Trace in uranium ores.",
     "chemical": "Radioactive.",
     "land": "Relevant to deep disposal of waste."
+   },
+   "briefing_text": {
+    "nature": "Traces in uranium ores from neutron capture.",
+    "climate": "By-product of nuclear power.",
+    "pollution": "Neptunium-237 is a long-lived part of high-level nuclear waste and matters for deep disposal.",
+    "manufacturing": "Made in reactors; used to produce plutonium-238 for space power.",
+    "health": "Radioactive and toxic.",
+    "hazards": "Radioactive; IRR applies.",
+    "discovery": "Made at Berkeley in 1940 by McMillan and Abelson, the first element beyond uranium; named after Neptune. Neptunium-237 half-life 2.1 million years."
    }
   },
   {
@@ -2767,6 +3604,15 @@
     "geological": "Made in reactors.",
     "chemical": "Radioactive and toxic.",
     "land": "Long-term waste disposal question."
+   },
+   "briefing_text": {
+    "nature": "Essentially absent; tiny natural traces and fallout from weapons tests.",
+    "climate": "Can be recycled as MOX nuclear fuel.",
+    "pollution": "Discharges from Sellafield left plutonium in Irish Sea sediments; the UK holds a large civil plutonium stockpile.",
+    "manufacturing": "Nuclear fuel and weapons; plutonium-238 powers deep-space probes.",
+    "health": "Highly toxic if inhaled; lodges in bone and lungs.",
+    "hazards": "Radioactive; fissile material is tightly controlled.",
+    "discovery": "Made at Berkeley in 1940–41 by Seaborg and colleagues; named after Pluto. Plutonium-244 half-life about 80 million years; plutonium-239 24,000 years."
    }
   },
   {
@@ -2787,6 +3633,15 @@
     "geological": "Made in reactors.",
     "chemical": "Alpha emitter.",
     "land": "Smoke-detector disposal rules."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "By-product of nuclear power.",
+    "pollution": "A long-lived part of nuclear waste; old smoke detectors need correct disposal.",
+    "manufacturing": "Ionisation smoke detectors (americium-241); neutron sources for soil-moisture and oil-well gauges.",
+    "health": "Radioactive; harmful if taken into the body.",
+    "hazards": "Radioactive; sealed sources regulated.",
+    "discovery": "Made at Chicago in 1944 by Seaborg's team; named after the Americas. Americium-243 half-life about 7,400 years; americium-241 432 years."
    }
   },
   {
@@ -2807,6 +3662,15 @@
     "geological": "Made in reactors.",
     "chemical": "Highly radioactive.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "By-product of nuclear power.",
+    "pollution": "Part of long-lived nuclear waste.",
+    "manufacturing": "Alpha sources in instruments, including X-ray spectrometers on Mars rovers.",
+    "health": "Radioactive.",
+    "hazards": "Radioactive.",
+    "discovery": "Made at Berkeley in 1944 by Seaborg, James and Ghiorso; named after Marie and Pierre Curie. Curium-247 half-life about 16 million years."
    }
   },
   {
@@ -2827,6 +3691,15 @@
     "geological": "Made in reactors.",
     "chemical": "Highly radioactive.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Made in milligram amounts in research reactors; used as a target to make heavier elements, including tennessine.",
+    "health": "Radioactive.",
+    "hazards": "Radioactive.",
+    "discovery": "Made at Berkeley in 1949; named after Berkeley. Berkelium-247 half-life about 1,400 years."
    }
   },
   {
@@ -2847,6 +3720,15 @@
     "geological": "Made in reactors.",
     "chemical": "Strong neutron emitter.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "Sealed neutron sources must be controlled and disposed of properly.",
+    "manufacturing": "Californium-252 neutron sources start up reactors, find oil and water in boreholes and check aircraft parts.",
+    "health": "Strong neutron emitter; radioactive.",
+    "hazards": "Radioactive; sealed sources regulated.",
+    "discovery": "Made at Berkeley in 1950; named after California. Californium-251 half-life about 900 years; californium-252 2.6 years."
    }
   },
   {
@@ -2867,6 +3749,15 @@
     "geological": "Made in reactors.",
     "chemical": "Highly radioactive.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only; made in microgram amounts.",
+    "health": "Radioactive.",
+    "hazards": "Radioactive.",
+    "discovery": "Found in 1952 in debris from the first hydrogen bomb test ('Ivy Mike'); named after Albert Einstein. Einsteinium-252 half-life about 470 days."
    }
   },
   {
@@ -2887,6 +3778,15 @@
     "geological": "Made in reactors.",
     "chemical": "Highly radioactive.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only; the heaviest element that can be made by neutron capture in reactors.",
+    "health": "Radioactive.",
+    "hazards": "Radioactive.",
+    "discovery": "Found in the same 1952 'Ivy Mike' debris; named after Enrico Fermi. Fermium-257 half-life about 100 days."
    }
   },
   {
@@ -2907,6 +3807,15 @@
     "geological": "Made in accelerators.",
     "chemical": "Highly radioactive.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only; made a few atoms at a time.",
+    "health": "Radioactive.",
+    "hazards": "Radioactive.",
+    "discovery": "Made at Berkeley in 1955, at first 17 atoms; named after Dmitri Mendeleev. Mendelevium-258 half-life about 51 days."
    }
   },
   {
@@ -2927,6 +3836,15 @@
     "geological": "Made in accelerators.",
     "chemical": "Highly radioactive.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only.",
+    "health": "Radioactive.",
+    "hazards": "Radioactive.",
+    "discovery": "Claimed in Stockholm in 1957 and confirmed at Dubna in the 1960s; named after Alfred Nobel. Nobelium-259 half-life about 1 hour."
    }
   },
   {
@@ -2947,6 +3865,15 @@
     "geological": "Made in accelerators.",
     "chemical": "Highly radioactive.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only.",
+    "health": "Radioactive.",
+    "hazards": "Radioactive.",
+    "discovery": "Made at Berkeley in 1961 (with later Dubna work); named after Ernest Lawrence, inventor of the cyclotron. Lawrencium-266 half-life about 11 hours."
    }
   },
   {
@@ -2960,13 +3887,22 @@
    "col": 4,
    "period": 7,
    "group": 4,
-   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "short": "Superheavy element named after Rutherford; the longest-lived atoms last about an hour.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
     "geological": "Does not occur in nature.",
     "chemical": "Chemistry predicted rather than measured for most of these elements.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only. The first transactinide: its chemistry was tested one atom at a time and behaves like hafnium.",
+    "health": "Never made in amounts that could affect anyone.",
+    "hazards": "Radioactive; exists for about an hour at most.",
+    "discovery": "Reported at Dubna (1964) and Berkeley (1969); named after Ernest Rutherford. Rutherfordium-267 half-life about 1–2 hours."
    }
   },
   {
@@ -2980,13 +3916,22 @@
    "col": 5,
    "period": 7,
    "group": 5,
-   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "short": "Superheavy element named after Dubna; its longest-lived isotope lasts about a day.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
     "geological": "Does not occur in nature.",
     "chemical": "Chemistry predicted rather than measured for most of these elements.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only; single-atom chemistry shows it behaves like tantalum and niobium.",
+    "health": "Never made in harmful amounts.",
+    "hazards": "Radioactive.",
+    "discovery": "Reported at Dubna (1968) and Berkeley (1970); named after Dubna, home of the Joint Institute for Nuclear Research. Dubnium-268 half-life about a day."
    }
   },
   {
@@ -3000,13 +3945,22 @@
    "col": 6,
    "period": 7,
    "group": 6,
-   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "short": "Superheavy element named after Glenn Seaborg; lasts minutes.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
     "geological": "Does not occur in nature.",
     "chemical": "Chemistry predicted rather than measured for most of these elements.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only; behaves like tungsten in single-atom experiments.",
+    "health": "Never made in harmful amounts.",
+    "hazards": "Radioactive; minutes at most.",
+    "discovery": "Made at Berkeley in 1974; named after Glenn Seaborg, the first element named after a living person. Longest-lived isotopes last minutes."
    }
   },
   {
@@ -3020,13 +3974,22 @@
    "col": 7,
    "period": 7,
    "group": 7,
-   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "short": "Superheavy element named after Niels Bohr; lasts about a minute.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
     "geological": "Does not occur in nature.",
     "chemical": "Chemistry predicted rather than measured for most of these elements.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only; behaves like rhenium.",
+    "health": "Never made in harmful amounts.",
+    "hazards": "Radioactive.",
+    "discovery": "Made at GSI, Darmstadt, in 1981; named after Niels Bohr. Longest-lived isotopes last about a minute."
    }
   },
   {
@@ -3040,13 +4003,22 @@
    "col": 8,
    "period": 7,
    "group": 8,
-   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "short": "Superheavy element named after Hesse; lasts seconds.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
     "geological": "Does not occur in nature.",
     "chemical": "Chemistry predicted rather than measured for most of these elements.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only; forms a volatile tetroxide like osmium, measured one atom at a time.",
+    "health": "Never made in harmful amounts.",
+    "hazards": "Radioactive; seconds.",
+    "discovery": "Made at GSI in 1984; named after Hesse, the German state. Longest-lived isotopes last about 10 seconds."
    }
   },
   {
@@ -3060,13 +4032,22 @@
    "col": 9,
    "period": 7,
    "group": 9,
-   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "short": "Superheavy element named after Lise Meitner; lasts seconds.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
     "geological": "Does not occur in nature.",
     "chemical": "Chemistry predicted rather than measured for most of these elements.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only; its chemistry has not been studied.",
+    "health": "Never made in harmful amounts.",
+    "hazards": "Radioactive; seconds.",
+    "discovery": "Made at GSI in 1982; named after Lise Meitner, co-discoverer of nuclear fission. Longest-lived isotopes last a few seconds."
    }
   },
   {
@@ -3080,13 +4061,22 @@
    "col": 10,
    "period": 7,
    "group": 10,
-   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "short": "Superheavy element named after Darmstadt; lasts seconds.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
     "geological": "Does not occur in nature.",
     "chemical": "Chemistry predicted rather than measured for most of these elements.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only.",
+    "health": "Never made in harmful amounts.",
+    "hazards": "Radioactive; seconds.",
+    "discovery": "Made at GSI in 1994; named after Darmstadt. Longest-lived isotope lasts about 10 seconds."
    }
   },
   {
@@ -3100,13 +4090,22 @@
    "col": 11,
    "period": 7,
    "group": 11,
-   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "short": "Superheavy element named after Röntgen; a heavier relative of gold.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
     "geological": "Does not occur in nature.",
     "chemical": "Chemistry predicted rather than measured for most of these elements.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only; predicted to be a heavier relative of gold.",
+    "health": "Never made in harmful amounts.",
+    "hazards": "Radioactive.",
+    "discovery": "Made at GSI in 1994; named after Wilhelm Röntgen, discoverer of X-rays. Longest-lived isotopes last up to a couple of minutes."
    }
   },
   {
@@ -3120,13 +4119,22 @@
    "col": 12,
    "period": 7,
    "group": 12,
-   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "short": "Superheavy element named after Copernicus; may be volatile like mercury.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
     "geological": "Does not occur in nature.",
     "chemical": "Chemistry predicted rather than measured for most of these elements.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only; single-atom experiments suggest it is unusually volatile, like mercury.",
+    "health": "Never made in harmful amounts.",
+    "hazards": "Radioactive.",
+    "discovery": "Made at GSI in 1996; named after Nicolaus Copernicus. Copernicium-285 half-life about 30 seconds."
    }
   },
   {
@@ -3140,13 +4148,22 @@
    "col": 13,
    "period": 7,
    "group": 13,
-   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "short": "Superheavy element named after Japan; the first discovered in Asia.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
     "geological": "Does not occur in nature.",
     "chemical": "Chemistry predicted rather than measured for most of these elements.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only.",
+    "health": "Never made in harmful amounts.",
+    "hazards": "Radioactive; seconds.",
+    "discovery": "Made at RIKEN, Japan, from 2004; the first element discovered in Asia, named after Nihon (Japan). Longest-lived isotope lasts about 10 seconds."
    }
   },
   {
@@ -3160,13 +4177,22 @@
    "col": 14,
    "period": 7,
    "group": 14,
-   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "short": "Superheavy element named after the Flerov Laboratory; lasts seconds.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
     "geological": "Does not occur in nature.",
     "chemical": "Chemistry predicted rather than measured for most of these elements.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only; experiments test whether it behaves like a metal or a volatile, near-noble element.",
+    "health": "Never made in harmful amounts.",
+    "hazards": "Radioactive; seconds.",
+    "discovery": "Made at Dubna from 1998–99 with Livermore; named after the Flerov Laboratory. Longest-lived isotopes last a few seconds."
    }
   },
   {
@@ -3180,13 +4206,22 @@
    "col": 15,
    "period": 7,
    "group": 15,
-   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "short": "Superheavy element named after the Moscow region; lasts under a second.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
     "geological": "Does not occur in nature.",
     "chemical": "Chemistry predicted rather than measured for most of these elements.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only.",
+    "health": "Never made in harmful amounts.",
+    "hazards": "Radioactive; under a second.",
+    "discovery": "Made at Dubna from 2003 with Livermore; named after the Moscow region. Longest-lived isotope lasts under a second."
    }
   },
   {
@@ -3200,13 +4235,22 @@
    "col": 16,
    "period": 7,
    "group": 16,
-   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "short": "Superheavy element named after Livermore; lasts a fraction of a second.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
     "geological": "Does not occur in nature.",
     "chemical": "Chemistry predicted rather than measured for most of these elements.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only.",
+    "health": "Never made in harmful amounts.",
+    "hazards": "Radioactive; fractions of a second.",
+    "discovery": "Made at Dubna in 2000 with Livermore; named after Lawrence Livermore National Laboratory. Longest-lived isotope lasts well under a second."
    }
   },
   {
@@ -3220,13 +4264,22 @@
    "col": 17,
    "period": 7,
    "group": 17,
-   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "short": "Superheavy element named after Tennessee; lasts hundredths of a second.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
     "geological": "Does not occur in nature.",
     "chemical": "Chemistry predicted rather than measured for most of these elements.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only; made by firing calcium at berkelium from Oak Ridge.",
+    "health": "Never made in harmful amounts.",
+    "hazards": "Radioactive; hundredths of a second.",
+    "discovery": "Made at Dubna in 2010 with Oak Ridge and Vanderbilt; named after Tennessee. Longest-lived isotope lasts tens of milliseconds."
    }
   },
   {
@@ -3240,13 +4293,22 @@
    "col": 18,
    "period": 7,
    "group": 18,
-   "short": "Synthetic superheavy element; only a few atoms ever made.",
+   "short": "Heaviest known element; only a handful of atoms ever made, each lasting under a millisecond.",
    "contexts": {
     "environmental": "No environmental presence: atoms exist for seconds or less.",
     "engineering": "No engineering use; research into the limits of the periodic table.",
     "geological": "Does not occur in nature.",
     "chemical": "Chemistry predicted rather than measured for most of these elements.",
     "land": "No land use."
+   },
+   "briefing_text": {
+    "nature": "Absent from nature.",
+    "climate": "No role.",
+    "pollution": "None: it exists only in tiny amounts in research labs.",
+    "manufacturing": "Research only; only a handful of atoms have ever been made. Predicted to be a solid, unlike the other noble gases.",
+    "health": "Never made in harmful amounts.",
+    "hazards": "Radioactive; under a millisecond.",
+    "discovery": "Made at Dubna in 2002–06 with Livermore; named after Yuri Oganessian, the second element named after a living person. Oganesson-294 half-life under a millisecond. It completes period 7 and the table as it stands."
    }
   }
  ]

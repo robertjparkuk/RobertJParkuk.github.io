@@ -25,6 +25,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.49.0 — 21 November 2026: a briefing for every element
+
+*Robert, 21 November 2026: "a briefing on every element and how it is in nature, climate, pollution, manufacturing, health etc. Even the most unstable ones."*
+
+- `tools/periodic-table.html` now opens each element on a **Briefing** tab: discovery and stability, in nature, climate, pollution, manufacturing and uses, health, hazards and handling. The five context tabs and, for the eight featured elements, the safety and compounds tabs remain.
+- All 118 elements covered, including each superheavy element (104–118) with where and when it was made, what it is named after and how long its longest-lived isotope lasts. Their hover lines are now specific to each element.
+- Text in `_scripts/elements/briefings_a.py` to `briefings_d.py`; rebuild with `python3 _scripts/elements/build_table.py .`.
+- Hazard lines give headline CLP classifications and UN numbers only; they were written from standard references and have not each been re-read against CLP Annex VI and ADR for this draft. Superheavy half-lives are approximate.
+
 ### v0.48.0 — 21 November 2026: Elements of the land (eight briefings and the interactive periodic table)
 
 *Robert, 21 November 2026: learning briefings for the blog and LinkedIn on phosphorus, nitrogen, sulfur, fluorine, antimony, magnesium, carbon and radon, each with the full periodic table, its COSHH, UN numbers, risks as the element and the compounds met in nature, manufacturing and the climate; plus a periodic-table tool. All eight posts are `published: false` until Robert says go in chat.*
