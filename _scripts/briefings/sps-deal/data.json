@@ -1,0 +1,478 @@
+{
+ "farm": {
+  "Cattle": [
+   277.25,
+   402.37,
+   657.76
+  ],
+  "Milk": [
+   223.87,
+   480.11,
+   1082.52
+  ],
+  "Sheep": [
+   68.01,
+   63.28,
+   122.61
+  ],
+  "Pigs": [
+   98.8,
+   114.31,
+   295.1
+  ],
+  "Poultry": [
+   57.36,
+   274.77,
+   355.59
+  ],
+  "Eggs": [
+   30.03,
+   88.62,
+   264.08
+  ],
+  "Field crops": [
+   63.69,
+   57.33,
+   88.87
+  ],
+  "Horticulture": [
+   34.38,
+   119.51,
+   93.38
+  ]
+ },
+ "gross": [
+  931.45,
+  1781.16,
+  3193.23
+ ],
+ "proc": {
+  "Beef & sheepmeat": [
+   418.2,
+   1255.3,
+   1710.6
+  ],
+  "Milk & milk products": [
+   461.3,
+   903.3,
+   1567.9
+  ],
+  "Poultrymeat": [
+   156.1,
+   701.2,
+   739.9
+  ],
+  "Pigmeat": [
+   152.2,
+   302.3,
+   528.3
+  ],
+  "Eggs": [
+   40.3,
+   142.6,
+   247.1
+  ],
+  "Fish": [
+   46.9,
+   77.3,
+   69.9
+  ],
+  "Fruit & vegetables": [
+   54.8,
+   308.9,
+   476.7
+  ],
+  "Bakeries": [
+   139.0,
+   283.3,
+   544.2
+  ],
+  "Drinks": [
+   255.1,
+   386.1,
+   577.0
+  ],
+  "Animal by-products": [
+   21.1,
+   56.7,
+   54.4
+  ]
+ },
+ "proc_total": [
+  1745.0,
+  4417.1,
+  6516.0
+ ],
+ "em": {
+  "Dairy": [
+   955.0,
+   1361.0,
+   1505.0
+  ],
+  "Beef and other cattle": [
+   2267.4,
+   2431.5,
+   2435.1
+  ],
+  "Sheep": [
+   444.40000000000003,
+   325.59999999999997,
+   311.79999999999995
+  ],
+  "Pigs": [
+   132.1,
+   108.80000000000001,
+   129.3
+  ],
+  "Poultry": [
+   22.3,
+   30.1,
+   37.0
+  ]
+ },
+ "shared": {
+  "Soils and fertiliser": [
+   1135.6,
+   998.5,
+   1023.4
+  ],
+  "Farm fuel": [
+   199.4,
+   343.6,
+   223.4
+  ]
+ },
+ "proc_em": [
+  574.9,
+  180.6,
+  140.4
+ ],
+ "dest": {
+  "1990": {
+   "Northern Ireland": 773.9,
+   "Great Britain": 567.8,
+   "Ireland": 121.6,
+   "Rest of EU": 100.3,
+   "Rest of world": 53.3,
+   "EU intervention stores": 128.1
+  },
+  "2015": {
+   "Northern Ireland": 1139.8,
+   "Great Britain": 2099.1,
+   "Ireland": 623.5,
+   "Rest of EU": 416.3,
+   "Rest of world": 138.4
+  },
+  "2022": {
+   "Northern Ireland": 1421.8,
+   "Great Britain": 3161.6,
+   "Ireland": 1078.2,
+   "Rest of EU": 631.4,
+   "Rest of world": 223.1
+  }
+ },
+ "purch": {
+  "Northern Ireland": 3247,
+  "Great Britain": 886,
+  "Ireland": 782,
+  "Rest of EU": 187,
+  "Rest of world": 40
+ },
+ "derived": {
+  "defl": [
+   0.5726568653189814,
+   1.0,
+   1.1973099114328765
+  ],
+  "proc_share": {
+   "Beef & sheepmeat": [
+    24.0,
+    28.4,
+    26.3
+   ],
+   "Milk & milk products": [
+    26.4,
+    20.5,
+    24.1
+   ],
+   "Poultrymeat": [
+    8.9,
+    15.9,
+    11.4
+   ],
+   "Pigmeat": [
+    8.7,
+    6.8,
+    8.1
+   ],
+   "Eggs": [
+    2.3,
+    3.2,
+    3.8
+   ],
+   "Fish": [
+    2.7,
+    1.8,
+    1.1
+   ],
+   "Fruit & vegetables": [
+    3.1,
+    7.0,
+    7.3
+   ],
+   "Bakeries": [
+    8.0,
+    6.4,
+    8.4
+   ],
+   "Drinks": [
+    14.6,
+    8.7,
+    8.9
+   ],
+   "Animal by-products": [
+    1.2,
+    1.3,
+    0.8
+   ]
+  },
+  "farm_share": {
+   "Cattle": [
+    29.8,
+    22.6,
+    20.6
+   ],
+   "Milk": [
+    24.0,
+    27.0,
+    33.9
+   ],
+   "Sheep": [
+    7.3,
+    3.6,
+    3.8
+   ],
+   "Pigs": [
+    10.6,
+    6.4,
+    9.2
+   ],
+   "Poultry": [
+    6.2,
+    15.4,
+    11.1
+   ],
+   "Eggs": [
+    3.2,
+    5.0,
+    8.3
+   ],
+   "Field crops": [
+    6.8,
+    3.2,
+    2.8
+   ],
+   "Horticulture": [
+    3.7,
+    6.7,
+    2.9
+   ]
+  },
+  "farm_other": [
+   8.4,
+   10.2,
+   7.3
+  ],
+  "real_proc": {
+   "Beef & sheepmeat": [
+    730,
+    1255,
+    1429
+   ],
+   "Milk & milk products": [
+    806,
+    903,
+    1310
+   ],
+   "Poultrymeat": [
+    273,
+    701,
+    618
+   ],
+   "Pigmeat": [
+    266,
+    302,
+    441
+   ],
+   "Eggs": [
+    70,
+    143,
+    206
+   ],
+   "Fish": [
+    82,
+    77,
+    58
+   ],
+   "Fruit & vegetables": [
+    96,
+    309,
+    398
+   ],
+   "Bakeries": [
+    243,
+    283,
+    455
+   ],
+   "Drinks": [
+    445,
+    386,
+    482
+   ],
+   "Animal by-products": [
+    37,
+    57,
+    45
+   ]
+  },
+  "cagr": {
+   "Beef & sheepmeat": 1.9,
+   "Milk & milk products": 5.4,
+   "Poultrymeat": -1.8,
+   "Pigmeat": 5.6,
+   "Eggs": 5.4,
+   "Fish": -3.9,
+   "Fruit & vegetables": 3.7,
+   "Bakeries": 7.0,
+   "Drinks": 3.2,
+   "Animal by-products": -3.1
+  },
+  "proj": {
+   "Beef & sheepmeat": [
+    1255,
+    1429,
+    1656,
+    1817
+   ],
+   "Milk & milk products": [
+    903,
+    1310,
+    2002,
+    2610
+   ],
+   "Poultrymeat": [
+    701,
+    618,
+    535,
+    489
+   ],
+   "Pigmeat": [
+    302,
+    441,
+    680,
+    891
+   ],
+   "Eggs": [
+    143,
+    206,
+    315,
+    410
+   ],
+   "Fish": [
+    77,
+    58,
+    42,
+    35
+   ],
+   "Fruit & vegetables": [
+    309,
+    398,
+    532,
+    638
+   ],
+   "Bakeries": [
+    283,
+    455,
+    780,
+    1094
+   ],
+   "Drinks": [
+    386,
+    482,
+    621,
+    727
+   ],
+   "Animal by-products": [
+    57,
+    45,
+    35,
+    30
+   ]
+  },
+  "proj_total": [
+   4416,
+   5442,
+   7198,
+   8741
+  ],
+  "farm_intensity_2015_2024_kg_per_gbp_nominal": {
+   "Dairy": [
+    2.83,
+    1.39
+   ],
+   "Beef and other cattle": [
+    6.04,
+    3.7
+   ],
+   "Sheep": [
+    5.15,
+    2.54
+   ],
+   "Pigs": [
+    0.95,
+    0.44
+   ],
+   "Poultry (meat and eggs)": [
+    0.083,
+    0.06
+   ]
+  },
+  "em": {
+   "Dairy": [
+    955.0,
+    1361.0,
+    1505.0
+   ],
+   "Beef and other cattle": [
+    2267.4,
+    2431.5,
+    2435.1
+   ],
+   "Sheep": [
+    444.40000000000003,
+    325.59999999999997,
+    311.79999999999995
+   ],
+   "Pigs": [
+    132.1,
+    108.80000000000001,
+    129.3
+   ],
+   "Poultry": [
+    22.3,
+    30.1,
+    37.0
+   ]
+  },
+  "proc_intensity_kg_per_gbp_real2015": [
+   0.189,
+   0.041,
+   0.026
+  ],
+  "ag_total": [
+   5238.4,
+   5693.8,
+   5762.2
+  ]
+ }
+}
