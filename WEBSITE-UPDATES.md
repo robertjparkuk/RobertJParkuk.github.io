@@ -25,6 +25,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.50.0 — 21 November 2026: the future technologies map
+
+*Robert, 21 November 2026: publish the map and articles to the Learn section, as a pull request, when all 169 are done.*
+
+- New tool `tools/future-technologies.html`: 169 technologies in 13 maps, network, grid, pathway and list views, hover descriptions and a sourced article on every technology, with a "How this map was made" note and author statement.
+- D3 7.9.2 served from `assets/js/` rather than a third-party CDN.
+- Learn page: new "Future technologies" section above the explainers. Tools page: new entry.
+- Short link `/go/futuretech/`.
+
 ### v0.49.3 — 21 November 2026: the periodic table as a dashboard, announced on the blog
 
 *Robert, 21 November 2026: "it should be a dashboard, announced on the blog in learn too".*
