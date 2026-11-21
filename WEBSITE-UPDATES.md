@@ -38,6 +38,16 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 - "Who cuts the hedge?" post time moved from noon to 06:30 so it publishes on merge instead of waiting for the noon rebuild.
 
+### v0.47.0 — 21 November 2026: the 2028 ETS horizon briefing
+
+*Robert, 21 November 2026: "do the same that we done for CBAM on the ETS agreements".*
+
+- New post `the-2028-ets-horizon`: what the 20 November 2026 UK–EU linking agreement does, eight NI cases (power, ferries, UK ETS manufacturer, small emitters, energy-from-waste, aviation, CBAM goods, bills and ETS2), where firms may switch, a 13-question checklist and dates to watch.
+- New flow chart `assets/briefings/ets-2028/flow-ni-ets.svg` in the brand palette with the logo (builder `_scripts/briefings/ets-2028/flow.py`, spec `flow.json`).
+- New PDF `assets/briefings/2026-11-the-2028-ets-horizon-briefing.pdf` (6 pages; builder `build_pdf.py`).
+- Home-page headline slide (newest piece, slot 4) until 5 December 2026; the CBAM horizon slide moves to slot 5.
+- Reviewed by a legal and sources panel and a practitioner panel; flagged: unpublished treaty text, NI energy-from-waste contradiction in the DESNZ explainer, ETS2 date, surcharge pass-through.
+
 ### v0.46.1 — 21 November 2026: CBAM horizon on the home page
 
 *Robert, 21 November 2026: "put it on the front page".*
