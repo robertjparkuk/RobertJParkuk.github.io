@@ -33,6 +33,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - D3 7.9.2 served from `assets/js/` rather than a third-party CDN.
 - Learn page: new "Future technologies" section above the explainers. Tools page: new entry.
 - Short link `/go/futuretech/`.
+- Two review panels (facts and law; reader and site), 22 November 2026. Fixed before publishing: EU CBAM stated consistently as not applying in NI with customs-specialist lines; PPWR dates; food waste threshold (5 kg since 2017); planning route for cavern storage; law labels reworded as research notes; mobile article panel; keyboard access to the list view; chip contrast; og tags.
 
 ### v0.49.3 — 21 November 2026: the periodic table as a dashboard, announced on the blog
 
