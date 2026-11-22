@@ -138,6 +138,6 @@ if __name__ == '__main__':
             open(os.path.join(OUT, f'{slug(name)}.md'), 'w', encoding='utf-8').write(page(z, sym, name, wt, cat))
     open(os.path.join(OUT, 'index.md'), 'w', encoding='utf-8').write(index())
     import json
-    json.dump({sym: f'/learn/elements/{slug(name)}/' for z, sym, name, wt, cat in ELEMENTS if sym in DEEP},
+    json.dump({sym: {'url': f'/learn/elements/{slug(name)}/', 'quirks': DEEP[sym].get('quirks', '')} for z, sym, name, wt, cat in ELEMENTS if sym in DEEP},
               open(os.path.join(ROOT, 'data/periodic-table/deep.json'), 'w'), indent=0)
     print('pages:', len(DEEP))

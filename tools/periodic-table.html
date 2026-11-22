@@ -198,7 +198,7 @@ footer a{color:var(--red)}
 
   function render(e, tab){
     let h = '';
-    if (tab === 'briefing') { BRIEF.forEach(([k,l]) => h += `<h3>${l}</h3><p>${esc(e.briefing_text[k])}</p>`); }
+    if (tab === 'briefing') { BRIEF.forEach(([k,l]) => h += `<h3>${l}</h3><p>${esc(e.briefing_text[k])}</p>`); if (DEEP[e.symbol] && DEEP[e.symbol].quirks) h += `<h3>Quirks</h3><p>${esc(DEEP[e.symbol].quirks)}</p>`; }
     else if (tab === 'all') { TABS.forEach(([k,l]) => h += `<h3>${l}</h3><p>${esc(e.contexts[k])}</p>`); }
     else if (tab === 'safety') {
       const s = e.safety;
@@ -226,7 +226,7 @@ footer a{color:var(--red)}
     const tabs = [['briefing','Briefing'], ['all','Five contexts'], ...TABS]; if (e.featured) tabs.push(['safety','Safety, COSHH and UN'], ['compounds','Compounds']);
     $('tabs').innerHTML = tabs.map(([k,l]) => `<button type="button" role="tab" data-tab="${k}">${l}</button>`).join('');
     $('tabs').onclick = ev => { const t = ev.target.closest('button'); if (t) render(e, t.dataset.tab); };
-    const deep = DEEP[e.symbol] ? `<a href="${DEEP[e.symbol]}">Read the ${esc(e.name.toLowerCase())} deep dive</a>` : '';
+    const deep = DEEP[e.symbol] ? `<a href="${DEEP[e.symbol].url}">Read the ${esc(e.name.toLowerCase())} deep dive</a>` : '';
     $('links').innerHTML = deep + (e.featured ? (live(e) ? `<a href="${e.briefing_url}">Read the ${esc(e.name.toLowerCase())} briefing</a><a class="ghost" href="${e.pdf}">Download the PDF</a>` : `<a href="${e.pdf}">Read the ${esc(e.name.toLowerCase())} briefing (PDF)</a>`) : '');
     render(e, 'briefing');
     $('panel').hidden = false; $('scrim').hidden = false;

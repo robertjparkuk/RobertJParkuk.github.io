@@ -32,6 +32,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - 27 new pages: He, Be, B, Ne, Ar, Sc, Ti, V, Ga, Ge, Sr, Zr, Nb, Pd, Rh, Pt, Ir, Sn, Sb, I, Cs, Ba, Nd, Ta, W, Au, Bi. 59 of 118 now up.
 - Every page, including the first 32, now has Engineering, Politics and trade, Commerce and Quirks sections (`_scripts/elements/deep_c.py`, `deep_supp.py`).
 - Learn wording updated.
+- The periodic table's click panel now shows each element's quirks at the end of its Briefing tab (from `data/periodic-table/deep.json`).
 
 ### v0.52.0 — 22 November 2026: the future technologies map
 
