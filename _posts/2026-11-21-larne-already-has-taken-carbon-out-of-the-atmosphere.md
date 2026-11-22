@@ -2,8 +2,11 @@
 title: "Larne already has taken carbon out of the atmosphere"
 date: 2026-11-21 20:00:00 +0000
 tags: [Carbon, Direct air capture, Larne, Innovation, Energy, Northern Ireland, Thought piece]
+image: /assets/photos/east-antrim-towards-the-coast.jpg
 description: "A wind-driven direct air capture trial ran above the Port of Larne from 2023 to 2025. What it did, what it cost, what it did not do, and who decides what comes next."
 ---
+
+<figure class="page-photo"><img src="{{ '/assets/photos/east-antrim-towards-the-coast.jpg' | relative_url }}" alt="Green fields and hedges in east Antrim under a clear blue sky, looking down towards the coast, with industrial buildings and the sea in the distance" loading="lazy"><figcaption>East Antrim, looking towards the coast. Photo: Robert J. Park.</figcaption></figure>
 
 *A small trial above the port ran for nineteen months. Here is what it did, what it cost and what it did not do. General information and opinion, not advice.*
 

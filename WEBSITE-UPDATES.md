@@ -85,6 +85,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - Linked from Tools and from Learn ("Go further"). Short links for LinkedIn: `/go/phosphorus/`, `/go/nitrogen/`, `/go/sulfur/`, `/go/fluorine/`, `/go/antimony/`, `/go/magnesium/`, `/go/carbon/`, `/go/radon/` and `/go/elements/` (the tool).
 - Values marked "(check)" in the safety tables, the SF₆ switchgear dates, the enhanced-weathering methodology line and the China antimony announcement links must be confirmed before any post is published.
 
+### v0.45.2 — 21 November 2026: photo on the Larne piece
+
+*Robert, 21 November 2026: add a photo, "do that and find one".*
+
+- New `assets/photos/east-antrim-towards-the-coast.jpg`: a crop of Robert's own east Antrim photo (already on the site as `boundary-hedge-east-antrim.jpg`), web-sized, no location data.
+- Added to the top of "Larne already has taken carbon out of the atmosphere" and as its share image; the PDF is rebuilt with the photo on page 1.
+
 ### v0.45.1 — 21 November 2026: Larne post time corrected
 
 - The post was dated 20:15 and the merge built at 20:11, so the page was held back as a future post. Time moved to 20:00 so it publishes at once.
