@@ -25,6 +25,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.52.1 — 22 November 2026: X account link
+
+*Robert, 22 November 2026: link the new professional X account, @RJPConsultingNI.*
+
+- `_config.yml`: new `x_handle` and `x_url` settings.
+- Footer (every page): "X @RJPConsultingNI" link after LinkedIn, with `rel="me"`.
+- Contact page: new X line under LinkedIn.
+- Structured data: X profile added to the `sameAs` list alongside LinkedIn.
+
 ### v0.52.0 — 22 November 2026: the future technologies map
 
 *Robert, 21 November 2026: publish the map and articles to the Learn section, as a pull request, when all 169 are done.*
