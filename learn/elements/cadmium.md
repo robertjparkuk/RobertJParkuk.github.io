@@ -29,6 +29,22 @@ A carcinogen that damages kidneys and bones. Smoking is a major personal source.
 
 Now restricted in batteries and pigments; still in some solar panels and alloys.
 
+## Engineering
+
+Nickel-cadmium batteries once powered most cordless tools.
+
+## Politics and trade
+
+EU rules restrict cadmium in batteries, electronics and fertilisers.
+
+## Commerce
+
+Mostly a by-product of zinc refining.
+
+## Quirks
+
+Named from 'cadmia', an old word for zinc ore.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

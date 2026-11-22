@@ -29,9 +29,25 @@ An essential nutrient for immunity and growth. Breathing zinc fume from welding 
 
 Galvanising, die-cast parts, brass, rubber and sunscreen.
 
+## Engineering
+
+Galvanised steel can last decades outdoors without paint.
+
+## Politics and trade
+
+Ireland's zinc mining makes it one of Europe's main zinc producers.
+
+## Commerce
+
+Zinc prices follow construction and car-making.
+
 ## In Northern Ireland
 
 Ireland's Tara mine, near Navan, is one of Europe's largest zinc mines.
+
+## Quirks
+
+Zinc is in brass, and brass instruments are mostly copper and zinc.
 
 ## Remarkable compounds
 

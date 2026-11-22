@@ -29,6 +29,22 @@ Essential for nerves and heartbeat; too high or too low a level affects the hear
 
 Potash fertiliser, soaps, glass, food salt substitutes.
 
+## Engineering
+
+Potassium hydroxide is the electrolyte in alkaline batteries.
+
+## Politics and trade
+
+Belarus and Russia are major potash producers, so sanctions affect fertiliser supply.
+
+## Commerce
+
+Potash is mined under North Yorkshire.
+
+## Quirks
+
+Bananas are slightly radioactive because of potassium-40.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

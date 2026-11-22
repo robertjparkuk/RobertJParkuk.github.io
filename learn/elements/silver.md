@@ -29,6 +29,22 @@ Low toxicity; long-term swallowing of silver can turn skin permanently blue-grey
 
 Solar cells, electronics, mirrors, brazing and jewellery.
 
+## Engineering
+
+Silver is the best electrical conductor of all metals.
+
+## Politics and trade
+
+Silver demand from solar has become a strategic question for panel makers.
+
+## Commerce
+
+Solar panels have become one of the largest uses of silver.
+
+## Quirks
+
+Silver iodide has been used in cloud seeding to try to make rain or snow.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

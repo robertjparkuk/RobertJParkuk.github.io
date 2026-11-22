@@ -29,6 +29,22 @@ Low toxicity at normal exposure. Fine aluminium powder is a dust-explosion and f
 
 Cans, window frames, cables and vehicle bodies. Bauxite residue ('red mud') is one of the world's largest industrial waste streams.
 
+## Engineering
+
+Aluminium forms a thin oxide skin that protects it from corrosion.
+
+## Politics and trade
+
+Aluminium is covered by EU CBAM and, from 2027, by UK CBAM.
+
+## Commerce
+
+Recycled aluminium is worth far more than most scrap.
+
+## Quirks
+
+Aluminium was once more valuable than gold; Napoleon III served honoured guests on aluminium plates.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

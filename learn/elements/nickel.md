@@ -29,6 +29,22 @@ The commonest cause of contact allergy, from jewellery and buttons. Some nickel 
 
 Stainless steel, batteries, plating and coins.
 
+## Engineering
+
+Nickel superalloys keep jet-engine turbine blades strong when glowing hot.
+
+## Politics and trade
+
+Indonesia banned nickel ore exports to build its own processing industry.
+
+## Commerce
+
+Battery demand has made nickel a strategic metal.
+
+## Quirks
+
+Named from 'Kupfernickel', devil's copper, because the ore looked like copper but yielded none.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

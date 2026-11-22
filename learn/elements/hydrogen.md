@@ -29,9 +29,25 @@ Hydrogen gas is not toxic but is extremely flammable over a very wide range of m
 
 Around half of all hydrogen goes into ammonia for fertiliser; most of the rest goes to oil refining and methanol. Electrolysis powered by wind could make it locally, and stored salt caverns could hold it.
 
+## Engineering
+
+Hydrogen embrittles some steels, so pipelines need testing before they carry it.
+
+## Politics and trade
+
+Governments in the UK and EU subsidise low-carbon hydrogen through contracts and auctions.
+
+## Commerce
+
+Most hydrogen is made and used on the same site, so there is little open market yet.
+
 ## In Northern Ireland
 
 Northern Ireland's wind surplus at night is the case for local electrolytic hydrogen; storage in the Larne salt beds has been studied.
+
+## Quirks
+
+The most abundant element in the universe, yet free hydrogen is rare on Earth because it escapes to space.
 
 ## Remarkable compounds
 

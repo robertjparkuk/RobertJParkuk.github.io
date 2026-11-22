@@ -29,9 +29,25 @@ Essential for nerves, but too much salt raises blood pressure. Sodium metal reac
 
 Salt is the base of chlorine and caustic soda, glass, soap, food preservation and road gritting.
 
+## Engineering
+
+Molten sodium has cooled some nuclear reactors because it carries heat so well.
+
+## Politics and trade
+
+Salt taxes helped spark revolutions, including Gandhi's Salt March in 1930.
+
+## Commerce
+
+Road salt demand swings with winter weather.
+
 ## In Northern Ireland
 
 Rock salt is mined at Kilroot near Carrickfergus and used for gritting roads across the UK and Ireland.
+
+## Quirks
+
+Sodium metal is soft enough to cut with a knife and must be kept under oil.
 
 ## Remarkable compounds
 

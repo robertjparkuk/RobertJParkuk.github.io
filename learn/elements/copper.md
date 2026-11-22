@@ -29,6 +29,22 @@ An essential trace nutrient, but sheep are poisoned by small excesses. Copper su
 
 Wiring, plumbing, motors, heat exchangers, brass and bronze.
 
+## Engineering
+
+An electric car uses several times more copper than a petrol car.
+
+## Politics and trade
+
+Copper theft from railways and substations is a growing crime.
+
+## Commerce
+
+Copper prices are watched as a signal of economic health ('Dr Copper').
+
+## Quirks
+
+The Statue of Liberty is copper turned green.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

@@ -29,6 +29,22 @@ Part of vitamin B12. Some cobalt compounds are carcinogens; hard-metal dust cont
 
 Batteries, superalloys, magnets, catalysts and blue glass. On the UK critical minerals list.
 
+## Engineering
+
+Cobalt superalloys hold their strength at high temperatures in turbines.
+
+## Politics and trade
+
+Most cobalt comes from the Democratic Republic of Congo, where artisanal mining raises child-labour concerns.
+
+## Commerce
+
+Battery makers are moving to cobalt-free chemistries to cut cost and risk.
+
+## Quirks
+
+Named after 'kobolds', goblins miners blamed for ores that gave off toxic fumes.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

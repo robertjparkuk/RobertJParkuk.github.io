@@ -25,6 +25,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.53.0 — 22 November 2026: element deep dives, batch 2 (27 more), plus quirks, engineering, politics and commerce
+
+*Robert, 22 November 2026: "keep writing papers and deep dive them for quirks as well as the wider application in climate, soil, engineering, politics, commerce".*
+
+- 27 new pages: He, Be, B, Ne, Ar, Sc, Ti, V, Ga, Ge, Sr, Zr, Nb, Pd, Rh, Pt, Ir, Sn, Sb, I, Cs, Ba, Nd, Ta, W, Au, Bi. 59 of 118 now up.
+- Every page, including the first 32, now has Engineering, Politics and trade, Commerce and Quirks sections (`_scripts/elements/deep_c.py`, `deep_supp.py`).
+- Learn wording updated.
+- The periodic table's click panel now shows each element's quirks at the end of its Briefing tab (from `data/periodic-table/deep.json`).
+
 ### v0.52.0 — 22 November 2026: the future technologies map
 
 *Robert, 21 November 2026: publish the map and articles to the Learn section, as a pull request, when all 169 are done.*

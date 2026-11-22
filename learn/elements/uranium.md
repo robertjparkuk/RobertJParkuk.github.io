@@ -29,6 +29,22 @@ Weakly radioactive and chemically toxic to kidneys. Depleted uranium is used in 
 
 Nuclear fuel after enrichment; ceramics glazes in the past.
 
+## Engineering
+
+A uranium fuel pellet the size of a fingertip holds as much energy as about a tonne of coal.
+
+## Politics and trade
+
+Uranium enrichment is at the heart of nuclear non-proliferation diplomacy.
+
+## Commerce
+
+Kazakhstan, Canada and Australia are leading producers.
+
+## Quirks
+
+Uranium glass glows green under UV light, and old Fiestaware plates are radioactive.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

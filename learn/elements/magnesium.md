@@ -31,9 +31,25 @@ Grass tetany (staggers) kills cattle and sheep short of magnesium on lush spring
 
 Light alloys for cars and laptops, refractories, animal feed, fertiliser and de-icing salts. Magnesium is on the UK critical minerals list.
 
+## Engineering
+
+Magnesium alloys are the lightest structural metals in common use.
+
+## Politics and trade
+
+Europe imports almost all its magnesium metal from China.
+
+## Commerce
+
+Feed-grade magnesium oxide is a staple of spring farm supplies.
+
 ## In Northern Ireland
 
 The Antrim Plateau is basalt rich in magnesium minerals, a ready source of rock dust for weathering trials.
+
+## Quirks
+
+Magnesium flares burn brighter than the sun and were used in early flash photography.
 
 ## Remarkable compounds
 

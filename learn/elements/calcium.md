@@ -29,9 +29,25 @@ Essential for bones and teeth. Quicklime burns skin and eyes. Calcium metal reac
 
 Cement, lime, plaster, steelmaking flux and flue-gas cleaning.
 
+## Engineering
+
+Lime mortar lets old buildings breathe; cement mortar can trap damp in them.
+
+## Politics and trade
+
+Cement is covered by EU CBAM and, from 2027, by UK CBAM.
+
+## Commerce
+
+Cement is heavy and cheap, so it rarely travels far by road.
+
 ## In Northern Ireland
 
 The white chalk of the Antrim coast sits under black basalt: the two are the backbone of the Causeway Coast.
+
+## Quirks
+
+The White Cliffs of Dover and the Antrim chalk are the skeletons of tiny sea creatures.
 
 ## Remarkable compounds
 

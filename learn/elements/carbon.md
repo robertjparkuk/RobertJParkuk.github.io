@@ -31,9 +31,25 @@ Carbon monoxide is the silent killer from boilers and engines. Fine soot (black 
 
 Carbon is the backbone of fuels, plastics and medicines, the reducing agent in blast-furnace steel, and the source of CO₂ in cement. Graphite makes battery anodes; carbon fibre makes wind-turbine blades.
 
+## Engineering
+
+Diamond is the hardest natural material and the best natural conductor of heat.
+
+## Politics and trade
+
+Carbon pricing (UK ETS, EU ETS) and border charges (CBAM) now put a price on carbon in trade.
+
+## Commerce
+
+Carbon credits are traded, but quality varies widely; offsets are not the same as cutting emissions.
+
 ## In Northern Ireland
 
 Agriculture was about 31% of Northern Ireland's emissions in 2024. Carbon budgets require average cuts of 33% (2023–27), 48% and 62% against the baseline.
+
+## Quirks
+
+Carbon-14 lets archaeologists date anything that once lived. Graphite and diamond are the same element.
 
 ## Remarkable compounds
 

@@ -29,6 +29,22 @@ Methylmercury damages the developing brain, which is why large predatory fish ca
 
 Being phased out under the Minamata Convention: thermometers, lamps, dental amalgam and batteries.
 
+## Engineering
+
+Mercury switches and thermometers have been replaced by electronics.
+
+## Politics and trade
+
+The Minamata Convention, named after a Japanese poisoning disaster, controls mercury worldwide.
+
+## Commerce
+
+Small-scale gold mining is now the largest use of mercury.
+
+## Quirks
+
+'Mad as a hatter' comes from hat-makers poisoned by mercury used on felt.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

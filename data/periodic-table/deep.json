@@ -1,34 +1,238 @@
 {
-"H": "/learn/elements/hydrogen/",
-"Li": "/learn/elements/lithium/",
-"C": "/learn/elements/carbon/",
-"N": "/learn/elements/nitrogen/",
-"O": "/learn/elements/oxygen/",
-"F": "/learn/elements/fluorine/",
-"Na": "/learn/elements/sodium/",
-"Mg": "/learn/elements/magnesium/",
-"Al": "/learn/elements/aluminium/",
-"Si": "/learn/elements/silicon/",
-"P": "/learn/elements/phosphorus/",
-"S": "/learn/elements/sulfur/",
-"Cl": "/learn/elements/chlorine/",
-"K": "/learn/elements/potassium/",
-"Ca": "/learn/elements/calcium/",
-"Cr": "/learn/elements/chromium/",
-"Mn": "/learn/elements/manganese/",
-"Fe": "/learn/elements/iron/",
-"Co": "/learn/elements/cobalt/",
-"Ni": "/learn/elements/nickel/",
-"Cu": "/learn/elements/copper/",
-"Zn": "/learn/elements/zinc/",
-"As": "/learn/elements/arsenic/",
-"Se": "/learn/elements/selenium/",
-"Br": "/learn/elements/bromine/",
-"Mo": "/learn/elements/molybdenum/",
-"Ag": "/learn/elements/silver/",
-"Cd": "/learn/elements/cadmium/",
-"Hg": "/learn/elements/mercury/",
-"Pb": "/learn/elements/lead/",
-"Rn": "/learn/elements/radon/",
-"U": "/learn/elements/uranium/"
+"H": {
+"url": "/learn/elements/hydrogen/",
+"quirks": "The most abundant element in the universe, yet free hydrogen is rare on Earth because it escapes to space."
+},
+"He": {
+"url": "/learn/elements/helium/",
+"quirks": "Found in the Sun's spectrum in 1868, 27 years before it was found on Earth. Liquid helium creeps up and over the walls of its container."
+},
+"Li": {
+"url": "/learn/elements/lithium/",
+"quirks": "7 Up originally contained lithium citrate as a mood lifter until 1948."
+},
+"Be": {
+"url": "/learn/elements/beryllium/",
+"quirks": "Beryllium salts taste sweet, which is how chemists once tested them, a dangerous habit. Emerald and aquamarine are beryllium minerals."
+},
+"B": {
+"url": "/learn/elements/boron/",
+"quirks": "Boron gives a green flame. Pyrex owes its heat resistance to boron oxide."
+},
+"C": {
+"url": "/learn/elements/carbon/",
+"quirks": "Carbon-14 lets archaeologists date anything that once lived. Graphite and diamond are the same element."
+},
+"N": {
+"url": "/learn/elements/nitrogen/",
+"quirks": "Fritz Haber won a Nobel Prize for fixing nitrogen and also led Germany's poison gas programme."
+},
+"O": {
+"url": "/learn/elements/oxygen/",
+"quirks": "Liquid oxygen is pale blue and sticks to a magnet."
+},
+"F": {
+"url": "/learn/elements/fluorine/",
+"quirks": "Several chemists were poisoned trying to isolate fluorine before Henri Moissan succeeded in 1886."
+},
+"Ne": {
+"url": "/learn/elements/neon/",
+"quirks": "'Neon' signs in colours other than red use other gases or coloured glass."
+},
+"Na": {
+"url": "/learn/elements/sodium/",
+"quirks": "Sodium metal is soft enough to cut with a knife and must be kept under oil."
+},
+"Mg": {
+"url": "/learn/elements/magnesium/",
+"quirks": "Magnesium flares burn brighter than the sun and were used in early flash photography."
+},
+"Al": {
+"url": "/learn/elements/aluminium/",
+"quirks": "Aluminium was once more valuable than gold; Napoleon III served honoured guests on aluminium plates."
+},
+"Si": {
+"url": "/learn/elements/silicon/",
+"quirks": "Silicon Valley is named after silicon chips, not silicone."
+},
+"P": {
+"url": "/learn/elements/phosphorus/",
+"quirks": "Discovered in 1669 by an alchemist boiling down urine in search of gold."
+},
+"S": {
+"url": "/learn/elements/sulfur/",
+"quirks": "Brimstone in the Bible is sulfur. Sulfur crystals crack in the warmth of your hand."
+},
+"Cl": {
+"url": "/learn/elements/chlorine/",
+"quirks": "Chlorine gas was the first chemical weapon used at scale, at Ypres in 1915."
+},
+"Ar": {
+"url": "/learn/elements/argon/",
+"quirks": "Its name means 'lazy' in Greek. Potassium\u2013argon dating measures the age of volcanic rocks."
+},
+"K": {
+"url": "/learn/elements/potassium/",
+"quirks": "Bananas are slightly radioactive because of potassium-40."
+},
+"Ca": {
+"url": "/learn/elements/calcium/",
+"quirks": "The White Cliffs of Dover and the Antrim chalk are the skeletons of tiny sea creatures."
+},
+"Sc": {
+"url": "/learn/elements/scandium/",
+"quirks": "Mendeleev predicted it as 'eka-boron' before it was found."
+},
+"Ti": {
+"url": "/learn/elements/titanium/",
+"quirks": "Titanium burns in pure nitrogen. Self-cleaning glass uses a titanium dioxide film that breaks down dirt in sunlight."
+},
+"V": {
+"url": "/learn/elements/vanadium/",
+"quirks": "Named after a Norse goddess for its many colourful compounds. Sea squirts concentrate vanadium in their blood."
+},
+"Cr": {
+"url": "/learn/elements/chromium/",
+"quirks": "Chromium gives rubies their red and emeralds their green."
+},
+"Mn": {
+"url": "/learn/elements/manganese/",
+"quirks": "Cave paintings at Lascaux used manganese oxide for black."
+},
+"Fe": {
+"url": "/learn/elements/iron/",
+"quirks": "The Earth's core is mostly iron, which creates the magnetic field that protects us from solar wind."
+},
+"Co": {
+"url": "/learn/elements/cobalt/",
+"quirks": "Named after 'kobolds', goblins miners blamed for ores that gave off toxic fumes."
+},
+"Ni": {
+"url": "/learn/elements/nickel/",
+"quirks": "Named from 'Kupfernickel', devil's copper, because the ore looked like copper but yielded none."
+},
+"Cu": {
+"url": "/learn/elements/copper/",
+"quirks": "The Statue of Liberty is copper turned green."
+},
+"Zn": {
+"url": "/learn/elements/zinc/",
+"quirks": "Zinc is in brass, and brass instruments are mostly copper and zinc."
+},
+"Ga": {
+"url": "/learn/elements/gallium/",
+"quirks": "Melts in your hand (about 30 \u00b0C). It is used in 'disappearing spoon' tricks because a gallium spoon melts in hot tea."
+},
+"Ge": {
+"url": "/learn/elements/germanium/",
+"quirks": "The first transistor, in 1947, was made of germanium."
+},
+"As": {
+"url": "/learn/elements/arsenic/",
+"quirks": "Napoleon's hair contained arsenic, possibly from green wallpaper."
+},
+"Se": {
+"url": "/learn/elements/selenium/",
+"quirks": "Garlic breath can come from selenium: workers exposed to it smell of garlic."
+},
+"Br": {
+"url": "/learn/elements/bromine/",
+"quirks": "One of only two elements liquid at room temperature; the other is mercury."
+},
+"Sr": {
+"url": "/learn/elements/strontium/",
+"quirks": "Named after the Scottish village of Strontian, where it was first found."
+},
+"Zr": {
+"url": "/learn/elements/zirconium/",
+"quirks": "Cubic zirconia is a cheap diamond imitation that is actually harder to scratch than glass."
+},
+"Nb": {
+"url": "/learn/elements/niobium/",
+"quirks": "Named after Niobe, daughter of Tantalus, because it is so like tantalum."
+},
+"Mo": {
+"url": "/learn/elements/molybdenum/",
+"quirks": "Its name comes from Greek for 'lead', because it was long mistaken for lead."
+},
+"Rh": {
+"url": "/learn/elements/rhodium/",
+"quirks": "Thieves target catalytic converters for the rhodium, palladium and platinum inside."
+},
+"Pd": {
+"url": "/learn/elements/palladium/",
+"quirks": "Named after the asteroid Pallas, discovered the year before."
+},
+"Ag": {
+"url": "/learn/elements/silver/",
+"quirks": "Silver iodide has been used in cloud seeding to try to make rain or snow."
+},
+"Cd": {
+"url": "/learn/elements/cadmium/",
+"quirks": "Named from 'cadmia', an old word for zinc ore."
+},
+"Sn": {
+"url": "/learn/elements/tin/",
+"quirks": "Tin 'cries' with a creaking sound when bent. In cold, it can crumble to powder ('tin pest')."
+},
+"Sb": {
+"url": "/learn/elements/antimony/",
+"quirks": "Ancient Egyptians used antimony sulfide as kohl eyeliner. 'Everlasting pills' of antimony were swallowed as a laxative, recovered and reused."
+},
+"I": {
+"url": "/learn/elements/iodine/",
+"quirks": "First found in seaweed ash, used for making gunpowder in Napoleonic France. Solid iodine turns straight to violet vapour."
+},
+"Cs": {
+"url": "/learn/elements/caesium/",
+"quirks": "The most reactive metal you can hold in a sealed glass ampoule; it melts at 28 \u00b0C."
+},
+"Ba": {
+"url": "/learn/elements/barium/",
+"quirks": "Bologna stone, a barium mineral, was the first known glow-in-the-dark material, in 1603."
+},
+"Nd": {
+"url": "/learn/elements/neodymium/",
+"quirks": "Neodymium glass is used in welding goggles and makes things look different under different light."
+},
+"Ta": {
+"url": "/learn/elements/tantalum/",
+"quirks": "Named after Tantalus because it cannot absorb acid, as Tantalus could never drink."
+},
+"W": {
+"url": "/learn/elements/tungsten/",
+"quirks": "Its symbol W comes from 'wolfram', from the German for 'wolf's froth'. Tungsten is as dense as gold, so it is used to fake gold bars."
+},
+"Ir": {
+"url": "/learn/elements/iridium/",
+"quirks": "The most corrosion-resistant metal. The 1980 iridium discovery changed how we think about mass extinctions."
+},
+"Pt": {
+"url": "/learn/elements/platinum/",
+"quirks": "Spanish explorers once threw platinum away as worthless 'little silver'. The kilogram was defined by a platinum-iridium cylinder until 2019."
+},
+"Au": {
+"url": "/learn/elements/gold/",
+"quirks": "All the gold ever mined would fit in a cube about 22 metres a side. Gold leaf can be beaten thin enough to let green light through."
+},
+"Hg": {
+"url": "/learn/elements/mercury/",
+"quirks": "'Mad as a hatter' comes from hat-makers poisoned by mercury used on felt."
+},
+"Pb": {
+"url": "/learn/elements/lead/",
+"quirks": "The Romans sweetened wine with lead acetate, 'sugar of lead'."
+},
+"Bi": {
+"url": "/learn/elements/bismuth/",
+"quirks": "Grows staircase-shaped crystals with rainbow colours. It is very slightly radioactive, with a half-life a billion times the age of the universe."
+},
+"Rn": {
+"url": "/learn/elements/radon/",
+"quirks": "Radon spas in Europe still advertise radon baths as therapy."
+},
+"U": {
+"url": "/learn/elements/uranium/",
+"quirks": "Uranium glass glows green under UV light, and old Fiestaware plates are radioactive."
+}
 }

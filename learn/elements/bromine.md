@@ -29,6 +29,22 @@ Liquid bromine and its vapour burn skin and lungs. Bromide was once a sedative. 
 
 Flame retardants, drilling fluids, water treatment and medicines.
 
+## Engineering
+
+Bromine compounds make plastics, textiles and circuit boards harder to burn.
+
+## Politics and trade
+
+Some brominated flame retardants are banned as persistent organic pollutants.
+
+## Commerce
+
+Israel, Jordan and China produce most bromine, much of it from the Dead Sea.
+
+## Quirks
+
+One of only two elements liquid at room temperature; the other is mercury.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

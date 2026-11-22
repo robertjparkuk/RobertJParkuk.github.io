@@ -29,6 +29,22 @@ Chlorinating drinking water ended cholera and typhoid outbreaks. Chlorine gas da
 
 Disinfection, PVC, solvents, medicines and bleach all start from salt split by electricity.
 
+## Engineering
+
+PVC pipes and window frames are chlorine-based plastics.
+
+## Politics and trade
+
+The Montreal Protocol, banning CFCs, is the most successful environmental treaty.
+
+## Commerce
+
+The chlor-alkali industry is one of the largest users of electricity in chemicals.
+
+## Quirks
+
+Chlorine gas was the first chemical weapon used at scale, at Ypres in 1915.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

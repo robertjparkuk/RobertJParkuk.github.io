@@ -29,9 +29,25 @@ Inorganic arsenic causes skin lesions and cancers; drinking water is limited to 
 
 Semiconductors and, historically, pesticides and wood preservative (CCA).
 
+## Engineering
+
+Gallium arsenide chips run faster than silicon in phones and radar.
+
+## Politics and trade
+
+Arsenic in Bangladesh's tube wells has been called the largest mass poisoning in history.
+
+## Commerce
+
+Demand has fallen with bans on arsenic pesticides and timber treatment.
+
 ## In Northern Ireland
 
 Old sheep-dip sites on farms are a known source of arsenic in soil.
+
+## Quirks
+
+Napoleon's hair contained arsenic, possibly from green wallpaper.
 
 ## Remarkable compounds
 
