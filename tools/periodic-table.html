@@ -140,7 +140,9 @@ footer a{color:var(--red)}
   let DATA = [], current = null, lastBtn = null, catFilter = null;
   const live = e => !!e.post_live_from && Date.now() >= Date.parse(e.post_live_from);
 
-  fetch('/data/periodic-table/elements.json').then(r => r.json()).then(d => {
+  let DEEP = {};
+  const deepP = fetch('/data/periodic-table/deep.json').then(r => r.json()).then(j => { DEEP = j; }).catch(() => {});
+  fetch('/data/periodic-table/elements.json').then(r => r.json()).then(d => deepP.then(() => d)).then(d => {
     DATA = d.elements; $('checked').textContent = d.checked; build();
   }).catch(() => { $('grid').insertAdjacentHTML('beforeend', '<p style="grid-column:1/-1">The element data could not be loaded. Please refresh the page.</p>'); });
 
@@ -224,7 +226,8 @@ footer a{color:var(--red)}
     const tabs = [['briefing','Briefing'], ['all','Five contexts'], ...TABS]; if (e.featured) tabs.push(['safety','Safety, COSHH and UN'], ['compounds','Compounds']);
     $('tabs').innerHTML = tabs.map(([k,l]) => `<button type="button" role="tab" data-tab="${k}">${l}</button>`).join('');
     $('tabs').onclick = ev => { const t = ev.target.closest('button'); if (t) render(e, t.dataset.tab); };
-    $('links').innerHTML = e.featured ? (live(e) ? `<a href="${e.briefing_url}">Read the ${esc(e.name.toLowerCase())} briefing</a><a class="ghost" href="${e.pdf}">Download the PDF</a>` : `<a href="${e.pdf}">Read the ${esc(e.name.toLowerCase())} briefing (PDF)</a>`) : '';
+    const deep = DEEP[e.symbol] ? `<a href="${DEEP[e.symbol]}">Read the ${esc(e.name.toLowerCase())} deep dive</a>` : '';
+    $('links').innerHTML = deep + (e.featured ? (live(e) ? `<a href="${e.briefing_url}">Read the ${esc(e.name.toLowerCase())} briefing</a><a class="ghost" href="${e.pdf}">Download the PDF</a>` : `<a href="${e.pdf}">Read the ${esc(e.name.toLowerCase())} briefing (PDF)</a>`) : '');
     render(e, 'briefing');
     $('panel').hidden = false; $('scrim').hidden = false;
     history.replaceState(null, '', '#' + e.symbol.toLowerCase());
