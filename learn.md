@@ -3,7 +3,7 @@ layout: page
 title: Learn
 permalink: /learn/
 lead: Plain-English explainers on carbon, from the terms people mix up to the rules that put a price on them. Each one has a diagram, worked examples from different sectors, and the standards and laws behind it, with the date they were last checked.
-description: "Plain-English carbon explainers for Northern Ireland businesses, councils and students: embodied carbon, life cycles, greenhouse gases, hydrogen, carbon capture, fertiliser and nitrogen, offsets, the rules behind them, and an interactive periodic table of every element."
+description: "Plain-English carbon explainers for Northern Ireland businesses, councils and students: embodied carbon, life cycles, greenhouse gases, hydrogen, carbon capture, fertiliser and nitrogen, offsets, the rules behind them, an interactive periodic table of every element and a map of 169 future technologies."
 ---
 
 ## The elements
@@ -26,6 +26,12 @@ Eight elements have a full briefing of their own, with safety and COSHH notes, U
 - [Magnesium]({{ '/assets/briefings/elements/magnesium-briefing.pdf' | relative_url }}): chlorophyll, grass tetany and rock weathering
 - [Carbon]({{ '/assets/briefings/elements/carbon-briefing.pdf' | relative_url }}): the element we count
 - [Radon]({{ '/assets/briefings/elements/radon-briefing.pdf' | relative_url }}): the gas from the ground a tighter house can trap
+
+## Future technologies
+
+The [future technologies map]({{ '/tools/future-technologies.html' | relative_url }}) sets out 169 environmental and energy technologies that people are working on today, in a laboratory, a pilot plant or a working site, and a good many of them in Northern Ireland. They build up in thirteen maps of thirteen, from the most enabling near-term technologies to frontier ideas that cannot yet run at useful scale. Arrows show which technologies make others more relevant, practical, cost-beneficial or necessary. General information, not advice.
+
+Hover over a technology for a three-line description; click it for a short article on what it is, where it stands, the Northern Ireland angle, the law and consents, what you can do now, what is not yet verified, and the sources. The articles were researched in November 2026 from primary and official sources where they exist. Where a law line has been checked against the legislation, that is a research check, not legal advice.
 
 ## Explainers
 

@@ -25,6 +25,16 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.52.0 — 22 November 2026: the future technologies map
+
+*Robert, 21 November 2026: publish the map and articles to the Learn section, as a pull request, when all 169 are done.*
+
+- New tool `tools/future-technologies.html`: 169 technologies in 13 maps, network, grid, pathway and list views, hover descriptions and a sourced article on every technology, with a "How this map was made" note and author statement.
+- D3 7.9.2 served from `assets/js/` rather than a third-party CDN.
+- Learn page: new "Future technologies" section above the explainers. Tools page: new entry.
+- Short link `/go/futuretech/`.
+- Two review panels (facts and law; reader and site), 22 November 2026. Fixed before publishing: EU CBAM stated consistently as not applying in NI with customs-specialist lines; PPWR dates; food waste threshold (5 kg since 2017); planning route for cavern storage; law labels reworded as research notes; mobile article panel; keyboard access to the list view; chip contrast; og tags.
+
 ### v0.51.0 — 22 November 2026: element deep dives, batch 1 (32 elements), with readers' contributions
 
 *Robert, 21 November 2026: "deep dive on all elements with the focus on climate, carbon, land, soil, health and everything we co-work on", one page per element, about 400 words, our work first; and "I'd like people that visit the site to add their own knowledge too".*

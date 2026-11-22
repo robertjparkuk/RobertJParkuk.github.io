@@ -22,6 +22,12 @@ All 118 elements. Hover for a one-line description; click for the environmental,
 
 [Open the periodic table →]({{ '/tools/periodic-table.html' | relative_url }})
 
+<h2 class="tool-h"><img src="{{ '/assets/brand/mark.svg' | relative_url }}" alt="" width="48" height="48">The future technologies map</h2>
+
+169 environmental and energy technologies that people are working on today, many of them in Northern Ireland, in thirteen maps that build from the near term to the frontier. Hover for a short description; click for a sourced article on each, with its Northern Ireland angle and the law that applies.
+
+[Open the future technologies map →]({{ '/tools/future-technologies.html' | relative_url }})
+
 <h2 class="tool-h"><img src="{{ '/assets/icons/scopes-map.svg' | relative_url }}" alt="" width="48" height="48">The Scopes Map</h2>
 
 Scope 1, 2 and 3 on one diagram, with all fifteen Scope 3 categories and their technical definitions. It also covers the grey zones clients ask about: gas that leaks before or after the meter, LPG that isn't a counted gas, water from a borehole, grey-fleet mileage, landlord-supplied energy, and which gases count at all.
