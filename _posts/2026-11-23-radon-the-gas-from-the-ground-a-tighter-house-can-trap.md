@@ -1,6 +1,6 @@
 ---
 title: "Radon: the gas from the ground a tighter house can trap"
-date: 2026-12-01 07:30:00 +0000
+date: 2026-11-23 10:00:00 +0000
 tags: ["Elements", "Learn", "Radon", "Buildings", "Health", "Geology", "Northern Ireland"]
 image: /assets/learn/periodic-table-rn.png
 description: "Radon in climate, soil, land and the air: where it comes from, why energy retrofits can raise it, the action levels and building rules in Northern Ireland, and how it is regulated at work."

@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carbon Ready Reckoner | Robert J. Park</title>
+<meta name="description" content="Free first estimate of your organisation's annual carbon footprint from a year of bills: Scopes 1, 2 and partial 3, using the UK Government's 2026 conversion factors, with Northern Ireland electricity treated as part of the all-island grid.">
+<link rel="canonical" href="https://robertjpark.co.uk/tools/carbon-ready-reckoner.html">
+<meta property="og:title" content="Carbon Ready Reckoner: your footprint from a year of bills">
+<meta property="og:description" content="A free, private first estimate of Scopes 1, 2 and partial 3 for Northern Ireland and UK businesses, on DESNZ 2026 factors.">
+<meta property="og:url" content="https://robertjpark.co.uk/tools/carbon-ready-reckoner.html">
+<meta property="og:image" content="https://robertjpark.co.uk/assets/og-image.jpg">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+/* Layout: site brand bar; two columns (inputs left, sticky results right), stacking on phones; method and factor table below. */
+:root{--red:#a61c1c;--red-dark:#861616;--red-tint:#faf3f3;--ink:#1a1a1a;--text:#2b2b2b;--muted:#5a5a5a;--rule:#e6e2e0;--bg:#fff;--alt:#f7f5f4;
+--sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;color-scheme:light}
+*{box-sizing:border-box} body{margin:0;background:var(--alt);color:var(--text);font:16px/1.5 var(--sans)}
+a{color:var(--red)} .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;padding:8px 12px;border:2px solid var(--red);z-index:9} .skip:focus{left:16px}
+header.bar{background:#fff;border-bottom:1px solid var(--rule)} header .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 20px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+.brand b{color:var(--red)} header nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+.eyebrow{color:var(--red);text-transform:uppercase;letter-spacing:.12em;font-weight:700;font-size:12.5px;margin-top:22px;display:block}
+h1{font-size:36px;line-height:1.1;color:var(--ink);margin:6px 0 8px} .intro p{max-width:760px;color:var(--muted);margin:0 0 8px}
+.bench{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:24px;align-items:start;padding:16px 0 40px} @media(max-width:920px){.bench{grid-template-columns:1fr}}
+.panel{background:#fff;border:1px solid var(--rule);border-radius:4px}
+section.grp{padding:16px 20px 8px;border-top:1px solid var(--rule)} section.grp:first-of-type{border-top:0}
+.grp h2{font-size:20px;color:var(--ink);margin:0 0 4px} .grp>p{margin:0 0 10px;color:var(--muted);font-size:14.5px}
+.row,.row4,.hdr4{display:grid;gap:8px;align-items:center;margin-bottom:9px} .row{grid-template-columns:minmax(0,1fr) 150px 96px}
+.row4,.hdr4{grid-template-columns:minmax(0,1fr) 100px 100px 100px 60px} .hdr4{font-size:12.5px;color:var(--muted);font-weight:600}
+@media(max-width:560px){.row{grid-template-columns:1fr 120px 80px}.row4,.hdr4{grid-template-columns:1fr 70px 70px 70px 40px}}
+label{font-weight:600;font-size:15px} label small{display:block;font-weight:400;color:var(--muted);font-size:13px;line-height:1.35}
+input,select{width:100%;font:inherit;font-family:var(--mono);font-size:14.5px;padding:7px 8px;border:1px solid var(--rule);border-radius:4px;background:#fff;color:var(--ink);text-align:right}
+select{font-family:var(--sans);text-align:left} .unit{font-size:13px;color:var(--muted)}
+input[aria-invalid]{border-color:var(--red);background:var(--red-tint)} .banner{margin:14px 20px 0;padding:8px 12px;background:var(--red-tint);border-left:4px solid var(--red);font-size:14.5px}
+input:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+button{font:inherit;font-weight:600;cursor:pointer;border-radius:4px;border:1px solid var(--rule);background:#fff;color:var(--ink);padding:7px 14px}
+button.pri{background:var(--red);border-color:var(--red);color:#fff} button.pri:hover{background:var(--red-dark)}
+.res{position:sticky;top:14px;padding:18px 20px} @media(max-width:920px){.res{position:static}}
+.res h2{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}
+.total{font-family:var(--mono);font-size:42px;font-weight:500;color:var(--ink);margin:4px 0 0} .total span{font-family:var(--sans);font-size:17px;color:var(--muted);margin-left:6px}
+.sub{color:var(--muted);font-size:13.5px;margin:0 0 12px}
+.scopes{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:12px}
+.sc{border:1px solid var(--rule);border-top:3px solid var(--red);padding:7px 10px} .sc b{display:block;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em}
+.sc i{font-style:normal;font-family:var(--mono);font-size:18px} .sc em{display:block;font-style:normal;font-size:12px;color:var(--muted)}
+.kv{display:grid;gap:3px;font-size:14px;padding:9px 11px;background:var(--alt);border:1px solid var(--rule);margin-bottom:12px}
+.kv div{display:flex;justify-content:space-between;gap:8px} .kv span:last-child{font-family:var(--mono)}
+.flags{margin:0 0 12px;padding-left:18px;font-size:13.5px} .flags li{margin:3px 0}
+.bars{display:grid;gap:6px;margin-bottom:12px} .bar{display:grid;grid-template-columns:1fr 64px;font-size:13.5px}
+.bar .val{text-align:right;font-family:var(--mono)} .track{grid-column:1/-1;height:6px;background:var(--rule)} .fill{height:100%;background:var(--red)}
+.cta{border-top:1px solid var(--rule);padding-top:12px;font-size:14.5px} .cta strong{display:block;font-size:18px;color:var(--ink)}
+.cta ul{list-style:none;padding:0;margin:6px 0 0} .status{font-size:13px;color:var(--red);min-height:1.2em}
+.method{padding:20px 0 40px;border-top:1px solid var(--rule)} .method h2{color:var(--ink)} .method p,.method li{max-width:78ch;color:var(--muted);font-size:15px}
+table{border-collapse:collapse;font-size:13.5px;width:100%;min-width:640px} th,td{text-align:left;padding:5px 8px;border-bottom:1px solid var(--rule)}
+td.n{text-align:right;font-family:var(--mono)} .tbl{overflow-x:auto} footer{font-size:13px;color:var(--muted);padding:16px 0 30px;border-top:1px solid var(--rule)}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the reckoner</a>
+<header class="bar"><div class="wrap">
+<a class="brand" href="/" aria-label="Robert J. Park home"><img src="/assets/tools-mark.svg" alt="" width="30" height="30">Robert J. <b>Park</b> · Tools</a>
+<nav aria-label="Site"><a href="/tools/">All tools</a><a href="/services/">Services</a><a href="/cbam-desk/">CBAM Desk</a><a href="/contact/">Contact</a></nav>
+</div></header>
+<main class="wrap" id="main">
+<div class="intro">
+<span class="eyebrow">Carbon Ready Reckoner · v2.1</span>
+<h1>Carbon Ready Reckoner</h1>
+<p>A first estimate of your organisation's annual greenhouse gas footprint, from your bills, delivery notes and expense claims. Enter a year of figures; leave a box blank if it doesn't apply. Nothing you type leaves your browser.</p>
+<p>Uses the UK Government's 2026 conversion factors (DESNZ). Northern Ireland electricity is treated as part of the all-island grid, with a market-based figure from your supplier's fuel mix.</p>
+</div>
+<div class="bench">
+<form class="panel" id="f" autocomplete="off" novalidate>
+<div style="padding:14px 20px 0;display:flex;gap:8px;flex-wrap:wrap"><button type="button" id="example">Load example</button><button type="button" id="clear">Clear all</button></div>
+<p class="banner" id="exbanner" role="status">You are looking at a worked example for a small NI manufacturer. Press <b>Clear all</b> to enter your own figures.</p>
+<section class="grp"><h2>Scope 1: fuels you burn</h2>
+<p>Count fuel <b>used</b>, not fuel bought. For anything stored in a tank or a store, give the year's deliveries and the stock at the start and end of the year (a tank dip). Fuel bought at the pump goes in the fleet rows.</p>
+<div class="row"><label for="gas">Mains natural gas<small>From gas bills. Most show gross kWh.</small></label><input id="gas" inputmode="decimal"><select id="gas_u" aria-label="Gas unit"><option value="kwh">kWh</option><option value="m3">m³</option></select></div>
+<div class="hdr4"><span>Stored fuel</span><span>Delivered</span><span>Opening stock</span><span>Closing stock</span><span></span></div>
+<div class="row4"><label for="kero_del">Heating oil (kerosene)<small>28-second oil, as in most NI boilers</small></label><input id="kero_del" inputmode="decimal" aria-label="Heating oil (kerosene): delivered"><input id="kero_open" inputmode="decimal" aria-label="Heating oil (kerosene): opening stock"><input id="kero_close" inputmode="decimal" aria-label="Heating oil (kerosene): closing stock"><span class="unit">litres</span></div>
+<div class="row4"><label for="gasoil_del">Gas oil (red diesel)<small>Plant, generators</small></label><input id="gasoil_del" inputmode="decimal" aria-label="Gas oil (red diesel): delivered"><input id="gasoil_open" inputmode="decimal" aria-label="Gas oil (red diesel): opening stock"><input id="gasoil_close" inputmode="decimal" aria-label="Gas oil (red diesel): closing stock"><span class="unit">litres</span></div>
+<div class="row4"><label for="lpg_del">LPG<small>Bulk tank or cylinders, incl. forklifts</small></label><input id="lpg_del" inputmode="decimal" aria-label="LPG: delivered"><input id="lpg_open" inputmode="decimal" aria-label="LPG: opening stock"><input id="lpg_close" inputmode="decimal" aria-label="LPG: closing stock"><span class="unit">litres</span></div>
+<div class="row4"><label for="fueloil_del">Heavy fuel oil<small></small></label><input id="fueloil_del" inputmode="decimal" aria-label="Heavy fuel oil: delivered"><input id="fueloil_open" inputmode="decimal" aria-label="Heavy fuel oil: opening stock"><input id="fueloil_close" inputmode="decimal" aria-label="Heavy fuel oil: closing stock"><span class="unit">litres</span></div>
+<div class="row4"><label for="pellets_del">Wood pellets (biomass boiler)<small>Biogenic CO2 is reported separately</small></label><input id="pellets_del" inputmode="decimal" aria-label="Wood pellets (biomass boiler): delivered"><input id="pellets_open" inputmode="decimal" aria-label="Wood pellets (biomass boiler): opening stock"><input id="pellets_close" inputmode="decimal" aria-label="Wood pellets (biomass boiler): closing stock"><span class="unit">tonnes</span></div>
+<div class="row"><label for="diesel">Diesel for company vehicles<small>Pump diesel from fuel cards. If you fill from your own bulk tank, enter fuel used: opening stock + deliveries − closing stock.</small></label><input id="diesel" inputmode="decimal"><span class="unit">litres</span></div>
+<div class="row"><label for="petrol">Petrol for company vehicles<small></small></label><input id="petrol" inputmode="decimal"><span class="unit">litres</span></div>
+<div class="row"><label for="van">Company van mileage<small>Only for owned or leased vans whose fuel is <b>not</b> already in the diesel or petrol rows above. Average diesel van factor.</small></label><input id="van" inputmode="decimal"><select id="van_u" aria-label="Distance unit"><option value="mi">miles</option><option value="km">km</option></select></div>
+<div class="row"><label for="ref_kg">Refrigerant top-ups<small>kg added to air conditioning or chillers in the year (from service records)</small></label><input id="ref_kg" inputmode="decimal"><select id="ref_gas" aria-label="Refrigerant"><option>R410A</option><option>R404A</option><option>R407C</option><option value="R134a">HFC-134a</option><option value="R32">HFC-32 (R32)</option></select></div>
+</section>
+<section class="grp"><h2>Scope 2: electricity you buy</h2>
+<p>Add up the kWh on a year of bills, across all meters.</p>
+<div class="row"><label for="elec">Grid electricity<small></small></label><input id="elec" inputmode="decimal"><span class="unit">kWh</span></div>
+<div class="row"><label for="region">Where is the supply?</label><select id="region" style="grid-column:2/4"><option value="NI">Northern Ireland (all-island grid)</option><option value="GB">Great Britain</option></select></div>
+<div class="row"><label for="supplier">Your supplier (NI)<small>For the market-based figure. Leave as 'Not sure' to use the residual mix.</small></label><select id="supplier" style="grid-column:2/4"><option value="">Not sure</option><option value="3T">3T</option><option value="Budget Energy">Budget Energy</option><option value="Click Energy">Click Energy</option><option value="Electric Ireland">Electric Ireland</option><option value="Flogas">Flogas</option><option value="Go Power">Go Power</option><option value="Power NI">Power NI</option><option value="SSE Airtricity">SSE Airtricity</option></select></div>
+<div class="row"><label for="mkt_g">Supplier or product CO2 figure, if you have one<small>From the fuel mix box on your bill; overrides the choice above</small></label><input id="mkt_g" inputmode="decimal"><span class="unit">g CO2/kWh</span></div>
+</section>
+<section class="grp"><h2>Scope 3: travel, water and waste</h2>
+<p>Car mileage here only for vehicles whose fuel is <em>not</em> in Scope 1, such as staff using their own cars.</p>
+<div class="row"><label for="car">Business mileage in cars</label><input id="car" inputmode="decimal"><select id="car_u" aria-label="Distance unit"><option value="mi">miles</option><option value="km">km</option></select></div>
+<div class="row"><label for="car_f">Typical car fuel</label><select id="car_f" style="grid-column:2/4"><option value="unknown">Not known</option><option value="diesel">Diesel</option><option value="petrol">Petrol</option><option value="hybrid">Hybrid</option><option value="bev">Fully electric</option></select></div>
+<div class="row"><label for="fl_dom">Flights within the UK<small>Belfast to London is about 520 km each way</small></label><input id="fl_dom" inputmode="decimal"><span class="unit">passenger km</span></div>
+<div class="row"><label for="fl_sh">Flights to Europe<small>Belfast to Brussels is about 900 km each way</small></label><input id="fl_sh" inputmode="decimal"><span class="unit">passenger km</span></div>
+<div class="row"><label for="fl_lh">Long-haul flights<small>Belfast to New York is about 5,100 km each way</small></label><input id="fl_lh" inputmode="decimal"><span class="unit">passenger km</span></div>
+<div class="row"><label for="ferry">Ferry with a car<small>Larne to Cairnryan is about 65 km each way</small></label><input id="ferry" inputmode="decimal"><span class="unit">passenger km</span></div>
+<div class="row"><label for="rail">Rail<small></small></label><input id="rail" inputmode="decimal"><span class="unit">passenger km</span></div>
+<div class="row"><label for="water">Mains water supplied<small></small></label><input id="water" inputmode="decimal"><span class="unit">m³</span></div>
+<div class="row"><label for="sewer">Wastewater to sewer<small>The sewerage volume on your bill. Less than supply if water leaves in product or evaporates; more if you have a borehole or drain yards to sewer.</small></label><input id="sewer" inputmode="decimal"><span class="unit">m³</span></div>
+<div class="row"><label for="w_landfill">General waste to landfill<small></small></label><input id="w_landfill" inputmode="decimal"><span class="unit">tonnes</span></div>
+<div class="row"><label for="w_efw">General waste to energy from waste<small></small></label><input id="w_efw" inputmode="decimal"><span class="unit">tonnes</span></div>
+<div class="row"><label for="w_recyc">Dry mixed recycling<small></small></label><input id="w_recyc" inputmode="decimal"><span class="unit">tonnes</span></div>
+<div class="row"><label for="w_food">Food waste to anaerobic digestion<small></small></label><input id="w_food" inputmode="decimal"><span class="unit">tonnes</span></div>
+</section>
+<section class="grp"><h2>About your organisation <span class="unit">(optional)</span></h2>
+<div class="row"><label for="staff">Employees (full-time equivalent)<small></small></label><input id="staff" inputmode="decimal"><span class="unit">FTE</span></div>
+<div class="row"><label for="turnover">Annual turnover<small></small></label><input id="turnover" inputmode="decimal"><span class="unit">£</span></div>
+<div class="row"><label for="output">Annual production<small>A whole-site figure per tonne; not a CBAM product calculation</small></label><input id="output" inputmode="decimal"><span class="unit">tonnes</span></div>
+</section>
+</form>
+<aside class="panel res" aria-live="polite">
+<h2>Estimated annual footprint</h2>
+<p class="total" id="tot">0<span>tCO₂e</span></p>
+<p class="sub">Scopes 1, 2 (location-based) and the partial Scope 3 below</p>
+<div class="scopes">
+<div class="sc"><b>Scope 1</b><i id="s1">0</i><em>fuels and refrigerants</em></div>
+<div class="sc"><b>Scope 2 location</b><i id="s2l">0</i><em>UK grid factor</em></div>
+<div class="sc"><b>Scope 2 market</b><i id="s2m">0</i><em id="mb">supplier fuel mix</em></div>
+<div class="sc"><b>Scope 3 (partial)</b><i id="s3">0</i><em>travel, water, waste, upstream</em></div>
+</div>
+<div class="kv" id="kv"></div>
+<ul class="flags" id="flags"></ul>
+<h2 style="margin-bottom:6px">Biggest sources</h2>
+<div class="bars" id="bars"></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px"><button type="button" class="pri" id="copy">Copy results</button></div>
+<p class="status" id="status"></p>
+<div class="cta"><strong>Turn this into a carbon inventory you can stand behind</strong>
+This is a first estimate, not an inventory. If you need figures for SECR, a tender, a lender or a customer questionnaire, get in touch to talk through what a full inventory would involve: checking the data, filling the gaps and screening all 15 Scope 3 categories. If you also need independent verification, that is a separate engagement with a UKAS-accredited verifier, who reaches their own opinion.
+<ul><li><a href="mailto:robert@robertjpark.co.uk">robert@robertjpark.co.uk</a></li><li>Work mobile: <a href="tel:+447450349480">07450 349480</a></li><li>WhatsApp: @robertjpark</li><li><a href="/services/">Services</a> · <a href="/cbam-desk/">CBAM Desk</a></li></ul></div>
+</aside>
+</div>
+<section class="method">
+<h2>How it's calculated</h2>
+<p>Each figure is multiplied by the matching factor from the <a href="https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2026">UK Government greenhouse gas conversion factors 2026</a> (DESNZ flat file version 1.2, revised 31 July 2026), looked up by its DESNZ ID. Results are tonnes of CO₂ equivalent.</p>
+<ul>
+<li><b>Fuel used, not bought.</b> For stored fuels: opening stock + deliveries − closing stock. An emission happens when fuel is burnt, not when it is delivered.</li>
+<li><b>Northern Ireland electricity.</b> NI is part of the all-island Single Electricity Market, not the GB grid, and DESNZ does not publish a separate NI location-based factor. The location-based figure uses the DESNZ UK factor as a disclosed proxy (DESNZ treats Ireland as an interconnector import). The market-based figure uses your supplier's fuel-mix CO2 figure from the Utility Regulator's Fuel Mix Disclosure 2024, or the SEM residual mix of 341 g/kWh (SEM Committee, SEM-25-060) if you're not sure. Those figures are CO2 only and are for 2024.</li>
+<li><b>Upstream emissions</b> (well-to-tank) are included for every fuel and for electricity, with grid losses, in Scope 3.</li>
+<li><b>Biogenic CO2</b> from the bio share of pump diesel and petrol, and from wood pellets, is shown separately and not added to the scopes.</li>
+<li><b>Flights</b> include the effect of emissions at altitude (radiative forcing). Refrigerants use the Kyoto-gas factors.</li>
+<li><b>Not covered:</b> gas or biogas escaping from pipework, digesters or slurry stores (a Scope 1 fugitive emission; count the methane lost, not burnt); more than one refrigerant (add the others to the total by hand); purchased goods and services, freight, capital goods, commuting and the use of products you sell. For most manufacturers those are the largest part of the footprint: screen all 15 Scope 3 categories before quoting a total.</li>
+<li>The 2026 UK electricity factor is 26% lower than 2025, partly from a change in DESNZ's method (DESNZ major changes report 2026). Recalculate earlier years on the same factors before comparing.</li>
+<li><b>Privacy.</b> The figures you type are kept only in this browser so they are still there next visit; nothing is sent anywhere. Press Clear all to remove them.</li>
+</ul>
+<div class="tbl"><table><thead><tr><th>Key</th><th>DESNZ ID</th><th>Factor</th><th>Unit</th><th>kg CO₂e per unit</th><th>Upstream (WTT)</th><th>Biogenic CO₂</th></tr></thead><tbody id="ftable"></tbody></table></div>
+<p style="font-size:13px">Source files: DESNZ 2026 flat file SHA-256 <code>a9a455ab396dae22…</code>; NI fuel mix (UR FMD 2024 Table 2, SEM-25-060) SHA-256 <code>0f0031c4761fe411…</code>. Built 18 Nov 2026; published 22 Nov 2026.</p>
+</section>
+</main>
+<footer><div class="wrap">An indicative estimate only: not a verified carbon inventory, not professional advice. Created with assistive technology including AI and re-checked against the official sources listed. Robert J. Park · Environment · Carbon · Public Affairs · Larne, Northern Ireland · <a href="/tools/">All tools</a> · <a href="/privacy/">Privacy</a></div></footer>
+<script>
+const F = {"gas_kwh": {"id": "1_100_1004_6_1", "f": 0.18231, "label": "Fuels / Natural gas", "unit": "kWh (Gross CV)", "scope": "Scope 1", "wid": "11_100_1004_6_1", "w": 0.03021}, "gas_m3": {"id": "1_100_1004_1_1", "f": 2.02633, "label": "Fuels / Natural gas", "unit": "cubic metres", "scope": "Scope 1", "wid": "11_100_1004_1_1", "w": 0.3366}, "kero": {"id": "1_101_1010_8_1", "f": 2.54016, "label": "Fuels / Burning oil", "unit": "litres", "scope": "Scope 1", "wid": "11_101_1010_8_1", "w": 0.53078}, "gasoil": {"id": "1_101_1014_8_1", "f": 2.75541, "label": "Fuels / Gas oil", "unit": "litres", "scope": "Scope 1", "wid": "11_101_1014_8_1", "w": 0.62665}, "lpg": {"id": "1_100_1003_8_1", "f": 1.55713, "label": "Fuels / LPG", "unit": "litres", "scope": "Scope 1", "wid": "11_100_1003_8_1", "w": 0.18551}, "fueloil": {"id": "1_101_1013_8_1", "f": 3.17492, "label": "Fuels / Fuel oil", "unit": "litres", "scope": "Scope 1", "wid": "11_101_1013_8_1", "w": 0.69539}, "pellets": {"id": "2_104_1045_15_1", "f": 57.25249, "label": "Bioenergy / Wood pellets", "unit": "tonnes", "scope": "Scope 1", "wid": "12_901_1045_15_1", "w": 177, "bid": "99_104_1045_15_2", "b": 1677.18}, "diesel": {"id": "1_101_1011_8_1", "f": 2.58354, "label": "Fuels / Diesel (average biofuel blend)", "unit": "litres", "scope": "Scope 1", "wid": "11_101_1011_8_1", "w": 0.61101, "bid": "99_604_1011_8_2", "b": 0.14}, "petrol": {"id": "1_101_1017_8_1", "f": 2.075, "label": "Fuels / Petrol (average biofuel blend)", "unit": "litres", "scope": "Scope 1", "wid": "11_101_1017_8_1", "w": 0.58094, "bid": "99_604_1017_8_2", "b": 0.13}, "elec": {"id": "7_400_4000_5_1", "f": 0.13096, "label": "UK electricity / Electricity: UK / kWh", "unit": "kWh", "scope": "Scope 2", "wid": "15_917_4000_5_1", "w": 0.03682}, "td": {"id": "13_402_4000_5_1", "f": 0.01299, "label": "Transmission and distribution / Electricity: UK / kWh", "unit": "kWh", "scope": "Scope 3", "wid": "15_918_4000_5_1", "w": 0.00359}, "car_diesel": {"id": "25_301_3069_4_1", "f": 0.17265, "label": "Business travel- land / Average car / Diesel", "unit": "km", "scope": "Scope 3"}, "car_petrol": {"id": "25_301_3070_4_1", "f": 0.16152, "label": "Business travel- land / Average car / Petrol", "unit": "km", "scope": "Scope 3"}, "car_hybrid": {"id": "25_301_3071_4_1", "f": 0.12961, "label": "Business travel- land / Average car / Hybrid", "unit": "km", "scope": "Scope 3"}, "car_bev": {"id": "25_301_3076_4_1", "f": 0.02951, "label": "Business travel- land / Average car / Battery Electric Vehicle", "unit": "km", "scope": "Scope 3"}, "car_unknown": {"id": "25_301_3074_4_1", "f": 0.16591, "label": "Business travel- land / Average car / Unknown", "unit": "km", "scope": "Scope 3"}, "van": {"id": "5_303_3102_4_1", "f": 0.25716, "label": "Delivery vehicles / Average (up to 3.5 tonnes) / Diesel", "unit": "km", "scope": "Scope 1", "wid": "28_906_3102_4_1", "w": 0.06128}, "fl_dom": {"id": "21_316_3160_11_1", "f": 0.22928, "label": "Business travel- air / Domestic, to/from UK / Average passenger / With RF", "unit": "passenger.km", "scope": "Scope 3"}, "fl_sh": {"id": "21_316_3164_11_1", "f": 0.12576, "label": "Business travel- air / Short-haul, to/from UK / Economy class / With RF", "unit": "passenger.km", "scope": "Scope 3"}, "fl_lh": {"id": "21_316_3170_11_1", "f": 0.11704, "label": "Business travel- air / Long-haul, to/from UK / Economy class / With RF", "unit": "passenger.km", "scope": "Scope 3"}, "ferry": {"id": "23_318_3189_11_1", "f": 0.12933, "label": "Business travel- sea / Car passenger", "unit": "passenger.km", "scope": "Scope 3"}, "rail": {"id": "25_315_3147_11_1", "f": 0.03092, "label": "Business travel- land / National rail", "unit": "passenger.km", "scope": "Scope 3"}, "water": {"id": "17_404_4005_1_1", "f": 0.1913, "label": "Water supply / Water supply", "unit": "cubic metres", "scope": "Scope 3"}, "sewer": {"id": "18_405_4006_1_1", "f": 0.17088, "label": "Water treatment / Water treatment", "unit": "cubic metres", "scope": "Scope 3"}, "w_landfill": {"id": "20_507_5313_15_1", "f": 520.58023, "label": "Waste disposal / Commercial and industrial waste / Landfill", "unit": "tonnes", "scope": "Scope 3"}, "w_efw": {"id": "20_507_5311_15_1", "f": 4.65358, "label": "Waste disposal / Commercial and industrial waste / Combustion", "unit": "tonnes", "scope": "Scope 3"}, "w_recyc": {"id": "20_507_5310_15_1", "f": 4.65358, "label": "Waste disposal / Commercial and industrial waste / Closed-loop", "unit": "tonnes", "scope": "Scope 3"}, "w_food": {"id": "20_507_5293_15_1", "f": 9.00687, "label": "Waste disposal / Organic: food and drink waste / Anaerobic digestion", "unit": "tonnes", "scope": "Scope 3"}, "R404A": {"id": "3_201_2120_3_1", "f": 3943, "label": "Refrigerant & other / R404A / Emissions including only Kyoto products", "unit": "kg", "scope": "Scope 1"}, "R410A": {"id": "3_201_2156_3_1", "f": 1924, "label": "Refrigerant & other / R410A / Emissions including only Kyoto products", "unit": "kg", "scope": "Scope 1"}, "R407C": {"id": "3_201_2135_3_1", "f": 1624, "label": "Refrigerant & other / R407C / Emissions including only Kyoto products", "unit": "kg", "scope": "Scope 1"}, "R134a": {"id": "3_200_2024_3_1", "f": 1300, "label": "Refrigerant & other / HFC-134a / Emissions including only Kyoto products", "unit": "kg", "scope": "Scope 1"}, "R32": {"id": "3_200_2012_3_1", "f": 677, "label": "Refrigerant & other / HFC-32 / Emissions including only Kyoto products", "unit": "kg", "scope": "Scope 1"}};
+const NI = {"suppliers": {"3T": 0, "Budget Energy": 0, "Click Energy": 148, "Electric Ireland": 161, "Flogas": 0, "Go Power": 205, "Power NI": 256, "SSE Airtricity": 0}, "sem_residual_mix": 341, "sem_all_island_average": 163};
+
+function calc(v, F, NI){
+  const L = [], flags = [];
+  const add = (bucket, label, kg) => { if (kg > 0) L.push({bucket, label, kg}); };
+  const g = v.gas_u === "m3" ? F.gas_m3 : F.gas_kwh;
+  add("s1", "Natural gas", v.gas * g.f);
+  add("s3wtt", "Natural gas (upstream)", v.gas * g.w);
+  let bio = 0;
+  const stores = [["kero","Heating oil (kerosene)"],["gasoil","Gas oil"],["lpg","LPG"],["fueloil","Heavy fuel oil"],["pellets","Wood pellets"]];
+  const used = {};
+  for (const [k, lab] of stores) {
+    const del = v[k + "_del"], op = v[k + "_open"], cl = v[k + "_close"];
+    let u = del;
+    if (op !== null || cl !== null) {
+      if (op === null || cl === null) flags.push(lab + ": enter both the opening and the closing stock, or neither. Deliveries used meanwhile.");
+      else u = op + del - cl;
+    } else if (del > 0) flags.push(lab + ": figure is fuel bought. Dip the tank or count the store at the start and end of the year to get fuel used.");
+    if (u < 0) { flags.push(lab + ": closing stock is more than opening stock plus deliveries. Check the figures."); u = 0; }
+    used[k] = u;
+    add("s1", lab, u * F[k].f);
+    add("s3wtt", lab + " (upstream)", u * F[k].w);
+    if (F[k].b) bio += u * F[k].b;
+  }
+  add("s1", "Fleet diesel", v.diesel * F.diesel.f); add("s3wtt", "Fleet diesel (upstream)", v.diesel * F.diesel.w); bio += v.diesel * F.diesel.b;
+  add("s1", "Fleet petrol", v.petrol * F.petrol.f); add("s3wtt", "Fleet petrol (upstream)", v.petrol * F.petrol.w); bio += v.petrol * F.petrol.b;
+  const vanKm = v.van * (v.van_u === "mi" ? 1.609344 : 1);
+  add("s1", "Company vans", vanKm * F.van.f); add("s3wtt", "Company vans (upstream)", vanKm * F.van.w);
+  if (v.van > 0 && v.diesel > 0) flags.push("Company vans: check their fuel is not also in the diesel litres, or it is counted twice.");
+  if (v.ref_kg > 0) { add("s1", "Refrigerant top-ups (" + v.ref_gas + ")", v.ref_kg * F[v.ref_gas].f); }
+  const loc = v.elec * F.elec.f;
+  let mf, mbasis;
+  if (v.mkt_g !== null) { mf = v.mkt_g / 1000; mbasis = "Supplier or product figure entered"; }
+  else if (v.region === "NI") {
+    if (v.supplier && NI.suppliers[v.supplier] !== undefined) { mf = NI.suppliers[v.supplier] / 1000; mbasis = v.supplier + " fuel mix 2024 (Utility Regulator)"; }
+    else { mf = NI.sem_residual_mix / 1000; mbasis = "SEM residual mix 2024 (no supplier chosen)"; }
+  } else { mf = F.elec.f; mbasis = "No supplier figure: UK grid factor used"; }
+  const mkt = v.elec * mf;
+  L.push({bucket: "s2loc", label: "Electricity", kg: loc});
+  add("s3wtt", "Electricity: upstream and grid losses", v.elec * (F.elec.w + F.td.f + F.td.w));
+  if (v.elec > 0 && v.region === "NI") flags.push("Northern Ireland is on the all-island grid. The location-based figure uses the UK grid factor as a disclosed proxy; the market-based figure uses your supplier's fuel mix (CO2 only, 2024 data).");
+  if (v.elec > 0 && v.region !== "NI" && v.mkt_g === null) flags.push("For a market-based figure, enter your supplier's fuel-mix CO2 figure (g/kWh) from your bill.");
+  const carKm = v.car * (v.car_u === "mi" ? 1.609344 : 1);
+  add("s3", "Business car travel", carKm * F["car_" + v.car_f].f);
+  add("s3", "Flights", v.fl_dom * F.fl_dom.f + v.fl_sh * F.fl_sh.f + v.fl_lh * F.fl_lh.f);
+  add("s3", "Ferry", v.ferry * F.ferry.f);
+  add("s3", "Rail", v.rail * F.rail.f);
+  let sewer = v.sewer;
+  if (sewer === null) { sewer = v.water; if (v.water > 0) flags.push("Sewer volume not entered: assumed equal to water supplied. Use the sewerage volume on your bill: water that leaves in your product or evaporates is not treated."); }
+  add("s3", "Water supply", v.water * F.water.f);
+  add("s3", "Wastewater treatment", sewer * F.sewer.f);
+  if (v.water > 0 && sewer > v.water) flags.push("More water to sewer than supplied: fine if you have a borehole, rainwater or yard drainage to sewer; note the source.");
+  add("s3", "Waste", v.w_landfill * F.w_landfill.f + v.w_efw * F.w_efw.f + v.w_recyc * F.w_recyc.f + v.w_food * F.w_food.f);
+  const t = b => L.filter(x => x.bucket === b).reduce((a, x) => a + x.kg, 0) / 1000;
+  const s1 = t("s1"), s2l = loc / 1000, s2m = mkt / 1000, s3 = t("s3") + t("s3wtt");
+  return {L, flags, used, s1, s2l, s2m, s3, bio: bio / 1000, totL: s1 + s2l + s3, totM: s1 + s2m + s3, mbasis, mf};
+}
+if (typeof module !== "undefined") module.exports = {calc};
+
+const IN = ["gas","kero_del","kero_open","kero_close","gasoil_del","gasoil_open","gasoil_close","lpg_del","lpg_open","lpg_close","fueloil_del","fueloil_open","fueloil_close","pellets_del","pellets_open","pellets_close","diesel","petrol","ref_kg","elec","mkt_g","car","van","fl_dom","fl_sh","fl_lh","ferry","rail","water","sewer","w_landfill","w_efw","w_recyc","w_food","staff","turnover","output"];
+const SEL = ["gas_u","ref_gas","region","supplier","car_u","car_f","van_u"];
+const NULLABLE = new Set(["kero_open","kero_close","gasoil_open","gasoil_close","lpg_open","lpg_close","fueloil_open","fueloil_close","pellets_open","pellets_close","mkt_g","sewer"]);
+const EX = {gas:"", kero_del:"18000", kero_open:"1200", kero_close:"900", gasoil_del:"3000", lpg_del:"2500", lpg_open:"400", lpg_close:"600", diesel:"9000", petrol:"600", ref_kg:"2.5", ref_gas:"R410A", elec:"220000", region:"NI", supplier:"Power NI", car:"30000", car_u:"mi", car_f:"diesel", fl_dom:"6240", fl_sh:"3600", ferry:"1560", rail:"800", water:"900", sewer:"855", w_landfill:"24", w_recyc:"9", w_food:"1.5", staff:"25", turnover:"3500000", output:"1200"};
+const $ = id => document.getElementById(id);
+const BAD = new Set();
+const parse = s => { const t = String(s).trim().replace(/[\s£]/g,""); if (t === "") return null; if (!/^(\d{1,3}(,\d{3})+|\d+)(\.\d+)?$/.test(t)) return NaN; const v = parseFloat(t.replace(/,/g,"")); return isFinite(v) && v <= 1e12 ? v : NaN; };
+function read(){ const v = {}; BAD.clear(); IN.forEach(k => { let p = parse($(k).value); if (Number.isNaN(p)) { BAD.add(k); p = null; $(k).setAttribute("aria-invalid","true"); } else $(k).removeAttribute("aria-invalid"); v[k] = NULLABLE.has(k) ? p : (p || 0); }); SEL.forEach(k => v[k] = $(k).value); return v; }
+const fmt = t => t >= 100 ? Math.round(t).toLocaleString("en-GB") : t.toLocaleString("en-GB",{maximumFractionDigits:1});
+let last = null;
+function render(){
+  const v = read(), r = calc(v, F, NI); last = {v, r};
+  $("tot").firstChild.nodeValue = fmt(r.totL);
+  $("s1").textContent = fmt(r.s1); $("s2l").textContent = fmt(r.s2l); $("s2m").textContent = fmt(r.s2m); $("s3").textContent = fmt(r.s3);
+  $("mb").textContent = r.mbasis;
+  const kv = [["Total, market-based Scope 2", fmt(r.totM) + " t"]];
+  if (r.bio > 0) kv.push(["Biogenic CO₂, outside the scopes", fmt(r.bio) + " t"]);
+  if (v.staff > 0) kv.push(["Per employee", fmt(r.totL / v.staff) + " t"]);
+  if (v.turnover > 0) kv.push(["Per £1m turnover", fmt(r.totL / (v.turnover / 1e6)) + " t"]);
+  if (v.output > 0) kv.push(["Whole site, per tonne produced", (r.totL / v.output).toLocaleString("en-GB",{maximumFractionDigits:3}) + " t"]);
+  $("kv").innerHTML = kv.map(x => `<div><span>${x[0]}</span><span>${x[1]}</span></div>`).join("");
+  const lab = k => { const el = document.querySelector(`label[for="${k}"]`) || document.querySelector(`label[for="${k.replace(/_(del|open|close)$/,"_del")}"]`); return el ? el.firstChild.textContent.trim() : k; };
+  const bad = [...BAD].map(k => `Not counted, not a valid number: ${lab(k)}${/_(open|close)$/.test(k) ? (k.endsWith("open") ? " (opening stock)" : " (closing stock)") : ""}. Use digits only, e.g. 12500 or 12,500.5.`);
+  $("flags").innerHTML = [...bad, ...r.flags].map(x => `<li>${x}</li>`).join("");
+  $("exbanner").hidden = !isEx();
+  const s = r.L.filter(x => x.kg > 0).sort((a,b) => b.kg - a.kg), mx = s.length ? s[0].kg : 1;
+  $("bars").innerHTML = s.slice(0,8).map(x => `<div class="bar"><span>${x.label}</span><span class="val">${fmt(x.kg/1000)} t</span><div class="track"><div class="fill" style="width:${Math.max(1.5,x.kg/mx*100).toFixed(1)}%"></div></div></div>`).join("") || "<p>Nothing entered yet.</p>";
+  try { localStorage.setItem("rjp-reckoner-v2", JSON.stringify(Object.fromEntries([...IN,...SEL].map(k => [k,$(k).value])))); } catch(e) {}
+}
+function isEx(){ return [...IN,...SEL].every(k => (EX[k] === undefined ? (IN.includes(k) ? $(k).value === "" : true) : $(k).value === EX[k])); }
+function fill(o){ [...IN,...SEL].forEach(k => { if (o[k] !== undefined) $(k).value = o[k]; else if (IN.includes(k)) $(k).value = ""; }); }
+$("f").addEventListener("input", render); $("f").addEventListener("change", render);
+$("example").onclick = () => { fill(EX); render(); };
+$("clear").onclick = () => { IN.forEach(k => $(k).value = ""); render(); };
+$("copy").onclick = async () => { if (!last) return; const r = last.r;
+  const t = ["Carbon Ready Reckoner v2.1 estimate (DESNZ 2026 factors)", `Total (location-based Scope 2): ${fmt(r.totL)} tCO2e`, `Total (market-based Scope 2): ${fmt(r.totM)} tCO2e`,
+    `Scope 1: ${fmt(r.s1)} t | Scope 2 location: ${fmt(r.s2l)} t | Scope 2 market: ${fmt(r.s2m)} t (${r.mbasis}) | Scope 3 (partial): ${fmt(r.s3)} t`,
+    r.bio > 0 ? `Biogenic CO2 outside scopes: ${fmt(r.bio)} t` : "", "", ...r.flags.map(x => "Note: " + x), "", "Indicative only, not verified. Robert J. Park, robert@robertjpark.co.uk, 07450 349480, robertjpark.co.uk/tools/carbon-ready-reckoner.html"].filter(x => x !== "").join("\n");
+  try { await navigator.clipboard.writeText(t); $("status").textContent = "Results copied."; } catch(e) { $("status").textContent = "Your browser blocked copying: select the figures and copy them by hand."; } };
+$("ftable").innerHTML = Object.entries(F).map(([k,x]) => `<tr><td>${k}</td><td><code>${x.id}</code></td><td>${x.label}</td><td>${x.unit}</td><td class="n">${x.f.toLocaleString("en-GB",{maximumFractionDigits:5})}</td><td class="n">${x.w !== undefined ? x.w.toLocaleString("en-GB",{maximumFractionDigits:5}) : "–"}</td><td class="n">${x.b !== undefined ? x.b.toLocaleString("en-GB",{maximumFractionDigits:5}) : "–"}</td></tr>`).join("");
+let saved = null; try { saved = JSON.parse(localStorage.getItem("rjp-reckoner-v2")); } catch(e) {}
+fill(saved && typeof saved === "object" ? saved : EX); render();
+</script>
+</body>
+</html>
