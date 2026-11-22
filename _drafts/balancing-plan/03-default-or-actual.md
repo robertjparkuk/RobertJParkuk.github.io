@@ -23,7 +23,7 @@ Chasing actual data pays when:
 
 > (default value − actual emissions) × tonnes imported × CBAM rate > cost of getting verified data
 
-For most small Northern Ireland importers in 2027, **it does not pay**. The CBAM rate starts low (about £19 a tonne of steel on HMRC's 2027 illustration; about £3 to £4 a tonne of ammonium nitrate fertiliser on HMRC's draft defaults), so the saving per tonne is small, and a verifier's fee is not.
+For most small Northern Ireland importers in 2027, **it does not pay**. The CBAM rate starts low (about £26 a tonne of many steel goods on the CBAM Desk worked example, 2.722 tCO2e × £9.69; about £3 to £4 a tonne of ammonium nitrate fertiliser on HMRC's draft defaults) *[one CBAM figure across the site: Robert to decide]*, so the saving per tonne is small, and a verifier's fee is not.
 
 ## When it does pay
 
