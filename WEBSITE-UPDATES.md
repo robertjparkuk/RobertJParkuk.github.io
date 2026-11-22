@@ -25,6 +25,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.51.0 — 22 November 2026: element deep dives, batch 1 (32 elements), with readers' contributions
+
+*Robert, 21 November 2026: "deep dive on all elements with the focus on climate, carbon, land, soil, health and everything we co-work on", one page per element, about 400 words, our work first; and "I'd like people that visit the site to add their own knowledge too".*
+
+- New pages at `/learn/elements/<name>/` for 32 elements (H, C, N, O, F, Na, Mg, Al, Si, P, S, Cl, K, Ca, Fe, Cu, Zn, Mn, Ni, Co, Li, Pb, Hg, Cd, As, Cr, Se, Mo, Rn, U, Ag, Br): climate and carbon, land soil and water, health and safety, industry and supply, Northern Ireland where relevant, remarkable compounds, discovery. Index at `/learn/elements/` lists all 118 with the rest marked coming soon.
+- Readers' contributions: every page has an "Add what you know" box that opens a pre-filled email. Approved notes go in `_data/element_notes.yml` and show under "From readers". Static site, no third-party scripts, nothing stored by the site.
+- The periodic table's click panel links to each deep dive (`data/periodic-table/deep.json`). Learn links to the index.
+- Text in `_scripts/elements/deep_a.py` and `deep_b.py`; rebuild with `python3 _scripts/elements/build_deep.py .`.
+
 ### v0.50.0 — 22 November 2026: Elements of the land posts released on a schedule
 
 *Robert, 21 November 2026: "just get ready to publish them". Ready on merge; nothing goes out until merged.*
