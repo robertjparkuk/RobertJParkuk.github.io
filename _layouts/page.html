@@ -6,5 +6,12 @@ layout: default
   {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
   <div class="prose">
     {{ content }}
+    {% if page.element and site.data.element_law and site.data.element_law[page.element] %}{% assign law = site.data.element_law[page.element] %}
+    <section class="element-law" id="law" aria-labelledby="law-h">
+      <h2 id="law-h">Law and handling</h2>
+      <p><em>Where {{ law.name | downcase }} comes from, how it must be handled, how it forms compounds, and its effects on climate, carbon and the environment, with the law on each in Northern Ireland, the UK and, under the Windsor Framework, the EU. Research notes as at 22 November 2026, not legal advice. For any customs or commodity-code question, a customs specialist is needed. <a href="{{ '/learn/elements/law/' | relative_url }}">The law on every element</a>.</em></p>
+      {{ law.html }}
+    </section>
+    {% endif %}
   </div>
 </article>

@@ -25,6 +25,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.54.0 — 22 November 2026: the law on every element
+
+*Robert, 22 November 2026: "on each element provide a legal briefing for its source, how to handle it, how it forms compounds, how it affects climate, carbon and the environment". All 118 now.*
+
+- `_data/element_law.yml`: a legal briefing for all 118 elements (source; handling; compounds; climate, carbon and environment; not yet verified; sources), written against a checked legal frame for NI, the UK and the EU under the Windsor Framework.
+- `_layouts/page.html`: any page with `element:` in its front matter now shows a "Law and handling" section from the data file, so new deep dives pick it up without edits.
+- New page `/learn/elements/law/` with all 118 briefings, for elements that do not yet have a deep dive. Linked from the Learn page.
+- Research notes as at 22 November 2026, not legal advice. Hazard classifications for some elements come from secondary copies of CLP Annex VI and are flagged for checking.
+
 ### v0.53.0 — 22 November 2026: element deep dives, batch 2 (27 more), plus quirks, engineering, politics and commerce
 
 *Robert, 22 November 2026: "keep writing papers and deep dive them for quirks as well as the wider application in climate, soil, engineering, politics, commerce".*

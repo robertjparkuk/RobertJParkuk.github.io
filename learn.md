@@ -16,6 +16,8 @@ Each element is getting its own deep-dive page too, with its quirks and its part
 
 Read [why I built it]({{ '/blog/2026/11/a-briefing-on-every-element/' | relative_url }}), or find it with the other [dashboards]({{ '/dashboards/' | relative_url }}).
 
+[The law on every element]({{ '/learn/elements/law/' | relative_url }}) gives a legal briefing on all 118: where each comes from, how it must be handled, how it forms compounds, and its effects on climate, carbon and the environment, with the law in Northern Ireland, the UK and, under the Windsor Framework, the EU. The same briefing appears as "Law and handling" on each element's deep-dive page.
+
 Eight elements have a full briefing of their own, with safety and COSHH notes, UN numbers and the compounds you meet in nature, manufacturing and the climate. Download them as PDFs:
 
 - [Phosphorus]({{ '/assets/briefings/elements/phosphorus-briefing.pdf' | relative_url }}): the nutrient behind Lough Neagh's algal blooms
