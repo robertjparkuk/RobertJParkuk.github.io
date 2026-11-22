@@ -31,9 +31,25 @@ Hydrogen sulfide from slurry mixing kills; it deadens the sense of smell at high
 
 Sulfuric acid, the most produced industrial chemical, makes fertiliser, batteries and much else. Most sulfur is now recovered from oil and gas.
 
+## Engineering
+
+Sulfur concrete needs no water and resists acid.
+
+## Politics and trade
+
+Clean-air laws and the 2020 ship-fuel cap cut sulfur emissions sharply.
+
+## Commerce
+
+Most sulfur is a by-product of oil and gas refining.
+
 ## In Northern Ireland
 
 Slurry is one of the four main causes of death and serious injury on Northern Ireland's farms, HSENI reports.
+
+## Quirks
+
+Brimstone in the Bible is sulfur. Sulfur crystals crack in the warmth of your hand.
 
 ## Remarkable compounds
 

@@ -12,7 +12,7 @@ description: "Plain-English carbon explainers for Northern Ireland businesses, c
 
 The [interactive periodic table]({{ '/tools/periodic-table.html' | relative_url }}) has a short briefing on all 118 elements, from hydrogen to oganesson. Hover over an element for what it means for climate, greenhouse gases, the air, land, soil, water and health. Click it for where it occurs in nature, its part in pollution, how it is made and used, its health effects and hazards, and how it was discovered.
 
-Each element is getting its own deep-dive page too, starting with the 32 most tied to climate, land, soil and health: [see the element deep dives]({{ '/learn/elements/' | relative_url }}). You can add what you know on every page.
+Each element is getting its own deep-dive page too, with its quirks and its part in climate, soil, engineering, politics and commerce, starting with those most tied to our work: [see the element deep dives]({{ '/learn/elements/' | relative_url }}). You can add what you know on every page.
 
 Read [why I built it]({{ '/blog/2026/11/a-briefing-on-every-element/' | relative_url }}), or find it with the other [dashboards]({{ '/dashboards/' | relative_url }}).
 

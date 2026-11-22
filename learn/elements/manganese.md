@@ -29,6 +29,22 @@ An essential trace nutrient; long exposure to welding or mining fume affects the
 
 Steel, aluminium drink cans, batteries and fertiliser trace elements.
 
+## Engineering
+
+Manganese steel gets harder as it is hammered, so it is used in rock crushers and rail crossings.
+
+## Politics and trade
+
+Deep-sea mining for manganese nodules is a live international dispute.
+
+## Commerce
+
+South Africa supplies much of the world's manganese ore.
+
+## Quirks
+
+Cave paintings at Lascaux used manganese oxide for black.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

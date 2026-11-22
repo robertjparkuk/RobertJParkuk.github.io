@@ -29,9 +29,25 @@ There is no safe level of lead for children; it lowers IQ. Lead pipes survive in
 
 Batteries, radiation shielding, roofing and cable sheathing.
 
+## Engineering
+
+Lead blocks X-rays and gamma rays, so it lines X-ray rooms.
+
+## Politics and trade
+
+Leaded petrol was finally phased out worldwide in 2021.
+
+## Commerce
+
+Lead-acid batteries are recycled at very high rates.
+
 ## In Northern Ireland
 
 Older homes in Northern Ireland can still have lead supply pipes; NI Water gives advice on replacing them.
+
+## Quirks
+
+The Romans sweetened wine with lead acetate, 'sugar of lead'.
 
 ## Remarkable compounds
 

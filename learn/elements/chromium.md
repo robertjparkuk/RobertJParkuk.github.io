@@ -29,6 +29,22 @@ Chromium(III) is a trace nutrient; chromium(VI) causes lung cancer and skin ulce
 
 Stainless steel, chrome plating, leather tanning and pigments.
 
+## Engineering
+
+Stainless steel needs at least about 10.5% chromium to resist rust.
+
+## Politics and trade
+
+Hexavalent chromium is tightly restricted under REACH.
+
+## Commerce
+
+South Africa and Kazakhstan supply most chromite.
+
+## Quirks
+
+Chromium gives rubies their red and emeralds their green.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

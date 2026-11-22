@@ -29,6 +29,22 @@ Essential for life. Oxygen-enriched air makes clothing and hair burn fiercely, w
 
 Steelmaking, hospitals, water treatment and welding use oxygen separated from air. Oxy-fuel combustion makes CO₂ capture easier.
 
+## Engineering
+
+Oxygen lances cut steel; oxygen-blown converters make most of the world's steel.
+
+## Politics and trade
+
+Medical oxygen shortages became a political issue during the pandemic.
+
+## Commerce
+
+Made in bulk by air-separation plants, often beside steelworks and hospitals.
+
+## Quirks
+
+Liquid oxygen is pale blue and sticks to a magnet.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

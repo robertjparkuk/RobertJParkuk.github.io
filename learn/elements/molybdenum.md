@@ -29,6 +29,22 @@ An essential trace nutrient for people and stock. Molybdenum trioxide: Carc. 2.
 
 Stainless and tool steels, catalysts and lubricants.
 
+## Engineering
+
+Molybdenum keeps steel strong at high temperatures, in boilers and pipelines.
+
+## Politics and trade
+
+Mostly mined in China, Chile and the US.
+
+## Commerce
+
+Much molybdenum is a by-product of copper mining.
+
+## Quirks
+
+Its name comes from Greek for 'lead', because it was long mistaken for lead.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

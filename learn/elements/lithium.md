@@ -29,6 +29,22 @@ Lithium salts treat bipolar disorder, with a narrow safe range. Lithium metal re
 
 Batteries, ceramics, glass, greases and aluminium alloys. On the UK critical minerals list.
 
+## Engineering
+
+Lithium is the lightest metal; it floats on water (while reacting with it).
+
+## Politics and trade
+
+Several countries have nationalised or tightly controlled lithium resources.
+
+## Commerce
+
+Prices have boomed and crashed several times since 2020.
+
+## Quirks
+
+7 Up originally contained lithium citrate as a mood lifter until 1948.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

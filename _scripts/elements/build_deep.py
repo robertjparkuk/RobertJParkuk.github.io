@@ -18,10 +18,14 @@ from briefings_d import B as BD
 from featured import F
 from deep_a import D as DA
 from deep_b import D as DB
+from deep_c import D as DC
+from deep_supp import S as SUPP
 
 ROOT = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else '.')
 BRIEF = {**BA, **BB, **BC, **BD}
-DEEP = {**DA, **DB}
+DEEP = {**DA, **DB, **DC}
+for _k, _v in SUPP.items():
+    DEEP[_k] = {**DEEP[_k], **_v}
 CHECKED = '21 November 2026'
 OUT = os.path.join(ROOT, 'learn', 'elements')
 
@@ -43,6 +47,8 @@ def page(z, sym, name, wt, cat):
         feat = (f"\n**Full briefing:** {name} is one of the eight *Elements of the land* briefings, with COSHH, exposure limits, UN numbers "
                 f"and the rules in Northern Ireland. [Download the PDF]({{{{ '{F[sym]['pdf']}' | relative_url }}}}).\n")
     ni = f"\n## In Northern Ireland\n\n{d['ni']}\n" if d.get('ni') else ''
+    extra = ''.join(f"\n## {h}\n\n{d[k]}\n" for k, h in (('engineering', 'Engineering'), ('politics', 'Politics and trade'), ('commerce', 'Commerce')) if d.get(k))
+    quirk = f"\n## Quirks\n\n{d['quirks']}\n" if d.get('quirks') else ''
     return f"""---
 layout: page
 title: "{name} ({sym})"
@@ -73,7 +79,7 @@ element: {sym}
 ## Industry and supply
 
 {d['industry']}
-{ni}
+{extra}{ni}{quirk}
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |
@@ -110,7 +116,7 @@ def index():
 layout: page
 title: "The elements: a deep dive on each"
 permalink: /learn/elements/
-lead: "A plain-English page on each element: what it means for climate and carbon, land, soil and water, health and safety, industry, and its most remarkable compounds."
+lead: "A plain-English page on each element: what it means for climate and carbon, land, soil and water, health and safety, engineering, politics and trade, and commerce, with its quirks and most remarkable compounds."
 description: "Deep dives on the chemical elements for Northern Ireland: climate, carbon, land, soil, water, health and remarkable compounds, with a way to add what you know."
 ---
 

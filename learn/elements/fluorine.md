@@ -31,9 +31,25 @@ Fluoride protects teeth in small amounts and damages teeth and bone in excess. H
 
 Fluorspar becomes hydrogen fluoride, the start of refrigerants, PTFE, battery salts and the uranium hexafluoride used in enrichment.
 
+## Engineering
+
+PTFE is so slippery that almost nothing sticks to it.
+
+## Politics and trade
+
+Northern Ireland follows EU F-gas rules and Great Britain its own, so engineers work to two rulebooks.
+
+## Commerce
+
+Refrigerant prices rise as quotas tighten.
+
 ## In Northern Ireland
 
 NI Water has never fluoridated the public supply since it was set up in 2007; Ireland has fluoridated since 1964.
+
+## Quirks
+
+Several chemists were poisoned trying to isolate fluorine before Henri Moissan succeeded in 1886.
 
 ## Remarkable compounds
 

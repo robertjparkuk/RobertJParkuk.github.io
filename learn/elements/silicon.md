@@ -29,6 +29,22 @@ Respirable crystalline silica from cutting stone, concrete and engineered workto
 
 Chips, solar cells, glass, concrete, silicones and aluminium alloys. Silicon is on the UK critical minerals list.
 
+## Engineering
+
+Silicon chips are made from crystals grown to 99.9999999% purity.
+
+## Politics and trade
+
+Chip supply chains have become a matter of national security.
+
+## Commerce
+
+China dominates solar-grade silicon production.
+
+## Quirks
+
+Silicon Valley is named after silicon chips, not silicone.
+
 ## Remarkable compounds
 
 | Compound | Why it is remarkable |

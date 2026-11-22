@@ -31,9 +31,25 @@ Essential for bones and DNA. White phosphorus is very toxic and catches fire by 
 
 Phosphate rock becomes fertiliser, food additives, detergents, flame retardants and LFP batteries. Phosphorus is on the UK critical minerals list.
 
+## Engineering
+
+Phosphorus recovery from sewage is being built into treatment works.
+
+## Politics and trade
+
+Phosphate rock is concentrated in Morocco and Western Sahara, a disputed territory.
+
+## Commerce
+
+Fertiliser phosphate prices spiked in 2008 and 2022.
+
 ## In Northern Ireland
 
 Lough Neagh supplies around two-fifths of Northern Ireland's drinking water. DAERA's new Nutrients Action Programme for 2027–2030 targets the phosphorus surplus.
+
+## Quirks
+
+Discovered in 1669 by an alchemist boiling down urine in search of gold.
 
 ## Remarkable compounds
 

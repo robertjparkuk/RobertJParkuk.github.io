@@ -31,9 +31,25 @@ Long-term exposure causes lung cancer, especially in smokers. UKHSA's action lev
 
 No industrial use of note; radon test detectors are simple and cheap.
 
+## Engineering
+
+A radon sump with a small fan can cut indoor levels dramatically.
+
+## Politics and trade
+
+Radon policy depends on building regulations and voluntary home testing.
+
+## Commerce
+
+Radon test kits are cheap; remediation costs are modest for most homes.
+
 ## In Northern Ireland
 
 New buildings in radon affected areas must include protection under the Building Regulations (Northern Ireland).
+
+## Quirks
+
+Radon spas in Europe still advertise radon baths as therapy.
 
 ## Remarkable compounds
 

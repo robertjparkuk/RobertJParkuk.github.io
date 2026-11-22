@@ -29,9 +29,25 @@ Essential for blood. Iron tablets are a common cause of poisoning in young child
 
 Steel for buildings, vehicles, machinery and rebar.
 
+## Engineering
+
+Steel is iron with a little carbon; stainless steel adds chromium.
+
+## Politics and trade
+
+Steel is covered by CBAM and is at the centre of trade disputes and tariffs.
+
+## Commerce
+
+Scrap steel is recycled more than any other material.
+
 ## In Northern Ireland
 
 Iron ore and bauxite were once mined from the laterite between the Antrim lava flows.
+
+## Quirks
+
+The Earth's core is mostly iron, which creates the magnetic field that protects us from solar wind.
 
 ## Remarkable compounds
 

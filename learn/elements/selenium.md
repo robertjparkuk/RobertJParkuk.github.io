@@ -29,9 +29,25 @@ Essential in small amounts; toxic in excess. Brazil nuts are a rich source. Sele
 
 Glass decolouriser, electronics, pigments and feed supplements.
 
+## Engineering
+
+Selenium made the first photocopiers work, because it conducts better in light.
+
+## Politics and trade
+
+Selenium supplements for livestock are regulated as feed additives.
+
+## Commerce
+
+Mostly a by-product of copper refining.
+
 ## In Northern Ireland
 
 White muscle disease in lambs and calves is linked to low selenium in grass, common on Irish and Northern Irish soils.
+
+## Quirks
+
+Garlic breath can come from selenium: workers exposed to it smell of garlic.
 
 ## Remarkable compounds
 

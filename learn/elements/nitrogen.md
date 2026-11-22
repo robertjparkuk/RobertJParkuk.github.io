@@ -31,9 +31,25 @@ Nitrate in drinking water is limited to protect babies. Nitrogen dioxide from tr
 
 The Haber–Bosch process makes ammonia from air and gas and feeds about half the world. Nitrogen also makes explosives, nylon and the inert gas in crisp packets.
 
+## Engineering
+
+Liquid nitrogen freezes food fast and shrink-fits engine parts.
+
+## Politics and trade
+
+Ammonia from farms is one of Northern Ireland's most contested environmental issues.
+
+## Commerce
+
+Fertiliser prices follow natural gas prices closely.
+
 ## In Northern Ireland
 
 97% of Northern Ireland's ammonia comes from agriculture, with cattle around 62% of that, according to DAERA.
+
+## Quirks
+
+Fritz Haber won a Nobel Prize for fixing nitrogen and also led Germany's poison gas programme.
 
 ## Remarkable compounds
 
