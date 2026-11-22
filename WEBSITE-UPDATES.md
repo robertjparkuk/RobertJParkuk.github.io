@@ -25,7 +25,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
-### v0.50.0 — 21 November 2026: the future technologies map
+### v0.52.0 — 22 November 2026: the future technologies map
 
 *Robert, 21 November 2026: publish the map and articles to the Learn section, as a pull request, when all 169 are done.*
 
@@ -34,6 +34,25 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - Learn page: new "Future technologies" section above the explainers. Tools page: new entry.
 - Short link `/go/futuretech/`.
 - Two review panels (facts and law; reader and site), 22 November 2026. Fixed before publishing: EU CBAM stated consistently as not applying in NI with customs-specialist lines; PPWR dates; food waste threshold (5 kg since 2017); planning route for cavern storage; law labels reworded as research notes; mobile article panel; keyboard access to the list view; chip contrast; og tags.
+
+### v0.51.0 — 22 November 2026: element deep dives, batch 1 (32 elements), with readers' contributions
+
+*Robert, 21 November 2026: "deep dive on all elements with the focus on climate, carbon, land, soil, health and everything we co-work on", one page per element, about 400 words, our work first; and "I'd like people that visit the site to add their own knowledge too".*
+
+- New pages at `/learn/elements/<name>/` for 32 elements (H, C, N, O, F, Na, Mg, Al, Si, P, S, Cl, K, Ca, Fe, Cu, Zn, Mn, Ni, Co, Li, Pb, Hg, Cd, As, Cr, Se, Mo, Rn, U, Ag, Br): climate and carbon, land soil and water, health and safety, industry and supply, Northern Ireland where relevant, remarkable compounds, discovery. Index at `/learn/elements/` lists all 118 with the rest marked coming soon.
+- Readers' contributions: every page has an "Add what you know" box that opens a pre-filled email. Approved notes go in `_data/element_notes.yml` and show under "From readers". Static site, no third-party scripts, nothing stored by the site.
+- The periodic table's click panel links to each deep dive (`data/periodic-table/deep.json`). Learn links to the index.
+- Text in `_scripts/elements/deep_a.py` and `deep_b.py`; rebuild with `python3 _scripts/elements/build_deep.py .`.
+
+### v0.50.0 — 22 November 2026: Elements of the land posts released on a schedule
+
+*Robert, 21 November 2026: "just get ready to publish them". Ready on merge; nothing goes out until merged.*
+
+- `published: false` removed from the eight element posts. They go live one a day at the noon rebuild: phosphorus 24 Nov, nitrogen 25, sulfur 26, fluorine 27, antimony 28, magnesium 29, carbon 30 Nov, radon 1 Dec.
+- All "(check)" items cleared: EH40 values re-read against HSE EH40/2005 (stibine has no WEL, corrected); SF₆ switchgear dates from Article 13 of Regulation (EU) 2024/573; China antimony announcements cited by number with status as at 21 Nov 2026; Technical Booklet C and AMD 7 (2022) for radon; EU CRCF Delegated Regulation (EU) 2026/285 for rock weathering.
+- PDFs rebuilt to match.
+- The periodic table now switches each series link from the PDF to the post automatically from 12:30 on the post's date (`post_live_from` in the data), so no rebuild is needed as each post goes out.
+- Antimony post (28 Nov): China's US export-ban suspension ends 27 Nov; update the paragraph if MOFCOM publishes a change.
 
 ### v0.49.3 — 21 November 2026: the periodic table as a dashboard, announced on the blog
 

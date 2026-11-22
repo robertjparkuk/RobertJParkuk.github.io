@@ -1,7 +1,6 @@
 ---
 title: "Fluorine: in your fridge, your frying pan and your teeth"
 date: 2026-11-27 07:30:00 +0000
-published: false   # draft for Robert's review, 21 Nov 2026; one of eight element briefings
 tags: ["Elements", "Learn", "Fluorine", "F-gas", "PFAS", "Water", "Northern Ireland"]
 image: /assets/learn/periodic-table-f.png
 description: "Fluorine in climate, soil, land, agri-food and the air: F-gases, PFAS and fluoride, how to handle fluorine compounds safely, and why Northern Ireland follows different rules from Great Britain."
@@ -67,9 +66,9 @@ COSHH applies. Fluorine gas and hydrogen fluoride are among the most hazardous i
 
 | Substance | Workplace exposure limit (EH40/2005) |
 |---|---|
-| Fluorine | Listed in EH40 (check value before use) |
+| Fluorine | 1 ppm LTEL; 1 ppm STEL |
 | Hydrogen fluoride (as F) | 1.8 ppm LTEL; 3 ppm STEL |
-| Fluorides (as F) | 2.5 mg/m³ LTEL (check) |
+| Fluorides (inorganic, as F) | 2.5 mg/m³ LTEL |
 
 | UN number | Proper shipping name | Class |
 |---|---|---|

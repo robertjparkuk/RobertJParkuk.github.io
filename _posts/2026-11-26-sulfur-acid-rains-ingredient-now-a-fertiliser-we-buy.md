@@ -1,7 +1,6 @@
 ---
 title: "Sulfur: acid rain's ingredient, now a fertiliser we buy"
 date: 2026-11-26 07:30:00 +0000
-published: false   # draft for Robert's review, 21 Nov 2026; one of eight element briefings
 tags: ["Elements", "Learn", "Sulfur", "Air quality", "Slurry", "Agriculture", "Northern Ireland"]
 image: /assets/learn/periodic-table-s.png
 description: "Sulfur in climate, soil, land, agri-food and the air: from acid rain to crop nutrient, slurry gas safety, SF₆ in switchgear, and the rules that apply in Northern Ireland."
@@ -57,7 +56,7 @@ Two things make sulfur relevant here. Livestock farming means slurry and hydroge
 
 - **Workplace:** COSHH applies to hydrogen sulfide and sulfur dioxide. New workplace exposure limits for sulfur dioxide came into force in Northern Ireland on 14 September 2018 ([HSENI](https://www.hseni.gov.uk/news/publication-new-workplace-exposure-limits-implement-4th-directive-indicative-occupational)); see the table.
 - **Air:** the UK's emission reduction commitments cover sulfur dioxide; Defra publishes progress annually.
-- **F-gases:** SF₆ is an F-gas. In Northern Ireland, Regulation (EU) 2024/573 applies under the Windsor Framework, including dates for phasing SF₆ out of new switchgear. In Great Britain the retained 2014-based regime applies. *Check the switchgear dates in Annex IV of Regulation (EU) 2024/573 before relying on them.*
+- **F-gases:** SF₆ is an F-gas. In Northern Ireland, Regulation (EU) 2024/573 applies under the Windsor Framework, which bans F-gases in new medium-voltage switchgear up to 24 kV from 1 January 2026 and from 24 to 52 kV from 1 January 2030. High-voltage switchgear must use gases with a GWP below 1 from 2028 (52–145 kV) and 2032 (above 145 kV). Equipment ordered before 11 March 2024 is exempt ([Article 13](https://eur-lex.europa.eu/eli/reg/2024/573/oj)). In Great Britain the retained 2014-based regime applies.
 - **Shipping:** the 0.50% global sulfur cap under MARPOL Annex VI has applied since 1 January 2020.
 
 ## Safety and handling
@@ -73,8 +72,8 @@ COSHH applies to sulfur and its compounds. On farms, the controlling risk is hyd
 | Sulfur | No specific WEL; general dust limits apply (10 mg/m³ inhalable, 4 mg/m³ respirable) |
 | Hydrogen sulfide | 5 ppm LTEL; 10 ppm STEL |
 | Sulfur dioxide | 0.5 ppm LTEL; 1 ppm STEL (from 2018) |
-| Sulfuric acid (mist) | 0.05 mg/m³ LTEL, thoracic fraction (check) |
-| Sulfur hexafluoride | 1,000 ppm LTEL (check) |
+| Sulfuric acid (mist) | 0.05 mg/m³ LTEL, thoracic fraction |
+| Sulfur hexafluoride | 1,000 ppm LTEL; 1,250 ppm STEL |
 
 | UN number | Proper shipping name | Class |
 |---|---|---|

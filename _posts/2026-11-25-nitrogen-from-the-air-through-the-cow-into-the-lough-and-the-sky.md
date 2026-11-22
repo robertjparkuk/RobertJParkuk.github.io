@@ -1,7 +1,6 @@
 ---
 title: "Nitrogen: from the air, through the cow, into the lough and the sky"
 date: 2026-11-25 07:30:00 +0000
-published: false   # draft for Robert's review, 21 Nov 2026; one of eight element briefings
 tags: ["Elements", "Learn", "Nitrogen", "Ammonia", "Air quality", "Agriculture", "Northern Ireland"]
 image: /assets/learn/periodic-table-n.png
 description: "Nitrogen in climate, soil, land, agri-food and the air: ammonia, nitrate and nitrous oxide, how to handle nitrogen safely, and the rules that apply in Northern Ireland."
@@ -72,8 +71,8 @@ Nitrogen gas is not toxic, but it is a simple asphyxiant: in a confined space it
 | Nitrogen | No WEL: an asphyxiant. Control is by keeping oxygen above safe levels. |
 | Ammonia, anhydrous | 25 ppm LTEL; 35 ppm STEL |
 | Nitrogen dioxide | 0.5 ppm LTEL; 1 ppm STEL (from 2018) |
-| Nitrogen monoxide | 2 ppm LTEL (from 2018; check) |
-| Nitrous oxide | 100 ppm LTEL (check) |
+| Nitrogen monoxide | 2 ppm LTEL (from 2018) |
+| Nitrous oxide | 100 ppm LTEL |
 
 | UN number | Proper shipping name | Class |
 |---|---|---|

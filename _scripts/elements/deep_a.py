@@ -1,0 +1,120 @@
+"""Deep dives, batch 1a. Each element: climate (climate and carbon), land (land, soil
+and water), health (health and safety), industry (industry and supply),
+compounds (remarkable compounds: name, line), ni (Northern Ireland angle, optional).
+General reference, checked 21 November 2026. Figures and rules are sourced in the
+eight featured briefings; elsewhere the text avoids figures that need a source."""
+
+D = {
+'H': dict(
+ climate="Hydrogen burns without CO₂, so it is promoted for steel, fertiliser, shipping and heavy transport. Its climate value depends on how it is made: most today comes from natural gas without capture. Leaked hydrogen also slows the breakdown of methane, so it warms indirectly. Hydrogen is a good covered by EU CBAM.",
+ land="Hydrogen is part of every water molecule and every organic compound in soil. Acidity is hydrogen ions: soil pH measures them, and liming removes them.",
+ health="Hydrogen gas is not toxic but is extremely flammable over a very wide range of mixtures in air, and its flame is almost invisible in daylight. It leaks through tiny gaps and embrittles some steels.",
+ industry="Around half of all hydrogen goes into ammonia for fertiliser; most of the rest goes to oil refining and methanol. Electrolysis powered by wind could make it locally, and stored salt caverns could hold it.",
+ compounds=[("Water (H₂O)", "the compound every other briefing depends on"), ("Hydrogen peroxide (H₂O₂)", "bleach, disinfectant and rocket oxidiser"), ("Heavy water (D₂O)", "water made with deuterium, used to slow neutrons in some reactors; it tastes faintly sweet"), ("Lithium hydride", "stores more hydrogen per litre than liquid hydrogen itself")],
+ ni="Northern Ireland's wind surplus at night is the case for local electrolytic hydrogen; storage in the Larne salt beds has been studied."),
+'C': dict(
+ climate="Carbon is the element climate policy counts. Carbon dioxide and methane are the two largest causes of human-made warming. In Northern Ireland, CO₂ was 61.5% of greenhouse gas emissions in 2023 and methane 30.2%, much of it from cattle and sheep.",
+ land="Soils hold more carbon than the atmosphere and all plants combined. Peat is Northern Ireland's biggest land carbon store; wet peat locks carbon away and drained peat gives it off for decades. Grassland soils gain or lose carbon slowly and the change is hard to measure.",
+ health="Carbon monoxide is the silent killer from boilers and engines. Fine soot (black carbon) damages hearts and lungs. Carbon dioxide collects in pits and slurry stores and can suffocate.",
+ industry="Carbon is the backbone of fuels, plastics and medicines, the reducing agent in blast-furnace steel, and the source of CO₂ in cement. Graphite makes battery anodes; carbon fibre makes wind-turbine blades.",
+ compounds=[("Calcium carbonate", "limestone, chalk and seashells; the largest carbon store on Earth"), ("Methane (CH₄)", "natural gas, and the gas cattle burp"), ("Graphene", "a single sheet of carbon atoms, 200 times stronger than steel by weight"), ("Buckminsterfullerene (C₆₀)", "a football-shaped molecule found in candle soot and in space")],
+ ni="Agriculture was about 31% of Northern Ireland's emissions in 2024. Carbon budgets require average cuts of 33% (2023–27), 48% and 62% against the baseline."),
+'N': dict(
+ climate="Nitrous oxide from fertilised soils and manure is a greenhouse gas about 265 times as strong as CO₂ over a century and lasts over a hundred years. Fertiliser making burns gas, which is why fertilisers fall under EU CBAM and UK CBAM from 2027.",
+ land="Reactive nitrogen leaks three ways: nitrate washes into water, ammonia drifts onto bogs and woodland, and nitrous oxide escapes to the sky. Clover fixes nitrogen from the air for free.",
+ health="Nitrate in drinking water is limited to protect babies. Nitrogen dioxide from traffic harms lungs. Nitrogen gas asphyxiates in tanks and cold rooms without warning.",
+ industry="The Haber–Bosch process makes ammonia from air and gas and feeds about half the world. Nitrogen also makes explosives, nylon and the inert gas in crisp packets.",
+ compounds=[("Ammonia (NH₃)", "the root of nearly all fertiliser"), ("Ammonium nitrate", "fertiliser and, carelessly stored, a cause of disastrous explosions"), ("Nitroglycerine", "both an explosive and a heart medicine for angina"), ("Nitrous oxide", "laughing gas: an anaesthetic, a greenhouse gas and an ozone-depleting substance")],
+ ni="97% of Northern Ireland's ammonia comes from agriculture, with cattle around 62% of that, according to DAERA."),
+'O': dict(
+ climate="Ozone (O₃) is a greenhouse gas and pollutant at ground level, formed from traffic and industrial emissions in sunlight. Oxygen-free conditions in wetlands and slurry are where methane is made.",
+ land="Waterlogged soils run short of oxygen, which turns nitrate into nitrous oxide and mobilises iron and manganese. Rivers starved of oxygen by algal blooms and slurry spills kill fish.",
+ health="Essential for life. Oxygen-enriched air makes clothing and hair burn fiercely, which is why oxygen cylinders need care at home and at work.",
+ industry="Steelmaking, hospitals, water treatment and welding use oxygen separated from air. Oxy-fuel combustion makes CO₂ capture easier.",
+ compounds=[("Ozone (O₃)", "shield in the stratosphere, pollutant at street level"), ("Silica (SiO₂)", "sand and quartz: most of the Earth's crust is oxygen bound to silicon"), ("Iron oxides", "rust, and the red of Antrim's interbasaltic laterite"), ("Liquid oxygen", "pale blue and strongly attracted to a magnet")],
+ ni=None),
+'F': dict(
+ climate="Fluorinated gases (HFCs, SF₆, NF₃) are powerful, long-lived greenhouse gases. HFC-134a warms about 1,300 times as much as CO₂ over a century; SF₆ about 23,500 times. Northern Ireland follows the EU F-gas Regulation (EU) 2024/573; Great Britain its own regime.",
+ land="Phosphate fertiliser carries fluoride onto land. Firefighting foams have left PFAS at airports and training grounds; PFAS barely break down.",
+ health="Fluoride protects teeth in small amounts and damages teeth and bone in excess. Hydrofluoric acid burns can be fatal without specific first aid. Some PFAS are linked to health effects and restrictions are tightening.",
+ industry="Fluorspar becomes hydrogen fluoride, the start of refrigerants, PTFE, battery salts and the uranium hexafluoride used in enrichment.",
+ compounds=[("PTFE", "the non-stick coating discovered by accident in 1938"), ("Uranium hexafluoride", "the gas used to enrich uranium"), ("Sulfur hexafluoride", "a gas so dense it makes your voice deep"), ("Fluoroantimonic acid", "among the strongest acids known, made from fluorine and antimony")],
+ ni="NI Water has never fluoridated the public supply since it was set up in 2007; Ireland has fluoridated since 1964."),
+'Na': dict(
+ climate="Soda ash for glass releases CO₂. Sodium-ion batteries avoid lithium and cobalt and suit grid storage.",
+ land="Road salt raises sodium and chloride in streams and kills verge plants and hedges. Sodium-heavy soils lose their crumb structure and drain badly.",
+ health="Essential for nerves, but too much salt raises blood pressure. Sodium metal reacts violently with water.",
+ industry="Salt is the base of chlorine and caustic soda, glass, soap, food preservation and road gritting.",
+ compounds=[("Sodium chloride", "table salt and road salt"), ("Sodium azide", "the chemical that inflated car airbags, now largely replaced because it is toxic"), ("Sodium bicarbonate", "baking soda"), ("Sodium hydroxide", "caustic soda, used to make soap since antiquity")],
+ ni="Rock salt is mined at Kilroot near Carrickfergus and used for gritting roads across the UK and Ireland."),
+'Mg': dict(
+ climate="Magnesium-rich rocks absorb CO₂ as they weather; spreading crushed basalt on farmland (enhanced rock weathering) is being trialled as carbon removal. Making magnesium metal, mostly in China, is carbon intensive.",
+ land="Magnesium sits at the centre of chlorophyll. Dolomitic lime supplies it; heavy potash and nitrogen dressings make it harder for grass and livestock to take up.",
+ health="Grass tetany (staggers) kills cattle and sheep short of magnesium on lush spring grass. In people, magnesium supports nerves and muscles. Burning magnesium cannot be put out with water.",
+ industry="Light alloys for cars and laptops, refractories, animal feed, fertiliser and de-icing salts. Magnesium is on the UK critical minerals list.",
+ compounds=[("Chlorophyll", "the green pigment built around one magnesium atom"), ("Epsom salt (magnesium sulfate)", "named after the spring at Epsom in Surrey"), ("Magnesium hydroxide", "milk of magnesia and a flame retardant"), ("Struvite", "magnesium ammonium phosphate, recovered from wastewater as fertiliser")],
+ ni="The Antrim Plateau is basalt rich in magnesium minerals, a ready source of rock dust for weathering trials."),
+'Al': dict(
+ climate="Primary aluminium is one of the most electricity-hungry materials and its smelting releases perfluorocarbons. Recycled aluminium uses a small fraction of the energy. Aluminium is a CBAM good in the EU and from 2027 in the UK.",
+ land="Aluminium is the most common metal in soil. In acid soils it dissolves and poisons roots; liming locks it up. Acid rain once released it into upland lakes and killed fish.",
+ health="Low toxicity at normal exposure. Fine aluminium powder is a dust-explosion and fire hazard.",
+ industry="Cans, window frames, cables and vehicle bodies. Bauxite residue ('red mud') is one of the world's largest industrial waste streams.",
+ compounds=[("Alumina (Al₂O₃)", "corundum; ruby and sapphire are coloured alumina"), ("Aluminium sulfate", "used to clear drinking water"), ("Thermite", "aluminium powder and iron oxide, burning hot enough to weld rail track"), ("Zeolites", "aluminium silicate cages used in detergents and to trap ammonia")],
+ ni=None),
+'Si': dict(
+ climate="Silicon is the base of nearly all solar panels. Making silicon metal from quartz and coal is electricity and carbon intensive.",
+ land="Quartz sand and silicate minerals make up most soils. Grasses take up silica to stiffen their leaves.",
+ health="Respirable crystalline silica from cutting stone, concrete and engineered worktops causes silicosis and lung cancer; the UK workplace limit is 0.1 mg/m³.",
+ industry="Chips, solar cells, glass, concrete, silicones and aluminium alloys. Silicon is on the UK critical minerals list.",
+ compounds=[("Quartz", "the commonest mineral in sand"), ("Silicones", "flexible silicon–oxygen polymers in sealants and bakeware"), ("Silica gel", "the drying beads in shoe boxes"), ("Silicon carbide", "harder than almost anything, and used in EV power electronics")],
+ ni=None),
+'P': dict(
+ climate="Phosphorus has no greenhouse gas, but fertiliser making uses energy and phosphorus-rich lakes give off more methane as blooms rot.",
+ land="The main cause of Lough Neagh's algal blooms. Northern Ireland's farms bring in more phosphorus, mostly in feed, than leaves in food, and the surplus builds up in soil. Soil tests and lime come first.",
+ health="Essential for bones and DNA. White phosphorus is very toxic and catches fire by itself in air; red phosphorus on matchboxes is safe.",
+ industry="Phosphate rock becomes fertiliser, food additives, detergents, flame retardants and LFP batteries. Phosphorus is on the UK critical minerals list.",
+ compounds=[("Apatite", "the mineral of phosphate rock, bones and tooth enamel"), ("ATP", "the molecule that carries energy in every living cell"), ("Struvite", "phosphorus recovered from sewage as fertiliser"), ("Phosphine", "a toxic gas used to fumigate grain stores")],
+ ni="Lough Neagh supplies around two-fifths of Northern Ireland's drinking water. DAERA's new Nutrients Action Programme for 2027–2030 targets the phosphorus surplus."),
+'S': dict(
+ climate="Sulfate particles cool the climate; cleaning up coal and ship fuel removed some of that shade. SF₆, the insulating gas in switchgear, is the most potent greenhouse gas in common use.",
+ land="With far less sulfur falling in rain, silage swards and oilseed rape now often need sulfur fertiliser. Pyrite exposed by digging turns to acid; plasterboard in landfill can make hydrogen sulfide.",
+ health="Hydrogen sulfide from slurry mixing kills; it deadens the sense of smell at high levels. Sulfur dioxide irritates the lungs and triggers asthma.",
+ industry="Sulfuric acid, the most produced industrial chemical, makes fertiliser, batteries and much else. Most sulfur is now recovered from oil and gas.",
+ compounds=[("Hydrogen sulfide", "rotten-egg gas from slurry, sewers and bogs"), ("Dimethyl sulfide", "the smell of the seaside, made by plankton; it helps seed clouds"), ("Allicin", "the sulfur compound that gives crushed garlic its bite"), ("Penicillin", "a sulfur-containing antibiotic")],
+ ni="Slurry is one of the four main causes of death and serious injury on Northern Ireland's farms, HSENI reports."),
+'Cl': dict(
+ climate="Chlorine from CFCs destroyed stratospheric ozone; CFCs are also strong greenhouse gases. The Montreal Protocol phased them out, the most successful environmental treaty so far.",
+ land="Road salt and effluent raise chloride in rivers. Persistent organochlorines (DDT, PCBs, dioxins) build up in soils, sediments and food chains.",
+ health="Chlorinating drinking water ended cholera and typhoid outbreaks. Chlorine gas damages lungs; never mix bleach with acid cleaners.",
+ industry="Disinfection, PVC, solvents, medicines and bleach all start from salt split by electricity.",
+ compounds=[("Sodium hypochlorite", "household bleach"), ("PVC", "pipes, window frames and cable sheathing"), ("Chloroform", "one of the first surgical anaesthetics"), ("Sucralose", "a chlorinated sugar 600 times sweeter than sugar")],
+ ni=None),
+'K': dict(
+ climate="Potash mining and transport carry energy costs. Potassium-40 gives every body and every banana a small natural radioactivity.",
+ land="A major crop nutrient, plentiful in slurry. Too much potassium in grass blocks magnesium uptake and raises the risk of grass tetany.",
+ health="Essential for nerves and heartbeat; too high or too low a level affects the heart. Potassium metal reacts violently with water.",
+ industry="Potash fertiliser, soaps, glass, food salt substitutes.",
+ compounds=[("Potassium chloride", "the main potash fertiliser; injected into a sea urchin it makes it release eggs or sperm, a classic school fertilisation experiment"), ("Potassium nitrate", "saltpetre, the oxidiser in gunpowder and a meat cure"), ("Potassium permanganate", "a purple disinfectant and oxidiser"), ("Potassium bitartrate", "cream of tartar, the crystals in wine barrels")],
+ ni=None),
+'Ca': dict(
+ climate="Cement and lime making release CO₂ from limestone itself as well as from fuel; cement is covered by EU and UK CBAM. Lime spread on soil also releases some CO₂.",
+ land="Lime raises soil pH; AFBI's soil testing has found most Northern Ireland fields below the target pH. Calcium carbonate shells and chalk lock up carbon for millions of years.",
+ health="Essential for bones and teeth. Quicklime burns skin and eyes.",
+ industry="Cement, lime, plaster, steelmaking flux and flue-gas cleaning.",
+ compounds=[("Calcium carbonate", "chalk, limestone and eggshell"), ("Gypsum", "plaster and plasterboard"), ("Calcium carbide", "reacts with water to make acetylene, once burned in miners' lamps"), ("Hydroxyapatite", "the mineral of bone")],
+ ni="The white chalk of the Antrim coast sits under black basalt: the two are the backbone of the Causeway Coast."),
+'Fe': dict(
+ climate="Blast-furnace steel is one of the largest industrial CO₂ sources; scrap and hydrogen-based routes cut it. Iron and steel are CBAM goods. Iron in the ocean limits plankton growth in some seas.",
+ land="Iron oxides colour soils red and yellow and bind phosphate. Iron-rich drainage from old mines coats stream beds orange with ochre.",
+ health="Essential for blood. Iron tablets are a common cause of poisoning in young children.",
+ industry="Steel for buildings, vehicles, machinery and rebar.",
+ compounds=[("Haemoglobin", "the iron protein that carries oxygen in blood"), ("Magnetite", "naturally magnetic; birds may use it to navigate"), ("Prussian blue", "the first synthetic pigment and an antidote to radioactive caesium"), ("Pyrite", "fool's gold")],
+ ni="Iron ore and bauxite were once mined from the laterite between the Antrim lava flows."),
+'Cu': dict(
+ climate="Electrification runs on copper: cables, motors, transformers and wind turbines. Mining and smelting are energy intensive and demand is rising.",
+ land="Copper is toxic to aquatic life. Pig slurry, copper fungicides and antifouling paint raise it in soils and sediments.",
+ health="An essential trace nutrient, but sheep are poisoned by small excesses. Copper surfaces kill many bacteria.",
+ industry="Wiring, plumbing, motors, heat exchangers, brass and bronze.",
+ compounds=[("Copper sulfate", "blue crystals used in Bordeaux mixture fungicide"), ("Verdigris", "the green patina on old roofs and statues"), ("Haemocyanin", "the copper protein that makes octopus and crab blood blue"), ("Copper(I) oxide", "red antifouling paint for boats")],
+ ni=None),
+}

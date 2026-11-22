@@ -65,7 +65,11 @@ def data():
             slug = f['post'].rstrip('/').split('/')[-1]
             import glob
             src = glob.glob(os.path.join(ROOT, '_posts', f'*-{slug}.md'))
-            e['post_live'] = bool(src) and not re.search(r'^published:\s*false', open(src[0], encoding='utf-8').read(3000), re.M)
+            head = open(src[0], encoding='utf-8').read(3000) if src else ''
+            held = (not src) or bool(re.search(r'^published:\s*false', head, re.M))
+            d = re.search(r'^date:\s*(\d{4}-\d{2}-\d{2})', head, re.M)
+            # The site rebuilds daily just after noon, so a dated post is live from 12:30 UK time on its date.
+            e['post_live_from'] = None if held or not d else d.group(1) + 'T12:30:00Z'
         out.append(e)
     return out
 

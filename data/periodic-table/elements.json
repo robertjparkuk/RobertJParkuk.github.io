@@ -202,11 +202,11 @@
      ],
      [
       "Carbon monoxide",
-      "20 ppm LTEL; 100 ppm STEL (from 2018; check)"
+      "20 ppm LTEL; 100 ppm STEL"
      ],
      [
       "Graphite",
-      "10 mg/m³ inhalable; 4 mg/m³ respirable (check)"
+      "10 mg/m³ LTEL inhalable; 4 mg/m³ LTEL respirable"
      ]
     ],
     "un": [
@@ -319,7 +319,7 @@
    },
    "briefing_url": "/blog/2026/11/carbon-the-element-we-count/",
    "pdf": "/assets/briefings/elements/carbon-briefing.pdf",
-   "post_live": false
+   "post_live_from": "2026-11-30T12:30:00Z"
   },
   {
    "z": 7,
@@ -377,11 +377,11 @@
      ],
      [
       "Nitrogen monoxide",
-      "2 ppm LTEL (from 2018; check)"
+      "2 ppm LTEL (from 2018)"
      ],
      [
       "Nitrous oxide",
-      "100 ppm LTEL (check)"
+      "100 ppm LTEL"
      ]
     ],
     "un": [
@@ -477,7 +477,7 @@
    },
    "briefing_url": "/blog/2026/11/nitrogen-from-the-air-through-the-cow-into-the-lough-and-the-sky/",
    "pdf": "/assets/briefings/elements/nitrogen-briefing.pdf",
-   "post_live": false
+   "post_live_from": "2026-11-25T12:30:00Z"
   },
   {
    "z": 8,
@@ -548,15 +548,15 @@
     "wels": [
      [
       "Fluorine",
-      "Listed in EH40 (check value before use)"
+      "1 ppm LTEL; 1 ppm STEL"
      ],
      [
       "Hydrogen fluoride (as F)",
       "1.8 ppm LTEL; 3 ppm STEL"
      ],
      [
-      "Fluorides (as F)",
-      "2.5 mg/m³ LTEL (check)"
+      "Fluorides (inorganic, as F)",
+      "2.5 mg/m³ LTEL"
      ]
     ],
     "un": [
@@ -647,7 +647,7 @@
    },
    "briefing_url": "/blog/2026/11/fluorine-in-your-fridge-your-frying-pan-and-your-teeth/",
    "pdf": "/assets/briefings/elements/fluorine-briefing.pdf",
-   "post_live": false
+   "post_live_from": "2026-11-27T12:30:00Z"
   },
   {
    "z": 10,
@@ -755,7 +755,7 @@
     "wels": [
      [
       "Magnesium oxide (as Mg)",
-      "10 mg/m³ LTEL inhalable dust; 4 mg/m³ respirable dust and fume (check)"
+      "10 mg/m³ LTEL inhalable dust; 4 mg/m³ LTEL respirable dust"
      ]
     ],
     "un": [
@@ -835,7 +835,7 @@
    },
    "briefing_url": "/blog/2026/11/magnesium-the-metal-in-every-leaf-and-the-cause-of-grass-staggers/",
    "pdf": "/assets/briefings/elements/magnesium-briefing.pdf",
-   "post_live": false
+   "post_live_from": "2026-11-29T12:30:00Z"
   },
   {
    "z": 13,
@@ -939,15 +939,15 @@
     "wels": [
      [
       "Phosphine",
-      "0.1 ppm LTEL; 0.2 ppm STEL (check)"
+      "0.1 ppm LTEL; 0.2 ppm STEL"
      ],
      [
       "Orthophosphoric acid",
-      "1 mg/m³ LTEL; 2 mg/m³ STEL (check)"
+      "1 mg/m³ LTEL; 2 mg/m³ STEL"
      ],
      [
       "Yellow phosphorus",
-      "0.1 mg/m³ LTEL; 0.3 mg/m³ STEL (check)"
+      "0.1 mg/m³ LTEL; 0.3 mg/m³ STEL"
      ]
     ],
     "un": [
@@ -1037,7 +1037,7 @@
    },
    "briefing_url": "/blog/2026/11/phosphorus-the-nutrient-that-fed-the-farms-and-fouled-the-lough/",
    "pdf": "/assets/briefings/elements/phosphorus-briefing.pdf",
-   "post_live": false
+   "post_live_from": "2026-11-24T12:30:00Z"
   },
   {
    "z": 16,
@@ -1091,11 +1091,11 @@
      ],
      [
       "Sulfuric acid (mist)",
-      "0.05 mg/m³ LTEL, thoracic fraction (check)"
+      "0.05 mg/m³ LTEL, thoracic fraction"
      ],
      [
       "Sulfur hexafluoride",
-      "1,000 ppm LTEL (check)"
+      "1,000 ppm LTEL; 1,250 ppm STEL"
      ]
     ],
     "un": [
@@ -1186,7 +1186,7 @@
    },
    "briefing_url": "/blog/2026/11/sulfur-acid-rains-ingredient-now-a-fertiliser-we-buy/",
    "pdf": "/assets/briefings/elements/sulfur-briefing.pdf",
-   "post_live": false
+   "post_live_from": "2026-11-26T12:30:00Z"
   },
   {
    "z": 17,
@@ -2226,7 +2226,7 @@
      ],
      [
       "Stibine",
-      "0.1 ppm LTEL (check)"
+      "No WEL in EH40 (the antimony limit excludes it); keep exposure as low as reasonably practicable"
      ]
     ],
     "un": [
@@ -2295,7 +2295,7 @@
    },
    "briefing_url": "/blog/2026/11/antimony-the-critical-mineral-nobody-has-heard-of/",
    "pdf": "/assets/briefings/elements/antimony-briefing.pdf",
-   "post_live": false
+   "post_live_from": "2026-11-28T12:30:00Z"
   },
   {
    "z": 52,
@@ -3389,7 +3389,7 @@
    },
    "briefing_url": "/blog/2026/11/radon-the-gas-from-the-ground-a-tighter-house-can-trap/",
    "pdf": "/assets/briefings/elements/radon-briefing.pdf",
-   "post_live": false
+   "post_live_from": "2026-12-01T12:30:00Z"
   },
   {
    "z": 87,
