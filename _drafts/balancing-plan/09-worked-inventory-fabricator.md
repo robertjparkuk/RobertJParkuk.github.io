@@ -14,13 +14,13 @@ sources:
   - Site: Carbon Ready Reckoner; The Scopes Map
 ---
 
-*Clearly fictional: "Larne Steelworks Ltd", 45 staff, makes structural steel frames and agricultural gates.*
+*Clearly fictional: "[name to be checked against Companies House so it matches no real firm]", 45 staff, makes structural steel frames and agricultural gates.*
 
 ## Step 1: Boundary
 Two sites, one owned, one leased. Operational control. Reporting year: calendar 2026.
 
 ## Step 2: Data request
-Twelve months of gas (LPG for the paint oven), electricity, kerosene for office heating, red diesel for the yard telehandler, fleet fuel cards, refrigerant service records, waste transfer notes, water bills, purchase ledger by supplier.
+Twelve months of gas (LPG for the paint oven), electricity, kerosene for office heating, diesel (white, fully duty-paid: manufacturers lost red diesel entitlement on 1 April 2022) for the yard telehandler, fleet fuel cards, refrigerant service records, waste transfer notes, water bills, purchase ledger by supplier.
 
 ## Step 3: First estimate in the Reckoner
 Scopes 1 and 2 and the partial Scope 3 from the Reckoner. *[Run and insert figures.]*

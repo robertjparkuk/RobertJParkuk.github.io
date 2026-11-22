@@ -18,7 +18,7 @@ Very few Northern Ireland firms are directly in scope of the EU's Corporate Sust
 
 ## Three ways CSRD reaches an NI firm
 
-1. **Directly**: only if you are part of a group large enough to be in scope after the Omnibus. *[verify thresholds]*
+1. **Directly**: a Northern Ireland company is not itself an EU undertaking. CSRD reaches it only through an EU subsidiary in scope, or under the third-country rule for groups with over €450 million of EU turnover *[confirm on EUR-Lex]*.
 2. **Through an EU parent**: your data goes into the group report.
 3. **Through EU customers**: the common route. Under the Omnibus, firms averaging up to 1,000 staff can decline value-chain requests beyond the Voluntary Standard for SMEs (VSME) from FY2027.
 

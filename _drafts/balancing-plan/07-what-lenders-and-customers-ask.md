@@ -24,7 +24,7 @@ You are a 60-person firm in Co. Antrim. In one month you get a bank's ESG form, 
 | --- | --- | --- |
 | UK listed customers and lenders | UK SRS (built on ISSB), first reports in 2028 for periods from 1 Jan 2027 | Scope 1 and 2, often Scope 3 estimates; climate risks |
 | EU customers | VSME (the ceiling for firms up to 1,000 staff under the Omnibus) | Energy, emissions, water, waste, workforce basics |
-| UK public buyers | Carbon reduction plan (PPN 006) | Scope 1, 2 and five Scope 3 categories; a net zero commitment |
+| UK central government buyers (NI public buyers follow their own guidance) | Carbon reduction plan (PPN 006 in central government) | Scope 1, 2 and five Scope 3 categories; a net zero commitment |
 
 ## The answer template
 

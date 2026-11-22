@@ -18,7 +18,7 @@ sources:
 
 **When:** qualification is judged on **31 December 2026**; notification is due by **5 December 2027**.
 
-**What has changed since Phase 3:** progress updates now need sign-off by a board-level director, and DESNZ has promised a consultation on aligning SECR and ESOS reporting *[verify status]*.
+**Recent changes:** since Phase 3, progress updates need sign-off by a board-level director, and DESNZ has promised a consultation on aligning SECR and ESOS reporting *[verify status]*.
 
 **Northern Ireland specifics:**
 - Your electricity sits on the all-island market, so savings and carbon are valued differently from GB (see item 28).

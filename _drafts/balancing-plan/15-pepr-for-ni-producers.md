@@ -21,13 +21,13 @@ Packaging extended producer responsibility (pEPR) has applied across the UK, inc
 ## Are you a producer?
 You may be obligated if you are a **brand owner**, **packer or filler**, **importer** of packaged goods, **distributor** of empty packaging, an **online marketplace**, or a **service provider** that hires out reusable packaging.
 
-**Thresholds (to verify):** businesses with turnover over **£1 million** that handle over **25 tonnes** of packaging a year must register and report data. Those over **£2 million** and **50 tonnes** are "large" producers and also pay waste management fees.
+**Thresholds:** businesses with turnover of **£1 million or more** that handle **more than 25 tonnes** of packaging a year must register and report data. Those with turnover of **£2 million or more** and **more than 50 tonnes** are "large" producers: they report every six months, pay waste management fees, and must buy packaging recycling notes (PRNs or PERNs) and submit a certificate of compliance (GOV.UK, Check if you must comply with EPR for packaging).
 
 ## What you report
 Tonnes of packaging by material, by type (household, non-household, primary, shipment), and by how it reaches the market, in each reporting period.
 
 ## The Northern Ireland twist
-Goods in NI also fall under the **EU Packaging and Packaging Waste Regulation**, which has applied here since 12 August 2026, with its own labelling, recyclability and recycled-content rules. An NI firm selling into GB and Ireland can face both. *[Lawyer to confirm how the two interact for a given product.]*
+Parts of the **EU Packaging and Packaging Waste Regulation** apply in NI from 12 August 2026: the product requirements, limits on PFAS and heavy metals, and labelling. Its reuse targets and most waste-management provisions do not apply, and NI stays in UK packaging EPR (DAERA, PPWR FAQs, August 2026). An NI firm selling into GB and Ireland can face both sets of product rules.
 
 ## What to do now
 1. Run the [pEPR checker](#) (item 16) to see if you are in.

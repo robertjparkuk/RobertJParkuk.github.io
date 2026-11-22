@@ -27,7 +27,7 @@ You can say what is **true, specific and evidenced**. "Low-carbon steel" on its 
 - For your own fabrication: your Scope 1 and 2 per tonne, from an inventory.
 
 ## Claims to avoid
-"Green steel", "carbon neutral frames", "net zero gates". Each needs evidence you probably do not have, and the CMA's Green Claims Code expects claims to be truthful, clear, substantiated and to consider the full life cycle.
+"Green steel", "carbon neutral frames", "net zero gates". Each needs evidence you probably do not have, and in business-to-business marketing the Business Protection from Misleading Marketing Regulations 2008 apply; the CMA's Green Claims Code, written for consumer claims, sets the standard most buyers expect: claims to be truthful, clear, substantiated and to consider the full life cycle.
 
 ## A claim that works
 "Our 2027 frames use electric-arc steel with an EPD showing [x] kg CO2e per tonne, about [y]% below the sector average *[source]*."

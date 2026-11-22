@@ -6,7 +6,7 @@ pillar: Pollution; public realm
 audience: NI businesses facing complaints; council environmental health teams; neighbours
 status: DRAFT for panel review, not for publication
 verify:
-  - Statutory nuisance in NI: Pollution Control and Local Government (NI) Order 1978 as amended by the Clean Neighbourhoods and Environment Act (NI) 2011, including artificial light (sections to confirm)
+  - Confirmed by Panel A: statutory nuisance in NI is in the Clean Neighbourhoods and Environment Act (NI) 2011, Part 7: s.63(1)(h) artificial light; s.63(1)(i) and (j) noise; best practicable means defence for light on business premises only (s.65(13)). Check the noise defence wording.
   - Planning conditions route (Planning Act (NI) 2011)
   - Any NI night-noise powers (confirm whether Noise Act 1996 provisions apply in NI)
 sources:
@@ -16,9 +16,9 @@ sources:
 
 Most noise and light complaints never reach court. They are settled, or not, in the first fortnight, by how the business responds.
 
-## What the council can do *[verify sections]*
-- **Investigate** a complaint and decide whether it amounts to a **statutory nuisance**: something that unreasonably interferes with the use of someone's property, or harms health. In Northern Ireland that covers noise and, since 2011, artificial light.
-- **Serve an abatement notice.** Breaching it is an offence. For trade premises, the defence of "best practicable means" may apply.
+## What the council can do
+- **Investigate** a complaint and decide whether it amounts to a **statutory nuisance**: something that unreasonably interferes with the use of someone's property, or harms health. In Northern Ireland the statutory nuisances, including noise and artificial light, are set out in Part 7 of the Clean Neighbourhoods and Environment Act (Northern Ireland) 2011.
+- **Serve an abatement notice.** Breaching it is an offence. For business premises, the defence of "best practicable means" may apply.
 - **Use planning conditions** on hours, lighting and plant, and enforce them.
 
 ## What a business should do first

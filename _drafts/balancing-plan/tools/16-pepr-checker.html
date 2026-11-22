@@ -20,10 +20,10 @@ const f=document.getElementById('f'),r=document.getElementById('r');
 function go(){const roles=[...f.querySelectorAll('input[name=role]:checked')].map(x=>x.value);const t=+document.getElementById('turn').value||0,w=+document.getElementById('tonnes').value||0,eu=f.querySelector('input[name=eu]:checked').value==='y';
 let h;
 if(!roles.length) h='<b>Probably not a producer.</b> You have not ticked a producer role.';
-else if(t>2e6&&w>50) h='<b>Likely a large producer.</b> Register, report packaging data and pay waste management fees.';
-else if(t>1e6&&w>25) h='<b>Likely a small producer.</b> Register and report packaging data; no waste management fees.';
-else h='<b>Probably below the thresholds.</b> Keep records: if turnover passes £1m and packaging passes 25 tonnes, you come in.';
-if(eu) h+='<p><b>Northern Ireland and the EU:</b> goods in NI also fall under the EU Packaging and Packaging Waste Regulation (applies in NI since 12 August 2026), with separate labelling and recyclability rules.</p>';
+else if(t>=2e6&&w>50) h='<b>Likely a large producer.</b> Register, report every six months, pay waste management fees, buy recycling notes (PRNs or PERNs) and submit a certificate of compliance.';
+else if(t>=1e6&&w>25) h='<b>Likely a small producer.</b> Register and report packaging data; no waste management fees.';
+else h='<b>Probably below the thresholds.</b> Keep records: if turnover reaches £1m and packaging passes 25 tonnes, you come in.';
+if(eu) h+='<p><b>Northern Ireland and the EU:</b> parts of the EU Packaging and Packaging Waste Regulation apply in NI from 12 August 2026 (product requirements, PFAS and heavy metals, labelling); NI stays in UK packaging EPR.</p>';
 h+='<p><small>General information, not legal advice. Thresholds to be checked against the Producer Responsibility Obligations (Packaging and Packaging Waste) Regulations 2024.</small></p>';r.innerHTML=h;}
 f.addEventListener('input',go);go();
 </script></body></html>

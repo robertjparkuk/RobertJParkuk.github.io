@@ -19,7 +19,7 @@ sources:
 
 ## Outline
 
-**Page 1: Are you in?** The £50,000 test in any 12 months, across all CBAM goods, counted on value. Goods from GB are not imports; goods into NI from the EU are, on the law at 22 November 2026.
+**Page 1: Are you in?** The £50,000 test in any 12 months, across all CBAM goods, counted on value. Goods from GB are not imports; goods into NI from the EU are, on my reading of section 144(5)(a) of the Finance Act 2026, not yet confirmed by HMRC.
 
 **Page 2: Register.** Who registers (the importer of record, or the person liable under the Act); what HMRC asks for; how a buying group or agent fits. *Deadline: [verify from HMRC guidance].*
 
