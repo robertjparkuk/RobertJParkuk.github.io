@@ -25,6 +25,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.55.1 — 22 November 2026: Reckoner linked from CBAM Desk
+
+*Robert, 22 November 2026: "Link Ready Reckoner to CBAM Desk."*
+
+- `cbam-desk.md`: after the data checklist line, a link to the Carbon Ready Reckoner, described as a whole-site first estimate and expressly not a CBAM product calculation.
+
 ### v0.55.0 — 22 November 2026: Carbon Ready Reckoner, Services rewrite, poultry and radon at 10:00 on 23 November
 
 *Robert, 22 November 2026: "Merge the poultry branch, publish at 10am. Publish the Radon post at the same time. Create a page for the Ready Reckoner and publish it now and create a tile on the front page. Services page needs PFAS, water/waste/packaging and energy costs", and "include pollution: atmospheric, water, land and public realm, such as noise or light".*

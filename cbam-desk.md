@@ -129,7 +129,7 @@ So verified actual data usually pays for EU customers, because EU defaults carry
 
 I won't sell you software you don't need, and I won't sell offsets. I prepare the data; I don't verify it. For your EU customers, verification must be by a verifier accredited by an EU or EEA national accreditation body. For UK CBAM returns, it must be by a verifier accredited for UK CBAM to ISO/IEC 17029 and ISO 14065. Ideally one firm holds both, so one site visit covers both. Where a question needs a customs or tax specialist, such as who the importer is, origin, or movements from NI to Great Britain, I say so and bring one in. See [who I work with]({{ '/working-with/' | relative_url }}).
 
-The free [CBAM data checklist]({{ '/cbam-desk/checklist/' | relative_url }}) lists what to start gathering now.
+The free [CBAM data checklist]({{ '/cbam-desk/checklist/' | relative_url }}) lists what to start gathering now. For your site's whole footprint, rather than a product's embedded emissions, the free [Carbon Ready Reckoner]({{ '/tools/carbon-ready-reckoner.html' | relative_url }}) gives a first estimate from a year of bills: useful context for a Readiness Review, but not a CBAM calculation.
 
 ## Get in touch
 
