@@ -10,6 +10,12 @@ description: "Free, private carbon and environmental tools for NI businesses and
 
 New to carbon? Start with the plain-English explainers in [Learn]({{ '/learn/' | relative_url }}): embodied versus embedded carbon, and the carbon life cycle.
 
+<h2 class="tool-h"><img src="{{ '/assets/icons/carbon-jigsaw.svg' | relative_url }}" alt="" width="48" height="48">Carbon Ready Reckoner</h2>
+
+**New.** A first estimate of your organisation's annual greenhouse gas footprint from a year of bills, delivery notes and expense claims: Scope 1 fuels and refrigerants, Scope 2 electricity (location- and market-based) and a partial Scope 3 for travel, water, waste and upstream fuel. It uses the UK Government's 2026 conversion factors, counts fuel used rather than fuel bought, and treats Northern Ireland electricity as part of the all-island grid with your supplier's fuel mix. Load the worked example for a small NI manufacturer, or enter your own figures; they stay in your browser.
+
+[Open the Carbon Ready Reckoner →]({{ '/tools/carbon-ready-reckoner.html' | relative_url }})
+
 <h2 class="tool-h"><img src="{{ '/assets/icons/carbon-jigsaw.svg' | relative_url }}" alt="" width="48" height="48">The Carbon Jigsaw</h2>
 
 A rough carbon checker for Northern Ireland businesses. Fill in each piece of the jigsaw from your bills and records: electricity, gas, oil, vehicles, refrigerants, water, waste, travel and commuting. You'll get a rough Scope 1, 2 and partial Scope 3 footprint, and the pieces you can't fill show what a full inventory would add. Your figures stay in your browser. Practise first with the sample bills.

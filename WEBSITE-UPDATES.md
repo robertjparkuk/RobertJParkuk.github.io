@@ -25,6 +25,18 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.55.0 — 22 November 2026: Carbon Ready Reckoner, Services rewrite, poultry and radon at 10:00 on 23 November
+
+*Robert, 22 November 2026: "Merge the poultry branch, publish at 10am. Publish the Radon post at the same time. Create a page for the Ready Reckoner and publish it now and create a tile on the front page. Services page needs PFAS, water/waste/packaging and energy costs", and "include pollution: atmospheric, water, land and public realm, such as noise or light".*
+
+- Merged `poultry-life-cycle-briefing` (v0.48.0). Poultry post re-dated from 25 Nov 07:30 to **23 Nov 10:00** (`_posts/2026-11-23-low-carbon-meat-high-phosphorus-problem-ni-poultry.md`).
+- Radon post moved from 1 Dec 07:30 to **23 Nov 10:00** (`_posts/2026-11-23-radon-…`). Its URL stays in `/blog/2026/11/`, which is where `/go/radon/` already pointed.
+- `publish-scheduled-posts.yml`: new daily run at 10:05 UTC so posts dated 10:00 go live then (10:05 GMT in winter, 11:05 BST in summer).
+- New tool `tools/carbon-ready-reckoner.html`: the Carbon Ready Reckoner v2.1 (DESNZ 2026 factors, NI all-island electricity with supplier fuel mix). Ported from the 18 Nov build; Google Fonts replaced with the site's local fonts, site brand bar and provenance line added; inputs stay in the browser.
+- Home page "Try it before you talk to anyone": Reckoner tile first. Tools page: Reckoner entry first.
+- `services.md` rewritten around eight service headings with a delivery table: new **Water, waste and packaging** (third, with tools, dashboards and reading), **Energy costs and ESOS**, **Pollution and environmental health** (air, water, land, public realm: noise, light, litter, fly-tipping), **PFAS**; Contaminated land notes Part III never commenced. Prices unchanged; new lines quoted per job.
+- `tools/future-technologies.html`: footer sentence that was repeated five times now appears once.
+
 ### v0.32.1 — 21 November 2026: Christmas decorations post updated after the UK–EU summit (PATCH)
 
 *Scheduled run, 21 November 2026. Branch `v0.32.1-christmas-summit-update`; Robert merges.*
@@ -147,6 +159,14 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - New post "Larne already has taken carbon out of the atmosphere", with the three-page branded PDF in `assets/briefings/` and two diagrams (how it works; what went in and what came out).
 - Learn, "Carbon capture and carbon negative": one bullet under "Why it matters in Northern Ireland" on the Larne trial, linking to the post, and its source added. The page's `checked` date is unchanged because the rest was not rechecked.
 - Figures are the developer's own, from its report of 27 June 2025 on GOV.UK. Not confirmed: whether the plant has since moved to Belfast.
+
+### v0.48.0 — 21 November 2026: the poultry life cycle briefing
+
+*Robert, 21 November 2026: "publish it on the website with a blog". Post dated 25 November 2026 07:30, so it appears at the noon rebuild that day unless the date is changed.*
+
+- New post "Low-carbon meat, high-phosphorus problem: the poultry life cycle in Northern Ireland" (`_posts/2026-11-25-low-carbon-meat-high-phosphorus-problem-ni-poultry.md`), the accessible version of the briefing.
+- New folder `assets/poultry/2026-11/`: the 9-page branded briefing PDF, the social card and seven chart images.
+- The briefing was checked by two review panels on 21 November 2026 (fact-check and practitioners); open checks are listed on page 9 of the PDF and claims not yet checked are in italics in the post.
 
 ### v0.44.2 — 21 November 2026: summit lines in the two held policy posts
 
