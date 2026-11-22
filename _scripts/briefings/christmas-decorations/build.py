@@ -14,6 +14,7 @@ POST = os.path.join(ROOT, '_posts/2026-11-16-deck-the-halls-check-the-rules.md')
 FONTS = 'file://' + os.path.join(ROOT, 'assets/fonts')
 LOGO = 'file://' + os.path.join(ROOT, 'assets/brand/logo.svg')
 AS_AT = '16 November 2026'
+UPDATED = '21 November 2026'
 
 def b64(path, mime='image/svg+xml'):
     return f'data:{mime};base64,' + base64.b64encode(open(path, 'rb').read()).decode()
@@ -28,7 +29,8 @@ KPIS = [('£252.3m', 'UK imports of Christmas articles in 2025; 81.9% from China
         ('£400 v £5,000', 'Maximum fly-tipping fixed penalty: NI against England (from 1 Sep 2026). Litter: £200 against £750'),
         ('34.15p', 'Power NI unit rate incl. 5% VAT from 1 Jul 2026, against the GB cap of 26.32p (VAT zero-rated)'),
         ('0% to 23%', 'Irish VAT on plain white church candles: zero-rated from 1978, standard-rated since 1 Jan 2022'),
-        ('1 Jan 2027', 'UK CBAM starts; aluminium foil (7607) is in scope, NI included')]
+        ('1 Jan 2027', 'UK CBAM starts; aluminium foil (7607) is in scope, NI included. UK intends to exempt EU-made goods (not yet law)'),
+        ('1 Mar 2028', 'Aim for the UK–EU SPS agreement: most plant certificates and labels GB to NI go, if ratified')]
 
 CSS = """
 @font-face{font-family:'SS3';src:url('%(f)s/source-sans-3.woff')}
@@ -85,6 +87,7 @@ def post_body():
     body = re.sub(r'<figure class="page-photo[^"]*"><img src="\{\{ \'/assets/briefings/christmas-decorations/bunting.svg\'.*?</figure>', '', body, flags=re.S)
     body = re.sub(r"\{\{ '/assets/briefings/christmas-decorations/([^']+)' \| relative_url \}\}", lambda m: 'file://' + os.path.join(A, m.group(1)), body)
     body = re.sub(r"\{\{ '([^']+)' \| relative_url \}\}", r'https://robertjpark.co.uk\1', body)
+    body = re.sub(r"\{% post_url (\d{4})-(\d{2})-\d{2}-([^ ]+) %\}", r'https://robertjpark.co.uk/blog/\1/\2/\3/', body)
     body = '\n'.join(l for l in body.split('\n') if not l.startswith('[Download the briefing (PDF)]'))
     body = re.sub(r'\n---\n.*?(?=\n## Sources)', '\n', body, flags=re.S)  # drop author footer
     return title, body
@@ -107,7 +110,7 @@ def pdf():
 <div class="kpis">{kpi_html()}</div>
 <div class="grid2">{fig('imports-christmas-articles.svg','UK imports of Christmas articles 2025')}{fig('lights-season-cost.svg','Cost of running lights for a season')}
 {fig('litter-fines.svg','Maximum fixed penalties')}{fig('imports-fresh-trees.svg','UK imports of fresh Christmas trees 2025')}</div>
-<p class="note">Full tables, sources and CSV downloads: robertjpark.co.uk/tools/dashboards/christmas-decorations.html</p></section>"""
+<p class="note">Full tables, sources and CSV downloads are on the <a href="https://robertjpark.co.uk/tools/dashboards/christmas-decorations.html">online dashboard</a>. The article: robertjpark.co.uk/go/christmas</p></section>"""
     garland = b64(BUNTING)
     doc = f"""<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><title>{html.escape(title)}</title><style>{CSS % {'f': FONTS}}</style></head><body>
 <section class="cover">
@@ -116,15 +119,15 @@ def pdf():
 <h1>Deck the halls, <em>check the rules</em></h1>
 <p class="stand">Father Christmas, banned Christmases and decorations from Nuremberg tinsel to the carbon tax on your turkey foil: who makes them, how they are regulated, Belfast's £77,500 artificial tree, van permits at Larne's recycling centre, twelve ways to a better Christmas, and a carol for the regulators. Nollaig Shona daoibh.</p>
 <div class="baubles"><img src="{bauble}" alt=""><img src="{bauble}" alt=""><img src="{bauble}" alt=""></div>
-<div class="meta">Robert J. Park · Larne, Northern Ireland · {AS_AT}<br>robert@robertjpark.co.uk · 07450 349480 · robertjpark.co.uk<br>Status as at {AS_AT}. Not legal, tax or customs advice.</div></section>
+<div class="meta">Robert J. Park · Larne, Northern Ireland · {AS_AT}<br>robert@robertjpark.co.uk · 07450 349480 · robertjpark.co.uk<br>Status as at {AS_AT}; updated {UPDATED} after the UK–EU summit. Not legal, tax or customs advice.</div></section>
 {dash}
 {h}
-<p class="end">Robert J. Park is an independent environment, carbon and public affairs consultant based in Larne, Northern Ireland. robert@robertjpark.co.uk · robertjpark.co.uk · WhatsApp @robertjpark. Facts checked to {AS_AT}.</p>
+<p class="end">Robert J. Park is an independent environment, carbon and public affairs consultant based in Larne, Northern Ireland. robert@robertjpark.co.uk · robertjpark.co.uk · WhatsApp @robertjpark. Facts checked to {AS_AT}; summit update {UPDATED}.</p>
 </body></html>"""
     tmp = os.path.join(ROOT, '_scripts/briefings/christmas-decorations/_tmp.html')
     open(tmp, 'w', encoding='utf-8').write(doc)
     head = f"<div style='width:100%;padding:0 16mm;margin-top:-2mm'><img src='{garland}' style='width:100%;height:12mm;object-fit:cover;object-position:top'></div>"
-    foot = f"<div style='font-family:sans-serif;font-size:7pt;color:#5a5a5a;width:100%;padding:0 16mm;display:flex;justify-content:space-between'><span>Robert J. Park · Deck the halls, check the rules · {AS_AT} · robertjpark.co.uk</span><span><span class='pageNumber'></span> / <span class='totalPages'></span></span></div>"
+    foot = f"<div style='font-family:sans-serif;font-size:7pt;color:#5a5a5a;width:100%;padding:0 16mm;display:flex;justify-content:space-between'><span>Robert J. Park · Deck the halls, check the rules · updated {UPDATED} · robertjpark.co.uk/go/christmas</span><span><span class='pageNumber'></span> / <span class='totalPages'></span></span></div>"
     out = os.path.join(ROOT, 'assets/briefings/2026-11-christmas-decorations-briefing.pdf')
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(); pg.goto('file://' + tmp); pg.wait_for_timeout(600)
@@ -155,11 +158,11 @@ MATRIX = [
  ('Fairy lights marking', 'CE only, not UKCA', 'UKCA or CE', 'CE'),
  ('Packaging design and labels', 'EU PPWR from 12 Aug 2026, plus UK packaging EPR', 'UK packaging EPR', 'EU PPWR from 12 Aug 2026'),
  ('Generic "eco" claims', 'Case by case, DMCC Act (from 6 Apr 2025)', 'Case by case, DMCC Act', 'Banned unless proven from 27 Sep 2026 (Directive 2024/825)*'),
- ('Cut Christmas tree from GB', 'Retail scheme, or certificate and notification', 'Within GB: none under 3 m; UK plant passport over 3 m', 'Phytosanitary certificate'),
+ ('Cut Christmas tree from GB', 'Retail scheme, or certificate and notification (most certificates to go from 1 Mar 2028, if ratified)', 'Within GB: none under 3 m; UK plant passport over 3 m', 'Phytosanitary certificate (most to go from 1 Mar 2028, if ratified)'),
  ('VAT on a candle', '20%', '20%', '23% (white church candles were 0% from 1978 to 2021)'),
  ('Maximum fly-tipping fixed penalty', '£400', '£5,000 in England (since 1 Sep 2026)', 'Not checked'),
  ('Maximum litter fixed penalty', '£200 (since 30 Dec 2022)', '£750 in England (since 1 Sep 2026)', 'Not checked'),
- ('Aluminium foil (CBAM)', 'UK CBAM from 1 Jan 2027', 'UK CBAM from 1 Jan 2027', 'EU CBAM, definitive since 1 Jan 2026'),
+ ('Aluminium foil (CBAM)', 'UK CBAM from 1 Jan 2027; UK intends to exempt EU-made foil (not yet law)', 'UK CBAM from 1 Jan 2027; same intended exemption', 'EU CBAM, definitive since 1 Jan 2026; UK-made foil expected to be exempt from 2028'),
  ('Electricity price', 'Power NI 34.15p/kWh incl. 5% VAT (regulated tariff)', 'Ofgem cap 26.32p/kWh, VAT zero-rated to 31 Mar 2027', 'Not compared')]
 
 def dashboard():
@@ -199,7 +202,7 @@ a{{color:var(--red)}} .note{{font-size:.9rem;color:var(--muted)}}
 <img class="garland" src="../../assets/briefings/christmas-decorations/bunting.svg" alt="">
 <header><a href="/">Robert J. Park</a> · <a href="/dashboards/">Dashboards</a></header>
 <main>
-<p class="eyebrow">Dashboard · as at {AS_AT}</p>
+<p class="eyebrow">Dashboard · as at {AS_AT}, updated {UPDATED} after the UK–EU summit</p>
 <h1>Christmas decorations: rules, costs and carbon</h1>
 <p>How the decorations in Northern Ireland's homes, shops and streets are regulated, what they cost to run and what they emit, and where the rules in Northern Ireland, Great Britain and the EU differ. Read the commentary: <a href="/blog/2026/11/deck-the-halls-check-the-rules/">Deck the halls, check the rules</a>. Not legal, tax or customs advice.</p>
 <h2>Headline figures</h2><div class="kpis">{kpi_html()}</div>
@@ -211,7 +214,7 @@ a{{color:var(--red)}} .note{{font-size:.9rem;color:var(--muted)}}
 <figure>{inline('tree-carbon.svg')}</figure><figure>{inline('fires-1959.svg')}</figure>
 </div>
 <h2>One decoration, three rulebooks</h2>
-<table><caption class="note" style="text-align:left">Status as at {AS_AT}. *Application in NI not confirmed by an official source.</caption>
+<table><caption class="note" style="text-align:left">Status as at {AS_AT}; summit changes {UPDATED}. *Application in NI not confirmed by an official source.</caption>
 <thead><tr><th scope="col">Issue</th><th scope="col">Northern Ireland</th><th scope="col">Great Britain</th><th scope="col">Ireland / EU</th></tr></thead><tbody>{rows}</tbody></table>
 <h2>Data and sources</h2>
 <ul>
