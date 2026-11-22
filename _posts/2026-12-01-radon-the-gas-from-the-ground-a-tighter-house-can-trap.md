@@ -1,7 +1,6 @@
 ---
 title: "Radon: the gas from the ground a tighter house can trap"
 date: 2026-12-01 07:30:00 +0000
-published: false   # draft for Robert's review, 21 Nov 2026; one of eight element briefings
 tags: ["Elements", "Learn", "Radon", "Buildings", "Health", "Geology", "Northern Ireland"]
 image: /assets/learn/periodic-table-rn.png
 description: "Radon in climate, soil, land and the air: where it comes from, why energy retrofits can raise it, the action levels and building rules in Northern Ireland, and how it is regulated at work."
@@ -49,7 +48,7 @@ Northern Ireland has large areas where more than one home in a hundred is expect
 ## The rules (as at 21 November 2026)
 
 - **Homes:** UKHSA's action level is 200 Bq/m³ (annual average), with a target level of 100 Bq/m³ for remediation ([nidirect](https://www.nidirect.gov.uk/articles/radon-gas-your-home); [UKHSA](https://www.gov.uk/guidance/about-radon)).
-- **New buildings:** in areas with a 1% or greater probability of exceeding the action level, new buildings, extensions, conversions and refurbishments must include radon protection under the Building Regulations (Northern Ireland). The [2000 Regulations' map](https://www.legislation.gov.uk/nisr/2000/389/schedule/3/made) set Zone 1 (1–10%) and Zone 2 (over 10%); *check current Technical Booklet C for the latest zoning and measures.*
+- **New buildings:** in areas with a 1% or greater probability of exceeding the action level, new buildings, extensions, conversions and refurbishments must include radon protection under the Building Regulations (Northern Ireland). The Building (Amendment) Regulations (Northern Ireland) 2022 brought the requirement into line with the current radon maps; guidance is [Technical Booklet C](https://www.finance-ni.gov.uk/publications/technical-booklet-c) (October 2012), read with Amendments Booklet AMD 7 (2022).
 - **Workplaces:** the Ionising Radiations Regulations (Northern Ireland) 2017 apply where the annual average exceeds 300 Bq/m³, and employers must act to restrict exposure ([HSENI](https://www.hseni.gov.uk/sites/hseni.gov.uk/files/radon-information-leaflet_0.pdf)).
 - **COSHH** does not cover the radiation hazard; IRR does.
 

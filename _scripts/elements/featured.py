@@ -9,8 +9,7 @@ Conventions
 - WEL = workplace exposure limit from HSE EH40/2005 (4th edition, January 2020),
   approved for use in Northern Ireland by HSENI. LTEL = 8-hour, STEL = 15-minute.
 - UN numbers and classes from the UN Model Regulations / ADR.
-- Anything marked "check" has not been re-read against the primary table for this
-  draft and must be confirmed before publication.
+- All EH40 values re-read against HSE EH40/2005 (4th edition) on 21 November 2026.
 """
 
 CHECKED = "21 November 2026"
@@ -32,9 +31,9 @@ F['P'] = dict(
    ("Red phosphorus", "Flam. Sol. 1 H228 (flammable solid); Aquatic Chronic 3 H412. Harmonised (CLP Annex VI)."),
   ],
   wels=[
-   ("Phosphine", "0.1 ppm LTEL; 0.2 ppm STEL (check)"),
-   ("Orthophosphoric acid", "1 mg/m³ LTEL; 2 mg/m³ STEL (check)"),
-   ("Yellow phosphorus", "0.1 mg/m³ LTEL; 0.3 mg/m³ STEL (check)"),
+   ("Phosphine", "0.1 ppm LTEL; 0.2 ppm STEL"),
+   ("Orthophosphoric acid", "1 mg/m³ LTEL; 2 mg/m³ STEL"),
+   ("Yellow phosphorus", "0.1 mg/m³ LTEL; 0.3 mg/m³ STEL"),
   ],
   un=[
    ("UN1381", "Phosphorus, white or yellow, dry or under water or in solution", "4.2 (6.1)"),
@@ -79,8 +78,8 @@ F['N'] = dict(
    ("Nitrogen", "No WEL: an asphyxiant. Control is by keeping oxygen above safe levels."),
    ("Ammonia, anhydrous", "25 ppm LTEL; 35 ppm STEL"),
    ("Nitrogen dioxide", "0.5 ppm LTEL; 1 ppm STEL (from 2018)"),
-   ("Nitrogen monoxide", "2 ppm LTEL (from 2018; check)"),
-   ("Nitrous oxide", "100 ppm LTEL (check)"),
+   ("Nitrogen monoxide", "2 ppm LTEL (from 2018)"),
+   ("Nitrous oxide", "100 ppm LTEL"),
   ],
   un=[
    ("UN1066", "Nitrogen, compressed", "2.2"),
@@ -124,8 +123,8 @@ F['S'] = dict(
    ("Sulfur", "No specific WEL; general dust limits apply (10 mg/m³ inhalable, 4 mg/m³ respirable)"),
    ("Hydrogen sulfide", "5 ppm LTEL; 10 ppm STEL"),
    ("Sulfur dioxide", "0.5 ppm LTEL; 1 ppm STEL (from 2018)"),
-   ("Sulfuric acid (mist)", "0.05 mg/m³ LTEL, thoracic fraction (check)"),
-   ("Sulfur hexafluoride", "1,000 ppm LTEL (check)"),
+   ("Sulfuric acid (mist)", "0.05 mg/m³ LTEL, thoracic fraction"),
+   ("Sulfur hexafluoride", "1,000 ppm LTEL; 1,250 ppm STEL"),
   ],
   un=[
    ("UN1350", "Sulphur (some formed sulphur such as prills or granules may be exempt; check ADR special provision 242)", "4.1"),
@@ -166,9 +165,9 @@ F['F'] = dict(
    ("Fluorine (gas)", "Ox. Gas 1 H270 (may cause or intensify fire); Press. Gas H280; Acute Tox. 2 H330 (fatal if inhaled); Skin Corr. 1A H314. Harmonised (CLP Annex VI)."),
   ],
   wels=[
-   ("Fluorine", "Listed in EH40 (check value before use)"),
+   ("Fluorine", "1 ppm LTEL; 1 ppm STEL"),
    ("Hydrogen fluoride (as F)", "1.8 ppm LTEL; 3 ppm STEL"),
-   ("Fluorides (as F)", "2.5 mg/m³ LTEL (check)"),
+   ("Fluorides (inorganic, as F)", "2.5 mg/m³ LTEL"),
   ],
   un=[
    ("UN1045", "Fluorine, compressed", "2.3 (5.1, 8)"),
@@ -211,7 +210,7 @@ F['Sb'] = dict(
   ],
   wels=[
    ("Antimony and compounds except stibine (as Sb)", "0.5 mg/m³ LTEL"),
-   ("Stibine", "0.1 ppm LTEL (check)"),
+   ("Stibine", "No WEL in EH40 (the antimony limit excludes it); keep exposure as low as reasonably practicable"),
   ],
   un=[
    ("UN2871", "Antimony powder", "6.1"),
@@ -248,7 +247,7 @@ F['Mg'] = dict(
    ("Magnesium (massive metal)", "Not classified in solid form, but it burns once alight."),
   ],
   wels=[
-   ("Magnesium oxide (as Mg)", "10 mg/m³ LTEL inhalable dust; 4 mg/m³ respirable dust and fume (check)"),
+   ("Magnesium oxide (as Mg)", "10 mg/m³ LTEL inhalable dust; 4 mg/m³ LTEL respirable dust"),
   ],
   un=[
    ("UN1418", "Magnesium powder or magnesium alloys powder", "4.3 (4.2)"),
@@ -290,8 +289,8 @@ F['C'] = dict(
   wels=[
    ("Carbon black", "3.5 mg/m³ LTEL; 7 mg/m³ STEL"),
    ("Carbon dioxide", "5,000 ppm LTEL; 15,000 ppm STEL"),
-   ("Carbon monoxide", "20 ppm LTEL; 100 ppm STEL (from 2018; check)"),
-   ("Graphite", "10 mg/m³ inhalable; 4 mg/m³ respirable (check)"),
+   ("Carbon monoxide", "20 ppm LTEL; 100 ppm STEL"),
+   ("Graphite", "10 mg/m³ LTEL inhalable; 4 mg/m³ LTEL respirable"),
   ],
   un=[
    ("UN1361", "Carbon, animal or vegetable origin (e.g. charcoal)", "4.2"),

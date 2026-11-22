@@ -25,6 +25,16 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.50.0 — 22 November 2026: Elements of the land posts released on a schedule
+
+*Robert, 21 November 2026: "just get ready to publish them". Ready on merge; nothing goes out until merged.*
+
+- `published: false` removed from the eight element posts. They go live one a day at the noon rebuild: phosphorus 24 Nov, nitrogen 25, sulfur 26, fluorine 27, antimony 28, magnesium 29, carbon 30 Nov, radon 1 Dec.
+- All "(check)" items cleared: EH40 values re-read against HSE EH40/2005 (stibine has no WEL, corrected); SF₆ switchgear dates from Article 13 of Regulation (EU) 2024/573; China antimony announcements cited by number with status as at 21 Nov 2026; Technical Booklet C and AMD 7 (2022) for radon; EU CRCF Delegated Regulation (EU) 2026/285 for rock weathering.
+- PDFs rebuilt to match.
+- The periodic table now switches each series link from the PDF to the post automatically from 12:30 on the post's date (`post_live_from` in the data), so no rebuild is needed as each post goes out.
+- Antimony post (28 Nov): China's US export-ban suspension ends 27 Nov; update the paragraph if MOFCOM publishes a change.
+
 ### v0.49.3 — 21 November 2026: the periodic table as a dashboard, announced on the blog
 
 *Robert, 21 November 2026: "it should be a dashboard, announced on the blog in learn too".*

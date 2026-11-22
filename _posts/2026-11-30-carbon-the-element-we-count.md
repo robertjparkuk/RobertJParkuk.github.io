@@ -1,7 +1,6 @@
 ---
 title: "Carbon: the element we count"
 date: 2026-11-30 07:30:00 +0000
-published: false   # draft for Robert's review, 21 Nov 2026; one of eight element briefings
 tags: ["Elements", "Learn", "Carbon", "Climate", "Soil", "Peat", "Northern Ireland"]
 image: /assets/learn/periodic-table-c.png
 description: "Carbon in climate, soil, land, agri-food and the air: CO₂ and methane, soil and peat carbon, Northern Ireland's emissions and carbon budgets, and how to handle carbon gases and dusts safely."
@@ -68,8 +67,8 @@ COSHH applies to carbon dusts (carbon black, graphite, coal) and to carbon monox
 |---|---|
 | Carbon black | 3.5 mg/m³ LTEL; 7 mg/m³ STEL |
 | Carbon dioxide | 5,000 ppm LTEL; 15,000 ppm STEL |
-| Carbon monoxide | 20 ppm LTEL; 100 ppm STEL (from 2018; check) |
-| Graphite | 10 mg/m³ inhalable; 4 mg/m³ respirable (check) |
+| Carbon monoxide | 20 ppm LTEL; 100 ppm STEL |
+| Graphite | 10 mg/m³ LTEL inhalable; 4 mg/m³ LTEL respirable |
 
 | UN number | Proper shipping name | Class |
 |---|---|---|

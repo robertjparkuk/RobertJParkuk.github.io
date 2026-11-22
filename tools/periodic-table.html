@@ -138,6 +138,7 @@ footer a{color:var(--red)}
   const $ = id => document.getElementById(id);
   const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   let DATA = [], current = null, lastBtn = null, catFilter = null;
+  const live = e => !!e.post_live_from && Date.now() >= Date.parse(e.post_live_from);
 
   fetch('/data/periodic-table/elements.json').then(r => r.json()).then(d => {
     DATA = d.elements; $('checked').textContent = d.checked; build();
@@ -165,7 +166,7 @@ footer a{color:var(--red)}
     $('legend').addEventListener('click', ev => { const b = ev.target.closest('button'); if(!b) return;
       catFilter = catFilter === b.dataset.cat ? null : b.dataset.cat;
       document.querySelectorAll('#legend button').forEach(x => x.setAttribute('aria-pressed', String(x.dataset.cat === catFilter))); filter(); });
-    $('series').innerHTML = DATA.filter(e => e.featured).map(e => `<li><a href="${e.post_live ? e.briefing_url : e.pdf}">${esc(e.name)}</a></li>`).join(' · ');
+    $('series').innerHTML = DATA.filter(e => e.featured).map(e => `<li><a href="${live(e) ? e.briefing_url : e.pdf}">${esc(e.name)}</a></li>`).join(' · ');
     $('q').addEventListener('input', filter); $('onlyFeatured').addEventListener('change', filter);
     filter();
     const h = decodeURIComponent(location.hash.slice(1)).toLowerCase();
@@ -203,7 +204,7 @@ footer a{color:var(--red)}
            <h3>Workplace exposure limits (EH40/2005)</h3>${table(['Substance','Limit'], s.wels)}
            <h3>UN numbers (transport)</h3>${table(['UN number','Proper shipping name','Class'], s.un)}
            <h3>Risks of the element itself</h3><p>${esc(s.risks)}</p>
-           <p class="note">Classification and limits change. Work from the supplier's current safety data sheet and your own COSHH assessment. Values marked "check" are being re-confirmed against the primary table.</p>`;
+           <p class="note">Classification and limits change. Work from the supplier's current safety data sheet and your own COSHH assessment. Exposure limits checked against HSE EH40/2005 on 21 November 2026.</p>`;
     } else if (tab === 'compounds') {
       const c = e.compounds;
       [['nature','In nature'],['manufacturing','In manufacturing'],['climate','In the climate']].forEach(([k,l]) => h += `<h3>${l}</h3>${table(['Compound','Why it matters'], c[k])}`);
@@ -223,7 +224,7 @@ footer a{color:var(--red)}
     const tabs = [['briefing','Briefing'], ['all','Five contexts'], ...TABS]; if (e.featured) tabs.push(['safety','Safety, COSHH and UN'], ['compounds','Compounds']);
     $('tabs').innerHTML = tabs.map(([k,l]) => `<button type="button" role="tab" data-tab="${k}">${l}</button>`).join('');
     $('tabs').onclick = ev => { const t = ev.target.closest('button'); if (t) render(e, t.dataset.tab); };
-    $('links').innerHTML = e.featured ? (e.post_live ? `<a href="${e.briefing_url}">Read the ${esc(e.name.toLowerCase())} briefing</a><a class="ghost" href="${e.pdf}">Download the PDF</a>` : `<a href="${e.pdf}">Read the ${esc(e.name.toLowerCase())} briefing (PDF)</a>`) : '';
+    $('links').innerHTML = e.featured ? (live(e) ? `<a href="${e.briefing_url}">Read the ${esc(e.name.toLowerCase())} briefing</a><a class="ghost" href="${e.pdf}">Download the PDF</a>` : `<a href="${e.pdf}">Read the ${esc(e.name.toLowerCase())} briefing (PDF)</a>`) : '';
     render(e, 'briefing');
     $('panel').hidden = false; $('scrim').hidden = false;
     history.replaceState(null, '', '#' + e.symbol.toLowerCase());
