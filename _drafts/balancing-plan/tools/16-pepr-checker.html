@@ -1,0 +1,29 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Packaging EPR checker (draft) | Robert J. Park</title><link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>body{font:16px/1.5 "Source Sans 3",system-ui,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1rem;color:#1b1817}h1{font-family:Fraunces,Georgia,serif}fieldset{border:1px solid #ddd;margin:0 0 1rem;padding:.6rem 1rem}legend{font-weight:700}.note{background:#fbf1f1;border-left:4px solid #b3121b;padding:.5rem .8rem}#r{border:2px solid #b3121b;padding:1rem;margin-top:1rem}input[type=number]{width:10rem;font:inherit}</style></head><body>
+<p class="note">DRAFT for panel review. Thresholds below are to be checked against the 2024 Regulations before publication.</p>
+<h1>Packaging EPR checker</h1>
+<form id="f">
+<fieldset><legend>1. What do you do with packaging? (tick all)</legend>
+<label><input type="checkbox" name="role" value="brand"> Put my brand on packaged goods</label><br>
+<label><input type="checkbox" name="role" value="packer"> Pack or fill goods into packaging</label><br>
+<label><input type="checkbox" name="role" value="importer"> Import packaged goods into the UK</label><br>
+<label><input type="checkbox" name="role" value="distributor"> Sell or supply empty packaging</label><br>
+<label><input type="checkbox" name="role" value="marketplace"> Run an online marketplace</label><br>
+<label><input type="checkbox" name="role" value="hire"> Hire out reusable packaging</label></fieldset>
+<fieldset><legend>2. Annual turnover (£)</legend><input type="number" id="turn" min="0"></fieldset>
+<fieldset><legend>3. Packaging you handle a year (tonnes)</legend><input type="number" id="tonnes" min="0" step="0.1"></fieldset>
+<fieldset><legend>4. Do you sell goods into Ireland or the rest of the EU, or place goods on the NI market?</legend><label><input type="radio" name="eu" value="y"> Yes</label> <label><input type="radio" name="eu" value="n" checked> No</label></fieldset>
+</form>
+<div id="r" aria-live="polite"></div>
+<script>
+const f=document.getElementById('f'),r=document.getElementById('r');
+function go(){const roles=[...f.querySelectorAll('input[name=role]:checked')].map(x=>x.value);const t=+document.getElementById('turn').value||0,w=+document.getElementById('tonnes').value||0,eu=f.querySelector('input[name=eu]:checked').value==='y';
+let h;
+if(!roles.length) h='<b>Probably not a producer.</b> You have not ticked a producer role.';
+else if(t>2e6&&w>50) h='<b>Likely a large producer.</b> Register, report packaging data and pay waste management fees.';
+else if(t>1e6&&w>25) h='<b>Likely a small producer.</b> Register and report packaging data; no waste management fees.';
+else h='<b>Probably below the thresholds.</b> Keep records: if turnover passes £1m and packaging passes 25 tonnes, you come in.';
+if(eu) h+='<p><b>Northern Ireland and the EU:</b> goods in NI also fall under the EU Packaging and Packaging Waste Regulation (applies in NI since 12 August 2026), with separate labelling and recyclability rules.</p>';
+h+='<p><small>General information, not legal advice. Thresholds to be checked against the Producer Responsibility Obligations (Packaging and Packaging Waste) Regulations 2024.</small></p>';r.innerHTML=h;}
+f.addEventListener('input',go);go();
+</script></body></html>

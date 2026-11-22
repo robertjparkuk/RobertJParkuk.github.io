@@ -1,0 +1,19 @@
+<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Energy per tonne (draft) | Robert J. Park</title><link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>body{font:16px/1.5 "Source Sans 3",system-ui,sans-serif;max-width:60rem;margin:2rem auto;padding:0 1rem;color:#1b1817}h1{font-family:Fraunces,Georgia,serif}table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid #ddd;padding:.4rem;text-align:right}th:first-child,td:first-child{text-align:left}input{width:7rem;text-align:right;font:inherit}.note{background:#fbf1f1;border-left:4px solid #b3121b;padding:.5rem .8rem}.out{font-weight:700}</style></head><body>
+<p class="note">DRAFT for panel review. Not published.</p>
+<h1>Energy per tonne</h1>
+<p>Enter up to three years of energy use and production. The tool converts everything to kWh and shows energy per tonne, so you can see whether you are getting more efficient. No sector benchmark is shown.</p>
+<table><thead><tr><th>Input</th><th>Unit</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr></thead><tbody id="b"></tbody>
+<tfoot><tr><td>Total energy</td><td>kWh</td><td class="out" id="t0"></td><td class="out" id="t1"></td><td class="out" id="t2"></td></tr>
+<tr><td>Energy per tonne</td><td>kWh/t</td><td class="out" id="i0"></td><td class="out" id="i1"></td><td class="out" id="i2"></td></tr>
+<tr><td>Change on year 1</td><td>%</td><td></td><td class="out" id="c1"></td><td class="out" id="c2"></td></tr></tfoot></table>
+<p><small>kWh conversions are gross calorific values from the UK Government GHG conversion factors 2026 (fuel properties). Draft values to be checked against the DESNZ table before publication.</small></p>
+<script>
+const R=[["elec","Electricity","kWh",1],["gas","Natural gas","kWh",1],["kero","Kerosene","litres",10.35],["gasoil","Gas oil","litres",10.9],["lpg","LPG","litres",7.08],["out","Production","tonnes",null]];
+const b=document.getElementById('b');
+R.forEach(([k,l,u])=>{b.insertAdjacentHTML('beforeend',`<tr><td>${l}</td><td>${u}</td>${[0,1,2].map(y=>`<td><input id="${k}${y}" inputmode="decimal" aria-label="${l}, year ${y+1}"></td>`).join('')}</tr>`)});
+const n=id=>parseFloat((document.getElementById(id).value||'').replace(/,/g,''))||0, f=x=>x?Math.round(x).toLocaleString('en-GB'):'–';
+function go(){const I=[];[0,1,2].forEach(y=>{let t=0;R.forEach(([k,,,c])=>{if(c)t+=n(k+y)*c});const o=n('out'+y);document.getElementById('t'+y).textContent=f(t);I[y]=o?t/o:0;document.getElementById('i'+y).textContent=f(I[y]);});
+[1,2].forEach(y=>{document.getElementById('c'+y).textContent=I[0]&&I[y]?((I[y]/I[0]-1)*100).toFixed(1):'–'});}
+document.addEventListener('input',go);go();
+</script></body></html>
