@@ -22,8 +22,8 @@ Most fabricators think of CBAM as a steelworks problem. It is not. From **1 Janu
 ## Three Northern Ireland cases
 
 1. **You buy fixings from a distributor in Great Britain.** Goods already in GB are not a UK import. No UK CBAM liability for you; check where the distributor sourced them only if your customer asks.
-2. **You buy plate and sections from a stockholder in Ireland.** On my reading of the Finance Act 2026 (section 144(5)(a)), goods arriving in Northern Ireland from Ireland or the rest of the EU count as UK CBAM imports; HMRC has not yet confirmed this. The UK Government said on 20 November 2026 that it intends to exempt EU-origin goods from 1 January 2027. Until regulations are made, the charge is the law, and steel that originated outside the EU (for example Turkish or Indian plate held in a Dublin yard) stays in scope either way.
-3. **You import welded mesh direct from outside Europe.** You are the importer. If your CBAM goods from outside the UK pass **£50,000 in any 12 months**, counted together across steel, aluminium, cement, fertiliser and hydrogen, you must register and report.
+2. **You buy plate and sections from a stockholder in Ireland.** On my reading of the Finance Act 2026 (section 144(5)(a)), goods arriving in Northern Ireland from Ireland or the rest of the EU count as UK CBAM imports; HMRC has not yet confirmed this. The UK Government said on 20 November 2026 that it intends to exempt goods originating in the EU, the EEA and Switzerland from 1 January 2027 *[link the official text before publication]*. Steel rolled in GB and bought back through a Dublin stockholder is UK-origin and out either way. Third-country steel brought into Ireland and then into NI could, in principle, meet the EU CBAM and then the UK CBAM *[check whether UK relief covers an EU CBAM payment]*. Until regulations are made, the charge is the law, and steel that originated outside the EU (for example Turkish or Indian plate held in a Dublin yard) stays in scope either way.
+3. **You import welded mesh direct from outside Europe.** You are the importer. The £50,000 threshold is two tests on GOV.UK: a forward test (do you expect to pass £50,000 of CBAM goods in the next 30 days?) and a backward test (have you passed it in the last 12 months, checked on the first of each month?), counted together across steel, aluminium, cement, fertiliser and hydrogen. Goods of UK origin are excluded. Pass either test and you must register and report *[link the GOV.UK threshold guidance]*.
 
 ## Worked example (fictional)
 
@@ -32,7 +32,7 @@ Most fabricators think of CBAM as a steelworks problem. It is not. From **1 Janu
 - GB extrusions: not an import. Out.
 - Fixings from China: in scope.
 - Turkish-origin sections via Dublin: in scope on my reading of the Act at 22 November 2026, and still in scope if the EU-origin exemption is made, because their origin is Turkey.
-- Total in scope: **£52,000.** Over the £50,000 test. Antrim Fab is a UK CBAM importer for 2027.
+- Total in scope: **£52,000.** Over £50,000 on the 12-month test, so the firm is a UK CBAM importer for 2027.
 
 The charge itself is modest in 2027: on HMRC's default value for many steel goods (2.722 tCO2e a tonne, including the 10% mark-up) and the £9.69 illustrative rate used on the CBAM Desk page, about **£26 a tonne**, with little or no carbon price relief. *[Align with the CBAM Desk worked example before publication.]* The registration, records and annual return are the larger burden.
 

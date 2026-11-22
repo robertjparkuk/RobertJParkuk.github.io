@@ -18,7 +18,7 @@ sources:
 
 1. **The sector in numbers**: firms, jobs, sales, share exported to GB, Ireland, rest of EU and the world (NISRA). *[figures to pull]*
 2. **Where the emissions sit**: purchased steel and aluminium dominate Scope 3; gas, LPG and electricity for cutting, welding, curing and paint lines dominate Scopes 1 and 2.
-3. **Seven rules arriving in fourteen months**: UK CBAM on imported steel and aluminium goods (1 Jan 2027); EU proposal to extend CBAM to downstream fabrications (COM(2025) 989, proposed from 2028, not law); EU CBAM for EU customers; packaging EPR on crates and wrap; F-gas on chillers and paint-line cooling; PFAS restrictions on coatings and lubricants; ESOS Phase 4 for the largest firms.
+3. **Seven rules that already apply or arrive by 2028**: UK CBAM on imported steel and aluminium goods (1 Jan 2027); EU proposal to extend CBAM to downstream fabrications (COM(2025) 989, proposed from 2028, not law); EU CBAM for EU customers; packaging EPR on crates and wrap; F-gas on chillers and paint-line cooling; PFAS restrictions on coatings and lubricants; ESOS Phase 4 for the largest firms.
 4. **Customers' questions**: Scope 1 and 2 figures, EPDs, low-carbon steel claims.
 5. **Three actions this quarter.**
 6. **Dashboard**: sector size, trade flows by partner, energy mix, CBAM exposure by CN chapter 72, 73 and 76.

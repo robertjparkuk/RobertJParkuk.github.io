@@ -8,7 +8,7 @@ status: DRAFT SPECIFICATION for panel review
 verify:
   - Licence and reuse terms for ICE Endex and EEX auction results before publishing figures
 sources:
-  - UK ETS auction results (GOV.UK / ICE Endex)
+  - UK ETS auction results (GOV.UK; auction platform to confirm: ICE Futures Europe, per Panel B)
   - EU ETS primary auction results (EEX)
   - HMRC, Rates for the CBAM (quarterly)
   - DESNZ/HMT statements on UK–EU ETS linking (target 2028)
