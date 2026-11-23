@@ -89,6 +89,13 @@
       as_at: "Figures as at 2 November 2026"
       related_title: "We don't fund the drains. Then we pay for the flood."
       related: /blog/2026/11/we-dont-fund-the-drains-then-we-pay-for-the-flood/
+    - title: "NI councils compared: waste and recycling"
+      page: /tools/dashboards/ni-council-waste.html
+      thumb: /assets/dashboards/ni-council-waste.jpg
+      summary: "Household recycling for each of Northern Ireland's eleven councils, the change on last year, where each council's waste goes, and how landfill gave way to energy recovery rather than recycling since 2006/07."
+      as_at: "DAERA figures to 2024/25 (finalised) and 2025/26 (provisional), calculated 23 November 2026"
+      related_title: "Northern Ireland's waste bill"
+      related: /blog/2026/11/northern-irelands-waste-bill/
     - title: "NI Screen Industry"
       page: /tools/dashboards/ni-screen-industry.html
       thumb: /assets/dashboards/ni-screen-industry.jpg
