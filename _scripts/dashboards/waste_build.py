@@ -60,7 +60,7 @@ tiles = [
 ]
 if FULL_PROV:
     y = FULL_PROV[-1]
-    tiles.append(tile(f'{y}, provisional', f"{ni.loc[y].hh_rate:.1f}%", 'NI household recycling rate, all four quarters reported'))
+    tiles[0] = tile(f'NI household recycling rate, {LATEST}', f'{NI_HH:.1f}%', f'{PREV}: {ni_p.hh_rate:.1f}%. {y} provisional: {ni.loc[y].hh_rate:.1f}%')
 H = ['Mid and East Antrim']
 cards = [
  card(f'Household recycling rate by council, {LATEST}',
