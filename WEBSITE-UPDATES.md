@@ -25,6 +25,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.56.0 — 23 November 2026: Policy and law reform page
+
+*Robert, 22 November 2026: "a separate policy on law reform page. I think that's worth doing, and importantly say they are not client funded. It is of interest to me as a practitioner."*
+
+- New `policy-and-law-reform.md` at `/policy-and-law-reform/`: why the work exists, a plain statement that it is not client-funded, current strands (dormant law register, the 1997 contaminated land regime, the Public Realm Bill, climate law, consultation responses), drafting and devolution approach.
+- Lists only work already published on the site. Whether to name drafts in progress (National Infrastructure Bill) is Robert's call: marked in an HTML comment.
+- Linked from Services (public affairs free tools line) and the Policy series intro. Not added to the main menu.
 ### v0.55.2 — 23 November 2026: consultancy X account
 
 *Robert, 22 November 2026: "update the website to include the new X account for the consultancy, because I spotted that's missing on the website and on the contacts details."*
