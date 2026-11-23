@@ -15,7 +15,7 @@ I draft legislation in the style of the Office of Parliamentary Counsel: clauses
 
 ## Public Realm (Framework and Entitlement) Bill
 **The problem:** streets, verges, parks, rivers and beaches are everyone's and no one's. Duties to look after them are scattered across dozens of old Acts.
-**The idea:** a short framework Bill with a continuous-improvement duty, minimum public realm entitlements, and land value capture to pay for it. The older amenity laws are left to a separate consolidation project (the Law Commission covers England and Wales; Scotland and Northern Ireland would need their own routes ; the Northern Ireland Law Commission has not operated since April 2015).
+**The idea:** a short framework Bill with a continuous-improvement duty, minimum public realm entitlements, and land value capture to pay for it. The older amenity laws are left to a separate consolidation project (the Law Commission covers England and Wales; Scotland and Northern Ireland would need their own routes, and the Northern Ireland Law Commission has not operated since April 2015).
 **Where it stands:** reworked after a scrutiny exercise in October 2026 into a shorter framework Bill. For the UK Government and the Official Opposition first; then a Private Member's Bill version; then a concept paper for Northern Ireland's parties before the May 2027 Assembly election. Devolution is respected throughout: provisions that touch devolved matters are flagged for legislative consent.
 
 ## National Infrastructure Bill
