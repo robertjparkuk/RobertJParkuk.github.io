@@ -25,6 +25,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.58.0 — 23 November 2026: publishing block on unchecked claims
+
+*Robert, 22 November 2026 (Q6), confirmed 23 November: "Add."*
+
+- `.github/workflows/pr-check.yml`: a new step fails the check if the built site (future-dated posts included) contains a draft marker such as `[verify`, `[confirm`, `[link the`, `[number to add`, `[source]` or `Draft note:`. Drafts in `_drafts/` are never built, so they can keep their markers.
+
 ### v0.57.1 — 23 November 2026: council waste dashboard made visible
 
 *Robert, 23 November 2026: "Merge 121. Dashboard to be made visible."*
