@@ -29,7 +29,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 *Robert's decisions, 23 November 2026, in the website decisions doc.*
 
-- VAT: footer and CBAM Desk read the `vat_registered` switch. While false: "Prices exclude VAT. VAT registration is in process; VAT is added only once my VAT number is issued."
+- VAT: footer and CBAM Desk read the `vat_registered` switch. While false: "Prices exclude VAT. VAT registration is in process." (Robert's wording.)
 - Footer on every page: trading name (Robert J Park Consultancy), sole trader, business address, ICO registration ZC306378, link to the new Terms and complaints page. New `_config.yml` keys: `trading_name`, `address`, `ico`.
 - New `terms.md` at /terms/: business clients only, quotations and letters of engagement, scope of advice, complaints route. Linked from the footer and the contact page.
 - About: CIPR since 2017; "Internal audit modules, Chartered Institute of Internal Auditors, 2023"; "published papers (2002 and 2004)" without a count. FRSA and IoD confirmed current.

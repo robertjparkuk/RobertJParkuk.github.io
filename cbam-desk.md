@@ -99,7 +99,7 @@ Customer data requests answered as they arrive. Each quarter you get a liability
 - **Scope is counted in lines, not by material.** Alloy or stainless steel, NPK blends, mixed-material goods and special customs procedures count as two lines. If a job is too big for its level, it moves up one level.
 - **A hard deadline moves the job up one level.** There is no percentage surcharge.
 - **Credit:** £550 comes off the next level you book within three months.
-- Prices are fixed and quoted in writing before any work starts, and a quote holds for 90 days. {% if site.vat_registered %}All prices exclude VAT, which is charged at the prevailing rate.{% else %}Prices exclude VAT. VAT registration is in process; VAT is added only once my VAT number is issued.{% endif %} The delivery date goes in a one-page letter of engagement setting the scope and the information you supply. Prices change once a year, in January.
+- Prices are fixed and quoted in writing before any work starts, and a quote holds for 90 days. {% if site.vat_registered %}All prices exclude VAT, which is charged at the prevailing rate.{% else %}Prices exclude VAT. VAT registration is in process.{% endif %} The delivery date goes in a one-page letter of engagement setting the scope and the information you supply. Prices change once a year, in January.
 
 If a UK–EU agreement exempts your goods from either CBAM, I will tell you in writing what still applies: goods from other countries, records, and your customers' data requests. You can end the monthly desk on one month's notice.
 
