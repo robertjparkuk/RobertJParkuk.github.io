@@ -25,6 +25,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.55.2 — 23 November 2026: consultancy X account
+
+*Robert, 22 November 2026: "update the website to include the new X account for the consultancy, because I spotted that's missing on the website and on the contacts details."*
+
+- `_config.yml`: `x` and `x_handle` for @RJPConsultingNI. Robert's personal X account stays off the site.
+- `_layouts/default.html`: footer link to X on every page; X added to the schema.org `sameAs` list beside LinkedIn.
+- `contact.md`: an X line after LinkedIn.
+- Supersedes the unmerged branch `v0.52.1-x-link`, which can be deleted.
+
 ### v0.55.1 — 22 November 2026: Reckoner linked from CBAM Desk
 
 *Robert, 22 November 2026: "Link Ready Reckoner to CBAM Desk."*
