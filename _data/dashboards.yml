@@ -25,6 +25,13 @@
       thumb: /assets/dashboards/eu-law-windsor-framework.jpg
       summary: "Which EU laws apply in Northern Ireland, every Stormont Brake case and new EU act added since 2024, how NI rules reach businesses in Great Britain, and open UK, Commission and Irish government consultations."
       as_at: "Checked 11 November 2026"
+    - title: "NI emissions against its carbon budgets"
+      page: /tools/dashboards/ni-carbon-budgets.html
+      thumb: /assets/dashboards/ni-carbon-budgets.jpg
+      summary: "Northern Ireland's 2024 emissions against the carbon budgets and 2040 target in law, the sectors that carry the gap, and a dated list of what the Climate Change Act (NI) 2022 still awaits, including the fourth budget."
+      as_at: "Emissions to 2024 (DAERA, 9 June 2026); status checked 23 November 2026"
+      related_title: "The Act that outran its plan"
+      related: /blog/2026/11/the-act-that-outran-its-plan/
     - title: "NI Consultations Monitor"
       page: /tools/dashboards/ni-consultations-monitor.html
       thumb: /assets/dashboards/ni-consultations-monitor.jpg
