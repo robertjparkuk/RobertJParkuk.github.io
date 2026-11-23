@@ -1,5 +1,5 @@
 """Build the NI council waste comparator (balancing plan item 17).
-Reuses the helpers and brand styling of build.py. Draft: not linked from /dashboards/ until Robert approves.
+Reuses the helpers and brand styling of build.py. Listed on /dashboards/ (approved by Robert, 23 November 2026).
 Usage: python3 waste_build.py <repo_root>
 """
 import sys, os
@@ -90,12 +90,11 @@ cards = [
 ]
 out = page('ni-council-waste', 'NI councils compared: waste and recycling | Robert J. Park',
            "Northern Ireland's eleven councils compared: waste and recycling",
-           f'How much household waste each council recycles, where the rest goes, and how that has changed since {FIRST}. Calculated from DAERA\'s official time series ({LATEST} finalised). <strong>Draft for review: not yet published.</strong>',
+           f'How much household waste each council recycles, where the rest goes, and how that has changed since {FIRST}. Calculated from DAERA\'s official time series ({LATEST} finalised).',
            tiles, cards, '/blog/2026/11/northern-irelands-waste-bill/', 'Northern Ireland\'s waste bill', '23 November 2026',
            'Household recycling, landfill and energy recovery for Northern Ireland\'s eleven councils, from DAERA official statistics.')
 out = out.replace('checked on 20–21 October 2026', 'checked on 22–23 November 2026')
 out = out.replace('Figures checked on 21 October 2026, for publication with the issue of 23 November 2026', 'Figures calculated on 23 November 2026 from DAERA\'s LAC municipal waste time series (Open Government Licence)')
 out = out.replace('</style>\n</head>', '.k-tiles{grid-template-columns:repeat(auto-fit,minmax(min(100%,14rem),1fr))}</style>\n</head>')
-out = out.replace('<meta name="description"', '<meta name="robots" content="noindex">\n<meta name="description"')
 open(os.path.join(ROOT, 'tools/dashboards/ni-council-waste.html'), 'w', encoding='utf-8').write(out)
 print('ok', len(out))

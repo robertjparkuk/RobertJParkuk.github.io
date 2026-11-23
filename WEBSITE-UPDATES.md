@@ -25,6 +25,14 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.57.1 — 23 November 2026: council waste dashboard made visible
+
+*Robert, 23 November 2026: "Merge 121. Dashboard to be made visible."*
+
+- `tools/dashboards/ni-council-waste.html`: noindex removed and the draft notice taken out; rebuilt by `waste_build.py`.
+- `_data/dashboards.yml`: listed under "Public realm and the economy", with a new 640×400 thumbnail.
+- `services.md`: "(draft)" removed from the link.
+
 ### v0.57.0 — 23 November 2026: Land, water and waste; council waste dashboard (draft)
 
 *Robert, 23 November 2026: "Show me the Land water waste service area and the dashboard - ensure the branding is used!"*
