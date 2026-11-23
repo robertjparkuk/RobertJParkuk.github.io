@@ -13,10 +13,9 @@ You deal with me throughout. Some services I deliver alone; for others I lead th
 | --- | --- |
 | [CBAM and CSRD](#cbam-and-csrd) | Led by me; carbon accountants as needed; verification independent |
 | [Carbon inventories](#carbon-inventories) | Led by me, with carbon accountants; independent verification by a UKAS-accredited verifier where you need it |
-| [Water, waste and packaging](#water-waste-and-packaging) | Collaborative, with specialist partners |
+| [Land, water and waste](#land-water-and-waste) | Land: led by me, with a multidisciplinary team; site investigation and remediation subcontracted. Water, waste and packaging: collaborative, with specialist partners |
 | [Energy costs and ESOS](#energy-costs-and-esos) | Led by me, with ESOS assessors; Lead Assessor sign-off |
 | [Pollution and environmental health](#pollution-and-environmental-health) | Led by me, with a multidisciplinary team; monitoring and testing subcontracted |
-| [Contaminated land](#contaminated-land) | Led by me, with a multidisciplinary team; site investigation and remediation subcontracted |
 | [PFAS](#pfas-forever-chemicals) | Led by me, with technical support on operations |
 | [Public affairs and communications](#public-affairs-and-communications) | Me alone |
 
@@ -53,12 +52,13 @@ I lead the work, with carbon accountants where the volume needs them. If you nee
 
 **Free tools:** [Carbon Ready Reckoner]({{ '/tools/carbon-ready-reckoner.html' | relative_url }}), a first estimate from a year of bills · [The Carbon Jigsaw]({{ '/tools/carbon-jigsaw.html' | relative_url }}) · [The Scopes Map]({{ '/tools/scopes-map.html' | relative_url }})
 
-## Water, waste and packaging
+## Land, water and waste
 
 <figure class="page-photo"><img src="{{ '/assets/photos/packaging-conveyor.jpg' | relative_url }}" alt="Packaged goods moving along a factory conveyor" loading="lazy"><figcaption>What goes in the drain, the skip and the box is money leaving the site.</figcaption></figure>
 
-For most manufacturers, water, waste and packaging are where environmental rules meet the monthly costs most directly. Packaging producers now carry extended producer responsibility across the UK, including Northern Ireland; waste is moving from paper records to digital tracking; and what a site sends to sewer or to a watercourse needs the right consent. I work on this collaboratively with specialist partners, and help you with:
+Land, water and waste are one problem seen from three sides. A contaminated site is also a groundwater question, an effluent question and a question of how excavated soil is classified and where it goes. A factory's drains, skips and packaging are where environmental rules meet the monthly costs most directly. Packaging producers now carry extended producer responsibility across the UK, including Northern Ireland; waste is moving from paper records to digital tracking; and what a site sends to sewer or to a watercourse needs the right consent. I help you with:
 
+- **Land:** contamination risk, due diligence on a purchase or lease, and remediation. In Northern Ireland, Part III of the Waste and Contaminated Land (Northern Ireland) Order 1997 has never been commenced, so contamination is dealt with mainly through planning and pollution law. I lead this work with a multidisciplinary team; site investigation, testing and remediation are delivered by specialist partner firms, with me managing them for you.
 - **Packaging:** whether you are an obligated producer under packaging extended producer responsibility (pEPR), what data you report, and how packaging choices change what you pay
 - **Waste:** your duty of care, waste data and the move to digital waste tracking; cutting what you pay to landfill by separating streams at source
 - **Water:** mapping where water enters and leaves your process, trade effluent and discharge consents, and the carbon in water supply and treatment
@@ -66,9 +66,11 @@ For most manufacturers, water, waste and packaging are where environmental rules
 
 The water, waste and packaging rules sit under both UK and, for goods, EU regimes in Northern Ireland; I check which applies to you before advising.
 
-**Free tools and dashboards:** [NI Public Realm: Water, Roads and Floods]({{ '/tools/dashboards/ni-public-realm-water-roads.html' | relative_url }}) · [Circular Economy Reality Check]({{ '/guides/circular-economy.html' | relative_url }}) · [E-waste Unpacked]({{ '/guides/e-waste.html' | relative_url }}) · [The circular economy is a life cycle too]({{ '/learn/circular-economy-life-cycle/' | relative_url }})
+**Free tools and dashboards:** [NI councils compared: waste and recycling]({{ '/tools/dashboards/ni-council-waste.html' | relative_url }}) (draft) · [NI Public Realm: Water, Roads and Floods]({{ '/tools/dashboards/ni-public-realm-water-roads.html' | relative_url }}) · [Circular Economy Reality Check]({{ '/guides/circular-economy.html' | relative_url }}) · [E-waste Unpacked]({{ '/guides/e-waste.html' | relative_url }}) · [The circular economy is a life cycle too]({{ '/learn/circular-economy-life-cycle/' | relative_url }})
 
-**Read more:** [Northern Ireland's waste bill]({% post_url 2026-11-02-northern-irelands-waste-bill %}) · [The end of the paper trail: digital waste tracking]({% post_url 2026-11-02-the-end-of-the-paper-trail-digital-waste-tracking %}) · [Gold in the bin]({% post_url 2026-11-02-gold-in-the-bin %}) · [Brown bins, black holes]({% post_url 2026-11-02-brown-bins-black-holes-who-pays-for-northern-irelands-organic-waste %}) · [Closed for booking]({% post_url 2026-11-02-closed-for-booking-how-restricting-the-tip-pushes-rubbish-into-lay-bys-and-lanes %}) · [Lough Neagh and the price of clean water]({% post_url 2026-11-02-lough-neagh-and-the-price-of-clean-water %}) · [We don't fund the drains]({% post_url 2026-11-02-we-dont-fund-the-drains-then-we-pay-for-the-flood %})
+**Read more:** [The land law Stormont never switched on]({% post_url 2026-11-02-the-land-law-stormont-never-switched-on %}) · [Crystals in Confinement]({% post_url 2026-10-27-crystals-in-confinement %}) · [Northern Ireland's waste bill]({% post_url 2026-11-02-northern-irelands-waste-bill %}) · [The end of the paper trail: digital waste tracking]({% post_url 2026-11-02-the-end-of-the-paper-trail-digital-waste-tracking %}) · [Gold in the bin]({% post_url 2026-11-02-gold-in-the-bin %}) · [Brown bins, black holes]({% post_url 2026-11-02-brown-bins-black-holes-who-pays-for-northern-irelands-organic-waste %}) · [Closed for booking]({% post_url 2026-11-02-closed-for-booking-how-restricting-the-tip-pushes-rubbish-into-lay-bys-and-lanes %}) · [Lough Neagh and the price of clean water]({% post_url 2026-11-02-lough-neagh-and-the-price-of-clean-water %}) · [We don't fund the drains]({% post_url 2026-11-02-we-dont-fund-the-drains-then-we-pay-for-the-flood %})
+
+Printable site plans for desk studies are on the [Tools]({{ '/tools/' | relative_url }}) page.
 
 ## Energy costs and ESOS
 
@@ -92,16 +94,10 @@ Pollution is rarely one thing. A site can have an air permit, a discharge consen
 
 - **Air:** emissions, dust and odour from your processes; what your permit or registration requires; fuel and boiler choices that cut both pollution and carbon
 - **Water:** run-off, spills and discharges to sewer or watercourses; pollution prevention on yards, tanks and drains; what to do when something goes wrong
-- **Land:** contamination from past and present uses; see [Contaminated land](#contaminated-land) below
+- **Land:** contamination from past and present uses; see [Land, water and waste](#land-water-and-waste) above
 - **The public realm:** noise, artificial light, litter, fly-tipping and other nuisance that reaches neighbours, roads and open spaces; for businesses facing complaints, and for councils managing them
 
 **Free tools and reading:** [The Land Repair Helix]({{ '/tools/land-repair-helix.html' | relative_url }}) · [Acid rain to acid seas]({{ '/learn/acid-rain-to-acid-seas/' | relative_url }}) · [Lough Neagh and cyanobacteria]({{ '/learn/lough-neagh-and-cyanobacteria/' | relative_url }}) · [Who cuts the hedge?]({% post_url 2026-11-21-who-cuts-the-hedge-northern-ireland %})
-
-## Contaminated land
-
-Advice on land contamination risk, due diligence and remediation in Northern Ireland, where Part III of the Waste and Contaminated Land (Northern Ireland) Order 1997 has never been commenced, so contamination is dealt with mainly through planning and pollution law. I lead the work with a multidisciplinary team; site investigation, testing and remediation are delivered through specialist partner firms, with me managing them on your behalf.
-
-**Read more:** [The land law Stormont never switched on]({% post_url 2026-11-02-the-land-law-stormont-never-switched-on %}) · [Crystals in Confinement]({% post_url 2026-10-27-crystals-in-confinement %}) · Printable site plans on the [Tools]({{ '/tools/' | relative_url }}) page
 
 ## PFAS (forever chemicals)
 

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NI councils compared: waste and recycling | Robert J. Park</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Household recycling, landfill and energy recovery for Northern Ireland&#x27;s eleven councils, from DAERA official statistics.">
+<link rel="canonical" href="https://robertjpark.co.uk/tools/dashboards/ni-council-waste.html">
+<meta property="og:title" content="NI councils compared: waste and recycling | Robert J. Park">
+<meta property="og:description" content="Household recycling, landfill and energy recovery for Northern Ireland&#x27;s eleven councils, from DAERA official statistics.">
+<meta property="og:url" content="https://robertjpark.co.uk/tools/dashboards/ni-council-waste.html">
+<meta property="og:image" content="https://robertjpark.co.uk/assets/og-image.jpg">
+<link rel="icon" type="image/svg+xml" href="/assets/tools-mark.svg">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+/* Site wrapper and tokens. The dashboard body below keeps its original classes; these tokens map them to the Robert J. Park brand. */
+:root{
+  --color-bg:#FFFFFF; --color-fg:#1B1817; --color-fg-muted:#5F5856; --color-panel:#F6F4F2; --color-border-line:#DDD6D2;
+  --color-ok:#2F7A3B; --color-warn:#B5650F; --color-bad:#B3121B;
+  --cds-chart-grid:#ECE7E4; --cds-chart-muted:#5E6E80; --cds-chart-reference:#8A817D; --cds-chart-status-critical:#B3121B;
+  --font-anthropic-serif:'Fraunces',Georgia,'Times New Roman',serif; --font-anthropic-sans:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+  --cds-font-size-caption:14px; --cds-font-size-body:17px; --cds-font-size-heading:20px; --cds-font-size-title:clamp(28px,4vw,40px); --cds-font-weight-medium:600;
+  --cds-gap-xs:4px; --cds-gap-sm:8px; --cds-gap-md:14px; --cds-gap-lg:20px; --cds-gap-xl:36px;
+  --cds-pad-xs:5px; --cds-pad-sm:8px; --cds-pad-md:12px; --cds-pad-lg:16px; --cds-radius:8px; --cds-dur-slow:.3s;
+  --red:#B3121B; color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --color-bg:#171413; --color-fg:#F1ECE9; --color-fg-muted:#B3AAA6; --color-panel:#221E1D; --color-border-line:#3A3332;
+  --color-ok:#7FC48A; --color-warn:#E9A55A; --color-bad:#F0787C;
+  --cds-chart-grid:#2E2827; --cds-chart-muted:#93A6BA; --cds-chart-reference:#8A817D; --cds-chart-status-critical:#F0787C; --red:#E5484D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --color-bg:#171413; --color-fg:#F1ECE9; --color-fg-muted:#B3AAA6; --color-panel:#221E1D; --color-border-line:#3A3332;
+  --color-ok:#7FC48A; --color-warn:#E9A55A; --color-bad:#F0787C;
+  --cds-chart-grid:#2E2827; --cds-chart-muted:#93A6BA; --cds-chart-reference:#8A817D; --cds-chart-status-critical:#F0787C; --red:#E5484D; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-anthropic-sans);font-size:16px;line-height:1.45;
+  padding:24px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+.site-top{max-width:72rem;margin:0 auto 20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-fg-muted);text-decoration:none}
+.brand b{color:var(--red)}
+.site-top nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+.site-top nav a{color:var(--color-fg-muted);text-decoration:none}.site-top nav a:hover{color:var(--red)}
+a{color:var(--red)}
+.k-h2{font-family:var(--font-anthropic-serif);font-weight:600}
+.dash-skeleton{color:var(--color-fg-muted)}
+.src-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr));gap:var(--cds-gap-md)}
+.src-list .k-card p{margin:var(--cds-gap-xs) 0;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.src-list ul{margin:var(--cds-gap-xs) 0 var(--cds-gap-sm);padding-left:1.1em;font-size:var(--cds-font-size-caption)}
+.src-list button{font:inherit;font-size:13px;padding:5px 10px;border-radius:6px;border:1px solid var(--color-border-line);background:var(--color-bg);color:var(--color-fg);cursor:pointer}
+.src-list button:hover{border-color:var(--red)}
+.site-foot{max-width:72rem;margin:var(--cds-gap-xl) auto 0;border-top:1px solid var(--color-border-line);padding-top:14px;font-size:14px;color:var(--color-fg-muted)}
+@media print{.site-top nav,.src-list button{display:none}}
+</style>
+<style>.k-wrap { max-width: 72rem; margin-inline: auto; font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+.k-head h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0 0 var(--cds-gap-xs); }
+.k-head p { color: var(--color-fg-muted); margin: 0 0 var(--cds-gap-lg); font-size: var(--cds-font-size-body); max-width: 60rem; }
+.k-h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: var(--cds-gap-xl) 0 var(--cds-gap-sm); }
+.k-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: var(--cds-gap-md); }
+.k-tile, .k-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); }
+.k-tile .k-lab { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.k-tile .k-big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin: var(--cds-gap-xs) 0; min-height: 1.3em; }
+.k-tile .k-sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.k-good { color: var(--color-ok); } .k-bad { color: var(--color-bad); }
+.k-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.k-card h3 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.k-card .k-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); }
+.k-bars { display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-height: 4rem; }
+.k-bar-row { display: grid; grid-template-columns: minmax(6rem, 38%) 1fr auto; align-items: center; gap: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); }
+.k-bar-label { color: var(--color-fg); overflow-wrap: anywhere; }
+.k-bar-track { height: 14px; background: var(--cds-chart-grid); border-radius: 7px; overflow: hidden; }
+.k-bar { display: block; height: 100%; background: var(--cds-chart-muted); border-radius: 7px; }
+.k-bar.k-accent { background: var(--cds-chart-status-critical); }
+.k-bars.k-blue .k-bar { background: var(--cds-chart-muted); }
+.k-bar-val { font-variant-numeric: tabular-nums; min-width: 4.5rem; text-align: right; color: var(--color-fg); }
+.k-tablebox { max-height: 34rem; overflow: auto; }
+.k-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); }
+.k-table th { position: sticky; top: 0; background: var(--color-panel); text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+.k-table td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.k-table td.k-num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.k-fail { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); min-height: 4rem; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.k-dot { width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+.k-callout { border-left: 3px solid var(--cds-chart-reference); padding: var(--cds-pad-sm) var(--cds-pad-md); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin-top: var(--cds-gap-md); }
+.k-foot { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin-top: var(--cds-gap-xl); }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+
+
+.k-bar-row.k-hi .k-bar-label{font-weight:600}
+.k-div{position:relative;height:14px;background:var(--cds-chart-grid);border-radius:7px}
+.k-div .k-mid{position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--color-fg-muted)}
+.k-div .k-bar{position:absolute;top:0;height:100%}
+.k-bar.k-pos{background:var(--color-bad)} .k-bar.k-neg{background:var(--color-ok)}
+.k-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:var(--cds-gap-md);font-size:13px}
+.k-src{font-size:13px;color:var(--color-fg-muted);margin-top:var(--cds-gap-sm)}
+.k-wide{grid-column:1/-1}
+.k-tiles{grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr))}
+.k-pill{display:inline-block;font-size:12px;padding:1px 8px;border-radius:10px;border:1px solid var(--color-border-line);color:var(--color-fg-muted)}
+.k-tiles{grid-template-columns:repeat(auto-fit,minmax(min(100%,14rem),1fr))}</style>
+</head>
+<body>
+<header class="site-top">
+  <a class="brand" href="/" aria-label="Robert J. Park home"><img src="/assets/tools-mark.svg" alt="" width="30" height="30">Robert J. <b>Park</b> · Dashboards</a>
+  <nav aria-label="Main"><a href="/">Home</a><a href="/services/">Services</a><a href="/tools/">Tools</a><a href="/dashboards/">Dashboards</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></nav>
+</header>
+<main id="dash-root">
+<div class="k-wrap">
+<header class="k-head"><h1>Northern Ireland&#x27;s eleven councils compared: waste and recycling</h1>
+<p>How much household waste each council recycles, where the rest goes, and how that has changed. Built from DAERA's official statistics. <strong>Draft for review: not yet published.</strong></p></header>
+<div class="k-tiles"><div class="k-tile"><div class="k-lab">NI household recycling rate, 2024/25</div><div class="k-big ">51.0%</div><div class="k-sub">Flat on 2023/24 (51.1%). DAERA, 11 Dec 2025</div></div><div class="k-tile"><div class="k-lab">Council waste to landfill, 2024/25</div><div class="k-big ">14.0%</div><div class="k-sub">Down from 74.0% in 2006/07 and 18.4% in 2023/24</div></div><div class="k-tile"><div class="k-lab">Spread between councils</div><div class="k-big ">42.4–59.3%</div><div class="k-sub">Belfast to Mid Ulster, household recycling, 2024/25 (provisional)</div></div><div class="k-tile"><div class="k-lab">Sent for energy recovery</div><div class="k-big ">41.8%</div><div class="k-sub">Jul–Sep 2025, up from 30.2% a year earlier</div></div></div>
+<h2 class="k-h2">The figures</h2>
+<div class="k-grid"><section class="k-card k-wide" aria-label="Household recycling rate by council, 2024/25"><h3>Household recycling rate by council, 2024/25</h3><p class="k-note">NI average 51.0%. Mid and East Antrim is highlighted. <span class="k-pill">Provisional: to be replaced from the DAERA CSV before publication</span></p><div class="k-bars" role="list"><div class="k-bar-row" role="listitem"><span class="k-bar-label">Mid Ulster</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:84.7%"></span></span><span class="k-bar-val">59.3%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">Antrim and Newtownabbey</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:81.3%"></span></span><span class="k-bar-val">56.9%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">Ards and North Down</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:80.1%"></span></span><span class="k-bar-val">56.1%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">Armagh City, Banbridge and Craigavon</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:78.0%"></span></span><span class="k-bar-val">54.6%</span></div><div class="k-bar-row k-hi" role="listitem"><span class="k-bar-label">Mid and East Antrim</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar k-accent" style="width:72.6%"></span></span><span class="k-bar-val">50.8%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">Causeway Coast and Glens</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:72.0%"></span></span><span class="k-bar-val">50.4%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">Lisburn and Castlereagh</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:72.0%"></span></span><span class="k-bar-val">50.4%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">Newry, Mourne and Down</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:69.6%"></span></span><span class="k-bar-val">48.7%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">Derry City and Strabane</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:69.1%"></span></span><span class="k-bar-val">48.4%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">Fermanagh and Omagh</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:68.1%"></span></span><span class="k-bar-val">47.7%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">Belfast</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:60.6%"></span></span><span class="k-bar-val">42.4%</span></div></div><div class="k-actions"><a download="ni-council-household-recycling-2024-25.csv" href="data:text/csv;charset=utf-8,%EF%BB%BFcouncil%2Chousehold_recycling_rate_2024_25_pct%0D%0AMid%20Ulster%2C59.3%0D%0AAntrim%20and%20Newtownabbey%2C56.9%0D%0AArds%20and%20North%20Down%2C56.1%0D%0A%22Armagh%20City%2C%20Banbridge%20and%20Craigavon%22%2C54.6%0D%0AMid%20and%20East%20Antrim%2C50.8%0D%0ACauseway%20Coast%20and%20Glens%2C50.4%0D%0ALisburn%20and%20Castlereagh%2C50.4%0D%0A%22Newry%2C%20Mourne%20and%20Down%22%2C48.7%0D%0ADerry%20City%20and%20Strabane%2C48.4%0D%0AFermanagh%20and%20Omagh%2C47.7%0D%0ABelfast%2C42.4%0D%0A">Download CSV</a></div><p class="k-src">Source: <a href="https://www.daera-ni.gov.uk/news/northern-ireland-local-authority-collected-municipal-waste-management-statistics-released-111225" rel="noopener">NI LAC municipal waste management statistics 2024/25, annual report (DAERA, 11 December 2025)</a>; <a href="https://www.daera-ni.gov.uk/publications/northern-ireland-local-authority-collected-municipal-waste-management-statistics-time-series-data" rel="noopener">LAC municipal waste time series, CSV, Open Government Licence (DAERA via OpenDataNI)</a></p></section><section class="k-card" aria-label="NI household recycling rate by quarter"><h3>NI household recycling rate by quarter</h3><p class="k-note">Provisional quarterly figures as first published.</p><div class="k-bars" role="list"><div class="k-bar-row" role="listitem"><span class="k-bar-label">Apr–Jun 2024</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:77.9%"></span></span><span class="k-bar-val">54.5%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">Jul–Sep 2024</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:76.7%"></span></span><span class="k-bar-val">53.7%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">Oct–Dec 2024</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:68.9%"></span></span><span class="k-bar-val">48.2%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">Jan–Mar 2025</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:66.3%"></span></span><span class="k-bar-val">46.4%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">Apr–Jun 2025</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:77.1%"></span></span><span class="k-bar-val">54.0%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">Oct–Dec 2025</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:71.1%"></span></span><span class="k-bar-val">49.8%</span></div></div><div class="k-actions"><a download="ni-household-recycling-by-quarter.csv" href="data:text/csv;charset=utf-8,%EF%BB%BFquarter%2Chousehold_recycling_rate_pct%0D%0AApr%E2%80%93Jun%202024%2C54.5%0D%0AJul%E2%80%93Sep%202024%2C53.7%0D%0AOct%E2%80%93Dec%202024%2C48.2%0D%0AJan%E2%80%93Mar%202025%2C46.4%0D%0AApr%E2%80%93Jun%202025%2C54.0%0D%0AOct%E2%80%93Dec%202025%2C49.8%0D%0A">Download CSV</a></div><p class="k-src">Source: <a href="https://www.daera-ni.gov.uk/news/northern-ireland-local-authority-collected-municipal-waste-management-statistics-released-april-26" rel="noopener">NI LAC municipal waste management statistics, quarterly releases (DAERA, 2024–2026)</a></p></section><section class="k-card" aria-label="Landfill rate, council-collected waste"><h3>Landfill rate, council-collected waste</h3><p class="k-note">The fall since 2006/07 is the biggest change in NI waste. Most of the recent drop has gone to energy recovery, not recycling.</p><div class="k-bars" role="list"><div class="k-bar-row" role="listitem"><span class="k-bar-label">2006/07</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:92.5%"></span></span><span class="k-bar-val">74.0%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">2023/24</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:23.0%"></span></span><span class="k-bar-val">18.4%</span></div><div class="k-bar-row" role="listitem"><span class="k-bar-label">2024/25</span><span class="k-bar-track" aria-hidden="true"><span class="k-bar" style="width:17.5%"></span></span><span class="k-bar-val">14.0%</span></div></div><div class="k-actions"><a download="ni-lac-landfill-rate.csv" href="data:text/csv;charset=utf-8,%EF%BB%BFyear%2Clandfill_rate_pct%0D%0A2006/07%2C74.0%0D%0A2023/24%2C18.4%0D%0A2024/25%2C14.0%0D%0A">Download CSV</a></div><p class="k-src">Source: <a href="https://www.daera-ni.gov.uk/news/northern-ireland-local-authority-collected-municipal-waste-management-statistics-released-111225" rel="noopener">NI LAC municipal waste management statistics 2024/25, annual report (DAERA, 11 December 2025)</a></p></section><section class="k-card" aria-label="Recycling, energy recovery and landfill"><h3>Recycling, energy recovery and landfill</h3><p class="k-note">Share of council-collected waste, by route. Recycling held steady while energy recovery replaced landfill.</p><div class="k-tablebox"><table class="k-table"><thead><tr><th scope="col">Quarter</th><th scope="col">Recycled</th><th scope="col">Energy recovery</th><th scope="col">Landfill</th></tr></thead><tbody><tr><td>Jan–Mar 2025</td><td class="k-num">46.0%</td><td class="k-num">44.3%</td><td class="k-num">8.3%</td></tr><tr><td>Jul–Sep 2025</td><td class="k-num">—</td><td class="k-num">41.8%</td><td class="k-num">3.4%</td></tr></tbody></table></div><div class="k-actions"><a download="ni-lac-routes.csv" href="data:text/csv;charset=utf-8,%EF%BB%BFquarter%2Crecycled_pct%2Cenergy_recovery_pct%2Clandfill_pct%0D%0AJan%E2%80%93Mar%202025%2C46.0%2C44.3%2C8.3%0D%0AJul%E2%80%93Sep%202025%2C%2C41.8%2C3.4%0D%0A">Download CSV</a></div><p class="k-src">Source: <a href="https://www.daera-ni.gov.uk/news/northern-ireland-local-authority-collected-municipal-waste-management-statistics-released-april-26" rel="noopener">NI LAC municipal waste management statistics, quarterly releases (DAERA, 2024–2026)</a></p></section><section class="k-card k-wide" aria-label="What this means for a business"><h3>What this means for a business</h3><p class="k-note">Councils are paid from packaging EPR for household packaging, and a deposit return scheme for drinks containers is due in October 2027. If you make or import packaged goods, your packaging data now drives both your fees and your council's income. If you run a site, the same separation-at-source habits that lift a council's rate cut your own waste bill.</p><p class="k-note"><a href="/services/#land-water-and-waste">Land, water and waste services</a> · <a href="/contact/">Talk to me</a></p><p class="k-src">Source: <a href="https://www.daera-ni.gov.uk/news/northern-ireland-local-authority-collected-municipal-waste-management-statistics-released-111225" rel="noopener">NI LAC municipal waste management statistics 2024/25, annual report (DAERA, 11 December 2025)</a></p></section></div>
+<h2 class="k-h2">Sources</h2>
+<section class="k-card"><p class="k-note">Every figure on this page comes from these sources, checked on 22–23 November 2026. Figures marked "derived" are worked out from the published numbers. This is a dated snapshot: nothing is fetched or sent, and every chart can be downloaded as CSV.</p><ul><li><a href="https://www.daera-ni.gov.uk/news/northern-ireland-local-authority-collected-municipal-waste-management-statistics-released-111225" rel="noopener">NI LAC municipal waste management statistics 2024/25, annual report (DAERA, 11 December 2025)</a></li><li><a href="https://www.daera-ni.gov.uk/publications/northern-ireland-local-authority-collected-municipal-waste-management-statistics-time-series-data" rel="noopener">LAC municipal waste time series, CSV, Open Government Licence (DAERA via OpenDataNI)</a></li><li><a href="https://www.daera-ni.gov.uk/news/northern-ireland-local-authority-collected-municipal-waste-management-statistics-released-april-26" rel="noopener">NI LAC municipal waste management statistics, quarterly releases (DAERA, 2024–2026)</a></li></ul></section>
+<p class="k-foot">Commentary: <a href="/blog/2026/11/northern-irelands-waste-bill/">Northern Ireland&#x27;s waste bill</a>. More dashboards: <a href="/dashboards/">all dashboards</a>.</p>
+</div>
+</main>
+<footer class="site-foot">Robert J. Park · Environment · Carbon · Public Affairs · Northern Ireland. Figures checked on 23 November 2026. Draft: council rates are provisional until replaced from the DAERA CSV; see <a href="/blog/2026/11/northern-irelands-waste-bill/">Northern Ireland&#x27;s waste bill</a> for the commentary. <a href="/contact/">Contact</a> · <a href="/privacy/">Privacy</a></footer>
+</body>
+</html>
