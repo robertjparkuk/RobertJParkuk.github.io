@@ -20,8 +20,8 @@ sources:
 
 **3. Call.**
 - Fire or risk to people: **999**
-- Water pollution: NIEA pollution hotline **0800 80 70 60** *[verify]*
-- Spill to foul sewer: NI Water *[number to add]*
+- Water pollution: NIEA pollution hotline **0800 80 70 60** (24 hours; checked on DAERA 23 Nov 2026)
+- Spill to foul sewer: NI Water Waterline **03457 440088** (24 hours) *[number checked 23 Nov 2026; remove this note at publication]*
 - Your manager: ______  Your environmental contact: ______
 
 **4. Record.** Time, substance, rough volume, where it went, photos, who you called.

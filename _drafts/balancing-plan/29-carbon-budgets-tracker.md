@@ -18,6 +18,6 @@ sources:
 2. By sector (agriculture, transport, buildings, industry, energy supply, waste, LULUCF): share and trend
 3. "Gap to budget": latest year against the first budget's average
 4. Missing pieces, dated: fourth carbon budget (due 31 Dec 2025, not set); Climate Action Plan; sectoral plans (site: The Act that outran its plan)
-5. Per council where DAERA or NAEI local data allow *[verify]*
+5. Per council: DAERA publishes NI local authority greenhouse gas estimates 2005 to 2024 (interactive bulletin and tables)
 
 **Why:** the biggest gap on the site. **Effort:** medium.

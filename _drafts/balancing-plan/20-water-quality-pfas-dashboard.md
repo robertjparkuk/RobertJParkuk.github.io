@@ -18,6 +18,6 @@ sources:
 2. Lough Neagh: phosphorus and chlorophyll trend; bloom extent by season (DAERA/AFBI)
 3. Drinking water compliance headline (DWI NI)
 4. PFAS: what is monitored, where, and against which limit. NI's drinking water regulations (2017) implement the old Directive 98/83/EC, not the recast EU limits; show the NI standard, the recast EU limit and GB guidance side by side
-5. Pollution incidents reported to NIEA by year and cause *[verify data availability]*
+5. Pollution incidents reported to NIEA by year and cause *[NIEA publishes incident statistics in its annual reports; check for a machine-readable series before build]*
 
 **Effort:** medium to high, depending on how the PFAS data are published.

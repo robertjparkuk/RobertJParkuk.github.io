@@ -14,7 +14,7 @@ sources:
 
 **For businesses:** the Act places no direct duty on private firms. It reaches them through what government does to meet the budgets: sectoral plans for agriculture, transport, buildings and industry; public procurement; grants and regulation.
 
-**For councils and public bodies:** reporting duties on climate action *[verify which regulations are made and when they bite]*, and the carbon expectations that follow in procurement.
+**For councils and public bodies:** reporting duties under the Climate Change (Reporting Bodies) Regulations (NI) 2024 (SR 2024/93, in operation 3 May 2024), which name 40 public bodies, and the carbon expectations that follow in procurement.
 
 **What to watch, dated:** the Climate Action Plan; sector plans; the fourth carbon budget (due 31 December 2025, not set); the May 2027 Assembly election.
 

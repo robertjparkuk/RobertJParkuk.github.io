@@ -17,8 +17,8 @@ Every litre that leaves your site goes one of two ways, and each has its own per
 
 | Where it goes | Permission | From |
 | --- | --- | --- |
-| To the public sewer | Trade effluent consent | NI Water *[verify legal basis]* |
-| To a river, lough, sea or soakaway | Discharge consent | NIEA *[verify]* |
+| To the public sewer | Trade effluent consent | NI Water (Water and Sewerage Services (NI) Order 2006, Part VI, Chapter III) |
+| To a river, lough, sea or soakaway | Discharge consent | NIEA, for DAERA (Water (NI) Order 1999, article 7; up to four months to decide) |
 
 ## Why it matters more from 2027
 - **Cost:** NI Water's price limit for 2027/28 is 3.4% above inflation (Utility Regulator, 21 Aug 2026), and trade effluent charges sit within it. Charges rise with volume and strength.

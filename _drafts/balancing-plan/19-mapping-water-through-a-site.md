@@ -14,7 +14,7 @@ Water bills show two numbers: what came in, and what is charged as going out to 
 **Map it in four boxes:** sources (mains, borehole, rainwater) → uses (process, cleaning, cooling, staff) → losses (evaporation, water in product) → exits (sewer, watercourse, tanker).
 
 **Why it matters:**
-- **Cost:** you may be paying sewerage on water that evaporates or leaves in product. A sewerage allowance may be claimable *[verify NI Water process]*.
+- **Cost:** you may be paying sewerage on water that evaporates or leaves in product. NI Water assumes 95% of metered water returns to sewer (a 5% allowance as standard) and you can apply for a higher non-return allowance with evidence (NI Water Scheme of Charges 2026/27).
 - **Carbon:** supply and treatment carry different factors (0.19 and 0.17 kg CO2e per m³ in the 2026 UK factors); the Reckoner asks for both for this reason.
 - **Risk:** knowing where water goes is the first step of a pollution-prevention plan.
 

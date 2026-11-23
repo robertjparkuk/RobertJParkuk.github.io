@@ -12,7 +12,7 @@ sources:
   - BSI; Institution of Lighting Professionals; Institute of Air Quality Management
 ---
 
-**Noise** is measured in decibels on a logarithmic scale: +10 dB sounds about twice as loud. For industrial sound near homes, **BS 4142** compares the "rating level" of your sound, with penalties for tones, impulses and intermittency, with the background level. A rating 10 dB above background is likely a significant adverse impact *[verify wording]*.
+**Noise** is measured in decibels on a logarithmic scale: +10 dB sounds about twice as loud. For industrial sound near homes, **BS 4142** compares the "rating level" of your sound, with penalties for tones, impulses and intermittency, with the background level. BS 4142 says a difference of around +10 dB or more is likely to indicate a significant adverse impact, and around +5 dB an adverse impact, in each case depending on the context.
 
 **Light** is judged on **light spill** (lux on a window), **glare** (luminous intensity towards a viewer) and **sky glow**, with limits set by environmental zone in the ILP's guidance on obtrusive light.
 

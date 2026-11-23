@@ -15,7 +15,9 @@ sources:
 
 Northern Ireland is not on the Great Britain grid. It shares the **Single Electricity Market** with Ireland, so wholesale prices, network charges and the carbon figure for your electricity all work differently from GB.
 
-## What you are paying for *[verify shares]*
+## What you are paying for
+
+*The Utility Regulator says wholesale energy is the largest element; no official percentage split for a business bill was found (checked 23 Nov 2026), so this section names the parts without percentages. The PSO levy for Oct 2026 to Sep 2027 is 0.074 p/kWh (UR approval, 2 Sep 2026).*
 - **Energy**: the wholesale price in the all-island market
 - **Networks**: NIE Networks distribution and SONI transmission charges
 - **Levies and policy costs**: including the Public Service Obligation levy

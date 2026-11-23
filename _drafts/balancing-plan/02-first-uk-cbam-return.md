@@ -7,8 +7,7 @@ audience: NI and UK importers who pass the £50,000 test in 2027
 status: DRAFT for panel review, not for publication
 proposed_slot: early January 2027, after HMRC publishes Q1 2027 rates
 verify:
-  - Registration deadline and first return date, from HMRC guidance at publication (not confirmed in this draft)
-  - Whether the return is annual or quarterly for 2027
+  - CHECKED 23 Nov 2026: 2027 is one annual accounting period; return and payment due 31 May 2028; quarterly from 2028, due two months after each quarter (GOV.UK CBAM factsheet). Recheck at publication.
   - Verification accreditation requirements (ISO/IEC 17029, ISO 14065) as on CBAM Desk
 sources:
   - HMRC, Rates for the carbon border adjustment mechanism (quarterly rates published by the start of each quarter)
@@ -21,7 +20,7 @@ sources:
 
 **Page 1: Are you in?** The two £50,000 tests: forward (next 30 days) and backward (last 12 months, checked on the first of each month), across all CBAM goods, on value; UK-origin goods excluded. Goods from GB are not imports; goods into NI from the EU are, on my reading of section 144(5)(a) of the Finance Act 2026, not yet confirmed by HMRC.
 
-**Page 2: Register.** Who registers (the importer of record, or the person liable under the Act); what HMRC asks for; how a buying group or agent fits. *Deadline: [verify from HMRC guidance].*
+**Page 2: Register.** Who registers (the importer of record, or the person liable under the Act); what HMRC asks for; how a buying group or agent fits. *Deadline: registration opens by 1 January 2028; if you pass the threshold during 2027 you have until 31 January 2028 to register (HMRC, "Work out the date you'll need to register", checked 23 Nov 2026).*
 
 **Page 3: Gather the data.** For each consignment: CN code, country of origin, net mass, value, supplier installation, embedded emissions (direct and, where required, indirect), and any carbon price already paid. A ready-made spreadsheet is item 4 in this plan.
 
@@ -29,7 +28,7 @@ sources:
 
 **Page 5: Work out the liability.** Liability = embodied emissions × CBAM rate − carbon price relief. Rates are set quarterly from the UK ETS price and published by the start of each quarter, so January to March 2027 rates appear on or before 1 January.
 
-**Page 6: Verification and records.** Who may verify for UK CBAM (accredited to ISO/IEC 17029 and ISO 14065); what to keep and for how long *[verify]*.
+**Page 6: Verification and records.** Who may verify for UK CBAM (accredited to ISO/IEC 17029 and ISO 14065); what to keep and for how long (verification reports for six years; returns can be amended within three years, but a return made on default values cannot later be amended with actual data: GOV.UK, checked 23 Nov 2026).
 
 **Page 7: Twelve-month calendar** for a first-year importer.
 

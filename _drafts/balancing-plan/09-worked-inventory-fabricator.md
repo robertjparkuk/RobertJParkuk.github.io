@@ -26,7 +26,7 @@ Twelve months of gas (LPG for the paint oven), electricity, kerosene for office 
 Scopes 1 and 2 and the partial Scope 3 from the Reckoner. *[Run and insert figures.]*
 
 ## Step 4: The big one: purchased steel
-Purchased goods (Scope 3 category 1) will dwarf everything else: on the order of 1.5 to 2.5 tonnes of CO2e per tonne of blast-furnace steel, far less for electric-arc steel *[verify ranges against worldsteel or supplier EPDs]*. For 2,000 tonnes a year, that is thousands of tonnes, against perhaps 200 to 400 for Scopes 1 and 2.
+Purchased goods (Scope 3 category 1) will dwarf everything else: about 2.3 tonnes of CO2 per tonne for blast-furnace steel against about 0.7 for scrap-based electric-arc steel, on worldsteel's 2024 route averages (Sustainability Indicators 2025); your supplier's EPD beats any average. For 2,000 tonnes a year, that is thousands of tonnes, against perhaps 200 to 400 for Scopes 1 and 2.
 
 ## Step 5: What the board does with it
 - Supplier choice becomes a carbon lever: ask mills for EPDs.

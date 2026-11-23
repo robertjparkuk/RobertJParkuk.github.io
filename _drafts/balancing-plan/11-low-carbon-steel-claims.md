@@ -17,8 +17,8 @@ sources:
 You can say what is **true, specific and evidenced**. "Low-carbon steel" on its own is none of those.
 
 ## What makes steel and aluminium lower-carbon
-- **Route**: electric-arc steel made from scrap typically has a fraction of the footprint of blast-furnace steel *[verify ranges]*.
-- **Recycled content**: recycled aluminium needs a small share of the energy of primary aluminium *[verify]*.
+- **Route**: electric-arc steel made from scrap averaged about 0.7 tonnes of CO2 per tonne in 2024 against about 2.3 for blast-furnace steel (worldsteel, Sustainability Indicators 2025, route averages).
+- **Recycled content**: recycled aluminium needs roughly 5% of the energy of primary aluminium *[industry figure (IAI/WEF), not a primary regulator source: cite the IAI directly or soften]*.
 - **Power**: hydro- or low-carbon-grid smelting.
 
 ## The evidence that stands up
