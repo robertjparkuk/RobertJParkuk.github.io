@@ -25,6 +25,13 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.57.0 — 23 November 2026: Land, water and waste; council waste dashboard (draft)
+
+*Robert, 23 November 2026: "Show me the Land water waste service area and the dashboard - ensure the branding is used!"*
+
+- `services.md`: "Water, waste and packaging" and "Contaminated land" merged into one **Land, water and waste** section, third in the list, led by land. The delivery table keeps both models: land led by Robert with a multidisciplinary team; water, waste and packaging collaborative.
+- New `tools/dashboards/ni-council-waste.html`, built by `_scripts/dashboards/waste_build.py` with the same brand bar, fonts and styling as the other dashboards. Marked `noindex` and not yet on /dashboards/. Every figure is now calculated from DAERA's LAC municipal waste time series CSV (Open Government Licence), supplied by Robert on 23 November and saved in `data/dashboards/ni-council-waste/`. The 2024/25 results match DAERA's published headline figures (NI household recycling 51.0%, landfill 14.0%). 2025/26 is shown as provisional. To refresh, replace the CSV and rerun the script.
+
 ### v0.56.0 — 23 November 2026: Policy and law reform page
 
 *Robert, 22 November 2026: "a separate policy on law reform page. I think that's worth doing, and importantly say they are not client funded. It is of interest to me as a practitioner."*
