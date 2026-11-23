@@ -35,7 +35,7 @@ Dates are the date I checked. Recheck anything regulatory on the day you publish
 | # | Question | Answer | Source | Status |
 |---|---|---|---|---|
 | 6 | Final Omnibus thresholds | Directive (EU) 2026/470, OJ 26 Feb 2026, in force 18 Mar 2026, transposition by 19 Mar 2027. In scope: EU companies with more than 1,000 employees and over €450m turnover; non-EU parents with over €450m EU turnover and an EU subsidiary or branch over €200m. | EUR-Lex | ANSWERED |
-| 7 | UK SRS status | FCA PS26/19 (30 Sep 2026): comply-or-explain for periods from 1 Jan 2027, first reports in 2028. Transitional relief: one year for Scope 3, two years for S1. | FCA | ANSWERED. Fix the draft's "published 25 Feb 2026" wording to cite PS26/19. |
+| 7 | UK SRS status | Standards published by DBT 25 Feb 2026. FCA PS26/19 (30 Sep 2026): comply-or-explain for listed companies for periods from 1 Jan 2027, first reports in 2028. Transitional relief: one year for Scope 3, two years for S1. | DBT; FCA | ANSWERED. Draft is correct. |
 | 7 | PPN 006 scope | Central government departments, executive agencies and NDPBs; contracts over £5m a year including VAT; under the Procurement Act 2023. It does not bind NI departments directly. | GOV.UK PPN 006 (updated Feb 2025) | ANSWERED |
 
 ## C. Manufacturing and products (items 8 to 14)
@@ -44,7 +44,7 @@ Dates are the date I checked. Recheck anything regulatory on the day you publish
 |---|---|---|---|---|
 | 9, 11 | Steel intensity by route | worldsteel 2024 route averages: BF-BOF 2.34, scrap-EAF 0.69, DRI-EAF 1.47 tCO2 per tonne of crude steel; global average 1.92. | worldsteel, Sustainability Indicators 2025 | ANSWERED (secondary: an industry body, but the standard reference). Applied. |
 | 11 | Recycled aluminium energy | About 5% of the energy of primary aluminium. | WEF citing IAI | ANSWERED (secondary). Cite the IAI directly or soften to "a small fraction". |
-| 11 | Green claims law | The DMCC Act 2024 consumer provisions came into force 6 Apr 2025, replacing the CPUTRs 2008. The CMA can now fine directly up to 10% of global turnover. Misleading environmental claims to consumers fall under the unfair commercial practices provisions. B2B claims stay under the Business Protection from Misleading Marketing Regulations 2008. | GOV.UK (CMA guidance, 4 Apr 2025); legislation.gov.uk | ANSWERED. Replace "CPUTRs" with the DMCC Act in draft 11. |
+| 11 | Green claims law | The DMCC Act 2024 consumer provisions came into force 6 Apr 2025, replacing the CPUTRs 2008. The CMA can now fine directly up to 10% of global turnover. Misleading environmental claims to consumers fall under the unfair commercial practices provisions. B2B claims stay under the Business Protection from Misleading Marketing Regulations 2008. | GOV.UK (CMA guidance, 4 Apr 2025); legislation.gov.uk | ANSWERED. Add one line on the DMCC Act to draft 11 (consumer-facing claims). |
 | 8, 10, 14 | NI sector sizes (NISRA, DAERA Size and Performance) | Not pulled. These are Focus-series outlines. | NISRA; DAERA | OPEN: pull at writing stage |
 | 12 | Published NI/UK energy-per-tonne benchmarks | None official found. Tool to say "your own trend, not a league table". | — | ANSWERED (none exists) |
 
@@ -69,7 +69,7 @@ Dates are the date I checked. Recheck anything regulatory on the day you publish
 | 24 | BS 4142 wording | BS 4142:2014+A1:2019 says a difference of around +10 dB or more is likely to indicate a significant adverse impact, and around +5 dB an adverse impact, in each case depending on context. BSI lists the standard as "Current, Under Review". | BSI; council planning documents quoting the standard | ANSWERED. Applied. |
 | 24 | Light | ILP Guidance Note 01/21, environmental zones E0 to E4. | ILP | ANSWERED (professional body) |
 | 24 | Odour | IAQM Guidance on the assessment of odour for planning, v1.1 (July 2018), FIDOL factors. IAQM consulted members on a substantive update in spring 2026. | IAQM/IES | ANSWERED. Check whether the update has been published. |
-| 22 | NI air quality data and licence | Not yet checked. | DAERA NI Air | OPEN: data double-dip |
+| 22 | NI air quality data and licence | NI Air download tool and Atom feeds, Open Government Licence, with a set attribution line. | airqualityni.co.uk; OpenDataNI | ANSWERED |
 | 23 | Emergency numbers | NIEA Water Pollution Hotline 0800 80 70 60 (24 hours). NI Water Waterline 03457 440088 (24 hours). Flooding Incident Line 0300 2000 100. | DAERA; NI Water; DfI | ANSWERED. Applied. |
 
 ## F. Energy and ESOS (items 26 to 28)
@@ -80,7 +80,7 @@ Dates are the date I checked. Recheck anything regulatory on the day you publish
 | 27 | SECR/ESOS alignment | The SECR post-implementation review was published 26 May 2026. DESNZ said it would consult later in 2026. | GOV.UK | ANSWERED to May 2026; check whether the consultation has opened |
 | 26, 28 | Components of an NI business bill | The UR says wholesale energy is the largest element. Others: network charges, SEM charges, PSO, CCL, supplier costs, VAT. PSO for Oct 2026 to Sep 2027: 0.074 p/kWh (£5.399m). No official percentage split found. | Utility Regulator (REV 2026/27; PSO approval 2 Sep 2026) | ANSWERED. Draft now names the parts without shares. |
 | 26 | NI price split in DESNZ QEP | QEP industrial tables are UK-level, under the Open Government Licence. The NI figures come from the UR's quarterly retail monitoring reports. | DESNZ QEP; UR QREMM | ANSWERED |
-| 26 | SEMO data reuse terms | Not yet checked. | SEMO | OPEN: data double-dip |
+| 26 | SEMO data reuse terms | SEMOpx is run with EPEX SPOT, whose market data is sold under licence. No open licence found. | EPEX SPOT data conditions | ANSWERED: link to SEMO, don't republish raw prices |
 
 ## G. Climate law (items 29, 30)
 
@@ -98,16 +98,16 @@ Dates are the date I checked. Recheck anything regulatory on the day you publish
 | 31 | What may be published about your bills | Your call. | — | ROBERT |
 | 33 | Stormont Brake | 30 MLAs from at least two parties (which can share a designation) may notify against an EU act that amends or replaces one already applying under the Windsor Framework. Conditions apply. Windsor Framework (Democratic Scrutiny) Regulations 2024. | NI Assembly; legislation.gov.uk (SI 2024/118 EM) | ANSWERED |
 | 33, 35 | Rural Needs Act duty | s.1: NI departments, councils and listed bodies must have due regard to rural needs when developing, adopting, implementing or revising policies, strategies and plans, and when designing and delivering public services. DAERA consulted on a revised guide in April 2026. | legislation.gov.uk; DAERA | ANSWERED |
-| 32 | Reuse terms: UK Parliament, Oireachtas, Crown Dependencies | Not yet checked. | — | OPEN: data double-dip |
+| 32 | Reuse terms: UK Parliament, Oireachtas, Crown Dependencies | UK Parliament: Open Parliament Licence. Oireachtas: Open Data PSI Licence (CC BY 4.0-based). NI Assembly and Crown Dependencies not yet checked. | api.parliament.uk; oireachtas.ie | PART ANSWERED |
 | 34 | NI Consultations Monitor count | Changes daily; count it on the publication day. | — | OPEN by nature |
 | 35 | Each body's role description | To check against each body's own site at build. | — | OPEN |
 
 ## Summary
 
 - **Flags found:** 57 inline or front-matter mentions across the 35 drafts, covering about 45 distinct questions.
-- **Answered:** 34. Applied to the drafts on branch `drafts/balancing-plan-35`.
+- **Answered:** 37. Applied to the drafts on branch `drafts/balancing-plan-35`.
 - **Answered from a secondary source:** 3 (steel route averages, recycled aluminium, the ILP/IAQM professional guidance). Fine to cite with attribution.
-- **Open:** 11. Most are data licences (part of the dashboards double-dip), plus line-by-line CN codes and NI sector sizes.
+- **Open:** 9: line-by-line CN codes, HMRC's final schema, NI sector sizes, fly-tipping data, NI PFAS data, NI Assembly and Crown Dependency licences, the consultation count, and body role descriptions.
 - **Yours:** 1 (item 31 disclosure).
 
 **Nothing here blocks the first five publication slots (items 1, 2, 3, 15 and 23)**, apart from the CN-code check on item 1, which needs one WebFetch approval.
