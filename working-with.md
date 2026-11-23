@@ -2,7 +2,7 @@
 layout: page
 title: Who I work with
 permalink: /working-with/
-description: How Robert J. Park delivers each service, which registered specialists sign off ESOS, CBAM verification and site work, where a customs adviser comes in, and the associate roles he is recruiting.
+description: How Robert J. Park delivers each service, which registered specialists sign off ESOS, CBAM verification and site work, where a customs adviser comes in.
 rules_checked: 11 November 2026
 lead: You deal with one person from first call to final report. Where a job needs a registration I don't hold, or more hands than mine, I bring in specialists and manage them for you.
 ---
@@ -60,10 +60,6 @@ Two free, trusted places for Northern Ireland businesses starting on CBAM:
 - **InterTradeIreland's Cross-Border Trade Hub** covers [the UK CBAM and cross-border trade](https://crossbordertradehub.intertradeireland.com/uk-cbam-what-to-expect-key-dates-and-possible-linkage-to-the-eu) and offers one-to-one support.
 
 HMRC also takes [questions about CBAM](https://www.gov.uk/guidance/send-hmrc-questions-about-the-carbon-border-adjustment-mechanism-cbam) by email and online.
-
-## Associates
-
-I'm building a small bench of project-based associates from the Imperial College London community: a carbon accountant and inventory auditor, a land remediation analyst, and a parliamentary and policy officer. They work remotely on specific projects under a non-disclosure agreement and a service-level agreement.
 
 ## Working with others
 

@@ -1,15 +1,22 @@
 ---
-rules_checked: 11 November 2026
+rules_checked: 23 November 2026
 layout: page
 title: CBAM Desk
 permalink: /cbam-desk/
-description: "Fixed-price help for NI and UK manufacturers, suppliers and importers caught between the UK and EU carbon rules: written Answers from £550, a £2,200 Two-Regime Readiness Review, supplier data packs and a monthly desk."
+description: "Plain, fixed-price help for Northern Ireland and UK manufacturers, suppliers and importers caught between the UK and EU carbon border rules. Book a free first call."
 lead: Fixed-price help with the EU and UK carbon border rules, for firms too small for a big consultancy and too exposed to ignore it.
 ---
 
 The UK CBAM starts on 1 January 2027. The EU CBAM has applied to imports since 1 January 2026; EU importers pay for 2026 goods when certificates go on sale on 1 February 2027, at the price fixed for the quarter the goods arrived. If you bring steel, aluminium, cement, fertiliser or hydrogen into the UK, including into Northern Ireland from Ireland or the EU, or your EU customers are asking for the emissions behind what you sell them, you need answers that will stand up, and you need to know the cost before you start.
 
 Start with the free [CBAM Exposure Tracker]({{ '/tools/dashboards/cbam-exposure-tracker.html' | relative_url }}) or the [Is it a CBAM good?]({{ '/cbam-desk/is-it-a-cbam-good/' | relative_url }}) lookup. If you're agreeing who carries customs and carbon costs with a buyer or seller, the [Incoterms Chooser]({{ '/tools/incoterms.html' | relative_url }}) sets out who does what under each rule.
+
+> **Bookable now:** a free 30-minute first call. [Email me](mailto:{{ site.email }}?subject=CBAM%20first%20call) or message {{ site.whatsapp }} on WhatsApp.{% unless site.aml_supervised and site.pi_cover %} **Opening shortly:** written Answers, Checks, the Two-Regime Readiness Review, Projects and the monthly Desk, at the prices [below](#fixed-price-services).{% endunless %}
+
+> **An NI metal fabricator? Your three questions.**
+> 1. *Are my goods CBAM goods?* Steel and aluminium structures, tanks, fixings and other articles usually are: [check your code](#is-your-product-in-scope).
+> 2. *Am I the importer?* If you bring steel or aluminium in from outside the UK, probably yes, and goods from Ireland or the EU may count: [see the two ways this reaches you](#two-ways-this-reaches-you).
+> 3. *What does my EU customer need?* Goods made in NI are outside the EU CBAM, but your customer may still ask for figures: [the NI CBAM status letter](#ni-cbam-status-letter).
 
 ## Two ways this reaches you
 
@@ -57,7 +64,7 @@ One written answer on one line. A line is one four-digit commodity heading from 
 
 - **Is this product a CBAM good?** Under either regime, and what that means for you.
 - **Default or actual?** Tell me the tonnes, commodity code, origin and destination. You get one page comparing the bill on default values (with the mark-up) against a plausible actual value, the saving, and what verification would cost, so you know whether to chase supplier data at all.
-- <span id="ni-cbam-status-letter"></span>**NI CBAM status letter, bespoke.** Send me the CBAM questionnaire your EU customer sent you. You get a one-page reply to send on. It quotes the Commission's Q&A, says your goods are produced in NI and not subject to CBAM, and lists the customs-status evidence to attach. If your customer wants a figure for its own carbon reporting, the letter gives one. Any origin question is flagged for a customs adviser. **The template version is free.**
+- <span id="ni-cbam-status-letter"></span>**NI CBAM status letter, bespoke.** Send me the CBAM questionnaire your EU customer sent you. You get a one-page reply to send on. It quotes the Commission's Q&A, says your goods are produced in NI and not subject to CBAM, and lists the customs-status evidence to attach. If your customer wants a figure for its own carbon reporting, the letter gives one. Any origin question is flagged for a customs adviser. A free template version is being prepared.
 
 ### Check: £1,100
 
@@ -92,7 +99,7 @@ Customer data requests answered as they arrive. Each quarter you get a liability
 - **Scope is counted in lines, not by material.** Alloy or stainless steel, NPK blends, mixed-material goods and special customs procedures count as two lines. If a job is too big for its level, it moves up one level.
 - **A hard deadline moves the job up one level.** There is no percentage surcharge.
 - **Credit:** £550 comes off the next level you book within three months.
-- Prices are fixed and quoted in writing before any work starts, and a quote holds for 90 days. All prices exclude VAT, which is charged at the prevailing rate. The delivery date goes in a one-page letter of engagement setting the scope and the information you supply. Prices change once a year, in January.
+- Prices are fixed and quoted in writing before any work starts, and a quote holds for 90 days. {% if site.vat_registered %}All prices exclude VAT, which is charged at the prevailing rate.{% else %}Prices exclude VAT. VAT registration is in process; VAT is added only once my VAT number is issued.{% endif %} The delivery date goes in a one-page letter of engagement setting the scope and the information you supply. Prices change once a year, in January.
 
 If a UK–EU agreement exempts your goods from either CBAM, I will tell you in writing what still applies: goods from other countries, records, and your customers' data requests. You can end the monthly desk on one month's notice.
 
@@ -137,4 +144,4 @@ The free [CBAM data checklist]({{ '/cbam-desk/checklist/' | relative_url }}) lis
 
 Or email {{ site.email }}, call {{ site.phone }}, or message me on [LinkedIn]({{ site.linkedin }}). I reply within one working day. A mutual NDA is available before you send any product or supplier data.
 
-*This page is general information, not legal or tax advice. Rules last checked against GOV.UK, legislation.gov.uk and the European Commission on 11 November 2026.*
+*This page is general information, not legal or tax advice. *

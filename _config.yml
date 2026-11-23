@@ -48,4 +48,7 @@ exclude:
 # to update the pages that cannot read these switches. Everything else updates on the next build.
 pi_cover: false        # professional indemnity cover bound and certificate in hand
 aml_supervised: false  # HMRC anti-money-laundering supervision in place (or confirmed not needed)
+trading_name: "Robert J Park Consultancy"
+address: "4 Mullaghsandall Road, Larne BT40 2LT"
+ico: "ZC306378"   # ICO data protection register, fee paid 20 Nov 2026
 vat_registered: false  # HMRC VAT registration confirmed

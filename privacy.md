@@ -6,7 +6,7 @@ lead: This website does not collect your data. Nothing you type into any tool, q
 description: "This site collects no data: no analytics, no cookies, no forms. Tool inputs stay in your browser. How GitHub hosting works and your rights."
 ---
 
-*Last updated: 19 October 2026*
+*Last updated: 23 November 2026*
 
 ## The short version
 
@@ -17,19 +17,21 @@ description: "This site collects no data: no analytics, no cookies, no forms. To
 
 ## Who is responsible
 
-This website is run by Robert J. Park, an independent environmental, carbon and public affairs consultant based in Larne, Northern Ireland. For any privacy question, email [{{ site.email }}](mailto:{{ site.email }}).
+This website is run by Robert John Park, trading as {{ site.trading_name }}, an independent environmental, carbon and public affairs consultant, {{ site.address }}. I am registered with the Information Commissioner's Office as a data controller (registration number {{ site.ico }}). For any privacy question, email [{{ site.email }}](mailto:{{ site.email }}).
 
 ## What the tools save, and where
 
-Three tools remember your progress so you don't lose it if you close the page:
+Five tools remember what you enter or how you like to see them, so you don't lose it if you close the page:
 
 | Tool | What it remembers | Where it's kept |
 |---|---|---|
 | The Carbon Jigsaw | The figures you enter for each piece | Your browser's local storage, on your device only |
 | The Carbon Crossword | Your filled-in letters and difficulty setting | Your browser's local storage, on your device only |
 | The Farm Carbon Data Checker | Your enterprises, record statuses and notes | Your browser's local storage, on your device only |
+| The Carbon Ready Reckoner | The bill figures and settings you enter | Your browser's local storage, on your device only |
+| Future Technologies | Which view you last chose (list or map) | Your browser's local storage, on your device only |
 
-Local storage is covered by the same rules as cookies (the Privacy and Electronic Communications Regulations 2003), but it needs no consent here because it only keeps what you ask the tool to save. It is never sent to me or anyone else. I cannot see it. To delete it, use **Start again** (Carbon Jigsaw), **Clear** (Crossword) or **Start my own farm** (Farm Carbon Data Checker), or clear this site's data in your browser settings. A private or incognito window keeps nothing after you close it.
+Local storage is covered by the same rules as cookies (the Privacy and Electronic Communications Regulations 2003), but it needs no consent here because it only keeps what you ask the tool to save. It is never sent to me or anyone else. I cannot see it. To delete it, use **Start again** (Carbon Jigsaw), **Clear** (Crossword) **Start my own farm** (Farm Carbon Data Checker) or the reset button in the Reckoner, or clear this site's data in your browser settings. A private or incognito window keeps nothing after you close it.
 
 The other tools and guides don't save anything.
 
