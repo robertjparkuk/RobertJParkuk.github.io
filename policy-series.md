@@ -10,6 +10,8 @@ Northern Ireland sits between two rulebooks. Some rules are made in Brussels and
 
 This series takes one subject at a time. Each piece follows the same shape: the argument in brief, what changed between 2023 and now, where every party and government stands, who actually decides, where the environmental, social and economic aims pull against each other, what it means for firms and councils in Northern Ireland, worked examples, and the author's recommendations. Every claim carries a dated source, and each piece ends with the positions I could not find, so you can see the gaps as well as the evidence.
 
+My own draft bills and law reform proposals, which no client funds, are on a separate page: [Policy and law reform]({{ '/policy-and-law-reform/' | relative_url }}).
+
 The pieces set out the arguments on each side. The recommendations are mine. They are written to be useful to anyone making or influencing these decisions, whichever side they come from, and I update them as the rules change.
 
 {% assign pieces = site.categories['policy-series'] %}

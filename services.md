@@ -124,7 +124,7 @@ As a member of the Chartered Institute of Public Relations, I support organisati
 
 Where the law requires it, I will be on the Register of Consultant Lobbyists before any paid contact with UK Ministers or permanent secretaries on a client's behalf (the register applies to VAT-registered consultants). Policy and public affairs work, including lobbying, is priced per job and quoted case by case. As a guide, it is £1,100 a day (£550 a half day), plus disbursements and out-of-pocket expenses, including travel and subscriptions.
 
-**Free tools:** [NI Consultations Monitor]({{ '/tools/dashboards/ni-consultations-monitor.html' | relative_url }}) · [EU Law and the Windsor Framework]({{ '/tools/dashboards/eu-law-windsor-framework.html' | relative_url }}) · [Policy series]({{ '/policy-series/' | relative_url }}) · [Consultation responses]({{ '/public-sector/consultation-responses/' | relative_url }})
+**Free tools:** [NI Consultations Monitor]({{ '/tools/dashboards/ni-consultations-monitor.html' | relative_url }}) · [EU Law and the Windsor Framework]({{ '/tools/dashboards/eu-law-windsor-framework.html' | relative_url }}) · [Policy series]({{ '/policy-series/' | relative_url }}) · [Policy and law reform]({{ '/policy-and-law-reform/' | relative_url }}) (my own, unfunded work) · [Consultation responses]({{ '/public-sector/consultation-responses/' | relative_url }})
 
 ## Councils, public bodies and trade bodies
 
