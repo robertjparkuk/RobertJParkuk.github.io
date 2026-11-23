@@ -25,6 +25,14 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.59.0 — 23 November 2026: NI carbon budgets tracker
+
+*Robert, 23 November 2026: "build the carbon budgets".*
+
+- New `tools/dashboards/ni-carbon-budgets.html`, built by `_scripts/dashboards/budgets_build.py` in the house dashboard style. It covers the budget ladder (levels derived from DAERA's 2024 net figure of 18.4 Mt and its 29.4% fall), emissions by sector and the change since the base year, and the dated status of each duty under the Act. The fourth budget was consulted on at 77%; no regulations had been found as at 23 November 2026.
+- Listed on /dashboards/ under "Rules and deadlines".
+- To follow: a year-by-year series and a council panel, from DAERA's inventory and local-authority tables (the XLSX files).
+
 ### v0.58.0 — 23 November 2026: publishing block on unchecked claims
 
 *Robert, 22 November 2026 (Q6), confirmed 23 November: "Add."*
