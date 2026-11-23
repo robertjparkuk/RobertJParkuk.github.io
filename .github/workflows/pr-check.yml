@@ -60,6 +60,18 @@ jobs:
           check '<script[^>]+src="https?://' "external script"
           exit $fail
 
+      - name: Publishing block on unchecked claims
+        run: |
+          # Robert, 22 Nov 2026: nothing reaches the site while a draft marker is still in it.
+          # Checks the build that includes future-dated posts, so a scheduled post is caught before its date.
+          pat='\[(verify|check |checked .* confirm|confirm|to add|link the|number to add|figures to pull|run and insert|source\]|name to be checked|fictional firm; name)|Draft note:'
+          if grep -rIliE --include='*.html' --include='*.xml' "$pat" _site >/dev/null; then
+            echo "::error::Unchecked claim or draft note in the built site. Resolve each marker (see the verify register) before merging:"
+            grep -rIoniE --include='*.html' --include='*.xml' ".{0,60}($pat).{0,40}" _site | head -40
+            exit 1
+          fi
+          echo "no draft markers in the built site"
+
       - name: Personal mobile check (number stored only as a hash)
         run: |
           sudo apt-get install -y -qq poppler-utils >/dev/null
