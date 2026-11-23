@@ -16,7 +16,7 @@ description: Contact Robert J. Park in Larne, Co. Antrim, about CBAM, carbon inv
 
 **X:** [{{ site.x_handle }}]({{ site.x }}) — news from the practice: CBAM dates, new briefings and tools.
 
-I reply within one working day. A mutual non-disclosure agreement is available before you send product, customer or supplier data.
+I reply within one working day. I work for businesses and public bodies; see [terms and complaints]({{ '/terms/' | relative_url }}). A mutual non-disclosure agreement is available before you send product, customer or supplier data.
 
 Based in Larne, working with businesses across Northern Ireland, and remotely with exporters elsewhere.
 

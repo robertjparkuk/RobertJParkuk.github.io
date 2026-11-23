@@ -25,6 +25,18 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.60.0 — 23 November 2026: trust and terms (decisions 01–04)
+
+*Robert's decisions, 23 November 2026, in the website decisions doc.*
+
+- VAT: footer and CBAM Desk read the `vat_registered` switch. While false: "Prices exclude VAT. VAT registration is in process." (Robert's wording.)
+- Footer on every page: trading name (Robert J Park Consultancy), sole trader, business address, ICO registration ZC306378, link to the new Terms and complaints page. New `_config.yml` keys: `trading_name`, `address`, `ico`.
+- New `terms.md` at /terms/: business clients only, quotations and letters of engagement, scope of advice, complaints route. Linked from the footer and the contact page.
+- About: CIPR since 2017; "Internal audit modules, Chartered Institute of Internal Auditors, 2023"; "published papers (2002 and 2004)" without a count. FRSA and IoD confirmed current.
+- Working with: Associates section removed (recruitment shelved).
+- Privacy: ICO registration number; the Carbon Ready Reckoner and Future Technologies added to the storage table; date updated.
+- CBAM Desk: rules checked 23 November 2026 (EU certificate sales from 1 February 2027 rechecked on the Commission's site); a "Bookable now / Opening shortly" box and an "NI metal fabricator? Your three questions" panel at the top; search description no longer shows held prices; duplicate check line removed; "the template version is free" now reads "being prepared".
+
 ### v0.59.0 — 23 November 2026: NI carbon budgets tracker
 
 *Robert, 23 November 2026: "build the carbon budgets".*

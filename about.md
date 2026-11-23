@@ -12,7 +12,7 @@ I've worked as a sustainability and carbon consultant since 2018 and in communic
 
 ## Background
 
-My training is in science. I studied Chemistry at Imperial College London and Queen Mary University of London, then carried out doctoral research in materials chemistry at Queen Mary with Professor Fiona Meldrum, working on how porous confinement controls crystal growth. I didn't submit a thesis, but the work led to three published papers (2002 and 2004), and it still shapes how I approach environmental questions, from contaminated land to greenhouse gases. [Crystals in Confinement]({{ '/research/crystals-in-confinement/' | relative_url }}) tells that story and where it leads now.
+My training is in science. I studied Chemistry at Imperial College London and Queen Mary University of London, then carried out doctoral research in materials chemistry at Queen Mary with Professor Fiona Meldrum, working on how porous confinement controls crystal growth. I didn't submit a thesis, but the work led to published papers (2002 and 2004), and it still shapes how I approach environmental questions, from contaminated land to greenhouse gases. [Crystals in Confinement]({{ '/research/crystals-in-confinement/' | relative_url }}) tells that story and where it leads now.
 
 Alongside the science, my career has covered communications and parliamentary work at the General Social Care Council, sales management at Dot Mobile, a Vodafone subsidiary, and leadership roles including Chief Executive of Birkbeck Students' Union.
 
@@ -23,8 +23,8 @@ Much of that experience has been in and around the public sector: a national reg
 - BSc Chemistry, Imperial College London and Queen Mary University of London
 - Doctoral research in materials chemistry, Queen Mary University of London (2000 to 2004; no degree awarded)
 - High Impact Leadership in Sustainability, University of Cambridge Institute for Sustainability Leadership (CISL), 2023
-- Certificate in Internal Audit modules, Chartered Institute of Internal Auditors, 2023
-- Member of the Chartered Institute of Public Relations (CIPR) since 2014
+- Internal audit modules, Chartered Institute of Internal Auditors, 2023
+- Member of the Chartered Institute of Public Relations (CIPR) since 2017
 - Fellow of the Royal Society for Arts, Manufactures and Commerce (FRSA)
 - Member of the Institute of Directors (IoD)
 
