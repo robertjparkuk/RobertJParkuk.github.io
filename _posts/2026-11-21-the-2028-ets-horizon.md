@@ -51,6 +51,7 @@ For Northern Ireland, four things change:
 - **Now:** Since 1 July 2026, ships of 5,000 gross tonnage and above are in the UK ETS ([SI 2026/392](https://www.legislation.gov.uk/uksi/2026/392/contents)). Voyages between NI and GB surrender for only half their emissions.
 - **2028:** The linking terms remove that reduction and bring 50% of international voyage emissions into the UK ETS. The carbon cost of a GB–NI crossing roughly doubles.
 - **Who pays:** the shipowner surrenders. Hauliers and shippers pay through operators' surcharges, and how much is passed on depends on each contract. No official data on pass-through was found.
+- **Islands (added 24 November 2026):** the same terms bring in half the emissions on voyages between the UK and the Isle of Man, Jersey and Guernsey, which are outside the UK ETS at sea today, and promise a temporary relief for passenger and ro-pax voyages to small islands. A ship that makes a genuine call at Douglas between GB and NI is not on a UK ETS voyage today. See [Crown Dependencies, ferries and carbon]({% post_url 2026-11-24-crown-dependencies-ferries-and-carbon %}).
 - **Action:** ask your ferry operator how its surcharge is calculated, and budget for a step up on 1 January 2028.
 
 ### 3. An NI manufacturer with a UK ETS permit (creamery, cement, bricks)

@@ -105,6 +105,8 @@ The UK ETS is run jointly by four governments. EU rules reach NI through the Win
 
 - **Surcharges are already on invoices.** Stena's monthly notices for its Belfast routes set a per-metre UK ETS charge: £1.08 in July and £1.13 in September 2026. It tracks the carbon price and would rise if the 50% deduction ends.
 
+- **Larne–Douglas is not a UK ETS voyage.** The Isle of Man Steam Packet's year-round Larne–Douglas service, like its sailings from Douglas to Heysham and Liverpool, runs to a port outside the UK, so the sea leg is outside the UK ETS today; time alongside in Larne is still charged. The linking terms would bring in half of those voyages from 1 January 2028. [The islands, ferries and carbon]({% post_url 2026-11-24-crown-dependencies-ferries-and-carbon %}) (added 24 November 2026).
+
 - **Larne–Cairnryan is a domestic route.** It gets the deduction at sea, but berth time in Larne and Cairnryan is charged in full. Turnaround time and shore power matter.
 
 - **Customers will ask for Scope 3 freight data.** GLEC Framework v3 aligns with ISO 14083:2023.

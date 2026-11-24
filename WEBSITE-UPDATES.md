@@ -25,6 +25,18 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.63.0 — 24 November 2026: Crown Dependencies, ferries and carbon
+
+*Robert, 24 November 2026: write up the Crown Dependencies CBAM and ETS position as a briefing, add the stopover and warehousing or free port scenarios, and update the CBAM and ETS pages.*
+
+- New post `_posts/2026-11-24-crown-dependencies-ferries-and-carbon.md`: UK ETS, EU ETS and UK CBAM for the Isle of Man, Jersey and Guernsey; the 2028 linking terms; the Douglas and Channel Islands stopover table; island warehouses and free zones; what is not settled. Short link `/go/islands/`.
+- Sources read 24 November 2026: SI 2026/392 Schedule 2A (paras 3, 5, 6, 7, 15); UK ETS Authority interim response (July 2025) and main response (25 November 2025); DESNZ linking explainer (20 November 2026); HMRC CBAM policy summary (updated 23 November 2026); Finance Act 2026 ss.144 to 146; Directive (EU) 2023/959; Regulation (EU) 2023/956 Annex III (original text); Jersey Customs Directive 17; Steam Packet Larne page.
+- Distances in the post are straight-line figures calculated for it, labelled as such. Vessel tonnages are not stated because only secondary sources were found.
+- Two specialist panels (customs; maritime) were role-played by AI on 24 November 2026; their unverified points are listed in the post under "What is not settled" and in the project doc.
+- CBAM Desk: new "Isle of Man, Jersey and Guernsey" line under What's changing.
+- 2028 ETS horizon: islands bullet added to the GB–NI ferry case. Irish Sea carbon bill: Larne–Douglas bullet added.
+- Not changed: the Exposure Tracker tables, the Transport dashboard and the Regulatory Horizon (script-built or duplicated in embedded data).
+
 ### v0.62.1 — 24 November 2026: Install button fixed on /app/
 
 *Robert, 24 November 2026: "Install on this device button doesn't work."*
