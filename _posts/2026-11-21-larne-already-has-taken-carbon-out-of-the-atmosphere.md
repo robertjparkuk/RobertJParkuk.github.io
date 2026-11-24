@@ -49,7 +49,7 @@ On money, the report gives three estimates for that future 10,000 tonne plant, n
 
 ## What happens next
 
-In June 2025 the developer said the plant was to move to a site in Belfast for more testing. Its stated aim is a plant of at least 1,500 tonnes a year in Northern Ireland, for which it says it needs £5 million to £9 million. The report mentions, once and without detail, a planned "Randallstown deployment" on off-grid or curtailed wind power. It has signed a memorandum of understanding with an unnamed partner on carbon dioxide for e-methanol, a shipping fuel. I have found no public news on any of this since.
+In June 2025 the developer said the plant was to move to a site in Belfast for more testing. Its stated aim is a plant of at least 1,500 tonnes a year in Northern Ireland, for which it says it needs £5 million to £9 million. **Update, 24 November 2026:** the developer, CO2CirculAir, told me on 23 November 2026 that the 1,500 tonne plant did not go ahead, and that it is looking at other ways to scale up its technology in Northern Ireland. The report mentions, once and without detail, a planned "Randallstown deployment" on off-grid or curtailed wind power. It has signed a memorandum of understanding with an unnamed partner on carbon dioxide for e-methanol, a shipping fuel. I have found no public news on any of this since.
 
 ## What it does not do yet
 
