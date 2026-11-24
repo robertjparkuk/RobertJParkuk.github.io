@@ -25,6 +25,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.61.0 — 24 November 2026: Countdown customs wording, Larne correction, policy pair published
+
+*Robert's answers on the Master List, 24 November 2026 (cards x-cop31-panel-09, x-larne-dac-corrections, x-policy-series-yesno).*
+
+- UK CBAM Countdown: the page no longer states as fact that goods arriving in NI from Ireland or the EU are UK CBAM imports. It now says this is a customs question and repeats that the UK intends to exempt EU-origin goods from 1 January 2027 (not law). Three lines and the footer changed.
+- Larne direct air capture piece: dated update that the 1,500 tonne plant did not go ahead (CO2CirculAir to Robert, 23 November 2026).
+- Policy series: "The Irish Sea carbon bill" and "Carbon borders as industrial policy" switched on and dated 24 November 2026. Their summit lines were updated on 21 November (PR 76). Facts otherwise checked to 30 October 2026, as each piece says.
+- Launch gates unchanged: `pi_cover`, `aml_supervised` and `vat_registered` all false.
+
 ### v0.60.0 — 23 November 2026: trust and terms (decisions 01–04)
 
 *Robert's decisions, 23 November 2026, in the website decisions doc.*

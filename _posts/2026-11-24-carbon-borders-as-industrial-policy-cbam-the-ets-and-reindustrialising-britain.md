@@ -1,7 +1,6 @@
 ---
 title: "Carbon borders as industrial policy: CBAM, the ETS and UK manufacturing"
-date: 2026-11-23 12:00:00 +0000
-published: false   # held by Robert, 1 Nov 2026 sign-off; Robert 16 Nov 2026: publish 21-23 Nov, keep over 4,000 words; reworked 11 Nov 2026 to remove the verdict (review item E1). Hold until the 20 Nov summit statement is out, then update the linking rows. Linking lines updated 21 Nov 2026 from the Joint Statement and DESNZ explainer, awaiting Robert's go-ahead.
+date: 2026-11-24 20:05:00 +0000
 tags: ["Carbon", "CBAM", "Trade", "Northern Ireland", "Policy series"]
 categories: [policy-series]
 series_theme: "Carbon pricing and trade"
