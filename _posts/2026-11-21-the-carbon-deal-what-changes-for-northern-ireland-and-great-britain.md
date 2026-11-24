@@ -10,6 +10,8 @@ description: "The UK and EU agreed on 20 November 2026 to link their carbon mark
 
 *Status as at 20 November 2026. General information, not legal, tax or customs advice. The summit papers are political statements and a government guide, not law; take advice on your own goods and routes before you act.*
 
+*Update, 24 November 2026: on 23 November HMRC published [draft legislation](https://www.gov.uk/government/publications/draft-legislation-exemption-for-eu-eea-and-swiss-origin-goods-from-cbam) for the EU, EEA and Swiss-origin exemption and updated its [CBAM policy summary](https://www.gov.uk/government/publications/carbon-border-adjustment-mechanism-cbam-policy-summary/carbon-border-adjustment-mechanism-cbam-policy-summary). HMRC expects it to become law after 1 January 2027, with retrospective effect. It is still not law: keep your CBAM records and evidence of origin. The rest of this piece stands as written on 20 November.*
+
 <div class="answer-box" markdown="1">
 <p class="answer-label">The short version</p>
 

@@ -25,6 +25,17 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.62.0 — 24 November 2026: Carbon Ready – Two Regimes web app; CBAM wording dated 24 November
+
+*Robert's decisions in WORK chat, 24 November 2026, after the five-panel app review (project doc `Work-files/mobile-app-five-panel-review-2026-11-24.md`).*
+
+- New page `/app/` (`app.md`): "Carbon Ready – Two Regimes", a launcher for seven tools (Is it a CBAM good?, UK CBAM Countdown, CBAM data checklist, CBAM Exposure Tracker, Carbon Ready Reckoner, Which EU rules apply to me?, Incoterms Chooser), a dated rules box, install instructions, and the free first call as the only call to action. No prices.
+- Installable and offline: `manifest.webmanifest`, `sw.js` (same-origin only; pages are fetched fresh when online and served from the device only when offline), `assets/js/app.js`, icons in `assets/app/` made from `assets/brand/mark.png`. `_layouts/default.html` links the manifest and sets the theme colour. No third-party requests, no analytics, no data leaves the device.
+- Privacy: new section on the installable web app and on keyboard dictation; date updated. Tools page: a line linking to `/app/`.
+- CBAM wording, checked against GOV.UK on 24 November 2026: HMRC published draft legislation for the EU, EEA and Swiss-origin exemption on 23 November 2026 and updated its CBAM policy summary the same day. Royal Assent is expected after 1 January 2027, with retrospective effect; not law yet. Dated update added to the CBAM Desk, the CBAM Exposure Tracker (summit paragraph, three table cells, and the embedded data), both home-page CBAM slides, Working with me, and the 21 November carbon-deal post. The Tracker now reads "UK rules checked 24 November 2026; EU rules checked 11 November 2026".
+- Not changed here: `tools/uk-cbam-countdown.html` (updated in v0.61.0), the Regulatory Horizon and EU law dashboards (built from data files; `horizon.json` line 60 still says "until exempting regulations are made"), Services, the checklist, the sample review and the Incoterms Chooser.
+- To come in later pull requests: two-regime readiness check, threshold running total, on-device bill and invoice reading, full test of the Carbon Ready Reckoner.
+
 ### v0.61.0 — 24 November 2026: Countdown customs wording, Larne correction, policy pair published
 
 *Robert's answers on the Master List, 24 November 2026 (cards x-cop31-panel-09, x-larne-dac-corrections, x-policy-series-yesno).*

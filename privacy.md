@@ -6,7 +6,7 @@ lead: This website does not collect your data. Nothing you type into any tool, q
 description: "This site collects no data: no analytics, no cookies, no forms. Tool inputs stay in your browser. How GitHub hosting works and your rights."
 ---
 
-*Last updated: 23 November 2026*
+*Last updated: 24 November 2026*
 
 ## The short version
 
@@ -34,6 +34,10 @@ Five tools remember what you enter or how you like to see them, so you don't los
 Local storage is covered by the same rules as cookies (the Privacy and Electronic Communications Regulations 2003), but it needs no consent here because it only keeps what you ask the tool to save. It is never sent to me or anyone else. I cannot see it. To delete it, use **Start again** (Carbon Jigsaw), **Clear** (Crossword) **Start my own farm** (Farm Carbon Data Checker) or the reset button in the Reckoner, or clear this site's data in your browser settings. A private or incognito window keeps nothing after you close it.
 
 The other tools and guides don't save anything.
+
+## The installable web app (Carbon Ready – Two Regimes)
+
+If you add [Carbon Ready – Two Regimes]({{ '/app/' | relative_url }}) to your home screen, your browser keeps copies of some of this site's own pages, styles and fonts on your device so the tools open without a connection. Those copies are this site's public pages only. Nothing you enter is included, and nothing is sent to me or to anyone else. Removing the app from your device, or clearing the site's data in your browser settings, deletes the copies. If you use your phone's keyboard microphone to dictate into a tool, the speech is handled by your phone's own software under your phone maker's privacy terms, not by this site.
 
 ## Things outside my control that you should know about
 
