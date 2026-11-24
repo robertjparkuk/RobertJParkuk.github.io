@@ -4,7 +4,7 @@
    Pages are fetched fresh whenever there is a connection (network first), so
    dated regulatory wording is never served stale while online.
    Bump CACHE when the list below changes. */
-const CACHE = 'carbon-ready-v1';
+const CACHE = 'carbon-ready-v2';
 const SHELL = [
   '/app/',
   '/cbam-desk/is-it-a-cbam-good/',
