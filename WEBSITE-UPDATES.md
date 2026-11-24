@@ -25,6 +25,14 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.62.1 — 24 November 2026: Install button fixed on /app/
+
+*Robert, 24 November 2026: "Install on this device button doesn't work."*
+
+- Cause: the button was meant to stay hidden until the browser offered an install prompt, but the site's `.btn` style overrode the `hidden` attribute, so it showed everywhere and did nothing on iPhone, iPad and Safari, which never offer that prompt.
+- Fix (`app.md`, `assets/js/app.js`): the button now always does something. Where the browser offers an install prompt (Chrome and Edge) it opens it. Everywhere else it shows the steps for that device (iPhone and iPad: Share, then Add to Home Screen; Mac Safari: File, then Add to Dock). It hides itself once the app is installed and opened from the home screen.
+- `sw.js` cache name bumped to `carbon-ready-v2` so devices pick up the new script.
+
 ### v0.62.0 — 24 November 2026: Carbon Ready – Two Regimes web app; CBAM wording dated 24 November
 
 *Robert's decisions in WORK chat, 24 November 2026, after the five-panel app review (project doc `Work-files/mobile-app-five-panel-review-2026-11-24.md`).*

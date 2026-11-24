@@ -11,7 +11,9 @@ image: /assets/og-image.jpg
 
 <p><strong>Everything you enter stays on your device.</strong> Nothing is sent to me or to anyone else, there is no sign-up, and nothing tracks you. See <a href="{{ '/privacy/' | relative_url }}">Privacy</a>.</p>
 
-<p><button class="btn" id="install-app" type="button" hidden>Install on this device</button></p>
+<p><button class="btn" id="install-app" type="button" aria-controls="install-help" aria-expanded="false">Install on this device</button></p>
+
+<p id="install-help" role="status" tabindex="-1" hidden></p>
 
 ## The tools
 
@@ -61,6 +63,7 @@ These tools read codes, weights, values and bills. They do not decide the origin
 
 - **iPhone or iPad (Safari):** tap the Share button, then **Add to Home Screen**.
 - **Android (Chrome):** tap **Install on this device** above, or open the menu (⋮) and choose **Install app** or **Add to Home screen**.
+- **Mac (Safari):** choose **File**, then **Add to Dock**.
 - **Laptop or desktop (Chrome or Edge):** use the install icon in the address bar.
 
 Once added, the tools above open without a connection. When you are online you always get the current page.
