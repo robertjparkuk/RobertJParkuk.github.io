@@ -15,7 +15,7 @@ description: "How the UK ETS, the EU ETS and UK CBAM treat ferries and goods mov
 
 - **Today**, ferry voyages between the UK and the Isle of Man, Jersey or Guernsey are outside the UK Emissions Trading Scheme (UK ETS). Time alongside in a UK port is charged in full.
 - **From 1 January 2028**, the UK says half the emissions on those voyages will come in. That needs the UK–EU linking treaty and UK legislation.
-- **A ship that makes a genuine call at Douglas** between Great Britain and Northern Ireland is not on a UK ETS voyage at all. The scheme's authority knows about the gap.
+- **A drafting anomaly, and an academic one.** As the Order is written, a ship that makes a genuine call at Douglas between Great Britain and Northern Ireland is not on a UK ETS voyage at all. I expect that to be closed.
 - **UK CBAM** treats goods arriving from the islands as imports. An island warehouse delays the charge; it does not remove it.
 - **Where a ferry company is based makes no difference.**
 </div>
@@ -44,9 +44,11 @@ None of that is law. The legal text is not published ([DESNZ explainer](https://
 
 The island relief is narrower than it sounds. In the EU Directive a member state must ask for it, it covers passenger and ro-pax ships but not freight-only ships, and it applies to voyages between an island and a port of the same member state (Article 12(3-d) of Directive 2003/87/EC, inserted by [Directive (EU) 2023/959](https://eur-lex.europa.eu/eli/dir/2023/959/oj/eng)). The Isle of Man, Jersey and Guernsey are not part of the UK, so whether their routes qualify depends on how the UK writes its version. The explainer does not say.
 
-## The stopover question
+## The stopover question: an academic point
 
-Since 1 April 2026 the Isle of Man Steam Packet has run a year-round service between Larne and Douglas, alongside its sailings from Douglas to Heysham and Liverpool ([Steam Packet, Larne](https://www.steam-packet.com/ports/larne)). That makes the following a practical question for Northern Ireland freight, not a thought experiment.
+This section is about how the Order is drafted. It is not a route plan. I expect the gap it describes to be closed: the government has already said island voyages come into the scheme from 2028, and the UK ETS Authority has said it may act sooner if the rule is gamed. Anyone who built a service around it would be building on a rule that is on notice.
+
+Since 1 April 2026 the Isle of Man Steam Packet has run a year-round service between Larne and Douglas, alongside its sailings from Douglas to Heysham and Liverpool ([Steam Packet, Larne](https://www.steam-packet.com/ports/larne)). So the anomaly is visible on a real timetable from Larne, which is why it is worth setting out.
 
 | Crossing | UK ETS at sea today | From 2028, if the terms become law |
 |---|---|---|
@@ -59,11 +61,11 @@ The table applies in both directions. Port time in UK ports is charged in full i
 
 Geography decides whether this matters. On my own straight-line measurements, which understate real sea tracks, a call at Douglas adds almost nothing to Belfast or Larne to Liverpool, about 2% to Belfast to Heysham and about 5% to Larne to Heysham. On Larne to Cairnryan it roughly quadruples the distance. Poole or Portsmouth to St Malo passes close to Jersey; the Normandy routes do not.
 
-A stop is not free. It costs hours, harbour dues, a berth and a broken timetable, and through-freight on two sailings is handled twice. At today's carbon price the saving is small beside those costs. The gap widens in 2028, when the direct Northern Ireland crossing is charged in full and an island routing at half, or less if the island relief applies.
+A stop is not free. It costs hours, harbour dues, a berth and a broken timetable, and through-freight on two sailings is handled twice. At today's carbon price the saving is small beside those costs. On paper the gap widens in 2028, when the direct Northern Ireland crossing is charged in full and an island routing at half, or less if the island relief applies. That is the strongest reason to expect the drafting to be tightened before then, and it is a fair question to put to ministers.
 
-Three points for anyone tempted to plan around it:
+Why I treat it as academic:
 
-- **The rule can change quickly.** The Order has no anti-avoidance clause, but the Authority has said it will act if gaming appears. The EU's anti-evasion rule for nearby transhipment ports covers container ships only; for everything else the Commission has a duty to monitor.
+- **The rule is on notice.** The Order has no anti-avoidance clause, but the Authority has said it may bring these voyages in if gaming appears, and the 2028 terms already bring them in at half. The EU's anti-evasion rule for nearby transhipment ports covers container ships only; for everything else the Commission has a duty to monitor.
 - **The call must be real.** A stop with no passengers or cargo exchanged is not a port of call.
 - **The company's address is irrelevant.** The operator is the ship's registered owner or its safety-management company, wherever based. Flag is only a reporting field.
 
@@ -73,7 +75,7 @@ UK CBAM starts on 1 January 2027. HMRC's policy summary says goods entering the 
 
 - **Isle of Man.** The Finance Act 2026 treats a CBAM good imported into the UK from the Isle of Man as an import, unless the Treasury excludes it by regulations. There is no customs declaration on that movement, so the importer is "the person on whose behalf the good is imported" and the records carry the weight ([Finance Act 2026, Part 5](https://www.legislation.gov.uk/ukpga/2026/11/part/5), sections 144 and 146).
 - **Jersey and Guernsey.** The Act does not name them. They are in a customs union with the UK but outside its VAT area, and goods moving to the UK are declared. Which limb of the Act applies is a question for HMRC.
-- **Warehouses and free zones.** Holding CBAM goods under a customs procedure delays the charge until they are released. Processing them into something that is not a CBAM good does not wash the charge out: it is then calculated on the original CBAM good (section 145). An island warehouse therefore defers UK CBAM until the goods reach the UK, much as a UK warehouse does. Jersey has a customs warehousing regime ([Jersey Customs, Directive 17](https://www.gov.je/SiteCollectionDocuments/Travel%20and%20transport/ID%20Warehousing%2020201230%20SB.pdf)). I found no free zone designated in Jersey or Guernsey, and could not confirm from an official source whether the Isle of Man Freeport is a customs free zone today.
+- **Warehouses and free zones.** Holding CBAM goods under a customs procedure delays the charge until they are released. Processing them into something that is not a CBAM good does not wash the charge out: it is then calculated on the original CBAM good (section 145). An island warehouse therefore defers UK CBAM until the goods reach the UK, much as a UK warehouse does. Jersey has a customs warehousing regime ([Jersey Customs, Directive 17](https://www.gov.je/SiteCollectionDocuments/Travel%20and%20transport/ID%20Warehousing%2020201230%20SB.pdf)). I found no free zone designated in Jersey or Guernsey. On the Isle of Man, the government says goods can be entered, held or processed under duty or tax suspension regimes with customs approval ([Isle of Man Government](https://gov.im/categories/tax-vat-and-your-money/customs-and-excise/international-trade-and-the-isle-of-man-requirements-and-standards)). A House of Commons Library paper recorded in 2018 that the island had a free port when the UK had none ([CDP-2018-0211](https://researchbriefings.files.parliament.uk/documents/CDP-2018-0211/CDP-2018-0211.pdf)); I could not confirm its current designation from the Manx government's own pages.
 - **Origin, not route.** The UK intends to exempt goods of EU, EEA or Swiss origin from 1 January 2027; draft legislation was published on 23 November 2026 and is not law. Eligibility turns on where goods were made, so routing third-country steel or fertiliser through an island gains nothing.
 - **EU CBAM.** The islands are not on the EU's list of exempt territories (Annex III of [Regulation (EU) 2023/956](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R0956), original text).
 
