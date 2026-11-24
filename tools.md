@@ -8,6 +8,8 @@ description: "Free, private carbon and environmental tools for NI businesses and
 
 <img src="{{ '/assets/tools-mark.svg' | relative_url }}" alt="" width="72" height="72" style="display:block;margin:0 0 1rem">
 
+**On a phone or tablet?** [Carbon Ready – Two Regimes]({{ '/app/' | relative_url }}) puts the main CBAM and carbon tools on your home screen and works without a signal.
+
 New to carbon? Start with the plain-English explainers in [Learn]({{ '/learn/' | relative_url }}): embodied versus embedded carbon, and the carbon life cycle.
 
 <h2 class="tool-h"><img src="{{ '/assets/icons/carbon-jigsaw.svg' | relative_url }}" alt="" width="48" height="48">Carbon Ready Reckoner</h2>
