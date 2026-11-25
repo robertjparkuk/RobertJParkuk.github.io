@@ -25,6 +25,14 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.64.0 — 25 November 2026: Overseas Territories and carbon (for review)
+
+*Robert, 25 November 2026: "In a similar manner prepare a briefing on the Overseas Territories."*
+
+- New post `_posts/2026-11-25-overseas-territories-and-carbon.md`, branded PDF `assets/briefings/2026-11-overseas-territories-and-carbon-briefing.pdf` (built by `_scripts/briefings/overseas-territories/build_pdf.py`), short link `/go/territories/`.
+- Covers: UK ETS shipping today and under the 2028 linking terms; UK ETS aviation (Gibraltar only, SI 2020/1265 Schedule 1); Gibraltar's agreement with the EU (signed 14 July 2026, provisionally applied; carbon pricing duty read in the Commission's proposal text, COM(2026) 91); the EU transhipment-port list (East Port Said and Tanger Med only); the Sovereign Base Areas; UK CBAM (Finance Act 2026 s.144); one academic point on routes.
+- Sources read 25 November 2026 by an AI role-played specialist panel and listed in the post. Not confirmed, and said so in the post: entry into force of the Gibraltar agreement; final article numbering; real UK to territory services of 5,000 gross tonnage and above; any carbon price in other territories. Hansard and the parliamentary libraries would not open on the day.
+
 ### v0.63.1 — 25 November 2026: corrections to the Crown Dependencies briefing after two review panels
 
 *Robert, 25 November 2026: put the briefing and the Lords note through two panels, one of them parliamentary libraries, and wait for their updates. Both panels were role-played by AI.*
@@ -37,6 +45,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - Context added: the Authority's membership and the Assembly's vote of 10 March 2026 (49 to 30).
 - Search description no longer says a stop at Douglas "matters for Larne and Belfast freight".
 - PDF rebuilt.
+
 
 ### v0.63.0 — 24 November 2026: Crown Dependencies, ferries and carbon
 
