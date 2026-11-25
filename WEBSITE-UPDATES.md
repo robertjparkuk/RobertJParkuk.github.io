@@ -25,6 +25,19 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.63.1 — 25 November 2026: corrections to the Crown Dependencies briefing after two review panels
+
+*Robert, 25 November 2026: put the briefing and the Lords note through two panels, one of them parliamentary libraries, and wait for their updates. Both panels were role-played by AI.*
+
+- Citation corrected: the maritime rules are in Schedule 2A to the Greenhouse Gas Emissions Trading Scheme Order 2020, inserted by SI 2026/392; the voyage test is paragraph 7(2)(c).
+- UK ETS Authority's July 2025 position now quoted in its own words ("may consider this in future, particularly if risks of gaming are realised"; no evidence then that gaming would follow), and extended to Overseas Territories as the response does. The main response's record of a respondent raising an Isle of Man stop is added.
+- "Other UK islands" for the Scottish exemption. EU island relief: cruise ships excluded.
+- Larne–Douglas: the start date is removed (the operator's page gives none) and a line added that ship tonnages have not been checked from the registers.
+- Stopover table: a Great Britain to Ireland row added so the government's parity argument is visible; the distance percentages are cut; "I do not suggest any operator is doing or planning this" added.
+- Context added: the Authority's membership and the Assembly's vote of 10 March 2026 (49 to 30).
+- Search description no longer says a stop at Douglas "matters for Larne and Belfast freight".
+- PDF rebuilt.
+
 ### v0.63.0 — 24 November 2026: Crown Dependencies, ferries and carbon
 
 *Robert, 24 November 2026: write up the Crown Dependencies CBAM and ETS position as a briefing, add the stopover and warehousing or free port scenarios, and update the CBAM and ETS pages.*

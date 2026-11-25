@@ -3,7 +3,7 @@ title: "Crown Dependencies, ferries and carbon: the Isle of Man, Jersey and Guer
 date: 2026-11-24 23:45:00 +0000
 tags: ["Carbon", "UK ETS", "EU ETS", "CBAM", "Northern Ireland", "Briefing"]
 image: /assets/photos/ferry-lorries-port.jpg
-description: "How the UK ETS, the EU ETS and UK CBAM treat ferries and goods moving through the Isle of Man, Jersey and Guernsey, what changes in 2028, and why a stop at Douglas matters for Larne and Belfast freight."
+description: "How the UK ETS, the EU ETS and UK CBAM treat ferries and goods moving through the Isle of Man, Jersey and Guernsey, what changes in 2028, and a drafting gap the 2028 legislation will need to close."
 ---
 
 <figure class="page-photo"><img src="{{ '/assets/photos/ferry-lorries-port.jpg' | relative_url }}" alt="Lorries waiting to board a ferry at a port" loading="lazy"><figcaption>The carbon charge on a crossing depends on which ports the ship calls at, not on who owns it.</figcaption></figure>
@@ -24,13 +24,13 @@ description: "How the UK ETS, the EU ETS and UK CBAM treat ferries and goods mov
 
 ## Ferries today
 
-The UK ETS has covered shipping since 1 July 2026, for ships of 5,000 gross tonnage and above ([SI 2026/392](https://www.legislation.gov.uk/uksi/2026/392/made)). Three rules in that Order decide the islands' position.
+The UK ETS has covered shipping since 1 July 2026, for ships of 5,000 gross tonnage and above. The rules are in Schedule 2A to the Greenhouse Gas Emissions Trading Scheme Order 2020, inserted by the Extension to Maritime Activities Order 2026 ([SI 2026/392](https://www.legislation.gov.uk/uksi/2026/392/made)). The scheme is run by the UK ETS Authority, which is the UK, Scottish and Welsh governments and DAERA, and the Assembly approved the Order on 10 March 2026 by 49 votes to 30 ([Assembly minutes](https://www.niassembly.gov.uk/assembly-business/minutes-of-proceedings/2025-26/tuesday-10-march-2026/)). Three rules decide the islands' position.
 
-- **A voyage is UK port to UK port.** It must start and end at UK ports of call and must not arrive at a port of call outside the UK's jurisdiction (Schedule 2A, paragraph 7).
+- **A voyage is UK port to UK port.** It must start and end at UK ports of call and must not arrive at a port of call outside the UK's jurisdiction (paragraph 7(2)(c)).
 - **A port of call is a commercial stop.** Passengers or crew get on or off, or cargo is loaded or unloaded. A stop only for fuel, supplies, crew relief, repairs or shelter does not count (paragraph 6).
 - **Port time is charged whatever the voyage.** A ferry arriving from Douglas or St Helier pays for its emissions while alongside in Heysham, Liverpool, Larne, Belfast, Portsmouth or Poole.
 
-The UK ETS Authority said in July 2025 that it did not intend to include Crown Dependency voyages at the 2026 launch, and that it might do so later, particularly if operators start gaming the rules ([interim response](https://assets.publishing.service.gov.uk/media/687de724a5561a5a7e726bd9/uk-ets-maritime-interim-authority-response.pdf)). The exemption for Scottish island ferries has not been extended to other islands ([main response, 25 November 2025](https://www.gov.uk/government/consultations/uk-ets-scope-expansion-maritime-sector/outcome/uk-ets-scope-expansion-domestic-maritime-main-authority-response-accessible-webpage)).
+The UK ETS Authority said in July 2025 that it did not intend to include voyages to the Crown Dependencies and Overseas Territories at the 2026 launch, that it had no evidence the exclusion would lead to gaming, and that it "may consider this in future, particularly if risks of gaming are realised" ([interim response](https://assets.publishing.service.gov.uk/media/687de724a5561a5a7e726bd9/uk-ets-maritime-interim-authority-response.pdf)). The exemption for Scottish island ferries has not been extended to other UK islands ([main response, 25 November 2025](https://www.gov.uk/government/consultations/uk-ets-scope-expansion-maritime-sector/outcome/uk-ets-scope-expansion-domestic-maritime-main-authority-response-accessible-webpage)).
 
 On the EU side, a ship of 5,000 gross tonnage or more sailing between an EU port and an island port (St Malo and Jersey, Dublin and Douglas) surrenders for half that voyage and for all its time in the EU port ([European Commission](https://climate.ec.europa.eu/eu-action/transport-decarbonisation/reducing-emissions-shipping-sector_en)).
 
@@ -44,30 +44,31 @@ The government's explainer on the UK–EU linking agreement (20 November 2026) s
 
 None of that is law. The legal text is not published ([DESNZ explainer](https://www.gov.uk/government/publications/uk-eu-linking-agreement-explainer/uk-eu-linking-agreement-explainer)).
 
-The island relief is narrower than it sounds. In the EU Directive a member state must ask for it, it covers passenger and ro-pax ships but not freight-only ships, and it applies to voyages between an island and a port of the same member state (Article 12(3-d) of Directive 2003/87/EC, inserted by [Directive (EU) 2023/959](https://eur-lex.europa.eu/eli/dir/2023/959/oj/eng)). The Isle of Man, Jersey and Guernsey are not part of the UK, so whether their routes qualify depends on how the UK writes its version. The explainer does not say.
+The island relief is narrower than it sounds. In the EU Directive a member state must ask for it, it covers passenger ships other than cruise ships and ro-pax ships but not freight-only ships, and it applies to voyages between an island and a port of the same member state (Article 12(3-d) of Directive 2003/87/EC, inserted by [Directive (EU) 2023/959](https://eur-lex.europa.eu/eli/dir/2023/959/oj/eng)). The Isle of Man, Jersey and Guernsey are not part of the UK, so whether their routes qualify depends on how the UK writes its version. The explainer does not say.
 
 ## The stopover question: an academic point
 
-This section is about how the Order is drafted. It is not a route plan. I expect the gap it describes to be closed: the government has already said island voyages come into the scheme from 2028, and the UK ETS Authority has said it may act sooner if the rule is gamed. Anyone who built a service around it would be building on a rule that is on notice.
+This section is about how the Order is drafted. It is not a route plan. I expect the gap it describes to be closed: the government has already said island voyages come into the scheme from 2028, and the UK ETS Authority has reserved the right to act sooner if the rule is gamed. The Authority has known of the point since its consultation: its main response records a respondent's observation that a ship could make an additional stop at the Isle of Man. I do not suggest any operator is doing or planning this. Anyone who built a service around it would be building on a rule that is on notice.
 
-Since 1 April 2026 the Isle of Man Steam Packet has run a year-round service between Larne and Douglas, alongside its sailings from Douglas to Heysham and Liverpool ([Steam Packet, Larne](https://www.steam-packet.com/ports/larne)). So the anomaly is visible on a real timetable from Larne, which is why it is worth setting out.
+The Isle of Man Steam Packet runs a year-round service between Larne and Douglas, alongside its sailings from Douglas to Heysham and Liverpool ([Steam Packet, Larne](https://www.steam-packet.com/ports/larne)). So the question arises on a real timetable from Larne, which is why it is worth setting out. I have not checked from the registers which ships on these services are of 5,000 gross tonnage or more.
 
 | Crossing | UK ETS at sea today | From 2028, if the terms become law |
 |---|---|---|
 | Great Britain to Northern Ireland, direct | 50% | 100% |
 | Great Britain to Douglas to Northern Ireland, with a genuine call | Nil on both legs | 50% of each leg |
+| Great Britain to Ireland, direct | Nil (EU ETS takes 50%) | 50% UK and 50% EU |
 | Great Britain to France, direct | Nil (EU ETS takes 50%) | 50% UK and 50% EU |
 | Great Britain to Jersey or Guernsey to France, with a genuine call | Nil; EU ETS takes 50% of the island-to-France leg only | 50% UK on the first leg, 50% EU on the second |
 
-The table applies in both directions. Port time in UK ports is charged in full in every row.
+The table applies in both directions. Port time in UK ports is charged in full in every row. The government's case for ending the Northern Ireland deduction is the first and third rows: under a linked scheme a crossing between Great Britain and Ireland is covered at half by each scheme, so every covered Irish Sea voyage carries the same full obligation.
 
-Geography decides whether this matters. On my own straight-line measurements, which understate real sea tracks, a call at Douglas adds almost nothing to Belfast or Larne to Liverpool, about 2% to Belfast to Heysham and about 5% to Larne to Heysham. On Larne to Cairnryan it roughly quadruples the distance. Poole or Portsmouth to St Malo passes close to Jersey; the Normandy routes do not.
+Geography limits where the question can arise at all. Douglas lies close to the track between Northern Ireland and Heysham or Liverpool and far off the short North Channel crossings to Cairnryan. St Malo sailings pass close to Jersey; the Normandy routes do not.
 
 A stop is not free. It costs hours, harbour dues, a berth and a broken timetable, and through-freight on two sailings is handled twice. At today's carbon price the saving is small beside those costs. On paper the gap widens in 2028, when the direct Northern Ireland crossing is charged in full and an island routing at half, or less if the island relief applies. That is the strongest reason to expect the drafting to be tightened before then, and it is a fair question to put to ministers.
 
 Why I treat it as academic:
 
-- **The rule is on notice.** The Order has no anti-avoidance clause, but the Authority has said it may bring these voyages in if gaming appears, and the 2028 terms already bring them in at half. The EU's anti-evasion rule for nearby transhipment ports covers container ships only; for everything else the Commission has a duty to monitor.
+- **The rule is on notice.** I found no anti-avoidance clause in the Order, but the Authority has said it will monitor gaming and reserves the right to make changes, and the 2028 terms already bring island voyages in at half. The EU's anti-evasion rule for nearby transhipment ports covers container ships only; for everything else the Commission has a duty to monitor.
 - **The call must be real.** A stop with no passengers or cargo exchanged is not a port of call.
 - **The company's address is irrelevant.** The operator is the ship's registered owner or its safety-management company, wherever based. Flag is only a reporting field.
 
