@@ -10,6 +10,8 @@ description: "How the UK ETS, the EU ETS and UK CBAM treat ferries and goods mov
 
 *Rules checked 24 November 2026 against GOV.UK, legislation.gov.uk, the European Commission and EUR-Lex. General information, not legal, tax or customs advice. The 2028 changes are agreed politically and are not law.*
 
+[Download the briefing (PDF)]({{ '/assets/briefings/2026-11-crown-dependencies-ferries-and-carbon-briefing.pdf' | relative_url }})
+
 <div class="answer-box" markdown="1">
 <p class="answer-label">The short version</p>
 
