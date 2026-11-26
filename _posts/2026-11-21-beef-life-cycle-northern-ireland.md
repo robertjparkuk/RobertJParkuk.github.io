@@ -106,4 +106,4 @@ These points are my analysis, not official statistics. For the argument that cut
 
 The [13-page PDF]({{ '/assets/beef/2026-11/beef-life-cycle-ni-briefing.pdf' | relative_url }}) adds markets and specification, the grass-or-grain evidence table, methane and Bovaer, vaccines, breeds, offal, ears and tongue curing, beef on the bone, menus, leftovers, the dairy herd, raw milk at the farm gate, structural issues, opportunities and risks, and a list of what is not yet verified. It was reviewed by two panels: a fact-check against primary sources and a practitioner panel.
 
-*This is general information as at 21 November 2026, not legal or financial advice. Created with assistive technology including AI and re-checked against the official sources listed.*
+*This is general information as at 21 November 2026, not legal or financial advice. AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*

@@ -25,6 +25,14 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.65.1 — 26 November 2026: AI statement (PATCH)
+
+*Robert, 26 November 2026: "Go with B as a global rule and update any website policy to reflect this."*
+
+- Every "Created with assistive technology including AI and re-checked against the official sources listed." line now reads "AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed." Changed in 21 posts, 61 element pages, the Carbon Ready Reckoner, the periodic table, Future Technologies, `/app/` and the PDF builders (`_scripts/elements/`, `_scripts/briefings/sps-deal/`, `_scripts/briefings/crown-dependencies/`), so the next build carries the new line.
+- `HOW-TO-POST.md` and `HOW-TO-LEARN.md` now require the statement word for word.
+- Not changed: PDFs already published keep the old line until they are rebuilt; the v0.45.1 entry below stays as the record of the earlier rule. The site has no separate AI policy page.
+
 ### v0.65.0 — 26 November 2026: The slurry vote, 56 to 14 (Focus on Agriculture)
 
 *Robert, 26 November 2026: analyse the Assembly's vote on the UUP slurry motion and the Alliance response, check every fact, compare Wales, Ireland, the UK and the EU, brand the PDF from the Brand Manual, link my phosphorus, Lough Neagh, biomethane, pig and poultry pieces, and publish. "I support a better way."*

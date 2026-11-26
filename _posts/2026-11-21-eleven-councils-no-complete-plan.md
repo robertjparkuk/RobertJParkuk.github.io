@@ -48,4 +48,4 @@ Sources: each council's LDP pages and timetables; DfI.
 
 This briefing is the companion to [The law on the books is not the law on the ground]({% post_url 2026-11-21-the-law-on-the-books-is-not-the-law-on-the-ground %}), which proposes a code of engagement under which councils would be statutory consultees on listed central decisions, with a right to reasons. Northern Ireland needs its plans finished for that voice to carry weight.
 
-*Reviewed by simulated panels of councillors, lawyers, editors and officials; their views are reasoned positions, not quotations from real people. Created with assistive technology including AI and re-checked against the official sources listed.*
+*Reviewed by simulated panels of councillors, lawyers, editors and officials; their views are reasoned positions, not quotations from real people. AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*

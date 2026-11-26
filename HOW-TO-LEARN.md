@@ -68,3 +68,4 @@ Always write the `alt` text in full: it is what screen readers and search engine
 - Give a date for every rule or regulatory status.
 - If a number is illustrative rather than measured, say so next to it.
 - Units: give every per-unit figure in **kg CO₂e** (per kg, per m², per MWh), with a subscript ₂. Use tonnes only for totals (a site, firm or country) and the one-tonne carbon credit, and say 1 tonne = 1,000 kg where both appear.
+- End every explainer and element page with the AI statement (Robert's global rule, 26 November 2026), word for word: *AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*

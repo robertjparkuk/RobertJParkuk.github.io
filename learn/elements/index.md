@@ -131,4 +131,4 @@ description: "Deep dives on the chemical elements for Northern Ireland: climate,
 | 117 | Ts | Tennessine *(coming soon)* | Named after Tennessee, where its target material was made; lasts hundredths of a second. |
 | 118 | Og | Oganesson *(coming soon)* | Heaviest known element; only a handful of atoms ever made, each lasting under a millisecond. |
 
-*Checked 21 November 2026. Created with assistive technology including AI and re-checked against the official sources listed.*
+*Checked 21 November 2026. AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*

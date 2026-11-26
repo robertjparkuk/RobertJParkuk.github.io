@@ -133,6 +133,6 @@ For Northern Ireland, four things change:
 - [Secretary of State for Northern Ireland, letter to Lord Carlile, 5 March 2026](https://committees.parliament.uk/publications/52219/documents/290167/default/)
 - [NI Assembly Research and Information Service, paper 65/25 (September 2025)](https://www.niassembly.gov.uk/globalassets/documents/raise/publications/2022-2027/2025/wfds/6525.pdf)
 
-*Not yet checked against a primary source: the treaty text (unpublished), the Windsor Framework Annex 4 wording, the ETS2 start date, the NI energy-from-waste position, ferry surcharge pass-through and current allowance prices. Created with assistive technology including AI and re-checked against the official sources listed.*
+*Not yet checked against a primary source: the treaty text (unpublished), the Windsor Framework Annex 4 wording, the ETS2 start date, the NI energy-from-waste position, ferry surcharge pass-through and current allowance prices. AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*
 
 For a review of what this means for your sites, contracts or supply chain: robert@robertjpark.co.uk · 07450 349480 · WhatsApp @robertjpark.

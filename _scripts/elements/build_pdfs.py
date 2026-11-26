@@ -78,7 +78,7 @@ def page(sym, i):
 <div class="end">Online version: <a href="https://{url}">{url}</a><br>
 Robert J. Park · Environment · Carbon · Public Affairs · robert@robertjpark.co.uk · 07450 349480 · WhatsApp @robertjpark<br>
 General information as at {CHECKED}, not legal, safety or agronomic advice. Work from current safety data sheets and your own COSHH assessment.
-Created with assistive technology including AI and re-checked against the official sources listed.</div>
+AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.</div>
 </body></html>"""
 
 async def main():

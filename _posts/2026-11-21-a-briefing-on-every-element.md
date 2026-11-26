@@ -33,4 +33,4 @@ If there is an element you would like a full briefing on next, [tell me]({{ '/co
 
 ---
 
-*Robert J. Park is an environment, carbon and public affairs consultant based in Larne, Northern Ireland. The descriptions are general reference, checked 21 November 2026; hazard notes give headline classifications only, so always work from the supplier's safety data sheet. This is general information, not legal, safety or agronomic advice. Created with assistive technology including AI and re-checked against the official sources listed.*
+*Robert J. Park is an environment, carbon and public affairs consultant based in Larne, Northern Ireland. The descriptions are general reference, checked 21 November 2026; hazard notes give headline classifications only, so always work from the supplier's safety data sheet. This is general information, not legal, safety or agronomic advice. AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*
