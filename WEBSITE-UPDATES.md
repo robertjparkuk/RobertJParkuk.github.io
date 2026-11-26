@@ -25,6 +25,16 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.65.0 — 26 November 2026: The slurry vote, 56 to 14 (Focus on Agriculture)
+
+*Robert, 26 November 2026: analyse the Assembly's vote on the UUP slurry motion and the Alliance response, check every fact, compare Wales, Ireland, the UK and the EU, brand the PDF from the Brand Manual, link my phosphorus, Lough Neagh, biomethane, pig and poultry pieces, and publish. "I support a better way."*
+
+- New post `_posts/2026-11-26-the-slurry-vote-56-to-14.md` at `/blog/2026/11/the-slurry-vote-56-to-14/`: the motion and the Minister's answers, the farming case, the evidence, how neighbours handle closed periods, Lough Neagh, a party-by-party table, and "A better way" (Robert's position).
+- Branded PDF: `assets/focus-on-agriculture/2026-11-slurry-vote/the-slurry-vote-56-to-14-briefing.pdf` (10 pages), built from the Brand Manual artifact (reverse lockup and split-circle cover, Fraunces, Source Sans 3, Source Serif 4, IBM Plex Mono); linked from the top and foot of the post.
+- Six figures in the same folder (vote, AFBI modelling, closed-period timeline, flexibility spectrum, Lough Neagh phosphorus sources, phosphorus surplus flow) and a 1600 × 900 share card used as the post image and for X.
+- Sources read 25 and 26 November 2026: the full Official Report of the 24 November debate with division lists (Ayes 56, Noes 14: 13 Alliance and People Before Profit); the Alliance, UUP and Farming Life statements in full; PBP and Green Party NI sites (no statement). Facts and comparators checked by three review agents and a fourth fresh-eyes sub-edit; all were AI.
+- Not changed: the Focus on Agriculture November issue, dashboards and the Regulatory Horizon.
+
 ### v0.63.1 — 25 November 2026: corrections to the Crown Dependencies briefing after two review panels
 
 *Robert, 25 November 2026: put the briefing and the Lords note through two panels, one of them parliamentary libraries, and wait for their updates. Both panels were role-played by AI.*
