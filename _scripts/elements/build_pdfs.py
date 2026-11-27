@@ -76,7 +76,7 @@ def page(sym, i):
 <div class="table"><img src="{svg}" alt="The full periodic table with {name} picked out in red"><p>{name} in the full periodic table. Interactive version with every element: <a href="https://robertjpark.co.uk/tools/periodic-table.html">robertjpark.co.uk/tools/periodic-table.html</a></p></div>
 {h}
 <div class="end">Online version: <a href="https://{url}">{url}</a><br>
-Robert J. Park · Environment · Carbon · Public Affairs · robert@robertjpark.co.uk · 07450 349480 · WhatsApp @robertjpark<br>
+Robert J. Park · Environment · Carbon · Public Affairs · robert@robertjpark.co.uk · 07450 349480 · WhatsApp @robertjpark · X @RJPConsultingNI<br>
 General information as at {CHECKED}, not legal, safety or agronomic advice. Work from current safety data sheets and your own COSHH assessment.
 AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.</div>
 </body></html>"""

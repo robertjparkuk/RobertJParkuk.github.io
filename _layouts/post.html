@@ -15,5 +15,6 @@ layout: default
   <aside class="post-cta">
     <p><strong>Want to talk this through for your business?</strong>
     <a href="{{ '/contact/' | relative_url }}">Get in touch</a>.</p>
+    {% if site.x and site.x != "" %}<p>New briefings and CBAM dates: follow <a href="{{ site.x }}" rel="noopener">{{ site.x_handle }}</a> on X.</p>{% endif %}
   </aside>
 </article>
