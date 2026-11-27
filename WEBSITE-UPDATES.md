@@ -25,6 +25,15 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.66.0 — 27 November 2026: The Irish Sea: nuclear, fish and power
+
+*Robert, 27 November 2026: "Ready to publish. First on the website with blog post now."*
+
+- New post `_posts/2026-11-27-the-irish-sea-nuclear-fish-and-power.md` at `/blog/2026/11/the-irish-sea-nuclear-fish-and-power/`: summary of findings, our view on small and advanced modular reactors, what to do, related work.
+- Branded PDF: `assets/briefings/2026-11-the-irish-sea-nuclear-fish-and-power-briefing.pdf` (22 pages, v5, after a final review panel).
+- Photo: `assets/photos/foyle-fishing-boat.jpg` (K. Mitch Hodge, Unsplash, credited in the caption).
+- Sources read 25–27 November 2026: MMO Sea Fisheries Statistics 2025 tables, DESNZ NI subnational electricity 2024, RIFE 31, NI Assembly questions and Official Report, GOV.UK, HMRC, DAERA, NIHE/BRE, NISRA and others listed in the PDF.
+
 ### v0.65.1 — 26 November 2026: AI statement (PATCH)
 
 *Robert, 26 November 2026: "Go with B as a global rule and update any website policy to reflect this."*
