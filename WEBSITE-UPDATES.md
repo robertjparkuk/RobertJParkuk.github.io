@@ -25,6 +25,10 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.66.1 — 27 November 2026: launch-gate fix on the fabricator post
+
+- `_posts/2026-12-01-bolts-brackets-and-tanks-…`: closing line said the CBAM Desk "offers fixed-price help". PI cover and AML supervision are not yet in place, so it now offers the free first call only.
+
 ### v0.66.0 — 27 November 2026: The Irish Sea: nuclear, fish and power
 
 *Robert, 27 November 2026: "Ready to publish. First on the website with blog post now."*
