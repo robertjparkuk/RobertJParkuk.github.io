@@ -7,6 +7,8 @@
 # Times here are UTC. It also runs at 07:35 UTC, for Policy series posts dated 07:30,
 # and at 10:05 UTC, for posts dated 10:00 (added 22 Nov 2026 for the 23 Nov 10am posts).
 # A 17:05 UTC Friday run publishes consultation responses dated 17:00 on closing day.
+# A 06:05 UTC Tuesday run publishes posts dated 06:00 (added 27 Nov 2026 for the
+# Modernising Corporate Reporting response on Tuesday 1 December).
 # Otherwise it runs twice: 11:05 and 12:05 UTC, which covers
 # 12:05 in summer (BST) and 12:05 in winter (GMT). GitHub can start scheduled
 # runs a few minutes late.
@@ -23,6 +25,7 @@ on:
     - cron: "5 11 * * *"
     - cron: "5 12 * * *"
     - cron: "5 17 * * 5"
+    - cron: "5 6 * * 2"
   workflow_dispatch:
 
 permissions:
