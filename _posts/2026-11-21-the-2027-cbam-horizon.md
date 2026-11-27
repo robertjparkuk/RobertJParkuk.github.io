@@ -125,6 +125,6 @@ Ask these questions of every supply route for a covered good. One "avoid" answer
 - [Secretary of State for Northern Ireland, letter to Lord Carlile, 5 March 2026](https://committees.parliament.uk/publications/52219/documents/290167/default/)
 - [National Audit Office, British Steel Scunthorpe investigation, March 2026](https://www.nao.org.uk/wp-content/uploads/2026/03/investigation-into-the-governments-intervention-in-british-steels-Scunthorpe-site.pdf)
 
-*Not re-checked against a primary source: NI cement works capacity, Moyle flows and capacity, GB fertiliser output. Created with assistive technology including AI and re-checked against the official sources listed.*
+*Not re-checked against a primary source: NI cement works capacity, Moyle flows and capacity, GB fertiliser output. AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*
 
 If your firm imports any of these goods, [CBAM Desk]({{ '/cbam-desk/' | relative_url }}) does a fixed-price route check. Questions: robert@robertjpark.co.uk · 07450 349480 · WhatsApp @robertjpark.

@@ -103,7 +103,7 @@ element: {sym}
 **Add what you know about {name}.** Farmers, engineers, teachers, chemists and anyone who has worked with it: tell me what you have seen, measured or learned. I check every contribution against a source before adding it here, and credit you by name if you want. [Email your note about {name}]({mail}). See the [privacy notice]({{{{ '/privacy/' | relative_url }}}}) for how I handle what you send.
 </aside>
 
-*General information as at {CHECKED}, not legal, safety or agronomic advice. Hazard notes are headline classifications only: always work from the supplier's safety data sheet. Created with assistive technology including AI and re-checked against the official sources listed.*
+*General information as at {CHECKED}, not legal, safety or agronomic advice. Hazard notes are headline classifications only: always work from the supplier's safety data sheet. AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*
 """
 
 def index():
@@ -128,7 +128,7 @@ description: "Deep dives on the chemical elements for Northern Ireland: climate,
 |---|---|---|---|
 """ + '\n'.join(rows) + f"""
 
-*Checked {CHECKED}. Created with assistive technology including AI and re-checked against the official sources listed.*
+*Checked {CHECKED}. AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*
 """
 
 if __name__ == '__main__':

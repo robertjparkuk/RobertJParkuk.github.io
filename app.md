@@ -81,6 +81,6 @@ You can already dictate into any box in these tools with the microphone key on y
 
 A free 30-minute first call: [email me](mailto:{{ site.email }}?subject=Carbon%20Ready%20first%20call) or message {{ site.whatsapp }} on WhatsApp.
 
-<p class="small">General information, not legal, tax or customs advice. Created with assistive technology including AI and re-checked against the official sources listed.</p>
+<p class="small">General information, not legal, tax or customs advice. AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.</p>
 
 <script src="{{ '/assets/js/app.js' | relative_url }}" defer></script>

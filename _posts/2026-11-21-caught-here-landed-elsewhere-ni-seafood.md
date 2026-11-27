@@ -176,7 +176,7 @@ Northern Ireland catches more than it lands, lands more than it processes, and p
 
 *This is commentary, not legal, customs or tax advice. Figures were read from the sources below on 21 November 2026. DAERA's processing figures for 2023 and 2024 are due on 15 December 2026, and the 2022 destination figures here will need updating then. The UK sea fisheries statistics have lost their accredited official statistics status; the NI catch figure used here comes from DAERA.*
 
-*Created with assistive technology including AI and re-checked against the official sources listed.*
+*AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*
 
 ## Sources
 
