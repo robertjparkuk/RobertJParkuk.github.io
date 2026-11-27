@@ -15,7 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 src = open(os.path.join(HERE, 'build.py'), encoding='utf-8').read()
 exec(src[:src.index('\nD = {}')])  # helpers (esc, tile, csv_href) and CSS only
 
-AS_AT = '20 November 2026'
+AS_AT = '27 November 2026'
 WINDOW_FROM = '22 April 2025'
 TODAY = dt.datetime.strptime(AS_AT, '%d %B %Y')
 DATA = os.path.join(ROOT, 'data', 'dashboards', 'ni-consultations')
@@ -23,6 +23,7 @@ rows = json.load(open(os.path.join(DATA, 'consultations.json'), encoding='utf-8'
 access = json.load(open(os.path.join(DATA, 'council_access.json'), encoding='utf-8'))
 
 CHANGES = [  # newest first: date, what changed
+    ('27 Nov 2026', 'Weekly refresh: 13 added (468 in all), including DfC’s Grosvenor Road and Sandy Row public realm scheme in Belfast, the future of Magherafelt Courthouse, DfE’s domestic energy efficiency and low carbon heat programme for owner occupiers, an electricity generation licence for Ards Battery Storage, the Utility Regulator’s draft 2027/28 work programme and DfT’s proposals to extend the Renewable Transport Fuel Obligation; 3 rolled to closed; responses recorded for DfI’s Road Maintenance Strategy, DAERA’s animal welfare policy reforms and the draft Air Quality (Amendment) Regulations. Council pages could not be checked this week.'),
     ('20 Nov 2026', 'Weekly refresh: 17 added (455 in all), including DfI abandonment orders for a footway at Tobar Fold, Cullybackey and part of Railway Road car park in Derry, loading bay and parking changes in Magherafelt, Omagh and Derry, DAERA’s draft invasive species pathway action plans, a DfC call for evidence on local government legislation and the Utility Regulator’s firm access consultation (now closing 22 January); 11 rolled to closed; the Black Paths engagement now open; responses recorded for the construction products General Safety Requirement and two Translink equality impact assessments.'),
  ('13 Nov 2026', 'Weekly refresh: 17 added (437 in all), including the DfI regulations on pavement and footway parking, Derry’s £45m Central Riverfront project, a DAERA anchoring ban for the Outer Belfast Lough Marine Conservation Zone and the Housing Executive’s draft Irish Traveller Accommodation Strategy; 9 rolled to closed; DAERA’s final Nature Recovery Strategy and consultation report recorded as the response; Strabane Canal Basin now closes 11 December; dates corrected for 5 other records.'),
  ('13 Nov 2026', 'CBAM rows corrected after a review: the two HMRC draft-regulation consultations (C199, C154) now show that no response document has been published but the regulations have been made (SI 2026/802, 809 and 830; SI 2026/995); the UK ETS hydrogen free-allocation consultation (C378) given its closing date of 2 October 2026; HMRC’s request for technical feedback on its CBAM monitoring, reporting and verification guidance added (C423, closes 13 November); CBAM rows carry a CBAM relevance note, so typing CBAM in a filter finds them; 6 consultations that closed between 6 and 10 November rolled to closed (421 in all).'),

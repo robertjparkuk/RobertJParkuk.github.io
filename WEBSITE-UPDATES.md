@@ -25,6 +25,12 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.66.3 — 27 November 2026: NI Consultations Monitor weekly refresh (PATCH)
+
+- `data/dashboards/ni-consultations/consultations.json`: 13 consultations added (C458–C470; 468 in all), 3 rolled to closed – awaiting response (C022, C381, C421), and 3 responses recorded (C223 DfI Road Maintenance Strategy; C127 DAERA animal welfare reforms; C092 DAERA draft Air Quality (Amendment) Regulations).
+- `_scripts/dashboards/consultations_build.py`: AS_AT set to 27 November 2026 and a CHANGES line added; page and CSV rebuilt (108 open, 27 closing in the next 14 days, 13 open with high relevance).
+- Council pages could not be opened by this week's run, so no new council consultations were added.
+
 ### v0.66.2 — 27 November 2026: X @RJPConsultingNI across the site
 
 - `_config.yml`: `twitter.username` and `social.links` so jekyll-seo-tag emits twitter:site and sameAs for LinkedIn and X (the footer, contact page and home-page schema already carried X).
