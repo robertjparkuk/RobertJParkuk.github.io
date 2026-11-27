@@ -31,6 +31,7 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 - `_layouts/post.html`: a follow line for @RJPConsultingNI under every post's call to action.
 - Contact lines on five Focus On full pages, four tools and two guides now include X @RJPConsultingNI. (The Metals page's contact block comes from the launch-gate registry and was left alone.)
 - `HOW-TO-POST.md`: contact-line rule including X.
+- PDF build scripts (elements, Christmas decorations): contact lines include X for the next rebuild; published PDFs unchanged.
 
 ### v0.66.1 — 27 November 2026: launch-gate fix on the fabricator post
 
