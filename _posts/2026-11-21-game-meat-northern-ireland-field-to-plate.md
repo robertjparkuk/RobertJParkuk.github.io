@@ -8,14 +8,14 @@ description: "Game meat in Northern Ireland, field to plate: deer culls, licensi
 
 Northern Ireland has no deer census, no cull return and, as far as I can confirm, no approved game-handling plant. Yet its venison is lean, wild and in demand, and most of the venison the UK eats is imported. This piece follows game from the hill to the plate and on to the skins and feathers. It covers who may shoot, sell and process it, what changes for lead shot and cured meat, and why NI sits under EU food law while GB does not. It weighs venison's carbon case, including the deer's own methane, and the part deer control plays in NI's tree-planting plan. It also sets out the case against released-bird shooting.
 
-*General information as at 21 November 2026, not legal advice. Claims I have not checked against a primary source are in italics.* The full briefing, with every section, table and source, is a 48-page PDF: [download the full briefing (PDF)]({{ '/assets/game/2026-11/whos-a-pheasant-plucker-game-meat-ni.pdf' | relative_url }}). This page is the accessible version.
+*General information as at 21 November 2026 (lead and SPS dates re-checked 27 November 2026), not legal advice. Claims I have not checked against a primary source are in italics.* The full briefing, with every section, table and source, is a 48-page PDF: [download the full briefing (PDF)]({{ '/assets/game/2026-11/whos-a-pheasant-plucker-game-meat-ni.pdf' | relative_url }}). This page is the accessible version.
 
 ## Key findings
 
 - **Nobody counts NI's deer.** There is no census and no cull return, so every claim about numbers rests on all-island studies, estates and trade bodies.
 - **Selling game is simple; selling wild duck is not.** Game and game-dealer licences were abolished in 2011. Selling a dead wild bird other than woodpigeon, mallard included, is an offence under the 1985 Order.
 - **NI sits under EU food law for game.** Game from an approved NI establishment can go to GB and the EU; game coming in from GB needs certificates.
-- **Lead goes later here.** GB bans the sale and use of lead shot, and large-calibre lead bullets for live quarry, from 1 April 2029. The EU ban on lead gunshot, which applies in NI because it amends EU REACH, starts on 7 December 2033 and does not cover bullets.
+- **Lead goes later here.** GB bans the sale and use of lead shot, and large-calibre lead bullets for live quarry, from 1 April 2029. The EU ban on lead gunshot, which applies in NI because it amends EU REACH, starts on 7 December 2033 and does not cover bullets. The window for a Stormont brake notification runs to about 17 January 2027.
 - **Venison's methane is real but sits outside NI's carbon budget.** On an old UK farmed-deer factor, an adult deer emits about 288 kg CO2e a year. *Wild deer are believed to fall outside the national inventory.*
 - **Deer control is part of NI's tree-planting plan, though the plan does not say so.** Planting has to rise from about 600 ha a year to more than 2,000 ha from 2032.
 - **Processing may be the real bottleneck.** *No currently approved NI game-handling establishment has been confirmed*, and skins and feathers are mostly not used.
