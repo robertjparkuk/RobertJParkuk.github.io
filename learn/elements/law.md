@@ -20,4 +20,4 @@ These are research notes as at 22 November 2026, not legal advice. Each briefing
 </section>
 {% endfor %}
 
-*General information as at 22 November 2026, not legal, safety or customs advice. Created with assistive technology including AI and re-checked against the official sources listed.*
+*General information as at 22 November 2026, not legal, safety or customs advice. AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*

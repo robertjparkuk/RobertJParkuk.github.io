@@ -53,4 +53,4 @@ So a tonne of imported bolts or brackets could carry roughly £25 to £68 of CBA
 
 *Rules checked 23 November 2026 against GOV.UK and HMRC. General information, not legal or tax advice. Who the importer is, and what the origin is, are customs questions: where they are unclear, take advice from a customs specialist.*
 
-*Need a hand? The [CBAM Desk]({{ '/cbam-desk/' | relative_url }}) offers fixed-price help for Northern Ireland importers.*
+*Need a hand? Book a free first call with the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}).*

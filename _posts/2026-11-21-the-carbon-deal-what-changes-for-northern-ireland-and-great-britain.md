@@ -238,7 +238,7 @@ The summit's wider package, from youth mobility to fishing, is in [The second UK
 
 *Correction, 21 November 2026: an earlier version gave the carbon price gap as £9 to £11 a tonne; at the 20 November exchange rate it is about £9. The party positions now give dates and sources.*
 
-*Created with assistive technology including AI and re-checked against the official sources listed.*
+*AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*
 
 ## Sources
 

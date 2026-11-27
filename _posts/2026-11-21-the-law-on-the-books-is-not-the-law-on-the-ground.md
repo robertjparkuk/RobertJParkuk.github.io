@@ -52,4 +52,4 @@ The [annex]({{ '/assets/briefings/2026-11-the-law-on-the-books-annex-register-an
 
 For how this plays out in plan-making, see the companion briefing, [Eleven councils, no complete plan]({% post_url 2026-11-21-eleven-councils-no-complete-plan %}).
 
-*How this was made: the analysis was tested against simulated review panels of legislative drafters, local government lawyers, academic lawyers, editors, former officials and auditors. Their views are reasoned positions, not quotations from real people. Created with assistive technology including AI and re-checked against the official sources listed.*
+*How this was made: the analysis was tested against simulated review panels of legislative drafters, local government lawyers, academic lawyers, editors, former officials and auditors. Their views are reasoned positions, not quotations from real people. AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*

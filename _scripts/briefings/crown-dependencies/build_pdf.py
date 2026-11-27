@@ -56,10 +56,10 @@ if __name__ == '__main__':
     post = re.sub(r'<figure class="page-photo">.*?</figure>\s*', '', post, flags=re.S)
     post = re.sub(r'\[Download the briefing \(PDF\)\]\([^)]*\)\s*', '', post)
     m = re.search(r'^\*(Rules checked.*?)\*\s*$', post, flags=re.M); status = m.group(1); post = post.replace(m.group(0), '', 1)
-    post = re.sub(r'^\*Created with assistive technology.*?\*\s*$', '', post, flags=re.M)
+    post = re.sub(r'^\*(?:Created with assistive technology|AI was used to lay out this document).*?\*\s*$', '', post, flags=re.M)
     body = markdown.markdown(liquid(post), extensions=['tables', 'md_in_html'])
     body = body.replace('<div class="answer-box">', '<div class="box">')
-    body += "<p class='prov'>Created with assistive technology including AI and re-checked against the official sources listed. Robert J. Park &middot; Environment &middot; Carbon &middot; Public Affairs &middot; robert@robertjpark.co.uk &middot; 07450 349480</p>"
+    body += "<p class='prov'>AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed. Robert J. Park &middot; Environment &middot; Carbon &middot; Public Affairs &middot; robert@robertjpark.co.uk &middot; 07450 349480</p>"
     doc = page("Crown Dependencies, ferries and carbon: the Isle of Man, Jersey and Guernsey under the UK ETS and CBAM",
                "Briefing &middot; UK ETS &middot; EU ETS &middot; CBAM &middot; Northern Ireland",
                "Briefing &middot; 24 November 2026<br>Islands, ferries and carbon<br>Status as at 24 November 2026",

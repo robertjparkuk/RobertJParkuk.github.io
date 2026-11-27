@@ -122,7 +122,7 @@ def pdf():
 <div class="meta">Robert J. Park · Larne, Northern Ireland · {AS_AT}<br>robert@robertjpark.co.uk · 07450 349480 · robertjpark.co.uk<br>Status as at {AS_AT}; updated {UPDATED} after the UK–EU summit. Not legal, tax or customs advice.</div></section>
 {dash}
 {h}
-<p class="end">Robert J. Park is an independent environment, carbon and public affairs consultant based in Larne, Northern Ireland. robert@robertjpark.co.uk · robertjpark.co.uk · WhatsApp @robertjpark. Facts checked to {AS_AT}; summit update {UPDATED}.</p>
+<p class="end">Robert J. Park is an independent environment, carbon and public affairs consultant based in Larne, Northern Ireland. robert@robertjpark.co.uk · robertjpark.co.uk · WhatsApp @robertjpark · X @RJPConsultingNI. Facts checked to {AS_AT}; summit update {UPDATED}.</p>
 </body></html>"""
     tmp = os.path.join(ROOT, '_scripts/briefings/christmas-decorations/_tmp.html')
     open(tmp, 'w', encoding='utf-8').write(doc)

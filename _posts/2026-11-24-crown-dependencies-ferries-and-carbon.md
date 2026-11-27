@@ -100,4 +100,4 @@ These are questions for HMRC, Isle of Man Customs and Immigration, the Jersey an
 
 A free 30-minute first call is available through the [CBAM Desk]({{ '/cbam-desk/' | relative_url }}).
 
-*Created with assistive technology including AI and re-checked against the official sources listed.*
+*AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*

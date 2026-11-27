@@ -100,4 +100,4 @@ The [12-page PDF]({{ '/assets/pork/2026-11/pork-life-cycle-ni-briefing.pdf' | re
 
 If retailers or processors are asking you for carbon figures, I can help: email [robert@robertjpark.co.uk](mailto:robert@robertjpark.co.uk) or call 07450 349480.
 
-*This is general information as at 21 November 2026, not legal, financial or veterinary advice. Created with assistive technology including AI and re-checked against the official sources listed.*
+*This is general information as at 21 November 2026, not legal, financial or veterinary advice. AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*

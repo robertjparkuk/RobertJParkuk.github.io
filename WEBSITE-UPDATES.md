@@ -25,6 +25,45 @@ Each release gets a branch named after it (e.g. `v0.2.0-tools`), merged into `ma
 
 ## Changelog
 
+### v0.66.2 — 27 November 2026: X @RJPConsultingNI across the site
+
+- `_config.yml`: `twitter.username` and `social.links` so jekyll-seo-tag emits twitter:site and sameAs for LinkedIn and X (the footer, contact page and home-page schema already carried X).
+- `_layouts/post.html`: a follow line for @RJPConsultingNI under every post's call to action.
+- Contact lines on five Focus On full pages, four tools and two guides now include X @RJPConsultingNI. (The Metals page's contact block comes from the launch-gate registry and was left alone.)
+- `HOW-TO-POST.md`: contact-line rule including X.
+- PDF build scripts (elements, Christmas decorations): contact lines include X for the next rebuild; published PDFs unchanged.
+
+### v0.66.1 — 27 November 2026: launch-gate fix on the fabricator post
+
+- `_posts/2026-12-01-bolts-brackets-and-tanks-…`: closing line said the CBAM Desk "offers fixed-price help". PI cover and AML supervision are not yet in place, so it now offers the free first call only.
+
+### v0.66.0 — 27 November 2026: The Irish Sea: nuclear, fish and power
+
+*Robert, 27 November 2026: "Ready to publish. First on the website with blog post now."*
+
+- New post `_posts/2026-11-27-the-irish-sea-nuclear-fish-and-power.md` at `/blog/2026/11/the-irish-sea-nuclear-fish-and-power/`: summary of findings, our view on small and advanced modular reactors, what to do, related work.
+- Branded PDF: `assets/briefings/2026-11-the-irish-sea-nuclear-fish-and-power-briefing.pdf` (22 pages, v5, after a final review panel).
+- Photo: `assets/photos/foyle-fishing-boat.jpg` (K. Mitch Hodge, Unsplash, credited in the caption).
+- Sources read 25–27 November 2026: MMO Sea Fisheries Statistics 2025 tables, DESNZ NI subnational electricity 2024, RIFE 31, NI Assembly questions and Official Report, GOV.UK, HMRC, DAERA, NIHE/BRE, NISRA and others listed in the PDF.
+
+### v0.65.1 — 26 November 2026: AI statement (PATCH)
+
+*Robert, 26 November 2026: "Go with B as a global rule and update any website policy to reflect this."*
+
+- Every "Created with assistive technology including AI and re-checked against the official sources listed." line now reads "AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed." Changed in 21 posts, 61 element pages, the Carbon Ready Reckoner, the periodic table, Future Technologies, `/app/` and the PDF builders (`_scripts/elements/`, `_scripts/briefings/sps-deal/`, `_scripts/briefings/crown-dependencies/`), so the next build carries the new line.
+- `HOW-TO-POST.md` and `HOW-TO-LEARN.md` now require the statement word for word.
+- Not changed: PDFs already published keep the old line until they are rebuilt; the v0.45.1 entry below stays as the record of the earlier rule. The site has no separate AI policy page.
+
+### v0.65.0 — 26 November 2026: The slurry vote, 56 to 14 (Focus on Agriculture)
+
+*Robert, 26 November 2026: analyse the Assembly's vote on the UUP slurry motion and the Alliance response, check every fact, compare Wales, Ireland, the UK and the EU, brand the PDF from the Brand Manual, link my phosphorus, Lough Neagh, biomethane, pig and poultry pieces, and publish. "I support a better way."*
+
+- New post `_posts/2026-11-26-the-slurry-vote-56-to-14.md` at `/blog/2026/11/the-slurry-vote-56-to-14/`: the motion and the Minister's answers, the farming case, the evidence, how neighbours handle closed periods, Lough Neagh, a party-by-party table, and "A better way" (Robert's position).
+- Branded PDF: `assets/focus-on-agriculture/2026-11-slurry-vote/the-slurry-vote-56-to-14-briefing.pdf` (10 pages), built from the Brand Manual artifact (reverse lockup and split-circle cover, Fraunces, Source Sans 3, Source Serif 4, IBM Plex Mono); linked from the top and foot of the post.
+- Six figures in the same folder (vote, AFBI modelling, closed-period timeline, flexibility spectrum, Lough Neagh phosphorus sources, phosphorus surplus flow) and a 1600 × 900 share card used as the post image and for X.
+- Sources read 25 and 26 November 2026: the full Official Report of the 24 November debate with division lists (Ayes 56, Noes 14: 13 Alliance and People Before Profit); the Alliance, UUP and Farming Life statements in full; PBP and Green Party NI sites (no statement). Facts and comparators checked by three review agents and a fourth fresh-eyes sub-edit; all were AI.
+- Not changed: the Focus on Agriculture November issue, dashboards and the Regulatory Horizon.
+
 ### v0.64.0 — 25 November 2026: Overseas Territories and carbon (for review)
 
 *Robert, 25 November 2026: "In a similar manner prepare a briefing on the Overseas Territories."*

@@ -12,6 +12,16 @@ x: "https://x.com/RJPConsultingNI"   # Consultancy X account (Robert's personal 
 x_handle: "@RJPConsultingNI"
 whatsapp: "@robertjpark"   # WhatsApp username (keeps your number private)
 
+# jekyll-seo-tag: twitter:site card meta and sameAs links
+twitter:
+  username: RJPConsultingNI
+  card: summary_large_image
+social:
+  name: Robert J. Park
+  links:
+    - "https://uk.linkedin.com/in/robertparkuk"
+    - "https://x.com/RJPConsultingNI"
+
 # Set this to your new domain once you have it, e.g. https://www.yourdomain.co.uk
 url: "https://robertjpark.co.uk"
 

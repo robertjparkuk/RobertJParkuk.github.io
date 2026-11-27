@@ -50,7 +50,7 @@ def footer(sym):
             f"This is one of eight learning briefings on the elements that shape climate, soil, land, agri-food and the atmosphere; "
             f"the others are linked from the [interactive periodic table]({{{{ '/tools/periodic-table.html' | relative_url }}}}). "
             f"This is general information as at {CHECKED}, not legal, safety or agronomic advice. "
-            f"Created with assistive technology including AI and re-checked against the official sources listed.*")
+            f"AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*")
 
 if __name__ == '__main__':
     for sym, date in ORDER:

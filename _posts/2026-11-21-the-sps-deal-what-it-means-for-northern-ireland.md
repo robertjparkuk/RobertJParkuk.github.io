@@ -110,7 +110,7 @@ If processing kept its 2015 to 2022 real growth, NI food processing would reach 
 
 The wider summit package is in [The second UK–EU summit: what was agreed and what it will take]({{ '/go/summit/' | relative_url }}). I'll update this piece when the treaty text is published.
 
-*Created with assistive technology including AI and re-checked against the official sources listed.*
+*AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*
 
 ## Sources
 

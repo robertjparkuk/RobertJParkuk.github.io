@@ -30,8 +30,11 @@ You can do this from your phone in the GitHub app or in a web browser.
 
 ## Tips
 
+- **Contact lines** (standalone pages, PDFs, tools, briefings): robertjpark.co.uk · robert@robertjpark.co.uk · WhatsApp @robertjpark · LinkedIn · X @RJPConsultingNI (https://x.com/RJPConsultingNI). The work mobile 07450 349480 where a number is needed. Robert's personal X account and personal mobile never appear. Posts using the `post` layout get the X follow line automatically.
+
 - The first paragraph is used as the summary on the blog list and home page, so make it count.
 - To edit or delete a post later, open its file in `_posts` and use the pencil (edit) or bin icon.
 - To schedule a post, give it a future date and time, e.g. `date: 2026-11-02 12:00:00 +0000`. The site rebuilds itself every day shortly after noon (the *Publish scheduled posts* workflow in `.github/workflows`), so a post dated for noon appears then. For any other time, open the **Actions** tab, choose *Publish scheduled posts* and press **Run workflow** once the time has passed.
 - To add a consultation response, copy `_posts/2026-10-24-response-historic-environment-policy.md`: keep `categories: [consultation-responses]` and fill in `consulting_body`, `closed`, `outcome` and `pdf`. Put the PDF in `assets/consultations/`. It then appears on the Consultation responses page and in the blog.
 - To add an image, upload it to the `assets` folder, then put `![Description of image](/assets/your-image.jpg)` in your post.
+- End every post, briefing PDF and tool with the AI statement (Robert's global rule, 26 November 2026), word for word: *AI was used to lay out this document and to generate leads from the consultant's research, knowledge and questioning; figures were checked against the official sources listed.*
